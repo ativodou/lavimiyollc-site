@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Magazen Kreyòl — Three authentic Haitian brands: Fèl Gou artisanal spices, Fèw Bèl natural beauty products, and Lakou Ati spiritual goods. Delivered globally from Miami.">
+<meta property="og:title" content="Magazen Kreyòl — LavimiyòLLC">
+<meta property="og:description" content="Authentic Haitian food, beauty, and spiritual products — delivered to your door, anywhere in the world.">
+<meta property="og:image" content="https://lavimiyo.com/images/lakou-ati-logo.png">
+<meta property="og:url" content="https://lavimiyo.com/store.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇭🇹</text></svg>">
 <title>Magazen Kreyòl — LavimiyòLLC</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
@@ -175,9 +182,21 @@
   }
 
 
+  /* HAMBURGER */
+  .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.5rem; }
+  .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--rouge); transition: background 0.2s; }
+
   @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
-    .nav-brands { display: none; }
+    .nav-hamburger { display: flex; }
+    .nav-brands {
+      display: none; position: absolute; top: 100%; left: 0; right: 0;
+      flex-direction: column; background: rgba(253,248,240,0.98);
+      border-bottom: 1px solid rgba(26,15,8,0.08); padding: 0.5rem 0; gap: 0;
+    }
+    .nav-brands.open { display: flex; }
+    .nav-brands li a { display: block; padding: 0.85rem 1.5rem; border-bottom: 1px solid rgba(26,15,8,0.05); font-size: 0.9rem; }
+    .nav-brands li:last-child a { border-bottom: none; }
     .brand-inner { grid-template-columns: 1fr; gap: 2.5rem; padding: 0 1.5rem; }
     .brand-inner.rev { direction: ltr; }
     .fel-visual, .few-visual, .lakou-visual { display: none; }
@@ -198,6 +217,9 @@
     <li><a href="#fewbel" class="v">Fèw Bèl</a></li>
     <li><a href="#lakouati" class="o"><img src="images/lakou-ati-logo.png" class="nav-lakou-logo" alt="">Lakou Ati</a></li>
   </ul>
+  <button class="nav-hamburger" aria-label="Open navigation menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -424,5 +446,10 @@
   <p>© 2025 LavimiyòLLC · Pembroke Pines, FL · contact@lavimiyo.com</p>
 </footer>
 
+<script>
+  document.querySelector('.nav-hamburger').addEventListener('click', function() {
+    document.querySelector('.nav-brands').classList.toggle('open');
+  });
+</script>
 </body>
 </html>

@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LavimiyòLLC — A Haitian-owned company built to celebrate, preserve, and share Haitian culture through products, technology, and knowledge.">
+<meta property="og:title" content="LavimiyòLLC — A Better Life · Une Vie Meilleure">
+<meta property="og:description" content="One company. Three universes. All built to celebrate, preserve, and share Haitian culture with the world.">
+<meta property="og:image" content="https://lavimiyo.com/images/lakou-ati-logo.png">
+<meta property="og:url" content="https://lavimiyo.com">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇭🇹</text></svg>">
 <title>LavimiyòLLC — A Better Life · Une Vie Meilleure</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
@@ -172,9 +179,21 @@
 
   @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
+  /* HAMBURGER */
+  .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.5rem; }
+  .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--or); transition: background 0.2s; }
+
   @media (max-width: 860px) {
     nav { padding: 1rem 1.5rem; }
-    .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
+    .nav-links {
+      display: none; position: absolute; top: 100%; left: 0; right: 0;
+      flex-direction: column; background: rgba(12,10,8,0.97);
+      border-bottom: 1px solid rgba(212,168,67,0.15); padding: 0.5rem 0; gap: 0;
+    }
+    .nav-links.open { display: flex; }
+    .nav-links li a { display: block; padding: 0.85rem 1.5rem; border-bottom: 1px solid rgba(212,168,67,0.06); font-size: 0.9rem; }
+    .nav-links li:last-child a { border-bottom: none; }
     .pillars { grid-template-columns: repeat(2, 1fr); }
     .about-strip { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 1.5rem; }
     .universes-grid { grid-template-columns: 1fr; }
@@ -192,6 +211,9 @@
     <li><a href="store.html">Store</a></li>
     <li><a href="mailto:contact@lavimiyo.com">Contact</a></li>
   </ul>
+  <button class="nav-hamburger" aria-label="Open navigation menu">
+    <span></span><span></span><span></span>
+  </button>
   <span class="nav-flag">🇭🇹</span>
 </nav>
 
@@ -205,7 +227,7 @@
     <h1 class="hero-title">Lavimiy<em>ò</em></h1>
     <p class="hero-sub">A Better Life &nbsp;·&nbsp; Une Vie Meilleure &nbsp;·&nbsp; Yon Lavi Miyò</p>
     <div class="hero-divider"></div>
-    <p class="hero-desc">One company. Four universes. All built to celebrate, preserve, and share Haitian culture with the world.</p>
+    <p class="hero-desc">One company. Three universes. All built to celebrate, preserve, and share Haitian culture with the world.</p>
 
     <div class="pillars">
       <a href="index.html" class="pillar main">
@@ -216,12 +238,12 @@
       <a href="apps.html" class="pillar apps">
         <span class="pillar-icon">💻</span>
         <span class="pillar-name">Koneksyon</span>
-        <span class="pillar-desc">Koneksyon</span>
+        <span class="pillar-desc">3 apps for the diaspora</span>
       </a>
       <a href="books.html" class="pillar books">
         <span class="pillar-icon">📚</span>
         <span class="pillar-name">Bibliyotèk Nasyonal</span>
-        <span class="pillar-desc">Bibliyotèk Nasyonal</span>
+        <span class="pillar-desc">92 volumes in Kreyòl</span>
       </a>
       <a href="store.html" class="pillar store">
         <span class="pillar-icon">🛍</span>
@@ -263,7 +285,7 @@
 <section class="universes">
   <div class="universes-inner">
     <div class="universes-header">
-      <span class="strip-label">Our Four Universes</span>
+      <span class="strip-label">Our Three Universes</span>
       <h2 class="strip-title">Everything we build, <em>we build in Kreyòl.</em></h2>
     </div>
     <div class="universes-grid">
@@ -296,7 +318,7 @@
         <span class="universe-em">🌐</span>
         <div class="universe-name">The Company</div>
         <span class="universe-tag">LavimiyòLLC · Miami · Est. 2025</span>
-        <p class="universe-desc">All four universes share one foundation: a belief that the Haitian diaspora deserves authentic, high-quality products in their own language and culture.</p>
+        <p class="universe-desc">All three universes share one foundation: a belief that the Haitian diaspora deserves authentic, high-quality products in their own language and culture.</p>
         <a href="mailto:contact@lavimiyo.com" class="universe-link">Get in touch →</a>
       </div>
     </div>
@@ -329,5 +351,10 @@
   <p class="footer-copy"><img src="images/lakou-ati-logo.png" style="height:20px;vertical-align:middle;margin-right:0.5rem;opacity:0.5;" alt=""> © 2025 LavimiyòLLC · Pembroke Pines, FL</p>
 </footer>
 
+<script>
+  document.querySelector('.nav-hamburger').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('open');
+  });
+</script>
 </body>
 </html>

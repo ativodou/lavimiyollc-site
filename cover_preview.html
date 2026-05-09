@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cover Preview — Bibliyotèk Nasyonal</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Georgia, serif;
+    background: #0d1117;
+    color: #e6edf3;
+    padding: 32px 24px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #ffd700;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+  }
+
+  .site-sub {
+    text-align: center;
+    font-size: 13px;
+    color: #8b949e;
+    margin-bottom: 48px;
+    letter-spacing: 1px;
+  }
+
+  .series-block {
+    margin-bottom: 56px;
+  }
+
+  .series-label {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8b949e;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .series-label span {
+    color: #ffd700;
+    font-size: 15px;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+    cursor: default;
+    transition: transform .18s;
+  }
+
+  .book:hover { transform: translateY(-5px); }
+
+  .book img {
+    width: 130px;
+    height: 195px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.7), 0 2px 6px rgba(0,0,0,0.5);
+    display: block;
+    background: #1c2333;
+  }
+
+  .book-label {
+    margin-top: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #8b949e;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .book-label strong {
+    display: block;
+    color: #c9d1d9;
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #21262d;
+    margin: 0 0 48px;
+  }
+
+  footer {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #484f58;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #21262d;
+  }
+</style>
+</head>
+<body>
+
+<h1>Bibliyotèk Nasyonal</h1>
+<p class="site-sub">Cover Preview · LavimiyòLLC · 2026</p>
+
+<!-- ══ LANG ══════════════════════════════════════════════════════ -->
+<div class="series-block">
+  <div class="series-label">Serie 04 · <span>LANG</span> — Gramè & Diksyonè &nbsp;·&nbsp; 4 volim</div>
+  <div class="grid">
+    <div class="book">
+      <img src="bibliyotek/LANG/covers/vol01.png" alt="Vol 1">
+      <div class="book-label"><strong>Vol. 1</strong>Gramè Kreyol</div>
+    </div>
+    <div class="book">
+      <img src="bibliyotek/LANG/covers/vol02.png" alt="Vol 2">
+      <div class="book-label"><strong>Vol. 2</strong>Diksyonè Kreyol–Anglè</div>
+    </div>
+    <div class="book">
+      <img src="bibliyotek/LANG/covers/vol03.png" alt="Vol 3">
+      <div class="book-label"><strong>Vol. 3</strong>Diksyonè Kreyol–Fransè</div>
+    </div>
+    <div class="book">
+      <img src="bibliyotek/LANG/covers/vol04.png" alt="Vol 4">
+      <div class="book-label"><strong>Vol. 4</strong>Diksyonè Kreyol–Espayòl</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ LEGAL ═════════════════════════════════════════════════════ -->
+<div class="series-block">
+  <div class="series-label">Serie 05 · <span>LEGAL</span> — Kòd & Lwa &nbsp;·&nbsp; 6 volim</div>
+  <div class="grid">
+    <div class="book">
+      <img src="bibliyotek/LEGAL/cover_konstitisyon.png" alt="Konstitisyon">
+      <div class="book-label"><strong>Vol. 1</strong>Konstitisyon Ayiti</div>
+    </div>
+    <div class="book">
+      <img src="bibliyotek/LEGAL/ko%CC%80d%20sivil/cover.png" alt="Kòd Sivil">
+      <div class="book-label"><strong>Vol. 2</strong>Kòd Sivil</div>
+    </div>
+    <div class="book">
+      <img src="bibliyotek/LEGAL/ko%CC%80d%20penal/cover.png" alt="Kòd Penal">
+      <div class="book-label"><strong>Vol. 3</strong>Kòd Penal</div>
+    </div>
+    <div class="book">
+      <img src="bibliyotek/LEGAL/ko%CC%80d%20travay/cover.png" alt="Kòd Travay">
+      <div class="book-label"><strong>Vol. 4</strong>Kòd Travay</div>
+    </div>
+    <div class="book">
+      <img src="bibliyotek/LEGAL/ko%CC%80d%20kome%CC%80s/cover.png" alt="Kòd Komès">
+      <div class="book-label"><strong>Vol. 5</strong>Kòd Komès</div>
+    </div>
+    <div class="book">
+      <img src="bibliyotek/LEGAL/ko%CC%80d%20dwanye/cover.png" alt="Kòd Dwanye">
+      <div class="book-label"><strong>Vol. 6</strong>Kòd Dwanye</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ TI PRIZ ═══════════════════════════════════════════════════ -->
+<div class="series-block">
+  <div class="series-label">Serie 01 · <span>TI PRIZ</span> — Elektrisite ak Plonbri &nbsp;·&nbsp; 14 volim</div>
+  <div class="grid" id="tipriz"></div>
+</div>
+
+<!-- ══ DLO ═══════════════════════════════════════════════════════ -->
+<div class="series-block">
+  <div class="series-label">Serie 02 · <span>DLO</span> — Plonbri ak Jesyon Dlo &nbsp;·&nbsp; 12 volim</div>
+  <div class="grid" id="dlo"></div>
+</div>
+
+<!-- ══ DIJITAL ════════════════════════════════════════════════════ -->
+<div class="series-block">
+  <div class="series-label">Serie 03 · <span>DIJITAL</span> — Sistèm ak Teknoloji &nbsp;·&nbsp; 26 volim</div>
+  <div class="grid" id="dijital"></div>
+</div>
+
+<!-- ══ KOUPE KLOURE ═══════════════════════════════════════════════ -->
+<div class="series-block">
+  <div class="series-label">Serie 06 · <span>KOUPE KLOURE</span> — Chapant & Menuizri &nbsp;·&nbsp; 12 volim</div>
+  <div class="grid" id="koupe"></div>
+</div>
+
+<!-- ══ TIWÈL ═════════════════════════════════════════════════════ -->
+<div class="series-block">
+  <div class="series-label">Serie 07 · <span>TIWÈL</span> — Masonri ak Konstriksyon &nbsp;·&nbsp; 12 volim</div>
+  <div class="grid" id="tiwel"></div>
+</div>
+
+<footer>LavimiyòLLC · Bibliyotèk Nasyonal · cover_preview.html</footer>
+
+<script>
+const SERIES = [
+  { id: "tipriz",  path: "bibliyotek/TEKNIK/TI%20PRIZ/covers",  n: 14 },
+  { id: "dlo",     path: "bibliyotek/TEKNIK/DLO/covers",         n: 12 },
+  { id: "dijital", path: "bibliyotek/TEKNIK/DIJITAL/covers",     n: 26 },
+  { id: "koupe",   path: "bibliyotek/TEKNIK/KOUPE%20KLOURE/covers", n: 12 },
+  { id: "tiwel",   path: "bibliyotek/TEKNIK/TIWE%CC%80L/covers", n: 12 },
+];
+
+SERIES.forEach(({ id, path, n }) => {
+  const grid = document.getElementById(id);
+  for (let i = 1; i <= n; i++) {
+    const v = String(i).padStart(2, "0");
+    grid.innerHTML += `
+      <div class="book">
+        <img src="${path}/vol${v}.png" alt="Vol ${v}"
+             onerror="this.style.background='#1c2333';this.alt='missing'">
+        <div class="book-label"><strong>Vol. ${i}</strong></div>
+      </div>`;
+  }
+});
+</script>
+</body>
+</html>

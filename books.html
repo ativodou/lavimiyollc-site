@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bibliyotèk Nasyonal — The first comprehensive technical, legal, and educational library ever written in Haitian Kreyòl. 9 series, 113 volumes, one mission.">
+<meta property="og:title" content="Bibliyotèk Nasyonal — LavimiyòLLC">
+<meta property="og:description" content="Pou 220 zan pat gen liv teknik an kreyol, kounye a genyen. 113 volim an Kreyòl Ayisyen sou lwa, metye, ak edikasyon.">
+<meta property="og:image" content="https://lavimiyo.com/images/lakou-ati-logo.png">
+<meta property="og:url" content="https://lavimiyo.com/books.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇭🇹</text></svg>">
 <title>Bibliyotèk Nasyonal — LavimiyòLLC</title>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
@@ -14,7 +21,6 @@
     --ink: #1C1008;
     --ink-mid: #2D1F0D;
     --ink-light: #4A3520;
-    --sepia: #92400E;
     --warm-grey: #78716C;
     --rouge: #C0392B;
   }
@@ -24,9 +30,9 @@
 
   /* NAV */
   nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    position: fixed; top: 0; left: 0; right: 0; z-index: 200;
     padding: 1.2rem 4rem; display: flex; align-items: center; justify-content: space-between;
-    background: rgba(254,252,232,0.95); backdrop-filter: blur(12px);
+    background: rgba(254,252,232,0.97); backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(217,119,6,0.2);
   }
   .nav-logo { font-family: 'Libre Baskerville', serif; font-size: 1.1rem; color: var(--ink); text-decoration: none; font-style: italic; }
@@ -36,105 +42,163 @@
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a { font-size: 0.85rem; color: var(--ink-light); text-decoration: none; transition: color 0.2s; }
   .nav-links a:hover { color: var(--amber); }
+  .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.5rem; }
+  .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--amber); transition: background 0.2s; }
 
   /* HERO */
   .hero {
-    background: var(--ink);
-    min-height: 100vh; display: flex; align-items: center;
-    padding: 8rem 4rem 5rem; position: relative; overflow: hidden;
+    background: var(--ink); min-height: 55vh; display: flex; align-items: center;
+    padding: 8rem 4rem 4rem; position: relative; overflow: hidden;
   }
   .hero-texture {
     position: absolute; inset: 0; pointer-events: none;
-    background: repeating-linear-gradient(0deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 40px);
+    background: repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 40px);
   }
-  .hero-amber-glow { position: absolute; bottom: -10%; left: -5%; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(217,119,6,0.15) 0%, transparent 70%); pointer-events: none; }
-  .hero-inner { position: relative; z-index: 2; max-width: 1100px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-  .hero-eyebrow { font-family: 'Bebas Neue', sans-serif; font-size: 0.72rem; letter-spacing: 0.45em; color: var(--amber-light); margin-bottom: 1.5rem; display: block; }
-  .hero-title { font-family: 'Libre Baskerville', serif; font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.05; color: var(--parchment); margin-bottom: 1.5rem; }
+  .hero-glow { position: absolute; bottom: -10%; left: -5%; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(217,119,6,0.12) 0%, transparent 70%); pointer-events: none; }
+  .hero-inner { position: relative; z-index: 2; max-width: 1100px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr auto; gap: 4rem; align-items: center; }
+  .hero-eyebrow { font-family: 'Bebas Neue', sans-serif; font-size: 0.72rem; letter-spacing: 0.45em; color: var(--amber-light); margin-bottom: 1.2rem; display: block; }
+  .hero-title { font-family: 'Libre Baskerville', serif; font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.1; color: var(--parchment); margin-bottom: 1rem; }
   .hero-title em { font-style: italic; color: var(--amber-light); }
-  .hero-body { font-size: 1.05rem; line-height: 1.85; color: rgba(254,252,232,0.65); margin-bottom: 2.5rem; }
-  .hero-quote { border-left: 2px solid var(--amber); padding-left: 1.25rem; }
-  .hero-quote p { font-family: 'Libre Baskerville', serif; font-style: italic; font-size: 1rem; color: var(--amber-light); line-height: 1.7; }
-  .hero-quote cite { display: block; margin-top: 0.5rem; font-size: 0.72rem; letter-spacing: 0.2em; color: rgba(254,252,232,0.3); font-style: normal; }
+  .hero-body { font-size: 1rem; line-height: 1.8; color: rgba(254,252,232,0.55); max-width: 520px; }
+  .hero-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: rgba(217,119,6,0.15); border: 1px solid rgba(217,119,6,0.15); min-width: 280px; }
+  .hs-cell { background: rgba(28,16,8,0.8); padding: 1.5rem; text-align: center; }
+  .hs-num { font-family: 'Libre Baskerville', serif; font-size: 2.2rem; color: var(--amber-light); line-height: 1; }
+  .hs-label { font-size: 0.68rem; letter-spacing: 0.2em; color: rgba(254,252,232,0.35); margin-top: 0.3rem; text-transform: uppercase; }
 
-  .hero-numbers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: rgba(217,119,6,0.15); border: 1px solid rgba(217,119,6,0.15); }
-  .hero-num-cell { background: rgba(28,16,8,0.8); padding: 2rem; text-align: center; }
-  .hero-num { font-family: 'Libre Baskerville', serif; font-size: 3rem; color: var(--amber-light); line-height: 1; }
-  .hero-num-label { font-size: 0.72rem; letter-spacing: 0.2em; color: rgba(254,252,232,0.4); margin-top: 0.4rem; text-transform: uppercase; }
+  /* FILTER BAR */
+  .filter-bar {
+    position: sticky; top: 60px; z-index: 100;
+    background: rgba(254,252,232,0.97); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(217,119,6,0.15);
+    padding: 0 4rem;
+  }
+  .filter-inner { max-width: 1100px; margin: 0 auto; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
+  .filter-inner::-webkit-scrollbar { display: none; }
+  .filter-btn {
+    font-family: 'Bebas Neue', sans-serif; font-size: 0.78rem; letter-spacing: 0.25em;
+    padding: 1.1rem 1.5rem; border: none; background: none; cursor: pointer;
+    color: var(--warm-grey); border-bottom: 2px solid transparent;
+    transition: all 0.2s; white-space: nowrap; flex-shrink: 0;
+  }
+  .filter-btn:hover { color: var(--ink); }
+  .filter-btn.active { color: var(--amber); border-bottom-color: var(--amber); }
+
+  /* CATALOG */
+  .catalog { max-width: 1100px; margin: 0 auto; padding: 0 4rem 6rem; }
 
   /* SERIES SECTION */
-  .series-section { padding: 7rem 4rem; max-width: 1100px; margin: 0 auto; }
-  .s-label { font-family: 'Bebas Neue', sans-serif; font-size: 0.72rem; letter-spacing: 0.4em; color: var(--amber); display: block; margin-bottom: 0.75rem; }
-  .s-title { font-family: 'Libre Baskerville', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); color: var(--ink); margin-bottom: 0.75rem; }
-  .s-title em { font-style: italic; color: var(--amber); }
-  .s-body { font-size: 1rem; line-height: 1.8; color: var(--ink-light); max-width: 620px; margin-bottom: 3.5rem; }
+  .series-section { padding-top: 4rem; margin-top: 0.5px; }
+  .series-header { display: flex; align-items: baseline; justify-content: space-between; gap: 2rem; margin-bottom: 2.5rem; padding-bottom: 1rem; border-bottom: 2px solid; }
+  .series-header.teknik { border-color: var(--rouge); }
+  .series-header.legal { border-color: #1E40AF; }
+  .series-header.limye { border-color: #059669; }
+  .series-header.lang { border-color: #7C3AED; }
+  .series-eyebrow { font-family: 'Bebas Neue', sans-serif; font-size: 0.68rem; letter-spacing: 0.4em; color: var(--warm-grey); display: block; margin-bottom: 0.3rem; }
+  .series-title { font-family: 'Libre Baskerville', serif; font-size: 1.6rem; font-weight: 700; color: var(--ink); }
+  .series-count { font-family: 'Bebas Neue', sans-serif; font-size: 0.72rem; letter-spacing: 0.2em; color: var(--warm-grey); white-space: nowrap; }
 
-  .series-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(217,119,6,0.15); border: 1px solid rgba(217,119,6,0.15); margin-bottom: 4rem; }
-  .serie-card { background: var(--parchment); padding: 2.5rem 2rem; border-right: none; position: relative; transition: background 0.3s; }
-  .serie-card:hover { background: #FFF8E1; }
-  .serie-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 1.25rem; }
-  .serie-icon { font-size: 1.8rem; }
-  .serie-count { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--amber); line-height: 1; }
-  .serie-count-label { font-size: 0.62rem; letter-spacing: 0.15em; color: var(--warm-grey); display: block; text-transform: uppercase; }
-  .serie-name { font-family: 'Libre Baskerville', serif; font-size: 1.15rem; font-weight: 700; color: var(--ink); margin-bottom: 0.2rem; }
-  .serie-kreyol { font-style: italic; font-size: 0.85rem; color: var(--warm-grey); margin-bottom: 0.75rem; display: block; }
-  .serie-desc { font-size: 0.85rem; line-height: 1.7; color: var(--ink-light); margin-bottom: 1rem; }
-  .serie-status { font-family: 'Bebas Neue', sans-serif; font-size: 0.65rem; letter-spacing: 0.2em; padding: 0.25rem 0.6rem; display: inline-block; }
-  .status-done { background: rgba(22,163,74,0.12); color: #15803D; border: 1px solid rgba(22,163,74,0.3); }
-  .status-wip { background: rgba(217,119,6,0.1); color: var(--amber); border: 1px solid rgba(217,119,6,0.3); }
-  .status-planned { background: rgba(100,116,139,0.1); color: var(--warm-grey); border: 1px solid rgba(100,116,139,0.2); }
+  /* SUB-SERIES */
+  .sub-series { margin-bottom: 3rem; }
+  .sub-series-header {
+    display: flex; align-items: center; gap: 1rem;
+    padding: 0.85rem 1.25rem; margin-bottom: 1.25rem;
+    background: rgba(26,15,8,0.04); border-left: 3px solid var(--amber);
+  }
+  .sub-logo { height: 32px; object-fit: contain; }
+  .sub-name { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 0.15em; color: var(--ink); }
+  .sub-desc { font-size: 0.78rem; color: var(--warm-grey); margin-left: auto; }
 
-  /* LEGAL SECTION */
-  .legal-section { background: var(--ink); padding: 6rem 4rem; }
-  .legal-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-  .legal-title { font-family: 'Libre Baskerville', serif; font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--parchment); margin-bottom: 1rem; }
-  .legal-title em { color: var(--amber-light); font-style: italic; }
-  .legal-body { font-size: 1rem; line-height: 1.8; color: rgba(254,252,232,0.6); margin-bottom: 2rem; }
-  .legal-list { list-style: none; display: flex; flex-direction: column; gap: 0; border: 1px solid rgba(217,119,6,0.2); }
-  .legal-item { display: flex; align-items: center; gap: 1.25rem; padding: 1.1rem 1.25rem; border-bottom: 1px solid rgba(217,119,6,0.1); transition: background 0.2s; }
-  .legal-item:last-child { border-bottom: none; }
-  .legal-item:hover { background: rgba(217,119,6,0.06); }
-  .legal-num { font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; color: var(--amber); width: 24px; flex-shrink: 0; }
-  .legal-item-name { font-family: 'Libre Baskerville', serif; font-size: 0.95rem; color: var(--parchment); flex: 1; }
-  .legal-item-sub { font-size: 0.75rem; color: rgba(254,252,232,0.35); }
-  .legal-check { font-size: 0.9rem; }
+  /* BOOK GRID */
+  .book-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
 
-  .legal-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: rgba(217,119,6,0.15); border: 1px solid rgba(217,119,6,0.15); margin-top: 2rem; }
-  .ls-cell { background: rgba(28,16,8,0.6); padding: 1.5rem; text-align: center; }
-  .ls-num { font-family: 'Libre Baskerville', serif; font-size: 2rem; color: var(--amber-light); }
-  .ls-label { font-size: 0.7rem; letter-spacing: 0.15em; color: rgba(254,252,232,0.35); margin-top: 0.25rem; text-transform: uppercase; }
+  /* BOOK CARD */
+  .book-card { display: flex; flex-direction: column; cursor: pointer; }
+  .book-card a { text-decoration: none; display: flex; flex-direction: column; height: 100%; }
+  .book-cover {
+    aspect-ratio: 2 / 3; overflow: hidden; position: relative;
+    border: 1px solid rgba(26,15,8,0.1);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .book-card:hover .book-cover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(26,15,8,0.18); }
+  .book-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .book-placeholder {
+    width: 100%; height: 100%; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 0.4rem;
+  }
+  .bp-icon { font-size: 1.6rem; opacity: 0.35; }
+  .bp-vol { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: rgba(255,255,255,0.85); letter-spacing: 0.05em; line-height: 1; }
+  .bp-series { font-family: 'Bebas Neue', sans-serif; font-size: 0.55rem; letter-spacing: 0.3em; color: rgba(255,255,255,0.35); }
+  .book-meta { padding: 0.6rem 0 0; flex: 1; }
+  .book-title { font-family: 'Libre Baskerville', serif; font-size: 0.78rem; color: var(--ink); line-height: 1.35; margin-bottom: 0.4rem; }
+  .book-badge { font-family: 'Bebas Neue', sans-serif; font-size: 0.58rem; letter-spacing: 0.18em; padding: 0.2rem 0.5rem; display: inline-block; }
+  .badge-complete { background: rgba(5,150,105,0.1); color: #065F46; border: 1px solid rgba(5,150,105,0.25); }
+  .badge-print { background: rgba(217,119,6,0.15); color: #92400E; border: 1px solid rgba(217,119,6,0.3); }
+  .badge-wip { background: rgba(217,119,6,0.08); color: var(--amber); border: 1px solid rgba(217,119,6,0.2); }
+  .badge-planned { background: rgba(120,113,108,0.08); color: var(--warm-grey); border: 1px solid rgba(120,113,108,0.2); }
 
-  /* PROBLEM SECTION */
-  .problem { background: var(--rouge); padding: 5rem 4rem; text-align: center; }
-  .problem-inner { max-width: 800px; margin: 0 auto; }
-  .problem h2 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); color: var(--parchment); margin-bottom: 1rem; }
-  .problem h2 em { font-style: italic; }
-  .problem-stats { display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap; margin: 3rem 0; }
-  .p-stat-num { font-family: 'Libre Baskerville', serif; font-size: 3rem; color: var(--amber-pale); line-height: 1; }
-  .p-stat-label { font-size: 0.78rem; color: rgba(254,252,232,0.65); margin-top: 0.35rem; max-width: 120px; line-height: 1.4; }
-  .problem p { font-size: 1.05rem; line-height: 1.8; color: rgba(254,252,232,0.8); margin-bottom: 2.5rem; }
+  /* PLACEHOLDER COLORS PER SERIES */
+  .ph-kvoum { background: linear-gradient(160deg, #6B1208 0%, #3A0904 100%); }
+  .ph-tipriz { background: linear-gradient(160deg, #1B4B82 0%, #0D2645 100%); }
+  .ph-dlo { background: linear-gradient(160deg, #0C4A6E 0%, #062538 100%); }
+  .ph-dijital { background: linear-gradient(160deg, #2D1B69 0%, #150D35 100%); }
+  .ph-koupekloure { background: linear-gradient(160deg, #451A03 0%, #220D01 100%); }
+  .ph-tiwel { background: linear-gradient(160deg, #44403C 0%, #1C1917 100%); }
+  .ph-legal { background: linear-gradient(160deg, #1E3A5F 0%, #0F1E32 100%); }
 
+  /* LEGAL GRID (6 items — 3 col) */
+  .book-grid.legal-grid { grid-template-columns: repeat(3, 1fr); }
+  .legal-card .book-cover { aspect-ratio: 3 / 4; }
+  .legal-card .book-placeholder { padding: 1.5rem; text-align: center; }
+  .legal-card .bp-vol { font-size: 2rem; }
+  .legal-card .bp-title { font-family: 'Libre Baskerville', serif; font-size: 0.72rem; color: rgba(255,255,255,0.55); margin-top: 0.5rem; font-style: italic; line-height: 1.3; }
+
+  /* SECTION DIVIDER */
+  .section-divider { border: none; border-top: 1px solid rgba(26,15,8,0.08); margin: 0; }
+
+  /* CONTACT STRIP */
+  .contact-strip { background: var(--ink); padding: 4rem; text-align: center; margin-top: 4rem; }
+  .contact-strip h2 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.4rem, 3vw, 2rem); color: var(--parchment); margin-bottom: 0.75rem; }
+  .contact-strip h2 em { color: var(--amber-light); font-style: italic; }
+  .contact-strip p { font-size: 0.95rem; color: rgba(254,252,232,0.5); margin-bottom: 2rem; }
   .btn-amber { display: inline-block; font-family: 'Bebas Neue', sans-serif; font-size: 0.9rem; letter-spacing: 0.2em; padding: 1rem 2.5rem; text-decoration: none; background: var(--amber); color: var(--ink); border: 2px solid var(--amber); transition: all 0.3s; }
-  .btn-amber:hover { background: transparent; color: var(--amber-pale); border-color: var(--amber-pale); }
-  .btn-outline-parchment { display: inline-block; font-family: 'Bebas Neue', sans-serif; font-size: 0.9rem; letter-spacing: 0.2em; padding: 1rem 2.5rem; text-decoration: none; background: transparent; color: var(--parchment); border: 2px solid rgba(254,252,232,0.4); transition: all 0.3s; margin-left: 1rem; }
-  .btn-outline-parchment:hover { border-color: var(--parchment); }
+  .btn-amber:hover { background: transparent; color: var(--amber-light); border-color: var(--amber-light); }
+  .btn-outline { display: inline-block; font-family: 'Bebas Neue', sans-serif; font-size: 0.9rem; letter-spacing: 0.2em; padding: 1rem 2.5rem; text-decoration: none; background: transparent; color: rgba(254,252,232,0.4); border: 2px solid rgba(254,252,232,0.15); transition: all 0.3s; margin-left: 1rem; }
+  .btn-outline:hover { border-color: rgba(254,252,232,0.4); color: var(--parchment); }
 
+  /* FOOTER */
   footer { border-top: 1px solid rgba(217,119,6,0.15); padding: 2.5rem 4rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; background: var(--ink); }
   .footer-logo { font-family: 'Libre Baskerville', serif; font-size: 1rem; color: var(--parchment); font-style: italic; }
   .footer-logo span { color: var(--amber-light); }
   footer p { font-size: 0.72rem; color: rgba(254,252,232,0.2); }
 
+  @media (max-width: 1000px) {
+    .book-grid { grid-template-columns: repeat(4, 1fr); }
+    .book-grid.legal-grid { grid-template-columns: repeat(3, 1fr); }
+  }
   @media (max-width: 860px) {
     nav { padding: 1rem 1.5rem; }
-    .nav-links { display: none; }
-    .hero { padding: 7rem 1.5rem 4rem; }
-    .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
-    .series-section { padding: 4rem 1.5rem; }
-    .series-grid { grid-template-columns: 1fr; }
-    .legal-section { padding: 4rem 1.5rem; }
-    .legal-inner { grid-template-columns: 1fr; gap: 3rem; }
-    .problem { padding: 4rem 1.5rem; }
+    .nav-hamburger { display: flex; }
+    .nav-links {
+      display: none; position: absolute; top: 100%; left: 0; right: 0;
+      flex-direction: column; background: rgba(254,252,232,0.98);
+      border-bottom: 1px solid rgba(217,119,6,0.2); padding: 0.5rem 0; gap: 0;
+    }
+    .nav-links.open { display: flex; }
+    .nav-links li a { display: block; padding: 0.85rem 1.5rem; border-bottom: 1px solid rgba(217,119,6,0.08); font-size: 0.9rem; color: var(--ink-light); }
+    .nav-links li:last-child a { border-bottom: none; }
+    .hero { padding: 7rem 1.5rem 3rem; }
+    .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero-stats { min-width: unset; }
+    .filter-bar { padding: 0 1.5rem; top: 58px; }
+    .catalog { padding: 0 1.5rem 4rem; }
+    .book-grid { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    .book-grid.legal-grid { grid-template-columns: repeat(2, 1fr); }
+    .contact-strip { padding: 3rem 1.5rem; }
     footer { padding: 2rem 1.5rem; flex-direction: column; }
+  }
+  @media (max-width: 520px) {
+    .book-grid { grid-template-columns: repeat(2, 1fr); }
+    .book-grid.legal-grid { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
 </head>
@@ -142,280 +206,468 @@
 
 <nav>
   <a href="index.html" class="nav-back">← LavimiyòLLC</a>
-  <a href="books.html" class="nav-logo">Fèl An <span>Kreyòl</span> · Library</a>
+  <a href="books.html" class="nav-logo">Bibliyotèk <span>Nasyonal</span></a>
   <ul class="nav-links">
-    <li><a href="#technical">Technical</a></li>
+    <li><a href="#teknik">Teknik</a></li>
     <li><a href="#legal">Legal</a></li>
-    <li><a href="#education">Education</a></li>
+    <li><a href="#limye">Limyè</a></li>
+    <li><a href="#lang">Lang</a></li>
   </ul>
+  <button class="nav-hamburger" aria-label="Open navigation menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-texture"></div>
-  <div class="hero-amber-glow"></div>
+  <div class="hero-glow"></div>
   <div class="hero-inner">
     <div>
-      <span class="hero-eyebrow">Bibliyotèk Nasyonal · 2025–2028</span>
-      <h1 class="hero-title">Pou 220 ans —<br><em>kounye a genyen.</em></h1>
-      <p class="hero-body">For 220 years, Haiti had no technical, legal, or educational books written in its own language. Haitian Kreyòl. Now there are. The first comprehensive Kreyòl library ever built — 92 volumes, 9 series, one mission.</p>
-      <div class="hero-quote">
-        <p>"Lwa ou nan lang ou se libète." — The law in your language is freedom.</p>
-        <cite>— LavimiyòLLC · Legal Series</cite>
-      </div>
+      <span class="hero-eyebrow">Bibliyotèk Nasyonal · LavimiyòLLC · 2025–2028</span>
+      <h1 class="hero-title">Pou 220 zan pat gen liv teknik an kreyol,<br><em>kounye a genyen.</em></h1>
+      <p class="hero-body">For 220 years, Haiti had no technical, legal, or educational books written in its own language. LavimiyòLLC is changing that permanently — one volume at a time.</p>
     </div>
-    <div class="hero-numbers">
-      <div class="hero-num-cell">
-        <div class="hero-num">92</div>
-        <div class="hero-num-label">Total Volumes</div>
-      </div>
-      <div class="hero-num-cell">
-        <div class="hero-num">9</div>
-        <div class="hero-num-label">Series</div>
-      </div>
-      <div class="hero-num-cell">
-        <div class="hero-num">3,200+</div>
-        <div class="hero-num-label">Pages (technical)</div>
-      </div>
-      <div class="hero-num-cell">
-        <div class="hero-num">1er</div>
-        <div class="hero-num-label">In Haitian history</div>
-      </div>
+    <div class="hero-stats">
+      <div class="hs-cell"><div class="hs-num">9</div><div class="hs-label">Series</div></div>
+      <div class="hs-cell"><div class="hs-num">113</div><div class="hs-label">Volumes</div></div>
+      <div class="hs-cell"><div class="hs-num">4</div><div class="hs-label">Categories</div></div>
+      <div class="hs-cell"><div class="hs-num">1<sup style="font-size:0.5em">er</sup></div><div class="hs-label">In history</div></div>
     </div>
   </div>
 </section>
 
-<!-- TECHNICAL SERIES -->
-<section class="series-section" id="technical">
-  <span class="s-label">Technical Series · 6 Trades · 77 Volumes</span>
-  <h2 class="s-title">Building Haiti —<br><em>one trade at a time.</em></h2>
-  <p class="s-body">International standards (NEC, IEC, ASE, ICC, ACI, IPC) adapted for Haitian realities — written entirely in Haitian Kreyòl for the first time in history.</p>
-
-  <div class="series-grid">
-    <div class="serie-card">
-      <div class="serie-top">
-        <span class="serie-icon">🔧</span>
-        <div style="text-align:right">
-          <div class="serie-count">15</div>
-          <span class="serie-count-label">Volumes</span>
-        </div>
-      </div>
-      <div class="serie-name">K-VOUM</div>
-      <span class="serie-kreyol">Mekanik Otomobil · Auto Mechanics</span>
-      <p class="serie-desc">Full automotive series from basic principles through electric and hybrid vehicles. Standards: ASE, SAE. Proof of concept — Vol. 1 already printed.</p>
-      <span class="serie-status status-done">✓ Complete — Vol. 1 Printed</span>
-    </div>
-
-    <div class="serie-card">
-      <div class="serie-top">
-        <span class="serie-icon">⚡</span>
-        <div style="text-align:right">
-          <div class="serie-count">14</div>
-          <span class="serie-count-label">Volumes</span>
-        </div>
-      </div>
-      <div class="serie-name">Ti Priz</div>
-      <span class="serie-kreyol">Elektrisite · Electricity</span>
-      <p class="serie-desc">Complete electrical training from wiring fundamentals to solar and advanced diagnostics. Standards: NEC, IEC, IEEE. Adapted for Haiti's grid reality.</p>
-      <span class="serie-status status-wip">⏳ In Progress</span>
-    </div>
-
-    <div class="serie-card">
-      <div class="serie-top">
-        <span class="serie-icon">💧</span>
-        <div style="text-align:right">
-          <div class="serie-count">12</div>
-          <span class="serie-count-label">Volumes</span>
-        </div>
-      </div>
-      <div class="serie-name">Dlo</div>
-      <span class="serie-kreyol">Plombri · Plumbing</span>
-      <p class="serie-desc">Water supply, sanitation, and hydraulic systems built around Haitian infrastructure. Standards: IPC, UPC, WHO. Critical for public health outcomes.</p>
-      <span class="serie-status status-wip">⏳ In Progress</span>
-    </div>
-
-    <div class="serie-card">
-      <div class="serie-top">
-        <span class="serie-icon">📱</span>
-        <div style="text-align:right">
-          <div class="serie-count">12</div>
-          <span class="serie-count-label">Volumes</span>
-        </div>
-      </div>
-      <div class="serie-name">Dijital</div>
-      <span class="serie-kreyol">Elektwonik · Electronics</span>
-      <p class="serie-desc">Electronics and digital systems training — circuits, telecommunications, repair. Standards: IEC, ITU. Building a Haitian tech workforce.</p>
-      <span class="serie-status status-wip">⏳ In Progress</span>
-    </div>
-
-    <div class="serie-card">
-      <div class="serie-top">
-        <span class="serie-icon">🪚</span>
-        <div style="text-align:right">
-          <div class="serie-count">12</div>
-          <span class="serie-count-label">Volumes</span>
-        </div>
-      </div>
-      <div class="serie-name">Koupe Kloure</div>
-      <span class="serie-kreyol">Chapant · Carpentry</span>
-      <p class="serie-desc">Woodworking, framing, and structural carpentry for Haitian construction contexts. Standards: ICC, AWC. Safer buildings start with trained carpenters.</p>
-      <span class="serie-status status-wip">⏳ In Progress</span>
-    </div>
-
-    <div class="serie-card">
-      <div class="serie-top">
-        <span class="serie-icon">🧱</span>
-        <div style="text-align:right">
-          <div class="serie-count">12</div>
-          <span class="serie-count-label">Volumes</span>
-        </div>
-      </div>
-      <div class="serie-name">Tiwèl</div>
-      <span class="serie-kreyol">Masonville · Masonry</span>
-      <p class="serie-desc">Masonry and concrete construction adapted to Haiti's seismic context. Standards: ACI, MTPTC, EN. Building to survive, not just to stand.</p>
-      <span class="serie-status status-wip">⏳ In Progress</span>
-    </div>
+<!-- FILTER BAR -->
+<div class="filter-bar" id="catalog">
+  <div class="filter-inner">
+    <button class="filter-btn active" data-filter="all">Tout · All</button>
+    <button class="filter-btn" data-filter="teknik">🔧 Teknik</button>
+    <button class="filter-btn" data-filter="legal">⚖️ Legal</button>
+    <button class="filter-btn" data-filter="limye">📚 Limyè</button>
+    <button class="filter-btn" data-filter="lang">🌐 Lang</button>
   </div>
-</section>
+</div>
 
-<!-- LEGAL SECTION -->
-<section class="legal-section" id="legal">
-  <div class="legal-inner">
-    <div>
-      <span class="s-label" style="color:var(--amber-light)">Legal Series · 6 Volumes · Complete</span>
-      <h2 class="legal-title">Kòd ak Konstitisyon<br><em>an Kreyòl.</em></h2>
-      <p class="legal-body">The complete body of Haitian law — every constitution from 1801 to 1987, the Civil Code, Penal Code, Labor Code, Commercial Code, and Customs Code — translated into Haitian Kreyòl for the first time. 4,000+ articles. 220 years of history.</p>
-      <div class="legal-stats">
-        <div class="ls-cell">
-          <div class="ls-num">6</div>
-          <div class="ls-label">Volumes Complete</div>
-        </div>
-        <div class="ls-cell">
-          <div class="ls-num">4,000+</div>
-          <div class="ls-label">Articles</div>
-        </div>
-        <div class="ls-cell">
-          <div class="ls-num">24</div>
-          <div class="ls-label">Constitutions</div>
-        </div>
-        <div class="ls-cell">
-          <div class="ls-num">220+</div>
-          <div class="ls-label">Years of law</div>
-        </div>
-      </div>
-    </div>
-    <ul class="legal-list">
-      <li class="legal-item">
-        <span class="legal-num">1</span>
-        <div>
-          <div class="legal-item-name">Konstitisyon</div>
-          <div class="legal-item-sub">24 Constitutions 1801–1987 + 2011 Amendment</div>
-        </div>
-        <span class="legal-check">✅</span>
-      </li>
-      <li class="legal-item">
-        <span class="legal-num">2</span>
-        <div>
-          <div class="legal-item-name">Kòd Sivil</div>
-          <div class="legal-item-sub">3 Books · 2,300+ Articles · Persons, Property, Contracts</div>
-        </div>
-        <span class="legal-check">✅</span>
-      </li>
-      <li class="legal-item">
-        <span class="legal-num">3</span>
-        <div>
-          <div class="legal-item-name">Kòd Penal</div>
-          <div class="legal-item-sub">9 Laws · Crimes, Offenses, Sanctions</div>
-        </div>
-        <span class="legal-check">✅</span>
-      </li>
-      <li class="legal-item">
-        <span class="legal-num">4</span>
-        <div>
-          <div class="legal-item-name">Kòd Travay</div>
-          <div class="legal-item-sub">6 Books · Labor Rights · ONA, OFATMA</div>
-        </div>
-        <span class="legal-check">✅</span>
-      </li>
-      <li class="legal-item">
-        <span class="legal-num">5</span>
-        <div>
-          <div class="legal-item-name">Kòd Komès</div>
-          <div class="legal-item-sub">5 Books · Companies, Bankruptcy, Commerce Glossary</div>
-        </div>
-        <span class="legal-check">✅</span>
-      </li>
-      <li class="legal-item">
-        <span class="legal-num">6</span>
-        <div>
-          <div class="legal-item-name">Kòd Dwanye</div>
-          <div class="legal-item-sub">1987 Code (330 articles) + 2018 Comparative Project</div>
-        </div>
-        <span class="legal-check">✅</span>
-      </li>
-    </ul>
-  </div>
-</section>
+<!-- CATALOG -->
+<div class="catalog">
 
-<!-- EDUCATION SECTION -->
-<section class="series-section" id="education">
-  <span class="s-label">Limyè · Education Series · 9 Volumes</span>
-  <h2 class="s-title">National education, <em>finally in Kreyòl.</em></h2>
-  <p class="s-body">Biology, botany, history of Haiti, world history, geography, and geology — primary and secondary school curriculum written in Haitian Kreyòl for Haitian students and teachers.</p>
-
-  <div class="series-grid">
-    <div class="serie-card">
-      <div class="serie-top"><span class="serie-icon">🧬</span><div style="text-align:right"><div class="serie-count">3</div><span class="serie-count-label">Volumes</span></div></div>
-      <div class="serie-name">Syans Viv</div>
-      <span class="serie-kreyol">Life Sciences</span>
-      <p class="serie-desc">Biology (human body & health), Zoology, Botany & medicinal plants. Student books + teacher guides.</p>
-      <span class="serie-status status-planned">Planned</span>
-    </div>
-    <div class="serie-card">
-      <div class="serie-top"><span class="serie-icon">📜</span><div style="text-align:right"><div class="serie-count">3</div><span class="serie-count-label">Volumes</span></div></div>
-      <div class="serie-name">Istwa</div>
-      <span class="serie-kreyol">History</span>
-      <p class="serie-desc">History of Haiti I (Pre-Columbian to 1791), History of Haiti II (1791–2026), World History.</p>
-      <span class="serie-status status-planned">Planned</span>
-    </div>
-    <div class="serie-card">
-      <div class="serie-top"><span class="serie-icon">🌍</span><div style="text-align:right"><div class="serie-count">3</div><span class="serie-count-label">Volumes</span></div></div>
-      <div class="serie-name">Tèren</div>
-      <span class="serie-kreyol">Geography & Earth Sciences</span>
-      <p class="serie-desc">Geography of Haiti, World Geography & Astronomy, Geology & Minerals. Primary and secondary levels.</p>
-      <span class="serie-status status-planned">Planned</span>
-    </div>
-  </div>
-</section>
-
-<!-- PROBLEM / CTA -->
-<section class="problem">
-  <div class="problem-inner">
-    <h2>The problem we're <em>solving.</em></h2>
-    <div class="problem-stats">
+  <!-- ═══════════════════════════════════════════
+       TEKNIK
+  ══════════════════════════════════════════════ -->
+  <section class="series-section" data-series="teknik" id="teknik">
+    <div class="series-header teknik">
       <div>
-        <div class="p-stat-num">0</div>
-        <div class="p-stat-label">Kreyòl technical manuals before us</div>
+        <span class="series-eyebrow">Serie 01 · Technical Library</span>
+        <div class="series-title">TEKNIK — Travay ak Metye</div>
       </div>
-      <div>
-        <div class="p-stat-num">70%</div>
-        <div class="p-stat-label">Haitian workers with no formal training</div>
+      <span class="series-count">6 trades · 91 volumes</span>
+    </div>
+
+    <!-- K-VOUM -->
+    <div class="sub-series">
+      <div class="sub-series-header">
+        <img src="bibliyotek/TEKNIK/K-VOUM/K-VOUM_Logo.png" alt="K-VOUM" class="sub-logo">
+        <span class="sub-name">K-VOUM · Mekanik Otomobil</span>
+        <span class="sub-desc">15 Volim · Standards ASE / SAE</span>
       </div>
-      <div>
-        <div class="p-stat-num">$5–10</div>
-        <div class="p-stat-label">Daily wage vs. $40–120 French manuals</div>
+      <div class="book-grid">
+        <div class="book-card">
+          <a href="mailto:contact@lavimiyo.com?subject=K-VOUM Vol.1">
+            <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/front%20cover.png" alt="K-VOUM Vol.1"></div>
+            <div class="book-meta"><div class="book-title">K-VOUM Vol. 1 — Mekanik Fondamantal</div><span class="book-badge badge-print">✓ Enprime</span></div>
+          </a>
+        </div>
+        <div class="book-card">
+          <a href="mailto:contact@lavimiyo.com?subject=K-VOUM Vol.2">
+            <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL%202/cover.png" alt="K-VOUM Vol.2"></div>
+            <div class="book-meta"><div class="book-title">K-VOUM Vol. 2 — Mote A Konbistyon Entèn</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+          </a>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL%203/cover.png" alt="K-VOUM Vol.3"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 3 — Sistèm Alimantasyon</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL4/cover.png" alt="K-VOUM Vol.4"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 4 — Alimaj ak Enjeksyon</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL5/cover.png" alt="K-VOUM Vol.5"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 5 — Refwadisman ak Lubrifikasyon</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL6/cover.png" alt="K-VOUM Vol.6"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 6 — Echapman ak Emisyon</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL7/cover.png" alt="K-VOUM Vol.7"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 7 — Transmisyon ak Anbrayaj</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL8/cover.png" alt="K-VOUM Vol.8"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 8 — Sispansyon ak Direksyon</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL9/cover.png" alt="K-VOUM Vol.9"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 9 — Sistèm Fren</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL10/cover.png" alt="K-VOUM Vol.10"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 10 — Motosiklet</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL11/cover.png" alt="K-VOUM Vol.11"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 11 — Sistèm Elektrik</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL12/cover.png" alt="K-VOUM Vol.12"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 12 — Klimatizasyon</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL13/cover.png" alt="K-VOUM Vol.13"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 13 — Dyagnostik</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL14/cover.png" alt="K-VOUM Vol.14"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 14 — Karosri</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover"><img src="bibliyotek/TEKNIK/K-VOUM/VOL15/cover.png" alt="K-VOUM Vol.15"></div>
+          <div class="book-meta"><div class="book-title">K-VOUM Vol. 15</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </div>
       </div>
     </div>
-    <p>For over 220 years, Haitian apprentices learned by imitation and trial and error — because there were no books in their language. We are changing that. Permanently.</p>
-    <a href="mailto:contact@lavimiyo.com" class="btn-amber">Support the Library</a>
-    <a href="index.html" class="btn-outline-parchment">Back to LavimiyòLLC</a>
+
+    <!-- TI PRIZ -->
+    <div class="sub-series">
+      <div class="sub-series-header">
+        <span class="sub-name">⚡ TI PRIZ · Elektrisite</span>
+        <span class="sub-desc">14 Volim · Standards NEC / IEC / IEEE</span>
+      </div>
+      <div class="book-grid">
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol01.png" alt="Vol 01"></div><div class="book-meta"><div class="book-title">Fizik Elektrik Fondamantal</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol02.png" alt="Vol 02"></div><div class="book-meta"><div class="book-title">Sikit & Komponan Elektronik</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol03.png" alt="Vol 03"></div><div class="book-meta"><div class="book-title">Pwoduksyon Termik & Nikleye</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol04.png" alt="Vol 04"></div><div class="book-meta"><div class="book-title">Pwoduksyon Idwolik & Maremotris</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol05.png" alt="Vol 05"></div><div class="book-meta"><div class="book-title">Pwoduksyon Solè & Eolyen</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol06.png" alt="Vol 06"></div><div class="book-meta"><div class="book-title">TI PRIZ Vol. 6</div><span class="book-badge badge-planned">Planifye</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol07.png" alt="Vol 07"></div><div class="book-meta"><div class="book-title">Distribisyon & Rezo Elektrik</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol08.png" alt="Vol 08"></div><div class="book-meta"><div class="book-title">Enstalasyon Elektrik</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol09.png" alt="Vol 09"></div><div class="book-meta"><div class="book-title">Chale & Rezistans Aplike</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol10.png" alt="Vol 10"></div><div class="book-meta"><div class="book-title">Mote & Machin Elektrik</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol11.png" alt="Vol 11"></div><div class="book-meta"><div class="book-title">Elektronik Aplike & Envertè</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol12.png" alt="Vol 12"></div><div class="book-meta"><div class="book-title">TI PRIZ Vol. 12</div><span class="book-badge badge-planned">Planifye</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol13.png" alt="Vol 13"></div><div class="book-meta"><div class="book-title">Otomatizasyon & Sistèm Entèlijan</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TI%20PRIZ/covers/vol14.png" alt="Vol 14"></div><div class="book-meta"><div class="book-title">Sekirite, Nòm & Pwojè Final</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+      </div>
+    </div>
+
+    <!-- DLO -->
+    <div class="sub-series">
+      <div class="sub-series-header">
+        <span class="sub-name">💧 DLO · Plonbri</span>
+        <span class="sub-desc">12 Volim · Standards IPC / UPC / WHO</span>
+      </div>
+      <div class="book-grid">
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DLO/covers/vol01.png" alt="Vol 01"></div><div class="book-meta"><div class="book-title">Fizik Dlo & Idwoloji Fondamantal</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DLO/covers/vol02.png" alt="Vol 02"></div><div class="book-meta"><div class="book-title">Materyel & Zouti Plonbri</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DLO/covers/vol03.png" alt="Vol 03"></div><div class="book-meta"><div class="book-title">Distribisyon Dlo Potab</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DLO/covers/vol04.png" alt="Vol 04"></div><div class="book-meta"><div class="book-title">Evakiyasyon EU & EP</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DLO/covers/vol05.png" alt="Vol 05"></div><div class="book-meta"><div class="book-title">Aparèy Sanite & Saldeben</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DLO/covers/vol06.png" alt="Vol 06"></div><div class="book-meta"><div class="book-title">Plonbri Komèsyal & Endistriyèl</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DLO/covers/vol07.png" alt="Vol 07"></div><div class="book-meta"><div class="book-title">Gaz GPL & Gaz Natirèl</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DLO/covers/vol08.png" alt="Vol 08"></div><div class="book-meta"><div class="book-title">Chofaj & Klimatizasyon HVAC</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DLO/covers/vol09.png" alt="Vol 09"></div><div class="book-meta"><div class="book-title">Ponpe & Sistèm Presyon Avanse</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DLO/covers/vol10.png" alt="Vol 10"></div><div class="book-meta"><div class="book-title">Plonbri Rezidansyèl — Pwojè Konplè</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DLO/covers/vol11.png" alt="Vol 11"></div><div class="book-meta"><div class="book-title">Nòm, Sekirite & Karyè</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DLO/covers/vol12.png" alt="Vol 12"></div><div class="book-meta"><div class="book-title">Pisin, Spa, Fonten & Solèy</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+      </div>
+    </div>
+
+    <!-- DIJITAL -->
+    <div class="sub-series">
+      <div class="sub-series-header">
+        <span class="sub-name">📱 DIJITAL · Elektwonik</span>
+        <span class="sub-desc">26 Volim · Standards IEC / ITU</span>
+      </div>
+      <div class="book-grid">
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol01.png" alt="Vol 01"></div><div class="book-meta"><div class="book-title">Fizik Elektwonik & Sikui Fondamantal</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol02.png" alt="Vol 02"></div><div class="book-meta"><div class="book-title">Komponan Elektwonik</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol03.png" alt="Vol 03"></div><div class="book-meta"><div class="book-title">Zouti Tekniyen Pwofesyonèl</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol04.png" alt="Vol 04"></div><div class="book-meta"><div class="book-title">Soudure & Reparasyon PCB</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol05.png" alt="Vol 05"></div><div class="book-meta"><div class="book-title">Sistèm Odyo Fondamantal</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol06.png" alt="Vol 06"></div><div class="book-meta"><div class="book-title">Sono & Live Sound</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol07.png" alt="Vol 07"></div><div class="book-meta"><div class="book-title">Estèreo Machin Pwofesyonèl</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol08.png" alt="Vol 08"></div><div class="book-meta"><div class="book-title">Emettè FM/AM & Antèn</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol09.png" alt="Vol 09"></div><div class="book-meta"><div class="book-title">STL & Chèn Broadcast</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol10.png" alt="Vol 10"></div><div class="book-meta"><div class="book-title">Processè Odyo Broadcast</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol11.png" alt="Vol 11"></div><div class="book-meta"><div class="book-title">Rezo, Routeur & WiFi/IP</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol12.png" alt="Vol 12"></div><div class="book-meta"><div class="book-title">Radyo Kominikasyon VHF/UHF</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol13.png" alt="Vol 13"></div><div class="book-meta"><div class="book-title">CONATEL — Règleman & Lisans</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol14.png" alt="Vol 14"></div><div class="book-meta"><div class="book-title">Telefòn Selilè & Reparasyon</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol15.png" alt="Vol 15"></div><div class="book-meta"><div class="book-title">Televizyon LED / LCD / OLED</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol16.png" alt="Vol 16"></div><div class="book-meta"><div class="book-title">Aparèy Menajè I</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol17.png" alt="Vol 17"></div><div class="book-meta"><div class="book-title">Aparèy Menajè II & Fou</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol18.png" alt="Vol 18"></div><div class="book-meta"><div class="book-title">Klimatizasyon HVAC</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol19.png" alt="Vol 19"></div><div class="book-meta"><div class="book-title">Konputè & Laptop</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol20.png" alt="Vol 20"></div><div class="book-meta"><div class="book-title">OS & Lojisyèl</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol21.png" alt="Vol 21"></div><div class="book-meta"><div class="book-title">Elektwonik Otomobil — ECU/OBD</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol22.png" alt="Vol 22"></div><div class="book-meta"><div class="book-title">Estèreo & Multimedia Machin</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol23.png" alt="Vol 23"></div><div class="book-meta"><div class="book-title">IoT & Otomatizasyon</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol24.png" alt="Vol 24"></div><div class="book-meta"><div class="book-title">Estasyon FM & DAB</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol25.png" alt="Vol 25"></div><div class="book-meta"><div class="book-title">Nòm, Sekirite & Etik</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/DIJITAL/covers/vol26.png" alt="Vol 26"></div><div class="book-meta"><div class="book-title">Shop Elektwonik & Karyè</div><span class="book-badge badge-complete">✓ Konplè</span></div></div>
+      </div>
+    </div>
+
+    <!-- KOUPE KLOURE -->
+    <div class="sub-series">
+      <div class="sub-series-header">
+        <span class="sub-name">🪚 KOUPE KLOURE · Chapant</span>
+        <span class="sub-desc">12 Volim · Standards ICC / AWC · En preparation</span>
+      </div>
+      <div class="book-grid">
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/KOUPE%20KLOURE/covers/vol01.png" alt="Vol 01"></div><div class="book-meta"><div class="book-title">Koupe Kloure Vol. 1</div><span class="book-badge badge-planned">Planifye</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/KOUPE%20KLOURE/covers/vol02.png" alt="Vol 02"></div><div class="book-meta"><div class="book-title">Koupe Kloure Vol. 2</div><span class="book-badge badge-planned">Planifye</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/KOUPE%20KLOURE/covers/vol03.png" alt="Vol 03"></div><div class="book-meta"><div class="book-title">Koupe Kloure Vol. 3</div><span class="book-badge badge-planned">Planifye</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/KOUPE%20KLOURE/covers/vol04.png" alt="Vol 04"></div><div class="book-meta"><div class="book-title">Koupe Kloure Vol. 4</div><span class="book-badge badge-planned">Planifye</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/KOUPE%20KLOURE/covers/vol05.png" alt="Vol 05"></div><div class="book-meta"><div class="book-title">Koupe Kloure Vol. 5</div><span class="book-badge badge-planned">Planifye</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/KOUPE%20KLOURE/covers/vol06.png" alt="Vol 06–12"></div><div class="book-meta"><div class="book-title">Koupe Kloure Vol. 6–12</div><span class="book-badge badge-planned">Planifye</span></div></div>
+      </div>
+    </div>
+
+    <!-- TIWÈL -->
+    <div class="sub-series">
+      <div class="sub-series-header">
+        <span class="sub-name">🧱 TIWÈL · Masonville</span>
+        <span class="sub-desc">12 Volim · Standards ACI / MTPTC / EN</span>
+      </div>
+      <div class="book-grid">
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TIWE%CC%80L/covers/vol01.png" alt="Vol 01"></div><div class="book-meta"><div class="book-title">Materyel & Zouti Macon</div><span class="book-badge badge-wip">⏳ An Pwogrè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TIWE%CC%80L/covers/vol02.png" alt="Vol 02"></div><div class="book-meta"><div class="book-title">Motye & Beton</div><span class="book-badge badge-wip">⏳ An Pwogrè</span></div></div>
+        <div class="book-card"><div class="book-cover"><img src="bibliyotek/TEKNIK/TIWE%CC%80L/covers/vol03.png" alt="Vol 03–12"></div><div class="book-meta"><div class="book-title">Tiwèl Vol. 3–12</div><span class="book-badge badge-planned">Planifye</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ═══════════════════════════════════════════
+       LEGAL
+  ══════════════════════════════════════════════ -->
+  <section class="series-section" data-series="legal" id="legal">
+    <div class="series-header legal">
+      <div>
+        <span class="series-eyebrow">Serie 02 · Legal Library</span>
+        <div class="series-title">LEGAL — Kòd ak Konstitisyon</div>
+      </div>
+      <span class="series-count">6 Volim · 4,000+ atik · Konplè</span>
+    </div>
+    <div class="book-grid legal-grid">
+      <div class="book-card legal-card">
+        <a href="mailto:contact@lavimiyo.com?subject=Legal - Konstitisyon">
+          <div class="book-cover"><img src="bibliyotek/LEGAL/cover_konstitisyon.png" alt="Konstitisyon"></div>
+          <div class="book-meta"><div class="book-title">Konstitisyon — 24 Konstitisyon 1801–1987 + Amandman 2011</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card legal-card">
+        <a href="mailto:contact@lavimiyo.com?subject=Legal - Kòd Sivil">
+          <div class="book-cover"><img src="bibliyotek/LEGAL/k%C3%B2d%20sivil/cover.png" alt="Kòd Sivil"></div>
+          <div class="book-meta"><div class="book-title">Kòd Sivil — 3 Liv, 2,300+ Atik</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card legal-card">
+        <a href="mailto:contact@lavimiyo.com?subject=Legal - Kòd Penal">
+          <div class="book-cover"><img src="bibliyotek/LEGAL/k%C3%B2d%20penal/cover.png" alt="Kòd Penal"></div>
+          <div class="book-meta"><div class="book-title">Kòd Penal — 9 Lwa, Krim & Sanksyon</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card legal-card">
+        <a href="mailto:contact@lavimiyo.com?subject=Legal - Kòd Travay">
+          <div class="book-cover"><img src="bibliyotek/LEGAL/k%C3%B2d%20travay/cover.png" alt="Kòd Travay"></div>
+          <div class="book-meta"><div class="book-title">Kòd Travay — 6 Liv, Dwa Travayè</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card legal-card">
+        <a href="mailto:contact@lavimiyo.com?subject=Legal - Kòd Komès">
+          <div class="book-cover"><img src="bibliyotek/LEGAL/k%C3%B2d%20kom%C3%A8s/cover.png" alt="Kòd Komès"></div>
+          <div class="book-meta"><div class="book-title">Kòd Komès — 5 Liv, Antrepriz & Fayit</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card legal-card">
+        <a href="mailto:contact@lavimiyo.com?subject=Legal - Kòd Dwanye">
+          <div class="book-cover"><img src="bibliyotek/LEGAL/k%C3%B2d%20dwanye/cover.png" alt="Kòd Dwanye"></div>
+          <div class="book-meta"><div class="book-title">Kòd Dwanye — 330 Atik, Kòd 1987 & 2018</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ═══════════════════════════════════════════
+       LIMYÈ
+  ══════════════════════════════════════════════ -->
+  <section class="series-section" data-series="limye" id="limye">
+    <div class="series-header limye">
+      <div>
+        <span class="series-eyebrow">Serie 03 · Education Library</span>
+        <div class="series-title">LIMYÈ — Syans & Istwa</div>
+      </div>
+      <span class="series-count">12 Volim · Primè & Segondè · Konplè</span>
+    </div>
+    <div class="book-grid">
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.1 - Byoloji">
+          <div class="book-cover"><img src="bibliyotek/LIMYÈ/Byoloji/LIMYE_Vol1_Cover.png" alt="Byoloji"></div>
+          <div class="book-meta"><div class="book-title">Vol. 1 — Byoloji</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.2 - Zooloji">
+          <div class="book-cover"><img src="bibliyotek/LIMYÈ/Zooloji/LIMYE_Vol2_Cover.png" alt="Zooloji"></div>
+          <div class="book-meta"><div class="book-title">Vol. 2 — Zooloji</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.3 - Botanik">
+          <div class="book-cover"><img src="bibliyotek/LIMYÈ/Botanik/LIMYE_Vol3_Cover.png" alt="Botanik"></div>
+          <div class="book-meta"><div class="book-title">Vol. 3 — Botanik & Plant Medikal</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.4 - Jewoloji">
+          <div class="book-cover"><img src="bibliyotek/LIMYÈ/Jewoloji/LIMYE_Vol4_Cover.png" alt="Jewoloji"></div>
+          <div class="book-meta"><div class="book-title">Vol. 4 — Jewoloji & Minèral</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.5 - Prekolonbyen">
+          <div class="book-cover"><img src="bibliyotek/LIMYÈ/Istwa%20Ayiti/Prekolonbyen/LIMYE_Vol5_Cover.png" alt="Prekolonbyen"></div>
+          <div class="book-meta"><div class="book-title">Vol. 5 — Istwa Ayiti I · Prekolonbyen</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.6 - Esklavaj">
+          <div class="book-cover"><img src="bibliyotek/LIMYÈ/Istwa%20Ayiti/esklavaj/LIMYE_Vol6_Cover.png" alt="Esklavaj"></div>
+          <div class="book-meta"><div class="book-title">Vol. 6 — Istwa Ayiti II · Esklavaj</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.7 - Lagè Endepandans">
+          <div class="book-cover"><img src="bibliyotek/LIMYÈ/Istwa%20Ayiti/Lag%C3%A8%20endepandans/LIMYE_Vol7_Cover.png" alt="Lagè Endepandans"></div>
+          <div class="book-meta"><div class="book-title">Vol. 7 — Istwa Ayiti III · Lagè Endepandans</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.8 - Repiblik">
+          <div class="book-cover"><img src="bibliyotek/LIMYÈ/Istwa%20Ayiti/repiblik/LIMYE_Vol8_Cover.png" alt="Repiblik"></div>
+          <div class="book-meta"><div class="book-title">Vol. 8 — Istwa Ayiti IV · Repiblik</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.9 - Jewografi Ayiti">
+          <div class="book-cover"><img src="bibliyotek/LIMYÈ/Jewografi%20Ayiti/LIMYE_Vol9_Cover.png" alt="Jewografi Ayiti"></div>
+          <div class="book-meta"><div class="book-title">Vol. 9 — Jewografi Ayiti</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.10 - Jewografi Jeneral">
+          <div class="book-cover"><img src="bibliyotek/LIMYÈ/Jewografi%20jeneral/LIMYE_Vol10_Cover.png" alt="Jewografi Jeneral"></div>
+          <div class="book-meta"><div class="book-title">Vol. 10 — Jewografi Mond & Astwonomi</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.11 Tom1">
+          <div class="book-cover"><img src="bibliyotek/LIMYÈ/Istwa%20jeneral/LIMYE_Vol11_Tom1_Cover.png" alt="Istwa Jeneral Tom 1"></div>
+          <div class="book-meta"><div class="book-title">Vol. 11 Tom 1 — Istwa Jeneral · Oriyin & Sivilizasyon</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.11 Tom2">
+          <div class="book-cover"><img src="bibliyotek/LIMYÈ/Istwa%20jeneral/LIMYE_Vol11_Tom2_Cover.png" alt="Istwa Jeneral Tom 2"></div>
+          <div class="book-meta"><div class="book-title">Vol. 11 Tom 2 — Istwa Jeneral · Modèn & Jodi a</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ═══════════════════════════════════════════
+       LANG
+  ══════════════════════════════════════════════ -->
+  <section class="series-section" data-series="lang" id="lang">
+    <div class="series-header lang">
+      <div>
+        <span class="series-eyebrow">Serie 04 · Language Library</span>
+        <div class="series-title">LANG — Gramè & Diksyonè</div>
+      </div>
+      <span class="series-count">4 Volim · Konplè</span>
+    </div>
+    <div class="book-grid">
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LANG Vol.1 - Gramè Kreyol">
+          <div class="book-cover"><img src="bibliyotek/LANG/covers/vol01.png" alt="Gramè Kreyol"></div>
+          <div class="book-meta"><div class="book-title">Vol. 1 — Gramè Kreyol</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LANG Vol.2 - Kreyol-Anglè">
+          <div class="book-cover"><img src="bibliyotek/LANG/covers/vol02.png" alt="Kreyol-Anglè"></div>
+          <div class="book-meta"><div class="book-title">Vol. 2 — Diksyonè Kreyol–Anglè</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LANG Vol.3 - Kreyol-Fransè">
+          <div class="book-cover"><img src="bibliyotek/LANG/covers/vol03.png" alt="Kreyol-Fransè"></div>
+          <div class="book-meta"><div class="book-title">Vol. 3 — Diksyonè Kreyol–Fransè</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+      <div class="book-card">
+        <a href="mailto:contact@lavimiyo.com?subject=LANG Vol.4 - Kreyol-Espayòl">
+          <div class="book-cover"><img src="bibliyotek/LANG/covers/vol04.png" alt="Kreyol-Espayòl"></div>
+          <div class="book-meta"><div class="book-title">Vol. 4 — Diksyonè Kreyol–Espayòl</div><span class="book-badge badge-complete">✓ Konplè</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT STRIP -->
+  <div class="contact-strip">
+    <h2>Ou enterese? <em>Kontakte nou.</em></h2>
+    <p>To order volumes, discuss bulk pricing, or partner with the library project — reach out directly.</p>
+    <a href="mailto:contact@lavimiyo.com?subject=Bibliyotèk Nasyonal" class="btn-amber">Kontakte Nou</a>
+    <a href="index.html" class="btn-outline">← LavimiyòLLC</a>
   </div>
-</section>
+
+</div><!-- /catalog -->
 
 <footer>
-  <div class="footer-logo">Fèl An <span>Kreyòl</span> · LavimiyòLLC</div>
-  <p><img src="images/lakou-ati-logo.png" style="height:20px;vertical-align:middle;margin-right:0.5rem;opacity:0.5;" alt=""> © 2025 LavimiyòLLC · Pembroke Pines, FL · contact@lavimiyo.com</p>
+  <div class="footer-logo">LavimiyòLLC · Bibliyotèk <span>Nasyonal</span></div>
+  <p><img src="images/lakou-ati-logo.png" style="height:18px;vertical-align:middle;margin-right:0.5rem;opacity:0.4;" alt=""> © 2025 LavimiyòLLC · Pembroke Pines, FL · contact@lavimiyo.com</p>
 </footer>
 
+<script>
+  // Filter tabs
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var filter = this.dataset.filter;
+      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      document.querySelectorAll('.series-section').forEach(function(s) {
+        s.style.display = (filter === 'all' || s.dataset.series === filter) ? '' : 'none';
+      });
+      document.querySelectorAll('.section-divider').forEach(function(d) {
+        d.style.display = filter === 'all' ? '' : 'none';
+      });
+    });
+  });
+
+  // Hamburger
+  document.querySelector('.nav-hamburger').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('open');
+  });
+</script>
 </body>
 </html>

@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Koneksyon — Three Kreyòl-first apps for the Haitian community: Anbyans event ticketing, Ayisyen Tou Patou professional directory, and SOCRATES school management SaaS.">
+<meta property="og:title" content="Koneksyon — LavimiyòLLC">
+<meta property="og:description" content="Three Haitian-first platforms solving real problems for the diaspora and Haiti, all built in Kreyòl.">
+<meta property="og:image" content="https://lavimiyo.com/images/lakou-ati-logo.png">
+<meta property="og:url" content="https://lavimiyo.com/apps.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇭🇹</text></svg>">
 <title>Koneksyon — LavimiyòLLC</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
@@ -73,8 +80,8 @@
   }
   .app-card:hover { border-color: rgba(13,148,136,0.5); }
   .app-info { padding: 3.5rem; background: var(--navy-mid); }
-  .app-visual { background: var(--teal-dim); padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
-  .app-icon { font-size: 2.5rem; margin-bottom: 1.25rem; display: block; }
+  .app-visual { padding: 0; display: flex; flex-direction: column; overflow: hidden; }
+  .app-logo { height: 64px; object-fit: contain; display: block; margin-bottom: 1.5rem; }
   .app-name { font-family: 'DM Serif Display', serif; font-size: 2rem; color: var(--white); margin-bottom: 0.2rem; }
   .app-sub { font-size: 0.8rem; letter-spacing: 0.15em; color: var(--teal-light); margin-bottom: 1.5rem; text-transform: uppercase; }
   .app-desc { font-size: 0.95rem; line-height: 1.8; color: var(--muted); margin-bottom: 2rem; }
@@ -85,9 +92,29 @@
   .badge-live { background: rgba(13,148,136,0.2); color: var(--teal-light); border: 1px solid var(--teal-light); }
   .badge-dev { background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid rgba(212,168,67,0.4); }
 
-  .vis-label { font-family: 'Bebas Neue', sans-serif; font-size: 0.68rem; letter-spacing: 0.3em; color: rgba(255,255,255,0.3); margin-bottom: 1.5rem; }
-  .feature-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .pill { font-size: 0.78rem; padding: 0.4rem 0.85rem; border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.6); border-radius: 2px; }
+  /* FLYER PANELS */
+  .flyer { display: flex; flex-direction: column; height: 100%; min-height: 480px; background: var(--navy); }
+  .flyer-bar { height: 4px; flex-shrink: 0; }
+  .flyer-anbyans .flyer-bar { background: linear-gradient(90deg, var(--teal), var(--teal-light)); }
+  .flyer-atp .flyer-bar { background: linear-gradient(90deg, var(--gold), #F0C866); }
+  .flyer-socrates .flyer-bar { background: linear-gradient(90deg, #7C3AED, #A78BFA); }
+  .flyer-body { flex: 1; padding: 2rem; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .vis-logo { height: 96px; object-fit: contain; display: block; margin: 0 auto 1.25rem; }
+  .flyer-name { font-family: 'DM Serif Display', serif; font-size: 1.4rem; color: var(--white); margin-bottom: 0.2rem; }
+  .flyer-sub { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.5rem; }
+  .flyer-anbyans .flyer-sub { color: var(--teal-light); }
+  .flyer-atp .flyer-sub { color: var(--gold); }
+  .flyer-socrates .flyer-sub { color: #A78BFA; }
+  .flyer-rule { width: 100%; height: 1px; background: rgba(255,255,255,0.07); margin-bottom: 1.5rem; }
+  .flyer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.06); width: 100%; }
+  .flyer-cell { background: rgba(255,255,255,0.02); padding: 0.9rem 0.5rem; transition: background 0.2s; }
+  .flyer-cell:hover { background: rgba(255,255,255,0.06); }
+  .flyer-cell-icon { font-size: 1.2rem; display: block; margin-bottom: 0.3rem; }
+  .flyer-cell-label { font-size: 0.68rem; color: rgba(255,255,255,0.5); line-height: 1.35; display: block; }
+  .flyer-url { padding: 1rem 2rem; border-top: 1px solid rgba(255,255,255,0.06); font-family: 'Bebas Neue', sans-serif; font-size: 0.75rem; letter-spacing: 0.22em; background: rgba(0,0,0,0.25); text-align: center; flex-shrink: 0; }
+  .flyer-anbyans .flyer-url { color: var(--teal-light); }
+  .flyer-atp .flyer-url { color: var(--gold); }
+  .flyer-socrates .flyer-url { color: #A78BFA; }
 
   /* MISSION STRIP */
   .mission-strip {
@@ -108,9 +135,21 @@
   .footer-logo span { color: var(--teal-light); font-style: italic; }
   footer p { font-size: 0.75rem; color: rgba(240,249,255,0.2); letter-spacing: 0.1em; }
 
+  /* HAMBURGER */
+  .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.5rem; }
+  .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--teal-light); transition: background 0.2s; }
+
   @media (max-width: 860px) {
     nav { padding: 1rem 1.5rem; }
-    .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
+    .nav-links {
+      display: none; position: absolute; top: 100%; left: 0; right: 0;
+      flex-direction: column; background: rgba(10,22,40,0.97);
+      border-bottom: 1px solid rgba(13,148,136,0.2); padding: 0.5rem 0; gap: 0;
+    }
+    .nav-links.open { display: flex; }
+    .nav-links li a { display: block; padding: 0.85rem 1.5rem; border-bottom: 1px solid rgba(13,148,136,0.08); font-size: 0.9rem; }
+    .nav-links li:last-child a { border-bottom: none; }
     .hero { padding: 7rem 1.5rem 3rem; }
     .apps-section { padding: 4rem 1.5rem; }
     .app-card { grid-template-columns: 1fr; }
@@ -124,12 +163,15 @@
 
 <nav>
   <a href="index.html" class="nav-back">← LavimiyòLLC</a>
-  <a href="apps.html" class="nav-logo">Fèl An <span>Kreyòl</span> · Apps</a>
+  <a href="apps.html" class="nav-logo"><span>Koneksyon</span></a>
   <ul class="nav-links">
     <li><a href="#anbyans">Anbyans</a></li>
     <li><a href="#directory">Annuaire</a></li>
     <li><a href="#socrates">SOCRATES</a></li>
   </ul>
+  <button class="nav-hamburger" aria-label="Open navigation menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -170,7 +212,7 @@
   <!-- ANBYANS -->
   <div class="app-card" id="anbyans">
     <div class="app-info">
-      <span class="app-icon">🎟</span>
+      <img src="images/anbyans%20logo.png" alt="Anbyans" class="app-logo">
       <div class="app-name">Anbyans</div>
       <div class="app-sub">Tikè Lakay · Event Ticketing</div>
       <p class="app-desc">The first event ticketing platform built specifically for the Haitian community. Organizers can sell tickets, manage floor plans, and accept MonCash — Haiti's mobile payment — alongside Stripe.</p>
@@ -184,19 +226,24 @@
       <a href="https://anbyans.events" target="_blank" style="display:inline-block;margin-bottom:1rem;font-family:'Bebas Neue',sans-serif;font-size:0.8rem;letter-spacing:0.2em;color:var(--teal-light);text-decoration:none;border:1px solid var(--teal-light);padding:0.5rem 1.25rem;">↗ anbyans.events</a><br>
       <span class="app-badge badge-dev">In Development</span>
     </div>
-    <div class="app-visual">
-      <div class="vis-label">Platform Features</div>
-      <div class="feature-pills">
-        <span class="pill">MonCash</span>
-        <span class="pill">Stripe</span>
-        <span class="pill">QR Tickets</span>
-        <span class="pill">Floor Plan</span>
-        <span class="pill">i18n HT/EN/FR</span>
-        <span class="pill">Door Scanning</span>
-        <span class="pill">Organizer Portal</span>
-        <span class="pill">Fan Accounts</span>
-        <span class="pill">Vendor Roles</span>
-        <span class="pill">Real-time Sales</span>
+    <div class="app-visual flyer-anbyans">
+      <div class="flyer">
+        <div class="flyer-bar"></div>
+        <div class="flyer-body">
+          <img src="images/anbyans%20logo.png" alt="Anbyans" class="vis-logo">
+          <div class="flyer-name">Anbyans</div>
+          <div class="flyer-sub">Tikè Lakay · Event Ticketing</div>
+          <div class="flyer-rule"></div>
+          <div class="flyer-grid">
+            <div class="flyer-cell"><span class="flyer-cell-icon">💳</span><span class="flyer-cell-label">MonCash + Stripe</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">📱</span><span class="flyer-cell-label">QR Door Scanning</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">🗺</span><span class="flyer-cell-label">Floor Plan Editor</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">👥</span><span class="flyer-cell-label">Multi-Role System</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">🌐</span><span class="flyer-cell-label">Kreyòl / EN / FR</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">📊</span><span class="flyer-cell-label">Real-time Sales</span></div>
+          </div>
+        </div>
+        <div class="flyer-url">↗ anbyans.events</div>
       </div>
     </div>
   </div>
@@ -204,7 +251,7 @@
   <!-- AYISYEN TOU PATOU -->
   <div class="app-card" id="directory">
     <div class="app-info">
-      <span class="app-icon">📋</span>
+      <img src="images/ayisyentoupatou%20logo.png" alt="Ayisyen Tou Patou" class="app-logo">
       <div class="app-name">Ayisyen Tou Patou</div>
       <div class="app-sub">Global Haitian Professional Directory</div>
       <p class="app-desc">A living directory of Haitian professionals, organizations, and federations across the world. GPS-filtered search connects the diaspora — from Miami to Montreal to Paris — to each other.</p>
@@ -218,19 +265,24 @@
       <a href="https://ayisyentoupatou.directory" target="_blank" style="display:inline-block;margin-bottom:1rem;font-family:'Bebas Neue',sans-serif;font-size:0.8rem;letter-spacing:0.2em;color:var(--teal-light);text-decoration:none;border:1px solid var(--teal-light);padding:0.5rem 1.25rem;">↗ ayisyentoupatou.directory</a><br>
       <span class="app-badge badge-dev">In Development</span>
     </div>
-    <div class="app-visual">
-      <div class="vis-label">Platform Features</div>
-      <div class="feature-pills">
-        <span class="pill">GPS Location</span>
-        <span class="pill">Member Profiles</span>
-        <span class="pill">Federations</span>
-        <span class="pill">Community Filter</span>
-        <span class="pill">Admin Portal</span>
-        <span class="pill">Global Search</span>
-        <span class="pill">Login Logs</span>
-        <span class="pill">Sector Tags</span>
-        <span class="pill">Verification</span>
-        <span class="pill">Diaspora Map</span>
+    <div class="app-visual flyer-atp">
+      <div class="flyer">
+        <div class="flyer-bar"></div>
+        <div class="flyer-body">
+          <img src="images/ayisyentoupatou%20logo.png" alt="Ayisyen Tou Patou" class="vis-logo">
+          <div class="flyer-name">Ayisyen Tou Patou</div>
+          <div class="flyer-sub">Global Haitian Directory</div>
+          <div class="flyer-rule"></div>
+          <div class="flyer-grid">
+            <div class="flyer-cell"><span class="flyer-cell-icon">📍</span><span class="flyer-cell-label">GPS Filtering</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">🏢</span><span class="flyer-cell-label">Federations</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">✅</span><span class="flyer-cell-label">Member Verification</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">🌍</span><span class="flyer-cell-label">Global Search</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">🔍</span><span class="flyer-cell-label">Sector Filters</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">📊</span><span class="flyer-cell-label">Activity Tracking</span></div>
+          </div>
+        </div>
+        <div class="flyer-url">↗ ayisyentoupatou.directory</div>
       </div>
     </div>
   </div>
@@ -238,7 +290,7 @@
   <!-- SOCRATES -->
   <div class="app-card" id="socrates">
     <div class="app-info">
-      <span class="app-icon">🏫</span>
+      <img src="images/socrates-owl.png" alt="SOCRATES" class="app-logo">
       <div class="app-name">SOCRATES</div>
       <div class="app-sub">Jestyon Lekòl Ayiti · School Management SaaS</div>
       <p class="app-desc">A bilingual school management system built for Haitian schools — students, teachers, grades, payments, and parent portals, all in one platform. Already live on Vercel.</p>
@@ -252,19 +304,24 @@
       <a href="https://administration-ecole.com" target="_blank" style="display:inline-block;margin-bottom:1rem;font-family:'Bebas Neue',sans-serif;font-size:0.8rem;letter-spacing:0.2em;color:var(--teal-light);text-decoration:none;border:1px solid var(--teal-light);padding:0.5rem 1.25rem;">↗ administration-ecole.com</a><br>
       <span class="app-badge badge-live">Live on Vercel ✓</span>
     </div>
-    <div class="app-visual">
-      <div class="vis-label">Platform Features</div>
-      <div class="feature-pills">
-        <span class="pill">Students</span>
-        <span class="pill">Teachers</span>
-        <span class="pill">Grades + Bulletins</span>
-        <span class="pill">MonCash Payments</span>
-        <span class="pill">Parent Portal</span>
-        <span class="pill">Vercel Hosted</span>
-        <span class="pill">French / Kreyòl</span>
-        <span class="pill">School Admin</span>
-        <span class="pill">Attendance</span>
-        <span class="pill">SaaS Model</span>
+    <div class="app-visual flyer-socrates">
+      <div class="flyer">
+        <div class="flyer-bar"></div>
+        <div class="flyer-body">
+          <img src="images/socrates-owl.png" alt="SOCRATES" class="vis-logo">
+          <div class="flyer-name">SOCRATES</div>
+          <div class="flyer-sub">Jestyon Lekòl · School Management</div>
+          <div class="flyer-rule"></div>
+          <div class="flyer-grid">
+            <div class="flyer-cell"><span class="flyer-cell-icon">🎓</span><span class="flyer-cell-label">Student Management</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">👨‍🏫</span><span class="flyer-cell-label">Teacher Profiles</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">📋</span><span class="flyer-cell-label">Grades & Bulletins</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">💳</span><span class="flyer-cell-label">MonCash Payments</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">👨‍👩‍👧</span><span class="flyer-cell-label">Parent Portal</span></div>
+            <div class="flyer-cell"><span class="flyer-cell-icon">🇫🇷</span><span class="flyer-cell-label">French + Kreyòl</span></div>
+          </div>
+        </div>
+        <div class="flyer-url">↗ administration-ecole.com</div>
       </div>
     </div>
   </div>
@@ -283,5 +340,10 @@
   <p><img src="images/lakou-ati-logo.png" style="height:20px;vertical-align:middle;margin-right:0.5rem;opacity:0.5;" alt=""> © 2025 LavimiyòLLC · Pembroke Pines, FL · contact@lavimiyo.com</p>
 </footer>
 
+<script>
+  document.querySelector('.nav-hamburger').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('open');
+  });
+</script>
 </body>
 </html>

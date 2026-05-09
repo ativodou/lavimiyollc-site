@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="40%" stop-color="#16213e"/>
+      <stop offset="100%" stop-color="#0f3460"/>
+    </linearGradient>
+    <linearGradient id="redBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C0392B"/>
+      <stop offset="100%" stop-color="#E74C3C"/>
+    </linearGradient>
+    <pattern id="gearPattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="60" cy="60" r="25" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.04"/>
+      <circle cx="60" cy="60" r="15" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.04"/>
+      <rect x="57" y="30" width="6" height="12" rx="1" fill="#ffffff" opacity="0.03"/>
+      <rect x="57" y="78" width="6" height="12" rx="1" fill="#ffffff" opacity="0.03"/>
+      <rect x="30" y="57" width="12" height="6" rx="1" fill="#ffffff" opacity="0.03"/>
+      <rect x="78" y="57" width="12" height="6" rx="1" fill="#ffffff" opacity="0.03"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="900" fill="url(#bgGrad)"/>
+  <rect width="600" height="900" fill="url(#gearPattern)"/>
+
+  <!-- Top red accent bar -->
+  <rect x="0" y="0" width="600" height="6" fill="url(#redBar)"/>
+
+  <!-- Opening statement -->
+  <text x="300" y="65" text-anchor="middle" font-family="Arial" font-size="22" fill="#E74C3C" font-weight="bold" font-style="italic">Pat gen liv teknik mekanik nan Kreyòl.</text>
+  <text x="300" y="95" text-anchor="middle" font-family="Arial" font-size="22" fill="#ffffff" font-weight="bold">Genyen kounye a.</text>
+
+  <!-- Divider -->
+  <line x1="200" y1="120" x2="400" y2="120" stroke="#2E75B6" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Description paragraph -->
+  <text x="70" y="160" font-family="Arial" font-size="14" fill="#cccccc" letter-spacing="0.3">
+    <tspan x="70" dy="0">K-VOUM se premye seri liv teknik mekanik otomobil</tspan>
+    <tspan x="70" dy="22">ekri nan Kreyòl Ayisyen — pa yon tradiksyon, men yon</tspan>
+    <tspan x="70" dy="22">liv ki ekri nan lang ou, ak egzanp ou, pou reyalite pa ou.</tspan>
+  </text>
+
+  <!-- What's inside - section -->
+  <text x="70" y="255" font-family="Arial" font-size="16" fill="#2E75B6" font-weight="bold">VOLIM 1: PRENSIP DE BAZ</text>
+  <line x1="70" y1="265" x2="530" y2="265" stroke="#2E75B6" stroke-width="1" opacity="0.3"/>
+
+  <!-- Content bullets with icons -->
+  <!-- Safety -->
+  <text x="90" y="298" font-family="Arial" font-size="22" fill="#E74C3C">⚠</text>
+  <text x="120" y="298" font-family="Arial" font-size="14" fill="#ffffff" font-weight="bold">Sekirite</text>
+  <text x="210" y="298" font-family="Arial" font-size="13" fill="#aaaaaa">— 11 règ ki ka sove lavi ou nan atelye a</text>
+
+  <!-- Tools -->
+  <text x="90" y="332" font-family="Arial" font-size="22" fill="#E74C3C">🔧</text>
+  <text x="120" y="332" font-family="Arial" font-size="14" fill="#ffffff" font-weight="bold">Zouti</text>
+  <text x="210" y="332" font-family="Arial" font-size="13" fill="#aaaaaa">— chak zouti debaz ak espesyalize, byen eksplike</text>
+
+  <!-- Science -->
+  <text x="90" y="366" font-family="Arial" font-size="22" fill="#E74C3C">⚡</text>
+  <text x="120" y="366" font-family="Arial" font-size="14" fill="#ffffff" font-weight="bold">Syans</text>
+  <text x="210" y="366" font-family="Arial" font-size="13" fill="#aaaaaa">— fòs, chalè, likid, elektrisite, chimi nan lang klè</text>
+
+  <!-- Systems -->
+  <text x="90" y="400" font-family="Arial" font-size="22" fill="#E74C3C">🚗</text>
+  <text x="120" y="400" font-family="Arial" font-size="14" fill="#ffffff" font-weight="bold">Sistèm</text>
+  <text x="210" y="400" font-family="Arial" font-size="13" fill="#aaaaaa">— tout 8 fanmi sistèm yon machin, kijan yo konekte</text>
+
+  <!-- Stats bar -->
+  <rect x="70" y="430" width="460" height="40" rx="6" fill="#ffffff" opacity="0.07"/>
+  <text x="300" y="456" text-anchor="middle" font-family="Arial" font-size="13" fill="#ffffff" font-weight="bold">10 Chapit  •  56 Dyagram  •  206 Paj  •  Glosè Trileng  •  Egzèsis + Repons</text>
+
+  <!-- For who -->
+  <text x="70" y="510" font-family="Arial" font-size="13" fill="#888888" font-style="italic">Pou aprantif, mekanisyen, etidyan, ak tout moun ki vle konprann machin.</text>
+  <text x="70" y="535" font-family="Arial" font-size="13" fill="#888888" font-style="italic">Ekri nan lang atelye a reyèlman pale.</text>
+
+  <!-- Divider -->
+  <line x1="70" y1="560" x2="530" y2="560" stroke="#2E75B6" stroke-width="1" opacity="0.3"/>
+
+  <!-- Series listing -->
+  <text x="70" y="590" font-family="Arial" font-size="14" fill="#2E75B6" font-weight="bold">SERI K-VOUM: 15 VOLIM</text>
+
+  <text x="70" y="616" font-family="Arial" font-size="11" fill="#999999">
+    <tspan x="70" dy="0" font-weight="bold" fill="#ffffff">Vol 1: Prensip de Baz ◄ ou la kounye a</tspan>
+    <tspan x="70" dy="18">Vol 2: Motè a Konbistyon Entèn</tspan>
+    <tspan x="300" dy="0">Vol 9: Sispansyon ak Direksyon</tspan>
+    <tspan x="70" dy="16">Vol 3: Sistèm Alimantasyon</tspan>
+    <tspan x="300" dy="0">Vol 10: Motosiklèt</tspan>
+    <tspan x="70" dy="16">Vol 4: Alimaj ak Enjeksyon</tspan>
+    <tspan x="300" dy="0">Vol 11: Sistèm Elektrik Konplè</tspan>
+    <tspan x="70" dy="16">Vol 5: Refwadisman ak Lubrifikasyon</tspan>
+    <tspan x="300" dy="0">Vol 12: Klimatizasyon (AC)</tspan>
+    <tspan x="70" dy="16">Vol 6: Echapman ak Emisyon</tspan>
+    <tspan x="300" dy="0">Vol 13: Dyagnostik Avanse ak OBD</tspan>
+    <tspan x="70" dy="16">Vol 7: Transmisyon ak Anbrayaj</tspan>
+    <tspan x="300" dy="0">Vol 14: Karosri (Body)</tspan>
+    <tspan x="70" dy="16">Vol 8: Sistèm Fren</tspan>
+    <tspan x="300" dy="0">Vol 15: Machin Elektrik ak Ibrid</tspan>
+  </text>
+
+  <!-- Barcode area -->
+  <rect x="360" y="780" width="170" height="100" rx="4" fill="#ffffff"/>
+  <text x="445" y="825" text-anchor="middle" font-family="Courier New" font-size="11" fill="#333">ISBN BARCODE</text>
+  <text x="445" y="845" text-anchor="middle" font-family="Courier New" font-size="9" fill="#666">PLACEHOLDER</text>
+
+  <!-- Publisher logo area -->
+  <text x="70" y="810" font-family="Arial" font-size="20" fill="#ffffff" font-weight="900">K-VOUM</text>
+  <text x="70" y="830" font-family="Arial" font-size="12" fill="#E74C3C" font-style="italic">Mekanisyen sou bon ray</text>
+  <text x="70" y="858" font-family="Arial" font-size="11" fill="#666666">PA GEN PÀN LLC</text>
+
+  <!-- Bottom red accent bar -->
+  <rect x="0" y="894" width="600" height="6" fill="url(#redBar)"/>
+</svg>
