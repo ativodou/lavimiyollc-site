@@ -1,5 +1,34 @@
+# macOS junk
 .DS_Store
 **/.DS_Store
 __MACOSX/
 **/__MACOSX/
+
+# Source / document files — not served by the website
 *.zip
+*.docx
+*.pdf
+*.gdoc
+*.gdocs
+*.pptx
+*.svg
+*.doc
+
+# Unneeded cover variants (site uses cover.png / covers/volXX.png only)
+*WrapCover*
+*_WrapCover*
+bak cover.png
+Vol10_Cover.png
+
+# Build / dev tools
+gen_lang_covers.py
+gen_series_covers.py
+cover_preview.html
+auth_url.txt
+
+# Duplicate zip-extraction subfolders
+bibliyotek/TEKNIK/DIJITAL/DIJITAL/
+bibliyotek/TEKNIK/DLO/DLO/
+bibliyotek/TEKNIK/TI PRIZ/TI PRIZ/
+bibliyotek/TEKNIK/KOUPE KLOURE/KOUPE KLOURE/
+bibliyotek/TEKNIK/TIWÈL/TIWÈL/
