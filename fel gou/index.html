@@ -121,18 +121,52 @@
   .hero-cta { display: inline-flex; align-items: center; gap: 0.75rem; background: var(--gold); color: var(--charcoal); padding: 0.9rem 2.2rem; border-radius: 2rem; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; border: none; font-family: 'Jost', sans-serif; cursor: pointer; transition: background 0.2s, transform 0.15s; position: relative; }
   .hero-cta:hover { background: var(--gold-light); transform: translateY(-2px); }
   /* SPICE GRID */
-  .hero-right { background: linear-gradient(135deg, #3D1A0A, #6B2A10 40%, #8B3A1A); position: relative; display: grid; grid-template-columns: repeat(5,1fr); grid-template-rows: repeat(4,1fr); gap: 2px; overflow: hidden; }
+  .hero-right { background: #1A0A04; position: relative; display: grid; grid-template-columns: repeat(5,1fr); grid-template-rows: repeat(4,1fr); gap: 1px; overflow: hidden; }
   .spice-tile {
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    cursor: pointer; padding: 0.5rem;
-    border: 1px solid rgba(200,137,26,0.15);
-    transition: background 0.2s, transform 0.15s;
+    display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+    cursor: pointer; padding: 0.5rem 0.4rem 0.6rem;
     position: relative; overflow: hidden;
+    transition: transform 0.2s ease;
   }
-  .spice-tile:hover { background: rgba(200,137,26,0.2); transform: scale(1.05); z-index: 2; }
-  .spice-tile-emoji { font-size: 1.6rem; line-height: 1; margin-bottom: 0.2rem; }
-  .spice-tile-name { font-family: 'Cormorant Garamond', serif; font-size: 0.65rem; font-weight: 600; color: var(--cream); text-align: center; line-height: 1.2; letter-spacing: 0.03em; }
-  .spice-tile-kr { font-size: 0.55rem; color: var(--gold-light); font-weight: 400; text-align: center; margin-top: 0.1rem; }
+  /* color layer — swap for background-image when photos are ready */
+  .spice-tile::before {
+    content: ''; position: absolute; inset: 0;
+    background: var(--tile-bg, #3D1A0A);
+    transition: opacity 0.25s;
+  }
+  /* grain texture overlay */
+  .spice-tile::after {
+    content: ''; position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='80' height='80' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+    opacity: 0.6; pointer-events: none;
+  }
+  .spice-tile:hover { transform: scale(1.06); z-index: 2; }
+  .spice-tile:hover::before { opacity: 0.75; }
+  /* gold top accent line */
+  .spice-tile-accent {
+    position: absolute; top: 0; left: 15%; right: 15%; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+    opacity: 0;
+    transition: opacity 0.25s;
+    z-index: 2;
+  }
+  .spice-tile:hover .spice-tile-accent { opacity: 1; }
+  .spice-tile-emoji {
+    font-size: 2rem; line-height: 1;
+    margin-bottom: 0.4rem; position: relative; z-index: 2;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+  }
+  .spice-tile-name {
+    font-family: 'Cormorant Garamond', serif; font-size: 0.62rem; font-weight: 700;
+    color: var(--cream); text-align: center; line-height: 1.2; letter-spacing: 0.06em;
+    text-transform: uppercase; position: relative; z-index: 2;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+  }
+  .spice-tile-kr {
+    font-size: 0.52rem; color: var(--gold-light); font-weight: 400;
+    text-align: center; margin-top: 0.15rem; font-style: italic;
+    position: relative; z-index: 2; opacity: 0.85;
+  }
 
   /* SPICE MODAL */
   .spice-overlay { position: fixed; inset: 0; z-index: 300; background: rgba(30,26,20,0.7); opacity: 0; pointer-events: none; transition: opacity 0.3s; display: flex; align-items: center; justify-content: center; padding: 2rem; }
@@ -938,9 +972,11 @@ const spices=[
 function buildSpiceGrid(){
   const grid=document.getElementById('spice-grid');
   grid.innerHTML=spices.map((s,i)=>`
-    <div class="spice-tile" style="background:${s.bg}" onclick="openSpice(${i})">
+    <div class="spice-tile" style="--tile-bg:${s.bg}" onclick="openSpice(${i})">
+      <div class="spice-tile-accent"></div>
       <span class="spice-tile-emoji">${s.emoji}</span>
       <span class="spice-tile-name">${lang==='ht'?s.ht:s.en}</span>
+      <span class="spice-tile-kr">${lang==='ht'?s.en:s.ht}</span>
     </div>`).join('');
 }
 
