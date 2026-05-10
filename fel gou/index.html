@@ -151,9 +151,11 @@
     z-index: 2;
   }
   .spice-tile:hover .spice-tile-accent { opacity: 1; }
-  .spice-tile.has-photo::before {
-    background-image: var(--tile-img);
+  .spice-tile.has-photo {
     background-size: cover; background-position: center;
+  }
+  .spice-tile.has-photo::before {
+    background: rgba(0,0,0,0.25);
   }
   .spice-tile.has-photo::after {
     background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.08) 55%, rgba(0,0,0,0.45) 100%);
@@ -982,7 +984,7 @@ function buildSpiceGrid(){
   const grid=document.getElementById('spice-grid');
   grid.innerHTML=spices.map((s,i)=>{
     const cls=s.photo?' has-photo':'';
-    const imgStyle=s.photo?`--tile-img:url('images/${s.photo.replace(/ /g,'%20').replace(/è/g,'%C3%A8').replace(/ò/g,'%C3%B2')}');`:'';
+    const imgStyle=s.photo?`background-image:url('images/${s.photo.replace(/ /g,'%20').replace(/è/g,'%C3%A8').replace(/ò/g,'%C3%B2')}');`:'';
     return `<div class="spice-tile${cls}" style="--tile-bg:${s.bg};${imgStyle}" onclick="openSpice(${i})">
       <div class="spice-tile-accent"></div>
       <span class="spice-tile-emoji">${s.emoji}</span>
