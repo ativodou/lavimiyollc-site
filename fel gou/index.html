@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fèl Gou — Epis Ayisyen Otantik / Authentic Haitian Spices">
+<title>Fèl Gou — Epis Ayisyen</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --crimson: #7A1A1A; --crimson-dark: #4E0E0E; --crimson-light: #C44B2B;
+    --gold: #C8891A; --gold-light: #E8B84B; --gold-pale: #F5E6C0;
+    --cream: #FAF4E8; --cream-dark: #EFE5CC; --forest: #2A5C3A;
+    --charcoal: #1E1A14; --warm-gray: #8C7B68; --text-body: #3A2E20;
+    --header-h: 120px;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--text-body); min-height: 100vh; overflow-x: hidden; }
+
+  /* ════════════════════════════════════
+     TOP BAR — lang + tagline
+  ════════════════════════════════════ */
+  .topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 110;
+    height: 36px;
+    background: var(--charcoal);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 3rem;
+  }
+  .topbar-tagline {
+    font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(250,244,232,0.45); font-weight: 400;
+  }
+  .lang-toggle { display: flex; align-items: center; background: rgba(255,255,255,0.07); border-radius: 2rem; border: 1px solid rgba(200,137,26,0.25); overflow: hidden; }
+  .lang-btn { padding: 0.28rem 0.8rem; cursor: pointer; border: none; background: none; color: rgba(250,244,232,0.5); font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; transition: background 0.2s, color 0.2s; }
+  .lang-btn.active { background: var(--crimson); color: var(--cream); border-radius: 2rem; }
+
+  /* ════════════════════════════════════
+     HEADER — clean, no topbar
+  ════════════════════════════════════ */
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    height: 160px;
+    background: var(--cream);
+    border-bottom: 3px solid var(--gold);
+    display: grid;
+    grid-template-columns: 180px 1fr 260px;
+    overflow: visible;
+  }
+
+  /* LEFT — Chef Tony photo only, no background */
+  .header-chef {
+    position: relative;
+    display: flex; align-items: flex-end; justify-content: center;
+    background: none;
+    overflow: visible;
+  }
+  .header-chef-photo {
+    position: absolute; bottom: -20px; left: 50%;
+    transform: translateX(-50%);
+    width: 155px; height: 180px;
+    object-fit: contain; object-position: bottom;
+    mix-blend-mode: multiply;
+    z-index: 10; pointer-events: none;
+  }
+
+  /* CENTER — Brand + Nav */
+  .header-brand {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 0.5rem; padding: 1rem 2rem; position: relative;
+  }
+  .header-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 5vw, 5rem); font-weight: 700; line-height: 1;
+    color: var(--crimson-dark); letter-spacing: 0.04em;
+  }
+  .header-logo span { color: var(--gold); font-style: italic; }
+  .header-nav-links { display: flex; gap: 2rem; list-style: none; }
+  .header-nav-links a {
+    text-decoration: none; font-size: 0.7rem; font-weight: 500;
+    letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--text-body); transition: color 0.2s;
+  }
+  .header-nav-links a:hover { color: var(--crimson); }
+
+  /* RIGHT — Actions */
+  .header-actions {
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 0.85rem; padding: 1rem 2rem;
+  }
+  .lang-toggle { display: flex; align-items: center; background: var(--cream-dark); border-radius: 2rem; border: 1px solid rgba(200,137,26,0.3); overflow: hidden; }
+  .lang-btn { padding: 0.35rem 0.9rem; cursor: pointer; border: none; background: none; color: var(--warm-gray); font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; transition: background 0.2s, color 0.2s; }
+  .lang-btn.active { background: var(--crimson); color: var(--cream); border-radius: 2rem; }
+  .cart-btn { background: var(--crimson); color: var(--cream); border: none; border-radius: 2rem; padding: 0.6rem 1.5rem; font-family: 'Jost', sans-serif; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background 0.2s, transform 0.15s; display: flex; align-items: center; gap: 0.5rem; }
+  .cart-btn:hover { background: var(--crimson-dark); transform: translateY(-1px); }
+  .cart-count { background: var(--gold); color: var(--charcoal); border-radius: 50%; width: 18px; height: 18px; font-size: 0.65rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+
+  /* push content below fixed header */
+  .header-spacer { height: 160px; }
+
+  /* ════════════════════════════════════
+     STRIP
+  ════════════════════════════════════ */
+  .strip { background: var(--charcoal); padding: 0.85rem 0; overflow: hidden; white-space: nowrap; }
+  .strip-inner { display: inline-flex; gap: 3rem; animation: marquee 20s linear infinite; }
+  .strip-inner span { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-light); font-weight: 500; }
+  .strip-inner .dot { color: var(--crimson-light); }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ════════════════════════════════════
+     HERO
+  ════════════════════════════════════ */
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; }
+  .hero-left { background: var(--crimson-dark); display: flex; flex-direction: column; justify-content: center; padding: 6rem 4rem 4rem 5rem; position: relative; }
+  .hero-left::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C8891A' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); opacity: 0.5; }
+  .hero-kicker { font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 1.5rem; font-weight: 500; position: relative; }
+  .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 6vw, 6.5rem); font-weight: 700; color: var(--cream); line-height: 0.92; margin-bottom: 1.8rem; position: relative; }
+  .hero-title em { font-style: italic; color: var(--gold-light); display: block; }
+  .hero-desc { font-size: 0.98rem; font-weight: 300; color: rgba(250,244,232,0.72); line-height: 1.75; max-width: 360px; margin-bottom: 2.5rem; position: relative; }
+  .hero-cta { display: inline-flex; align-items: center; gap: 0.75rem; background: var(--gold); color: var(--charcoal); padding: 0.9rem 2.2rem; border-radius: 2rem; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; border: none; font-family: 'Jost', sans-serif; cursor: pointer; transition: background 0.2s, transform 0.15s; position: relative; }
+  .hero-cta:hover { background: var(--gold-light); transform: translateY(-2px); }
+  /* SPICE GRID */
+  .hero-right { background: linear-gradient(135deg, #3D1A0A, #6B2A10 40%, #8B3A1A); position: relative; display: grid; grid-template-columns: repeat(5,1fr); grid-template-rows: repeat(4,1fr); gap: 2px; overflow: hidden; }
+  .spice-tile {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    cursor: pointer; padding: 0.5rem;
+    border: 1px solid rgba(200,137,26,0.15);
+    transition: background 0.2s, transform 0.15s;
+    position: relative; overflow: hidden;
+  }
+  .spice-tile:hover { background: rgba(200,137,26,0.2); transform: scale(1.05); z-index: 2; }
+  .spice-tile-emoji { font-size: 1.6rem; line-height: 1; margin-bottom: 0.2rem; }
+  .spice-tile-name { font-family: 'Cormorant Garamond', serif; font-size: 0.65rem; font-weight: 600; color: var(--cream); text-align: center; line-height: 1.2; letter-spacing: 0.03em; }
+  .spice-tile-kr { font-size: 0.55rem; color: var(--gold-light); font-weight: 400; text-align: center; margin-top: 0.1rem; }
+
+  /* SPICE MODAL */
+  .spice-overlay { position: fixed; inset: 0; z-index: 300; background: rgba(30,26,20,0.7); opacity: 0; pointer-events: none; transition: opacity 0.3s; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+  .spice-overlay.open { opacity: 1; pointer-events: all; }
+  .spice-modal {
+    background: var(--cream); border-radius: 1.5rem; max-width: 560px; width: 100%;
+    overflow: hidden; transform: scale(0.92) translateY(20px);
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+  }
+  .spice-overlay.open .spice-modal { transform: scale(1) translateY(0); }
+  .spice-modal-header {
+    padding: 2rem 2rem 1.5rem;
+    display: flex; align-items: center; gap: 1.25rem;
+    border-bottom: 1px solid rgba(200,137,26,0.2);
+  }
+  .spice-modal-icon { font-size: 3.5rem; line-height: 1; flex-shrink: 0; }
+  .spice-modal-title-wrap { flex: 1; }
+  .spice-modal-name { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 700; color: var(--crimson-dark); line-height: 1; }
+  .spice-modal-kr { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--warm-gray); margin-top: 0.2rem; }
+  .spice-modal-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--warm-gray); transition: color 0.2s; line-height: 1; flex-shrink: 0; }
+  .spice-modal-close:hover { color: var(--crimson); }
+  .spice-modal-body { padding: 1.5rem 2rem 2rem; display: flex; flex-direction: column; gap: 1.25rem; }
+  .spice-modal-section h4 {
+    font-size: 0.65rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;
+  }
+  .spice-modal-section h4::before { content: ''; display: inline-block; width: 20px; height: 1px; background: var(--gold); }
+  .spice-modal-section p { font-size: 0.88rem; font-weight: 300; color: var(--text-body); line-height: 1.75; }
+  .spice-modal-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+  .spice-tag { background: var(--cream-dark); border: 1px solid rgba(200,137,26,0.3); border-radius: 1rem; padding: 0.2rem 0.7rem; font-size: 0.72rem; color: var(--text-body); font-weight: 500; }
+
+  /* ════════════════════════════════════
+     SECTIONS
+  ════════════════════════════════════ */
+  section { padding: 5rem; }
+  .section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 3rem; border-bottom: 1px solid rgba(200,137,26,0.3); padding-bottom: 1.5rem; }
+  .section-head h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 700; color: var(--crimson-dark); line-height: 1; }
+  .section-head h2 .accent { color: var(--gold); font-style: italic; }
+  .section-kicker { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--warm-gray); font-weight: 500; }
+
+  /* PRODUCTS */
+  .products { background: var(--cream); }
+  .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2rem; }
+  .product-card { background: #fff; border-radius: 1rem; overflow: hidden; border: 1px solid rgba(200,137,26,0.15); transition: transform 0.25s, box-shadow 0.25s; }
+  .product-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(78,14,14,0.12); }
+  .product-img { height: 200px; display: flex; align-items: center; justify-content: center; font-size: 4.5rem; position: relative; }
+  .product-badge { position: absolute; top: 0.75rem; right: 0.75rem; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; padding: 0.25rem 0.6rem; border-radius: 1rem; }
+  .badge-new { background: var(--forest); color: #fff; }
+  .badge-hot { background: var(--crimson); color: #fff; }
+  .badge-bs { background: var(--gold); color: var(--charcoal); }
+  .product-body { padding: 1.25rem; }
+  .product-origin { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--warm-gray); font-weight: 500; margin-bottom: 0.3rem; }
+  .product-name { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 700; color: var(--crimson-dark); margin-bottom: 0.3rem; line-height: 1.1; }
+  .product-sub { font-size: 0.8rem; font-weight: 300; color: var(--warm-gray); margin-bottom: 0.6rem; font-style: italic; }
+  .product-desc { font-size: 0.82rem; color: var(--text-body); line-height: 1.6; margin-bottom: 0.75rem; }
+  .chef-seal { display: flex; justify-content: center; margin: 0.5rem 0 0.75rem; }
+  .chef-seal svg { width: 90px; height: 90px; }
+  .product-footer { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(200,137,26,0.15); padding-top: 1rem; }
+  .product-price { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 700; color: var(--crimson); }
+  .product-price small { font-size: 0.8rem; color: var(--warm-gray); font-weight: 400; font-family: 'Jost', sans-serif; }
+  .add-btn { background: var(--crimson); color: var(--cream); border: none; border-radius: 2rem; padding: 0.5rem 1.2rem; font-family: 'Jost', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: background 0.18s, transform 0.15s; }
+  .add-btn:hover { background: var(--crimson-dark); transform: scale(1.04); }
+  .add-btn.added { background: var(--forest); }
+
+  /* FEATURES */
+  .features { background: var(--crimson-dark); padding: 4rem 5rem; }
+  .features-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 2rem; }
+  .feature-item { text-align: center; }
+  .feature-icon { font-size: 2rem; margin-bottom: 0.75rem; display: block; }
+  .feature-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 700; color: var(--gold-light); margin-bottom: 0.3rem; }
+  .feature-desc { font-size: 0.8rem; font-weight: 300; color: rgba(250,244,232,0.6); line-height: 1.6; }
+
+  /* STORY */
+  .story { background: var(--cream-dark); display: grid; grid-template-columns: 1fr 1fr; padding: 0; }
+  .story-img { background: radial-gradient(ellipse at center, #8B3A1A, #3D1A0A); min-height: 480px; display: flex; align-items: center; justify-content: center; font-size: 8rem; position: relative; overflow: hidden; }
+  .story-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, transparent 70%, var(--cream-dark)); }
+  .story-text { padding: 5rem 4rem; display: flex; flex-direction: column; justify-content: center; }
+  .story-text .section-kicker { margin-bottom: 1rem; }
+  .story-text h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3vw, 2.8rem); font-weight: 700; color: var(--crimson-dark); line-height: 1.15; margin-bottom: 1.5rem; }
+  .story-text p { font-size: 0.92rem; font-weight: 300; color: var(--text-body); line-height: 1.85; margin-bottom: 1rem; max-width: 440px; }
+
+  /* CHEF FULL SECTION */
+  .chef-section { background: var(--charcoal); display: grid; grid-template-columns: 420px 1fr; min-height: 520px; overflow: hidden; }
+  .chef-visual { background: radial-gradient(ellipse at 30% 60%, #6B2A10, #2A0D0D 60%, #1A0808); display: flex; align-items: flex-end; justify-content: center; position: relative; overflow: hidden; padding-top: 3rem; }
+  .chef-visual::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C8891A' fill-opacity='0.04'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E"); }
+  .chef-avatar-wrap { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; }
+
+  /* Large photo in chef section — swap src with real photo */
+  .chef-avatar-img {
+    width: 240px; height: 240px; border-radius: 50%;
+    border: 4px solid var(--gold);
+    object-fit: cover;
+    background: radial-gradient(circle at 35% 35%, #C44B2B, #7A1A1A, #3D0A0A);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 7rem;
+    box-shadow: 0 0 0 8px rgba(200,137,26,0.15), 0 0 0 16px rgba(200,137,26,0.07);
+    position: relative; overflow: hidden;
+  }
+  .chef-avatar-img img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+  .chef-badge-seal { position: absolute; bottom: -10px; right: -10px; width: 76px; height: 76px; background: var(--gold); border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 3px solid var(--charcoal); box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+  .seal-icon { font-size: 1.1rem; }
+  .seal-text { font-size: 0.4rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--charcoal); line-height: 1.2; padding: 0 4px; }
+  .chef-ribbon { background: var(--gold); color: var(--charcoal); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 0.4rem 2.2rem; margin-top: 1.5rem; position: relative; z-index: 2; clip-path: polygon(8px 0%, calc(100% - 8px) 0%, 100% 50%, calc(100% - 8px) 100%, 8px 100%, 0% 50%); }
+  .chef-content { padding: 4rem 4.5rem; display: flex; flex-direction: column; justify-content: center; }
+  .chef-kicker { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-light); font-weight: 500; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.6rem; }
+  .chef-kicker::before { content: ''; display: inline-block; width: 28px; height: 1px; background: var(--gold); }
+  .chef-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 4vw, 3.5rem); font-weight: 700; color: var(--cream); line-height: 0.95; margin-bottom: 0.5rem; }
+  .chef-name em { font-style: italic; color: var(--gold-light); }
+  .chef-title-tag { display: inline-flex; align-items: center; background: rgba(200,137,26,0.15); border: 1px solid rgba(200,137,26,0.3); border-radius: 2rem; padding: 0.35rem 1rem; font-size: 0.72rem; font-weight: 500; color: var(--gold-light); letter-spacing: 0.06em; margin-bottom: 2rem; width: fit-content; }
+  .chef-bio { font-size: 0.92rem; font-weight: 300; color: rgba(250,244,232,0.72); line-height: 1.85; margin-bottom: 1rem; max-width: 500px; }
+  .chef-quote { border-left: 3px solid var(--gold); padding-left: 1.25rem; margin: 1.75rem 0; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-style: italic; color: var(--cream); line-height: 1.5; max-width: 440px; }
+  .chef-stats { display: flex; gap: 2.5rem; margin-top: 0.5rem; }
+  .chef-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 700; color: var(--gold-light); display: block; line-height: 1; margin-bottom: 0.2rem; }
+  .chef-stat-label { font-size: 0.7rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(250,244,232,0.45); }
+
+  /* TESTIMONIALS */
+  .testimonials { background: var(--cream); }
+  .testimonial-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+  .testimonial-card { background: #fff; border-radius: 1rem; padding: 1.75rem; border: 1px solid rgba(200,137,26,0.15); position: relative; }
+  .testimonial-card::before { content: '\201C'; font-family: 'Cormorant Garamond', serif; font-size: 5rem; color: var(--gold-pale); position: absolute; top: 0.5rem; left: 1rem; line-height: 1; }
+  .testimonial-text { font-size: 0.88rem; color: var(--text-body); line-height: 1.75; margin-bottom: 1.25rem; padding-top: 2rem; font-style: italic; }
+  .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
+  .author-avatar { width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 600; color: var(--cream); background: var(--crimson); flex-shrink: 0; }
+  .author-name { font-size: 0.82rem; font-weight: 600; color: var(--charcoal); }
+  .author-loc { font-size: 0.72rem; color: var(--warm-gray); }
+  .stars { color: var(--gold); font-size: 0.7rem; }
+
+  /* FOOTER */
+  footer { background: var(--charcoal); padding: 4rem 5rem 2rem; color: rgba(250,244,232,0.6); }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+  .footer-brand .nav-logo { font-size: 2rem; margin-bottom: 1rem; display: block; }
+  .footer-brand p { font-size: 0.82rem; font-weight: 300; line-height: 1.75; max-width: 280px; }
+  .footer-col h4 { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-light); font-weight: 600; margin-bottom: 1.2rem; }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { font-size: 0.82rem; margin-bottom: 0.6rem; cursor: pointer; transition: color 0.2s; }
+  .footer-col ul li:hover { color: var(--cream); }
+  .footer-bottom { border-top: 1px solid rgba(200,137,26,0.2); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+  .footer-bottom p { font-size: 0.75rem; }
+
+  /* CART */
+  .cart-overlay { position: fixed; inset: 0; z-index: 200; background: rgba(30,26,20,0.55); opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+  .cart-overlay.open { opacity: 1; pointer-events: all; }
+  .cart-panel { position: fixed; top: 0; right: 0; bottom: 0; z-index: 201; width: 420px; background: var(--cream); transform: translateX(100%); transition: transform 0.35s cubic-bezier(.4,0,.2,1); display: flex; flex-direction: column; }
+  .cart-panel.open { transform: translateX(0); }
+  .cart-header { padding: 1.5rem 1.75rem; border-bottom: 1px solid rgba(200,137,26,0.2); display: flex; align-items: center; justify-content: space-between; }
+  .cart-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 700; color: var(--crimson-dark); }
+  .close-cart { background: none; border: none; cursor: pointer; font-size: 1.4rem; color: var(--warm-gray); transition: color 0.2s; line-height: 1; }
+  .close-cart:hover { color: var(--crimson); }
+  .cart-items { flex: 1; overflow-y: auto; padding: 1rem 1.75rem; }
+  .cart-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 1rem; color: var(--warm-gray); }
+  .cart-empty span { font-size: 3rem; }
+  .cart-empty p { font-size: 0.9rem; font-weight: 300; font-style: italic; }
+  .cart-item { display: flex; align-items: center; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid rgba(200,137,26,0.15); }
+  .cart-item-icon { width: 54px; height: 54px; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; background: var(--cream-dark); flex-shrink: 0; }
+  .cart-item-info { flex: 1; }
+  .cart-item-name { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 700; color: var(--crimson-dark); margin-bottom: 0.15rem; }
+  .cart-item-qty { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem; }
+  .qty-btn { width: 22px; height: 22px; background: var(--cream-dark); border: 1px solid rgba(200,137,26,0.3); border-radius: 50%; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--crimson); font-weight: 600; transition: background 0.15s; }
+  .qty-btn:hover { background: var(--gold-pale); }
+  .qty-num { font-size: 0.85rem; font-weight: 500; min-width: 18px; text-align: center; }
+  .cart-item-price { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 700; color: var(--crimson); flex-shrink: 0; }
+  .remove-item { background: none; border: none; cursor: pointer; color: rgba(200,137,26,0.5); font-size: 1rem; transition: color 0.2s; padding: 0.25rem; }
+  .remove-item:hover { color: var(--crimson); }
+  .cart-footer { padding: 1.25rem 1.75rem; border-top: 1px solid rgba(200,137,26,0.2); background: #fff; }
+  .cart-sub-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem; }
+  .cart-sub-row span { font-size: 0.8rem; color: var(--warm-gray); }
+  .cart-total-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(200,137,26,0.15); }
+  .cart-total-row strong { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 700; color: var(--crimson-dark); }
+  .total-price { font-family: 'Cormorant Garamond', serif; font-size: 1.75rem; font-weight: 700; color: var(--crimson); }
+  .checkout-btn { width: 100%; background: var(--crimson); color: var(--cream); border: none; border-radius: 2rem; padding: 1rem; font-family: 'Jost', sans-serif; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; }
+  .checkout-btn:hover { background: var(--crimson-dark); }
+  .toast { position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%) translateY(100px); background: var(--forest); color: #fff; padding: 0.75rem 1.5rem; border-radius: 2rem; font-size: 0.82rem; font-weight: 500; z-index: 300; transition: transform 0.3s cubic-bezier(.4,0,.2,1); white-space: nowrap; }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+
+  /* ── HAMBURGER ── */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.25rem; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--crimson); border-radius: 2px; transition: all 0.3s; }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .mobile-menu {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--cream); z-index: 500;
+    flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu-close { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--warm-gray); }
+  .mobile-menu a { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 700; color: var(--crimson-dark); text-decoration: none; letter-spacing: 0.05em; }
+  .mobile-menu a:hover { color: var(--gold); }
+  .mobile-lang-toggle { display: flex; align-items: center; background: var(--cream-dark); border-radius: 2rem; border: 1px solid rgba(200,137,26,0.3); overflow: hidden; margin-top: 1rem; }
+
+  @media (max-width: 900px) {
+    /* HEADER */
+    header { grid-template-columns: 120px 1fr auto; height: 110px; overflow: visible; }
+    .header-chef { overflow: hidden; }
+    .header-chef-photo { width: 155px; height: 180px; bottom: -20px; mix-blend-mode: multiply; }
+    .header-brand { padding: 0.5rem 1rem; gap: 0.25rem; border: none; }
+    .header-logo { font-size: 2rem; }
+    .header-nav-links { display: none; }
+    .header-actions { padding: 0.5rem 1rem; gap: 0.5rem; flex-direction: row; align-items: center; justify-content: flex-end; }
+    .lang-toggle { display: flex; }
+    .lang-btn { padding: 0.3rem 0.65rem; font-size: 0.65rem; }
+    .cart-btn span:not(.cart-count) { display: none; }
+    .cart-btn { padding: 0.5rem 0.75rem; }
+    .hamburger { display: flex; }
+    .header-spacer { height: 90px; }
+
+    /* HERO */
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-left { padding: 3rem 1.5rem 2.5rem; }
+    .hero-right { height: 280px; grid-template-columns: repeat(5,1fr); grid-template-rows: repeat(4,1fr); }
+    .spice-tile-name { font-size: 0.52rem; }
+    .spice-tile-emoji { font-size: 1.2rem; }
+
+    /* SECTIONS */
+    section { padding: 2.5rem 1.25rem; }
+    .section-head { flex-direction: column; gap: 0.25rem; }
+
+    /* PRODUCTS */
+    .product-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .product-img { height: 150px; font-size: 3rem; }
+    .product-body { padding: 0.9rem; }
+    .product-name { font-size: 1.1rem; }
+    .product-desc { font-size: 0.76rem; }
+
+    /* FEATURES */
+    .features { padding: 2.5rem 1.25rem; }
+    .features-grid { grid-template-columns: repeat(2,1fr); gap: 1.25rem; }
+
+    /* STORY */
+    .story { grid-template-columns: 1fr; }
+    .story-img { display: none; }
+    .story-text { padding: 2.5rem 1.25rem; }
+
+    /* CHEF SECTION */
+    .chef-section { grid-template-columns: 1fr; }
+    .chef-visual { min-height: 260px; padding: 1.5rem; align-items: center; }
+    .chef-avatar-img { width: 180px; height: 180px; font-size: 5rem; }
+    .chef-content { padding: 2rem 1.25rem; }
+    .chef-stats { gap: 1.25rem; flex-wrap: wrap; }
+    .chef-quote { font-size: 1rem; }
+
+    /* TESTIMONIALS */
+    .testimonial-grid { grid-template-columns: 1fr; gap: 1rem; }
+
+    /* FOOTER */
+    .footer-top { grid-template-columns: 1fr; gap: 2rem; padding: 0; }
+    footer { padding: 3rem 1.25rem 2rem; }
+    .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+
+    /* CART */
+    .cart-panel { width: 100%; }
+
+    /* SPICE MODAL */
+    .spice-overlay { padding: 1rem; align-items: flex-end; }
+    .spice-modal { border-radius: 1.5rem 1.5rem 0 0; max-width: 100%; }
+
+    /* STRIP */
+    .strip { padding: 0.65rem 0; }
+  }
+
+  @media (max-width: 480px) {
+    .product-grid { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr; }
+    .hero-right { height: 220px; }
+    .spice-tile-name { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <!-- LEFT: Chef Tony photo only -->
+  <div class="header-chef">
+    <img class="header-chef-photo" src="images/chef-tony.png" alt="Chef Tony Desmornes">
+  </div>
+
+  <!-- CENTER: Brand + Nav -->
+  <div class="header-brand">
+    <div class="header-logo">Fèl <span>Gou</span></div>
+    <ul class="header-nav-links">
+      <li><a href="#products" data-i18n="nav.spices"></a></li>
+      <li><a href="#story" data-i18n="nav.story"></a></li>
+      <li><a href="#chef" data-i18n="nav.chef"></a></li>
+      <li><a href="#testimonials" data-i18n="nav.reviews"></a></li>
+    </ul>
+  </div>
+
+  <!-- RIGHT: Actions -->
+  <div class="header-actions">
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('ht')">KR</button>
+      <button class="lang-btn" onclick="setLang('en')">EN</button>
+    </div>
+    <button class="cart-btn" onclick="toggleCart()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+      <span data-i18n="nav.cart"></span>
+      <span class="cart-count" id="cart-count">0</span>
+    </button>
+    <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-menu-close" onclick="toggleMobileMenu()">✕</button>
+  <a href="#products" data-i18n="nav.spices" onclick="toggleMobileMenu()"></a>
+  <a href="#story" data-i18n="nav.story" onclick="toggleMobileMenu()"></a>
+  <a href="#chef" data-i18n="nav.chef" onclick="toggleMobileMenu()"></a>
+  <a href="#testimonials" data-i18n="nav.reviews" onclick="toggleMobileMenu()"></a>
+  <div style="display:flex;align-items:center;background:#EFE5CC;border-radius:2rem;border:1px solid rgba(200,137,26,0.3);overflow:hidden;margin-top:1rem;">
+    <button style="padding:0.5rem 1.2rem;cursor:pointer;border:none;background:none;color:#8C7B68;font-family:Jost,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:0.1em;" onclick="setLang('ht');toggleMobileMenu()" id="mob-kr">KR</button>
+    <button style="padding:0.5rem 1.2rem;cursor:pointer;border:none;background:none;color:#8C7B68;font-family:Jost,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:0.1em;" onclick="setLang('en');toggleMobileMenu()" id="mob-en">EN</button>
+  </div>
+</div>
+
+<div class="header-spacer"></div>
+
+<!-- STRIP -->
+<div class="strip"><div class="strip-inner" id="strip-inner"></div></div>
+
+<!-- HERO -->
+<section class="hero" style="padding:0;" id="home">
+  <div class="hero-left">
+    <p class="hero-kicker" data-i18n="hero.kicker"></p>
+    <h1 class="hero-title">
+      <span data-i18n="hero.line1"></span>
+      <em data-i18n="hero.line2"></em>
+      <span data-i18n="hero.line3"></span>
+    </h1>
+    <p class="hero-desc" data-i18n="hero.desc"></p>
+    <button class="hero-cta" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+      <span data-i18n="hero.cta"></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:15px;height:15px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+  <div class="hero-right" id="spice-grid"></div>
+</section>
+
+<!-- SPICE MODAL -->
+<div class="spice-overlay" id="spice-overlay" onclick="closeSpice(event)">
+  <div class="spice-modal" id="spice-modal">
+    <div class="spice-modal-header">
+      <span class="spice-modal-icon" id="modal-icon"></span>
+      <div class="spice-modal-title-wrap">
+        <div class="spice-modal-name" id="modal-name"></div>
+        <div class="spice-modal-kr" id="modal-kr"></div>
+      </div>
+      <button class="spice-modal-close" onclick="closeSpiceBtn()">✕</button>
+    </div>
+    <div class="spice-modal-body">
+      <div class="spice-modal-section">
+        <h4 id="modal-desc-label"></h4>
+        <p id="modal-desc"></p>
+      </div>
+      <div class="spice-modal-section">
+        <h4 id="modal-uses-label"></h4>
+        <div class="spice-modal-tags" id="modal-uses"></div>
+      </div>
+      <div class="spice-modal-section">
+        <h4 id="modal-benefits-label"></h4>
+        <p id="modal-benefits"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="section-head">
+    <h2><span data-i18n="products.h1"></span> <span class="accent" data-i18n="products.h2"></span></h2>
+    <span class="section-kicker" data-i18n="products.kicker"></span>
+  </div>
+  <div class="product-grid" id="product-grid"></div>
+</section>
+
+<!-- FEATURES -->
+<div class="features">
+  <div class="features-grid">
+    <div class="feature-item"><span class="feature-icon">🌱</span><p class="feature-title" data-i18n="feat.1.t"></p><p class="feature-desc" data-i18n="feat.1.d"></p></div>
+    <div class="feature-item"><span class="feature-icon">✈️</span><p class="feature-title" data-i18n="feat.2.t"></p><p class="feature-desc" data-i18n="feat.2.d"></p></div>
+    <div class="feature-item"><span class="feature-icon">🤝</span><p class="feature-title" data-i18n="feat.3.t"></p><p class="feature-desc" data-i18n="feat.3.d"></p></div>
+    <div class="feature-item"><span class="feature-icon">♻️</span><p class="feature-title" data-i18n="feat.4.t"></p><p class="feature-desc" data-i18n="feat.4.d"></p></div>
+  </div>
+</div>
+
+<!-- STORY -->
+<div class="story" id="story">
+  <div class="story-img">🌺</div>
+  <div class="story-text">
+    <span class="section-kicker" data-i18n="story.kicker"></span>
+    <h2 data-i18n="story.title"></h2>
+    <p data-i18n="story.p1"></p>
+    <p data-i18n="story.p2"></p>
+    <p data-i18n="story.p3"></p>
+  </div>
+</div>
+
+<!-- CHEF FULL SECTION -->
+<div class="chef-section" id="chef">
+  <div class="chef-visual">
+    <div class="chef-avatar-wrap">
+      <div class="chef-avatar-img" style="background:none;border:none;box-shadow:none;width:320px;height:320px;border-radius:0;"><img src="images/chef-tony.png" alt="Chef Tony Desmornes" style="width:100%;height:100%;object-fit:contain;border-radius:0;">
+        <div class="chef-badge-seal">
+          <span class="seal-icon">⭐</span>
+          <span class="seal-text" data-i18n="chef.seal"></span>
+        </div>
+      </div>
+      <div class="chef-ribbon" data-i18n="chef.ribbon"></div>
+    </div>
+  </div>
+  <div class="chef-content">
+    <p class="chef-kicker" data-i18n="chef.kicker"></p>
+    <h2 class="chef-name">Chef Tony<br><em>Desmornes</em></h2>
+    <div class="chef-title-tag" data-i18n="chef.tag"></div>
+    <p class="chef-bio" data-i18n="chef.bio1"></p>
+    <p class="chef-bio" data-i18n="chef.bio2"></p>
+    <blockquote class="chef-quote" data-i18n="chef.quote"></blockquote>
+    <div class="chef-stats">
+      <div><span class="chef-stat-num">20+</span><span class="chef-stat-label" data-i18n="chef.s1"></span></div>
+      <div><span class="chef-stat-num">8</span><span class="chef-stat-label" data-i18n="chef.s2"></span></div>
+      <div><span class="chef-stat-num">100%</span><span class="chef-stat-label" data-i18n="chef.s3"></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="section-head">
+    <h2><span data-i18n="rev.h1"></span> <span class="accent" data-i18n="rev.h2"></span></h2>
+    <span class="section-kicker" data-i18n="rev.kicker"></span>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial-card"><p class="testimonial-text" data-i18n="rev.1.t"></p><div class="testimonial-author"><div class="author-avatar">MJ</div><div><p class="author-name">Marie-Jeanne Dorsainvil</p><p class="author-loc">Miami, FL — <span class="stars">★★★★★</span></p></div></div></div>
+    <div class="testimonial-card"><p class="testimonial-text" data-i18n="rev.2.t"></p><div class="testimonial-author"><div class="author-avatar">RP</div><div><p class="author-name">Rodrigue Pierre-Louis</p><p class="author-loc">Brooklyn, NY — <span class="stars">★★★★★</span></p></div></div></div>
+    <div class="testimonial-card"><p class="testimonial-text" data-i18n="rev.3.t"></p><div class="testimonial-author"><div class="author-avatar">CB</div><div><p class="author-name">Claudette Beaubrun</p><p class="author-loc">Montreal, QC — <span class="stars">★★★★★</span></p></div></div></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand"><span class="nav-logo">Fèl <span>Gou</span></span><p data-i18n="foot.tag"></p></div>
+    <div class="footer-col"><h4 data-i18n="foot.c1h"></h4><ul><li data-i18n="foot.c1.1"></li><li data-i18n="foot.c1.2"></li><li data-i18n="foot.c1.3"></li><li data-i18n="foot.c1.4"></li></ul></div>
+    <div class="footer-col"><h4 data-i18n="foot.c2h"></h4><ul><li data-i18n="foot.c2.1"></li><li data-i18n="foot.c2.2"></li><li data-i18n="foot.c2.3"></li><li data-i18n="foot.c2.4"></li></ul></div>
+    <div class="footer-col"><h4 data-i18n="foot.c3h"></h4><ul><li data-i18n="foot.c3.1"></li><li data-i18n="foot.c3.2"></li><li data-i18n="foot.c3.3"></li><li data-i18n="foot.c3.4"></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p data-i18n="foot.copy"></p>
+    <p style="font-size:0.72rem;letter-spacing:0.1em;color:rgba(250,244,232,0.3);">MIAMI · PÒ-O-PRENS · MONTRÉAL</p>
+  </div>
+</footer>
+
+<!-- CART -->
+<div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+<div class="cart-panel" id="cart-panel">
+  <div class="cart-header"><span class="cart-title" id="cart-title-el"></span><button class="close-cart" onclick="toggleCart()">✕</button></div>
+  <div class="cart-items" id="cart-items-list"><div class="cart-empty"><span>🛒</span><p id="cart-empty-el"></p></div></div>
+  <div class="cart-footer" id="cart-footer" style="display:none;">
+    <div class="cart-sub-row"><span id="cart-sub-label"></span><span id="cart-sub-val">$0.00</span></div>
+    <div class="cart-sub-row"><span id="cart-ship-label"></span><span style="color:var(--forest);font-weight:600;" id="cart-free-label"></span></div>
+    <div class="cart-total-row"><strong id="cart-total-label"></strong><span class="total-price" id="cart-total-val">$0.00</span></div>
+    <button class="checkout-btn" id="checkout-btn-el"></button>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ══════════════════════════════════════
+   TRANSLATIONS
+══════════════════════════════════════ */
+const T = {
+  ht: {
+    'topbar.tag': 'Epis Otantik Peyi Dayiti — Livrezon nan tout Amerik',
+    'nav.spices':'Epis','nav.story':'Istwa Nou','nav.chef':'Chef Desmornes','nav.reviews':'Opinyon','nav.cart':'Panye',
+    'chef.bar.title':'Chèf Ekspè Sertifye · Testè Ofisyèl',
+    'chef.bar.quote':'"Kalite se pa opsyon — se pwomès nou a chak kliyan."',
+    'chef.bar.seal':'Apwouve pa Chef Tony',
+    'hero.kicker':'✦ Epis Otantik Peyi Dayiti',
+    'hero.line1':'Gou','hero.line2':'Véritable','hero.line3':'Dayiti',
+    'hero.desc':'Epis ki pouse ak men nan mòn Ayiti, seche anba solèy epi kondisyone pou konsève chak nüans gou yo.',
+    'hero.cta':'Dekouvri Epis Nou',
+    'orb.1':'Piman Bouk','orb.2':'Epis Vèt','orb.3':'Kanèl','orb.4':'Jiwòf',
+    'products.h1':'Epis','products.h2':'Nou Yo','products.kicker':'Séleksyon Atizanal',
+    'badge.new':'Nouvo','badge.hot':'🔥 Cho','badge.bs':'Pi Vann',
+    'p.unit':'/ boutèy','p.add':'+ Ajoute','p.added':'✓ Ajoute','p.chef':'Chef Tony Desmornes',
+    'feat.1.t':'100% Natirèl','feat.1.d':'San pwodwi chimik. Sèlman richès nati Ayiti.',
+    'feat.2.t':'Livrezon Rapid','feat.2.d':'Ekspedisyon depi Miami anba 48è nan tout Amerik.',
+    'feat.3.t':'Komès Etik','feat.3.d':'Agrikiltè ayisyen yo resevwa salè ki jis.',
+    'feat.4.t':'Pakaj Eko','feat.4.d':'Boutèy ki ka itilize ankò, zèro plastik.',
+    'story.kicker':'Misyon Nou','story.title':'Nanm Kwizin Ayisyen nan Kizin Ou',
+    'story.p1':'Fèl Gou — « gou ki fò » an kreyòl ayisyen — te fèt ak yon sèl désir: pataje trezò awomat Ayiti ak tout mond lan.',
+    'story.p2':'Epis nou yo soti nan ti agrikiltè nan rejyon Jakmèl, Okay ak Latibonit. Chak rekòt ap rekolte ak men, seche anba solèy twopikal epi kondisyone pou prezève tout konpleksite awomat li yo.',
+    'story.p3':'Dèyè chak boutèy, gen yon fanmi ayisyen, yon tradisyon santèn, ak lanmou yon zile jenerè.',
+    'chef.seal':'Chef\nApwouve','chef.ribbon':'Chèf Ekspè Sertifye','chef.kicker':'Garanti Kalite',
+    'chef.tag':'✦ Chèf Fòme & Dekoré · Testè Ofisyèl Fèl Gou',
+    'chef.bio1':'Chak epis ki vann anba mak Fèl Gou pase anba men ekspè Chef Tony Desmornes anvan li rive nan kizin ou. Fòme nan pi gwo lekòl kulinè yo epi primé pou travay li sou gastronomie ayisyen kontanporen, Chef Tony se gadyen enfleksib estanda kalite nou yo.',
+    'chef.bio2':'Pwosesis evalyasyon li a gen ladan tès awomat, degustasyon kri, eprèv kwit manje ak verifikasyon orijin. Sèlman lo ki satisfè egzijans li yo resevwa apwobasyon li.',
+    'chef.quote':'« Yon epis de kalite, se diferans ant yon plat òdinè ak yon plat memorab. Zansèt nou yo te konn sa. Wòl mwen se pwouve li nan chak boutèy. »',
+    'chef.s1':'Ane eksperyans','chef.s2':'Dekorasyon resevwa','chef.s3':'Pwodwi teste',
+    'rev.h1':'Yo','rev.h2':'Fè Konfyans Nou','rev.kicker':'Opinyon Verifye',
+    'rev.1.t':'Epis la se egzakteman tankou sa grann mwen te prepare an Ayiti. Yon gou enkwayab, enposib jwenn lòt kote nan Etazini.',
+    'rev.2.t':'Piman bouk seche a se yon kalite eksepsyonèl. Jis sa ki fò ak pafimen. Griyò mwen pa t janm goute konsa !',
+    'rev.3.t':'M ap kòmande chak mwa depi sis mwa. Pakaj la bèl, epis yo fre, sèvis kliyan eksèlan. Mèsi Fèl Gou !',
+    'foot.tag':'Epis ayisyen otantik, kiltive ak lanmou, livre nan pòt ou. Gou Ayiti, tout kote nan mond lan.',
+    'foot.c1h':'Boutik','foot.c1.1':'Tout epis yo','foot.c1.2':'Bwat kado','foot.c1.3':'Abònman mansyèl','foot.c1.4':'Epis ra',
+    'foot.c2h':'Enfòmasyon','foot.c2.1':'Istwa nou','foot.c2.2':'Agrikiltè nou yo','foot.c2.3':'Blòg resèt','foot.c2.4':'Laprès',
+    'foot.c3h':'Sipò','foot.c3.1':'Kontakte nou','foot.c3.2':'Livrezon','foot.c3.3':'Retounen','foot.c3.4':'FAQ',
+    'foot.copy':'© 2025 Fèl Gou. Tout dwa rezève. · Fèt ak ❤️ pou dyaspora ayisyen an.',
+    'cart.title':'Panye Mwen','cart.empty':'Panye ou vid','cart.sub':'Sou-total','cart.ship':'Livrezon','cart.free':'Gratis','cart.total':'Total','cart.checkout':'Pase Kòmand →',
+    'toast':'ajoute nan panye!',
+    'strip':['Epis Ayisyen','✦','Livrezon Gratis','✦','Kalite Atizanal','✦','Rekolte ak Men','✦','100% Natirèl','✦','Apwouve Chef Tony','✦'],
+  },
+  en: {
+    'topbar.tag': 'Authentic Haitian Spices — Shipping across the Americas',
+    'nav.spices':'Spices','nav.story':'Our Story','nav.chef':'Chef Desmornes','nav.reviews':'Reviews','nav.cart':'Cart',
+    'chef.bar.title':'Certified Culinary Expert · Official Tester',
+    'chef.bar.quote':'"Quality is not optional — it is our promise to every customer."',
+    'chef.bar.seal':'Approved by Chef Tony',
+    'hero.kicker':'✦ Authentic Spices from Haiti',
+    'hero.line1':'The True','hero.line2':'Taste of','hero.line3':'Haiti',
+    'hero.desc':'Hand-harvested spices from the mountains of Haiti, sun-dried and carefully packaged to preserve every note of flavor.',
+    'hero.cta':'Explore Our Spices',
+    'orb.1':'Scotch Bonnet','orb.2':'Green Epis','orb.3':'Cinnamon','orb.4':'Cloves',
+    'products.h1':'Our','products.h2':'Spices','products.kicker':'Artisan Selection',
+    'badge.new':'New','badge.hot':'🔥 Hot','badge.bs':'Best Seller',
+    'p.unit':'/ jar','p.add':'+ Add','p.added':'✓ Added','p.chef':'Chef Tony Desmornes',
+    'feat.1.t':'100% Natural','feat.1.d':'No preservatives or additives. Only the riches of Haitian nature.',
+    'feat.2.t':'Fast Shipping','feat.2.d':'Ships from Miami within 48h across the Americas.',
+    'feat.3.t':'Ethical Trade','feat.3.d':'Haitian farmers receive fair wages for their work.',
+    'feat.4.t':'Eco Packaging','feat.4.d':'Reusable jars, recycled cardboard, zero plastic.',
+    'story.kicker':'Our Mission','story.title':'The Soul of Haitian Cuisine, in Your Kitchen',
+    'story.p1':'Fèl Gou — meaning "strong flavor" in Haitian Creole — was born from a simple desire: to share the aromatic treasures of Haiti with the world.',
+    'story.p2':'Our spices come from small farmers in the regions of Jacmel, Les Cayes, and the Artibonite. Each harvest is hand-picked, dried under the tropical sun, and packaged to preserve the full complexity of its aromas.',
+    'story.p3':'Behind every jar is a Haitian family, a century-old tradition, and the love of a generous island.',
+    'chef.seal':'Chef\nApproved','chef.ribbon':'Certified Culinary Expert','chef.kicker':'Quality Guarantee',
+    'chef.tag':'✦ Trained & Decorated Chef · Official Tester of Fèl Gou',
+    'chef.bio1':'Every spice sold under the Fèl Gou brand passes through the expert hands of Chef Tony Desmornes before reaching your kitchen. Trained in top culinary schools and decorated for his work on contemporary Haitian gastronomy, Chef Tony is the uncompromising guardian of our quality standards.',
+    'chef.bio2':'His evaluation process includes aroma testing, raw tasting, cooking trials, and origin verification. Only batches that meet his exacting standards receive his seal of approval.',
+    'chef.quote':'"A quality spice is the difference between an ordinary dish and a memorable one. Our ancestors knew this. My role is to prove it with every jar."',
+    'chef.s1':'Years of experience','chef.s2':'Awards received','chef.s3':'Products tested',
+    'rev.h1':'They','rev.h2':'Trust Us','rev.kicker':'Verified Reviews',
+    'rev.1.t':'The epis is exactly like what my grandmother used to make in Haiti. An incredible flavor, impossible to find anywhere else in the US.',
+    'rev.2.t':'The dried scotch bonnet is of exceptional quality. Just the right heat and fragrance. My griot has never tasted this good!',
+    'rev.3.t':"I've been ordering every month for six months. Beautiful packaging, fresh spices, excellent customer service. Thank you Fèl Gou!",
+    'foot.tag':'Authentic Haitian spices, grown with love, delivered to your door. The taste of Haiti, everywhere in the world.',
+    'foot.c1h':'Shop','foot.c1.1':'All spices','foot.c1.2':'Gift sets','foot.c1.3':'Monthly subscription','foot.c1.4':'Rare spices',
+    'foot.c2h':'Information','foot.c2.1':'Our story','foot.c2.2':'Our farmers','foot.c2.3':'Recipe blog','foot.c2.4':'Press',
+    'foot.c3h':'Support','foot.c3.1':'Contact us','foot.c3.2':'Shipping','foot.c3.3':'Returns','foot.c3.4':'FAQ',
+    'foot.copy':'© 2025 Fèl Gou. All rights reserved. · Made with ❤️ for the Haitian diaspora.',
+    'cart.title':'My Cart','cart.empty':'Your cart is empty','cart.sub':'Subtotal','cart.ship':'Shipping','cart.free':'Free','cart.total':'Total','cart.checkout':'Proceed to Checkout →',
+    'toast':'added to cart!',
+    'strip':['Haitian Spices','✦','Free Shipping','✦','Artisan Quality','✦','Hand Harvested','✦','100% Natural','✦','Chef Tony Approved','✦'],
+  }
+};
+
+const products = {
+  ht:[
+    {id:1,name:'Griyo',sub:'Melanj epis pou kochon',emoji:'🥩',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Fòmil familyal espesyal: Orange sure, Powo, Piman bouk, Sèl ak sekrè fanmi nou. Pafè pou griyò kreyòl otantik.',price:12.99,badge:'bs',bg:'#5C3D11',textcolor:'#F5E6C0'},
+    {id:2,name:'Pwason',sub:'Melanj epis pou pwason',emoji:'🐟',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Sitwon, Lay, Powo, Piman bouk, Anis, Pèsi ak plis. Fè pwason ou gen yon gou twopikal ki inoublyab.',price:12.99,badge:'new',bg:'#0D1B3E',textcolor:'#C8D8F0'},
+    {id:3,name:'Taso',sub:'Melanj epis pou bèf',emoji:'🥩',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Lay, Powo, Orange sure, Sèl, Tim, Pèsi, Kimen, Jenjann, Piman bouk ak sekrè fanmi. Taso ou pa t janm goute sa.',price:12.99,badge:null,bg:'#3D1A0A',textcolor:'#F5E6C0'},
+    {id:4,name:'Volay',sub:'Melanj epis pou poul',emoji:'🍗',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Lay, Powo, Piman bouk, Sèl, Pwav blan, Sitwon, Orange sure, Wozmari, Pèsi ak sekrè fanmi. Poul ou a p ap janm goute menm.',price:12.99,badge:'hot',bg:'#1A3D1A',textcolor:'#C8F0C8'},
+  ],
+  en:[
+    {id:1,name:'Griyo',sub:'Pork spice blend',emoji:'🥩',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Special family recipe: Orange sure, Leek, Scotch bonnet, Salt and our family secret. Perfect for authentic Haitian griot.',price:12.99,badge:'bs',bg:'#5C3D11',textcolor:'#F5E6C0'},
+    {id:2,name:'Pwason',sub:'Fish spice blend',emoji:'🐟',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Lemon, Garlic, Leek, Scotch bonnet, Anise, Parsley and more. Give your fish an unforgettable tropical flavor.',price:12.99,badge:'new',bg:'#0D1B3E',textcolor:'#C8D8F0'},
+    {id:3,name:'Taso',sub:'Beef spice blend',emoji:'🥩',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Garlic, Leek, Orange sure, Salt, Thyme, Parsley, Cumin, Ginger, Scotch bonnet and family secret. Taso like you\'ve never tasted.',price:12.99,badge:null,bg:'#3D1A0A',textcolor:'#F5E6C0'},
+    {id:4,name:'Volay',sub:'Poultry spice blend',emoji:'🍗',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Garlic, Leek, Scotch bonnet, Salt, White pepper, Lemon, Orange sure, Rosemary, Parsley and family secret. Your chicken will never taste the same.',price:12.99,badge:'hot',bg:'#1A3D1A',textcolor:'#C8F0C8'},
+  ]
+};
+
+let lang='ht', cart={};
+const t = k => T[lang][k]||'';
+
+function applyTranslations(){
+  document.documentElement.lang=lang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const v=t(el.getAttribute('data-i18n'));
+    if(v!==undefined&&v!=='') el.textContent=v;
+  });
+  document.querySelectorAll('.lang-btn').forEach(b=>
+    b.classList.toggle('active',(lang==='ht'&&b.textContent==='KR')||(lang==='en'&&b.textContent==='EN'))
+  );
+  const cartTitle=document.getElementById('cart-title-el'); if(cartTitle) cartTitle.textContent=t('cart.title');
+  const cartEmpty=document.getElementById('cart-empty-el'); if(cartEmpty) cartEmpty.textContent=t('cart.empty');
+  const cartSub=document.getElementById('cart-sub-label'); if(cartSub) cartSub.textContent=t('cart.sub');
+  const cartShip=document.getElementById('cart-ship-label'); if(cartShip) cartShip.textContent=t('cart.ship');
+  const cartFree=document.getElementById('cart-free-label'); if(cartFree) cartFree.textContent=t('cart.free');
+  const cartTotal=document.getElementById('cart-total-label'); if(cartTotal) cartTotal.textContent=t('cart.total');
+  const checkoutBtn=document.getElementById('checkout-btn-el'); if(checkoutBtn) checkoutBtn.textContent=t('cart.checkout');
+}
+
+function setLang(l){ lang=l; applyTranslations(); renderProducts(); buildStrip(); updateCartUI(); }
+
+function buildStrip(){
+  const words=t('strip');
+  const doubled=[...words,...words];
+  document.getElementById('strip-inner').innerHTML=doubled.map(w=>
+    w==='✦'?'<span class="dot">✦</span>':`<span>${w}</span>`
+  ).join('');
+}
+
+function sealSVG(l){
+  const topText = 'APPROVED BY CHEF TONY';
+  const botText = l==='ht' ? 'CHEF TONY DAK\u00d2' : 'APPROVED BY CHEF TONY';
+  const topLabel = l==='ht' ? 'CHEF TONY DAK\u00d2' : topText;
+  const botLabel = l==='ht' ? topText : botText;
+  return `<svg viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path id="stA" d="M 55,170 A 115,115 0 0 0 285,170"/>
+<path id="sbA" d="M 285,170 A 115,115 0 0 0 55,170"/>
+</defs>
+<g transform="translate(170,170)">
+<circle cx="0" cy="0" r="160" fill="#2D0808" stroke="#C8891A" stroke-width="1"/>
+<g fill="#2D0808" stroke="#C8891A" stroke-width="0.6">
+<polygon points="0,-172 5,-158 -5,-158"/><polygon points="44,-166 46,-152 35,-155"/><polygon points="84,-149 82,-135 72,-141"/><polygon points="119,-118 114,-106 105,-113"/><polygon points="147,-83 140,-72 132,-80"/><polygon points="165,-40 157,-32 153,-41"/><polygon points="171,4 162,4 162,-4"/><polygon points="165,48 157,44 162,35"/><polygon points="147,91 140,80 148,74"/><polygon points="119,122 114,110 123,105"/><polygon points="84,153 82,139 92,143"/><polygon points="44,168 46,154 35,157"/><polygon points="0,172 5,158 -5,158"/><polygon points="-44,166 -46,152 -35,155"/><polygon points="-84,149 -82,135 -72,141"/><polygon points="-119,118 -114,106 -105,113"/><polygon points="-147,83 -140,72 -132,80"/><polygon points="-165,40 -157,32 -153,41"/><polygon points="-171,-4 -162,-4 -162,4"/><polygon points="-165,-48 -157,-44 -162,-35"/><polygon points="-147,-91 -140,-80 -148,-74"/><polygon points="-119,-122 -114,-110 -123,-105"/><polygon points="-84,-153 -82,-139 -92,-143"/><polygon points="-44,-168 -46,-154 -35,-157"/>
+</g>
+<circle cx="0" cy="0" r="150" fill="#3D0A0A" stroke="#C8891A" stroke-width="2"/>
+<circle cx="0" cy="0" r="148" fill="none" stroke="#2A5C3A" stroke-width="24" opacity="0.4"/>
+<circle cx="0" cy="0" r="118" fill="#2D0808" stroke="#C8891A" stroke-width="1"/>
+<circle cx="0" cy="0" r="110" fill="none" stroke="#C8891A" stroke-width="0.5" stroke-dasharray="2.5 3.5"/>
+<circle cx="0" cy="-150" r="4" fill="#C8891A"/><circle cx="0" cy="150" r="4" fill="#C8891A"/><circle cx="-150" cy="0" r="4" fill="#C8891A"/><circle cx="150" cy="0" r="4" fill="#C8891A"/>
+<text font-family="Arial,sans-serif" font-weight="700" font-size="13" fill="#FF2020" letter-spacing="2.5"><textPath href="#stA" startOffset="50%" text-anchor="middle">${topLabel}</textPath></text>
+<text font-family="Arial,sans-serif" font-weight="700" font-size="13" fill="#FF2020" letter-spacing="2.5"><textPath href="#sbA" startOffset="50%" text-anchor="middle">${botLabel}</textPath></text>
+<line x1="-100" y1="35" x2="-65" y2="35" stroke="#C8891A" stroke-width="0.6"/><line x1="65" y1="35" x2="100" y2="35" stroke="#C8891A" stroke-width="0.6"/><line x1="-100" y1="-35" x2="-65" y2="-35" stroke="#C8891A" stroke-width="0.6"/><line x1="65" y1="-35" x2="100" y2="-35" stroke="#C8891A" stroke-width="0.6"/>
+<polygon points="-65,35 -61,38 -65,41 -69,38" fill="#C8891A"/><polygon points="65,35 69,38 65,41 61,38" fill="#C8891A"/><polygon points="-65,-35 -61,-32 -65,-29 -69,-32" fill="#C8891A"/><polygon points="65,-35 69,-32 65,-29 61,-32" fill="#C8891A"/>
+<g fill="#C8891A" opacity="0.15"><polygon points="0,-85 5,-25 0,-6 -5,-25"/><polygon points="85,0 25,5 6,0 25,-5"/><polygon points="0,85 5,25 0,6 -5,25"/><polygon points="-85,0 -25,5 -6,0 -25,-5"/><polygon points="60,-60 18,-12 6,-6 12,-18"/><polygon points="60,60 18,12 6,6 12,18"/><polygon points="-60,60 -18,12 -6,6 -12,18"/><polygon points="-60,-60 -18,-12 -6,-6 -12,-18"/></g>
+<circle cx="0" cy="0" r="65" fill="#1A3D1A" stroke="#C8891A" stroke-width="1.5"/>
+<circle cx="0" cy="0" r="56" fill="#2D0808" stroke="#3D6B35" stroke-width="1"/>
+<rect x="-26" y="18" width="52" height="11" rx="2" fill="#4A8A40"/><rect x="-22" y="10" width="44" height="10" rx="1" fill="#3D7A35"/>
+<ellipse cx="0" cy="-5" rx="19" ry="24" fill="#4A8A40"/><ellipse cx="-14" cy="-12" rx="13" ry="18" fill="#4A8A40"/><ellipse cx="14" cy="-12" rx="13" ry="18" fill="#4A8A40"/><ellipse cx="0" cy="-17" rx="15" ry="20" fill="#4A8A40"/><ellipse cx="-5" cy="-18" rx="5" ry="8" fill="#5A9A4A" opacity="0.5"/>
+<text x="0" y="16" text-anchor="middle" font-family="Georgia,serif" font-size="42" font-weight="700" fill="#FAF4E8" opacity="0.95">&#10003;</text>
+</g></svg>`;
+}
+
+function renderProducts(){
+  const list=products[lang];
+  const labelMap = {1:'etiket_tony_griyo.jpg',2:'etiket_tony_pwason.jpg',3:'etiket_tony_taso.jpg',4:'etiket_tony_volay.jpg'};
+  const bc={bs:'badge-bs',hot:'badge-hot',new:'badge-new'};
+  const bl={bs:t('badge.bs'),hot:t('badge.hot'),new:t('badge.new')};
+  document.getElementById('product-grid').innerHTML=list.map(p=>`
+    <div class="product-card">
+      <div class="product-img" style="background:${p.bg}; padding:0; overflow:hidden;">
+        <img src="images/${labelMap[p.id]}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;">
+        ${p.badge?`<span class="product-badge ${bc[p.badge]}">${bl[p.badge]}</span>`:''}
+      </div>
+      <div class="product-body">
+        <p class="product-origin">${p.origin}</p>
+        <h3 class="product-name">${p.name}</h3>
+        <p class="product-sub">${p.sub}</p>
+        <p class="product-desc">${p.desc}</p>
+        <div class="chef-seal">${sealSVG(lang)}</div>
+        <div class="product-footer">
+          <div class="product-price">$${p.price.toFixed(2)}<small> ${t('p.unit')}</small></div>
+          <button class="add-btn" id="btn-${p.id}" onclick="addToCart(${p.id})">${t('p.add')}</button>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+function addToCart(id){
+  const p=products[lang].find(x=>x.id===id); if(!p) return;
+  if(cart[id]){cart[id].qty++;cart[id].price=p.price;cart[id].emoji=p.emoji;cart[id].name=p.name;}
+  else cart[id]={...p,qty:1};
+  updateCartUI();
+  showToast(`${p.emoji} ${p.name} ${t('toast')}`);
+  const btn=document.getElementById(`btn-${id}`);
+  if(btn){btn.classList.add('added');btn.textContent=t('p.added');setTimeout(()=>{btn.classList.remove('added');btn.textContent=t('p.add');},1500);}
+}
+function removeFromCart(id){delete cart[id];updateCartUI();}
+function updateQty(id,d){if(!cart[id])return;cart[id].qty+=d;if(cart[id].qty<=0)delete cart[id];updateCartUI();}
+
+function updateCartUI(){
+  const total=Object.values(cart).reduce((s,i)=>s+i.price*i.qty,0);
+  const count=Object.values(cart).reduce((s,i)=>s+i.qty,0);
+  document.getElementById('cart-count').textContent=count;
+  const list=document.getElementById('cart-items-list');
+  const footer=document.getElementById('cart-footer');
+  const items=Object.values(cart);
+  if(!items.length){
+    list.innerHTML=`<div class="cart-empty"><span>🛒</span><p>${t('cart.empty')}</p></div>`;
+    footer.style.display='none';
+  } else {
+    list.innerHTML=items.map(i=>{
+      const nm=(products[lang].find(x=>x.id===i.id)||i).name;
+      return `<div class="cart-item">
+        <div class="cart-item-icon">${i.emoji}</div>
+        <div class="cart-item-info">
+          <p class="cart-item-name">${nm}</p>
+          <p style="font-size:.75rem;color:var(--warm-gray)">$${i.price.toFixed(2)} ${t('p.unit')}</p>
+          <div class="cart-item-qty">
+            <button class="qty-btn" onclick="updateQty(${i.id},-1)">−</button>
+            <span class="qty-num">${i.qty}</span>
+            <button class="qty-btn" onclick="updateQty(${i.id},1)">+</button>
+          </div>
+        </div>
+        <span class="cart-item-price">$${(i.price*i.qty).toFixed(2)}</span>
+        <button class="remove-item" onclick="removeFromCart(${i.id})">✕</button>
+      </div>`;
+    }).join('');
+    footer.style.display='block';
+    document.getElementById('cart-sub-val').textContent=`$${total.toFixed(2)}`;
+    document.getElementById('cart-total-val').textContent=`$${total.toFixed(2)}`;
+  }
+}
+
+function toggleCart(){document.getElementById('cart-panel').classList.toggle('open');document.getElementById('cart-overlay').classList.toggle('open');}
+function toggleMobileMenu(){
+  document.getElementById('mobile-menu').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+}
+function showToast(msg){const el=document.getElementById('toast');el.textContent=msg;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2400);}
+
+/* ══ 16 HAITIAN SPICES ══ */
+const spices=[
+  {emoji:'🌶️',en:'Scotch Bonnet',ht:'Piman Bouk',bg:'#6B1A0A',
+    desc:{en:'The queen of Haitian cooking. Intensely aromatic with a fruity, floral heat that defines the flavor of countless Haitian dishes.',ht:'Renn kwizin ayisyen an. Yon piman ki gen yon awomat espesyal, chalè fwital ki defini gou anpil plat ayisyen.'},
+    uses:{en:['Griot','Joumou','Chicken stew','Marinade','Pikliz'],ht:['Griyò','Joumou','Poul nan sòs','Marinad','Pikliz']},
+    benefits:{en:'Rich in vitamin C and capsaicin. Boosts metabolism, reduces inflammation, and supports immune health.',ht:'Rich nan vitamin C ak kapsaisin. Ankouraje metabolis, redwi enflamasyon, epi sipòte sistèm iminitè.'}},
+  {emoji:'🧄',en:'Garlic',ht:'Lay',bg:'#3D3010',
+    desc:{en:'The backbone of Haitian epis. No dish begins without garlic — raw, crushed or slowly cooked in oil.',ht:'Kolòn vètebral epis ayisyen. Pa gen plat ki kòmanse san lay — kri, kraze, oswa kwit dousman nan lwil.'},
+    uses:{en:['Epis base','Griot','All meats','Sauces','Legumes'],ht:['Baz epis','Griyò','Tout vyann','Sòs','Legim']},
+    benefits:{en:'Powerful antioxidant and immune booster. Lowers blood pressure and cholesterol naturally.',ht:'Antioksidan pwisan ak ranfòsè iminite. Bese tansyon ak kolestewòl natirèlman.'}},
+  {emoji:'🧂',en:'Sea Salt',ht:'Sèl Lanmè',bg:'#3A3A4A',
+    desc:{en:'Haitian sea salt harvested from the southern coast. Coarser and richer in minerals than commercial table salt, it elevates every dish.',ht:'Sèl lanmè ayisyen ki rekòlte nan kòt sid la. Pi gwo ak pi rich nan mineral pase sèl komèsyal, li amelyore chak plat.'},
+    uses:{en:['All dishes','Marinades','Preserving','Seasoning','Pikliz'],ht:['Tout plat','Marinad','Konsèvasyon','Asezonnman','Pikliz']},
+    benefits:{en:'Rich in natural minerals including magnesium and potassium. Supports hydration and electrolyte balance.',ht:'Rich nan mineral natirèl tankou maynezyòm ak potasyòm. Sipòte idrasyon ak balans elektwolit.'}},
+  {emoji:'⚫',en:'Black Pepper',ht:'Pwav Nwa',bg:'#1A1A1A',
+    desc:{en:'The universal spice of Haitian cooking. Freshly ground Haitian black pepper has a depth and heat that pre-ground pepper cannot match.',ht:'Epis inivèsèl kwizin ayisyen an. Pwav nwa ayisyen moulen fre gen yon pwofondè ak pike ke pwav pre-moulu pa ka matche.'},
+    uses:{en:['All meats','Epis','Sauces','Marinades','Vegetables'],ht:['Tout vyann','Epis','Sòs','Marinad','Legim']},
+    benefits:{en:'Enhances nutrient absorption. Antioxidant, anti-inflammatory and improves digestion.',ht:'Amelyore absòpsyon eleman nitritif. Antioksidan, anti-enflamatwa epi amelyore dijestion.'}},
+  {emoji:'🍊',en:'Sour Orange',ht:'Zoranj Su',bg:'#5C3000',
+    desc:{en:'A uniquely Haitian ingredient — sour orange juice marinates meats, tenderizes and adds a bright citrus complexity found in no other cuisine.',ht:'Yon engredyan inikman ayisyen — ji zoranj si marinnen vyann, ramoli yo epi ajoute yon konpleksite sitrus ke okenn lòt kwizin pa gen.'},
+    uses:{en:['Griot marinade','Taso','Volay','Poultry','Pork'],ht:['Marinad griyò','Taso','Volay','Poul','Kochon']},
+    benefits:{en:'High in vitamin C and bioflavonoids. Natural meat tenderizer and supports collagen production.',ht:'Rich nan vitamin C ak bioflavonoyid. Ramolisè vyann natirèl epi sipòte pwoduksyon kolagèn.'}},
+  {emoji:'🍋',en:'Lime',ht:'Sitwon',bg:'#2A3D00',
+    desc:{en:'Haitian cooks use lime to clean fish and meat, brighten sauces and balance rich flavors. Essential in the pwason blend.',ht:'Kizinye ayisyen itilize sitwon pou netwaye pwason ak vyann, ekleyen sòs epi balanse gou rich. Esansyèl nan melanj pwason.'},
+    uses:{en:['Fish cleaning','Marinades','Sauces','Drinks','Dressings'],ht:['Netwayaj pwason','Marinad','Sòs','Bwason','Vinegrèt']},
+    benefits:{en:'High in vitamin C and citric acid. Supports immunity, aids iron absorption and promotes skin health.',ht:'Rich nan vitamin C ak asid sitrik. Sipòte iminite, ede absòpsyon fè epi ankouraje sante po.'}},
+  {emoji:'🧅',en:'Onion',ht:'Zonyon',bg:'#5C4010',
+    desc:{en:'The sweet, savory foundation of Haitian cuisine. Onions are caramelized, raw in epis, or charred over flame to add layers of flavor.',ht:'Fondasyon dou ak savourè kwizin ayisyen an. Zonyon karamelizé, kri nan epis, oswa griye sou flanm pou ajoute kouch gou.'},
+    uses:{en:['Epis base','All stews','Rice dishes','Sauces','Legumes'],ht:['Baz epis','Tout ragoù','Plat diri','Sòs','Legim']},
+    benefits:{en:'Rich in quercetin and antioxidants. Anti-inflammatory, supports heart health and immune function.',ht:'Rich nan kèsètin ak antioksidan. Anti-enflamatwa, sipòte sante kè ak fonksyon iminitè.'}},
+  {emoji:'🌿',en:'Green Onion',ht:'Pwaro',bg:'#1A4A0A',
+    desc:{en:'Scallions are one of the foundational aromatics of Haitian epis. They give a fresh, mild onion flavor that blends seamlessly with herbs.',ht:'Pwaro se youn nan awomat fondamantal epis ayisyen. Li bay yon gou zonyon fre, dou ki melanje san pwoblèm ak zèb.'},
+    uses:{en:['Epis base','Soups','Grilled fish','Garnish','Sauces'],ht:['Baz epis','Soup','Pwason griye','Garniti','Sòs']},
+    benefits:{en:'Rich in vitamin K and antioxidants. Supports bone health, immune function and heart health.',ht:'Rich nan vitamin K ak antioksidan. Sipòte sante zo, fonksyon iminitè ak sante kè.'}},
+  {emoji:'🌱',en:'Parsley',ht:'Pèsi',bg:'#0D3D1A',
+    desc:{en:'Fresh parsley is the green heart of Haitian epis. It brings brightness and freshness that balances the heat of other spices.',ht:'Pèsi fre se kè vèt epis ayisyen. Li pote klète ak frechè ki balanse chalè lòt epis yo.'},
+    uses:{en:['Epis base','Garnish','Sauces','Seafood','Salads'],ht:['Baz epis','Garniti','Sòs','Pwason','Salad']},
+    benefits:{en:'Exceptionally rich in vitamins K, C and A. Supports bone health and acts as a natural diuretic.',ht:'Ekstrèmman rich nan vitamin K, C ak A. Sipòte sante zo epi aji kòm yon diuretik natirèl.'}},
+  {emoji:'🌿',en:'Thyme',ht:'Tim',bg:'#1A3D1A',
+    desc:{en:'Haitian thyme grown at high altitude is more potent and fragrant than any commercial variety. Essential in every kitchen.',ht:'Tim ayisyen ki pouse nan wo altitid se pi pwisan ak pi pafime pase tout lòt variete. Esansyèl nan tout kizin.'},
+    uses:{en:['Epis base','Soup Joumou','Stews','Rice','Grilled meats'],ht:['Baz epis','Soup joumou','Ragoù','Diri','Vyann griye']},
+    benefits:{en:'Antibacterial and antifungal. High in vitamin K and supports respiratory health.',ht:'Antibakteryèl ak antifongik. Rich nan vitamin K epi sipòte sante respiratwa.'}},
+  {emoji:'🧅',en:'Shallot',ht:'Echalòt',bg:'#4A2A10',
+    desc:{en:'More refined than regular onion, shallots add a gentle, sweet depth to Haitian epis and sauces without overpowering other flavors.',ht:'Pi rafine pase zonyon òdinè, echalòt ajoute yon pwofondè dou ak janti nan epis ak sòs ayisyen san li pa domine lòt gou yo.'},
+    uses:{en:['Epis base','Fine sauces','Fish dishes','Vinaigrettes','Stews'],ht:['Baz epis','Sòs fen','Plat pwason','Vinegrèt','Ragoù']},
+    benefits:{en:'Rich in antioxidants and allicin. Supports cardiovascular health and has anti-bacterial properties.',ht:'Rich nan antioksidan ak alisin. Sipòte sante kadyovaskilè epi gen pwopriete anti-bakteryèl.'}},
+  {emoji:'🌿',en:'Rosemary',ht:'Romaren',bg:'#0A2A1A',
+    desc:{en:'Aromatic and piney, rosemary is the signature herb of the Volay blend. It pairs beautifully with poultry and white meats.',ht:'Awomat ak lodè pin, romaren se zèb siyati melanj Volay la. Li akonpaye bèlman ak poul ak vyann blanch.'},
+    uses:{en:['Chicken','Turkey','Roasted meats','Herb oils','Marinades'],ht:['Poul','Kòdenn','Vyann woti','Lwil zèb','Marinad']},
+    benefits:{en:'Improves memory and concentration. Antioxidant and anti-inflammatory. Supports hair and scalp health.',ht:'Amelyore memwa ak konsantrasyon. Antioksidan ak anti-enflamatwa. Sipòte sante cheve ak tèt.'}},
+  {emoji:'🌰',en:'Cloves',ht:'Jiwòf',bg:'#3D1500',
+    desc:{en:'Whole cloves release a deep, warm aroma when cooked. A key spice in Haitian meat marinades and warm drinks.',ht:'Jiwòf antye lage yon odè fon, cho lè yo kwit. Yon epis kle nan marinad vyann ak bwason cho.'},
+    uses:{en:['Meat marinades','Rice collé','Herbal teas','Soup Joumou','Desserts'],ht:['Marinad vyann','Diri kole','Tizan','Soup joumou','Dese']},
+    benefits:{en:'Powerful antiseptic and pain reliever. Supports digestion and contains eugenol, a natural anesthetic.',ht:'Antiseptik pwisan ak soulajman doulè. Sipòte dijestion epi gen ejijenòl, yon anestezik natirèl.'}},
+  {emoji:'🥥',en:'Coconut',ht:'Kokoye',bg:'#3D2A00',
+    desc:{en:'Haitian coconut — raw, dried, or as coconut milk — is essential in rice dishes, desserts, and coastal cooking. Rich, creamy and unmistakably tropical.',ht:'Kokoye ayisyen — kri, seche, oswa kòm lèt kokoye — esansyèl nan plat diri, dese, ak kwizin kòtye. Rich, krèmye ak twopikal san ekivòk.'},
+    uses:{en:['Diri ak djon djon','Legume','Desserts','Pain patate','Coastal fish'],ht:['Diri ak djon djon','Legim','Dese','Pen patat','Pwason kòtye']},
+    benefits:{en:'Rich in healthy fats, medium-chain triglycerides and lauric acid. Supports brain function and immunity.',ht:'Rich nan grès sante, trigliserid chèn mwayen ak asid lorik. Sipòte fonksyon sèvo ak iminite.'}},
+  {emoji:'🟤',en:'Cumin',ht:'Kimen',bg:'#4A2800',
+    desc:{en:'Earthy and warm, cumin adds a nutty depth to Haitian taso and beef dishes. Used sparingly but with powerful effect.',ht:'Tè ak cho, kimen ajoute yon pwofondè nwa nan taso ayisyen ak plat bèf. Itilize avèk modèrasyon men ak efè pwisan.'},
+    uses:{en:['Taso','Beef stew','Dry rubs','Rice dishes','Legumes'],ht:['Taso','Ragoù bèf','Frotaj sèk','Plat diri','Legim']},
+    benefits:{en:'Aids digestion and iron absorption. Anti-inflammatory and helps regulate blood sugar levels.',ht:'Ede dijestion ak absòpsyon fè. Anti-enflamatwa epi ede règle nivo sik nan san.'}},
+  {emoji:'⭐',en:'Star Anise',ht:'Anis Etwale',bg:'#2A1A3D',
+    desc:{en:'These star-shaped pods carry a complex licorice aroma. Central to Haitian herbal teas and certain meat preparations.',ht:'Gous ki gen fòm etwal sa yo pote yon awomat réglise konplèks. Santral nan tizan ayisyen ak kèk preparasyon vyann.'},
+    uses:{en:['Herbal teas','Pork sauces','Goat stew','Desserts','Digestifs'],ht:['Tizan','Sòs kochon','Ragout kabrit','Dese','Dijestif']},
+    benefits:{en:'Antiviral, antibacterial and rich in antioxidants. Relieves bloating and supports digestive health.',ht:'Antiviral, antibakteryèl ak rich nan antioksidan. Soulaje gonfleman epi sipòte sante dijestif.'}},
+  {emoji:'🫚',en:'Cinnamon',ht:'Kanèl',bg:'#5C2E0A',
+    desc:{en:'Haitian cinnamon adds warmth and depth to both sweet and savory dishes. Used in coffee, desserts and slow-cooked meats.',ht:'Kanèl ayisyen ajoute chalè ak pwofondè nan plat dou ak sale. Itilize nan kafe, dese ak vyann kwit dousman.'},
+    uses:{en:['Haitian coffee','Pain patate','Stews','Herbal teas','Desserts'],ht:['Kafe ayisyen','Pen patat','Ragoù','Tizan','Dese']},
+    benefits:{en:'Regulates blood sugar, anti-inflammatory, loaded with antioxidants. Supports heart health.',ht:'Règle sik nan san, anti-enflamatwa, rich nan antioksidan. Sipòte sante kè.'}},
+  {emoji:'🌰',en:'Nutmeg',ht:'Muskad',bg:'#4A1A00',
+    desc:{en:'Haitian nutmeg adds a warm, slightly sweet and nutty dimension to both sweet and savory Haitian dishes — especially in pain patate and holiday drinks.',ht:'Muskad ayisyen ajoute yon dimansyon cho, yon ti dou ak savè nwa nan plat ayisyen dou ak sale — espesyalman nan pen patat ak bwason fèt.'},
+    uses:{en:['Pain patate','Haitian eggnog','Desserts','Warm drinks','Spice blends'],ht:['Pen patat','Kremas','Dese','Bwason cho','Melanj epis']},
+    benefits:{en:'Rich in antioxidants and anti-inflammatory compounds. Supports brain health and aids digestion.',ht:'Rich nan antioksidan ak konpoze anti-enflamatwa. Sipòte sante sèvo epi ede dijestion.'}},
+  {emoji:'🌸',en:'Vanilla',ht:'Vaniy',bg:'#3D2010',
+    desc:{en:'Haitian vanilla is among the finest in the world — rich, floral and complex. Used in desserts, kremas, and Haitian coffee for an unmistakable aromatic depth.',ht:'Vaniy ayisyen se youn nan pi bon nan mond lan — rich, floral ak konplèks. Itilize nan dese, kremas, ak kafe ayisyen pou yon pwofondè awomat san parèy.'},
+    uses:{en:['Kremas','Desserts','Haitian coffee','Pain patate','Ice cream'],ht:['Kremas','Dese','Kafe ayisyen','Pen patat','Krèm glase']},
+    benefits:{en:'Contains vanillin, a powerful antioxidant. May reduce anxiety, support mental health and anti-inflammatory.',ht:'Kontenyen vanilin, yon antioksidan pwisan. Ka redwi lènmi, sipòte sante mantal ak anti-enflamatwa.'}},
+  {emoji:'🐟',en:'Tritri',ht:'Tritri',bg:'#1A2A3D',
+    desc:{en:'Tritri — tiny dried fish or shrimp larvae — is a uniquely Haitian ingredient that adds a deep, umami-rich seafood flavor to rice dishes, sauces, and stews. Irreplaceable in Haitian coastal cooking.',ht:'Tritri — ti pwason oswa lav kribich seche — se yon engredyan inikman ayisyen ki ajoute yon gou maren rich ak umami nan plat diri, sòs, ak ragoù. Enplaçable nan kwizin kòtye ayisyen.'},
+    uses:{en:['Diri ak tritri','Coastal stews','Rice dishes','Sauces','Legumes'],ht:['Diri ak tritri','Ragoù kòtye','Plat diri','Sòs','Legim']},
+    benefits:{en:'Excellent source of protein, calcium and omega-3 fatty acids. Supports bone health and cardiovascular function.',ht:'Ekselant sous pwoteyin, kalsyòm ak asid gra omega-3. Sipòte sante zo ak fonksyon kadyovaskilè.'}}
+];
+
+function buildSpiceGrid(){
+  const grid=document.getElementById('spice-grid');
+  grid.innerHTML=spices.map((s,i)=>`
+    <div class="spice-tile" style="background:${s.bg}" onclick="openSpice(${i})">
+      <span class="spice-tile-emoji">${s.emoji}</span>
+      <span class="spice-tile-name">${lang==='ht'?s.ht:s.en}</span>
+    </div>`).join('');
+}
+
+function openSpice(i){
+  const s=spices[i]; const l=lang;
+  document.getElementById('modal-icon').textContent=s.emoji;
+  document.getElementById('modal-name').textContent=l==='ht'?s.ht:s.en;
+  document.getElementById('modal-kr').textContent=l==='ht'?s.en:s.ht;
+  document.getElementById('modal-desc-label').textContent=l==='ht'?'Deskripsyon':'Description';
+  document.getElementById('modal-desc').textContent=s.desc[l];
+  document.getElementById('modal-uses-label').textContent=l==='ht'?'Itilizasyon':'Uses';
+  document.getElementById('modal-uses').innerHTML=s.uses[l].map(u=>`<span class="spice-tag">${u}</span>`).join('');
+  document.getElementById('modal-benefits-label').textContent=l==='ht'?'Benefis':'Benefits';
+  document.getElementById('modal-benefits').textContent=s.benefits[l];
+  document.getElementById('spice-overlay').classList.add('open');
+}
+function closeSpice(e){if(e.target===document.getElementById('spice-overlay'))closeSpiceBtn();}
+function closeSpiceBtn(){document.getElementById('spice-overlay').classList.remove('open');}
+
+applyTranslations(); renderProducts(); buildStrip(); buildSpiceGrid();
+</script>
+</body>
+</html>
