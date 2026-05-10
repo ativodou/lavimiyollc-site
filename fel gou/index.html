@@ -151,6 +151,17 @@
     z-index: 2;
   }
   .spice-tile:hover .spice-tile-accent { opacity: 1; }
+  .spice-tile.has-photo::before {
+    background-image: var(--tile-img);
+    background-size: cover; background-position: center;
+  }
+  .spice-tile.has-photo::after {
+    background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.08) 55%, rgba(0,0,0,0.45) 100%);
+  }
+  .spice-tile.has-photo .spice-tile-emoji {
+    font-size: 1.4rem; background: rgba(0,0,0,0.35); border-radius: 50%;
+    width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center;
+  }
   .spice-tile-emoji {
     font-size: 2rem; line-height: 1;
     margin-bottom: 0.4rem; position: relative; z-index: 2;
@@ -774,42 +785,41 @@ function buildStrip(){
   ).join('');
 }
 
+let _sealN=0;
 function sealSVG(l){
-  const topText = 'APPROVED BY CHEF TONY';
-  const botText = l==='ht' ? 'CHEF TONY DAK\u00d2' : 'APPROVED BY CHEF TONY';
-  const topLabel = l==='ht' ? 'CHEF TONY DAK\u00d2' : topText;
-  const botLabel = l==='ht' ? topText : botText;
-  return `<svg viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg">
+  const n=_sealN++;
+  const top=l==='ht'?'S\u00c8TIFYE PA \u2022 CHEF TONY':'CERTIFIED BY \u2022 CHEF TONY';
+  const bot=l==='ht'?'F\u00c8L GOU \u2022 AYITI':'F\u00c8L GOU \u2022 AUTHENTIC';
+  const ticks=Array.from({length:48},(_,i)=>{
+    const a=(i/48)*Math.PI*2;
+    const maj=i%6===0;
+    const r1=95,r2=maj?86:91;
+    const c=Math.cos(a),s=Math.sin(a);
+    return `<line x1="${(100+r1*c).toFixed(1)}" y1="${(100+r1*s).toFixed(1)}" x2="${(100+r2*c).toFixed(1)}" y2="${(100+r2*s).toFixed(1)}" stroke="#C8891A" stroke-width="${maj?1.4:0.6}" opacity="${maj?1:0.7}"/>`;
+  }).join('');
+  return `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<path id="stA" d="M 55,170 A 115,115 0 0 0 285,170"/>
-<path id="sbA" d="M 285,170 A 115,115 0 0 0 55,170"/>
+  <path id="st${n}" d="M 24,100 A 76,76 0 0 0 176,100"/>
+  <path id="sb${n}" d="M 176,100 A 76,76 0 0 0 24,100"/>
 </defs>
-<g transform="translate(170,170)">
-<circle cx="0" cy="0" r="160" fill="#2D0808" stroke="#C8891A" stroke-width="1"/>
-<g fill="#2D0808" stroke="#C8891A" stroke-width="0.6">
-<polygon points="0,-172 5,-158 -5,-158"/><polygon points="44,-166 46,-152 35,-155"/><polygon points="84,-149 82,-135 72,-141"/><polygon points="119,-118 114,-106 105,-113"/><polygon points="147,-83 140,-72 132,-80"/><polygon points="165,-40 157,-32 153,-41"/><polygon points="171,4 162,4 162,-4"/><polygon points="165,48 157,44 162,35"/><polygon points="147,91 140,80 148,74"/><polygon points="119,122 114,110 123,105"/><polygon points="84,153 82,139 92,143"/><polygon points="44,168 46,154 35,157"/><polygon points="0,172 5,158 -5,158"/><polygon points="-44,166 -46,152 -35,155"/><polygon points="-84,149 -82,135 -72,141"/><polygon points="-119,118 -114,106 -105,113"/><polygon points="-147,83 -140,72 -132,80"/><polygon points="-165,40 -157,32 -153,41"/><polygon points="-171,-4 -162,-4 -162,4"/><polygon points="-165,-48 -157,-44 -162,-35"/><polygon points="-147,-91 -140,-80 -148,-74"/><polygon points="-119,-122 -114,-110 -123,-105"/><polygon points="-84,-153 -82,-139 -92,-143"/><polygon points="-44,-168 -46,-154 -35,-157"/>
-</g>
-<circle cx="0" cy="0" r="150" fill="#3D0A0A" stroke="#C8891A" stroke-width="2"/>
-<circle cx="0" cy="0" r="148" fill="none" stroke="#2A5C3A" stroke-width="24" opacity="0.4"/>
-<circle cx="0" cy="0" r="118" fill="#2D0808" stroke="#C8891A" stroke-width="1"/>
-<circle cx="0" cy="0" r="110" fill="none" stroke="#C8891A" stroke-width="0.5" stroke-dasharray="2.5 3.5"/>
-<circle cx="0" cy="-150" r="4" fill="#C8891A"/><circle cx="0" cy="150" r="4" fill="#C8891A"/><circle cx="-150" cy="0" r="4" fill="#C8891A"/><circle cx="150" cy="0" r="4" fill="#C8891A"/>
-<text font-family="Arial,sans-serif" font-weight="700" font-size="13" fill="#FF2020" letter-spacing="2.5"><textPath href="#stA" startOffset="50%" text-anchor="middle">${topLabel}</textPath></text>
-<text font-family="Arial,sans-serif" font-weight="700" font-size="13" fill="#FF2020" letter-spacing="2.5"><textPath href="#sbA" startOffset="50%" text-anchor="middle">${botLabel}</textPath></text>
-<line x1="-100" y1="35" x2="-65" y2="35" stroke="#C8891A" stroke-width="0.6"/><line x1="65" y1="35" x2="100" y2="35" stroke="#C8891A" stroke-width="0.6"/><line x1="-100" y1="-35" x2="-65" y2="-35" stroke="#C8891A" stroke-width="0.6"/><line x1="65" y1="-35" x2="100" y2="-35" stroke="#C8891A" stroke-width="0.6"/>
-<polygon points="-65,35 -61,38 -65,41 -69,38" fill="#C8891A"/><polygon points="65,35 69,38 65,41 61,38" fill="#C8891A"/><polygon points="-65,-35 -61,-32 -65,-29 -69,-32" fill="#C8891A"/><polygon points="65,-35 69,-32 65,-29 61,-32" fill="#C8891A"/>
-<g fill="#C8891A" opacity="0.15"><polygon points="0,-85 5,-25 0,-6 -5,-25"/><polygon points="85,0 25,5 6,0 25,-5"/><polygon points="0,85 5,25 0,6 -5,25"/><polygon points="-85,0 -25,5 -6,0 -25,-5"/><polygon points="60,-60 18,-12 6,-6 12,-18"/><polygon points="60,60 18,12 6,6 12,18"/><polygon points="-60,60 -18,12 -6,6 -12,18"/><polygon points="-60,-60 -18,-12 -6,-6 -12,-18"/></g>
-<circle cx="0" cy="0" r="65" fill="#1A3D1A" stroke="#C8891A" stroke-width="1.5"/>
-<circle cx="0" cy="0" r="56" fill="#2D0808" stroke="#3D6B35" stroke-width="1"/>
-<rect x="-26" y="18" width="52" height="11" rx="2" fill="#4A8A40"/><rect x="-22" y="10" width="44" height="10" rx="1" fill="#3D7A35"/>
-<ellipse cx="0" cy="-5" rx="19" ry="24" fill="#4A8A40"/><ellipse cx="-14" cy="-12" rx="13" ry="18" fill="#4A8A40"/><ellipse cx="14" cy="-12" rx="13" ry="18" fill="#4A8A40"/><ellipse cx="0" cy="-17" rx="15" ry="20" fill="#4A8A40"/><ellipse cx="-5" cy="-18" rx="5" ry="8" fill="#5A9A4A" opacity="0.5"/>
-<text x="0" y="16" text-anchor="middle" font-family="Georgia,serif" font-size="42" font-weight="700" fill="#FAF4E8" opacity="0.95">&#10003;</text>
-</g></svg>`;
+<circle cx="100" cy="100" r="99" fill="#1C0A02"/>
+<circle cx="100" cy="100" r="97" fill="none" stroke="#C8891A" stroke-width="2"/>
+${ticks}
+<circle cx="100" cy="100" r="83" fill="#220C04" stroke="#C8891A" stroke-width="1.5"/>
+<circle cx="100" cy="100" r="78" fill="none" stroke="#C8891A" stroke-width="0.4" stroke-dasharray="2 5"/>
+<text font-family="Arial,sans-serif" font-weight="700" font-size="7.5" fill="#C8891A" letter-spacing="2.5"><textPath href="#st${n}" startOffset="50%" text-anchor="middle">${top}</textPath></text>
+<text font-family="Arial,sans-serif" font-weight="700" font-size="7.5" fill="#C8891A" letter-spacing="2.5"><textPath href="#sb${n}" startOffset="50%" text-anchor="middle">${bot}</textPath></text>
+<text x="100" y="89" text-anchor="middle" font-family="serif" font-size="22" fill="#C8891A">&#9733;</text>
+<text x="100" y="107" text-anchor="middle" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#F5EDD8" letter-spacing="0.5">CHEF TONY</text>
+<line x1="64" y1="112" x2="136" y2="112" stroke="#C8891A" stroke-width="1"/>
+<line x1="68" y1="115" x2="132" y2="115" stroke="#C8891A" stroke-width="0.3"/>
+<text x="100" y="126" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#B8780A" letter-spacing="3.5">DESMORNES</text>
+</svg>`;
 }
 
 function renderProducts(){
   const list=products[lang];
-  const labelMap = {1:'etiket_tony_griyo.jpg',2:'etiket_tony_pwason.jpg',3:'etiket_tony_taso.jpg',4:'etiket_tony_volay.jpg'};
+  const labelMap = {1:'cropped_etiket_tony_griyo.jpg',2:'cropped_etiket_tony_pwason.jpg',3:'cropped_etiket_tony_taso.jpg',4:'cropped_etiket_tony_volay.jpg'};
   const bc={bs:'badge-bs',hot:'badge-hot',new:'badge-new'};
   const bl={bs:t('badge.bs'),hot:t('badge.hot'),new:t('badge.new')};
   document.getElementById('product-grid').innerHTML=list.map(p=>`
@@ -887,7 +897,7 @@ function showToast(msg){const el=document.getElementById('toast');el.textContent
 
 /* ══ 16 HAITIAN SPICES ══ */
 const spices=[
-  {emoji:'🌶️',en:'Scotch Bonnet',ht:'Piman Bouk',bg:'#6B1A0A',
+  {emoji:'🌶️',en:'Scotch Bonnet',ht:'Piman Bouk',bg:'#6B1A0A',photo:'piman bouk.jpg',
     desc:{en:'The queen of Haitian cooking. Intensely aromatic with a fruity, floral heat that defines the flavor of countless Haitian dishes.',ht:'Renn kwizin ayisyen an. Yon piman ki gen yon awomat espesyal, chalè fwital ki defini gou anpil plat ayisyen.'},
     uses:{en:['Griot','Joumou','Chicken stew','Marinade','Pikliz'],ht:['Griyò','Joumou','Poul nan sòs','Marinad','Pikliz']},
     benefits:{en:'Rich in vitamin C and capsaicin. Boosts metabolism, reduces inflammation, and supports immune health.',ht:'Rich nan vitamin C ak kapsaisin. Ankouraje metabolis, redwi enflamasyon, epi sipòte sistèm iminitè.'}},
@@ -903,7 +913,7 @@ const spices=[
     desc:{en:'The universal spice of Haitian cooking. Freshly ground Haitian black pepper has a depth and heat that pre-ground pepper cannot match.',ht:'Epis inivèsèl kwizin ayisyen an. Pwav nwa ayisyen moulen fre gen yon pwofondè ak pike ke pwav pre-moulu pa ka matche.'},
     uses:{en:['All meats','Epis','Sauces','Marinades','Vegetables'],ht:['Tout vyann','Epis','Sòs','Marinad','Legim']},
     benefits:{en:'Enhances nutrient absorption. Antioxidant, anti-inflammatory and improves digestion.',ht:'Amelyore absòpsyon eleman nitritif. Antioksidan, anti-enflamatwa epi amelyore dijestion.'}},
-  {emoji:'🍊',en:'Sour Orange',ht:'Zoranj Su',bg:'#5C3000',
+  {emoji:'🍊',en:'Sour Orange',ht:'Zoranj Su',bg:'#5C3000',photo:'zoranj su.jpg',
     desc:{en:'A uniquely Haitian ingredient — sour orange juice marinates meats, tenderizes and adds a bright citrus complexity found in no other cuisine.',ht:'Yon engredyan inikman ayisyen — ji zoranj si marinnen vyann, ramoli yo epi ajoute yon konpleksite sitrus ke okenn lòt kwizin pa gen.'},
     uses:{en:['Griot marinade','Taso','Volay','Poultry','Pork'],ht:['Marinad griyò','Taso','Volay','Poul','Kochon']},
     benefits:{en:'High in vitamin C and bioflavonoids. Natural meat tenderizer and supports collagen production.',ht:'Rich nan vitamin C ak bioflavonoyid. Ramolisè vyann natirèl epi sipòte pwoduksyon kolagèn.'}},
@@ -911,15 +921,15 @@ const spices=[
     desc:{en:'Haitian cooks use lime to clean fish and meat, brighten sauces and balance rich flavors. Essential in the pwason blend.',ht:'Kizinye ayisyen itilize sitwon pou netwaye pwason ak vyann, ekleyen sòs epi balanse gou rich. Esansyèl nan melanj pwason.'},
     uses:{en:['Fish cleaning','Marinades','Sauces','Drinks','Dressings'],ht:['Netwayaj pwason','Marinad','Sòs','Bwason','Vinegrèt']},
     benefits:{en:'High in vitamin C and citric acid. Supports immunity, aids iron absorption and promotes skin health.',ht:'Rich nan vitamin C ak asid sitrik. Sipòte iminite, ede absòpsyon fè epi ankouraje sante po.'}},
-  {emoji:'🧅',en:'Onion',ht:'Zonyon',bg:'#5C4010',
+  {emoji:'🧅',en:'Onion',ht:'Zonyon',bg:'#5C4010',photo:'zonyon.jpg',
     desc:{en:'The sweet, savory foundation of Haitian cuisine. Onions are caramelized, raw in epis, or charred over flame to add layers of flavor.',ht:'Fondasyon dou ak savourè kwizin ayisyen an. Zonyon karamelizé, kri nan epis, oswa griye sou flanm pou ajoute kouch gou.'},
     uses:{en:['Epis base','All stews','Rice dishes','Sauces','Legumes'],ht:['Baz epis','Tout ragoù','Plat diri','Sòs','Legim']},
     benefits:{en:'Rich in quercetin and antioxidants. Anti-inflammatory, supports heart health and immune function.',ht:'Rich nan kèsètin ak antioksidan. Anti-enflamatwa, sipòte sante kè ak fonksyon iminitè.'}},
-  {emoji:'🌿',en:'Green Onion',ht:'Pwaro',bg:'#1A4A0A',
+  {emoji:'🌿',en:'Green Onion',ht:'Pwaro',bg:'#1A4A0A',photo:'pwaro.jpg',
     desc:{en:'Scallions are one of the foundational aromatics of Haitian epis. They give a fresh, mild onion flavor that blends seamlessly with herbs.',ht:'Pwaro se youn nan awomat fondamantal epis ayisyen. Li bay yon gou zonyon fre, dou ki melanje san pwoblèm ak zèb.'},
     uses:{en:['Epis base','Soups','Grilled fish','Garnish','Sauces'],ht:['Baz epis','Soup','Pwason griye','Garniti','Sòs']},
     benefits:{en:'Rich in vitamin K and antioxidants. Supports bone health, immune function and heart health.',ht:'Rich nan vitamin K ak antioksidan. Sipòte sante zo, fonksyon iminitè ak sante kè.'}},
-  {emoji:'🌱',en:'Parsley',ht:'Pèsi',bg:'#0D3D1A',
+  {emoji:'🌱',en:'Parsley',ht:'Pèsi',bg:'#0D3D1A',photo:'pèsi.jpg',
     desc:{en:'Fresh parsley is the green heart of Haitian epis. It brings brightness and freshness that balances the heat of other spices.',ht:'Pèsi fre se kè vèt epis ayisyen. Li pote klète ak frechè ki balanse chalè lòt epis yo.'},
     uses:{en:['Epis base','Garnish','Sauces','Seafood','Salads'],ht:['Baz epis','Garniti','Sòs','Pwason','Salad']},
     benefits:{en:'Exceptionally rich in vitamins K, C and A. Supports bone health and acts as a natural diuretic.',ht:'Ekstrèmman rich nan vitamin K, C ak A. Sipòte sante zo epi aji kòm yon diuretik natirèl.'}},
@@ -927,11 +937,11 @@ const spices=[
     desc:{en:'Haitian thyme grown at high altitude is more potent and fragrant than any commercial variety. Essential in every kitchen.',ht:'Tim ayisyen ki pouse nan wo altitid se pi pwisan ak pi pafime pase tout lòt variete. Esansyèl nan tout kizin.'},
     uses:{en:['Epis base','Soup Joumou','Stews','Rice','Grilled meats'],ht:['Baz epis','Soup joumou','Ragoù','Diri','Vyann griye']},
     benefits:{en:'Antibacterial and antifungal. High in vitamin K and supports respiratory health.',ht:'Antibakteryèl ak antifongik. Rich nan vitamin K epi sipòte sante respiratwa.'}},
-  {emoji:'🧅',en:'Shallot',ht:'Echalòt',bg:'#4A2A10',
+  {emoji:'🧅',en:'Shallot',ht:'Echalòt',bg:'#4A2A10',photo:'echalòt.jpg',
     desc:{en:'More refined than regular onion, shallots add a gentle, sweet depth to Haitian epis and sauces without overpowering other flavors.',ht:'Pi rafine pase zonyon òdinè, echalòt ajoute yon pwofondè dou ak janti nan epis ak sòs ayisyen san li pa domine lòt gou yo.'},
     uses:{en:['Epis base','Fine sauces','Fish dishes','Vinaigrettes','Stews'],ht:['Baz epis','Sòs fen','Plat pwason','Vinegrèt','Ragoù']},
     benefits:{en:'Rich in antioxidants and allicin. Supports cardiovascular health and has anti-bacterial properties.',ht:'Rich nan antioksidan ak alisin. Sipòte sante kadyovaskilè epi gen pwopriete anti-bakteryèl.'}},
-  {emoji:'🌿',en:'Rosemary',ht:'Romaren',bg:'#0A2A1A',
+  {emoji:'🌿',en:'Rosemary',ht:'Romaren',bg:'#0A2A1A',photo:'womaren.JPG',
     desc:{en:'Aromatic and piney, rosemary is the signature herb of the Volay blend. It pairs beautifully with poultry and white meats.',ht:'Awomat ak lodè pin, romaren se zèb siyati melanj Volay la. Li akonpaye bèlman ak poul ak vyann blanch.'},
     uses:{en:['Chicken','Turkey','Roasted meats','Herb oils','Marinades'],ht:['Poul','Kòdenn','Vyann woti','Lwil zèb','Marinad']},
     benefits:{en:'Improves memory and concentration. Antioxidant and anti-inflammatory. Supports hair and scalp health.',ht:'Amelyore memwa ak konsantrasyon. Antioksidan ak anti-enflamatwa. Sipòte sante cheve ak tèt.'}},
@@ -939,7 +949,7 @@ const spices=[
     desc:{en:'Whole cloves release a deep, warm aroma when cooked. A key spice in Haitian meat marinades and warm drinks.',ht:'Jiwòf antye lage yon odè fon, cho lè yo kwit. Yon epis kle nan marinad vyann ak bwason cho.'},
     uses:{en:['Meat marinades','Rice collé','Herbal teas','Soup Joumou','Desserts'],ht:['Marinad vyann','Diri kole','Tizan','Soup joumou','Dese']},
     benefits:{en:'Powerful antiseptic and pain reliever. Supports digestion and contains eugenol, a natural anesthetic.',ht:'Antiseptik pwisan ak soulajman doulè. Sipòte dijestion epi gen ejijenòl, yon anestezik natirèl.'}},
-  {emoji:'🥥',en:'Coconut',ht:'Kokoye',bg:'#3D2A00',
+  {emoji:'🥥',en:'Coconut',ht:'Kokoye',bg:'#3D2A00',photo:'kokoye.jpg',
     desc:{en:'Haitian coconut — raw, dried, or as coconut milk — is essential in rice dishes, desserts, and coastal cooking. Rich, creamy and unmistakably tropical.',ht:'Kokoye ayisyen — kri, seche, oswa kòm lèt kokoye — esansyèl nan plat diri, dese, ak kwizin kòtye. Rich, krèmye ak twopikal san ekivòk.'},
     uses:{en:['Diri ak djon djon','Legume','Desserts','Pain patate','Coastal fish'],ht:['Diri ak djon djon','Legim','Dese','Pen patat','Pwason kòtye']},
     benefits:{en:'Rich in healthy fats, medium-chain triglycerides and lauric acid. Supports brain function and immunity.',ht:'Rich nan grès sante, trigliserid chèn mwayen ak asid lorik. Sipòte fonksyon sèvo ak iminite.'}},
@@ -947,11 +957,11 @@ const spices=[
     desc:{en:'Earthy and warm, cumin adds a nutty depth to Haitian taso and beef dishes. Used sparingly but with powerful effect.',ht:'Tè ak cho, kimen ajoute yon pwofondè nwa nan taso ayisyen ak plat bèf. Itilize avèk modèrasyon men ak efè pwisan.'},
     uses:{en:['Taso','Beef stew','Dry rubs','Rice dishes','Legumes'],ht:['Taso','Ragoù bèf','Frotaj sèk','Plat diri','Legim']},
     benefits:{en:'Aids digestion and iron absorption. Anti-inflammatory and helps regulate blood sugar levels.',ht:'Ede dijestion ak absòpsyon fè. Anti-enflamatwa epi ede règle nivo sik nan san.'}},
-  {emoji:'⭐',en:'Star Anise',ht:'Anis Etwale',bg:'#2A1A3D',
+  {emoji:'⭐',en:'Star Anise',ht:'Anis Etwale',bg:'#2A1A3D',photo:'ani etwale.jpg',
     desc:{en:'These star-shaped pods carry a complex licorice aroma. Central to Haitian herbal teas and certain meat preparations.',ht:'Gous ki gen fòm etwal sa yo pote yon awomat réglise konplèks. Santral nan tizan ayisyen ak kèk preparasyon vyann.'},
     uses:{en:['Herbal teas','Pork sauces','Goat stew','Desserts','Digestifs'],ht:['Tizan','Sòs kochon','Ragout kabrit','Dese','Dijestif']},
     benefits:{en:'Antiviral, antibacterial and rich in antioxidants. Relieves bloating and supports digestive health.',ht:'Antiviral, antibakteryèl ak rich nan antioksidan. Soulaje gonfleman epi sipòte sante dijestif.'}},
-  {emoji:'🫚',en:'Cinnamon',ht:'Kanèl',bg:'#5C2E0A',
+  {emoji:'🫚',en:'Cinnamon',ht:'Kanèl',bg:'#5C2E0A',photo:'kanel.jpg',
     desc:{en:'Haitian cinnamon adds warmth and depth to both sweet and savory dishes. Used in coffee, desserts and slow-cooked meats.',ht:'Kanèl ayisyen ajoute chalè ak pwofondè nan plat dou ak sale. Itilize nan kafe, dese ak vyann kwit dousman.'},
     uses:{en:['Haitian coffee','Pain patate','Stews','Herbal teas','Desserts'],ht:['Kafe ayisyen','Pen patat','Ragoù','Tizan','Dese']},
     benefits:{en:'Regulates blood sugar, anti-inflammatory, loaded with antioxidants. Supports heart health.',ht:'Règle sik nan san, anti-enflamatwa, rich nan antioksidan. Sipòte sante kè.'}},
@@ -959,7 +969,7 @@ const spices=[
     desc:{en:'Haitian nutmeg adds a warm, slightly sweet and nutty dimension to both sweet and savory Haitian dishes — especially in pain patate and holiday drinks.',ht:'Muskad ayisyen ajoute yon dimansyon cho, yon ti dou ak savè nwa nan plat ayisyen dou ak sale — espesyalman nan pen patat ak bwason fèt.'},
     uses:{en:['Pain patate','Haitian eggnog','Desserts','Warm drinks','Spice blends'],ht:['Pen patat','Kremas','Dese','Bwason cho','Melanj epis']},
     benefits:{en:'Rich in antioxidants and anti-inflammatory compounds. Supports brain health and aids digestion.',ht:'Rich nan antioksidan ak konpoze anti-enflamatwa. Sipòte sante sèvo epi ede dijestion.'}},
-  {emoji:'🌸',en:'Vanilla',ht:'Vaniy',bg:'#3D2010',
+  {emoji:'🌸',en:'Vanilla',ht:'Vaniy',bg:'#3D2010',photo:'ekstrè vaniy.png',
     desc:{en:'Haitian vanilla is among the finest in the world — rich, floral and complex. Used in desserts, kremas, and Haitian coffee for an unmistakable aromatic depth.',ht:'Vaniy ayisyen se youn nan pi bon nan mond lan — rich, floral ak konplèks. Itilize nan dese, kremas, ak kafe ayisyen pou yon pwofondè awomat san parèy.'},
     uses:{en:['Kremas','Desserts','Haitian coffee','Pain patate','Ice cream'],ht:['Kremas','Dese','Kafe ayisyen','Pen patat','Krèm glase']},
     benefits:{en:'Contains vanillin, a powerful antioxidant. May reduce anxiety, support mental health and anti-inflammatory.',ht:'Kontenyen vanilin, yon antioksidan pwisan. Ka redwi lènmi, sipòte sante mantal ak anti-enflamatwa.'}},
@@ -971,13 +981,16 @@ const spices=[
 
 function buildSpiceGrid(){
   const grid=document.getElementById('spice-grid');
-  grid.innerHTML=spices.map((s,i)=>`
-    <div class="spice-tile" style="--tile-bg:${s.bg}" onclick="openSpice(${i})">
+  grid.innerHTML=spices.map((s,i)=>{
+    const cls=s.photo?' has-photo':'';
+    const imgStyle=s.photo?`--tile-img:url('images/${s.photo.replace(/ /g,'%20').replace(/è/g,'%C3%A8').replace(/ò/g,'%C3%B2')}');`:'';
+    return `<div class="spice-tile${cls}" style="--tile-bg:${s.bg};${imgStyle}" onclick="openSpice(${i})">
       <div class="spice-tile-accent"></div>
       <span class="spice-tile-emoji">${s.emoji}</span>
       <span class="spice-tile-name">${lang==='ht'?s.ht:s.en}</span>
       <span class="spice-tile-kr">${lang==='ht'?s.en:s.ht}</span>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 }
 
 function openSpice(i){
