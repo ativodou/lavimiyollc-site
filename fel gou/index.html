@@ -159,8 +159,7 @@
     background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.08) 55%, rgba(0,0,0,0.45) 100%);
   }
   .spice-tile.has-photo .spice-tile-emoji {
-    font-size: 1.4rem; background: rgba(0,0,0,0.35); border-radius: 50%;
-    width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center;
+    display: none;
   }
   .spice-tile-emoji {
     font-size: 2rem; line-height: 1;
@@ -825,7 +824,7 @@ function renderProducts(){
   document.getElementById('product-grid').innerHTML=list.map(p=>`
     <div class="product-card">
       <div class="product-img" style="background:${p.bg}; padding:0; overflow:hidden;">
-        <img src="images/${labelMap[p.id]}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;">
+        <img src="images/${labelMap[p.id]}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;object-position:top;">
         ${p.badge?`<span class="product-badge ${bc[p.badge]}">${bl[p.badge]}</span>`:''}
       </div>
       <div class="product-body">
