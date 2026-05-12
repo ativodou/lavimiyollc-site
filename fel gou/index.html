@@ -440,7 +440,10 @@
   }
 
   @media (max-width: 480px) {
-    .product-grid { grid-template-columns: 1fr; }
+    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+    .product-img { height: 120px; }
+    .product-body { padding: 0.6rem; }
+    .product-name { font-size: 1rem; }
     .features-grid { grid-template-columns: 1fr; }
     .hero-right { height: 220px; }
     .spice-tile-name { display: none; }
