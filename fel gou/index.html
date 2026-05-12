@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Fèl Gou — Epis Ayisyen Otantik / Authentic Haitian Spices">
+<meta property="og:title" content="Fèl Gou — Epis Ayisyen Otantik">
+<meta property="og:description" content="Authentic Haitian spices grown with love, delivered to your door. The taste of Haiti, everywhere.">
+<meta property="og:image" content="https://felgou.com/images/fel-gou.png">
+<meta property="og:url" content="https://felgou.com">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌶️</text></svg>">
 <title>Fèl Gou — Epis Ayisyen</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -629,7 +635,7 @@
     <div class="footer-brand"><span class="nav-logo">Fèl <span>Gou</span></span><p data-i18n="foot.tag"></p></div>
     <div class="footer-col"><h4 data-i18n="foot.c1h"></h4><ul><li data-i18n="foot.c1.1"></li><li data-i18n="foot.c1.2"></li><li data-i18n="foot.c1.3"></li><li data-i18n="foot.c1.4"></li></ul></div>
     <div class="footer-col"><h4 data-i18n="foot.c2h"></h4><ul><li data-i18n="foot.c2.1"></li><li data-i18n="foot.c2.2"></li><li data-i18n="foot.c2.3"></li><li data-i18n="foot.c2.4"></li></ul></div>
-    <div class="footer-col"><h4 data-i18n="foot.c3h"></h4><ul><li data-i18n="foot.c3.1"></li><li data-i18n="foot.c3.2"></li><li data-i18n="foot.c3.3"></li><li data-i18n="foot.c3.4"></li></ul></div>
+    <div class="footer-col"><h4 data-i18n="foot.c3h"></h4><ul><li><a href="mailto:contact@lavimiyo.com" data-i18n="foot.c3.1" style="color:inherit;text-decoration:none;opacity:0.8;transition:opacity 0.2s;"></a></li><li data-i18n="foot.c3.2"></li><li data-i18n="foot.c3.3"></li><li data-i18n="foot.c3.4"></li></ul></div>
   </div>
   <div class="footer-bottom">
     <p data-i18n="foot.copy"></p>
@@ -646,7 +652,7 @@
     <div class="cart-sub-row"><span id="cart-sub-label"></span><span id="cart-sub-val">$0.00</span></div>
     <div class="cart-sub-row"><span id="cart-ship-label"></span><span style="color:var(--forest);font-weight:600;" id="cart-free-label"></span></div>
     <div class="cart-total-row"><strong id="cart-total-label"></strong><span class="total-price" id="cart-total-val">$0.00</span></div>
-    <button class="checkout-btn" id="checkout-btn-el"></button>
+    <button class="checkout-btn" id="checkout-btn-el" onclick="startCheckout()"></button>
   </div>
 </div>
 <div class="toast" id="toast"></div>
@@ -692,7 +698,7 @@ const T = {
     'foot.c1h':'Boutik','foot.c1.1':'Tout epis yo','foot.c1.2':'Bwat kado','foot.c1.3':'Abònman mansyèl','foot.c1.4':'Epis ra',
     'foot.c2h':'Enfòmasyon','foot.c2.1':'Istwa nou','foot.c2.2':'Agrikiltè nou yo','foot.c2.3':'Blòg resèt','foot.c2.4':'Laprès',
     'foot.c3h':'Sipò','foot.c3.1':'Kontakte nou','foot.c3.2':'Livrezon','foot.c3.3':'Retounen','foot.c3.4':'FAQ',
-    'foot.copy':'© 2025 Fèl Gou. Tout dwa rezève. · Fèt ak ❤️ pou dyaspora ayisyen an.',
+    'foot.copy':'© 2026 Fèl Gou. Tout dwa rezève. · Fèt ak ❤️ pou dyaspora ayisyen an.',
     'cart.title':'Panye Mwen','cart.empty':'Panye ou vid','cart.sub':'Sou-total','cart.ship':'Livrezon','cart.free':'Gratis','cart.total':'Total','cart.checkout':'Pase Kòmand →',
     'toast':'ajoute nan panye!',
     'strip':['Epis Ayisyen','✦','Livrezon Gratis','✦','Kalite Atizanal','✦','Rekolte ak Men','✦','100% Natirèl','✦','Apwouve Chef Tony','✦'],
@@ -733,7 +739,7 @@ const T = {
     'foot.c1h':'Shop','foot.c1.1':'All spices','foot.c1.2':'Gift sets','foot.c1.3':'Monthly subscription','foot.c1.4':'Rare spices',
     'foot.c2h':'Information','foot.c2.1':'Our story','foot.c2.2':'Our farmers','foot.c2.3':'Recipe blog','foot.c2.4':'Press',
     'foot.c3h':'Support','foot.c3.1':'Contact us','foot.c3.2':'Shipping','foot.c3.3':'Returns','foot.c3.4':'FAQ',
-    'foot.copy':'© 2025 Fèl Gou. All rights reserved. · Made with ❤️ for the Haitian diaspora.',
+    'foot.copy':'© 2026 Fèl Gou. All rights reserved. · Made with ❤️ for the Haitian diaspora.',
     'cart.title':'My Cart','cart.empty':'Your cart is empty','cart.sub':'Subtotal','cart.ship':'Shipping','cart.free':'Free','cart.total':'Total','cart.checkout':'Proceed to Checkout →',
     'toast':'added to cart!',
     'strip':['Haitian Spices','✦','Free Shipping','✦','Artisan Quality','✦','Hand Harvested','✦','100% Natural','✦','Chef Tony Approved','✦'],
@@ -1011,6 +1017,35 @@ function closeSpice(e){if(e.target===document.getElementById('spice-overlay'))cl
 function closeSpiceBtn(){document.getElementById('spice-overlay').classList.remove('open');}
 
 applyTranslations(); renderProducts(); buildStrip(); buildSpiceGrid();
+
+async function startCheckout() {
+  const btn = document.getElementById('checkout-btn-el');
+  btn.disabled = true;
+  btn.textContent = '⏳';
+  try {
+    const items = Object.values(cart).map(i => ({
+      name: (products['en'].find(x => x.id === i.id) || i).name,
+      price: i.price,
+      qty: i.qty,
+    }));
+    const res = await fetch('/api/checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        items,
+        successUrl: window.location.origin + '/success',
+        cancelUrl: window.location.origin,
+      }),
+    });
+    const data = await res.json();
+    if (data.url) { window.location.href = data.url; }
+    else throw new Error(data.error || 'Checkout failed');
+  } catch (err) {
+    alert('Erè: ' + err.message);
+    btn.disabled = false;
+    btn.textContent = t('cart.checkout');
+  }
+}
 </script>
 </body>
 </html>
