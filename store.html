@@ -84,8 +84,9 @@
   .sp-text { font-size: 0.85rem; color: var(--muted); }
   .sp-text strong { display: block; color: var(--ink); font-size: 0.9rem; }
   .brand-products { display: flex; flex-direction: column; gap: 0; border-top: 1px solid rgba(26,15,8,0.08); margin-bottom: 2rem; }
-  .product-row { display: flex; justify-content: space-between; align-items: center; padding: 0.85rem 0; border-bottom: 1px solid rgba(26,15,8,0.06); }
-  .product-name { font-size: 0.9rem; color: var(--ink-mid); }
+  .product-row { display: flex; justify-content: space-between; align-items: center; padding: 0.85rem 0; border-bottom: 1px solid rgba(26,15,8,0.06); gap: 0.75rem; }
+  .product-row-img { width: 44px; height: 44px; object-fit: cover; border-radius: 0.4rem; flex-shrink: 0; }
+  .product-name { font-size: 0.9rem; color: var(--ink-mid); flex: 1; }
   .product-price { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 0.1em; }
   .brand-cta { display: inline-block; font-family: 'Bebas Neue', sans-serif; font-size: 0.85rem; letter-spacing: 0.2em; padding: 1rem 2.5rem; text-decoration: none; transition: all 0.3s; }
 
@@ -399,41 +400,7 @@
           Founder · Spokesperson · Personal blessing on every product before shipment
         </div>
       </div>
-      <div class="brand-products">
-        <div class="product-row">
-          <span class="product-name">Lwil Beni — Blessed Sacred Oils</span>
-          <span class="product-price">From $18.99</span>
-        </div>
-        <div class="product-row">
-          <span class="product-name">Dlo Espirityèl — Spiritual Waters</span>
-          <span class="product-price">From $16.99</span>
-        </div>
-        <div class="product-row">
-          <span class="product-name">Bougies Beni — Blessed Candles</span>
-          <span class="product-price">From $14.99</span>
-        </div>
-        <div class="product-row">
-          <span class="product-name">Pafen Sakre — Sacred Perfumes</span>
-          <span class="product-price">From $22.99</span>
-        </div>
-        <div class="product-row">
-          <span class="product-name">Fishu ak Foulà — Ceremonial Wraps</span>
-          <span class="product-price">From $29.99</span>
-        </div>
-        <div class="product-row">
-          <span class="product-name">Papye Pou Priye — Prayer & Wishing Paper</span>
-          <span class="product-price">From $9.99</span>
-        </div>
-      </div>
-      <a href="https://lakouati.com" class="brand-cta">Shop Lakou Ati →</a>
-    </div>
-    <div class="lakou-visual">
-      <img src="/images/bitasyon-logo.png" alt="Bitasyon — Lakou Ati" class="brand-visual-logo">
-      <div class="visual-brand-row">
-        <img src="/images/lakou-ati-logo.png" alt="Lakou Ati" class="visual-lakou-logo">
-        <span class="visual-badge gold" style="margin-bottom:0;">Lakou Ati · Spiritual Goods</span>
-      </div>
-      <div class="visual-title">An absolute competitive moat</div>
+      <div class="visual-title" style="margin-bottom:1rem;">An absolute competitive moat</div>
       <ul class="visual-facts">
         <li><span>✓</span><span>Every product personally blessed by the Ati National before packaging</span></li>
         <li><span>✓</span><span>The blessing is a sacred Vodou ceremony — not a marketing claim</span></li>
@@ -441,6 +408,11 @@
         <li><span>✓</span><span>Distributed in Haiti via Ramada SA — symbolic weight of the Ati's products sold in his own country</span></li>
         <li><span>✓</span><span>Certified ceremonial packaging: the Lakou Ati seal of the Ati National</span></li>
       </ul>
+      <a href="https://lakouati.com" class="brand-cta" style="margin-top:1.75rem;">Shop Lakou Ati →</a>
+    </div>
+    <div class="lakou-visual" style="padding:0;overflow:hidden;display:grid;grid-template-rows:1fr 1fr;gap:1.5rem;">
+      <img src="/images/flyer%20bitasyon.png" alt="" style="width:100%;height:240px;object-fit:cover;object-position:center top;display:block;">
+      <img src="/images/flyer%20bitasyon.png" alt="" style="width:100%;height:240px;object-fit:cover;object-position:center bottom;display:block;">
     </div>
   </div>
 </section>

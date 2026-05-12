@@ -219,7 +219,7 @@
 
   /* PRODUCTS */
   .products { background: var(--cream); }
-  .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2rem; }
+  .product-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
   .product-card { background: #fff; border-radius: 1rem; overflow: hidden; border: 1px solid rgba(200,137,26,0.15); transition: transform 0.25s, box-shadow 0.25s; }
   .product-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(78,14,14,0.12); }
   .product-img { height: 200px; display: flex; align-items: center; justify-content: center; font-size: 4.5rem; position: relative; }
@@ -227,7 +227,7 @@
   .badge-new { background: var(--forest); color: #fff; }
   .badge-hot { background: var(--crimson); color: #fff; }
   .badge-bs { background: var(--gold); color: var(--charcoal); }
-  .product-body { padding: 1.25rem; }
+  .product-body { padding: 0.75rem; }
   .product-origin { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--warm-gray); font-weight: 500; margin-bottom: 0.3rem; }
   .product-name { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 700; color: var(--crimson-dark); margin-bottom: 0.3rem; line-height: 1.1; }
   .product-sub { font-size: 0.8rem; font-weight: 300; color: var(--warm-gray); margin-bottom: 0.6rem; font-style: italic; }
@@ -397,7 +397,7 @@
     .section-head { flex-direction: column; gap: 0.25rem; }
 
     /* PRODUCTS */
-    .product-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
     .product-img { height: 150px; font-size: 3rem; }
     .product-body { padding: 0.9rem; }
     .product-name { font-size: 1.1rem; }
@@ -681,7 +681,7 @@ const T = {
     'chef.bio2':'Pwosesis evalyasyon li a gen ladan tès awomat, degustasyon kri, eprèv kwit manje ak verifikasyon orijin. Sèlman lo ki satisfè egzijans li yo resevwa apwobasyon li.',
     'chef.quote':'« Yon epis de kalite, se diferans ant yon plat òdinè ak yon plat memorab. Zansèt nou yo te konn sa. Wòl mwen se pwouve li nan chak boutèy. »',
     'chef.s1':'Ane eksperyans','chef.s2':'Dekorasyon resevwa','chef.s3':'Pwodwi teste',
-    'rev.h1':'Yo','rev.h2':'Fè Konfyans Nou','rev.kicker':'Opinyon Verifye',
+    'rev.h1':'Yo','rev.h2':'Fè Nou Konfyans','rev.kicker':'Opinyon Verifye',
     'rev.1.t':'Epis la se egzakteman tankou sa grann mwen te prepare an Ayiti. Yon gou enkwayab, enposib jwenn lòt kote nan Etazini.',
     'rev.2.t':'Piman bouk seche a se yon kalite eksepsyonèl. Jis sa ki fò ak pafimen. Griyò mwen pa t janm goute konsa !',
     'rev.3.t':'M ap kòmande chak mwa depi sis mwa. Pakaj la bèl, epis yo fre, sèvis kliyan eksèlan. Mèsi Fèl Gou !',
@@ -743,12 +743,14 @@ const products = {
     {id:2,name:'Pwason',sub:'Melanj epis pou pwason',emoji:'🐟',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Sitwon, Lay, Powo, Piman bouk, Anis, Pèsi ak plis. Fè pwason ou gen yon gou twopikal ki inoublyab.',price:12.99,badge:'new',bg:'#0D1B3E',textcolor:'#C8D8F0'},
     {id:3,name:'Taso',sub:'Melanj epis pou bèf',emoji:'🥩',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Lay, Powo, Orange sure, Sèl, Tim, Pèsi, Kimen, Jenjann, Piman bouk ak sekrè fanmi. Taso ou pa t janm goute sa.',price:12.99,badge:null,bg:'#3D1A0A',textcolor:'#F5E6C0'},
     {id:4,name:'Volay',sub:'Melanj epis pou poul',emoji:'🍗',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Lay, Powo, Piman bouk, Sèl, Pwav blan, Sitwon, Orange sure, Wozmari, Pèsi ak sekrè fanmi. Poul ou a p ap janm goute menm.',price:12.99,badge:'hot',bg:'#1A3D1A',textcolor:'#C8F0C8'},
+    {id:5,name:'Pikliz',sub:'Melanj epis pou pikliz',emoji:'🥬',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Kòm, Piman bouk, Zoranj su, Lay, Pwav nwa, Sèl ak sekrè fanmi nou. Tout sa ou bezwen pou yon pikliz otantik ki pike.',price:12.99,badge:'new',bg:'#2A4A1A',textcolor:'#C8F0C8'},
   ],
   en:[
     {id:1,name:'Griyo',sub:'Pork spice blend',emoji:'🥩',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Special family recipe: Orange sure, Leek, Scotch bonnet, Salt and our family secret. Perfect for authentic Haitian griot.',price:12.99,badge:'bs',bg:'#5C3D11',textcolor:'#F5E6C0'},
     {id:2,name:'Pwason',sub:'Fish spice blend',emoji:'🐟',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Lemon, Garlic, Leek, Scotch bonnet, Anise, Parsley and more. Give your fish an unforgettable tropical flavor.',price:12.99,badge:'new',bg:'#0D1B3E',textcolor:'#C8D8F0'},
     {id:3,name:'Taso',sub:'Beef spice blend',emoji:'🥩',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Garlic, Leek, Orange sure, Salt, Thyme, Parsley, Cumin, Ginger, Scotch bonnet and family secret. Taso like you\'ve never tasted.',price:12.99,badge:null,bg:'#3D1A0A',textcolor:'#F5E6C0'},
     {id:4,name:'Volay',sub:'Poultry spice blend',emoji:'🍗',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Garlic, Leek, Scotch bonnet, Salt, White pepper, Lemon, Orange sure, Rosemary, Parsley and family secret. Your chicken will never taste the same.',price:12.99,badge:'hot',bg:'#1A3D1A',textcolor:'#C8F0C8'},
+    {id:5,name:'Pikliz',sub:'Pickled condiment blend',emoji:'🥬',origin:'Fèl Gou · Chef Tony Desmornes',desc:'Cabbage, Scotch bonnet, Sour orange, Garlic, Black pepper, Salt and our family secret. Everything you need for an authentic fiery Haitian pikliz.',price:12.99,badge:'new',bg:'#2A4A1A',textcolor:'#C8F0C8'},
   ]
 };
 
@@ -817,21 +819,19 @@ ${ticks}
 
 function renderProducts(){
   const list=products[lang];
-  const labelMap = {1:'cropped_etiket_tony_griyo.jpg',2:'cropped_etiket_tony_pwason.jpg',3:'cropped_etiket_tony_taso.jpg',4:'cropped_etiket_tony_volay.jpg'};
+  const labelMap = {1:'griyo.png',2:'pwason.png',3:'taso.png',4:'volay.png',5:'pikliz.png'};
   const bc={bs:'badge-bs',hot:'badge-hot',new:'badge-new'};
   const bl={bs:t('badge.bs'),hot:t('badge.hot'),new:t('badge.new')};
   document.getElementById('product-grid').innerHTML=list.map(p=>`
     <div class="product-card">
       <div class="product-img" style="background:${p.bg}; padding:0; overflow:hidden;">
-        <img src="images/${labelMap[p.id]}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;object-position:top;">
+        <img src="images/${labelMap[p.id]}" alt="${p.name}" style="width:100%;height:100%;object-fit:contain;">
         ${p.badge?`<span class="product-badge ${bc[p.badge]}">${bl[p.badge]}</span>`:''}
       </div>
       <div class="product-body">
         <p class="product-origin">${p.origin}</p>
         <h3 class="product-name">${p.name}</h3>
         <p class="product-sub">${p.sub}</p>
-        <p class="product-desc">${p.desc}</p>
-        <div class="chef-seal">${sealSVG(lang)}</div>
         <div class="product-footer">
           <div class="product-price">$${p.price.toFixed(2)}<small> ${t('p.unit')}</small></div>
           <button class="add-btn" id="btn-${p.id}" onclick="addToCart(${p.id})">${t('p.add')}</button>
