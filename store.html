@@ -241,7 +241,7 @@
   .qty-btn { width: 24px; height: 24px; border: 1px solid rgba(26,15,8,0.15); background: none; cursor: pointer; font-size: 1rem; color: var(--ink); border-radius: 4px; display: flex; align-items: center; justify-content: center; transition: background 0.15s; line-height: 1; }
   .qty-btn:hover { background: rgba(26,15,8,0.07); }
   .qty-val { font-size: 0.85rem; min-width: 20px; text-align: center; }
-  .cart-footer { padding: 1.5rem 1.75rem; border-top: 1px solid rgba(26,15,8,0.08); }
+  .cart-footer { padding: 1.5rem 1.75rem; border-top: 1px solid rgba(26,15,8,0.08); flex-shrink: 0; }
   .cart-totals { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.25rem; }
   .cart-row { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--muted); }
   .cart-row.total { font-size: 1rem; font-weight: 700; color: var(--ink); border-top: 1px solid rgba(26,15,8,0.08); padding-top: 0.5rem; margin-top: 0.2rem; }
@@ -523,7 +523,8 @@
       <div class="cart-row total"><span>Total</span><span id="cart-total">$0.00</span></div>
     </div>
     <button class="checkout-btn" id="checkout-btn" onclick="startCheckout()">Pase Kòmand — Kat Kredi →</button>
-    <button class="checkout-btn" id="moncash-btn" onclick="startMoncash()" style="background:var(--or);color:var(--ink);margin-top:0.5rem;">Peye ak MonCash →</button>
+    <div style="text-align:center;font-size:0.72rem;color:var(--muted);margin:0.6rem 0;letter-spacing:0.1em;">— oubyen —</div>
+    <button class="checkout-btn" id="moncash-btn" onclick="startMoncash()" style="background:#FFCB05;color:#1a1a1a;font-size:0.85rem;">📱 Peye ak MonCash</button>
   </div>
 </div>
 
