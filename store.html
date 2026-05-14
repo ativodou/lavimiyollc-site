@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+s.  1
+1no need to put the produ<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -84,9 +85,8 @@
   .sp-text { font-size: 0.85rem; color: var(--muted); }
   .sp-text strong { display: block; color: var(--ink); font-size: 0.9rem; }
   .brand-products { display: flex; flex-direction: column; gap: 0; border-top: 1px solid rgba(26,15,8,0.08); margin-bottom: 2rem; }
-  .product-row { display: flex; justify-content: space-between; align-items: center; padding: 0.85rem 0; border-bottom: 1px solid rgba(26,15,8,0.06); gap: 0.75rem; }
-  .product-row-img { width: 44px; height: 44px; object-fit: cover; border-radius: 0.4rem; flex-shrink: 0; }
-  .product-name { font-size: 0.9rem; color: var(--ink-mid); flex: 1; }
+  .product-row { display: flex; justify-content: space-between; align-items: center; padding: 0.85rem 0; border-bottom: 1px solid rgba(26,15,8,0.06); }
+  .product-name { font-size: 0.9rem; color: var(--ink-mid); }
   .product-price { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 0.1em; }
   .brand-cta { display: inline-block; font-family: 'Bebas Neue', sans-serif; font-size: 0.85rem; letter-spacing: 0.2em; padding: 1rem 2.5rem; text-decoration: none; transition: all 0.3s; }
 
@@ -99,7 +99,7 @@
   .fel .brand-cta { background: var(--rouge); color: white; border: 2px solid var(--rouge); }
   .fel .brand-cta:hover { background: transparent; color: var(--rouge); }
   .fel-visual { background: var(--rouge-pale); border: 1px solid rgba(192,57,43,0.12); padding: 3rem; position: relative; }
-  .fel-visual::before { content: ''; }
+  .fel-visual::before { content: '🌶'; font-size: 5rem; position: absolute; top: -1rem; right: 1.5rem; opacity: 0.15; }
 
   /* FEW BEL — VIOLET */
   .few .brand-eyebrow { color: var(--violet); }
@@ -110,7 +110,7 @@
   .few .brand-cta { background: var(--violet); color: white; border: 2px solid var(--violet); }
   .few .brand-cta:hover { background: transparent; color: var(--violet); }
   .few-visual { background: var(--violet-pale); border: 1px solid rgba(123,63,140,0.12); padding: 3rem; position: relative; }
-  .few-visual::before { content: ''; }
+  .few-visual::before { content: '✨'; font-size: 5rem; position: absolute; top: -1rem; right: 1.5rem; opacity: 0.2; }
 
   /* LAKOU ATI — GOLD */
   .lakou .brand-eyebrow { color: var(--or); }
@@ -121,7 +121,7 @@
   .lakou .brand-cta { background: var(--or); color: var(--ink); border: 2px solid var(--or); }
   .lakou .brand-cta:hover { background: transparent; color: var(--or); }
   .lakou-visual { background: var(--or-pale); border: 1px solid rgba(212,168,67,0.2); padding: 3rem; position: relative; }
-  .lakou-visual::before { content: ''; }
+  .lakou-visual::before { content: '🕯'; font-size: 5rem; position: absolute; top: -1rem; right: 1.5rem; opacity: 0.2; }
 
   /* VISUAL CARD CONTENT */
   .visual-badge { font-family: 'Bebas Neue', sans-serif; font-size: 0.65rem; letter-spacing: 0.3em; padding: 0.3rem 0.7rem; border-radius: 2px; display: inline-block; margin-bottom: 1.5rem; }
@@ -159,49 +159,19 @@
   footer p { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; }
 
   .lakou-logo {
-    width: 110px; height: 110px;
+    width: 80px; height: 80px;
     object-fit: contain;
     margin-bottom: 1rem;
     display: block;
     opacity: 0.9;
   }
 
-  .brand-visual-photo {
-    width: calc(100% + 6rem);
-    margin: -3rem -3rem 1.5rem -3rem;
-    display: block;
-    height: 220px;
-    object-fit: cover;
-    object-position: center top;
-  }
-  .brand-visual-logo {
-    width: 100%;
-    height: 280px;
-    object-fit: contain;
-    display: block;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-  }
-  .visual-brand-row {
-    display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;
-  }
-  .visual-lakou-logo {
-    height: 32px; object-fit: contain; opacity: 0.85;
-  }
-
   .spokesperson-photo {
-    width: 160px;
+    width: 120px;
     object-fit: contain;
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
-  }
-  .visual-chef-mark {
-    width: 110px;
-    object-fit: contain;
-    display: block;
-    margin-bottom: 0.75rem;
-    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
   }
 
   .nav-lakou-logo {
@@ -217,60 +187,6 @@
   .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.5rem; }
   .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--rouge); transition: background 0.2s; }
 
-  .shop-link { font-family: 'Bebas Neue', sans-serif; font-size: 0.65rem; letter-spacing: 0.12em; padding: 0.3rem 0.7rem; border: 1px solid; text-decoration: none; white-space: nowrap; flex-shrink: 0; transition: all 0.2s; }
-  .fel .shop-link { color: var(--rouge); border-color: rgba(192,57,43,0.4); }
-  .fel .shop-link:hover { background: var(--rouge); color: white; border-color: var(--rouge); }
-  .few .shop-link { color: var(--violet); border-color: rgba(123,63,140,0.4); }
-  .few .shop-link:hover { background: var(--violet); color: white; border-color: var(--violet); }
-  .nav-cart-btn { font-family: 'Bebas Neue', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em; color: var(--or); background: none; border: 2px solid var(--or); border-radius: 2rem; padding: 0.45rem 1.1rem; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 0.5rem; }
-  .nav-cart-btn:hover { background: var(--or); color: var(--ink); }
-  .nav-cart-count { background: var(--or); color: var(--ink); border-radius: 50%; width: 18px; height: 18px; font-size: 0.62rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; }
-
-  /* CART PANEL */
-  .cart-overlay { position: fixed; inset: 0; z-index: 200; background: rgba(26,15,8,0.5); opacity: 0; pointer-events: none; transition: opacity 0.3s; }
-  .cart-overlay.open { opacity: 1; pointer-events: all; }
-  .cart-panel { position: fixed; top: 0; right: 0; bottom: 0; z-index: 201; width: 400px; background: var(--cream); transform: translateX(100%); transition: transform 0.35s cubic-bezier(.4,0,.2,1); display: flex; flex-direction: column; border-left: 2px solid rgba(212,168,67,0.25); box-shadow: -8px 0 32px rgba(26,15,8,0.1); }
-  .cart-panel.open { transform: translateX(0); }
-  .cart-panel-hd { padding: 1.5rem 1.75rem; border-bottom: 1px solid rgba(26,15,8,0.08); display: flex; align-items: center; justify-content: space-between; }
-  .cart-panel-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--or); }
-  .close-cart { background: none; border: none; cursor: pointer; font-size: 1.3rem; color: var(--muted); transition: color 0.2s; line-height: 1; }
-  .close-cart:hover { color: var(--ink); }
-  .cart-body { flex: 1; overflow-y: auto; padding: 1rem 1.75rem; }
-  .cart-empty-msg { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 1rem; color: var(--muted); }
-  .cart-empty-msg span { font-size: 2.5rem; opacity: 0.3; }
-  .cart-empty-msg p { font-size: 0.9rem; font-style: italic; }
-  .cart-item { display: flex; gap: 0.75rem; padding: 1rem 0; border-bottom: 1px solid rgba(26,15,8,0.06); }
-  .cart-item-info { flex: 1; }
-  .cart-item-name { font-family: 'Playfair Display', serif; font-size: 0.85rem; font-weight: 700; color: var(--ink); line-height: 1.3; margin-bottom: 0.2rem; }
-  .cart-item-sub { font-size: 0.72rem; color: var(--muted); margin-bottom: 0.5rem; }
-  .cart-item-qty { display: flex; align-items: center; gap: 0.4rem; }
-  .qty-btn { background: none; border: 1px solid rgba(26,15,8,0.15); width: 22px; height: 22px; cursor: pointer; font-size: 0.85rem; line-height: 1; transition: all 0.2s; }
-  .qty-btn:hover { background: var(--or); border-color: var(--or); color: var(--ink); }
-  .cart-item-price { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 0.06em; color: var(--or); white-space: nowrap; }
-  .cart-remove-btn { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 0.9rem; padding: 0.15rem; transition: color 0.2s; }
-  .cart-remove-btn:hover { color: var(--rouge); }
-  .cart-footer { padding: 1.25rem 1.75rem; border-top: 1px solid rgba(26,15,8,0.08); background: var(--warm); }
-  .cart-total-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1rem; }
-  .cart-total-lbl { font-family: 'Bebas Neue', sans-serif; font-size: 0.7rem; letter-spacing: 0.2em; color: var(--muted); }
-  .cart-total-price { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--ink); }
-  .checkout-btn { width: 100%; font-family: 'Bebas Neue', sans-serif; font-size: 0.85rem; letter-spacing: 0.2em; padding: 1rem; background: var(--or); color: var(--ink); border: none; cursor: pointer; transition: background 0.2s; }
-  .checkout-btn:hover { background: var(--or-light); }
-  .checkout-btn:disabled { opacity: 0.6; cursor: not-allowed; }
-
-  /* BOOKS SECTION */
-  .books .brand-eyebrow { color: var(--or); }
-  .books .brand-name { color: var(--or); }
-  .books .brand-kreyol { color: rgba(212,168,67,0.6); }
-  .books .sp-dot { background: var(--or); }
-  .books .product-price { color: var(--or); }
-  .books-add-btn { font-family: 'Bebas Neue', sans-serif; font-size: 0.65rem; letter-spacing: 0.12em; padding: 0.3rem 0.7rem; border: 1px solid var(--or); color: var(--or); background: none; cursor: pointer; white-space: nowrap; flex-shrink: 0; transition: all 0.2s; }
-  .books-add-btn:hover, .books-add-btn.added { background: var(--or); color: var(--ink); border-color: var(--or); }
-  .books .brand-cta { background: var(--or); color: var(--ink); border: 2px solid var(--or); }
-  .books .brand-cta:hover { background: transparent; color: var(--or); }
-  .book-badge { font-family: 'Bebas Neue', sans-serif; font-size: 0.58rem; letter-spacing: 0.18em; padding: 0.15rem 0.4rem; margin-left: 0.4rem; vertical-align: middle; }
-  .book-badge.series { background: rgba(212,168,67,0.12); color: var(--or); border: 1px solid rgba(212,168,67,0.3); }
-  .book-badge.print { background: rgba(5,150,105,0.1); color: #065F46; border: 1px solid rgba(5,150,105,0.25); }
-
   @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
     .nav-hamburger { display: flex; }
@@ -284,28 +200,24 @@
     .nav-brands li:last-child a { border-bottom: none; }
     .brand-inner { grid-template-columns: 1fr; gap: 2.5rem; padding: 0 1.5rem; }
     .brand-inner.rev { direction: ltr; }
-    .brand-visual-photo { width: 100%; margin: -3rem -3rem 1.5rem -3rem; width: calc(100% + 6rem); }
-    .brand-visual-logo { height: 160px; }
+    .fel-visual, .few-visual, .lakou-visual { display: none; }
     .brand-section { padding: 4rem 0; }
     .distribution { padding: 4rem 1.5rem; }
     .channels-grid { grid-template-columns: repeat(2, 1fr); }
     footer { padding: 2rem 1.5rem; flex-direction: column; }
   }
 </style>
-<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 
 <nav>
-  <a href="/" class="nav-back">← LavimiyòLLC</a>
-  <a href="/store/" class="nav-logo">Lavimiy<em>ò</em> · Magazen Kreyòl</a>
+  <a href="index.html" class="nav-back">← LavimiyòLLC</a>
+  <a href="store.html" class="nav-logo">Lavimiy<em>ò</em> · Magazen Kreyòl</a>
   <ul class="nav-brands">
-    <li><a href="#felgou" class="r"><img src="/images/fel-gou.png" class="nav-lakou-logo" alt="">Fèl Gou</a></li>
-    <li><a href="#fewbel" class="v"><img src="/images/few%20bel.png" class="nav-lakou-logo" alt="">Fèw Bèl</a></li>
-    <li><a href="#lakouati" class="o"><img src="/images/lakou-ati-logo.png" class="nav-lakou-logo" alt="">Lakou Ati</a></li>
-    <li><a href="#books" class="o">📚 Bibliyotèk</a></li>
+    <li><a href="#felgou" class="r">Fèl Gou</a></li>
+    <li><a href="#fewbel" class="v">Fèw Bèl</a></li>
+    <li><a href="#lakouati" class="o"><img src="images/lakou-ati-logo.png" class="nav-lakou-logo" alt="">Lakou Ati</a></li>
   </ul>
-  <button class="nav-cart-btn" onclick="toggleCart()">📚 <span class="nav-cart-count" id="cart-count">0</span></button>
   <button class="nav-hamburger" aria-label="Open navigation menu">
     <span></span><span></span><span></span>
   </button>
@@ -321,7 +233,9 @@
     <span class="o">Spirit.</span>
   </h1>
   <p class="hero-sub">Three authentic Haitian brands. Delivered to your door, anywhere in the world.</p>
-  <div class="hero-divider"></div>
+  <div class="hero-divider">
+    <span>🌶</span><span>✨</span><span>🕯</span>
+  </div>
   <p class="hero-body">Every product is rooted in genuine Haitian tradition, validated by recognized experts, and made with 100% natural ingredients. No imitations. No compromises.</p>
 </section>
 
@@ -329,63 +243,53 @@
 <section class="brand-section" id="felgou">
   <div class="brand-inner fel">
     <div>
-      <img src="/images/fel-gou.png" alt="Fèl Gou" class="lakou-logo">
       <span class="brand-eyebrow">Brand 01 · Food · felgou.com</span>
       <h2 class="brand-name">Fèl Gou</h2>
       <span class="brand-kreyol">"Fè l Goute Bon" — Make It Taste Good</span>
-      <p class="brand-desc">Fèl Gou is the platform. <strong>Chef Tony</strong> is the brand. Every spice blend is developed, tested, and certified by Chef Tony Desmornes — 100% natural, no preservatives, no additives, authentic family recipes.</p>
-      <img src="/images/chef-tony.png" alt="Chef Tony Desmornes" class="spokesperson-photo">
+      <p class="brand-desc">Artisanal Haitian spice blends certified and tested by renowned chef Tony Desmornes. 100% natural, no preservatives, no additives — authentic family recipes with secret ingredients that create flavors you can't find anywhere else.</p>
+      <img src="images/chef-tony.png" alt="Chef Tony Desmornes" class="spokesperson-photo">
       <div class="brand-spokesperson">
         <div class="sp-dot"></div>
         <div class="sp-text">
           <strong>Chef Tony Desmornes</strong>
-          The Brand · Culinary Director · His name on every product
+          Official Spokesperson · Culinary Director · Certification on every product
         </div>
       </div>
       <div class="brand-products">
         <div class="product-row">
-          <span class="product-name">Griyo Blend — Pork Spice</span>
+          <span class="product-name">🌶 Griyo Blend — Pork Spice</span>
           <span class="product-price">$12.99</span>
-          <a href="https://felgou.com" class="shop-link" target="_blank">Shop →</a>
         </div>
         <div class="product-row">
-          <span class="product-name">Pwason Blend — Fish Spice</span>
+          <span class="product-name">🐟 Pwason Blend — Fish Spice</span>
           <span class="product-price">$12.99</span>
-          <a href="https://felgou.com" class="shop-link" target="_blank">Shop →</a>
         </div>
         <div class="product-row">
-          <span class="product-name">Taso Blend — Beef Spice</span>
+          <span class="product-name">🥩 Taso Blend — Beef Spice</span>
           <span class="product-price">$12.99</span>
-          <a href="https://felgou.com" class="shop-link" target="_blank">Shop →</a>
         </div>
         <div class="product-row">
-          <span class="product-name">Volay Blend — Poultry Spice</span>
+          <span class="product-name">🍗 Volay Blend — Poultry Spice</span>
           <span class="product-price">$12.99</span>
-          <a href="https://felgou.com" class="shop-link" target="_blank">Shop →</a>
-        </div>
-        <div class="product-row">
-          <span class="product-name">Pikliz Blend — Pickled Condiment</span>
-          <span class="product-price">$12.99</span>
-          <a href="https://felgou.com" class="shop-link" target="_blank">Shop →</a>
         </div>
       </div>
       <a href="https://felgou.com" class="brand-cta">Shop Fèl Gou →</a>
     </div>
     <div class="fel-visual">
-      <img src="/images/OIP.jpg" alt="Haitian cuisine — griyo, diri, bannann" class="brand-visual-photo">
-      <div class="visual-brand-row">
-        <img src="/images/chef-tony.png" alt="Chef Tony" class="visual-chef-mark">
-        <span class="visual-badge red" style="margin-bottom:0;">Chef Tony · Fèl Gou</span>
-      </div>
+      <span class="visual-badge red">Fèl Gou · Artisanal Spices</span>
       <div class="visual-title">What makes it different</div>
       <ul class="visual-facts">
         <li><span>✓</span><span>Chef Tony Desmornes certified — the only Haitian spice brand with a named chef endorsement</span></li>
         <li><span>✓</span><span>Bilingual (Kreyòl / English) — made for the diaspora, not adapted for it</span></li>
         <li><span>✓</span><span>Authentic family recipes with secret ingredients that drive loyalty</span></li>
         <li><span>✓</span><span>100% natural, no preservatives, no additives</span></li>
-        <li><span>✓</span><span>Ingredients sourced from Haitian farmers in Jacmel, Les Cayes, and Artibonite</span></li>
+        <li><span>✓</span><span>The same ingredients Haitian families have been cooking with for generations</span></li>
         <li><span>✓</span><span>Eco-friendly packaging: reusable jars, recycled cardboard, zero plastic</span></li>
       </ul>
+      <div class="visual-margin">
+        <div class="visual-margin-num" style="color:var(--rouge)">65%</div>
+        <div class="visual-margin-label">Gross margin<br>as a specialty food brand</div>
+      </div>
     </div>
   </div>
 </section>
@@ -394,64 +298,56 @@
 <section class="brand-section" id="fewbel">
   <div class="brand-inner rev few">
     <div>
-      <img src="/images/few%20bel.png" alt="Fèw Bèl" class="lakou-logo">
       <span class="brand-eyebrow">Brand 02 · Beauty · fewbel.com</span>
       <h2 class="brand-name">Fèw Bèl</h2>
       <span class="brand-kreyol">"Fè w Bèl" — Make Yourself Beautiful</span>
-      <p class="brand-desc">Natural, plant-based beauty and skincare products developed under the medical guidance of Dr. X, a practicing dermatologist. Caribbean botanical tradition meets clinical science — celebrating the beauty rituals of Caribbean women.</p>
+      <p class="brand-desc">Natural, plant-based beauty and skincare products developed under the medical guidance of Dr. Nadya Remy, a practicing dermatologist. Haitian botanical tradition meets clinical science — celebrating the beauty rituals of Haitian women.</p>
       <div class="brand-spokesperson">
         <div class="sp-dot"></div>
         <div class="sp-text">
-          <strong>Dr. X, Dermatologist</strong>
+          <strong>Dr. Nadya Remy, Dermatologist</strong>
           Official Spokesperson · Medical Director · Formulation validator
         </div>
       </div>
       <div class="brand-products">
         <div class="product-row">
-          <span class="product-name">Lwil Maskreti — Haitian Black Castor Oil</span>
+          <span class="product-name">💧 Lwil Maskreti — Black Castor Oil</span>
           <span class="product-price">$24.99</span>
-          <a href="https://fewbel.com" class="shop-link" target="_blank">Shop →</a>
         </div>
         <div class="product-row">
-          <span class="product-name">Bè Karite — Raw Shea Butter</span>
-          <span class="product-price">$19.99</span>
-          <a href="https://fewbel.com" class="shop-link" target="_blank">Shop →</a>
+          <span class="product-name">🧴 Bè Kawòt — Carrot Butter</span>
+          <span class="product-price">$34.99</span>
         </div>
         <div class="product-row">
-          <span class="product-name">Masque Bentonite — Detox Clay Mask</span>
+          <span class="product-name">🫧 Savon Natirèl — Natural Soaps</span>
+          <span class="product-price">$14.99</span>
+        </div>
+        <div class="product-row">
+          <span class="product-name">🌿 Masque Nettoyant — Clay Masks</span>
+          <span class="product-price">$28.99</span>
+        </div>
+        <div class="product-row">
+          <span class="product-name">🥥 Lwil Kokoye — Coconut Oil</span>
           <span class="product-price">$22.99</span>
-          <a href="https://fewbel.com" class="shop-link" target="_blank">Shop →</a>
-        </div>
-        <div class="product-row">
-          <span class="product-name">Lwil Kokoye — Virgin Coconut Oil</span>
-          <span class="product-price">$18.99</span>
-          <a href="https://fewbel.com" class="shop-link" target="_blank">Shop →</a>
-        </div>
-        <div class="product-row">
-          <span class="product-name">Savon Natirèl — Natural Bar Soap</span>
-          <span class="product-price">$12.99</span>
-          <a href="https://fewbel.com" class="shop-link" target="_blank">Shop →</a>
-        </div>
-        <div class="product-row">
-          <span class="product-name">Masque Chevè — Deep Conditioning Hair Mask</span>
-          <span class="product-price">$26.99</span>
-          <a href="https://fewbel.com" class="shop-link" target="_blank">Shop →</a>
         </div>
       </div>
       <a href="https://fewbel.com" class="brand-cta">Shop Fèw Bèl →</a>
     </div>
     <div class="few-visual">
-      <img src="/images/haitian.%20women.jpg" alt="Haitian beauty" class="brand-visual-photo" style="object-position: center 20%;">
       <span class="visual-badge purple">Fèw Bèl · Natural Beauty</span>
       <div class="visual-title">What makes it different</div>
       <ul class="visual-facts">
-        <li><span>✓</span><span>Dermatologist-validated formulations — Dr. X approves every product</span></li>
+        <li><span>✓</span><span>Dermatologist-validated formulations — Dr. Remy approves every product</span></li>
         <li><span>✓</span><span>Haitian botanical ingredients: castor oil, coconut, moringa, tropical herbs</span></li>
         <li><span>✓</span><span>FDA-compliant labeling and safety testing for all cosmetics</span></li>
         <li><span>✓</span><span>Designed for Haitian skin tones and hair textures — not adapted, built for</span></li>
         <li><span>✓</span><span>Affordable-premium positioning: $14.99 – $34.99</span></li>
-        <li><span>✓</span><span>Botanical ingredients sourced from Haiti and the Caribbean</span></li>
+        <li><span>✓</span><span>Botanicals at the heart of Caribbean beauty rituals for centuries</span></li>
       </ul>
+      <div class="visual-margin">
+        <div class="visual-margin-num" style="color:var(--violet)">75%</div>
+        <div class="visual-margin-label">Gross margin<br>premium skincare with Dr. certification</div>
+      </div>
     </div>
   </div>
 </section>
@@ -460,7 +356,7 @@
 <section class="brand-section" id="lakouati">
   <div class="brand-inner lakou">
     <div>
-      <img src="/images/lakou-ati-logo.png" alt="Lakou Ati" class="lakou-logo">
+      <img src="images/lakou-ati-logo.png" alt="Lakou Ati" class="lakou-logo">
       <span class="brand-eyebrow">Brand 03 · Spiritual · lakouati.com</span>
       <h2 class="brand-name">Lakou Ati</h2>
       <span class="brand-kreyol">"The Sacred Yard" — Haitian Spiritual & Cultural Products</span>
@@ -472,7 +368,33 @@
           Founder · Spokesperson · Personal blessing on every product before shipment
         </div>
       </div>
-      <div class="visual-title" style="margin-bottom:1rem;">An absolute competitive moat</div>
+      <div class="brand-products">
+        <div class="product-row">
+          <span class="product-name">🫙 Lwil Beni — Blessed Sacred Oils</span>
+          <span class="product-price">From $18.99</span>
+        </div>
+        <div class="product-row">
+          <span class="product-name">💧 Dlo Espirityèl — Spiritual Waters</span>
+          <span class="product-price">From $16.99</span>
+        </div>
+        <div class="product-row">
+          <span class="product-name">🕯 Bougies Beni — Blessed Candles</span>
+          <span class="product-price">From $14.99</span>
+        </div>
+        <div class="product-row">
+          <span class="product-name">🌸 Pafumen Sakre — Sacred Perfumes</span>
+          <span class="product-price">From $22.99</span>
+        </div>
+        <div class="product-row">
+          <span class="product-name">🧣 Fishu ak Foulà — Ceremonial Wraps</span>
+          <span class="product-price">From $29.99</span>
+        </div>
+      </div>
+      <a href="https://lakouati.com" class="brand-cta">Shop Lakou Ati →</a>
+    </div>
+    <div class="lakou-visual">
+      <span class="visual-badge gold">Lakou Ati · Spiritual Goods</span>
+      <div class="visual-title">An absolute competitive moat</div>
       <ul class="visual-facts">
         <li><span>✓</span><span>Every product personally blessed by the Ati National before packaging</span></li>
         <li><span>✓</span><span>The blessing is a sacred Vodou ceremony — not a marketing claim</span></li>
@@ -480,25 +402,10 @@
         <li><span>✓</span><span>Distributed in Haiti via Ramada SA — symbolic weight of the Ati's products sold in his own country</span></li>
         <li><span>✓</span><span>Certified ceremonial packaging: the Lakou Ati seal of the Ati National</span></li>
       </ul>
-      <a href="https://lakouati.com" class="brand-cta" style="margin-top:1.75rem;">Shop Lakou Ati →</a>
-    </div>
-    <div class="lakou-visual" style="padding:0;overflow:hidden;display:grid;grid-template-rows:1fr 1fr;gap:1.5rem;">
-      <img src="/images/ati.png" alt="Ati National" style="width:100%;height:240px;object-fit:cover;object-position:center top;display:block;">
-      <img src="/images/flyer%20bitasyon.png" alt="" style="width:100%;height:240px;object-fit:cover;object-position:center bottom;display:block;">
-    </div>
-  </div>
-</section>
-
-<!-- BOOKS -->
-<section class="brand-section" id="books">
-  <div class="brand-inner books" style="grid-template-columns:1fr;max-width:780px;">
-    <div>
-      <span class="brand-eyebrow">Bibliyotèk Nasyonal · 113 Volim · 9 Sèri</span>
-      <h2 class="brand-name">Bibliyotèk</h2>
-      <span class="brand-kreyol">"Pou 220 zan pat gen liv teknik an kreyòl — kounye a genyen."</span>
-      <p class="brand-desc">The first comprehensive technical, legal, and educational library ever written in Haitian Kreyòl. Buy individual volumes or complete series — delivered as digital downloads immediately after purchase.</p>
-      <div class="brand-products" id="books-list"></div>
-      <a href="/books/" class="brand-cta">Browse Full Catalog →</a>
+      <div class="visual-margin">
+        <div class="visual-margin-num" style="color:var(--or)">80%</div>
+        <div class="visual-margin-label">Gross margin<br>one-of-a-kind spiritual items, no competitor</div>
+      </div>
     </div>
   </div>
 </section>
@@ -531,161 +438,16 @@
       </div>
     </div>
     <a href="mailto:contact@lavimiyo.com" class="btn-cream">Contact Us</a>
-    <a href="/" class="btn-outline-or">Back to LavimiyòLLC</a>
+    <a href="index.html" class="btn-outline-or">Back to LavimiyòLLC</a>
   </div>
 </section>
 
 <footer>
   <div class="footer-logo">Lavimiy<em>ò</em>LLC · Magazen Kreyòl</div>
-  <p>© 2026 LavimiyòLLC · Pembroke Pines, FL · contact@lavimiyo.com</p>
+  <p>© 2025 LavimiyòLLC · Pembroke Pines, FL · contact@lavimiyo.com</p>
 </footer>
 
-<div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
-<div class="cart-panel" id="cart-panel">
-  <div class="cart-panel-hd">
-    <span class="cart-panel-title">📚 Panye Mwen</span>
-    <button class="close-cart" onclick="toggleCart()">✕</button>
-  </div>
-  <div class="cart-body" id="cart-body">
-    <div class="cart-empty-msg"><span>📚</span><p>Panye ou vid</p></div>
-  </div>
-  <div class="cart-footer" id="cart-footer" style="display:none;">
-    <div class="cart-total-row">
-      <span class="cart-total-lbl">TOTAL</span>
-      <span class="cart-total-price" id="cart-total-price">$0.00</span>
-    </div>
-    <button class="checkout-btn" id="checkout-btn" onclick="startCheckout()">Pase Kòmand →</button>
-    <div style="text-align:center;font-size:0.72rem;color:var(--muted);margin:0.5rem 0;letter-spacing:0.1em;">— oubyen —</div>
-    <button class="checkout-btn" id="moncash-btn" onclick="startMoncash()" style="background:#FFCB05;color:#1a1a1a;">📱 Peye ak MonCash</button>
-  </div>
-</div>
-
 <script>
-  const BOOKS = [
-    { id:'kvoum1',  name:'K-VOUM Vol.1 — Mekanik Fondamantal', sub:'Mekanik Otomobil · Teknik', price:9.99,  badge:'print'  },
-    { id:'kvoum-s', name:'K-VOUM Serye Konplè — 15 Volim',     sub:'Mekanik Otomobil · Sèri Konplè', price:59.99, badge:'series' },
-    { id:'tipriz-s',name:'TI PRIZ Serye Konplè — 14 Volim',    sub:'Elektrisite · Sèri Konplè', price:59.99, badge:'series' },
-    { id:'legal-s', name:'LEGAL Serye Konplè — 6 Volim',       sub:'Kòd ak Konstitisyon · Sèri Konplè', price:49.99, badge:'series' },
-    { id:'limye-s', name:'LIMYÈ Serye Konplè — 12 Volim',      sub:'Syans & Istwa · Sèri Konplè', price:49.99, badge:'series' },
-    { id:'lang-s',  name:'LANG Serye Konplè — 4 Volim',        sub:'Gramè & Diksyonè · Sèri Konplè', price:39.99, badge:'series' },
-  ];
-
-  var cart = JSON.parse(localStorage.getItem('lavimiyo_books_cart') || '{}');
-
-  function addToCart(id) {
-    var p = BOOKS.find(function(x) { return x.id === id; });
-    if (!p) return;
-    if (cart[id]) cart[id].qty++; else cart[id] = {id:p.id, name:p.name, sub:p.sub, price:p.price, qty:1};
-    saveCart(); updateCartUI();
-    var btn = document.getElementById('add-' + id);
-    if (btn) { btn.textContent = '✓'; btn.classList.add('added'); setTimeout(function() { btn.textContent = '+ Ajoute'; btn.classList.remove('added'); }, 1400); }
-  }
-
-  function changeQty(id, d) {
-    if (!cart[id]) return;
-    cart[id].qty += d;
-    if (cart[id].qty <= 0) delete cart[id];
-    saveCart(); updateCartUI();
-  }
-
-  function removeFromCart(id) { delete cart[id]; saveCart(); updateCartUI(); }
-
-  function saveCart() { localStorage.setItem('lavimiyo_books_cart', JSON.stringify(cart)); }
-
-  function toggleCart() {
-    document.getElementById('cart-overlay').classList.toggle('open');
-    document.getElementById('cart-panel').classList.toggle('open');
-  }
-
-  function updateCartUI() {
-    var items = Object.values(cart);
-    var count = items.reduce(function(s,i) { return s+i.qty; }, 0);
-    var total = items.reduce(function(s,i) { return s+i.price*i.qty; }, 0);
-    document.getElementById('cart-count').textContent = count;
-    var body = document.getElementById('cart-body');
-    var footer = document.getElementById('cart-footer');
-    if (!items.length) {
-      body.innerHTML = '<div class="cart-empty-msg"><span>📚</span><p>Panye ou vid</p></div>';
-      footer.style.display = 'none';
-    } else {
-      footer.style.display = 'block';
-      document.getElementById('cart-total-price').textContent = '$' + total.toFixed(2);
-      body.innerHTML = items.map(function(i) {
-        return '<div class="cart-item">' +
-          '<div class="cart-item-info">' +
-            '<div class="cart-item-name">' + i.name + '</div>' +
-            '<div class="cart-item-sub">' + i.sub + '</div>' +
-            '<div class="cart-item-qty">' +
-              '<button class="qty-btn" onclick="changeQty(\'' + i.id + '\',-1)">−</button>' +
-              '<span style="font-size:0.82rem;min-width:1.2rem;text-align:center;">' + i.qty + '</span>' +
-              '<button class="qty-btn" onclick="changeQty(\'' + i.id + '\',1)">+</button>' +
-            '</div>' +
-          '</div>' +
-          '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.4rem;">' +
-            '<span class="cart-item-price">$' + (i.price*i.qty).toFixed(2) + '</span>' +
-            '<button class="cart-remove-btn" onclick="removeFromCart(\'' + i.id + '\')">✕</button>' +
-          '</div>' +
-        '</div>';
-      }).join('');
-    }
-  }
-
-  async function startCheckout() {
-    var btn = document.getElementById('checkout-btn');
-    btn.disabled = true; btn.textContent = '⏳';
-    try {
-      var items = Object.values(cart).map(function(i) { return { name:i.name, price:i.price, qty:i.qty }; });
-      var res = await fetch('/api/checkout/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: items, cancelUrl: window.location.href }),
-      });
-      var data = await res.json();
-      if (data.url) { window.location.href = data.url; }
-      else throw new Error(data.error || 'Checkout failed');
-    } catch (err) {
-      alert('Erè: ' + err.message);
-      btn.disabled = false; btn.textContent = 'Pase Kòmand →';
-    }
-  }
-
-  async function startMoncash() {
-    var btn = document.getElementById('moncash-btn');
-    btn.disabled = true; btn.textContent = '⏳';
-    try {
-      var items = Object.values(cart).map(function(i) { return { name:i.name, price:i.price, qty:i.qty }; });
-      var res = await fetch('/api/moncash/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: items }),
-      });
-      var data = await res.json();
-      if (data.url) { window.location.href = data.url; }
-      else throw new Error(data.error || 'MonCash failed');
-    } catch (err) {
-      alert('Erè MonCash: ' + err.message);
-      btn.disabled = false; btn.textContent = '📱 Peye ak MonCash';
-    }
-  }
-
-  // Render books list
-  (function() {
-    var list = document.getElementById('books-list');
-    if (!list) return;
-    list.innerHTML = BOOKS.map(function(p) {
-      var badge = p.badge === 'print'
-        ? '<span class="book-badge print">✓ Enprime</span>'
-        : '<span class="book-badge series">Sèri Konplè</span>';
-      return '<div class="product-row">' +
-        '<span class="product-name">' + p.name + badge + '</span>' +
-        '<span class="product-price">$' + p.price.toFixed(2) + '</span>' +
-        '<button class="books-add-btn" id="add-' + p.id + '" onclick="addToCart(\'' + p.id + '\')">+ Ajoute</button>' +
-      '</div>';
-    }).join('');
-  })();
-
-  updateCartUI();
-
   document.querySelector('.nav-hamburger').addEventListener('click', function() {
     document.querySelector('.nav-brands').classList.toggle('open');
   });
