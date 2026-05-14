@@ -522,7 +522,8 @@
       <div class="cart-row"><span>Livrezon</span><span>Gratis</span></div>
       <div class="cart-row total"><span>Total</span><span id="cart-total">$0.00</span></div>
     </div>
-    <button class="checkout-btn" id="checkout-btn" onclick="startCheckout()">Pase Kòmand →</button>
+    <button class="checkout-btn" id="checkout-btn" onclick="startCheckout()">Pase Kòmand — Kat Kredi →</button>
+    <button class="checkout-btn" id="moncash-btn" onclick="startMoncash()" style="background:var(--or);color:var(--ink);margin-top:0.5rem;">Peye ak MonCash →</button>
   </div>
 </div>
 
@@ -605,7 +606,28 @@
       alert('Erè koneksyon. Eseye ankò.');
     }
     btn.disabled = false;
-    btn.textContent = 'Pase Kòmand →';
+    btn.textContent = 'Pase Kòmand — Kat Kredi →';
+  }
+
+  async function startMoncash() {
+    if (!cart.length) return;
+    const btn = document.getElementById('moncash-btn');
+    btn.disabled = true;
+    btn.textContent = 'Chajman...';
+    try {
+      const res = await fetch('/api/moncash', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: cart.map(i => ({ name: i.name, price: i.price, qty: i.qty })) })
+      });
+      const data = await res.json();
+      if (data.url) { window.location.href = data.url; }
+      else { alert('Erè MonCash: ' + (data.error || 'Eseye ankò.')); }
+    } catch (e) {
+      alert('Erè koneksyon. Eseye ankò.');
+    }
+    btn.disabled = false;
+    btn.textContent = 'Peye ak MonCash →';
   }
 
   renderCart();
