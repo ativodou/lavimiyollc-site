@@ -1,7 +1,7 @@
 const SANDBOX = process.env.MONCASH_MODE !== 'production';
 const BASE_URL = SANDBOX
-  ? 'https://sandbox.moncashbutton.digicelgroup.com/Api'
-  : 'https://moncashbutton.digicelgroup.com/Api';
+  ? 'https://sandbox.moncashbutton.digicelgroup.com/Moncash-middleware'
+  : 'https://moncashbutton.digicelgroup.com/Moncash-middleware';
 const REDIRECT_BASE = SANDBOX
   ? 'https://sandbox.moncashbutton.digicelgroup.com/Moncash-middleware/Payment/Redirect'
   : 'https://moncashbutton.digicelgroup.com/Moncash-middleware/Payment/Redirect';
