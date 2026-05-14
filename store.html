@@ -601,7 +601,7 @@
     btn.disabled = true;
     btn.textContent = 'Chajman...';
     try {
-      const res = await fetch('/api/checkout', {
+      const res = await fetch('/api/checkout/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items: cart.map(i => ({ name: i.name, price: i.price, qty: i.qty })), cancelUrl: window.location.href })
@@ -622,7 +622,7 @@
     btn.disabled = true;
     btn.textContent = 'Chajman...';
     try {
-      const res = await fetch('/api/moncash', {
+      const res = await fetch('/api/moncash/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items: cart.map(i => ({ name: i.name, price: i.price, qty: i.qty })) })

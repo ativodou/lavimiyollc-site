@@ -713,7 +713,7 @@
 
   async function buyNow(name, price) {
     try {
-      const res = await fetch('/api/checkout', {
+      const res = await fetch('/api/checkout/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items: [{ name, price, qty: 1, digital: true }], cancelUrl: window.location.href })
