@@ -217,6 +217,43 @@
   .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.5rem; }
   .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--rouge); transition: background 0.2s; }
 
+  /* CART */
+  .cart-icon-btn { position: relative; background: none; border: 2px solid var(--rouge); border-radius: 2rem; padding: 0.45rem 1.1rem; font-family: 'Bebas Neue', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em; color: var(--rouge); cursor: pointer; display: flex; align-items: center; gap: 0.5rem; transition: all 0.2s; }
+  .cart-icon-btn:hover { background: var(--rouge); color: white; }
+  .cart-badge { background: var(--rouge); color: white; border-radius: 50%; width: 18px; height: 18px; font-size: 0.6rem; font-weight: 700; display: flex; align-items: center; justify-content: center; position: absolute; top: -7px; right: -7px; }
+  .cart-badge.hidden { display: none; }
+  .cart-overlay { position: fixed; inset: 0; z-index: 200; background: rgba(26,15,8,0.55); opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+  .cart-overlay.open { opacity: 1; pointer-events: all; }
+  .cart-panel { position: fixed; top: 0; right: 0; bottom: 0; z-index: 201; width: 420px; max-width: 100vw; background: var(--cream); transform: translateX(100%); transition: transform 0.35s cubic-bezier(.4,0,.2,1); display: flex; flex-direction: column; border-left: 1px solid rgba(26,15,8,0.1); }
+  .cart-panel.open { transform: translateX(0); }
+  .cart-header { padding: 1.5rem 1.75rem; border-bottom: 1px solid rgba(26,15,8,0.08); display: flex; align-items: center; justify-content: space-between; }
+  .cart-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 900; color: var(--ink); }
+  .close-cart { background: none; border: none; cursor: pointer; font-size: 1.4rem; color: var(--muted); line-height: 1; transition: color 0.2s; }
+  .close-cart:hover { color: var(--rouge); }
+  .cart-items { flex: 1; overflow-y: auto; padding: 1rem 1.75rem; }
+  .cart-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 0.75rem; color: var(--muted); text-align: center; }
+  .cart-empty p { font-size: 0.9rem; font-style: italic; }
+  .cart-item { display: flex; align-items: flex-start; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid rgba(26,15,8,0.06); }
+  .cart-item-info { flex: 1; }
+  .cart-item-name { font-size: 0.88rem; font-weight: 600; color: var(--ink); line-height: 1.3; margin-bottom: 0.2rem; }
+  .cart-item-price { font-family: 'Bebas Neue', sans-serif; font-size: 0.88rem; letter-spacing: 0.05em; color: var(--muted); }
+  .cart-item-qty { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.45rem; }
+  .qty-btn { width: 24px; height: 24px; border: 1px solid rgba(26,15,8,0.15); background: none; cursor: pointer; font-size: 1rem; color: var(--ink); border-radius: 4px; display: flex; align-items: center; justify-content: center; transition: background 0.15s; line-height: 1; }
+  .qty-btn:hover { background: rgba(26,15,8,0.07); }
+  .qty-val { font-size: 0.85rem; min-width: 20px; text-align: center; }
+  .cart-footer { padding: 1.5rem 1.75rem; border-top: 1px solid rgba(26,15,8,0.08); }
+  .cart-totals { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.25rem; }
+  .cart-row { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--muted); }
+  .cart-row.total { font-size: 1rem; font-weight: 700; color: var(--ink); border-top: 1px solid rgba(26,15,8,0.08); padding-top: 0.5rem; margin-top: 0.2rem; }
+  .checkout-btn { width: 100%; background: var(--rouge); color: white; border: none; padding: 1rem; font-family: 'Bebas Neue', sans-serif; font-size: 0.9rem; letter-spacing: 0.15em; cursor: pointer; transition: background 0.2s; }
+  .checkout-btn:hover { background: var(--rouge-light); }
+  .checkout-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+  .add-btn { font-family: 'Bebas Neue', sans-serif; font-size: 0.65rem; letter-spacing: 0.12em; padding: 0.3rem 0.7rem; border: 1px solid; cursor: pointer; background: none; transition: all 0.2s; white-space: nowrap; flex-shrink: 0; }
+  .fel .add-btn { color: var(--rouge); border-color: rgba(192,57,43,0.4); }
+  .fel .add-btn:hover { background: var(--rouge); color: white; border-color: var(--rouge); }
+  .few .add-btn { color: var(--violet); border-color: rgba(123,63,140,0.4); }
+  .few .add-btn:hover { background: var(--violet); color: white; border-color: var(--violet); }
+
   @media (max-width: 900px) {
     nav { padding: 1rem 1.5rem; }
     .nav-hamburger { display: flex; }
@@ -250,6 +287,7 @@
     <li><a href="#fewbel" class="v"><img src="/images/few%20bel.png" class="nav-lakou-logo" alt="">Fèw Bèl</a></li>
     <li><a href="#lakouati" class="o"><img src="/images/lakou-ati-logo.png" class="nav-lakou-logo" alt="">Lakou Ati</a></li>
   </ul>
+  <button class="cart-icon-btn" onclick="toggleCart()" id="cart-icon-btn">🛒 Panye <span class="cart-badge hidden" id="cart-badge">0</span></button>
   <button class="nav-hamburger" aria-label="Open navigation menu">
     <span></span><span></span><span></span>
   </button>
@@ -290,22 +328,27 @@
         <div class="product-row">
           <span class="product-name">Griyo Blend — Pork Spice</span>
           <span class="product-price">$12.99</span>
+          <button class="add-btn" onclick="addToCart('fg-1','Chef Tony — Griyo Blend',12.99)">+ Add</button>
         </div>
         <div class="product-row">
           <span class="product-name">Pwason Blend — Fish Spice</span>
           <span class="product-price">$12.99</span>
+          <button class="add-btn" onclick="addToCart('fg-2','Chef Tony — Pwason Blend',12.99)">+ Add</button>
         </div>
         <div class="product-row">
           <span class="product-name">Taso Blend — Beef Spice</span>
           <span class="product-price">$12.99</span>
+          <button class="add-btn" onclick="addToCart('fg-3','Chef Tony — Taso Blend',12.99)">+ Add</button>
         </div>
         <div class="product-row">
           <span class="product-name">Volay Blend — Poultry Spice</span>
           <span class="product-price">$12.99</span>
+          <button class="add-btn" onclick="addToCart('fg-4','Chef Tony — Volay Blend',12.99)">+ Add</button>
         </div>
         <div class="product-row">
           <span class="product-name">Pikliz Blend — Pickled Condiment</span>
           <span class="product-price">$12.99</span>
+          <button class="add-btn" onclick="addToCart('fg-5','Chef Tony — Pikliz Blend',12.99)">+ Add</button>
         </div>
       </div>
       <a href="https://felgou.com" class="brand-cta">Shop Fèl Gou →</a>
@@ -349,26 +392,32 @@
         <div class="product-row">
           <span class="product-name">Lwil Maskreti — Haitian Black Castor Oil</span>
           <span class="product-price">$24.99</span>
+          <button class="add-btn" onclick="addToCart('fb-1','Fèw Bèl — Lwil Maskreti',24.99)">+ Add</button>
         </div>
         <div class="product-row">
           <span class="product-name">Bè Karite — Raw Shea Butter</span>
           <span class="product-price">$19.99</span>
+          <button class="add-btn" onclick="addToCart('fb-2','Fèw Bèl — Bè Karite',19.99)">+ Add</button>
         </div>
         <div class="product-row">
           <span class="product-name">Masque Bentonite — Detox Clay Mask</span>
           <span class="product-price">$22.99</span>
+          <button class="add-btn" onclick="addToCart('fb-3','Fèw Bèl — Masque Bentonite',22.99)">+ Add</button>
         </div>
         <div class="product-row">
           <span class="product-name">Lwil Kokoye — Virgin Coconut Oil</span>
           <span class="product-price">$18.99</span>
+          <button class="add-btn" onclick="addToCart('fb-4','Fèw Bèl — Lwil Kokoye',18.99)">+ Add</button>
         </div>
         <div class="product-row">
           <span class="product-name">Savon Natirèl — Natural Bar Soap</span>
           <span class="product-price">$12.99</span>
+          <button class="add-btn" onclick="addToCart('fb-5','Fèw Bèl — Savon Natirèl',12.99)">+ Add</button>
         </div>
         <div class="product-row">
           <span class="product-name">Masque Chevè — Deep Conditioning Hair Mask</span>
           <span class="product-price">$26.99</span>
+          <button class="add-btn" onclick="addToCart('fb-6','Fèw Bèl — Masque Chevè',26.99)">+ Add</button>
         </div>
       </div>
       <a href="https://fewbel.com" class="brand-cta">Shop Fèw Bèl →</a>
@@ -459,10 +508,107 @@
   <p>© 2026 LavimiyòLLC · Pembroke Pines, FL · contact@lavimiyo.com</p>
 </footer>
 
+<!-- CART PANEL -->
+<div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+<div class="cart-panel" id="cart-panel">
+  <div class="cart-header">
+    <span class="cart-title">Panye</span>
+    <button class="close-cart" onclick="toggleCart()">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-totals">
+      <div class="cart-row"><span>Sou-total</span><span id="cart-subtotal">$0.00</span></div>
+      <div class="cart-row"><span>Livrezon</span><span>Gratis</span></div>
+      <div class="cart-row total"><span>Total</span><span id="cart-total">$0.00</span></div>
+    </div>
+    <button class="checkout-btn" id="checkout-btn" onclick="startCheckout()">Pase Kòmand →</button>
+  </div>
+</div>
+
 <script>
   document.querySelector('.nav-hamburger').addEventListener('click', function() {
     document.querySelector('.nav-brands').classList.toggle('open');
   });
+
+  let cart = JSON.parse(localStorage.getItem('lm-cart') || '[]');
+
+  function saveCart() { localStorage.setItem('lm-cart', JSON.stringify(cart)); }
+
+  function addToCart(id, name, price) {
+    const existing = cart.find(i => i.id === id);
+    if (existing) { existing.qty++; }
+    else { cart.push({ id, name, price, qty: 1 }); }
+    saveCart();
+    renderCart();
+    if (!document.getElementById('cart-panel').classList.contains('open')) toggleCart();
+  }
+
+  function changeQty(id, delta) {
+    const item = cart.find(i => i.id === id);
+    if (!item) return;
+    item.qty += delta;
+    if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+    saveCart();
+    renderCart();
+  }
+
+  function toggleCart() {
+    document.getElementById('cart-panel').classList.toggle('open');
+    document.getElementById('cart-overlay').classList.toggle('open');
+  }
+
+  function renderCart() {
+    const el = document.getElementById('cart-items');
+    const badge = document.getElementById('cart-badge');
+    const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
+    const count = cart.reduce((s, i) => s + i.qty, 0);
+
+    badge.textContent = count;
+    badge.classList.toggle('hidden', count === 0);
+    document.getElementById('cart-subtotal').textContent = '$' + total.toFixed(2);
+    document.getElementById('cart-total').textContent = '$' + total.toFixed(2);
+
+    if (!cart.length) {
+      el.innerHTML = '<div class="cart-empty"><p>Panye ou vid.</p></div>';
+      return;
+    }
+    el.innerHTML = cart.map(item => `
+      <div class="cart-item">
+        <div class="cart-item-info">
+          <div class="cart-item-name">${item.name}</div>
+          <div class="cart-item-price">$${item.price.toFixed(2)}</div>
+          <div class="cart-item-qty">
+            <button class="qty-btn" onclick="changeQty('${item.id}',-1)">−</button>
+            <span class="qty-val">${item.qty}</span>
+            <button class="qty-btn" onclick="changeQty('${item.id}',1)">+</button>
+          </div>
+        </div>
+      </div>`).join('');
+  }
+
+  async function startCheckout() {
+    if (!cart.length) return;
+    const btn = document.getElementById('checkout-btn');
+    btn.disabled = true;
+    btn.textContent = 'Chajman...';
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: cart.map(i => ({ name: i.name, price: i.price, qty: i.qty })) })
+      });
+      const data = await res.json();
+      if (data.url) { window.location.href = data.url; }
+      else { alert('Erè: ' + (data.error || 'Unknown error')); }
+    } catch (e) {
+      alert('Erè koneksyon. Eseye ankò.');
+    }
+    btn.disabled = false;
+    btn.textContent = 'Pase Kòmand →';
+  }
+
+  renderCart();
 </script>
 </body>
 </html>

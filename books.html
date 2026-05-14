@@ -200,6 +200,10 @@
     .book-grid { grid-template-columns: repeat(2, 1fr); }
     .book-grid.legal-grid { grid-template-columns: repeat(2, 1fr); }
   }
+  .buy-series-btn { font-family: 'Bebas Neue', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em; padding: 0.5rem 1.25rem; background: var(--amber); color: white; border: none; cursor: pointer; transition: background 0.2s; white-space: nowrap; border-radius: 2px; }
+  .buy-series-btn:hover { background: var(--amber-light); }
+  .buy-vol-btn { font-family: 'Source Sans 3', sans-serif; font-size: 0.7rem; font-weight: 600; padding: 0.3rem 0.5rem; background: var(--amber); color: white; border: none; cursor: pointer; border-radius: 2px; transition: background 0.2s; margin-top: 0.4rem; display: block; width: 100%; text-align: center; }
+  .buy-vol-btn:hover { background: var(--amber-light); }
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
 </head>
@@ -680,6 +684,47 @@
   document.querySelector('.nav-hamburger').addEventListener('click', function() {
     document.querySelector('.nav-links').classList.toggle('open');
   });
+
+  // Buy Series buttons
+  document.querySelectorAll('.series-header').forEach(function(header) {
+    var seriesTitle = header.querySelector('.series-title').textContent;
+    var btn = document.createElement('button');
+    btn.className = 'buy-series-btn';
+    btn.textContent = 'Achte Serye — $59.99';
+    btn.onclick = function() { buyNow('Bibliyotèk — ' + seriesTitle, 59.99); };
+    header.appendChild(btn);
+  });
+
+  // Buy Volume buttons on every book card
+  document.querySelectorAll('.book-card').forEach(function(card) {
+    var meta = card.querySelector('.book-meta');
+    var titleEl = card.querySelector('.book-title');
+    if (!meta || !titleEl) return;
+    var btn = document.createElement('button');
+    btn.className = 'buy-vol-btn';
+    btn.textContent = 'Achte — $9.99';
+    btn.onclick = function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      buyNow('Bibliyotèk — ' + titleEl.textContent.trim(), 9.99);
+    };
+    meta.appendChild(btn);
+  });
+
+  async function buyNow(name, price) {
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: [{ name, price, qty: 1, digital: true }] })
+      });
+      const data = await res.json();
+      if (data.url) { window.location.href = data.url; }
+      else { alert('Erè: ' + (data.error || 'Tanpri eseye ankò.')); }
+    } catch (e) {
+      alert('Erè koneksyon. Tanpri eseye ankò.');
+    }
+  }
 </script>
 </body>
 </html>
