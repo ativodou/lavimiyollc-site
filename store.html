@@ -560,6 +560,17 @@
     document.getElementById('cart-overlay').classList.toggle('open');
   }
 
+  // Single persistent listener — survives innerHTML replacements
+  document.getElementById('cart-items').addEventListener('click', function(e) {
+    var btn = e.target.closest('.qty-btn');
+    if (!btn) return;
+    var row = btn.closest('.cart-item');
+    if (!row) return;
+    var id = row.getAttribute('data-id');
+    if (btn.classList.contains('minus')) window.changeQty(id, -1);
+    else if (btn.classList.contains('plus')) window.changeQty(id, 1);
+  });
+
   function renderCart() {
     var el = document.getElementById('cart-items');
     var badge = document.getElementById('cart-badge');
@@ -576,13 +587,13 @@
       return;
     }
     el.innerHTML = cart.map(function(item) {
-      return '<div class="cart-item"><div class="cart-item-info">' +
+      return '<div class="cart-item" data-id="' + item.id + '"><div class="cart-item-info">' +
         '<div class="cart-item-name">' + item.name + '</div>' +
         '<div class="cart-item-price">$' + item.price.toFixed(2) + '</div>' +
         '<div class="cart-item-qty">' +
-        '<button class="qty-btn" onclick="changeQty(\'' + item.id + '\',-1)">−</button>' +
+        '<button class="qty-btn minus">−</button>' +
         '<span class="qty-val">' + item.qty + '</span>' +
-        '<button class="qty-btn" onclick="changeQty(\'' + item.id + '\',1)">+</button>' +
+        '<button class="qty-btn plus">+</button>' +
         '</div></div></div>';
     }).join('');
   }
