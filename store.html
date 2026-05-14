@@ -555,6 +555,8 @@
       <span class="cart-total-price" id="cart-total-price">$0.00</span>
     </div>
     <button class="checkout-btn" id="checkout-btn" onclick="startCheckout()">Pase Kòmand →</button>
+    <div style="text-align:center;font-size:0.72rem;color:var(--muted);margin:0.5rem 0;letter-spacing:0.1em;">— oubyen —</div>
+    <button class="checkout-btn" id="moncash-btn" onclick="startMoncash()" style="background:#FFCB05;color:#1a1a1a;">📱 Peye ak MonCash</button>
   </div>
 </div>
 
@@ -644,6 +646,25 @@
     } catch (err) {
       alert('Erè: ' + err.message);
       btn.disabled = false; btn.textContent = 'Pase Kòmand →';
+    }
+  }
+
+  async function startMoncash() {
+    var btn = document.getElementById('moncash-btn');
+    btn.disabled = true; btn.textContent = '⏳';
+    try {
+      var items = Object.values(cart).map(function(i) { return { name:i.name, price:i.price, qty:i.qty }; });
+      var res = await fetch('/api/moncash/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: items }),
+      });
+      var data = await res.json();
+      if (data.url) { window.location.href = data.url; }
+      else throw new Error(data.error || 'MonCash failed');
+    } catch (err) {
+      alert('Erè MonCash: ' + err.message);
+      btn.disabled = false; btn.textContent = '📱 Peye ak MonCash';
     }
   }
 
