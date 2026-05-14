@@ -248,6 +248,8 @@
   .checkout-btn { width: 100%; background: var(--rouge); color: white; border: none; padding: 1rem; font-family: 'Bebas Neue', sans-serif; font-size: 0.9rem; letter-spacing: 0.15em; cursor: pointer; transition: background 0.2s; }
   .checkout-btn:hover { background: var(--rouge-light); }
   .checkout-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+  .remove-btn { background: none; border: none; cursor: pointer; color: var(--muted); font-size: 0.75rem; padding: 0.25rem; line-height: 1; align-self: flex-start; flex-shrink: 0; transition: color 0.15s; }
+  .remove-btn:hover { color: var(--rouge); }
   .add-btn { font-family: 'Bebas Neue', sans-serif; font-size: 0.65rem; letter-spacing: 0.12em; padding: 0.3rem 0.7rem; border: 1px solid; cursor: pointer; background: none; transition: all 0.2s; white-space: nowrap; flex-shrink: 0; }
   .fel .add-btn { color: var(--rouge); border-color: rgba(192,57,43,0.4); }
   .fel .add-btn:hover { background: var(--rouge); color: white; border-color: var(--rouge); }
@@ -547,10 +549,14 @@
   };
 
   window.changeQty = function(id, delta) {
-    var item = cart.find(function(i){ return i.id === id; });
-    if (!item) return;
-    item.qty += delta;
-    if (item.qty <= 0) cart = cart.filter(function(i){ return i.id !== id; });
+    if (delta <= -999) {
+      cart = cart.filter(function(i){ return i.id !== id; });
+    } else {
+      var item = cart.find(function(i){ return i.id === id; });
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) cart = cart.filter(function(i){ return i.id !== id; });
+    }
     saveCart();
     renderCart();
   };
@@ -583,14 +589,17 @@
       return;
     }
     el.innerHTML = cart.map(function(item) {
-      return '<div class="cart-item" data-id="' + item.id + '"><div class="cart-item-info">' +
+      return '<div class="cart-item" data-id="' + item.id + '">' +
+        '<div class="cart-item-info">' +
         '<div class="cart-item-name">' + item.name + '</div>' +
-        '<div class="cart-item-price">$' + item.price.toFixed(2) + '</div>' +
+        '<div class="cart-item-price">$' + (item.price * item.qty).toFixed(2) + '</div>' +
         '<div class="cart-item-qty">' +
         '<button class="qty-btn" data-qty-id="' + item.id + '" data-qty-delta="-1">−</button>' +
         '<span class="qty-val">' + item.qty + '</span>' +
         '<button class="qty-btn" data-qty-id="' + item.id + '" data-qty-delta="1">+</button>' +
-        '</div></div></div>';
+        '</div></div>' +
+        '<button class="remove-btn" data-qty-id="' + item.id + '" data-qty-delta="-999">✕</button>' +
+        '</div>';
     }).join('');
   }
 
