@@ -200,10 +200,44 @@
     .book-grid { grid-template-columns: repeat(2, 1fr); }
     .book-grid.legal-grid { grid-template-columns: repeat(2, 1fr); }
   }
-  .buy-series-btn { font-family: 'Bebas Neue', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em; padding: 0.5rem 1.25rem; background: var(--amber); color: white; border: none; cursor: pointer; transition: background 0.2s; white-space: nowrap; border-radius: 2px; }
-  .buy-series-btn:hover { background: var(--amber-light); }
-  .buy-vol-btn { font-family: 'Source Sans 3', sans-serif; font-size: 0.7rem; font-weight: 600; padding: 0.3rem 0.5rem; background: var(--amber); color: white; border: none; cursor: pointer; border-radius: 2px; transition: background 0.2s; margin-top: 0.4rem; display: block; width: 100%; text-align: center; }
-  .buy-vol-btn:hover { background: var(--amber-light); }
+  .add-series-btn { font-family: 'Bebas Neue', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em; padding: 0.5rem 1.25rem; background: var(--amber); color: white; border: none; cursor: pointer; transition: background 0.2s; white-space: nowrap; border-radius: 2px; }
+  .add-series-btn:hover, .add-series-btn.added { background: var(--amber-light); }
+  .add-vol-btn { font-family: 'Source Sans 3', sans-serif; font-size: 0.7rem; font-weight: 600; padding: 0.3rem 0.5rem; background: var(--amber); color: white; border: none; cursor: pointer; border-radius: 2px; transition: background 0.2s; margin-top: 0.4rem; display: block; width: 100%; text-align: center; }
+  .add-vol-btn:hover, .add-vol-btn.added { background: var(--amber-light); }
+
+  /* CART */
+  .nav-cart-btn { font-family: 'Bebas Neue', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em; background: var(--amber); color: white; border: none; border-radius: 2px; padding: 0.5rem 1.1rem; cursor: pointer; transition: background 0.2s; display: flex; align-items: center; gap: 0.5rem; white-space: nowrap; }
+  .nav-cart-btn:hover { background: var(--amber-light); }
+  .nav-cart-count { background: white; color: var(--ink); border-radius: 50%; width: 18px; height: 18px; font-size: 0.62rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; }
+  .cart-overlay { position: fixed; inset: 0; z-index: 200; background: rgba(28,16,8,0.55); opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+  .cart-overlay.open { opacity: 1; pointer-events: all; }
+  .cart-panel { position: fixed; top: 0; right: 0; bottom: 0; z-index: 201; width: 400px; background: var(--parchment); transform: translateX(100%); transition: transform 0.35s cubic-bezier(.4,0,.2,1); display: flex; flex-direction: column; border-left: 2px solid rgba(217,119,6,0.25); box-shadow: -8px 0 32px rgba(28,16,8,0.12); }
+  .cart-panel.open { transform: translateX(0); }
+  .cart-panel-hd { padding: 1.5rem 1.75rem; border-bottom: 1px solid rgba(217,119,6,0.2); display: flex; align-items: center; justify-content: space-between; }
+  .cart-panel-title { font-family: 'Libre Baskerville', serif; font-size: 1.3rem; font-weight: 700; color: var(--amber); font-style: italic; }
+  .close-cart { background: none; border: none; cursor: pointer; font-size: 1.3rem; color: var(--warm-grey); transition: color 0.2s; line-height: 1; }
+  .close-cart:hover { color: var(--ink); }
+  .cart-body { flex: 1; overflow-y: auto; padding: 1rem 1.75rem; }
+  .cart-empty-msg { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 1rem; color: var(--warm-grey); }
+  .cart-empty-msg span { font-size: 2.5rem; opacity: 0.3; }
+  .cart-empty-msg p { font-size: 0.9rem; font-style: italic; }
+  .cart-item { display: flex; gap: 0.75rem; padding: 1rem 0; border-bottom: 1px solid rgba(28,16,8,0.07); }
+  .cart-item-info { flex: 1; min-width: 0; }
+  .cart-item-name { font-family: 'Libre Baskerville', serif; font-size: 0.82rem; font-weight: 700; color: var(--ink); line-height: 1.3; margin-bottom: 0.2rem; }
+  .cart-item-sub { font-size: 0.7rem; color: var(--warm-grey); margin-bottom: 0.5rem; }
+  .cart-item-qty { display: flex; align-items: center; gap: 0.4rem; }
+  .qty-btn { background: none; border: 1px solid rgba(28,16,8,0.15); width: 22px; height: 22px; cursor: pointer; font-size: 0.85rem; line-height: 1; transition: all 0.2s; }
+  .qty-btn:hover { background: var(--amber); border-color: var(--amber); color: white; }
+  .cart-item-price { font-family: 'Bebas Neue', sans-serif; font-size: 1rem; letter-spacing: 0.06em; color: var(--amber); white-space: nowrap; }
+  .cart-remove-btn { background: none; border: none; color: var(--warm-grey); cursor: pointer; font-size: 0.9rem; transition: color 0.2s; padding: 0.15rem; }
+  .cart-remove-btn:hover { color: #C0392B; }
+  .cart-footer-panel { padding: 1.25rem 1.75rem; border-top: 1px solid rgba(217,119,6,0.2); background: var(--amber-pale); }
+  .cart-total-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1rem; }
+  .cart-total-lbl { font-family: 'Bebas Neue', sans-serif; font-size: 0.7rem; letter-spacing: 0.2em; color: var(--warm-grey); }
+  .cart-total-price { font-family: 'Libre Baskerville', serif; font-size: 1.3rem; font-weight: 700; color: var(--ink); }
+  .checkout-btn { width: 100%; font-family: 'Bebas Neue', sans-serif; font-size: 0.85rem; letter-spacing: 0.2em; padding: 1rem; background: var(--amber); color: white; border: none; cursor: pointer; transition: background 0.2s; }
+  .checkout-btn:hover { background: var(--amber-light); }
+  .checkout-btn:disabled { opacity: 0.6; cursor: not-allowed; }
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
 </head>
@@ -218,6 +252,7 @@
     <li><a href="#limye">Limyè</a></li>
     <li><a href="#lang">Lang</a></li>
   </ul>
+  <button class="nav-cart-btn" onclick="toggleCart()">📚 Panye <span class="nav-cart-count" id="cart-count">0</span></button>
   <button class="nav-hamburger" aria-label="Open navigation menu">
     <span></span><span></span><span></span>
   </button>
@@ -664,7 +699,106 @@
   <p><img loading="lazy" src="/images/lakou-ati-logo.png" style="height:18px;vertical-align:middle;margin-right:0.5rem;opacity:0.4;" alt=""> © 2025 LavimiyòLLC · Pembroke Pines, FL · contact@lavimiyo.com</p>
 </footer>
 
+<div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+<div class="cart-panel" id="cart-panel">
+  <div class="cart-panel-hd">
+    <span class="cart-panel-title">Panye Mwen</span>
+    <button class="close-cart" onclick="toggleCart()">✕</button>
+  </div>
+  <div class="cart-body" id="cart-body">
+    <div class="cart-empty-msg"><span>📚</span><p>Panye ou vid</p></div>
+  </div>
+  <div class="cart-footer-panel" id="cart-footer" style="display:none;">
+    <div class="cart-total-row">
+      <span class="cart-total-lbl">TOTAL</span>
+      <span class="cart-total-price" id="cart-total-price">$0.00</span>
+    </div>
+    <button class="checkout-btn" id="checkout-btn" onclick="startCheckout()">Pase Kòmand →</button>
+  </div>
+</div>
+
 <script>
+  var cart = JSON.parse(localStorage.getItem('lavimiyo_books_cart') || '{}');
+
+  function addToCart(id, name, sub, price) {
+    if (cart[id]) cart[id].qty++;
+    else cart[id] = { id: id, name: name, sub: sub, price: price, qty: 1 };
+    localStorage.setItem('lavimiyo_books_cart', JSON.stringify(cart));
+    updateCartUI();
+  }
+
+  function changeQty(id, d) {
+    if (!cart[id]) return;
+    cart[id].qty += d;
+    if (cart[id].qty <= 0) delete cart[id];
+    localStorage.setItem('lavimiyo_books_cart', JSON.stringify(cart));
+    updateCartUI();
+  }
+
+  function removeFromCart(id) {
+    delete cart[id];
+    localStorage.setItem('lavimiyo_books_cart', JSON.stringify(cart));
+    updateCartUI();
+  }
+
+  function toggleCart() {
+    document.getElementById('cart-overlay').classList.toggle('open');
+    document.getElementById('cart-panel').classList.toggle('open');
+  }
+
+  function updateCartUI() {
+    var items = Object.values(cart);
+    var count = items.reduce(function(s,i){ return s+i.qty; }, 0);
+    var total = items.reduce(function(s,i){ return s+i.price*i.qty; }, 0);
+    document.getElementById('cart-count').textContent = count;
+    var body = document.getElementById('cart-body');
+    var footer = document.getElementById('cart-footer');
+    if (!items.length) {
+      body.innerHTML = '<div class="cart-empty-msg"><span>📚</span><p>Panye ou vid</p></div>';
+      footer.style.display = 'none';
+    } else {
+      footer.style.display = 'block';
+      document.getElementById('cart-total-price').textContent = '$' + total.toFixed(2);
+      body.innerHTML = items.map(function(i) {
+        var eid = i.id.replace(/'/g,'');
+        return '<div class="cart-item">' +
+          '<div class="cart-item-info">' +
+            '<div class="cart-item-name">' + i.name + '</div>' +
+            '<div class="cart-item-sub">' + i.sub + '</div>' +
+            '<div class="cart-item-qty">' +
+              '<button class="qty-btn" onclick="changeQty(\'' + eid + '\',-1)">−</button>' +
+              '<span style="font-size:0.82rem;min-width:1.2rem;text-align:center;">' + i.qty + '</span>' +
+              '<button class="qty-btn" onclick="changeQty(\'' + eid + '\',1)">+</button>' +
+            '</div>' +
+          '</div>' +
+          '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.4rem;">' +
+            '<span class="cart-item-price">$' + (i.price*i.qty).toFixed(2) + '</span>' +
+            '<button class="cart-remove-btn" onclick="removeFromCart(\'' + eid + '\')">✕</button>' +
+          '</div>' +
+        '</div>';
+      }).join('');
+    }
+  }
+
+  async function startCheckout() {
+    var btn = document.getElementById('checkout-btn');
+    btn.disabled = true; btn.textContent = '⏳';
+    try {
+      var items = Object.values(cart).map(function(i){ return { name: i.name, price: i.price, qty: i.qty }; });
+      var res = await fetch('/api/checkout/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: items, cancelUrl: window.location.href })
+      });
+      var data = await res.json();
+      if (data.url) { window.location.href = data.url; }
+      else { throw new Error(data.error || 'Tanpri eseye ankò.'); }
+    } catch (e) {
+      alert('Erè: ' + e.message);
+      btn.disabled = false; btn.textContent = 'Pase Kòmand →';
+    }
+  }
+
   // Filter tabs
   document.querySelectorAll('.filter-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
@@ -685,46 +819,40 @@
     document.querySelector('.nav-links').classList.toggle('open');
   });
 
-  // Buy Series buttons
-  document.querySelectorAll('.series-header').forEach(function(header) {
+  // Add-to-cart buttons on series headers
+  document.querySelectorAll('.series-header').forEach(function(header, idx) {
     var seriesTitle = header.querySelector('.series-title').textContent;
+    var id = 'series-' + idx;
     var btn = document.createElement('button');
-    btn.className = 'buy-series-btn';
-    btn.textContent = 'Achte Serye — $59.99';
-    btn.onclick = function() { buyNow('Bibliyotèk — ' + seriesTitle, 59.99); };
+    btn.className = 'add-series-btn';
+    btn.textContent = '+ Panye — $59.99';
+    btn.onclick = function() {
+      addToCart(id, 'Bibliyotèk — ' + seriesTitle, 'Sèri Konplè · Bibliyotèk Nasyonal', 59.99);
+      btn.textContent = '✓ Ajoute'; btn.classList.add('added');
+      setTimeout(function(){ btn.textContent = '+ Panye — $59.99'; btn.classList.remove('added'); }, 1400);
+    };
     header.appendChild(btn);
   });
 
-  // Buy Volume buttons on every book card
-  document.querySelectorAll('.book-card').forEach(function(card) {
+  // Add-to-cart buttons on every book card
+  document.querySelectorAll('.book-card').forEach(function(card, idx) {
     var meta = card.querySelector('.book-meta');
     var titleEl = card.querySelector('.book-title');
     if (!meta || !titleEl) return;
+    var id = 'vol-' + idx;
     var btn = document.createElement('button');
-    btn.className = 'buy-vol-btn';
-    btn.textContent = 'Achte — $9.99';
+    btn.className = 'add-vol-btn';
+    btn.textContent = '+ $9.99';
     btn.onclick = function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      buyNow('Bibliyotèk — ' + titleEl.textContent.trim(), 9.99);
+      e.preventDefault(); e.stopPropagation();
+      addToCart(id, 'Bibliyotèk — ' + titleEl.textContent.trim(), 'Volim Endividyèl · PDF', 9.99);
+      btn.textContent = '✓'; btn.classList.add('added');
+      setTimeout(function(){ btn.textContent = '+ $9.99'; btn.classList.remove('added'); }, 1400);
     };
     meta.appendChild(btn);
   });
 
-  async function buyNow(name, price) {
-    try {
-      const res = await fetch('/api/checkout/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: [{ name, price, qty: 1, digital: true }], cancelUrl: window.location.href })
-      });
-      const data = await res.json();
-      if (data.url) { window.location.href = data.url; }
-      else { alert('Erè: ' + (data.error || 'Tanpri eseye ankò.')); }
-    } catch (e) {
-      alert('Erè koneksyon. Tanpri eseye ankò.');
-    }
-  }
+  updateCartUI();
 </script>
 </body>
 </html>
