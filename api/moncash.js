@@ -1,4 +1,4 @@
-const SANDBOX = process.env.MONCASH_ENV !== 'production';
+const SANDBOX = process.env.MONCASH_MODE !== 'production';
 const BASE_URL = SANDBOX
   ? 'https://sandbox.moncashbutton.digicelgroup.com/Api'
   : 'https://moncashbutton.digicelgroup.com/Api';
