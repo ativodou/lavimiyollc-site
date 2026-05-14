@@ -241,7 +241,7 @@
   .qty-btn { width: 24px; height: 24px; border: 1px solid rgba(26,15,8,0.15); background: none; cursor: pointer; font-size: 1rem; color: var(--ink); border-radius: 4px; display: flex; align-items: center; justify-content: center; transition: background 0.15s; line-height: 1; }
   .qty-btn:hover { background: rgba(26,15,8,0.07); }
   .qty-val { font-size: 0.85rem; min-width: 20px; text-align: center; }
-  .cart-footer { padding: 1.5rem 1.75rem; border-top: 1px solid rgba(26,15,8,0.08); flex-shrink: 0; }
+  .cart-footer { padding: 1.25rem 1.75rem; border-top: 1px solid rgba(26,15,8,0.08); flex-shrink: 0; overflow-y: auto; }
   .cart-totals { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.25rem; }
   .cart-row { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--muted); }
   .cart-row.total { font-size: 1rem; font-weight: 700; color: var(--ink); border-top: 1px solid rgba(26,15,8,0.08); padding-top: 0.5rem; margin-top: 0.2rem; }
@@ -533,27 +533,27 @@
     document.querySelector('.nav-brands').classList.toggle('open');
   });
 
-  let cart = JSON.parse(localStorage.getItem('lm-cart') || '[]');
+  var cart = JSON.parse(localStorage.getItem('lm-cart') || '[]');
 
   function saveCart() { localStorage.setItem('lm-cart', JSON.stringify(cart)); }
 
-  function addToCart(id, name, price) {
-    const existing = cart.find(i => i.id === id);
+  window.addToCart = function(id, name, price) {
+    var existing = cart.find(function(i){ return i.id === id; });
     if (existing) { existing.qty++; }
-    else { cart.push({ id, name, price, qty: 1 }); }
+    else { cart.push({ id: id, name: name, price: price, qty: 1 }); }
     saveCart();
     renderCart();
     if (!document.getElementById('cart-panel').classList.contains('open')) toggleCart();
-  }
+  };
 
-  function changeQty(id, delta) {
-    const item = cart.find(i => i.id === id);
+  window.changeQty = function(id, delta) {
+    var item = cart.find(function(i){ return i.id === id; });
     if (!item) return;
     item.qty += delta;
-    if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+    if (item.qty <= 0) cart = cart.filter(function(i){ return i.id !== id; });
     saveCart();
     renderCart();
-  }
+  };
 
   function toggleCart() {
     document.getElementById('cart-panel').classList.toggle('open');
@@ -561,10 +561,10 @@
   }
 
   function renderCart() {
-    const el = document.getElementById('cart-items');
-    const badge = document.getElementById('cart-badge');
-    const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
-    const count = cart.reduce((s, i) => s + i.qty, 0);
+    var el = document.getElementById('cart-items');
+    var badge = document.getElementById('cart-badge');
+    var total = cart.reduce(function(s,i){ return s + i.price * i.qty; }, 0);
+    var count = cart.reduce(function(s,i){ return s + i.qty; }, 0);
 
     badge.textContent = count;
     badge.classList.toggle('hidden', count === 0);
@@ -575,25 +575,17 @@
       el.innerHTML = '<div class="cart-empty"><p>Panye ou vid.</p></div>';
       return;
     }
-    el.innerHTML = cart.map(item => `
-      <div class="cart-item">
-        <div class="cart-item-info">
-          <div class="cart-item-name">${item.name}</div>
-          <div class="cart-item-price">$${item.price.toFixed(2)}</div>
-          <div class="cart-item-qty">
-            <button class="qty-btn" data-id="${item.id}" data-delta="-1">−</button>
-            <span class="qty-val">${item.qty}</span>
-            <button class="qty-btn" data-id="${item.id}" data-delta="1">+</button>
-          </div>
-        </div>
-      </div>`).join('');
+    el.innerHTML = cart.map(function(item) {
+      return '<div class="cart-item"><div class="cart-item-info">' +
+        '<div class="cart-item-name">' + item.name + '</div>' +
+        '<div class="cart-item-price">$' + item.price.toFixed(2) + '</div>' +
+        '<div class="cart-item-qty">' +
+        '<button class="qty-btn" onclick="changeQty(\'' + item.id + '\',-1)">−</button>' +
+        '<span class="qty-val">' + item.qty + '</span>' +
+        '<button class="qty-btn" onclick="changeQty(\'' + item.id + '\',1)">+</button>' +
+        '</div></div></div>';
+    }).join('');
   }
-
-  document.getElementById('cart-items').addEventListener('click', function(e) {
-    const btn = e.target.closest('.qty-btn');
-    if (!btn) return;
-    changeQty(btn.dataset.id, parseInt(btn.dataset.delta));
-  });
 
   async function startCheckout() {
     if (!cart.length) return;
