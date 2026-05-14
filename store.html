@@ -581,13 +581,19 @@
           <div class="cart-item-name">${item.name}</div>
           <div class="cart-item-price">$${item.price.toFixed(2)}</div>
           <div class="cart-item-qty">
-            <button class="qty-btn" onclick="changeQty('${item.id}',-1)">−</button>
+            <button class="qty-btn" data-id="${item.id}" data-delta="-1">−</button>
             <span class="qty-val">${item.qty}</span>
-            <button class="qty-btn" onclick="changeQty('${item.id}',1)">+</button>
+            <button class="qty-btn" data-id="${item.id}" data-delta="1">+</button>
           </div>
         </div>
       </div>`).join('');
   }
+
+  document.getElementById('cart-items').addEventListener('click', function(e) {
+    const btn = e.target.closest('.qty-btn');
+    if (!btn) return;
+    changeQty(btn.dataset.id, parseInt(btn.dataset.delta));
+  });
 
   async function startCheckout() {
     if (!cart.length) return;
