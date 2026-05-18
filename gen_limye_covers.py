@@ -262,16 +262,16 @@ make_cover(
 )
 
 # Matimatik — Vol 14
-os.makedirs(f"{BASE}/Matimatik", exist_ok=True)
+os.makedirs(f"{BASE}/Matematik", exist_ok=True)
 make_cover(
     vol_num=14, total_vols=TOTAL,
     vol_label="VOLIM 14",
-    title_lines=["MATIMATIK"],
+    title_lines=["MATEMATIK"],
     subtitle="CHIF AK FÒMIL",
     desc="Aritmetik, Aljèb, ak Jewometri",
     quote="Matematik se lang linivè a",
     footer_extra="SYANS EGZAK",
-    out_path=f"{BASE}/Matimatik/LIMYE_Vol14_Cover.png",
+    out_path=f"{BASE}/Matematik/LIMYE_Vol14_Cover.png",
     draw_illustration=draw_matimatik
 )
 
