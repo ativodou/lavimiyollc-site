@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Bibliyotèk Nasyonal — The first comprehensive technical, legal, and educational library ever written in Haitian Kreyòl. 9 series, 119 volumes, one mission.">
+<meta name="description" content="Bibliyotèk Nasyonal — The first comprehensive technical, legal, and educational library ever written in Haitian Kreyòl. 9 series, 116 volumes, one mission.">
 <meta property="og:title" content="Bibliyotèk Nasyonal — LavimiyòLLC">
-<meta property="og:description" content="For 220 years Haiti had no books in its own language. Now there are 119 volumes in Haitian Kreyòl covering law, trades, and education.">
+<meta property="og:description" content="For 220 years Haiti had no books in its own language. Now there are 116 volumes in Haitian Kreyòl covering law, trades, and education.">
 <meta property="og:image" content="https://lavimiyo.com/images/lakou-ati-logo.png">
 <meta property="og:url" content="https://lavimiyo.com/books.html">
 <meta property="og:type" content="website">
@@ -26,9 +26,9 @@
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body { background: var(--parchment); color: var(--ink); font-family: 'Source Sans 3', sans-serif; overflow-x: hidden; }
-  /* NAV */
-  nav {
+body { background: var(--parchment); color: var(--ink); font-family: 'Source Sans 3', sans-serif; overflow-x: hidden; }
+/* NAV */
+nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 200;
     padding: 1.2rem 4rem; display: flex; align-items: center; justify-content: space-between;
     background: rgba(254,252,232,0.97); backdrop-filter: blur(12px);
@@ -285,7 +285,7 @@
     </div>
     <div class="hero-stats">
       <div class="hs-cell"><div class="hs-num">9</div><div class="hs-label">Series</div></div>
-      <div class="hs-cell"><div class="hs-num">119</div><div class="hs-label">Volumes</div></div>
+      <div class="hs-cell"><div class="hs-num">116</div><div class="hs-label">Volumes</div></div>
       <div class="hs-cell"><div class="hs-num">4</div><div class="hs-label">Categories</div></div>
       <div class="hs-cell"><div class="hs-num">1<sup style="font-size:0.5em">er</sup></div><div class="hs-label">In history</div></div>
     </div>
@@ -675,9 +675,9 @@
         </a>
       </div>
       <div class="book-card">
-        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.14 - Matematik">
-          <div class="book-cover"><img src="/bibliyotek/LIMYÈ/Matematik/LIMYE_Vol14_Cover.png" alt="Matematik"></div>
-          <div class="book-meta"><div class="book-title">Vol. 14 — Matematik · Chif ak Fòmil</div></div>
+        <a href="mailto:contact@lavimiyo.com?subject=LIMYÈ Vol.14 - Matimatik">
+          <div class="book-cover"><img src="/bibliyotek/LIMYÈ/Matimatik/LIMYE_Vol14_Cover.png" alt="Matimatik"></div>
+          <div class="book-meta"><div class="book-title">Vol. 14 — Matimatik · Chif ak Fòmil</div></div>
         </a>
       </div>
     </div>
@@ -868,12 +868,12 @@
     var id = 'vol-' + idx;
     var btn = document.createElement('button');
     btn.className = 'add-vol-btn';
-    btn.textContent = '+ $9.99';
+    btn.textContent = '+ $10';
     btn.onclick = function(e) {
       e.preventDefault(); e.stopPropagation();
-      addToCart(id, 'Bibliyotèk — ' + titleEl.textContent.trim(), 'Volim Endividyèl · PDF', 9.99);
+      addToCart(id, 'Bibliyotèk — ' + titleEl.textContent.trim(), 'Volim Endividyèl · PDF', 10);
       btn.textContent = '✓'; btn.classList.add('added');
-      setTimeout(function(){ btn.textContent = '+ $9.99'; btn.classList.remove('added'); }, 1400);
+      setTimeout(function(){ btn.textContent = '+ $10'; btn.classList.remove('added'); }, 1400);
     };
     meta.appendChild(btn);
   });
