@@ -1,25 +1,8 @@
 const Stripe = require('stripe');
-const https = require('https');
 
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=600');
-
-  // Diagnostic: test raw connectivity to Stripe
-  const keyPrefix = (process.env.STRIPE_SECRET_KEY || '').slice(0, 8);
-  let rawTest = 'pending';
-  try {
-    const r = await fetch('https://api.stripe.com/v1/balance', {
-      headers: { Authorization: `Bearer ${process.env.STRIPE_SECRET_KEY}` },
-    });
-    rawTest = `fetch_ok:${r.status}`;
-  } catch (e) {
-    rawTest = `fetch_err:${e.message}`;
-  }
-
-  if (req.url && req.url.includes('diag')) {
-    return res.status(200).json({ keyPrefix, rawTest, node: process.version });
-  }
 
   try {
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
