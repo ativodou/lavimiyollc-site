@@ -1055,9 +1055,11 @@ function setPayMethod(method) {
   const noteEl = document.getElementById('donate-note');
   if (isMonCash) {
     noteEl.innerHTML = currentLang === 'ht'
-      ? 'Peman an pwosese pa <strong>MonCash (Digicel Haiti)</strong>. Disponib pou kont MonCash aktif.'
-      : 'Payment processed by <strong>MonCash (Digicel Haiti)</strong>. Available for active MonCash accounts.';
+      ? '🚧 MonCash pa disponib ankò. Retounen byento!'
+      : '🚧 MonCash is coming soon. Check back later!';
+    btn.disabled = true;
   } else {
+    btn.disabled = false;
     noteEl.innerHTML = (currentLang === 'ht'
       ? 'Peman an sekirize pa <strong>Stripe</strong>. Fèl an Kreyòl Inc. se yon òganizasyon 501(c)(3) an pandan.'
       : 'Payment secured by <strong>Stripe</strong>. Fèl an Kreyòl Inc. is a pending 501(c)(3).');
