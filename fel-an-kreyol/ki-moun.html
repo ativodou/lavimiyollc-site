@@ -59,25 +59,13 @@ body { font-family: 'Source Serif 4', Georgia, serif; color: var(--text); backgr
 .cred-label { color: var(--gray); font-size: 0.8rem; line-height: 1.4; }
 .bio-body { font-size: 1rem; line-height: 1.85; color: var(--gray); max-width: 700px; }
 
-/* STORY PLACEHOLDER */
+/* STORY SECTION */
 .story-section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
 .story-section h2 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 700; color: var(--navy-dark); margin-bottom: 2rem; }
-.placeholder-block {
-  min-height: 300px; border: 2px dashed var(--border); border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  background: white; color: var(--gray); font-style: italic; font-size: 1rem;
-  text-align: center; padding: 2rem;
-}
-
-/* PULL QUOTE PLACEHOLDER */
-.pull-quote-placeholder {
-  min-height: 120px; border: 2px dashed var(--border); border-radius: 0 8px 8px 0;
-  border-left: 4px dashed var(--gold); padding: 1.5rem 2rem;
-  background: white; display: flex; align-items: center;
-  color: var(--gray); font-style: italic; font-size: 1.1rem;
-  font-family: 'Playfair Display', Georgia, serif;
-  margin: 3rem 0; max-width: 760px;
-}
+.bio-prose { max-width: 720px; }
+.bio-prose p { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.05rem; line-height: 1.8; color: #333; margin-bottom: 1.4rem; }
+.bio-turning-point { font-size: 1.1rem !important; color: var(--navy) !important; border-top: 2px solid var(--gold); padding-top: 1.25rem; }
+.pull-quote { border-left: 4px solid var(--gold); background: var(--light); padding: 1.75rem 2rem; margin: 2.5rem 0; max-width: 720px; font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-style: italic; color: var(--navy-dark); line-height: 1.75; border-radius: 0 8px 8px 0; }
 
 /* MISSION SECTION */
 .mission-section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
@@ -119,7 +107,7 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
   .cred-strip { grid-template-columns: repeat(2, 1fr); }
   .credentials-section, .story-section, .mission-section { padding: 3.5rem 1.25rem; }
   .cta-box { padding: 3.5rem 1.25rem; }
-  .pull-quote-placeholder { margin: 2rem 0; }
+  .pull-quote { margin: 2rem 0; }
 }
 </style>
 </head>
@@ -192,13 +180,23 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
   <div class="story-section">
     <span class="section-tag" data-ht="ISTWA A" data-en="THE STORY">ISTWA A</span>
     <h2 data-ht="Istwa a." data-en="The story.">Istwa a.</h2>
-    <div class="placeholder-block" data-ht="[ Biografi — Carl Henri Desmornes ]" data-en="[ Biography — Carl Henri Desmornes ]">
-      [ Biografi — Carl Henri Desmornes ]
+    <div class="bio-prose">
+      <p>Carl Henri Desmornes fèt 19 janvye 1960 nan lopital St François nan Pòtoprens. Li se dezyèm pitit Jean Desmornes ak Arlite Thomas. Li gen 2 frè ak yon sè. Li grandi Boudon e li fè tout klas li kay frè St Louis yo.</p>
+
+      <p>Lè li fini filo an 1979, li tou marye ak Maryse Debrosse, menaj li te rankontre lè yo te gen 14 an. Li pati avèk madanm li al etidye mekanik o Zetazini. Ansanm yo fè 3 gason — Eric, Marc Henry ak Carl-Philip.</p>
+
+      <p>Carl Henri tounen an Ayiti an 1986. Avèk bòfrè li Patrick Martineau, li monte yon garaj — Auto Clinic — ki te nan Delmas 29. Toujou avèk bòfrè li, yo fonde Zenglen, kote li ekri Fidel ak Tanbou Nou. Lè Zenglen travèse Etazini, li rete nan mizik avèk K-Dans. Se avèk K-Dans li ekri plis mizik tankou An Tout Franchiz, Graduasyon, Touman, e latriye.</p>
+
+      <p class="bio-turning-point">Touman gen yon istwa tris ki vini avèl ki ta pral boulvèse lavi Carl Henri. An 1998, bandi tiye madanm li Maryse. Sa ta pral koz li ralanti sou mizik nèt pou li te konsantre l sou edikasyon 3 gason li yo.</p>
+
+      <p>Antre tan, li te patisipe nan kreye Telemax, epi apre li vin fonde Planet Kreyòl ak Festival Soley. Se nan Planet Kreyòl li vin fè yon lòt rankont ki ta pral mennen li nan yon lòt direksyon — Elien Isaac, tout moun konnen sou non Sanba L. Sa ta pral fè li inisye nan Vodou kòm Houngan. Nan travay avèk Evoni Auguste, li etidye jouk li vin Ati Nasyonal, 15 out 2019.</p>
+
+      <p>Sou chimen zansèt li nan Vodou, li kreye Radyo Ayibobo FM, wonm Bitasyon, epi li ekri Ti Limyè sou Vodou. Depi 2024, kòz sante ak sitiyasyon peyi a, li ap viv Florida.</p>
     </div>
 
-    <blockquote class="pull-quote-placeholder" data-ht="[ Sitatson — pou ajoute ]" data-en="[ Pull Quote — to be added ]">
-      [ Sitatson — pou ajoute ]
-    </blockquote>
+    <blockquote class="pull-quote">Aprè tout sa — mizik, radyo, Vodou, doulè, gerizon — Carl pa ap chèche lajan ni renome. Li vle kite yon bagay dèyè. Li reyalize Ayiti pap janm soti nan kote li ye a si pwoblèm lekòl pa rezoud. E pou li rezoud, fòk yo ka aprann nan lang yo pale a. Chak fwa yo vini ak koze lang lan, gran oryan yo gen yon sèl pawòl: Pa gen liv an Kreyòl. E byen — Carl Henri deside chanje sa. Li pa ka fèl pou kont li. Se pou sa jodi a li ap mande sipò tout Ayisyen ki menm jan avèk li — ki vle wè yon lòt Ayiti.</blockquote>
+
+    <blockquote class="pull-quote" style="font-size:1.2rem; margin-top:0;">"Pa gen liv an Kreyòl. E byen — Carl Henri deside chanje sa."</blockquote>
   </div>
 </div>
 
