@@ -43,7 +43,7 @@ module.exports = async (req, res) => {
     const session = await stripe.checkout.sessions.create(sessionParams);
     res.status(200).json({ url: session.url });
   } catch (err) {
-    console.error('[donate]', err.message);
-    res.status(500).json({ error: err.message });
+    console.error('[donate]', err.type, err.code, err.statusCode, err.message);
+    res.status(500).json({ error: err.message, type: err.type, code: err.code });
   }
 };
