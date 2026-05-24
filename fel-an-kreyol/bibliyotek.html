@@ -104,6 +104,15 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
 .footer-legal a { color: rgba(255,255,255,0.45); }
 .footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
 
+/* COVER GRID */
+.cover-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin: 2rem 0; }
+.cover-item { text-align: center; }
+.cover-item a { display: block; text-decoration: none; }
+.cover-item img { width: 100%; border-radius: 8px; box-shadow: 0 4px 16px rgba(27,58,140,0.15); transition: transform 0.2s; aspect-ratio: 3/4; object-fit: cover; display: block; }
+.cover-item img:hover { transform: scale(1.04); }
+.cover-item .cover-num { font-size: 0.7rem; color: var(--gold); font-weight: 600; margin-top: 0.5rem; display: block; letter-spacing: 0.08em; }
+.cover-item .cover-title { font-size: 0.8rem; color: var(--navy); font-weight: 600; display: block; margin-top: 0.2rem; line-height: 1.3; }
+
 /* MOBILE */
 @media (max-width: 768px) {
   .site-nav { padding: 0 1.25rem; }
@@ -116,6 +125,7 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
   .stat-strip { grid-template-columns: repeat(2, 1fr); }
   .vol-grid { grid-template-columns: repeat(2, 1fr); }
   .lang-cards { grid-template-columns: repeat(2, 1fr); }
+  .cover-grid { grid-template-columns: repeat(2, 1fr); }
   .lib-section { padding: 3rem 1.25rem; }
   .hero-inner { padding: 4rem 1.25rem; }
   .cta-box { padding: 3.5rem 1.25rem; }
@@ -239,6 +249,16 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
         </tbody>
       </table>
     </div>
+    <div class="cover-grid" style="margin-top:2rem;">
+      <div class="cover-item"><a href="#"><img src="/images/TEKNIK_KVOUM_Vol1_Cover.png" alt="K-VOUM Vol.1" loading="lazy"><span class="cover-num">K-VOUM · Vol 1</span><span class="cover-title" data-ht="Mekanik Otomobil" data-en="Automotive">Mekanik Otomobil</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/TEKNIK_TIPRIZ_Vol1_Cover.png" alt="TI PRIZ Vol.1" loading="lazy"><span class="cover-num">TI PRIZ · Vol 1</span><span class="cover-title" data-ht="Elektrisite" data-en="Electricity">Elektrisite</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/TEKNIK_TIPRIZ_Vol2_Cover.png" alt="TI PRIZ Vol.2" loading="lazy"><span class="cover-num">TI PRIZ · Vol 2</span><span class="cover-title" data-ht="Elektrisite" data-en="Electricity">Elektrisite</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/TEKNIK_DLO_Vol1_Cover.png" alt="DLO Vol.1" loading="lazy"><span class="cover-num">DLO · Vol 1</span><span class="cover-title" data-ht="Plonbri" data-en="Plumbing">Plonbri</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/TEKNIK_DIJITAL_Vol1_Cover.png" alt="DIJITAL Vol.1" loading="lazy"><span class="cover-num">DIJITAL · Vol 1</span><span class="cover-title" data-ht="Elektwonik" data-en="Electronics">Elektwonik</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/TEKNIK_KOUPEKLOURE_Vol1_Cover.png" alt="KOUPE KLOURE Vol.1" loading="lazy"><span class="cover-num">KOUPE KLOURE · Vol 1</span><span class="cover-title" data-ht="Chapantri" data-en="Carpentry">Chapantri</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/TEKNIK_KOUPEKLOURE_Vol2_Cover.png" alt="KOUPE KLOURE Vol.2" loading="lazy"><span class="cover-num">KOUPE KLOURE · Vol 2</span><span class="cover-title" data-ht="Chapantri" data-en="Carpentry">Chapantri</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/TEKNIK_TIWEL_Vol1_Cover.png" alt="TIWÈL Vol.1" loading="lazy"><span class="cover-num">TIWÈL · Vol 1</span><span class="cover-title" data-ht="Masonri" data-en="Masonry">Masonri</span></a></div>
+    </div>
   </div>
 </div>
 
@@ -295,6 +315,14 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
         </tbody>
       </table>
     </div>
+    <div class="cover-grid" style="margin-top:2rem;">
+      <div class="cover-item"><a href="#"><img src="/images/LEGAL_Konstitisyon_Cover.png" alt="Konstitisyon" loading="lazy"><span class="cover-num">LEGAL</span><span class="cover-title" data-ht="Konstitisyon Ayiti" data-en="Constitution">Konstitisyon Ayiti</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LEGAL_KodSivil_Cover.png" alt="Kòd Sivil" loading="lazy"><span class="cover-num">LEGAL</span><span class="cover-title" data-ht="Kòd Sivil" data-en="Civil Code">Kòd Sivil</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LEGAL_KodPenal_Cover.png" alt="Kòd Penal" loading="lazy"><span class="cover-num">LEGAL</span><span class="cover-title" data-ht="Kòd Penal" data-en="Penal Code">Kòd Penal</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LEGAL_KodTravay_Cover.png" alt="Kòd Travay" loading="lazy"><span class="cover-num">LEGAL</span><span class="cover-title" data-ht="Kòd Travay" data-en="Labor Code">Kòd Travay</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LEGAL_KodKomes_Cover.png" alt="Kòd Komès" loading="lazy"><span class="cover-num">LEGAL</span><span class="cover-title" data-ht="Kòd Komès" data-en="Commercial Code">Kòd Komès</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LEGAL_KodDwanye_Cover.png" alt="Kòd Dwanye" loading="lazy"><span class="cover-num">LEGAL</span><span class="cover-title" data-ht="Kòd Dwanye" data-en="Customs Code">Kòd Dwanye</span></a></div>
+    </div>
   </div>
 </div>
 
@@ -305,18 +333,17 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
   <div class="lib-section">
     <span class="section-tag">LIMYÈ</span>
     <h2 data-ht="LIMYÈ — Syans &amp; Istwa · 15 Vòlim" data-en="LIMYÈ — Science &amp; History · 15 Volumes">LIMYÈ — Syans &amp; Istwa · 15 Vòlim</h2>
-    <div class="vol-grid">
-      <div class="vol-card"><span class="vol-num">Vol 01</span><span class="vol-title" data-ht="Byoloji" data-en="Biology">Byoloji</span></div>
-      <div class="vol-card"><span class="vol-num">Vol 02</span><span class="vol-title" data-ht="Zooloji" data-en="Zoology">Zooloji</span></div>
-      <div class="vol-card"><span class="vol-num">Vol 03</span><span class="vol-title" data-ht="Botanik &amp; Plant Medikal" data-en="Botany &amp; Medicinal Plants">Botanik &amp; Plant Medikal</span></div>
-      <div class="vol-card"><span class="vol-num">Vol 04</span><span class="vol-title" data-ht="Jewoloji &amp; Minèral" data-en="Geology &amp; Minerals">Jewoloji &amp; Minèral</span></div>
-      <div class="vol-card"><span class="vol-num">Vol 05–08</span><span class="vol-title" data-ht="Istwa Ayiti I–IV" data-en="History of Haiti I–IV">Istwa Ayiti I–IV</span></div>
-      <div class="vol-card"><span class="vol-num">Vol 09</span><span class="vol-title" data-ht="Jewografi Ayiti" data-en="Geography of Haiti">Jewografi Ayiti</span></div>
-      <div class="vol-card"><span class="vol-num">Vol 10</span><span class="vol-title" data-ht="Jewografi Mond &amp; Astwonomi" data-en="World Geography &amp; Astronomy">Jewografi Mond &amp; Astwonomi</span></div>
-      <div class="vol-card"><span class="vol-num">Vol 11 T1&amp;T2</span><span class="vol-title" data-ht="Istwa Jeneral" data-en="General History">Istwa Jeneral</span></div>
-      <div class="vol-card"><span class="vol-num">Vol 12</span><span class="vol-title" data-ht="Chimi" data-en="Chemistry">Chimi</span></div>
-      <div class="vol-card"><span class="vol-num">Vol 13</span><span class="vol-title" data-ht="Fizik" data-en="Physics">Fizik</span></div>
-      <div class="vol-card"><span class="vol-num">Vol 14</span><span class="vol-title" data-ht="Matimatik" data-en="Mathematics">Matimatik</span></div>
+    <div class="cover-grid">
+      <div class="cover-item"><a href="#"><img src="/images/LIMYE_Vol1_Cover.png" alt="Byoloji" loading="lazy"><span class="cover-num">LIMYÈ · Vol 01</span><span class="cover-title" data-ht="Byoloji" data-en="Biology">Byoloji</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LIMYE_Vol3_Cover.png" alt="Botanik" loading="lazy"><span class="cover-num">LIMYÈ · Vol 03</span><span class="cover-title" data-ht="Botanik &amp; Plant Medikal" data-en="Botany &amp; Medicinal Plants">Botanik &amp; Plant Medikal</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LIMYE_Vol4_Cover.png" alt="Jewoloji" loading="lazy"><span class="cover-num">LIMYÈ · Vol 04</span><span class="cover-title" data-ht="Jewoloji &amp; Minèral" data-en="Geology &amp; Minerals">Jewoloji &amp; Minèral</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LIMYE_Vol5_Cover.png" alt="Istwa Ayiti I" loading="lazy"><span class="cover-num">LIMYÈ · Vol 05</span><span class="cover-title" data-ht="Istwa Ayiti I" data-en="History of Haiti I">Istwa Ayiti I</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LIMYE_Vol7_Cover.png" alt="Istwa Ayiti III" loading="lazy"><span class="cover-num">LIMYÈ · Vol 07</span><span class="cover-title" data-ht="Istwa Ayiti III" data-en="History of Haiti III">Istwa Ayiti III</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LIMYE_Vol9_Cover.png" alt="Jewografi Ayiti" loading="lazy"><span class="cover-num">LIMYÈ · Vol 09</span><span class="cover-title" data-ht="Jewografi Ayiti" data-en="Geography of Haiti">Jewografi Ayiti</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LIMYE_Vol11_Tom1_Cover.png" alt="Istwa Jeneral" loading="lazy"><span class="cover-num">LIMYÈ · Vol 11</span><span class="cover-title" data-ht="Istwa Jeneral T1" data-en="General History T1">Istwa Jeneral T1</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LIMYE_Vol12_Cover.png" alt="Chimi" loading="lazy"><span class="cover-num">LIMYÈ · Vol 12</span><span class="cover-title" data-ht="Chimi" data-en="Chemistry">Chimi</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LIMYE_Vol13_Cover.png" alt="Fizik" loading="lazy"><span class="cover-num">LIMYÈ · Vol 13</span><span class="cover-title" data-ht="Fizik" data-en="Physics">Fizik</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LIMYE_Vol14_Cover.png" alt="Matimatik" loading="lazy"><span class="cover-num">LIMYÈ · Vol 14</span><span class="cover-title" data-ht="Matimatik" data-en="Mathematics">Matimatik</span></a></div>
     </div>
   </div>
 </div>
@@ -328,23 +355,10 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
   <div class="lib-section">
     <span class="section-tag">LANG</span>
     <h2 data-ht="LANG — Gramè &amp; Diksyonè · 4 Vòlim" data-en="LANG — Grammar &amp; Dictionary · 4 Volumes">LANG — Gramè &amp; Diksyonè · 4 Vòlim</h2>
-    <div class="lang-cards">
-      <div class="lang-card">
-        <span class="lc-icon">📗</span>
-        <span class="lc-title" data-ht="Gramè Kreyòl" data-en="Creole Grammar">Gramè Kreyòl</span>
-      </div>
-      <div class="lang-card">
-        <span class="lc-icon">📘</span>
-        <span class="lc-title" data-ht="Diksyonè Kreyòl-Anglè" data-en="Creole-English Dictionary">Diksyonè Kreyòl-Anglè</span>
-      </div>
-      <div class="lang-card">
-        <span class="lc-icon">📙</span>
-        <span class="lc-title" data-ht="Diksyonè Kreyòl-Fransè" data-en="Creole-French Dictionary">Diksyonè Kreyòl-Fransè</span>
-      </div>
-      <div class="lang-card">
-        <span class="lc-icon">📕</span>
-        <span class="lc-title" data-ht="Diksyonè Kreyòl-Espayòl" data-en="Creole-Spanish Dictionary">Diksyonè Kreyòl-Espayòl</span>
-      </div>
+    <div class="cover-grid" style="grid-template-columns: repeat(3, 1fr); max-width: 700px;">
+      <div class="cover-item"><a href="#"><img src="/images/GrameKreyol_Vol1_Cover.png" alt="Gramè Kreyòl" loading="lazy"><span class="cover-num">LANG · Vol 1</span><span class="cover-title" data-ht="Gramè Kreyòl" data-en="Creole Grammar">Gramè Kreyòl</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/GrameKreyol_Vol2_Cover.png" alt="Diksyonè Kreyòl-Anglè" loading="lazy"><span class="cover-num">LANG · Vol 2</span><span class="cover-title" data-ht="Diksyonè Kreyòl-Anglè" data-en="Creole-English Dictionary">Diksyonè Kreyòl-Anglè</span></a></div>
+      <div class="cover-item"><a href="#"><img src="/images/LANG_Vol1_Cover.png" alt="Diksyonè Kreyòl-Fransè" loading="lazy"><span class="cover-num">LANG · Vol 3</span><span class="cover-title" data-ht="Diksyonè Kreyòl-Fransè" data-en="Creole-French Dictionary">Diksyonè Kreyòl-Fransè</span></a></div>
     </div>
     <p class="lib-note" style="margin-top:1.25rem;" data-ht="Premye diksyonè bilenng Kreyòl estanda nan istwa. Potansyèl lisans pou enstitisyon edikasyonèl ak teknoloji lang." data-en="The first standardized bilingual Creole dictionaries in history. Licensing potential for educational institutions and language technology.">
       Premye diksyonè bilenng Kreyòl estanda nan istwa. Potansyèl lisans pou enstitisyon edikasyonèl ak teknoloji lang.

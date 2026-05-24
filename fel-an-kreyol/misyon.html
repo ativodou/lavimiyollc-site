@@ -90,9 +90,24 @@ body { font-family: 'Source Serif 4', Georgia, serif; color: var(--text); backgr
 }
 .hero-inner {
   position: relative; z-index: 1;
-  max-width: 900px; margin: 0 auto; padding: 6rem 2rem;
+  max-width: 1100px; margin: 0 auto; padding: 5rem 2rem;
   width: 100%;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
 }
+.hero-text { }
+.hero-books-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;
+  transform: perspective(900px) rotateY(-7deg) rotateX(2deg);
+}
+.hero-book {
+  border-radius: 6px; overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.5);
+  transition: transform 0.3s; aspect-ratio: 3/4;
+}
+.hero-book:hover { transform: translateY(-5px) scale(1.03); }
+.hero-book:nth-child(even) { transform: translateY(1rem); }
+.hero-book:nth-child(even):hover { transform: translateY(calc(1rem - 5px)) scale(1.03); }
+.hero-book img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .hero-tag {
   display: inline-block;
   font-size: 0.7rem; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase;
@@ -261,7 +276,8 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
   .nav-lang { margin-left: auto; }
   .stat-strip { grid-template-columns: repeat(2, 1fr); }
   .series-grid { grid-template-columns: 1fr; }
-  .hero-inner { padding: 4rem 1.25rem; }
+  .hero-inner { grid-template-columns: 1fr; padding: 4rem 1.25rem; gap: 2rem; }
+  .hero-books-grid { display: none; }
   .solution-section, .series-section { padding: 3.5rem 1.25rem; }
   .pull-quote-wrap { padding: 0 1.25rem; }
   .cta-box { padding: 3.5rem 1.25rem; }
@@ -296,14 +312,24 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <span class="hero-tag" data-ht="MISYON NOU" data-en="OUR MISSION">MISYON NOU</span>
-    <h1 data-ht="Edike Ayiti." data-en="Educate Haiti.">Edike Ayiti.</h1>
-    <p class="hero-sub" data-ht="Pou 220 an, pa t gen yon sèl liv teknik an Kreyòl. Nou chanje sa — pou tout tan." data-en="For 220 years, there was not a single technical book in Creole. We change that — permanently.">
-      Pou 220 an, pa t gen yon sèl liv teknik an Kreyòl. Nou chanje sa — pou tout tan.
-    </p>
-    <div class="hero-actions">
-      <a href="/don.html" class="btn-gold" data-ht="Fè yon Don Jodi a →" data-en="Donate Today →">Fè yon Don Jodi a →</a>
-      <a href="/kouman.html" class="btn-outline" data-ht="Kouman sa travay →" data-en="How It Works →">Kouman sa travay →</a>
+    <div class="hero-text">
+      <span class="hero-tag" data-ht="MISYON NOU" data-en="OUR MISSION">MISYON NOU</span>
+      <h1 data-ht="Edike Ayiti." data-en="Educate Haiti.">Edike Ayiti.</h1>
+      <p class="hero-sub" data-ht="Pou 220 an, pa t gen yon sèl liv teknik an Kreyòl. Nou chanje sa — pou tout tan." data-en="For 220 years, there was not a single technical book in Creole. We change that — permanently.">
+        Pou 220 an, pa t gen yon sèl liv teknik an Kreyòl. Nou chanje sa — pou tout tan.
+      </p>
+      <div class="hero-actions">
+        <a href="/don.html" class="btn-gold" data-ht="Fè yon Don Jodi a →" data-en="Donate Today →">Fè yon Don Jodi a →</a>
+        <a href="/kouman.html" class="btn-outline" data-ht="Kouman sa travay →" data-en="How It Works →">Kouman sa travay →</a>
+      </div>
+    </div>
+    <div class="hero-books-grid">
+      <div class="hero-book"><img src="/images/LEGAL_Konstitisyon_Cover.png" alt="Konstitisyon Ayiti" loading="eager"></div>
+      <div class="hero-book"><img src="/images/TEKNIK_TIPRIZ_Vol1_Cover.png" alt="TI PRIZ Elektrisite" loading="eager"></div>
+      <div class="hero-book"><img src="/images/LIMYE_Vol14_Cover.png" alt="Matimatik" loading="eager"></div>
+      <div class="hero-book"><img src="/images/TEKNIK_KVOUM_Vol1_Cover.png" alt="K-VOUM Mekanik" loading="lazy"></div>
+      <div class="hero-book"><img src="/images/LEGAL_KodTravay_Cover.png" alt="Kòd Travay" loading="lazy"></div>
+      <div class="hero-book"><img src="/images/LIMYE_Vol7_Cover.png" alt="Istwa Ayiti" loading="lazy"></div>
     </div>
   </div>
 </section>
