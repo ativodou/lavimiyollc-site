@@ -190,10 +190,11 @@
 </div>
 
 <script>
-  let currentLang = 'ht';
+  let currentLang = localStorage.getItem('felankreyol-lang') || 'ht';
 
   function setLang(lang) {
     currentLang = lang;
+    localStorage.setItem('felankreyol-lang', lang);
     document.documentElement.lang = lang;
     document.querySelectorAll('[data-ht]').forEach(el => {
       el.textContent = el.dataset[lang] || el.dataset.ht;
@@ -201,6 +202,7 @@
     document.getElementById('btn-ht').classList.toggle('active', lang === 'ht');
     document.getElementById('btn-en').classList.toggle('active', lang === 'en');
   }
+  setLang(currentLang);
 </script>
 </body>
 </html>

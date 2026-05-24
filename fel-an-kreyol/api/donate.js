@@ -11,7 +11,8 @@ module.exports = async (req, res) => {
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
     const { amount, mode, successUrl, cancelUrl } = req.body;
 
-    if (!amount || amount < 1) return res.status(400).json({ error: 'Invalid amount' });
+    if (!amount || amount < 1)     return res.status(400).json({ error: 'Invalid amount — minimum $1' });
+    if (amount > 5000)             return res.status(400).json({ error: 'Amount exceeds maximum — contact us for large gifts' });
 
     const origin = req.headers.origin || 'https://felankreyol.org';
     const productName = mode === 'subscription'
@@ -40,7 +41,8 @@ module.exports = async (req, res) => {
       },
     };
 
-    const session = await stripe.checkout.sessions.create(sessionParams);
+    const idempotencyKey = `don-${mode}-${Math.round(amount * 100)}-${Date.now()}`;
+    const session = await stripe.checkout.sessions.create(sessionParams, { idempotencyKey });
     res.status(200).json({ url: session.url });
   } catch (err) {
     console.error('[donate]', err.type, err.code, err.statusCode, err.message);

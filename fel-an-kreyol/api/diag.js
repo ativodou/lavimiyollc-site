@@ -1,5 +1,8 @@
 module.exports = async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  const token = req.headers['x-diag-token'] || req.query?.token;
+  if (!process.env.DIAG_TOKEN || token !== process.env.DIAG_TOKEN) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
   const key = process.env.STRIPE_SECRET_KEY || '';
   const keyOk = key.startsWith('sk_test_') || key.startsWith('sk_live_');
   const keyLen = key.length;
