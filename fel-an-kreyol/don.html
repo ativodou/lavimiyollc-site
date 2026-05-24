@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fè yon don pou Fèl an Kreyòl Inc. — Chak dola = yon liv pou yon timoun Ayisyen.">
+<meta property="og:title" content="Piti Piti Fè Pil · Fèl an Kreyòl Inc.">
+<meta property="og:description" content="Chak dola = yon liv pou yon timoun Ayisyen. Dirèk. San mwayen.">
+<link rel="icon" type="image/png" href="/images/felankreyol.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<title>Piti Piti Fè Pil · Don · Fèl an Kreyòl Inc.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #1B3A8C; --navy-dark: #142D70; --red: #CC1E1E;
+  --gold: #F5A623; --gold-light: #FFCD4A;
+  --cream: #FAF8F4; --light: #EEF2FB;
+  --white: #FFFFFF; --gray: #6B7280; --border: #E5E0D8; --text: #1A1A1A;
+  --rouge: #9B1C1C; --rouge-light: #C22B2B;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Source Serif 4', Georgia, serif; color: var(--text); background: var(--cream); min-height: 100vh; overflow-x: hidden; }
+
+/* NAV */
+.site-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: var(--navy); display: flex; align-items: center; padding: 0 2rem; height: 72px; box-shadow: 0 2px 20px rgba(0,0,0,0.2); }
+.nav-logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
+.nav-logo img { height: 52px; width: auto; display: block; }
+.nav-links { display: flex; align-items: center; list-style: none; margin-left: auto; gap: 0; }
+.nav-links li a { display: block; padding: 0.5rem 0.9rem; color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.82rem; font-weight: 400; letter-spacing: 0.02em; transition: color 0.2s; }
+.nav-links li a:hover { color: var(--gold); }
+.nav-links li a.nav-donate { background: var(--gold); color: var(--navy-dark); padding: 0.45rem 1.1rem; border-radius: 2rem; font-weight: 600; margin-left: 0.5rem; transition: background 0.2s; }
+.nav-links li a.nav-donate:hover { background: var(--gold-light); color: var(--navy-dark); }
+.nav-lang { display: flex; align-items: center; background: rgba(255,255,255,0.1); border-radius: 2rem; border: 1px solid rgba(255,255,255,0.2); overflow: hidden; margin-left: 1.25rem; }
+.lang-btn { padding: 0.28rem 0.65rem; cursor: pointer; border: none; background: none; color: rgba(255,255,255,0.55); font-size: 0.63rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.2s; font-family: 'Source Serif 4', Georgia, serif; }
+.lang-btn.active { background: var(--gold); color: var(--navy-dark); border-radius: 2rem; }
+.menu-btn { display: none; background: none; border: none; cursor: pointer; color: white; font-size: 1.4rem; margin-left: 1rem; flex-shrink: 0; }
+
+/* HERO */
+.hero { min-height: 60vh; padding-top: 72px; background: var(--navy); position: relative; overflow: hidden; display: flex; align-items: center; }
+.hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #1B3A8C 50%, #CC1E1E 50%); z-index: 2; }
+.hero::after { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+.hero-inner { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; padding: 5rem 2rem; width: 100%; text-align: center; }
+.hero-tag { display: inline-block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; }
+.hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(3rem, 7vw, 6rem); font-weight: 900; line-height: 1.02; color: white; margin-bottom: 1.25rem; }
+.hero-sub { font-size: 1.15rem; font-weight: 300; line-height: 1.8; color: rgba(255,255,255,0.72); max-width: 540px; margin: 0 auto; }
+
+/* IMPACT GRID */
+.impact-section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+.impact-section h2 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; color: var(--navy-dark); margin-bottom: 1.5rem; }
+.impact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.impact-card { background: white; border-radius: 8px; padding: 1.75rem 1.25rem; border: 1px solid var(--border); border-top: 3px solid var(--gold); text-align: center; }
+.impact-amount { font-family: 'Playfair Display', Georgia, serif; font-size: 2rem; font-weight: 700; color: var(--navy); display: block; margin-bottom: 0.5rem; }
+.impact-desc { color: var(--gray); font-size: 0.85rem; line-height: 1.5; }
+
+/* DONATION CARD */
+.donate-section { padding: 0 2rem 5rem; }
+.donate-card {
+  max-width: 640px; margin: 0 auto;
+  background: white; border-radius: 20px;
+  box-shadow: 0 20px 80px rgba(27,58,140,0.12);
+  padding: 3rem 2.5rem;
+  border-top: 4px solid var(--gold);
+}
+.donate-h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; font-weight: 700; color: var(--navy-dark); text-align: center; margin-bottom: 1.75rem; }
+.pay-method-row { display: flex; gap: 0.6rem; margin-bottom: 1.5rem; }
+.pay-method-btn { flex: 1; padding: 0.65rem 0.5rem; border-radius: 10px; cursor: pointer; border: 2px solid var(--border); background: white; font-family: 'Source Serif 4', Georgia, serif; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; color: var(--gray); display: flex; align-items: center; justify-content: center; gap: 0.4rem; transition: all 0.2s; }
+.pay-method-btn.active.card { border-color: var(--navy); background: var(--navy); color: white; }
+.pay-method-btn.active.moncash { border-color: #E31837; background: #E31837; color: white; }
+.pay-method-btn:not(.active):hover { border-color: var(--navy); }
+.donate-tabs { display: flex; background: var(--light); border-radius: 2rem; padding: 0.3rem; margin-bottom: 1.75rem; }
+.donate-tab { flex: 1; padding: 0.65rem; border: none; cursor: pointer; border-radius: 2rem; font-family: 'Source Serif 4', Georgia, serif; font-size: 0.82rem; font-weight: 600; background: transparent; color: var(--gray); transition: all 0.25s; }
+.donate-tab.active { background: var(--navy); color: white; box-shadow: 0 2px 12px rgba(27,58,140,0.25); }
+.amounts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 1rem; }
+.amount-btn { padding: 1rem 0.5rem; border: 2px solid var(--border); border-radius: 12px; background: white; cursor: pointer; text-align: center; transition: all 0.2s; font-family: 'Source Serif 4', Georgia, serif; }
+.amount-btn:hover { border-color: var(--navy); }
+.amount-btn.selected { border-color: var(--navy); background: var(--navy); }
+.amount-btn.selected .amount-val { color: white; }
+.amount-btn.selected .amount-impact { color: rgba(255,255,255,0.72); }
+.amount-val { font-family: 'Playfair Display', Georgia, serif; font-size: 1.6rem; font-weight: 700; color: var(--navy-dark); line-height: 1; display: block; }
+.amount-impact { font-size: 0.68rem; color: var(--gray); margin-top: 0.3rem; line-height: 1.3; display: block; }
+.amounts-htg { display: none; }
+.amounts-htg.visible { display: grid; }
+.custom-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.75rem; }
+.custom-label { font-size: 0.82rem; font-weight: 500; color: var(--gray); white-space: nowrap; }
+.custom-input-wrap { flex: 1; position: relative; }
+.custom-currency { position: absolute; left: 0.9rem; top: 50%; transform: translateY(-50%); font-family: 'Playfair Display', Georgia, serif; font-size: 1.1rem; font-weight: 600; color: var(--gray); }
+.custom-input { width: 100%; padding: 0.75rem 0.9rem 0.75rem 1.8rem; border: 2px solid var(--border); border-radius: 10px; font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; font-weight: 600; color: var(--navy-dark); outline: none; transition: border-color 0.2s; }
+.custom-input:focus { border-color: var(--navy); }
+.donate-btn { width: 100%; padding: 1.1rem; border: none; cursor: pointer; background: var(--rouge); color: white; border-radius: 12px; font-family: 'Source Serif 4', Georgia, serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.04em; transition: all 0.2s; box-shadow: 0 4px 20px rgba(155,28,28,0.3); display: flex; align-items: center; justify-content: center; gap: 0.6rem; }
+.donate-btn:hover { background: var(--rouge-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(155,28,28,0.4); }
+.donate-btn:disabled { opacity: 0.65; transform: none; cursor: not-allowed; }
+.donate-btn.moncash-btn { background: #E31837; box-shadow: 0 4px 20px rgba(227,24,55,0.3); }
+.donate-btn.moncash-btn:hover { background: #c0122d; box-shadow: 0 8px 30px rgba(227,24,55,0.4); }
+.error-msg { color: var(--rouge); font-size: 0.8rem; text-align: center; margin-top: 0.75rem; }
+.donate-note { text-align: center; font-size: 0.73rem; color: var(--gray); margin-top: 1rem; line-height: 1.6; }
+.donate-note a { color: var(--navy); text-decoration: none; }
+
+/* LIVE COUNTER */
+.counter-section { background: var(--navy); padding: 3.5rem 2rem; display: flex; align-items: center; justify-content: center; gap: 0; }
+.counter-cell { flex: 1; max-width: 320px; text-align: center; padding: 1.5rem 2rem; position: relative; }
+.counter-cell + .counter-cell::before { content: ''; position: absolute; left: 0; top: 20%; bottom: 20%; width: 1px; background: rgba(245,166,35,0.3); }
+.counter-live-label { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.58rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+.counter-live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); animation: pulse-dot 2s ease-in-out infinite; }
+@keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
+.counter-num { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.8rem, 6vw, 4.2rem); font-weight: 700; line-height: 1; color: white; min-height: 1.1em; }
+.counter-num .prefix { font-size: 0.55em; vertical-align: super; color: var(--gold-light); }
+.counter-desc { margin-top: 0.6rem; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
+
+/* HOW IT WORKS BRIEF */
+.how-section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+.how-section h2 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; color: var(--navy-dark); margin-bottom: 2rem; }
+.how-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; position: relative; }
+.how-step { text-align: center; }
+.how-step-icon { width: 60px; height: 60px; border-radius: 50%; background: var(--navy); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem; }
+.how-step-title { font-weight: 600; color: var(--navy); margin-bottom: 0.4rem; font-size: 0.9rem; }
+.how-step-desc { color: var(--gray); font-size: 0.85rem; line-height: 1.65; }
+.how-link { margin-top: 2rem; }
+.how-link a { color: var(--navy); text-decoration: underline; font-size: 0.9rem; }
+
+/* MONCASH SECTION */
+.moncash-section { background: var(--light); padding: 5rem 2rem; }
+.moncash-inner { max-width: 640px; margin: 0 auto; }
+.section-tag { display: block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+.moncash-inner h2 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 700; color: var(--navy-dark); margin-bottom: 0.75rem; }
+.moncash-inner p { color: var(--gray); font-size: 0.92rem; line-height: 1.75; margin-bottom: 1.5rem; }
+
+/* LEGAL NOTICE */
+.legal-section { padding: 3rem 2rem; max-width: 700px; margin: 0 auto; }
+.legal-text { font-size: 0.78rem; color: var(--gray); line-height: 1.75; text-align: center; }
+
+/* FOOTER */
+footer { background: var(--navy-dark); color: rgba(255,255,255,0.6); padding: 3.5rem 2rem 2rem; text-align: center; }
+footer img { height: 48px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto; }
+footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.5rem; margin: 1.5rem 0; }
+.footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+.footer-links a:hover { color: var(--gold); }
+.footer-legal { font-size: 0.75rem; color: rgba(255,255,255,0.38); line-height: 1.7; max-width: 600px; margin: 0 auto 1.5rem; }
+.footer-legal a { color: rgba(255,255,255,0.45); }
+.footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .site-nav { padding: 0 1.25rem; }
+  .nav-links { display: none; position: fixed; top: 72px; left: 0; right: 0; background: var(--navy-dark); flex-direction: column; padding: 1rem 0; z-index: 99; gap: 0; margin-left: 0; }
+  .nav-links.open { display: flex; }
+  .nav-links li a { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
+  .nav-links li a.nav-donate { margin-left: 1.5rem; border-radius: 2rem; }
+  .menu-btn { display: block; }
+  .nav-lang { margin-left: auto; }
+  .impact-grid { grid-template-columns: repeat(2, 1fr); }
+  .amounts-grid { grid-template-columns: repeat(2, 1fr); }
+  .how-steps { grid-template-columns: 1fr; gap: 2rem; }
+  .hero-inner { padding: 4rem 1.25rem; }
+  .impact-section, .how-section { padding: 3.5rem 1.25rem; }
+  .donate-section { padding: 0 1.25rem 3.5rem; }
+  .donate-card { padding: 2rem 1.5rem; }
+  .moncash-section { padding: 3.5rem 1.25rem; }
+  .counter-section { flex-direction: column; gap: 1.5rem; }
+  .counter-cell + .counter-cell::before { display: none; }
+  .counter-cell { padding: 0; }
+}
+@media (max-width: 480px) {
+  .impact-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="/index.html" class="nav-logo"><img src="/images/felankreyol.png" alt="Fèl an Kreyòl Inc." /></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="/misyon.html">Edike Ayiti</a></li>
+    <li><a href="/kouman.html">Kouman</a></li>
+    <li><a href="/bibliyotek.html">Bibliyotèk Nasyonal</a></li>
+    <li><a href="/ki-moun.html">Yon Ayisyen</a></li>
+    <li><a href="/partner.html">Kolòn Ki Bat</a></li>
+    <li><a href="/don.html" class="nav-donate">Piti Piti Fè Pil ❤</a></li>
+  </ul>
+  <div class="nav-lang">
+    <button class="lang-btn active" data-lang="ht" onclick="setLang('ht')">HT</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+  <button class="menu-btn" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag" data-ht="FÈ YON DON" data-en="MAKE A DONATION">FÈ YON DON</span>
+    <h1 data-ht="Piti Piti Fè Pil." data-en="Little by Little.">Piti Piti Fè Pil.</h1>
+    <p class="hero-sub" data-ht="Chak dola = yon liv pou yon timoun Ayisyen. Dirèk. San mwayen." data-en="Every dollar = one book for a Haitian child. Direct. No middlemen.">
+      Chak dola = yon liv pou yon timoun Ayisyen. Dirèk. San mwayen.
+    </p>
+  </div>
+</section>
+
+<!-- IMPACT AMOUNTS -->
+<div style="background: var(--cream);">
+  <div class="impact-section">
+    <h2 data-ht="Chak dola konte." data-en="Every dollar counts.">Chak dola konte.</h2>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <span class="impact-amount">$10</span>
+        <span class="impact-desc" data-ht="→ 1 vòlim pou 1 elèv" data-en="→ 1 volume for 1 student">→ 1 vòlim pou 1 elèv</span>
+      </div>
+      <div class="impact-card">
+        <span class="impact-amount">$100</span>
+        <span class="impact-desc" data-ht="→ Yon seri konplè pou 1 lekòl" data-en="→ A complete series for 1 school">→ Yon seri konplè pou 1 lekòl</span>
+      </div>
+      <div class="impact-card">
+        <span class="impact-amount">$250</span>
+        <span class="impact-desc" data-ht="→ Yon bibliyotèk konplè pou 1 lekòl" data-en="→ A complete library for 1 school">→ Yon bibliyotèk konplè pou 1 lekòl</span>
+      </div>
+      <div class="impact-card">
+        <span class="impact-amount">$1K+</span>
+        <span class="impact-desc" data-ht="→ Yon distri lekòl — kontakte nou" data-en="→ A school district — contact us">→ Yon distri lekòl — kontakte nou</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DONATION FORM -->
+<div class="donate-section">
+  <div class="donate-card">
+    <p class="donate-h2" data-ht="Fè yon Don" data-en="Make a Donation">Fè yon Don</p>
+
+    <!-- Payment method -->
+    <div class="pay-method-row">
+      <button class="pay-method-btn card active" id="pm-card" onclick="setPayMethod('card')">
+        💳 <span data-ht="Kat Kredi" data-en="Credit Card">Kat Kredi</span>
+      </button>
+      <button class="pay-method-btn moncash" id="pm-moncash" onclick="setPayMethod('moncash')">
+        📱 MonCash
+      </button>
+    </div>
+
+    <!-- Frequency tabs -->
+    <div class="donate-tabs" id="freq-tabs">
+      <button class="donate-tab active" id="tab-once" onclick="setMode('once')">
+        <span data-ht="Yon Fwa" data-en="One-Time">Yon Fwa</span>
+      </button>
+      <button class="donate-tab" id="tab-monthly" onclick="setMode('monthly')">
+        <span data-ht="Chak Mwa" data-en="Monthly">Chak Mwa</span>
+      </button>
+    </div>
+
+    <!-- USD presets -->
+    <div class="amounts-grid" id="amounts-grid">
+      <button class="amount-btn" onclick="selectAmount(10)">
+        <span class="amount-val">$10</span>
+        <span class="amount-impact" data-ht="1 liv pou yon timoun" data-en="1 book for a child">1 liv pou yon timoun</span>
+      </button>
+      <button class="amount-btn" onclick="selectAmount(25)">
+        <span class="amount-val">$25</span>
+        <span class="amount-impact" data-ht="5 liv pou yon klas" data-en="5 books for a class">5 liv pou yon klas</span>
+      </button>
+      <button class="amount-btn" onclick="selectAmount(50)">
+        <span class="amount-val">$50</span>
+        <span class="amount-impact" data-ht="10 liv pou yon lekòl" data-en="10 books for a school">10 liv pou yon lekòl</span>
+      </button>
+      <button class="amount-btn selected" onclick="selectAmount(100)">
+        <span class="amount-val">$100</span>
+        <span class="amount-impact" data-ht="Yon seri konplè" data-en="A complete series">Yon seri konplè</span>
+      </button>
+      <button class="amount-btn" onclick="selectAmount(250)">
+        <span class="amount-val">$250</span>
+        <span class="amount-impact" data-ht="Bibliyotèk pou yon lekòl" data-en="A school library">Bibliyotèk pou yon lekòl</span>
+      </button>
+      <button class="amount-btn" id="custom-btn" onclick="focusCustom()">
+        <span class="amount-val" style="font-size:1.1rem;" data-ht="Lòt" data-en="Other">Lòt</span>
+        <span class="amount-impact" data-ht="Montan ou chwazi" data-en="Your choice">Montan ou chwazi</span>
+      </button>
+    </div>
+
+    <!-- HTG presets -->
+    <div class="amounts-grid amounts-htg" id="amounts-htg">
+      <button class="amount-btn" onclick="selectAmountHTG(1000)">
+        <span class="amount-val" style="font-size:1.25rem;">1,000 G</span>
+        <span class="amount-impact" data-ht="Kèk liv pou yon timoun" data-en="A few books for a child">Kèk liv pou yon timoun</span>
+      </button>
+      <button class="amount-btn selected" onclick="selectAmountHTG(2500)">
+        <span class="amount-val" style="font-size:1.25rem;">2,500 G</span>
+        <span class="amount-impact" data-ht="5 liv pou yon klas" data-en="5 books for a class">5 liv pou yon klas</span>
+      </button>
+      <button class="amount-btn" onclick="selectAmountHTG(5000)">
+        <span class="amount-val" style="font-size:1.25rem;">5,000 G</span>
+        <span class="amount-impact" data-ht="10 liv pou yon lekòl" data-en="10 books for a school">10 liv pou yon lekòl</span>
+      </button>
+      <button class="amount-btn" onclick="selectAmountHTG(10000)">
+        <span class="amount-val" style="font-size:1.15rem;">10,000 G</span>
+        <span class="amount-impact" data-ht="Yon seri konplè" data-en="A complete series">Yon seri konplè</span>
+      </button>
+      <button class="amount-btn" onclick="selectAmountHTG(25000)">
+        <span class="amount-val" style="font-size:1.15rem;">25,000 G</span>
+        <span class="amount-impact" data-ht="Bibliyotèk pou yon lekòl" data-en="A school library">Bibliyotèk pou yon lekòl</span>
+      </button>
+      <button class="amount-btn" id="custom-htg-btn" onclick="focusCustomHTG()">
+        <span class="amount-val" style="font-size:1.1rem;" data-ht="Lòt" data-en="Other">Lòt</span>
+        <span class="amount-impact" data-ht="Montan ou chwazi" data-en="Your choice">Montan ou chwazi</span>
+      </button>
+    </div>
+
+    <!-- Custom input -->
+    <div class="custom-row">
+      <span class="custom-label" data-ht="Montan:" data-en="Amount:">Montan:</span>
+      <div class="custom-input-wrap">
+        <span class="custom-currency" id="custom-currency-sym">$</span>
+        <input type="number" class="custom-input" id="custom-amount" min="1" placeholder="100" value="100" oninput="onCustomInput(this.value)">
+      </div>
+    </div>
+
+    <button class="donate-btn" id="donate-btn" onclick="submitDonation()">
+      <span id="donate-btn-icon">❤️</span>
+      <span id="donate-btn-text" data-ht="Fè yon Don Kounye a" data-en="Donate Now">Fè yon Don Kounye a</span>
+    </button>
+    <p class="error-msg" id="error-msg" style="display:none"></p>
+    <p class="donate-note" id="donate-note">
+      <span data-ht="Peman an sekirize pa " data-en="Payment secured by ">Peman an sekirize pa </span><strong>Stripe</strong>.
+      <span data-ht=" Fèl an Kreyòl Inc. se yon òganizasyon 501(c)(3) an pandan." data-en=" Fèl an Kreyòl Inc. is a pending 501(c)(3)."> Fèl an Kreyòl Inc. se yon òganizasyon 501(c)(3) an pandan.</span>
+    </p>
+  </div>
+</div>
+
+<!-- LIVE COUNTER -->
+<div class="counter-section" id="impact-counter">
+  <div class="counter-cell">
+    <div class="counter-live-label"><span class="counter-live-dot"></span> Live</div>
+    <div class="counter-num" id="funds-num"><span class="prefix">$</span><span id="funds-val">—</span></div>
+    <div class="counter-desc" data-ht="Kolekte pou lekòl Ayiti" data-en="Raised for schools in Haiti">Kolekte pou lekòl Ayiti</div>
+  </div>
+  <div class="counter-cell">
+    <div class="counter-live-label"><span class="counter-live-dot"></span> Live</div>
+    <div class="counter-num" id="books-num"><span id="books-val">—</span></div>
+    <div class="counter-desc" data-ht="Liv livré nan lekòl" data-en="Books delivered to schools">Liv livré nan lekòl</div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS BRIEF -->
+<div style="background: var(--cream);">
+  <div class="how-section">
+    <h2 data-ht="Kouman sa travay." data-en="How it works.">Kouman sa travay.</h2>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-step-icon">❤️</div>
+        <div class="how-step-title" data-ht="Ou Fè yon Don" data-en="You Donate">Ou Fè yon Don</div>
+        <p class="how-step-desc" data-ht="Chwazi montan ou — yon fwa oswa chak mwa." data-en="Choose your amount — one-time or monthly.">Chwazi montan ou — yon fwa oswa chak mwa.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-step-icon">📦</div>
+        <div class="how-step-title" data-ht="Nou Achte Liv" data-en="We Buy Books">Nou Achte Liv</div>
+        <p class="how-step-desc" data-ht="Fèl an Kreyòl achte liv nan yon editè endepandan Ayisyen." data-en="Fèl an Kreyòl buys books from an independent Haitian publisher.">Fèl an Kreyòl achte liv nan yon editè endepandan Ayisyen.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-step-icon">🏫</div>
+        <div class="how-step-title" data-ht="Lekòl Resevwa" data-en="Schools Receive">Lekòl Resevwa</div>
+        <p class="how-step-desc" data-ht="Lekòl yo an Ayiti resevwa liv yo gratis." data-en="Schools in Haiti receive the books free.">Lekòl yo an Ayiti resevwa liv yo gratis.</p>
+      </div>
+    </div>
+    <div class="how-link">
+      <a href="/kouman.html" data-ht="Aprann plis sou kouman sa travay →" data-en="Learn more about how it works →">Aprann plis sou kouman sa travay →</a>
+    </div>
+  </div>
+</div>
+
+<!-- LEGAL NOTICE -->
+<div class="legal-section">
+  <p class="legal-text" data-ht="Fèl an Kreyòl Inc. se yon nonprofit ki anrejistre nan Eta Florida (Sunbiz). Demann 501(c)(3) federal an pwogrè. Don ou ka dediktib sou taks federal lè nou resevwa konfirmasyon IRS la. Tout fon ale dirèkteman nan acha liv pou lekòl Ayiti." data-en="Fèl an Kreyòl Inc. is a nonprofit registered in the State of Florida (Sunbiz). 501(c)(3) federal application in progress. Your donation may become tax-deductible upon IRS confirmation. All funds go directly to purchasing books for schools in Haiti.">
+    Fèl an Kreyòl Inc. se yon nonprofit ki anrejistre nan Eta Florida (Sunbiz). Demann 501(c)(3) federal an pwogrè. Don ou ka dediktib sou taks federal lè nou resevwa konfirmasyon IRS la. Tout fon ale dirèkteman nan acha liv pou lekòl Ayiti.
+  </p>
+</div>
+
+<footer>
+  <img src="/images/felankreyol.png" alt="Fèl an Kreyòl Inc." />
+  <p data-ht="Nou pote liv edikasyon an Kreyòl nan lekòl Ayiti." data-en="We bring Creole education books to schools in Haiti.">Nou pote liv edikasyon an Kreyòl nan lekòl Ayiti.</p>
+  <nav class="footer-links">
+    <a href="/misyon.html" data-ht="Edike Ayiti" data-en="Mission">Edike Ayiti</a>
+    <a href="/kouman.html" data-ht="Kouman" data-en="How It Works">Kouman</a>
+    <a href="/bibliyotek.html" data-ht="Bibliyotèk Nasyonal" data-en="The Library">Bibliyotèk Nasyonal</a>
+    <a href="/ki-moun.html" data-ht="Yon Ayisyen" data-en="The Founder">Yon Ayisyen</a>
+    <a href="/partner.html" data-ht="Kolòn Ki Bat" data-en="Partner">Kolòn Ki Bat</a>
+    <a href="/don.html" data-ht="Piti Piti Fè Pil" data-en="Donate">Piti Piti Fè Pil</a>
+  </nav>
+  <p class="footer-legal">
+    Fèl an Kreyòl Inc. se yon nonprofit ki anrejistre nan Eta Florida (Sunbiz).<br/>
+    501(c)(3) federal application pending. · <a href="mailto:info@felankreyol.org">info@felankreyol.org</a>
+  </p>
+  <p class="footer-copy">© 2025 Fèl an Kreyòl Inc. · Florida Nonprofit · <span data-ht="Tout dwa rezève" data-en="All rights reserved">Tout dwa rezève</span></p>
+</footer>
+
+<script>
+let currentLang = localStorage.getItem('felankreyol-lang') || 'ht';
+let selectedAmount = 100;
+let selectedAmountHTG = 2500;
+let donateMode = 'once';
+let payMethod = 'card';
+
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('felankreyol-lang', lang);
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === lang));
+  document.querySelectorAll('[data-ht]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (val === null) return;
+    if (el.tagName === 'INPUT') { el.placeholder = val; return; }
+    el.innerHTML = val;
+  });
+  document.documentElement.lang = lang === 'ht' ? 'ht' : 'en';
+  updateDonateBtn();
+}
+
+function setPayMethod(method) {
+  payMethod = method;
+  document.getElementById('pm-card').classList.toggle('active', method === 'card');
+  document.getElementById('pm-moncash').classList.toggle('active', method === 'moncash');
+  const isMonCash = method === 'moncash';
+  document.getElementById('freq-tabs').style.display = isMonCash ? 'none' : '';
+  document.getElementById('amounts-grid').style.display = isMonCash ? 'none' : '';
+  document.getElementById('amounts-htg').classList.toggle('visible', isMonCash);
+  const sym = document.getElementById('custom-currency-sym');
+  const input = document.getElementById('custom-amount');
+  if (isMonCash) { sym.textContent = 'G'; input.value = selectedAmountHTG; input.placeholder = '2500'; }
+  else { sym.textContent = '$'; input.value = selectedAmount; input.placeholder = '100'; }
+  const btn = document.getElementById('donate-btn');
+  btn.classList.toggle('moncash-btn', isMonCash);
+  const noteEl = document.getElementById('donate-note');
+  if (isMonCash) {
+    noteEl.innerHTML = currentLang === 'ht' ? '🚧 MonCash pa disponib ankò. Retounen byento!' : '🚧 MonCash is coming soon. Check back later!';
+    btn.disabled = true;
+  } else {
+    btn.disabled = false;
+    noteEl.innerHTML = (currentLang === 'ht' ? 'Peman an sekirize pa <strong>Stripe</strong>. Fèl an Kreyòl Inc. se yon òganizasyon 501(c)(3) an pandan.' : 'Payment secured by <strong>Stripe</strong>. Fèl an Kreyòl Inc. is a pending 501(c)(3).');
+  }
+  updateDonateBtn();
+}
+
+function setMode(mode) {
+  donateMode = mode;
+  document.getElementById('tab-once').classList.toggle('active', mode === 'once');
+  document.getElementById('tab-monthly').classList.toggle('active', mode === 'monthly');
+  updateDonateBtn();
+}
+
+function selectAmount(amt) {
+  selectedAmount = amt;
+  document.getElementById('custom-amount').value = amt;
+  document.querySelectorAll('#amounts-grid .amount-btn').forEach(b => b.classList.remove('selected'));
+  const presets = [10, 25, 50, 100, 250];
+  const btns = document.querySelectorAll('#amounts-grid .amount-btn');
+  const idx = presets.indexOf(amt);
+  if (idx !== -1) btns[idx].classList.add('selected'); else btns[5].classList.add('selected');
+  updateDonateBtn();
+}
+
+function selectAmountHTG(amt) {
+  selectedAmountHTG = amt;
+  document.getElementById('custom-amount').value = amt;
+  document.querySelectorAll('#amounts-htg .amount-btn').forEach(b => b.classList.remove('selected'));
+  const presets = [1000, 2500, 5000, 10000, 25000];
+  const btns = document.querySelectorAll('#amounts-htg .amount-btn');
+  const idx = presets.indexOf(amt);
+  if (idx !== -1) btns[idx].classList.add('selected'); else btns[5].classList.add('selected');
+  updateDonateBtn();
+}
+
+function focusCustom() {
+  document.querySelectorAll('#amounts-grid .amount-btn').forEach(b => b.classList.remove('selected'));
+  document.getElementById('custom-btn').classList.add('selected');
+  document.getElementById('custom-amount').focus();
+}
+
+function focusCustomHTG() {
+  document.querySelectorAll('#amounts-htg .amount-btn').forEach(b => b.classList.remove('selected'));
+  document.getElementById('custom-htg-btn').classList.add('selected');
+  document.getElementById('custom-amount').focus();
+}
+
+function onCustomInput(val) {
+  const n = parseFloat(val);
+  if (!isNaN(n) && n > 0) {
+    if (payMethod === 'moncash') {
+      selectedAmountHTG = n;
+      document.querySelectorAll('#amounts-htg .amount-btn').forEach(b => b.classList.remove('selected'));
+      const presets = [1000, 2500, 5000, 10000, 25000];
+      const btns = document.querySelectorAll('#amounts-htg .amount-btn');
+      const idx = presets.indexOf(n);
+      btns[idx !== -1 ? idx : 5].classList.add('selected');
+    } else {
+      selectedAmount = n;
+      document.querySelectorAll('#amounts-grid .amount-btn').forEach(b => b.classList.remove('selected'));
+      const presets = [10, 25, 50, 100, 250];
+      const btns = document.querySelectorAll('#amounts-grid .amount-btn');
+      const idx = presets.indexOf(n);
+      btns[idx !== -1 ? idx : 5].classList.add('selected');
+    }
+  }
+  updateDonateBtn();
+}
+
+function updateDonateBtn() {
+  const btnText = document.getElementById('donate-btn-text');
+  const btnIcon = document.getElementById('donate-btn-icon');
+  const monthly = donateMode === 'monthly';
+  if (payMethod === 'moncash') {
+    const amt = selectedAmountHTG || parseFloat(document.getElementById('custom-amount').value) || 0;
+    btnIcon.textContent = '📱';
+    btnText.textContent = currentLang === 'ht' ? `Peye ${amt.toLocaleString()} G ak MonCash` : `Pay ${amt.toLocaleString()} HTG via MonCash`;
+  } else {
+    const amt = selectedAmount || parseFloat(document.getElementById('custom-amount').value) || 0;
+    btnIcon.textContent = '❤️';
+    if (currentLang === 'ht') btnText.textContent = monthly ? `Fè yon Don $${amt}/mwa` : `Fè yon Don $${amt}`;
+    else btnText.textContent = monthly ? `Donate $${amt}/month` : `Donate $${amt}`;
+  }
+}
+
+async function submitDonation() {
+  const amt = parseFloat(document.getElementById('custom-amount').value);
+  const errEl = document.getElementById('error-msg');
+  errEl.style.display = 'none';
+  if (!amt || amt < 1) { errEl.style.display = 'block'; errEl.textContent = currentLang === 'ht' ? 'Montan envalid.' : 'Invalid amount.'; return; }
+  const btn = document.getElementById('donate-btn');
+  btn.disabled = true;
+  document.getElementById('donate-btn-text').textContent = currentLang === 'ht' ? 'Ap chaje...' : 'Loading...';
+  try {
+    const res = await fetch('/api/donate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ amount: amt, mode: donateMode === 'monthly' ? 'subscription' : 'payment', successUrl: window.location.origin + '/success', cancelUrl: window.location.origin + '/don' }),
+    });
+    const data = await res.json();
+    if (data.url) { window.location.href = data.url; }
+    else { throw new Error(data.error || 'Unknown error'); }
+  } catch (e) {
+    errEl.style.display = 'block';
+    errEl.textContent = currentLang === 'ht' ? 'Yon erè rive. Eseye ankò.' : 'An error occurred. Please try again.';
+    btn.disabled = false;
+    updateDonateBtn();
+  }
+}
+
+// Live counters
+function countUp(el, target, prefix) {
+  if (target === 0) { el.textContent = prefix + '0'; return; }
+  const duration = 1800; const start = performance.now();
+  function step(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 3);
+    el.textContent = prefix + Math.round(ease * target).toLocaleString();
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+(async function loadStats() {
+  try {
+    const res = await fetch('/api/stats');
+    if (!res.ok) return;
+    const { funds_usd, books_delivered } = await res.json();
+    const fundsEl = document.getElementById('funds-val');
+    const booksEl = document.getElementById('books-val');
+    const observer = new IntersectionObserver(entries => {
+      if (!entries[0].isIntersecting) return;
+      observer.disconnect();
+      countUp(fundsEl, funds_usd, '$');
+      countUp(booksEl, books_delivered, '');
+    }, { threshold: 0.3 });
+    observer.observe(document.getElementById('impact-counter'));
+  } catch (e) {}
+})();
+
+setLang(currentLang);
+updateDonateBtn();
+</script>
+</body>
+</html>

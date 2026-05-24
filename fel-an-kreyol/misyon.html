@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Misyon Fèl an Kreyòl Inc. — Edike Ayiti. Pou 220 an, pa t gen yon sèl liv teknik an Kreyòl.">
+<meta property="og:title" content="Edike Ayiti · Fèl an Kreyòl Inc.">
+<meta property="og:description" content="Pou 220 an, pa t gen yon sèl liv teknik an Kreyòl. Nou chanje sa — pou tout tan.">
+<link rel="icon" type="image/png" href="/images/felankreyol.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<title>Edike Ayiti · Misyon · Fèl an Kreyòl Inc.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #1B3A8C;
+  --navy-dark: #142D70;
+  --red: #CC1E1E;
+  --gold: #F5A623;
+  --gold-light: #FFCD4A;
+  --cream: #FAF8F4;
+  --light: #EEF2FB;
+  --white: #FFFFFF;
+  --gray: #6B7280;
+  --border: #E5E0D8;
+  --text: #1A1A1A;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Source Serif 4', Georgia, serif; color: var(--text); background: var(--cream); min-height: 100vh; overflow-x: hidden; }
+
+/* NAV */
+.site-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: var(--navy);
+  display: flex; align-items: center; gap: 0;
+  padding: 0 2rem; height: 72px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+.nav-logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
+.nav-logo img { height: 52px; width: auto; display: block; }
+.nav-links {
+  display: flex; align-items: center; list-style: none; margin-left: auto; gap: 0;
+}
+.nav-links li a {
+  display: block; padding: 0.5rem 0.9rem;
+  color: rgba(255,255,255,0.85); text-decoration: none;
+  font-size: 0.82rem; font-weight: 400; letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+.nav-links li a:hover { color: var(--gold); }
+.nav-links li a.nav-donate {
+  background: var(--gold); color: var(--navy-dark);
+  padding: 0.45rem 1.1rem; border-radius: 2rem;
+  font-weight: 600; margin-left: 0.5rem;
+  transition: background 0.2s;
+}
+.nav-links li a.nav-donate:hover { background: var(--gold-light); color: var(--navy-dark); }
+.nav-lang {
+  display: flex; align-items: center;
+  background: rgba(255,255,255,0.1); border-radius: 2rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  overflow: hidden; margin-left: 1.25rem;
+}
+.lang-btn {
+  padding: 0.28rem 0.65rem; cursor: pointer; border: none; background: none;
+  color: rgba(255,255,255,0.55); font-size: 0.63rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.2s;
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+.lang-btn.active { background: var(--gold); color: var(--navy-dark); border-radius: 2rem; }
+.menu-btn {
+  display: none; background: none; border: none; cursor: pointer;
+  color: white; font-size: 1.4rem; margin-left: 1rem; flex-shrink: 0;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh; padding-top: 72px;
+  background: var(--navy);
+  position: relative; overflow: hidden;
+  display: flex; align-items: center;
+}
+.hero::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px;
+  background: linear-gradient(90deg, #1B3A8C 50%, #CC1E1E 50%); z-index: 2;
+}
+.hero::after {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-inner {
+  position: relative; z-index: 1;
+  max-width: 900px; margin: 0 auto; padding: 6rem 2rem;
+  width: 100%;
+}
+.hero-tag {
+  display: inline-block;
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.25rem;
+}
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  font-weight: 900; line-height: 1.02; color: white;
+  margin-bottom: 1.5rem;
+}
+.hero-sub {
+  font-size: 1.15rem; font-weight: 300; line-height: 1.8;
+  color: rgba(255,255,255,0.72); max-width: 600px; margin-bottom: 2.5rem;
+}
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-gold {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--gold); color: var(--navy-dark);
+  padding: 0.9rem 2rem; border-radius: 3rem;
+  font-size: 0.9rem; font-weight: 700; text-decoration: none; border: none; cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 4px 20px rgba(245,166,35,0.35);
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+.btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: transparent; color: rgba(255,255,255,0.82);
+  padding: 0.9rem 2rem; border-radius: 3rem;
+  font-size: 0.9rem; font-weight: 400; text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.3); transition: all 0.2s;
+}
+.btn-outline:hover { background: rgba(255,255,255,0.1); }
+
+/* NUMBER SECTION */
+.number-section {
+  background: var(--navy-dark); padding: 6rem 2rem;
+  text-align: center; color: white;
+}
+.giant-number {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(8rem, 22vw, 18rem);
+  font-weight: 900; color: var(--gold); line-height: 1;
+  display: block; margin-bottom: 0.5rem;
+}
+.number-label {
+  font-size: clamp(1rem, 2vw, 1.35rem); color: rgba(255,255,255,0.8);
+  font-weight: 300; margin-bottom: 2rem; letter-spacing: 0.02em;
+}
+.number-body {
+  max-width: 680px; margin: 0 auto;
+  font-size: 1rem; line-height: 1.85; color: rgba(255,255,255,0.65); font-weight: 300;
+}
+
+/* SOLUTION SECTION */
+.solution-section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+.section-tag {
+  display: block;
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 0.75rem;
+}
+.solution-section h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700;
+  color: var(--navy-dark); margin-bottom: 1.25rem;
+}
+.solution-body {
+  font-size: 1rem; line-height: 1.85; color: var(--gray);
+  max-width: 680px; margin-bottom: 0;
+}
+
+/* STAT STRIP */
+.stat-strip {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  margin: 3.5rem 0 0;
+}
+.stat-box { padding: 2.5rem 1.5rem; text-align: center; }
+.stat-box.navy { background: var(--navy); }
+.stat-box.light { background: var(--light); }
+.stat-num {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.4rem; font-weight: 700; display: block; line-height: 1; margin-bottom: 0.5rem;
+}
+.stat-box.navy .stat-num { color: var(--gold); }
+.stat-box.navy .stat-label { color: rgba(255,255,255,0.7); font-size: 0.78rem; letter-spacing: 0.04em; }
+.stat-box.light .stat-num { color: var(--navy); }
+.stat-box.light .stat-label { color: var(--gray); font-size: 0.78rem; letter-spacing: 0.04em; }
+
+/* PULL QUOTE */
+.pull-quote-wrap { padding: 0 2rem; max-width: 1100px; margin: 0 auto; }
+.pull-quote {
+  border-left: 4px solid var(--gold);
+  padding: 1.5rem 2rem;
+  background: white;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  color: var(--navy);
+  font-size: 1.2rem;
+  line-height: 1.65;
+  margin: 4rem 0;
+  max-width: 760px;
+}
+
+/* SERIES SECTION */
+.series-section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+.series-section h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 700;
+  color: var(--navy-dark); margin-bottom: 2.5rem;
+}
+.series-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.series-card {
+  background: white; border-radius: 8px; padding: 1.5rem;
+  border: 1px solid var(--border);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.series-card:hover { box-shadow: 0 8px 24px rgba(27,58,140,0.1); transform: translateY(-3px); }
+.series-icon { font-size: 1.75rem; margin-bottom: 0.75rem; display: block; }
+.series-name { font-weight: 600; color: var(--navy); font-size: 1rem; display: block; }
+.series-subject { color: var(--gray); font-size: 0.8rem; margin-top: 0.25rem; display: block; }
+.series-vols { color: var(--gold); font-size: 0.82rem; font-weight: 600; margin-top: 0.5rem; display: block; }
+.series-cta { margin-top: 2.5rem; }
+
+/* CTA BOX */
+.cta-box {
+  background: var(--navy); padding: 5rem 2rem;
+  text-align: center;
+}
+.cta-box h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: white; font-size: clamp(1.6rem, 3vw, 2.4rem);
+  margin-bottom: 0.75rem;
+}
+.cta-box p { color: rgba(255,255,255,0.7); margin-bottom: 2rem; font-size: 1rem; }
+
+/* FOOTER */
+footer {
+  background: var(--navy-dark);
+  color: rgba(255,255,255,0.6);
+  padding: 3.5rem 2rem 2rem;
+  text-align: center;
+}
+footer img { height: 48px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto; }
+footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.5rem; margin: 1.5rem 0; }
+.footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+.footer-links a:hover { color: var(--gold); }
+.footer-legal { font-size: 0.75rem; color: rgba(255,255,255,0.38); line-height: 1.7; max-width: 600px; margin: 0 auto 1.5rem; }
+.footer-legal a { color: rgba(255,255,255,0.45); }
+.footer-legal a:hover { color: var(--gold); }
+.footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .site-nav { padding: 0 1.25rem; }
+  .nav-links {
+    display: none; position: fixed; top: 72px; left: 0; right: 0;
+    background: var(--navy-dark); flex-direction: column;
+    padding: 1rem 0; z-index: 99; gap: 0; margin-left: 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li a { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
+  .nav-links li a.nav-donate { margin-left: 1.5rem; border-radius: 2rem; }
+  .menu-btn { display: block; }
+  .nav-lang { margin-left: auto; }
+  .stat-strip { grid-template-columns: repeat(2, 1fr); }
+  .series-grid { grid-template-columns: 1fr; }
+  .hero-inner { padding: 4rem 1.25rem; }
+  .solution-section, .series-section { padding: 3.5rem 1.25rem; }
+  .pull-quote-wrap { padding: 0 1.25rem; }
+  .cta-box { padding: 3.5rem 1.25rem; }
+}
+@media (max-width: 480px) {
+  .stat-strip { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav">
+  <a href="/index.html" class="nav-logo">
+    <img src="/images/felankreyol.png" alt="Fèl an Kreyòl Inc." />
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="/misyon.html">Edike Ayiti</a></li>
+    <li><a href="/kouman.html">Kouman</a></li>
+    <li><a href="/bibliyotek.html">Bibliyotèk Nasyonal</a></li>
+    <li><a href="/ki-moun.html">Yon Ayisyen</a></li>
+    <li><a href="/partner.html">Kolòn Ki Bat</a></li>
+    <li><a href="/don.html" class="nav-donate">Piti Piti Fè Pil ❤</a></li>
+  </ul>
+  <div class="nav-lang">
+    <button class="lang-btn active" data-lang="ht" onclick="setLang('ht')">HT</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+  <button class="menu-btn" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag" data-ht="MISYON NOU" data-en="OUR MISSION">MISYON NOU</span>
+    <h1 data-ht="Edike Ayiti." data-en="Educate Haiti.">Edike Ayiti.</h1>
+    <p class="hero-sub" data-ht="Pou 220 an, pa t gen yon sèl liv teknik an Kreyòl. Nou chanje sa — pou tout tan." data-en="For 220 years, there was not a single technical book in Creole. We change that — permanently.">
+      Pou 220 an, pa t gen yon sèl liv teknik an Kreyòl. Nou chanje sa — pou tout tan.
+    </p>
+    <div class="hero-actions">
+      <a href="/don.html" class="btn-gold" data-ht="Fè yon Don Jodi a →" data-en="Donate Today →">Fè yon Don Jodi a →</a>
+      <a href="/kouman.html" class="btn-outline" data-ht="Kouman sa travay →" data-en="How It Works →">Kouman sa travay →</a>
+    </div>
+  </div>
+</section>
+
+<!-- THE NUMBER -->
+<div class="number-section">
+  <span class="giant-number">220</span>
+  <p class="number-label" data-ht="Ane san yon sèl liv teknik an Kreyòl Ayisyen" data-en="Years without a single technical book in Haitian Creole">Ane san yon sèl liv teknik an Kreyòl Ayisyen</p>
+  <p class="number-body" data-ht="Ayiti gen 12 milyon moun ki pale Kreyòl. Pou 220 an, pa t gen yon sèl liv teknik, legal, oswa edikasyon nan lang yo. Mekanisyen, elektrisyen, plonbye, avoka, jij — tout oblije aprann nan fransè, yon lang mwens pase 10% nan popilasyon an pale." data-en="Haiti has 12 million Creole speakers. For 220 years, there was not a single technical, legal, or educational book in their language. Mechanics, electricians, plumbers, lawyers, judges — all forced to learn in French, a language spoken by fewer than 10% of the population.">
+    Ayiti gen 12 milyon moun ki pale Kreyòl. Pou 220 an, pa t gen yon sèl liv teknik, legal, oswa edikasyon nan lang yo. Mekanisyen, elektrisyen, plonbye, avoka, jij — tout oblije aprann nan fransè, yon lang mwens pase 10% nan popilasyon an pale.
+  </p>
+</div>
+
+<!-- THE SOLUTION -->
+<div style="background: var(--cream);">
+  <div class="solution-section">
+    <h2 data-ht="Bibliyotèk Nasyonal chanje sa." data-en="The National Library changes that.">Bibliyotèk Nasyonal chanje sa.</h2>
+    <p class="solution-body" data-ht="119 vòlim. 9 seri. Premye fwa nan istwa — yon bibliyotèk teknik, legal, syantifik ak edikasyonèl konplè an Kreyòl Ayisyen." data-en="119 volumes. 9 series. The first time in history — a complete technical, legal, scientific, and educational library in Haitian Creole.">
+      119 vòlim. 9 seri. Premye fwa nan istwa — yon bibliyotèk teknik, legal, syantifik ak edikasyonèl konplè an Kreyòl Ayisyen.
+    </p>
+    <div class="stat-strip">
+      <div class="stat-box navy">
+        <span class="stat-num">119</span>
+        <span class="stat-label" data-ht="Vòlim" data-en="Volumes">Vòlim</span>
+      </div>
+      <div class="stat-box light">
+        <span class="stat-num">9</span>
+        <span class="stat-label" data-ht="Seri" data-en="Series">Seri</span>
+      </div>
+      <div class="stat-box navy">
+        <span class="stat-num">12M</span>
+        <span class="stat-label" data-ht="Moun" data-en="People">Moun</span>
+      </div>
+      <div class="stat-box light">
+        <span class="stat-num">1<sup style="font-size:0.5em">er</sup></span>
+        <span class="stat-label" data-ht="Nan Istwa" data-en="In History">Nan Istwa</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PULL QUOTE -->
+<div style="background: var(--cream); padding-bottom: 1rem;">
+  <div class="pull-quote-wrap">
+    <blockquote class="pull-quote" data-ht='"Lang lan pa t janm te baryè a. Se liv yo ki t ap manke."' data-en='"The language was never the barrier. It was the books that were missing."'>
+      "Lang lan pa t janm te baryè a. Se liv yo ki t ap manke."
+    </blockquote>
+  </div>
+</div>
+
+<!-- THE SERIES -->
+<div style="background: var(--cream);">
+  <div class="series-section">
+    <h2 data-ht="9 Seri. Chak domèn. Tout an Kreyòl." data-en="9 Series. Every domain. All in Creole.">9 Seri. Chak domèn. Tout an Kreyòl.</h2>
+    <div class="series-grid">
+      <div class="series-card">
+        <span class="series-icon">🔧</span>
+        <span class="series-name">K-VOUM</span>
+        <span class="series-subject" data-ht="Mekanik Otomobil" data-en="Automotive Mechanics">Mekanik Otomobil</span>
+        <span class="series-vols">15 <span data-ht="vòlim" data-en="volumes">vòlim</span></span>
+      </div>
+      <div class="series-card">
+        <span class="series-icon">⚡</span>
+        <span class="series-name">TI PRIZ</span>
+        <span class="series-subject" data-ht="Elektrisite" data-en="Electricity">Elektrisite</span>
+        <span class="series-vols">14 <span data-ht="vòlim" data-en="volumes">vòlim</span></span>
+      </div>
+      <div class="series-card">
+        <span class="series-icon">💧</span>
+        <span class="series-name">DLO</span>
+        <span class="series-subject" data-ht="Plonbri" data-en="Plumbing">Plonbri</span>
+        <span class="series-vols">12 <span data-ht="vòlim" data-en="volumes">vòlim</span></span>
+      </div>
+      <div class="series-card">
+        <span class="series-icon">📡</span>
+        <span class="series-name">DIJITAL</span>
+        <span class="series-subject" data-ht="Elektwonik &amp; Radyo" data-en="Electronics &amp; Radio">Elektwonik &amp; Radyo</span>
+        <span class="series-vols">26 <span data-ht="vòlim" data-en="volumes">vòlim</span></span>
+      </div>
+      <div class="series-card">
+        <span class="series-icon">🪚</span>
+        <span class="series-name">KOUPE KLOURE</span>
+        <span class="series-subject" data-ht="Chapant &amp; Bwa" data-en="Carpentry &amp; Wood">Chapant &amp; Bwa</span>
+        <span class="series-vols">13 <span data-ht="vòlim" data-en="volumes">vòlim</span></span>
+      </div>
+      <div class="series-card">
+        <span class="series-icon">🧱</span>
+        <span class="series-name">TIWÈL</span>
+        <span class="series-subject" data-ht="Masonri &amp; Konstriksyon" data-en="Masonry &amp; Construction">Masonri &amp; Konstriksyon</span>
+        <span class="series-vols">14 <span data-ht="vòlim" data-en="volumes">vòlim</span></span>
+      </div>
+      <div class="series-card">
+        <span class="series-icon">⚖️</span>
+        <span class="series-name">LEGAL</span>
+        <span class="series-subject" data-ht="Kòd &amp; Konstitisyon" data-en="Codes &amp; Constitution">Kòd &amp; Konstitisyon</span>
+        <span class="series-vols">6 <span data-ht="vòlim" data-en="volumes">vòlim</span></span>
+      </div>
+      <div class="series-card">
+        <span class="series-icon">🔬</span>
+        <span class="series-name">LIMYÈ</span>
+        <span class="series-subject" data-ht="Syans &amp; Istwa" data-en="Science &amp; History">Syans &amp; Istwa</span>
+        <span class="series-vols">15 <span data-ht="vòlim" data-en="volumes">vòlim</span></span>
+      </div>
+      <div class="series-card">
+        <span class="series-icon">📖</span>
+        <span class="series-name">LANG</span>
+        <span class="series-subject" data-ht="Gramè &amp; Diksyonè" data-en="Grammar &amp; Dictionary">Gramè &amp; Diksyonè</span>
+        <span class="series-vols">4 <span data-ht="vòlim" data-en="volumes">vòlim</span></span>
+      </div>
+    </div>
+    <div class="series-cta">
+      <a href="/bibliyotek.html" class="btn-gold" data-ht="Wè tout Bibliyotèk la →" data-en="View the Full Library →">Wè tout Bibliyotèk la →</a>
+    </div>
+  </div>
+</div>
+
+<!-- CTA BOX -->
+<div class="cta-box">
+  <p data-ht="Chak dola = yon liv pou yon timoun Ayisyen" data-en="Every dollar = one book for a Haitian child">Chak dola = yon liv pou yon timoun Ayisyen</p>
+  <a href="/don.html" class="btn-gold" data-ht="Piti Piti Fè Pil →" data-en="Little by Little →">Piti Piti Fè Pil →</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <img src="/images/felankreyol.png" alt="Fèl an Kreyòl Inc." />
+  <p data-ht="Nou pote liv edikasyon an Kreyòl nan lekòl Ayiti." data-en="We bring Creole education books to schools in Haiti.">Nou pote liv edikasyon an Kreyòl nan lekòl Ayiti.</p>
+  <nav class="footer-links">
+    <a href="/misyon.html" data-ht="Edike Ayiti" data-en="Mission">Edike Ayiti</a>
+    <a href="/kouman.html" data-ht="Kouman" data-en="How It Works">Kouman</a>
+    <a href="/bibliyotek.html" data-ht="Bibliyotèk Nasyonal" data-en="The Library">Bibliyotèk Nasyonal</a>
+    <a href="/ki-moun.html" data-ht="Yon Ayisyen" data-en="The Founder">Yon Ayisyen</a>
+    <a href="/partner.html" data-ht="Kolòn Ki Bat" data-en="Partner">Kolòn Ki Bat</a>
+    <a href="/don.html" data-ht="Piti Piti Fè Pil" data-en="Donate">Piti Piti Fè Pil</a>
+  </nav>
+  <p class="footer-legal">
+    Fèl an Kreyòl Inc. se yon nonprofit ki anrejistre nan Eta Florida (Sunbiz).<br/>
+    501(c)(3) federal application pending. · <a href="mailto:info@felankreyol.org">info@felankreyol.org</a>
+  </p>
+  <p class="footer-copy">© 2025 Fèl an Kreyòl Inc. · Florida Nonprofit · <span data-ht="Tout dwa rezève" data-en="All rights reserved">Tout dwa rezève</span></p>
+</footer>
+
+<script>
+let currentLang = localStorage.getItem('felankreyol-lang') || 'ht';
+
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('felankreyol-lang', lang);
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+  });
+  document.querySelectorAll('[data-ht]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (val === null) return;
+    if (el.tagName === 'INPUT') { el.placeholder = val; return; }
+    el.innerHTML = val;
+  });
+  document.documentElement.lang = lang === 'ht' ? 'ht' : 'en';
+}
+
+setLang(currentLang);
+</script>
+</body>
+</html>

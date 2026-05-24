@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Partner with Fèl an Kreyòl Inc. — Institutional partnership for education in Haiti.">
+<meta property="og:title" content="Kolòn Ki Bat · Partner · Fèl an Kreyòl Inc.">
+<link rel="icon" type="image/png" href="/images/felankreyol.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<title>Kolòn Ki Bat · Partner · Fèl an Kreyòl Inc.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #1B3A8C; --navy-dark: #142D70; --red: #CC1E1E;
+  --gold: #F5A623; --gold-light: #FFCD4A;
+  --cream: #FAF8F4; --light: #EEF2FB;
+  --white: #FFFFFF; --gray: #6B7280; --border: #E5E0D8; --text: #1A1A1A;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Source Serif 4', Georgia, serif; color: var(--text); background: var(--cream); min-height: 100vh; overflow-x: hidden; }
+
+/* NAV */
+.site-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: var(--navy); display: flex; align-items: center; padding: 0 2rem; height: 72px; box-shadow: 0 2px 20px rgba(0,0,0,0.2); }
+.nav-logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
+.nav-logo img { height: 52px; width: auto; display: block; }
+.nav-links { display: flex; align-items: center; list-style: none; margin-left: auto; gap: 0; }
+.nav-links li a { display: block; padding: 0.5rem 0.9rem; color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.82rem; font-weight: 400; letter-spacing: 0.02em; transition: color 0.2s; }
+.nav-links li a:hover { color: var(--gold); }
+.nav-links li a.nav-donate { background: var(--gold); color: var(--navy-dark); padding: 0.45rem 1.1rem; border-radius: 2rem; font-weight: 600; margin-left: 0.5rem; transition: background 0.2s; }
+.nav-links li a.nav-donate:hover { background: var(--gold-light); color: var(--navy-dark); }
+.nav-lang { display: flex; align-items: center; background: rgba(255,255,255,0.1); border-radius: 2rem; border: 1px solid rgba(255,255,255,0.2); overflow: hidden; margin-left: 1.25rem; }
+.lang-btn { padding: 0.28rem 0.65rem; cursor: pointer; border: none; background: none; color: rgba(255,255,255,0.55); font-size: 0.63rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.2s; font-family: 'Source Serif 4', Georgia, serif; }
+.lang-btn.active { background: var(--gold); color: var(--navy-dark); border-radius: 2rem; }
+.menu-btn { display: none; background: none; border: none; cursor: pointer; color: white; font-size: 1.4rem; margin-left: 1rem; flex-shrink: 0; }
+
+/* HERO */
+.hero { min-height: 80vh; padding-top: 72px; background: var(--navy); position: relative; overflow: hidden; display: flex; align-items: center; }
+.hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #1B3A8C 50%, #CC1E1E 50%); z-index: 2; }
+.hero::after { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+.hero-inner { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; padding: 5rem 2rem; width: 100%; }
+.hero-tag { display: inline-block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; }
+.hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.2rem, 4.5vw, 4rem); font-weight: 900; line-height: 1.1; color: white; margin-bottom: 1.5rem; }
+.hero-sub { font-size: 1.1rem; font-weight: 300; line-height: 1.8; color: rgba(255,255,255,0.72); max-width: 640px; }
+
+/* SECTIONS */
+.content-section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+.content-section + .content-section { padding-top: 0; }
+.section-tag { display: block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+.content-section h2 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 700; color: var(--navy-dark); margin-bottom: 1.25rem; }
+.content-body { font-size: 1rem; line-height: 1.85; color: var(--gray); max-width: 720px; }
+.content-body + .content-body { margin-top: 1rem; }
+
+/* TABLE */
+.partner-table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+.partner-table thead th { background: var(--navy); color: white; padding: 0.85rem 1rem; text-align: left; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.05em; }
+.partner-table tbody tr:nth-child(even) { background: #F5F6F8; }
+.partner-table tbody tr:nth-child(odd) { background: white; }
+.partner-table tbody td { padding: 0.9rem 1rem; font-size: 0.88rem; color: var(--text); vertical-align: top; }
+.partner-table tbody td:first-child { font-weight: 700; color: var(--navy); width: 22%; }
+.partner-table tbody td:last-child { font-weight: 600; color: var(--gold); white-space: nowrap; width: 14%; }
+
+/* STAT STRIP */
+.stat-strip { display: grid; grid-template-columns: repeat(4, 1fr); margin: 2.5rem 0; }
+.stat-box { padding: 2.5rem 1.5rem; text-align: center; }
+.stat-box.navy { background: var(--navy); }
+.stat-box.light { background: var(--light); }
+.stat-num { font-family: 'Playfair Display', Georgia, serif; font-size: 2.2rem; font-weight: 700; display: block; line-height: 1; margin-bottom: 0.5rem; }
+.stat-box.navy .stat-num { color: var(--gold); }
+.stat-box.navy .stat-label { color: rgba(255,255,255,0.7); font-size: 0.78rem; }
+.stat-box.light .stat-num { color: var(--navy); }
+.stat-box.light .stat-label { color: var(--gray); font-size: 0.78rem; }
+
+/* CONTACT BOX */
+.contact-box { background: var(--navy-dark); padding: 4rem 2rem; text-align: center; }
+.contact-box h2 { font-family: 'Playfair Display', Georgia, serif; color: white; font-size: clamp(1.5rem, 2.5vw, 2.2rem); margin-bottom: 1rem; }
+.contact-box p { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; max-width: 520px; margin: 0 auto 2rem; }
+.btn-gold { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--gold); color: var(--navy-dark); padding: 0.9rem 2rem; border-radius: 3rem; font-size: 0.9rem; font-weight: 700; text-decoration: none; border: none; cursor: pointer; transition: background 0.2s, transform 0.15s; box-shadow: 0 4px 20px rgba(245,166,35,0.35); font-family: 'Source Serif 4', Georgia, serif; }
+.btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+/* LEGAL NOTICE */
+.legal-notice { background: var(--light); border-left: 3px solid var(--border); padding: 1.25rem 1.75rem; font-size: 0.78rem; color: var(--gray); line-height: 1.75; border-radius: 0 4px 4px 0; max-width: 760px; margin: 3rem auto; }
+.legal-notice a { color: var(--navy); }
+
+/* FOOTER */
+footer { background: var(--navy-dark); color: rgba(255,255,255,0.6); padding: 3.5rem 2rem 2rem; text-align: center; }
+footer img { height: 48px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto; }
+footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.5rem; margin: 1.5rem 0; }
+.footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+.footer-links a:hover { color: var(--gold); }
+.footer-legal { font-size: 0.75rem; color: rgba(255,255,255,0.38); line-height: 1.7; max-width: 600px; margin: 0 auto 1.5rem; }
+.footer-legal a { color: rgba(255,255,255,0.45); }
+.footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .site-nav { padding: 0 1.25rem; }
+  .nav-links { display: none; position: fixed; top: 72px; left: 0; right: 0; background: var(--navy-dark); flex-direction: column; padding: 1rem 0; z-index: 99; gap: 0; margin-left: 0; }
+  .nav-links.open { display: flex; }
+  .nav-links li a { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
+  .nav-links li a.nav-donate { margin-left: 1.5rem; border-radius: 2rem; }
+  .menu-btn { display: block; }
+  .nav-lang { margin-left: auto; }
+  .stat-strip { grid-template-columns: repeat(2, 1fr); }
+  .hero-inner { padding: 4rem 1.25rem; }
+  .content-section { padding: 3.5rem 1.25rem; }
+  .contact-box { padding: 3.5rem 1.25rem; }
+  .legal-notice { margin: 2rem 1.25rem; }
+  .partner-table { font-size: 0.78rem; }
+  .partner-table thead th, .partner-table tbody td { padding: 0.65rem 0.6rem; }
+  .partner-table tbody td:first-child { width: auto; }
+  .partner-table tbody td:last-child { width: auto; }
+}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="/index.html" class="nav-logo"><img src="/images/felankreyol.png" alt="Fèl an Kreyòl Inc." /></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="/misyon.html">Edike Ayiti</a></li>
+    <li><a href="/kouman.html">Kouman</a></li>
+    <li><a href="/bibliyotek.html">Bibliyotèk Nasyonal</a></li>
+    <li><a href="/ki-moun.html">Yon Ayisyen</a></li>
+    <li><a href="/partner.html">Kolòn Ki Bat</a></li>
+    <li><a href="/don.html" class="nav-donate">Piti Piti Fè Pil ❤</a></li>
+  </ul>
+  <div class="nav-lang">
+    <button class="lang-btn" data-lang="ht" onclick="setLang('ht')">HT</button>
+    <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+  <button class="menu-btn" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag"
+      data-en="INSTITUTIONAL PARTNERSHIP"
+      data-ht="PATENARYA ENSTITISYONÈL">INSTITUTIONAL PARTNERSHIP</span>
+    <h1
+      data-en="For those working to solve Haiti for generations."
+      data-ht="Pou moun k ap travay pou rezoud Ayiti pou jenerasyon.">For those working to solve Haiti for generations.</h1>
+    <p class="hero-sub"
+      data-en="Fèl an Kreyòl Inc. is a Florida nonprofit with a single mission: getting Creole books into the hands of Haitian students who have never had them. If your organization is trying to change Haiti's educational trajectory, this is the conversation we need to have."
+      data-ht="Fèl an Kreyòl Inc. se yon nonprofit Floridyen ak yon sèl misyon: mete liv an Kreyòl nan men elèv Ayisyen ki pa janm te genyen yo. Si òganizasyon ou ap eseye chanje trajektwa edikasyonèl Ayiti, se konvèsasyon sa a nou bezwen fè.">
+      Fèl an Kreyòl Inc. is a Florida nonprofit with a single mission: getting Creole books into the hands of Haitian students who have never had them. If your organization is trying to change Haiti's educational trajectory, this is the conversation we need to have.
+    </p>
+  </div>
+</section>
+
+<!-- THE PROBLEM -->
+<div style="background: var(--cream);">
+  <div class="content-section">
+    <span class="section-tag"
+      data-en="THE PROBLEM"
+      data-ht="PWOBLÈM NAN">THE PROBLEM</span>
+    <h2
+      data-en="220 years. Not one technical book in their language."
+      data-ht="220 an. Pa yon sèl liv teknik nan lang yo.">220 years. Not one technical book in their language.</h2>
+    <p class="content-body"
+      data-en="Haiti has 12 million Creole speakers. For 220 years — since independence — there was not a single technical, legal, or educational book published in their native language. Mechanics, electricians, plumbers, lawyers, judges — all forced to learn in French, a language spoken by fewer than 10% of the population. The language was never the barrier. The books were missing."
+      data-ht="Ayiti gen 12 milyon pale Kreyòl. Pou 220 an — depi endepandans — pa t gen yon sèl liv teknik, legal, oswa edikasyonèl pibliye nan lang natif yo. Mekanisyen, elektrisyen, plonbye, avoka, jij — tout oblije aprann nan fransè, yon lang mwens pase 10% nan popilasyon an pale. Lang lan pa t janm te baryè a. Liv yo ki t ap manke.">
+      Haiti has 12 million Creole speakers. For 220 years — since independence — there was not a single technical, legal, or educational book published in their native language. Mechanics, electricians, plumbers, lawyers, judges — all forced to learn in French, a language spoken by fewer than 10% of the population. The language was never the barrier. The books were missing.
+    </p>
+  </div>
+</div>
+
+<!-- THE SOLUTION -->
+<div style="background: var(--light);">
+  <div class="content-section">
+    <span class="section-tag"
+      data-en="THE SOLUTION"
+      data-ht="SOLISYON AN">THE SOLUTION</span>
+    <h2
+      data-en="119 volumes. 9 series. First time in history."
+      data-ht="119 vòlim. 9 seri. Premye fwa nan istwa.">119 volumes. 9 series. First time in history.</h2>
+    <p class="content-body"
+      data-en="The Lavi Miyò National Library is the first complete technical, legal, scientific, and educational library ever produced in Haitian Creole. 6 legal codes (4,000+ articles). 6 technical series covering automotive, electrical, plumbing, electronics, carpentry, and masonry. 15 volumes on science, history, and mathematics. 4 bilingual dictionaries."
+      data-ht="Bibliyotèk Nasyonal Lavi Miyò se premye bibliyotèk teknik, legal, syantifik ak edikasyonèl konplè ki janm pwodui an Kreyòl Ayisyen. 6 kòd legal (4,000+ atik). 6 seri teknik ki kouvri otomobil, elektrisite, plonbri, elektwonik, chapant, ak masonri. 15 vòlim sou syans, istwa, ak matimatik. 4 diksyonè bilenng.">
+      The Lavi Miyò National Library is the first complete technical, legal, scientific, and educational library ever produced in Haitian Creole. 6 legal codes (4,000+ articles). 6 technical series covering automotive, electrical, plumbing, electronics, carpentry, and masonry. 15 volumes on science, history, and mathematics. 4 bilingual dictionaries.
+    </p>
+    <div class="stat-strip" style="margin-top:2rem;">
+      <div class="stat-box navy"><span class="stat-num">119</span><span class="stat-label" data-en="Volumes" data-ht="Vòlim">Volumes</span></div>
+      <div class="stat-box light"><span class="stat-num">9</span><span class="stat-label" data-en="Series" data-ht="Seri">Series</span></div>
+      <div class="stat-box navy"><span class="stat-num">4K+</span><span class="stat-label" data-en="Legal Articles" data-ht="Atik Legal">Legal Articles</span></div>
+      <div class="stat-box light"><span class="stat-num">12M</span><span class="stat-label" data-en="Creole Speakers" data-ht="Pale Kreyòl">Creole Speakers</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div style="background: var(--cream);">
+  <div class="content-section">
+    <span class="section-tag"
+      data-en="HOW IT WORKS"
+      data-ht="KOUMAN SA MACHE">HOW IT WORKS</span>
+    <h2
+      data-en="A model built to outlast any single donor."
+      data-ht="Yon modèl bati pou dire plis pase nenpòt donè.">A model built to outlast any single donor.</h2>
+    <p class="content-body"
+      data-en="The books already exist. Fèl an Kreyòl Inc. does not ask partners to fund the creation of content — the content is done. We ask partners to fund distribution: getting books that already exist into schools that need them. Your contribution is a direct, auditable transaction. Books purchased. Schools documented. Zero overhead."
+      data-ht="Liv yo deja egziste. Fèl an Kreyòl Inc. pa mande patenè yo pou finanse kreyasyon kontni — kontni an fini. Nou mande patenè yo pou finanse distribisyon: pote liv ki deja egziste bay lekòl ki bezwen yo. Kontribisyon ou se yon tranzaksyon dirèk, ki ka verifye. Liv achte. Lekòl dokimante. Zéro frè jeneral.">
+      The books already exist. Fèl an Kreyòl Inc. does not ask partners to fund the creation of content — the content is done. We ask partners to fund distribution: getting books that already exist into schools that need them. Your contribution is a direct, auditable transaction. Books purchased. Schools documented. Zero overhead.
+    </p>
+  </div>
+</div>
+
+<!-- WHY NOW -->
+<div style="background: var(--navy-dark);">
+  <div class="content-section" style="color: white;">
+    <span class="section-tag"
+      data-en="WHY NOW"
+      data-ht="POUKISA KOUNYE A">WHY NOW</span>
+    <h2 style="color: white;"
+      data-en="A generational moment for change."
+      data-ht="Yon moman chanjman pou jenerasyon.">A generational moment for change.</h2>
+    <p class="content-body" style="color: rgba(255,255,255,0.72);"
+      data-en="Haiti's educational infrastructure faces unprecedented pressure. The window to establish a Creole-language knowledge base — before another generation graduates without it — is open now. The library exists. The distribution model is ready. What is missing is the partnership network to scale it."
+      data-ht="Enfrastrikti edikasyonèl Ayiti ap fè fas ak presyon san presèdan. Fenèt pou etabli yon baz konesans an lang Kreyòl — anvan yon lòt jenerasyon gradye san li — louvri kounye a. Bibliyotèk la egziste. Modèl distribisyon an prè. Sa ki manke se rezo patenarya pou mete l à l'échelle.">
+      Haiti's educational infrastructure faces unprecedented pressure. The window to establish a Creole-language knowledge base — before another generation graduates without it — is open now. The library exists. The distribution model is ready. What is missing is the partnership network to scale it.
+    </p>
+  </div>
+</div>
+
+<!-- PARTNERSHIP TABLE -->
+<div style="background: var(--cream);">
+  <div class="content-section">
+    <span class="section-tag"
+      data-en="PARTNERSHIP OPPORTUNITIES"
+      data-ht="OPÒTINITE PATENARYA">PARTNERSHIP OPPORTUNITIES</span>
+    <h2
+      data-en="Five ways to engage with this work."
+      data-ht="Senk fason pou angaje nan travay sa.">Five ways to engage with this work.</h2>
+    <div style="overflow-x: auto;">
+      <table class="partner-table">
+        <thead>
+          <tr>
+            <th data-en="Type" data-ht="Tip">Type</th>
+            <th data-en="Description" data-ht="Deskripsyon">Description</th>
+            <th data-en="Starting at" data-ht="Depi">Starting at</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-en="Bulk Book Purchase" data-ht="Acha Liv an Gwo">Bulk Book Purchase</td>
+            <td data-en="Purchase volumes in bulk for distribution to schools, libraries, or government offices." data-ht="Acha an gwo vòlim pou distribisyon bay lekòl, bibliyotèk oswa biwo gouvènman.">Purchase volumes in bulk for distribution to schools, libraries, or government offices.</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td data-en="Curriculum Integration" data-ht="Entegrasyon Kourikòlèm">Curriculum Integration</td>
+            <td data-en="Integrate the LIMYÈ, LANG, or TEKNIK series into national or institutional programs." data-ht="Entegre seri LIMYÈ, LANG, oswa TEKNIK nan pwogram nasyonal oswa enstitisyonèl.">Integrate the LIMYÈ, LANG, or TEKNIK series into national or institutional programs.</td>
+            <td data-en="Negotiable" data-ht="Negosye">Negotiable</td>
+          </tr>
+          <tr>
+            <td data-en="LEGAL Series Access" data-ht="Aksè Seri LEGAL">LEGAL Series Access</td>
+            <td data-en="Institutional access to all 6 Haitian legal codes, 4,000+ articles in Creole." data-ht="Aksè enstitisyonèl nan 6 kòd legal Ayisyen, 4,000+ atik an Kreyòl.">Institutional access to all 6 Haitian legal codes, 4,000+ articles in Creole.</td>
+            <td data-en="Negotiable" data-ht="Negosye">Negotiable</td>
+          </tr>
+          <tr>
+            <td data-en="Technology License" data-ht="Lisans Teknoloji">Technology License</td>
+            <td data-en="Access to the Creole technical vocabulary and LANG dictionaries for NLP/AI tools." data-ht="Aksè nan vokabilè teknik Kreyòl ak diksyonè LANG pou zouti NLP/IA.">Access to the Creole technical vocabulary and LANG dictionaries for NLP/AI tools.</td>
+            <td data-en="Negotiable" data-ht="Negosye">Negotiable</td>
+          </tr>
+          <tr>
+            <td data-en="School Sponsorship" data-ht="Parenaj Lekòl">School Sponsorship</td>
+            <td data-en="Sponsor a school, a series, or a volume. $100 = a complete series for one school." data-ht="Parène yon lekòl, yon seri, oswa yon vòlim. $100 = yon seri konplè pou yon lekòl.">Sponsor a school, a series, or a volume. $100 = a complete series for one school.</td>
+            <td>$100/series</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- LEGAL NOTICE -->
+<div style="background: var(--cream); padding: 0 2rem 2rem;">
+  <p class="legal-notice"
+    data-en="Fèl an Kreyòl Inc. is a nonprofit registered in the State of Florida (Sunbiz). 501(c)(3) federal application in progress. Donations may become tax-deductible upon IRS confirmation. All funds go directly to purchasing books for schools in Haiti, consistent with the organization's charitable purpose. Fèl an Kreyòl Inc. purchases books from an independent publisher at arm's-length prices. For questions about financial transparency or tax status, contact info@felankreyol.org."
+    data-ht="Fèl an Kreyòl Inc. se yon nonprofit ki anrejistre nan Eta Florida (Sunbiz). Demann 501(c)(3) federal an pwogrè. Don yo ka dediktib sou taks federal apre konfirmasyon IRS. Tout fon yo ale dirèkteman nan acha liv pou lekòl yo an Ayiti, konfòmeman ak objè charitab òganizasyon an. Fèl an Kreyòl Inc. achte liv nan yon editè endepandan nan pri bra long. Pou kesyon sou transparans finansye oswa estati fiskal, kontakte info@felankreyol.org.">
+    Fèl an Kreyòl Inc. is a nonprofit registered in the State of Florida (Sunbiz). 501(c)(3) federal application in progress. Donations may become tax-deductible upon IRS confirmation. All funds go directly to purchasing books for schools in Haiti, consistent with the organization's charitable purpose. Fèl an Kreyòl Inc. purchases books from an independent publisher at arm's-length prices. For questions about financial transparency or tax status, contact <a href="mailto:info@felankreyol.org">info@felankreyol.org</a>.
+  </p>
+</div>
+
+<!-- CONTACT BOX -->
+<div class="contact-box">
+  <h2
+    data-en="Start the Conversation"
+    data-ht="Kòmanse Konvèsasyon an">Start the Conversation</h2>
+  <p
+    data-en="Tell us who you are and what you're working on. We respond to every inquiry."
+    data-ht="Di nou ki moun ou ye ak sou kisa ou ap travay. Nou reponn a chak demann.">Tell us who you are and what you're working on. We respond to every inquiry.</p>
+  <a href="mailto:info@felankreyol.org" class="btn-gold">info@felankreyol.org →</a>
+</div>
+
+<footer>
+  <img src="/images/felankreyol.png" alt="Fèl an Kreyòl Inc." />
+  <p data-ht="Nou pote liv edikasyon an Kreyòl nan lekòl Ayiti." data-en="We bring Creole education books to schools in Haiti.">We bring Creole education books to schools in Haiti.</p>
+  <nav class="footer-links">
+    <a href="/misyon.html" data-ht="Edike Ayiti" data-en="Mission">Mission</a>
+    <a href="/kouman.html" data-ht="Kouman" data-en="How It Works">How It Works</a>
+    <a href="/bibliyotek.html" data-ht="Bibliyotèk Nasyonal" data-en="The Library">The Library</a>
+    <a href="/ki-moun.html" data-ht="Yon Ayisyen" data-en="The Founder">The Founder</a>
+    <a href="/partner.html" data-ht="Kolòn Ki Bat" data-en="Partner">Partner</a>
+    <a href="/don.html" data-ht="Piti Piti Fè Pil" data-en="Donate">Donate</a>
+  </nav>
+  <p class="footer-legal">
+    Fèl an Kreyòl Inc. se yon nonprofit ki anrejistre nan Eta Florida (Sunbiz).<br/>
+    501(c)(3) federal application pending. · <a href="mailto:info@felankreyol.org">info@felankreyol.org</a>
+  </p>
+  <p class="footer-copy">© 2025 Fèl an Kreyòl Inc. · Florida Nonprofit · <span data-ht="Tout dwa rezève" data-en="All rights reserved">All rights reserved</span></p>
+</footer>
+
+<script>
+let currentLang = localStorage.getItem('felankreyol-lang') || 'en';
+
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('felankreyol-lang', lang);
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === lang));
+  document.querySelectorAll('[data-ht]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (val === null) return;
+    if (el.tagName === 'INPUT') { el.placeholder = val; return; }
+    el.innerHTML = val;
+  });
+  document.documentElement.lang = lang === 'ht' ? 'ht' : 'en';
+}
+
+setLang(currentLang);
+</script>
+</body>
+</html>

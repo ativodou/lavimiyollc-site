@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bibliyotèk Nasyonal Fèl an Kreyòl — 119 vòlim, 9 seri, premye fwa nan istwa an Kreyòl Ayisyen.">
+<meta property="og:title" content="Bibliyotèk Nasyonal · Fèl an Kreyòl Inc.">
+<link rel="icon" type="image/png" href="/images/felankreyol.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<title>Bibliyotèk Nasyonal · Fèl an Kreyòl Inc.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #1B3A8C; --navy-dark: #142D70; --red: #CC1E1E;
+  --gold: #F5A623; --gold-light: #FFCD4A;
+  --cream: #FAF8F4; --light: #EEF2FB;
+  --white: #FFFFFF; --gray: #6B7280; --border: #E5E0D8; --text: #1A1A1A;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Source Serif 4', Georgia, serif; color: var(--text); background: var(--cream); min-height: 100vh; overflow-x: hidden; }
+
+/* NAV */
+.site-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: var(--navy); display: flex; align-items: center; padding: 0 2rem; height: 72px; box-shadow: 0 2px 20px rgba(0,0,0,0.2); }
+.nav-logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
+.nav-logo img { height: 52px; width: auto; display: block; }
+.nav-links { display: flex; align-items: center; list-style: none; margin-left: auto; gap: 0; }
+.nav-links li a { display: block; padding: 0.5rem 0.9rem; color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.82rem; font-weight: 400; letter-spacing: 0.02em; transition: color 0.2s; }
+.nav-links li a:hover { color: var(--gold); }
+.nav-links li a.nav-donate { background: var(--gold); color: var(--navy-dark); padding: 0.45rem 1.1rem; border-radius: 2rem; font-weight: 600; margin-left: 0.5rem; transition: background 0.2s; }
+.nav-links li a.nav-donate:hover { background: var(--gold-light); color: var(--navy-dark); }
+.nav-lang { display: flex; align-items: center; background: rgba(255,255,255,0.1); border-radius: 2rem; border: 1px solid rgba(255,255,255,0.2); overflow: hidden; margin-left: 1.25rem; }
+.lang-btn { padding: 0.28rem 0.65rem; cursor: pointer; border: none; background: none; color: rgba(255,255,255,0.55); font-size: 0.63rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.2s; font-family: 'Source Serif 4', Georgia, serif; }
+.lang-btn.active { background: var(--gold); color: var(--navy-dark); border-radius: 2rem; }
+.menu-btn { display: none; background: none; border: none; cursor: pointer; color: white; font-size: 1.4rem; margin-left: 1rem; flex-shrink: 0; }
+
+/* HERO */
+.hero { min-height: 80vh; padding-top: 72px; background: var(--navy); position: relative; overflow: hidden; display: flex; align-items: center; }
+.hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #1B3A8C 50%, #CC1E1E 50%); z-index: 2; }
+.hero::after { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+.hero-inner { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; padding: 5rem 2rem; width: 100%; }
+.hero-tag { display: inline-block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; }
+.hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.4rem, 5vw, 4.5rem); font-weight: 900; line-height: 1.08; color: white; margin-bottom: 1.5rem; }
+.hero-sub { font-size: 1.1rem; font-weight: 300; line-height: 1.8; color: rgba(255,255,255,0.72); max-width: 620px; }
+
+/* STAT STRIP */
+.stat-strip { display: grid; grid-template-columns: repeat(4, 1fr); }
+.stat-box { padding: 2.5rem 1.5rem; text-align: center; }
+.stat-box.navy { background: var(--navy); }
+.stat-box.light { background: var(--light); }
+.stat-num { font-family: 'Playfair Display', Georgia, serif; font-size: 2.4rem; font-weight: 700; display: block; line-height: 1; margin-bottom: 0.5rem; }
+.stat-box.navy .stat-num { color: var(--gold); }
+.stat-box.navy .stat-label { color: rgba(255,255,255,0.7); font-size: 0.78rem; letter-spacing: 0.04em; }
+.stat-box.light .stat-num { color: var(--navy); }
+.stat-box.light .stat-label { color: var(--gray); font-size: 0.78rem; letter-spacing: 0.04em; }
+
+/* SECTION */
+.lib-section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+.lib-section + .lib-section { padding-top: 0; }
+.section-tag { display: block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+.lib-section h2 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; color: var(--navy-dark); margin-bottom: 0.75rem; }
+.lib-note { font-size: 0.92rem; color: var(--gray); line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+
+/* TABLE */
+.lib-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.88rem; }
+.lib-table thead th { background: var(--navy); color: white; padding: 0.85rem 1rem; text-align: left; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.05em; }
+.lib-table tbody tr:nth-child(even) { background: #F5F6F8; }
+.lib-table tbody tr:nth-child(odd) { background: white; }
+.lib-table tbody td { padding: 0.85rem 1rem; color: var(--text); vertical-align: top; }
+.lib-table tbody td:first-child { font-weight: 700; color: var(--navy); font-size: 0.9rem; }
+.lib-table tbody td:nth-child(2) { font-weight: 600; color: var(--gold); text-align: center; }
+
+/* VOLUME GRID */
+.vol-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
+.vol-card { background: white; border-radius: 8px; padding: 1.25rem; border: 1px solid var(--border); }
+.vol-num { color: var(--gold); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; display: block; }
+.vol-title { color: var(--navy); font-weight: 600; font-size: 0.9rem; margin-top: 0.3rem; display: block; }
+
+/* LANG CARDS */
+.lang-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin: 1.5rem 0; }
+.lang-card { background: white; border-radius: 8px; padding: 1.5rem; border: 1px solid var(--border); border-top: 3px solid var(--gold); text-align: center; }
+.lang-card .lc-icon { font-size: 1.75rem; margin-bottom: 0.75rem; display: block; }
+.lang-card .lc-title { color: var(--navy); font-weight: 600; font-size: 0.9rem; }
+
+/* CTA BOX */
+.cta-box { background: var(--navy); padding: 5rem 2rem; text-align: center; }
+.cta-box p { color: rgba(255,255,255,0.75); font-size: 1.1rem; margin-bottom: 2rem; font-style: italic; }
+
+/* BUTTONS */
+.btn-gold { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--gold); color: var(--navy-dark); padding: 0.9rem 2rem; border-radius: 3rem; font-size: 0.9rem; font-weight: 700; text-decoration: none; border: none; cursor: pointer; transition: background 0.2s, transform 0.15s; box-shadow: 0 4px 20px rgba(245,166,35,0.35); font-family: 'Source Serif 4', Georgia, serif; }
+.btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+/* SECTION DIVIDER */
+.section-divider { height: 1px; background: var(--border); max-width: 1100px; margin: 0 auto; }
+
+/* FOOTER */
+footer { background: var(--navy-dark); color: rgba(255,255,255,0.6); padding: 3.5rem 2rem 2rem; text-align: center; }
+footer img { height: 48px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto; }
+footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.5rem; margin: 1.5rem 0; }
+.footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+.footer-links a:hover { color: var(--gold); }
+.footer-legal { font-size: 0.75rem; color: rgba(255,255,255,0.38); line-height: 1.7; max-width: 600px; margin: 0 auto 1.5rem; }
+.footer-legal a { color: rgba(255,255,255,0.45); }
+.footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .site-nav { padding: 0 1.25rem; }
+  .nav-links { display: none; position: fixed; top: 72px; left: 0; right: 0; background: var(--navy-dark); flex-direction: column; padding: 1rem 0; z-index: 99; gap: 0; margin-left: 0; }
+  .nav-links.open { display: flex; }
+  .nav-links li a { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
+  .nav-links li a.nav-donate { margin-left: 1.5rem; border-radius: 2rem; }
+  .menu-btn { display: block; }
+  .nav-lang { margin-left: auto; }
+  .stat-strip { grid-template-columns: repeat(2, 1fr); }
+  .vol-grid { grid-template-columns: repeat(2, 1fr); }
+  .lang-cards { grid-template-columns: repeat(2, 1fr); }
+  .lib-section { padding: 3rem 1.25rem; }
+  .hero-inner { padding: 4rem 1.25rem; }
+  .cta-box { padding: 3.5rem 1.25rem; }
+  .lib-table { font-size: 0.78rem; }
+  .lib-table thead th, .lib-table tbody td { padding: 0.65rem 0.6rem; }
+}
+@media (max-width: 480px) {
+  .vol-grid { grid-template-columns: 1fr; }
+  .lang-cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="/index.html" class="nav-logo"><img src="/images/felankreyol.png" alt="Fèl an Kreyòl Inc." /></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="/misyon.html">Edike Ayiti</a></li>
+    <li><a href="/kouman.html">Kouman</a></li>
+    <li><a href="/bibliyotek.html">Bibliyotèk Nasyonal</a></li>
+    <li><a href="/ki-moun.html">Yon Ayisyen</a></li>
+    <li><a href="/partner.html">Kolòn Ki Bat</a></li>
+    <li><a href="/don.html" class="nav-donate">Piti Piti Fè Pil ❤</a></li>
+  </ul>
+  <div class="nav-lang">
+    <button class="lang-btn active" data-lang="ht" onclick="setLang('ht')">HT</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+  <button class="menu-btn" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag" data-ht="BIBLIYOTÈK NASYONAL" data-en="NATIONAL LIBRARY">BIBLIYOTÈK NASYONAL</span>
+    <h1 data-ht="119 vòlim. 9 seri. Premye fwa nan istwa." data-en="119 volumes. 9 series. First time in history.">119 vòlim. 9 seri. Premye fwa nan istwa.</h1>
+    <p class="hero-sub" data-ht="Premye koleksyon konplè liv teknik, legal, ak edikasyonèl ki janm ekri an Kreyòl Ayisyen." data-en="The first complete collection of technical, legal, and educational books ever written in Haitian Creole.">
+      Premye koleksyon konplè liv teknik, legal, ak edikasyonèl ki janm ekri an Kreyòl Ayisyen.
+    </p>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stat-strip">
+  <div class="stat-box navy">
+    <span class="stat-num">119</span>
+    <span class="stat-label" data-ht="Vòlim" data-en="Volumes">Vòlim</span>
+  </div>
+  <div class="stat-box light">
+    <span class="stat-num">9</span>
+    <span class="stat-label" data-ht="Seri" data-en="Series">Seri</span>
+  </div>
+  <div class="stat-box navy">
+    <span class="stat-num">4</span>
+    <span class="stat-label" data-ht="Kategori" data-en="Categories">Kategori</span>
+  </div>
+  <div class="stat-box light">
+    <span class="stat-num">4K+</span>
+    <span class="stat-label" data-ht="Atik Legal" data-en="Legal Articles">Atik Legal</span>
+  </div>
+</div>
+
+<!-- TEKNIK SERIES -->
+<div style="background: var(--cream);">
+  <div class="lib-section">
+    <span class="section-tag">TEKNIK</span>
+    <h2 data-ht="TEKNIK — Travay ak Metye · 94 Vòlim" data-en="TEKNIK — Trades &amp; Vocational · 94 Volumes">TEKNIK — Travay ak Metye · 94 Vòlim</h2>
+    <div style="overflow-x: auto;">
+      <table class="lib-table">
+        <thead>
+          <tr>
+            <th data-ht="Seri" data-en="Series">Seri</th>
+            <th data-ht="Vòl" data-en="Vol">Vòl</th>
+            <th data-ht="Domèn" data-en="Domain">Domèn</th>
+            <th data-ht="Nòm" data-en="Standards">Nòm</th>
+            <th data-ht="Piblik" data-en="Audience">Piblik</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>K-VOUM</td>
+            <td>15</td>
+            <td data-ht="Mekanik Otomobil" data-en="Automotive Mechanics">Mekanik Otomobil</td>
+            <td>ASE / SAE</td>
+            <td data-ht="Mekanisyen, lekòl vokasyonèl" data-en="Mechanics, vocational schools">Mekanisyen, lekòl vokasyonèl</td>
+          </tr>
+          <tr>
+            <td>TI PRIZ</td>
+            <td>14</td>
+            <td data-ht="Elektrisite" data-en="Electricity">Elektrisite</td>
+            <td>NEC / IEC / IEEE</td>
+            <td data-ht="Elektrisyen, lekòl vokasyonèl" data-en="Electricians, vocational schools">Elektrisyen, lekòl vokasyonèl</td>
+          </tr>
+          <tr>
+            <td>DLO</td>
+            <td>12</td>
+            <td data-ht="Plonbri" data-en="Plumbing">Plonbri</td>
+            <td>IPC / UPC / WHO</td>
+            <td data-ht="Plonbye, lekòl vokasyonèl" data-en="Plumbers, vocational schools">Plonbye, lekòl vokasyonèl</td>
+          </tr>
+          <tr>
+            <td>DIJITAL</td>
+            <td>26</td>
+            <td data-ht="Elektwonik &amp; Radyo" data-en="Electronics &amp; Radio">Elektwonik &amp; Radyo</td>
+            <td>IEC / ITU</td>
+            <td data-ht="Tekniyen, enjenyè radyo" data-en="Technicians, radio engineers">Tekniyen, enjenyè radyo</td>
+          </tr>
+          <tr>
+            <td>KOUPE KLOURE</td>
+            <td>13</td>
+            <td data-ht="Chapant &amp; Bwa" data-en="Carpentry &amp; Wood">Chapant &amp; Bwa</td>
+            <td>ICC / AWC</td>
+            <td data-ht="Chapantye, konstriktè" data-en="Carpenters, builders">Chapantye, konstriktè</td>
+          </tr>
+          <tr>
+            <td>TIWÈL</td>
+            <td>14</td>
+            <td data-ht="Masonri &amp; Konstriksyon" data-en="Masonry &amp; Construction">Masonri &amp; Konstriksyon</td>
+            <td>ACI / MTPTC</td>
+            <td data-ht="Mason, kontremetè" data-en="Masons, foremen">Mason, kontremetè</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- LEGAL SERIES -->
+<div style="background: var(--cream);">
+  <div class="lib-section">
+    <span class="section-tag">LEGAL</span>
+    <h2 data-ht="LEGAL — Kòd ak Konstitisyon · 6 Vòlim" data-en="LEGAL — Codes &amp; Constitution · 6 Volumes">LEGAL — Kòd ak Konstitisyon · 6 Vòlim</h2>
+    <p class="lib-note" data-ht="Premye fwa tout kòd legal Ayisyen yo tradui an Kreyòl. 4,000+ atik. Pou jij, avoka, ak sitwayen." data-en="The first time all Haitian legal codes have been translated into Creole. 4,000+ articles. For judges, lawyers, and citizens.">
+      Premye fwa tout kòd legal Ayisyen yo tradui an Kreyòl. 4,000+ atik. Pou jij, avoka, ak sitwayen.
+    </p>
+    <div style="overflow-x: auto;">
+      <table class="lib-table">
+        <thead>
+          <tr>
+            <th data-ht="Vòlim" data-en="Volume">Vòlim</th>
+            <th data-ht="Vòl" data-en="Vol">Vòl</th>
+            <th data-ht="Kontni" data-en="Content">Kontni</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-ht="Konstitisyon" data-en="Constitution">Konstitisyon</td>
+            <td>24</td>
+            <td data-ht="Konstitisyon 1801–1987, tout vèsyon" data-en="Constitutions 1801–1987, all versions">Konstitisyon 1801–1987, tout vèsyon</td>
+          </tr>
+          <tr>
+            <td data-ht="Kòd Sivil" data-en="Civil Code">Kòd Sivil</td>
+            <td>3</td>
+            <td data-ht="3 liv, 2,300+ atik" data-en="3 books, 2,300+ articles">3 liv, 2,300+ atik</td>
+          </tr>
+          <tr>
+            <td data-ht="Kòd Penal" data-en="Penal Code">Kòd Penal</td>
+            <td>1</td>
+            <td data-ht="Entegral an Kreyòl" data-en="Full text in Creole">Entegral an Kreyòl</td>
+          </tr>
+          <tr>
+            <td data-ht="Kòd Travay" data-en="Labor Code">Kòd Travay</td>
+            <td>1</td>
+            <td data-ht="Entegral an Kreyòl" data-en="Full text in Creole">Entegral an Kreyòl</td>
+          </tr>
+          <tr>
+            <td data-ht="Kòd Komès" data-en="Commercial Code">Kòd Komès</td>
+            <td>1</td>
+            <td data-ht="Entegral an Kreyòl" data-en="Full text in Creole">Entegral an Kreyòl</td>
+          </tr>
+          <tr>
+            <td data-ht="Kòd Dwanye" data-en="Customs Code">Kòd Dwanye</td>
+            <td>1</td>
+            <td data-ht="Entegral an Kreyòl" data-en="Full text in Creole">Entegral an Kreyòl</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- LIMYÈ SERIES -->
+<div style="background: var(--cream);">
+  <div class="lib-section">
+    <span class="section-tag">LIMYÈ</span>
+    <h2 data-ht="LIMYÈ — Syans &amp; Istwa · 15 Vòlim" data-en="LIMYÈ — Science &amp; History · 15 Volumes">LIMYÈ — Syans &amp; Istwa · 15 Vòlim</h2>
+    <div class="vol-grid">
+      <div class="vol-card"><span class="vol-num">Vol 01</span><span class="vol-title" data-ht="Byoloji" data-en="Biology">Byoloji</span></div>
+      <div class="vol-card"><span class="vol-num">Vol 02</span><span class="vol-title" data-ht="Zooloji" data-en="Zoology">Zooloji</span></div>
+      <div class="vol-card"><span class="vol-num">Vol 03</span><span class="vol-title" data-ht="Botanik &amp; Plant Medikal" data-en="Botany &amp; Medicinal Plants">Botanik &amp; Plant Medikal</span></div>
+      <div class="vol-card"><span class="vol-num">Vol 04</span><span class="vol-title" data-ht="Jewoloji &amp; Minèral" data-en="Geology &amp; Minerals">Jewoloji &amp; Minèral</span></div>
+      <div class="vol-card"><span class="vol-num">Vol 05–08</span><span class="vol-title" data-ht="Istwa Ayiti I–IV" data-en="History of Haiti I–IV">Istwa Ayiti I–IV</span></div>
+      <div class="vol-card"><span class="vol-num">Vol 09</span><span class="vol-title" data-ht="Jewografi Ayiti" data-en="Geography of Haiti">Jewografi Ayiti</span></div>
+      <div class="vol-card"><span class="vol-num">Vol 10</span><span class="vol-title" data-ht="Jewografi Mond &amp; Astwonomi" data-en="World Geography &amp; Astronomy">Jewografi Mond &amp; Astwonomi</span></div>
+      <div class="vol-card"><span class="vol-num">Vol 11 T1&amp;T2</span><span class="vol-title" data-ht="Istwa Jeneral" data-en="General History">Istwa Jeneral</span></div>
+      <div class="vol-card"><span class="vol-num">Vol 12</span><span class="vol-title" data-ht="Chimi" data-en="Chemistry">Chimi</span></div>
+      <div class="vol-card"><span class="vol-num">Vol 13</span><span class="vol-title" data-ht="Fizik" data-en="Physics">Fizik</span></div>
+      <div class="vol-card"><span class="vol-num">Vol 14</span><span class="vol-title" data-ht="Matimatik" data-en="Mathematics">Matimatik</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- LANG SERIES -->
+<div style="background: var(--cream);">
+  <div class="lib-section">
+    <span class="section-tag">LANG</span>
+    <h2 data-ht="LANG — Gramè &amp; Diksyonè · 4 Vòlim" data-en="LANG — Grammar &amp; Dictionary · 4 Volumes">LANG — Gramè &amp; Diksyonè · 4 Vòlim</h2>
+    <div class="lang-cards">
+      <div class="lang-card">
+        <span class="lc-icon">📗</span>
+        <span class="lc-title" data-ht="Gramè Kreyòl" data-en="Creole Grammar">Gramè Kreyòl</span>
+      </div>
+      <div class="lang-card">
+        <span class="lc-icon">📘</span>
+        <span class="lc-title" data-ht="Diksyonè Kreyòl-Anglè" data-en="Creole-English Dictionary">Diksyonè Kreyòl-Anglè</span>
+      </div>
+      <div class="lang-card">
+        <span class="lc-icon">📙</span>
+        <span class="lc-title" data-ht="Diksyonè Kreyòl-Fransè" data-en="Creole-French Dictionary">Diksyonè Kreyòl-Fransè</span>
+      </div>
+      <div class="lang-card">
+        <span class="lc-icon">📕</span>
+        <span class="lc-title" data-ht="Diksyonè Kreyòl-Espayòl" data-en="Creole-Spanish Dictionary">Diksyonè Kreyòl-Espayòl</span>
+      </div>
+    </div>
+    <p class="lib-note" style="margin-top:1.25rem;" data-ht="Premye diksyonè bilenng Kreyòl estanda nan istwa. Potansyèl lisans pou enstitisyon edikasyonèl ak teknoloji lang." data-en="The first standardized bilingual Creole dictionaries in history. Licensing potential for educational institutions and language technology.">
+      Premye diksyonè bilenng Kreyòl estanda nan istwa. Potansyèl lisans pou enstitisyon edikasyonèl ak teknoloji lang.
+    </p>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-box">
+  <p data-ht="Ede nou pote liv sa yo nan lekòl Ayiti." data-en="Help us bring these books to schools in Haiti.">Ede nou pote liv sa yo nan lekòl Ayiti.</p>
+  <a href="/don.html" class="btn-gold" data-ht="Piti Piti Fè Pil →" data-en="Little by Little →">Piti Piti Fè Pil →</a>
+</div>
+
+<footer>
+  <img src="/images/felankreyol.png" alt="Fèl an Kreyòl Inc." />
+  <p data-ht="Nou pote liv edikasyon an Kreyòl nan lekòl Ayiti." data-en="We bring Creole education books to schools in Haiti.">Nou pote liv edikasyon an Kreyòl nan lekòl Ayiti.</p>
+  <nav class="footer-links">
+    <a href="/misyon.html" data-ht="Edike Ayiti" data-en="Mission">Edike Ayiti</a>
+    <a href="/kouman.html" data-ht="Kouman" data-en="How It Works">Kouman</a>
+    <a href="/bibliyotek.html" data-ht="Bibliyotèk Nasyonal" data-en="The Library">Bibliyotèk Nasyonal</a>
+    <a href="/ki-moun.html" data-ht="Yon Ayisyen" data-en="The Founder">Yon Ayisyen</a>
+    <a href="/partner.html" data-ht="Kolòn Ki Bat" data-en="Partner">Kolòn Ki Bat</a>
+    <a href="/don.html" data-ht="Piti Piti Fè Pil" data-en="Donate">Piti Piti Fè Pil</a>
+  </nav>
+  <p class="footer-legal">
+    Fèl an Kreyòl Inc. se yon nonprofit ki anrejistre nan Eta Florida (Sunbiz).<br/>
+    501(c)(3) federal application pending. · <a href="mailto:info@felankreyol.org">info@felankreyol.org</a>
+  </p>
+  <p class="footer-copy">© 2025 Fèl an Kreyòl Inc. · Florida Nonprofit · <span data-ht="Tout dwa rezève" data-en="All rights reserved">Tout dwa rezève</span></p>
+</footer>
+
+<script>
+let currentLang = localStorage.getItem('felankreyol-lang') || 'ht';
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('felankreyol-lang', lang);
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === lang));
+  document.querySelectorAll('[data-ht]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (val === null) return;
+    if (el.tagName === 'INPUT') { el.placeholder = val; return; }
+    el.innerHTML = val;
+  });
+  document.documentElement.lang = lang === 'ht' ? 'ht' : 'en';
+}
+setLang(currentLang);
+</script>
+</body>
+</html>
