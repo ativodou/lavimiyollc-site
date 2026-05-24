@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
       : `Don — Fèl an Kreyòl Inc.`;
 
     const sessionParams = {
-      payment_method_types: ['card', 'us_bank_account', 'acss_debit', 'sepa_debit'],
+      payment_method_types: ['card'],
       line_items: [{
         price_data: {
           currency: 'usd',
