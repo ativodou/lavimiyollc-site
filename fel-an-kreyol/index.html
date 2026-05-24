@@ -574,7 +574,10 @@ footer {
   nav.open .nav-cta { display: block; margin: 0.5rem 1.5rem; text-align: center; padding: 0.7rem 1rem; }
   .hero-inner { grid-template-columns: 1fr; gap: 3rem; padding: 3rem 1.25rem; }
   .hero-right { order: -1; }
-  .hero-books { max-width: 320px; margin: 0 auto; }
+  .hero-books { max-width: 320px; margin: 0 auto; grid-template-columns: repeat(2, 1fr); }
+  .hero-book:nth-child(n+5) { display: none; }
+  .hero-book:nth-child(even) { transform: translateY(0.5rem); }
+  .hero-book:nth-child(even):hover { transform: translateY(calc(0.5rem - 6px)) scale(1.03); }
   .impact-inner { gap: 1.5rem; }
   .impact-divider { display: none; }
   .steps { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -898,7 +901,9 @@ footer {
       </div>
       <div class="gallery-track">
         <div class="gallery-book"><img src="images/GrameKreyol_Vol1_Cover.png" alt="Gramè Kreyòl Vol.1" loading="lazy"></div>
-        <div class="gallery-book"><img src="images/GrameKreyol_Vol2_Cover.png" alt="Kreyòl-Anglè" loading="lazy"></div>
+        <div class="gallery-book"><img src="images/GrameKreyol_Vol2_Cover.png" alt="Gramè Kreyòl Vol.2" loading="lazy"></div>
+        <div class="gallery-book"><img src="images/GrameKreyol_Vol3_Cover.png" alt="Gramè Kreyòl Vol.3" loading="lazy"></div>
+        <div class="gallery-book"><img src="images/GrameKreyol_Vol4_Cover.png" alt="Gramè Kreyòl Vol.4" loading="lazy"></div>
         <div class="gallery-book"><img src="images/LANG_Vol1_Cover.png" alt="Kreyòl-Fransè" loading="lazy"></div>
       </div>
     </div>
