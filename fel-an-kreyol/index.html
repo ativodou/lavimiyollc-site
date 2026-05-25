@@ -561,23 +561,10 @@ footer {
   .topbar { padding: 0 1.25rem; }
   header { padding: 0 1.25rem; }
   nav .nav-link { display: none; }
-  nav .nav-cta { display: none; }
   .menu-btn { display: block; }
-  nav.open {
-    position: fixed; top: calc(var(--topbar-h) + var(--header-h)); left: 0; right: 0;
-    flex-direction: column; align-items: stretch; gap: 0;
-    background: var(--cream); border-bottom: 2px solid var(--gold);
-    padding: 0.75rem 0; z-index: 100;
-    box-shadow: 0 8px 30px rgba(13,42,110,0.12);
-  }
-  nav.open .nav-link { display: block; padding: 0.75rem 1.5rem; font-size: 0.85rem; }
-  nav.open .nav-cta { display: block; margin: 0.5rem 1.5rem; text-align: center; padding: 0.7rem 1rem; }
   .hero-inner { grid-template-columns: 1fr; gap: 3rem; padding: 3rem 1.25rem; }
   .hero-right { order: -1; }
-  .hero-books { max-width: 320px; margin: 0 auto; grid-template-columns: repeat(2, 1fr); }
-  .hero-book:nth-child(n+5) { display: none; }
-  .hero-book:nth-child(even) { transform: translateY(0.5rem); }
-  .hero-book:nth-child(even):hover { transform: translateY(calc(0.5rem - 6px)) scale(1.03); }
+  .hero-books { max-width: 320px; margin: 0 auto; }
   .impact-inner { gap: 1.5rem; }
   .impact-divider { display: none; }
   .steps { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -597,26 +584,27 @@ footer {
 <!-- ── TOPBAR ── -->
 <div class="topbar">
   <span class="topbar-left" data-ht="Fèl an Kreyòl Inc. · Florida Nonprofit" data-en="Fèl an Kreyòl Inc. · Florida Nonprofit">Fèl an Kreyòl Inc. · Florida Nonprofit</span>
-  <div class="lang-toggle">
-    <button class="lang-btn active" onclick="setLang('ht')">HT</button>
-    <button class="lang-btn" onclick="setLang('en')">EN</button>
+  <div style="display:flex;align-items:center;gap:0.75rem;">
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('ht')">HT</button>
+      <button class="lang-btn" onclick="setLang('en')">EN</button>
+    </div>
+    <button onclick="location.reload()" title="Reload" style="background:none;border:1px solid rgba(200,137,26,0.3);color:var(--gold);border-radius:50%;width:26px;height:26px;cursor:pointer;font-size:15px;line-height:1;flex-shrink:0;">↺</button>
   </div>
 </div>
 
 <!-- ── HEADER ── -->
 <header id="site-header">
   <a href="#" class="header-brand">
-    <img src="images/felankreyol.png" alt="Fèl an Kreyòl" style="height:80px;width:auto;display:block;filter:drop-shadow(0 1px 6px rgba(0,0,0,0.6));">
+    <img src="images/felankreyol.png" alt="Fèl an Kreyòl" style="height:64px;width:auto;display:block;filter:drop-shadow(0 1px 6px rgba(0,0,0,0.6));">
   </a>
   <nav>
-    <a href="/misyon.html" class="nav-link" data-ht="Edike Ayiti" data-en="Mission">Edike Ayiti</a>
-    <a href="/kouman.html" class="nav-link" data-ht="Kouman" data-en="How It Works">Kouman</a>
-    <a href="/bibliyotek.html" class="nav-link" data-ht="Bibliyotèk" data-en="Library">Bibliyotèk</a>
-    <a href="/ki-moun.html" class="nav-link" data-ht="Yon Ayisyen" data-en="The Founder">Yon Ayisyen</a>
-    <a href="/partner.html" class="nav-link" data-ht="Patenè" data-en="Partner">Patenè</a>
-    <a href="/don.html" class="nav-cta" data-ht="Piti Piti Fè Pil" data-en="Donate">Piti Piti Fè Pil ❤</a>
+    <a href="#misyon" class="nav-link" data-ht="Misyon" data-en="Mission">Misyon</a>
+    <a href="#kouman" class="nav-link" data-ht="Kouman" data-en="How It Works">Kouman</a>
+    <a href="#galri" class="nav-link" data-ht="Liv yo" data-en="Books">Liv yo</a>
+    <a href="#donate" class="nav-cta" data-ht="Fè yon Don" data-en="Donate">Fè yon Don</a>
   </nav>
-  <button class="menu-btn" id="menu-btn" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Menu">☰</button>
+  <button class="menu-btn" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Menu">☰</button>
 </header>
 
 <!-- ── HERO ── -->
@@ -624,7 +612,7 @@ footer {
   <div class="hero-inner">
     <div class="hero-left">
       <div class="hero-label">
-        <img src="images/felankreyol.png" alt="Fèl an Kreyòl" style="height:68px;width:auto;display:inline-block;vertical-align:middle;filter:drop-shadow(0 1px 5px rgba(0,0,0,0.5));">
+        <img src="images/felankreyol.png" alt="Fèl an Kreyòl" style="height:56px;width:auto;display:inline-block;vertical-align:middle;filter:drop-shadow(0 1px 5px rgba(0,0,0,0.5));">
         <span data-ht="Edikasyon an Kreyòl" data-en="Education in Creole">Edikasyon an Kreyòl</span>
       </div>
       <h1 class="hero-h1">
@@ -661,11 +649,11 @@ footer {
   <div class="impact-inner">
     <div class="impact-stat">
       <div class="impact-num">119</div>
-      <div class="impact-label" data-ht="Volim pibliye" data-en="Volumes published">Volim pibliye</div>
+      <div class="impact-label" data-ht="Vòlim pibliye" data-en="Volumes published">Vòlim pibliye</div>
     </div>
     <div class="impact-divider"></div>
     <div class="impact-stat">
-      <div class="impact-num">9</div>
+      <div class="impact-num">8</div>
       <div class="impact-label" data-ht="Seri edikasyon" data-en="Education series">Seri edikasyon</div>
     </div>
     <div class="impact-divider"></div>
@@ -685,8 +673,8 @@ footer {
 <section class="how-section" id="kouman">
   <p class="section-label" data-ht="Kouman sa travay" data-en="How It Works">Kouman sa travay</p>
   <h2 class="section-h2" data-ht="Senp. Dirèk. Efikas." data-en="Simple. Direct. Effective.">Senp. Dirèk. Efikas.</h2>
-  <p class="section-intro" data-ht="Don ou ale dirèkteman nan acha liv — yon koleksyon 119 volim an Kreyòl. Lekòl yo an Ayiti resevwa yo gratis." data-en="Your donation goes directly to purchasing books — a 119-volume collection in Haitian Creole. Schools in Haiti receive them free of charge.">
-    Don ou ale dirèkteman nan acha liv — yon koleksyon 119 volim an Kreyòl. Lekòl yo an Ayiti resevwa yo gratis.
+  <p class="section-intro" data-ht="Don ou ale dirèkteman nan acha liv Lavi Miyo Bibliyotèk — koleksyon 119 vòlim an Kreyòl. Lekòl yo an Ayiti resevwa yo gratis." data-en="Your donation goes directly to purchasing books from Lavi Miyo Bibliyotèk — a 119-volume collection in Haitian Creole. Schools in Haiti receive them free of charge.">
+    Don ou ale dirèkteman nan acha liv Lavi Miyo Bibliyotèk — koleksyon 119 vòlim an Kreyòl. Lekòl yo an Ayiti resevwa yo gratis.
   </p>
   <div class="steps">
     <div class="step">
@@ -701,8 +689,8 @@ footer {
       <div class="step-icon">📦</div>
       <div class="step-num" data-ht="Etap 2" data-en="Step 2">Etap 2</div>
       <div class="step-title" data-ht="Nou Achte Liv" data-en="We Buy Books">Nou Achte Liv</div>
-      <p class="step-desc" data-ht="Fèl an Kreyòl Inc. achte liv nan yon koleksyon 119 volim an Kreyòl — kòd dwa, metye teknik, syans, istwa, lang." data-en="Fèl an Kreyòl Inc. purchases books from a 119-volume Creole collection — legal codes, technical trades, science, history, language.">
-        Fèl an Kreyòl Inc. achte liv nan yon koleksyon 119 volim an Kreyòl — kòd dwa, metye teknik, syans, istwa, lang.
+      <p class="step-desc" data-ht="Fèl an Kreyòl Inc. achte liv nan Lavi Miyo Bibliyotèk — kòd dwa, metye teknik, syans, istwa, lang — tout an Kreyòl." data-en="Fèl an Kreyòl Inc. buys books from Lavi Miyo Bibliyotèk — legal codes, technical trades, science, history, language — all in Creole.">
+        Fèl an Kreyòl Inc. achte liv nan Lavi Miyo Bibliyotèk — kòd dwa, metye teknik, syans, istwa, lang — tout an Kreyòl.
       </p>
     </div>
     <div class="step">
@@ -839,7 +827,7 @@ footer {
 
 <!-- ── GALLERY ── -->
 <section class="gallery-section" id="galri">
-  <p class="section-label" data-ht="Bibliyotèk Nasyonal" data-en="National Library">Bibliyotèk Nasyonal</p>
+  <p class="section-label" data-ht="Lavi Miyo Bibliyotèk" data-en="Lavi Miyo Bibliyotèk">Lavi Miyo Bibliyotèk</p>
   <h2 class="section-h2" data-ht="Liv Ou Ap Finanse" data-en="Books You're Funding">Liv Ou Ap Finanse</h2>
   <div class="gallery-groups">
 
@@ -863,14 +851,14 @@ footer {
     <div class="gallery-group">
       <div class="gallery-group-label">
         <span class="gallery-group-tag teknik">TEKNIK</span>
-        <span class="gallery-group-desc" data-ht="Metye ak travay — plonbri, elektrisite, chapant" data-en="Trades & vocational — plumbing, electricity, carpentry">Metye ak travay — plonbri, elektrisite, chapant</span>
+        <span class="gallery-group-desc" data-ht="Metye ak travay — plonbri, elektrisite, chapantri" data-en="Trades & vocational — plumbing, electricity, carpentry">Metye ak travay — plonbri, elektrisite, chapantri</span>
       </div>
       <div class="gallery-track">
         <div class="gallery-book"><img src="images/TEKNIK_KVOUM_Vol1_Cover.png" alt="K-VOUM Mekanik Otomobil Vol.1" loading="lazy"></div>
         <div class="gallery-book"><img src="images/TEKNIK_TIPRIZ_Vol1_Cover.png" alt="TI PRIZ Elektrisite Vol.1" loading="lazy"></div>
         <div class="gallery-book"><img src="images/TEKNIK_DLO_Vol1_Cover.png" alt="DLO Plonbri Vol.1" loading="lazy"></div>
         <div class="gallery-book"><img src="images/TEKNIK_DIJITAL_Vol1_Cover.png" alt="DIJITAL Elektwonik Vol.1" loading="lazy"></div>
-        <div class="gallery-book"><img src="images/TEKNIK_KOUPEKLOURE_Vol1_Cover.png" alt="Koupe Kloure Chapant Vol.1" loading="lazy"></div>
+        <div class="gallery-book"><img src="images/TEKNIK_KOUPEKLOURE_Vol1_Cover.png" alt="Koupe Kloure Chapantri Vol.1" loading="lazy"></div>
         <div class="gallery-book"><img src="images/TEKNIK_TIWEL_Vol1_Cover.png" alt="TIWÈL Masonville Vol.1" loading="lazy"></div>
       </div>
     </div>
@@ -887,7 +875,7 @@ footer {
         <div class="gallery-book"><img src="images/LIMYE_Vol5_Cover.png" alt="Istwa Prekolonbyen" loading="lazy"></div>
         <div class="gallery-book"><img src="images/LIMYE_Vol7_Cover.png" alt="Lagè Endepandans" loading="lazy"></div>
         <div class="gallery-book"><img src="images/LIMYE_Vol9_Cover.png" alt="Jewografi Ayiti" loading="lazy"></div>
-        <div class="gallery-book"><img src="images/LIMYE_Vol12_Cover.png" alt="Chimi Matye" loading="lazy"></div>
+        <div class="gallery-book"><img src="images/LIMYE_Vol12_Cover.png" alt="Chimi" loading="lazy"></div>
         <div class="gallery-book"><img src="images/LIMYE_Vol13_Cover.png" alt="Fizik" loading="lazy"></div>
         <div class="gallery-book"><img src="images/LIMYE_Vol14_Cover.png" alt="Matematik" loading="lazy"></div>
       </div>
@@ -900,10 +888,9 @@ footer {
         <span class="gallery-group-desc" data-ht="Gramè ak diksyonè Kreyòl" data-en="Creole grammar & dictionaries">Gramè ak diksyonè Kreyòl</span>
       </div>
       <div class="gallery-track">
-        <div class="gallery-book"><img src="images/GrameKreyol_Vol1_Cover.png" alt="Gramè Kreyòl" loading="lazy"></div>
-        <div class="gallery-book"><img src="images/GrameKreyol_Vol2_Cover.png" alt="Kreyòl & Anglè" loading="lazy"></div>
-        <div class="gallery-book"><img src="images/GrameKreyol_Vol3_Cover.png" alt="Kreyòl & Fransè" loading="lazy"></div>
-        <div class="gallery-book"><img src="images/GrameKreyol_Vol4_Cover.png" alt="Kreyòl & Espayòl" loading="lazy"></div>
+        <div class="gallery-book"><img src="images/GrameKreyol_Vol1_Cover.png" alt="Gramè Kreyòl Vol.1" loading="lazy"></div>
+        <div class="gallery-book"><img src="images/GrameKreyol_Vol2_Cover.png" alt="Kreyòl-Anglè" loading="lazy"></div>
+        <div class="gallery-book"><img src="images/LANG_Vol1_Cover.png" alt="Kreyòl-Fransè" loading="lazy"></div>
       </div>
     </div>
 
@@ -921,8 +908,8 @@ footer {
       <p class="story-p" data-ht="Pou 220 an, pa t gen yon sèl liv dwa, ni liv metye teknik an Kreyòl. Yon mason, yon elektrisyen, yon jij de pè — yo tout oblije aprann nan fransè. Lang <strong>barye</strong> a fèmen pòt pou pifò Ayisyen." data-en="For 220 years, there was not a single law book or technical trade manual in Creole. A mason, an electrician, a justice of the peace — all forced to learn in French. The language <strong>barrier</strong> closed the door for most Haitians.">
         Pou 220 an, pa t gen yon sèl liv dwa, ni liv metye teknik an Kreyòl. Yon mason, yon elektrisyen, yon jij de pè — yo tout oblije aprann nan fransè. Lang <strong>barye</strong> a fèmen pòt pou pifò Ayisyen.
       </p>
-      <p class="story-p" data-ht="Yon editè endepandan kreye 119 volim — kòd dwa (Konstitisyon, Kòd Sivil, Kòd Penal, Kòd Travay), metye teknik (elektrisite, plonbri, chapant), syans ak istwa — tout an Kreyòl. Fèl an Kreyòl Inc. pote yo nan lekòl ki pa ka achte yo." data-en="An independent publisher created 119 volumes — legal codes (Constitution, Civil Code, Penal Code, Labor Code), technical trades (electricity, plumbing, carpentry), science and history — all in Creole. Fèl an Kreyòl Inc. brings them to schools that can't afford to buy them.">
-        Yon editè endepandan kreye 119 volim — kòd dwa, metye teknik, syans ak istwa — tout an Kreyòl Ayisyen. Fèl an Kreyòl Inc. pote yo nan lekòl ki pa ka achte yo.
+      <p class="story-p" data-ht="Lavi Miyo Bibliyotèk kreye 119 vòlim — kòd dwa (Konstitisyon, Kòd Sivil, Kòd Penal, Kòd Travay), metye teknik (elektrisite, plonbri, chapantri), syans ak istwa — tout an Kreyòl. Fèl an Kreyòl Inc. pote yo nan lekòl ki pa ka achte yo." data-en="Lavi Miyo Bibliyotèk created 119 volumes — legal codes (Constitution, Civil Code, Penal Code, Labor Code), technical trades (electricity, plumbing, carpentry), science and history — all in Creole. Fèl an Kreyòl Inc. brings them to schools that can't afford to buy them.">
+        Lavi Miyo Bibliyotèk kreye 119 vòlim — kòd dwa, metye teknik, syans ak istwa — tout an Kreyòl Ayisyen. Fèl an Kreyòl Inc. pote yo nan lekòl ki pa ka achte yo.
       </p>
       <a href="#donate" class="story-cta">
         <span data-ht="Fè yon Don Jodi a" data-en="Donate Today">Fè yon Don Jodi a</span>
@@ -933,7 +920,7 @@ footer {
       <div class="story-book"><img src="images/LEGAL_Konstitisyon_Cover.png" alt="Konstitisyon Ayiti" loading="lazy"></div>
       <div class="story-book"><img src="images/LEGAL_KodTravay_Cover.png" alt="Kòd Travay" loading="lazy"></div>
       <div class="story-book"><img src="images/TEKNIK_TIPRIZ_Vol1_Cover.png" alt="TI PRIZ Elektrisite" loading="lazy"></div>
-      <div class="story-book"><img src="images/TEKNIK_KOUPEKLOURE_Vol1_Cover.png" alt="Koupe Kloure Chapant" loading="lazy"></div>
+      <div class="story-book"><img src="images/TEKNIK_KOUPEKLOURE_Vol1_Cover.png" alt="Koupe Kloure Chapantri" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -960,8 +947,8 @@ footer {
   <div class="badge-inner">
     <div class="badge-icon">🏛️</div>
     <h3 class="badge-title" data-ht="Fèl an Kreyòl Inc. — Òganizasyon 501(c)(3) an pandan" data-en="Fèl an Kreyòl Inc. — Pending 501(c)(3) Organization">Fèl an Kreyòl Inc. — Òganizasyon 501(c)(3) an pandan</h3>
-    <p class="badge-text" data-ht="Fèl an Kreyòl Inc. se yon nonprofit ki anrejistre nan Eta Florida (Sunbiz). Nou ap travay pou jwenn estati 501(c)(3) federal. Don ou ka dediktib sou taks federal apre konfimasyon IRS. Tout fon yo ale dirèkteman nan acha liv pou lekòl Ayiti." data-en="Fèl an Kreyòl Inc. is a nonprofit registered in the State of Florida (Sunbiz). We are pursuing 501(c)(3) federal status. Your donation may become tax-deductible upon confirmation. All funds go directly to purchasing books for schools in Haiti.">
-      Fèl an Kreyòl Inc. se yon nonprofit ki anrejistre nan Eta Florida (Sunbiz). Nou ap travay pou jwenn estati 501(c)(3) federal. Don ou ka dediktib sou taks federal apre konfimasyon IRS. Tout fon yo ale dirèkteman nan acha liv pou lekòl Ayiti.
+    <p class="badge-text" data-ht="Fèl an Kreyòl Inc. se yon nonprofit ki anrejistre nan Eta Florida (Sunbiz). Nou ap travay pou jwenn estati 501(c)(3) federal. Don ou ka dediktib sou taks federal lè nou resevwa konfirmasyon an. Tout fon yo ale dirèkteman nan acha liv pou lekòl Ayiti." data-en="Fèl an Kreyòl Inc. is a nonprofit registered in the State of Florida (Sunbiz). We are pursuing 501(c)(3) federal status. Your donation may become tax-deductible upon confirmation. All funds go directly to purchasing books for schools in Haiti.">
+      Fèl an Kreyòl Inc. se yon nonprofit ki anrejistre nan Eta Florida (Sunbiz). Nou ap travay pou jwenn estati 501(c)(3) federal. Don ou ka dediktib sou taks federal lè nou resevwa konfirmasyon an. Tout fon yo ale dirèkteman nan acha liv pou lekòl Ayiti.
     </p>
   </div>
 </div>
@@ -995,7 +982,7 @@ footer {
   </div>
   <div class="footer-bottom">
     <div class="footer-legal">
-      <span>© 2026 Fèl an Kreyòl Inc. · </span>
+      <span>© 2025 Fèl an Kreyòl Inc. · </span>
       <span data-ht="Tout dwa rezève · Nonprofit Florida" data-en="All rights reserved · Florida Nonprofit">Tout dwa rezève · Nonprofit Florida</span>
     </div>
     <div class="footer-stripe">
@@ -1214,11 +1201,6 @@ async function submitDonation() {
     updateDonateBtn();
   }
 }
-
-// Close mobile nav when any link is tapped
-document.querySelector('nav').querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => document.querySelector('nav').classList.remove('open'));
-});
 
 // Init
 setLang(currentLang);
