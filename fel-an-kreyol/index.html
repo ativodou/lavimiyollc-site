@@ -589,7 +589,7 @@ footer {
       <button class="lang-btn active" onclick="setLang('ht')">HT</button>
       <button class="lang-btn" onclick="setLang('en')">EN</button>
     </div>
-    <button onclick="location.reload()" title="Reload" style="background:none;border:1px solid rgba(200,137,26,0.3);color:var(--gold);border-radius:50%;width:26px;height:26px;cursor:pointer;font-size:15px;line-height:1;flex-shrink:0;">↺</button>
+    <button onclick="(async()=>{try{const k=await caches.keys();await Promise.all(k.map(n=>caches.delete(n)));const r=await navigator.serviceWorker?.getRegistrations()||[];await Promise.all(r.map(s=>s.unregister()))}catch(e){}location.replace(location.href)})()" title="Reload" style="background:none;border:1px solid rgba(200,137,26,0.3);color:var(--gold);border-radius:50%;width:26px;height:26px;cursor:pointer;font-size:15px;line-height:1;flex-shrink:0;">↺</button>
   </div>
 </div>
 

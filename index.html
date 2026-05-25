@@ -203,7 +203,7 @@
   </ul>
   <div style="display:flex;align-items:center;gap:1rem;">
     <img src="images/lavimiyo.png" alt="LavimiyòLLC" style="height:64px;width:auto;display:block;filter:drop-shadow(0 1px 6px rgba(0,0,0,0.6));">
-    <button onclick="location.reload()" title="Reload" style="background:none;border:1px solid rgba(212,168,67,0.3);color:var(--or);border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:18px;line-height:1;flex-shrink:0;">↺</button>
+    <button onclick="(async()=>{try{const k=await caches.keys();await Promise.all(k.map(n=>caches.delete(n)));const r=await navigator.serviceWorker?.getRegistrations()||[];await Promise.all(r.map(s=>s.unregister()))}catch(e){}location.replace(location.href)})()" title="Reload" style="background:none;border:1px solid rgba(212,168,67,0.3);color:var(--or);border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:18px;line-height:1;flex-shrink:0;">↺</button>
   </div>
 </nav>
 
