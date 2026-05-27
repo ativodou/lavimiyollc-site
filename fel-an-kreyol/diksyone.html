@@ -343,7 +343,9 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
 </div>
 
 <script>
-const DIKSYONE = [
+const DIKSYONE = [];
+
+const _FALLBACK = [
   // A
   { mot: "abitan", kat: "n", def: "Moun ki viv nan yon rejyon, espesyalman nan zòn riral; kiltivatè ki travay tè li.", egz: "Abitan yo rekòlte mayi yo chak ane." },
   { mot: "achte", kat: "v", def: "Bay lajan an echanj pou jwenn yon bagay; fè yon tranzaksyon komèsyal.", egz: "Li ale nan mache a achte legim." },
@@ -608,33 +610,57 @@ function norm(s) {
 
 // ── Build A-Z index ──
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-const byLetter = {};
-LETTERS.forEach(l => byLetter[l] = []);
-DIKSYONE.sort((a, b) => norm(a.mot).localeCompare(norm(b.mot)));
-DIKSYONE.forEach(e => {
-  const first = norm(e.mot)[0].toUpperCase();
-  if (byLetter[first]) byLetter[first].push(e);
-});
+let byLetter = {};
 
-document.getElementById('total-count').textContent = DIKSYONE.length;
+function buildIndex() {
+  byLetter = {};
+  LETTERS.forEach(l => byLetter[l] = []);
+  DIKSYONE.sort((a, b) => norm(a.mot).localeCompare(norm(b.mot)));
+  DIKSYONE.forEach(e => {
+    const first = norm(e.mot)[0].toUpperCase();
+    if (byLetter[first]) byLetter[first].push(e);
+  });
+  document.getElementById('total-count').textContent = DIKSYONE.length;
+}
 
-// ── A-Z nav ──
-const azNav = document.getElementById('az-nav');
-LETTERS.forEach(l => {
-  const btn = document.createElement('button');
-  btn.className = 'az-btn' + (byLetter[l].length === 0 ? ' empty' : '');
-  btn.textContent = l;
-  btn.dataset.letter = l;
-  if (byLetter[l].length > 0) {
-    btn.onclick = () => {
-      document.querySelectorAll('.az-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      document.getElementById('search-input').value = '';
-      renderAll(null, l);
-    };
+function buildAZNav() {
+  const azNav = document.getElementById('az-nav');
+  azNav.innerHTML = '';
+  LETTERS.forEach(l => {
+    const btn = document.createElement('button');
+    btn.className = 'az-btn' + (byLetter[l].length === 0 ? ' empty' : '');
+    btn.textContent = l;
+    btn.dataset.letter = l;
+    if (byLetter[l].length > 0) {
+      btn.onclick = () => {
+        document.querySelectorAll('.az-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('search-input').value = '';
+        renderAll(null, l);
+      };
+    }
+    azNav.appendChild(btn);
+  });
+}
+
+async function loadAndRender() {
+  try {
+    const r = await fetch('/api/diksyone');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const data = await r.json();
+    DIKSYONE.length = 0;
+    data.forEach(e => DIKSYONE.push(e));
+  } catch (e) {
+    console.warn('Could not load from API, using bundled data', e);
+    DIKSYONE.length = 0;
+    _FALLBACK.forEach(e => DIKSYONE.push(e));
   }
-  azNav.appendChild(btn);
-});
+  buildIndex();
+  buildAZNav();
+  renderAll(null, null);
+}
+
+loadAndRender();
 
 // ── Render ──
 function esc(s) {
@@ -734,9 +760,6 @@ clearBtn.addEventListener('click', () => {
   document.querySelectorAll('.az-btn').forEach(b => b.classList.remove('active'));
   renderAll(null, null);
 });
-
-// Initial render
-renderAll(null, null);
 
 // ── Modal ──
 function closeModal() {
