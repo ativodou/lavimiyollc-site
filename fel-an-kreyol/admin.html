@@ -104,9 +104,11 @@ tbody td { padding: 0.5rem 0.75rem; vertical-align: top; }
 td[contenteditable="true"] {
   outline: none; border-radius: 4px; cursor: text;
   transition: background 0.15s, box-shadow 0.15s;
+  min-width: 60px; user-select: text; -webkit-user-select: text;
 }
+td[contenteditable="true"]:hover { background: #F0F4FF; }
 td[contenteditable="true"]:focus {
-  background: white; box-shadow: 0 0 0 2px var(--navy);
+  background: white; box-shadow: 0 0 0 2px var(--navy); position: relative; z-index: 1;
 }
 select.kat-select {
   border: none; background: var(--light); color: var(--navy); border-radius: 4px;
@@ -252,7 +254,8 @@ function makeRow(e, idx) {
 
   const motTd = document.createElement('td');
   motTd.className = 'cell-mot';
-  motTd.contentEditable = true;
+  motTd.setAttribute('contenteditable', 'true');
+  motTd.spellcheck = false;
   motTd.textContent = e.mot;
   motTd.oninput = () => markDirty(tr);
 
@@ -271,13 +274,15 @@ function makeRow(e, idx) {
 
   const defTd = document.createElement('td');
   defTd.className = 'cell-def';
-  defTd.contentEditable = true;
+  defTd.setAttribute('contenteditable', 'true');
+  defTd.spellcheck = false;
   defTd.textContent = e.def;
   defTd.oninput = () => markDirty(tr);
 
   const egzTd = document.createElement('td');
   egzTd.className = 'cell-egz';
-  egzTd.contentEditable = true;
+  egzTd.setAttribute('contenteditable', 'true');
+  egzTd.spellcheck = false;
   egzTd.textContent = e.egz || '';
   egzTd.oninput = () => markDirty(tr);
 
