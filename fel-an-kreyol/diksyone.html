@@ -130,6 +130,69 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
 .footer-links a:hover { color: var(--gold); }
 .footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
 
+/* PROPOSE BUTTON */
+.propose-btn {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 200;
+  background: var(--navy); color: white;
+  border: none; border-radius: 3rem; cursor: pointer;
+  font-family: 'Source Serif 4', Georgia, serif; font-size: 0.88rem; font-weight: 600;
+  padding: 0.85rem 1.5rem; letter-spacing: 0.03em;
+  box-shadow: 0 6px 30px rgba(27,58,140,0.35);
+  display: flex; align-items: center; gap: 0.5rem;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+.propose-btn:hover { background: var(--navy-dark); transform: translateY(-2px); box-shadow: 0 10px 40px rgba(27,58,140,0.45); }
+
+/* MODAL */
+.modal-overlay {
+  display: none; position: fixed; inset: 0; z-index: 300;
+  background: rgba(20,45,112,0.6); backdrop-filter: blur(4px);
+  align-items: center; justify-content: center; padding: 1rem;
+}
+.modal-overlay.open { display: flex; }
+.modal {
+  background: white; border-radius: 16px; width: 100%; max-width: 520px;
+  max-height: 90vh; overflow-y: auto;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+  border-top: 4px solid var(--gold);
+}
+.modal-head {
+  padding: 1.75rem 2rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem;
+}
+.modal-head h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.4rem; font-weight: 700; color: var(--navy-dark); }
+.modal-head p { font-size: 0.82rem; color: var(--gray); margin-top: 0.25rem; line-height: 1.5; }
+.modal-close { background: none; border: none; cursor: pointer; color: var(--gray); font-size: 1.4rem; line-height: 1; flex-shrink: 0; padding: 0.1rem; }
+.modal-close:hover { color: var(--text); }
+.modal-body { padding: 1.5rem 2rem 2rem; }
+.form-row { margin-bottom: 1.25rem; }
+.form-row label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--navy-dark); margin-bottom: 0.4rem; letter-spacing: 0.03em; }
+.form-row label .req { color: var(--red); margin-left: 2px; }
+.form-row label .opt { color: var(--gray); font-weight: 400; font-size: 0.72rem; margin-left: 4px; }
+.form-row input, .form-row select, .form-row textarea {
+  width: 100%; padding: 0.75rem 1rem;
+  font-family: 'Source Serif 4', Georgia, serif; font-size: 0.92rem;
+  border: 1.5px solid var(--border); border-radius: 8px;
+  background: white; color: var(--text); outline: none;
+  transition: border-color 0.2s;
+}
+.form-row input:focus, .form-row select:focus, .form-row textarea:focus { border-color: var(--navy); }
+.form-row textarea { resize: vertical; min-height: 90px; }
+.form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-submit {
+  width: 100%; padding: 0.95rem; border: none; border-radius: 3rem; cursor: pointer;
+  background: var(--navy); color: white;
+  font-family: 'Source Serif 4', Georgia, serif; font-size: 0.95rem; font-weight: 600;
+  letter-spacing: 0.03em; transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+.form-submit:hover { background: var(--navy-dark); }
+.form-submit:disabled { opacity: 0.6; cursor: default; }
+.form-msg { text-align: center; padding: 1rem; border-radius: 8px; font-size: 0.88rem; margin-top: 1rem; display: none; }
+.form-msg.success { background: #ECFDF5; color: #065F46; }
+.form-msg.error { background: #FEF2F2; color: #991B1B; }
+
 /* MOBILE */
 @media (max-width: 768px) {
   .site-nav { padding: 0 1.25rem; }
@@ -215,6 +278,69 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
   </div>
   <div class="footer-copy">© 2025 Fèl an Kreyòl Inc. · Tout dwa rezève.</div>
 </footer>
+
+<!-- PROPOSE BUTTON -->
+<button class="propose-btn" onclick="document.getElementById('propose-modal').classList.add('open')">
+  ✍️ Propose yon mo
+</button>
+
+<!-- PROPOSE MODAL -->
+<div class="modal-overlay" id="propose-modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-head">
+      <div>
+        <h2 id="modal-title">Propose yon mo</h2>
+        <p>Soumèt yon mo pou revizyon. Si nou aksepte li, nou pral ajoute l nan diksyonè a.</p>
+      </div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Fèmen">✕</button>
+    </div>
+    <div class="modal-body">
+      <form id="propose-form" onsubmit="submitPropose(event)">
+        <div class="form-row-2">
+          <div class="form-row">
+            <label>Mo <span class="req">*</span></label>
+            <input type="text" name="mot" required placeholder="eks: sitwayèn" autocomplete="off" spellcheck="false">
+          </div>
+          <div class="form-row">
+            <label>Kategori <span class="req">*</span></label>
+            <select name="kat" required>
+              <option value="">Chwazi…</option>
+              <option value="n">n — non</option>
+              <option value="v">v — vèb</option>
+              <option value="adj">adj — adjektif</option>
+              <option value="adv">adv — advèb</option>
+              <option value="prep">prep — prepozisyon</option>
+              <option value="conj">conj — konjonksyon</option>
+              <option value="interj">interj — entèjeksyon</option>
+              <option value="pron">pron — pwonon</option>
+              <option value="det">det — detèminan</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Definisyon an Kreyòl <span class="req">*</span></label>
+          <textarea name="def" required placeholder="Eksplike mo a nan Kreyòl…"></textarea>
+        </div>
+        <div class="form-row">
+          <label>Egzanp <span class="opt">(opsyonèl)</span></label>
+          <input type="text" name="egz" placeholder="Yon fraz egzanp ki itilize mo a…">
+        </div>
+        <div class="form-row-2">
+          <div class="form-row">
+            <label>Non ou <span class="opt">(opsyonèl)</span></label>
+            <input type="text" name="non" placeholder="Jean Pierre">
+          </div>
+          <div class="form-row">
+            <label>Imèl ou <span class="opt">(opsyonèl)</span></label>
+            <input type="email" name="imèl" placeholder="jean@exemple.com">
+          </div>
+        </div>
+        <button type="submit" class="form-submit" id="propose-submit">Voye pwopoziyon →</button>
+        <div class="form-msg" id="propose-msg"></div>
+      </form>
+    </div>
+  </div>
+</div>
 
 <script>
 const DIKSYONE = [
@@ -611,6 +737,49 @@ clearBtn.addEventListener('click', () => {
 
 // Initial render
 renderAll(null, null);
+
+// ── Modal ──
+function closeModal() {
+  document.getElementById('propose-modal').classList.remove('open');
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ── Submit proposal ──
+async function submitPropose(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn = document.getElementById('propose-submit');
+  const msg = document.getElementById('propose-msg');
+  const data = Object.fromEntries(new FormData(form));
+
+  btn.disabled = true;
+  btn.textContent = 'Ap voye…';
+  msg.style.display = 'none';
+
+  try {
+    const res = await fetch('/api/propose', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    const json = await res.json();
+    if (res.ok) {
+      msg.className = 'form-msg success';
+      msg.textContent = 'Mèsi! Pwopoziyon ou resevwa. Nou pral revize li.';
+      msg.style.display = 'block';
+      form.reset();
+    } else {
+      throw new Error(json.error || 'Erè enkoni');
+    }
+  } catch (err) {
+    msg.className = 'form-msg error';
+    msg.textContent = 'Erè: ' + err.message + '. Eseye ankò.';
+    msg.style.display = 'block';
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Voye pwopoziyon →';
+  }
+}
 </script>
 </body>
 </html>
