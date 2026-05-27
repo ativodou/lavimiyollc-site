@@ -358,19 +358,21 @@ async function saveAll() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ password: pw, entries: data }),
     });
-    const json = await res.json();
+    let json;
+    try { json = await res.json(); } catch { json = {}; }
     if (res.ok) {
       dirty = false;
       document.getElementById('dirty-flag').style.display = 'none';
       document.getElementById('last-saved').textContent = new Date().toLocaleTimeString('fr-FR');
       document.querySelectorAll('#admin-body tr').forEach(tr => tr.classList.remove('modified', 'is-new'));
       document.getElementById('entry-count').textContent = data.length + ' mo';
-      showToast('Sove! Vercel ap deploye chanjman yo (~30s).', 'success');
+      showToast('Sove! Vercel ap deploye chanjman yo (~1 min).', 'success');
     } else {
-      throw new Error(json.error || 'Erè enkoni');
+      throw new Error(`HTTP ${res.status}: ${json.error || JSON.stringify(json)}`);
     }
   } catch (err) {
     showToast('Erè: ' + err.message, 'error');
+    console.error('[admin-save]', err);
   }
 
   btn.disabled = false;
