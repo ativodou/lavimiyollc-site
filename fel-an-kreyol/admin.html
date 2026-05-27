@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin · Diksyonè Nasyonal</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy: #1B3A8C; --navy-dark: #142D70; --red: #CC1E1E;
+  --gold: #F5A623; --gold-light: #FFCD4A;
+  --cream: #FAF8F4; --light: #EEF2FB;
+  --white: #FFFFFF; --gray: #6B7280; --border: #E5E0D8; --text: #1A1A1A;
+  --green: #065F46; --green-bg: #ECFDF5;
+  --err: #991B1B; --err-bg: #FEF2F2;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Source Serif 4', Georgia, serif; background: var(--cream); color: var(--text); min-height: 100vh; }
+
+/* LOGIN */
+#login-screen {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 1rem;
+}
+.login-card {
+  background: white; border-radius: 16px; padding: 2.5rem 2rem;
+  box-shadow: 0 20px 60px rgba(27,58,140,0.12);
+  border-top: 4px solid var(--gold); width: 100%; max-width: 380px; text-align: center;
+}
+.login-card img { height: 60px; margin-bottom: 1.25rem; }
+.login-card h1 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--navy-dark); margin-bottom: 0.35rem; }
+.login-card p { font-size: 0.82rem; color: var(--gray); margin-bottom: 1.75rem; }
+.login-card input {
+  width: 100%; padding: 0.85rem 1rem; border: 1.5px solid var(--border); border-radius: 8px;
+  font-family: 'Source Serif 4', serif; font-size: 0.95rem; outline: none; margin-bottom: 0.75rem;
+  transition: border-color 0.2s;
+}
+.login-card input:focus { border-color: var(--navy); }
+.login-card button {
+  width: 100%; padding: 0.9rem; background: var(--navy); color: white; border: none;
+  border-radius: 3rem; cursor: pointer; font-family: 'Source Serif 4', serif;
+  font-size: 0.95rem; font-weight: 600; transition: background 0.2s;
+}
+.login-card button:hover { background: var(--navy-dark); }
+.login-err { color: var(--err); font-size: 0.82rem; margin-top: 0.5rem; display: none; }
+
+/* ADMIN SHELL */
+#admin-screen { display: none; }
+.admin-bar {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--navy); padding: 0 2rem; height: 60px;
+  display: flex; align-items: center; justify-content: space-between;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+}
+.admin-bar-left { display: flex; align-items: center; gap: 1rem; }
+.admin-bar h1 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: white; font-weight: 700; }
+.admin-badge { font-size: 0.68rem; background: var(--gold); color: var(--navy-dark); padding: 0.2rem 0.6rem; border-radius: 2rem; font-weight: 700; letter-spacing: 0.05em; }
+.admin-bar-right { display: flex; align-items: center; gap: 0.75rem; }
+.btn { padding: 0.55rem 1.25rem; border-radius: 3rem; border: none; cursor: pointer; font-family: 'Source Serif 4', serif; font-size: 0.82rem; font-weight: 600; transition: all 0.2s; }
+.btn-save { background: var(--gold); color: var(--navy-dark); }
+.btn-save:hover { background: var(--gold-light); }
+.btn-save:disabled { opacity: 0.5; cursor: default; }
+.btn-add { background: rgba(255,255,255,0.12); color: white; border: 1px solid rgba(255,255,255,0.25); }
+.btn-add:hover { background: rgba(255,255,255,0.2); }
+.btn-logout { background: none; color: rgba(255,255,255,0.55); border: 1px solid rgba(255,255,255,0.15); font-size: 0.75rem; padding: 0.4rem 0.9rem; }
+.btn-logout:hover { color: white; border-color: rgba(255,255,255,0.35); }
+
+/* STATUS BAR */
+.status-bar {
+  padding: 0.6rem 2rem; font-size: 0.8rem;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+  background: var(--light); border-bottom: 1px solid var(--border);
+}
+.status-bar .count { color: var(--navy); font-weight: 600; }
+.status-bar .dirty { color: var(--gold); font-weight: 600; display: none; }
+.search-bar { padding: 0.75rem 2rem; background: white; border-bottom: 1px solid var(--border); }
+.search-bar input {
+  width: 100%; max-width: 480px; padding: 0.65rem 1rem; border: 1.5px solid var(--border);
+  border-radius: 3rem; font-family: 'Source Serif 4', serif; font-size: 0.9rem; outline: none;
+  transition: border-color 0.2s;
+}
+.search-bar input:focus { border-color: var(--navy); }
+
+/* TABLE */
+.table-wrap { padding: 1.5rem 2rem 5rem; max-width: 1100px; margin: 0 auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+thead th {
+  background: var(--navy); color: white; padding: 0.75rem 0.75rem;
+  text-align: left; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em;
+  position: sticky; top: 60px; z-index: 10;
+}
+thead th:last-child { width: 48px; }
+tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+tbody tr:hover { background: #F8F7F5; }
+tbody tr.modified { background: #FFFBEB; }
+tbody tr.is-new { background: #F0FDF4; }
+tbody td { padding: 0.5rem 0.75rem; vertical-align: top; }
+.cell-mot { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--navy-dark); min-width: 120px; }
+.cell-kat { width: 110px; }
+.cell-def { min-width: 280px; }
+.cell-egz { min-width: 200px; color: var(--gray); font-style: italic; }
+
+/* EDITABLE CELLS */
+td[contenteditable="true"] {
+  outline: none; border-radius: 4px; cursor: text;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+td[contenteditable="true"]:focus {
+  background: white; box-shadow: 0 0 0 2px var(--navy);
+}
+select.kat-select {
+  border: none; background: var(--light); color: var(--navy); border-radius: 4px;
+  padding: 0.2rem 0.4rem; font-family: 'Source Serif 4', serif; font-size: 0.82rem;
+  font-weight: 600; cursor: pointer; outline: none; width: 100%;
+}
+select.kat-select:focus { box-shadow: 0 0 0 2px var(--navy); }
+
+/* DELETE BTN */
+.del-btn {
+  background: none; border: none; cursor: pointer; color: #D1D5DB; font-size: 1rem;
+  padding: 0.25rem; border-radius: 4px; transition: color 0.15s;
+  display: flex; align-items: center; justify-content: center;
+}
+.del-btn:hover { color: var(--err); }
+
+/* TOAST */
+.toast {
+  position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%);
+  padding: 0.85rem 1.75rem; border-radius: 3rem; font-size: 0.88rem; font-weight: 600;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2); z-index: 500;
+  transition: opacity 0.3s; pointer-events: none;
+}
+.toast.success { background: var(--green-bg); color: var(--green); }
+.toast.error { background: var(--err-bg); color: var(--err); }
+.toast.hidden { opacity: 0; }
+
+@media (max-width: 768px) {
+  .admin-bar { padding: 0 1rem; }
+  .table-wrap { padding: 1rem 0.5rem 5rem; }
+  thead th, tbody td { padding: 0.5rem 0.4rem; font-size: 0.8rem; }
+  .cell-egz { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login-screen">
+  <div class="login-card">
+    <img src="/images/felankreyol.png" alt="Fèl an Kreyòl">
+    <h1>Admin · Diksyonè</h1>
+    <p>Antre modpas administratè a pou kontinye.</p>
+    <input type="password" id="pw-input" placeholder="Modpas…" onkeydown="if(event.key==='Enter')login()">
+    <button onclick="login()">Antre</button>
+    <div class="login-err" id="login-err">Modpas envalid. Eseye ankò.</div>
+  </div>
+</div>
+
+<!-- ADMIN -->
+<div id="admin-screen">
+  <div class="admin-bar">
+    <div class="admin-bar-left">
+      <h1>Diksyonè · Admin</h1>
+      <span class="admin-badge">PRIVE</span>
+    </div>
+    <div class="admin-bar-right">
+      <span class="dirty" id="dirty-flag">● Chanjman poko sove</span>
+      <button class="btn btn-add" onclick="addEntry()">+ Ajoute mo</button>
+      <button class="btn btn-save" id="save-btn" onclick="saveAll()">Sove chanjman</button>
+      <button class="btn btn-logout" onclick="logout()">Soti</button>
+    </div>
+  </div>
+
+  <div class="status-bar">
+    <span class="count" id="entry-count">— mo</span>
+    <span>Dènye sove: <span id="last-saved">—</span></span>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="admin-search" placeholder="Filtre mo…" oninput="filterTable()" autocomplete="off">
+  </div>
+
+  <div class="table-wrap">
+    <table id="admin-table">
+      <thead>
+        <tr>
+          <th>Mo</th>
+          <th>Kat</th>
+          <th>Definisyon</th>
+          <th>Egzanp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="admin-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="toast hidden" id="toast"></div>
+
+<script>
+const KATS = ['n','v','adj','adv','prep','conj','interj','pron','det'];
+let entries = [];
+let pw = '';
+let dirty = false;
+
+// ── Auth ──
+async function login() {
+  const input = document.getElementById('pw-input').value.trim();
+  if (!input) return;
+  const res = await fetch('/api/admin-auth', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ password: input }),
+  });
+  if (res.ok) {
+    pw = input;
+    sessionStorage.setItem('admin_pw', pw);
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('admin-screen').style.display = 'block';
+    loadEntries();
+  } else {
+    document.getElementById('login-err').style.display = 'block';
+    document.getElementById('pw-input').value = '';
+  }
+}
+
+function logout() {
+  sessionStorage.removeItem('admin_pw');
+  location.reload();
+}
+
+// ── Load ──
+async function loadEntries() {
+  const r = await fetch('/data/diksyone.json?v=' + Date.now());
+  entries = await r.json();
+  entries.sort((a, b) => a.mot.localeCompare(b.mot));
+  renderTable(entries);
+  document.getElementById('entry-count').textContent = entries.length + ' mo';
+}
+
+// ── Render ──
+function renderTable(data) {
+  const body = document.getElementById('admin-body');
+  body.innerHTML = '';
+  data.forEach((e, i) => body.appendChild(makeRow(e, i)));
+}
+
+function makeRow(e, idx) {
+  const tr = document.createElement('tr');
+  tr.dataset.idx = idx;
+
+  const motTd = document.createElement('td');
+  motTd.className = 'cell-mot';
+  motTd.contentEditable = true;
+  motTd.textContent = e.mot;
+  motTd.oninput = () => markDirty(tr);
+
+  const katTd = document.createElement('td');
+  katTd.className = 'cell-kat';
+  const sel = document.createElement('select');
+  sel.className = 'kat-select';
+  KATS.forEach(k => {
+    const opt = document.createElement('option');
+    opt.value = k; opt.textContent = k;
+    if (k === e.kat) opt.selected = true;
+    sel.appendChild(opt);
+  });
+  sel.onchange = () => markDirty(tr);
+  katTd.appendChild(sel);
+
+  const defTd = document.createElement('td');
+  defTd.className = 'cell-def';
+  defTd.contentEditable = true;
+  defTd.textContent = e.def;
+  defTd.oninput = () => markDirty(tr);
+
+  const egzTd = document.createElement('td');
+  egzTd.className = 'cell-egz';
+  egzTd.contentEditable = true;
+  egzTd.textContent = e.egz || '';
+  egzTd.oninput = () => markDirty(tr);
+
+  const delTd = document.createElement('td');
+  const delBtn = document.createElement('button');
+  delBtn.className = 'del-btn';
+  delBtn.title = 'Efase mo sa a';
+  delBtn.innerHTML = '🗑';
+  delBtn.onclick = () => {
+    if (confirm(`Efase « ${e.mot} »?`)) { tr.remove(); markDirty(); }
+  };
+  delTd.appendChild(delBtn);
+
+  tr.append(motTd, katTd, defTd, egzTd, delTd);
+  return tr;
+}
+
+function markDirty(tr) {
+  dirty = true;
+  if (tr) tr.classList.add('modified');
+  document.getElementById('dirty-flag').style.display = 'inline';
+}
+
+// ── Filter ──
+function filterTable() {
+  const q = document.getElementById('admin-search').value.toLowerCase();
+  document.querySelectorAll('#admin-body tr').forEach(tr => {
+    const mot = tr.cells[0]?.textContent.toLowerCase() || '';
+    const def = tr.cells[2]?.textContent.toLowerCase() || '';
+    tr.style.display = (!q || mot.includes(q) || def.includes(q)) ? '' : 'none';
+  });
+}
+
+// ── Add entry ──
+function addEntry() {
+  const e = { mot: 'nouvo-mo', kat: 'n', def: 'Definisyon…', egz: '' };
+  const tr = makeRow(e, -1);
+  tr.classList.add('is-new');
+  document.getElementById('admin-body').prepend(tr);
+  tr.cells[0].focus();
+  const range = document.createRange();
+  range.selectNodeContents(tr.cells[0]);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  markDirty(tr);
+}
+
+// ── Save ──
+async function saveAll() {
+  const btn = document.getElementById('save-btn');
+  btn.disabled = true;
+  btn.textContent = 'Ap sove…';
+
+  const rows = document.querySelectorAll('#admin-body tr');
+  const data = [];
+  rows.forEach(tr => {
+    const mot = tr.cells[0]?.textContent.trim();
+    const kat = tr.cells[1]?.querySelector('select')?.value;
+    const def = tr.cells[2]?.textContent.trim();
+    const egz = tr.cells[3]?.textContent.trim();
+    if (mot && kat && def) {
+      const entry = { mot, kat, def };
+      if (egz) entry.egz = egz;
+      data.push(entry);
+    }
+  });
+
+  data.sort((a, b) => a.mot.localeCompare(b.mot));
+
+  try {
+    const res = await fetch('/api/admin-save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password: pw, entries: data }),
+    });
+    const json = await res.json();
+    if (res.ok) {
+      dirty = false;
+      document.getElementById('dirty-flag').style.display = 'none';
+      document.getElementById('last-saved').textContent = new Date().toLocaleTimeString('fr-FR');
+      document.querySelectorAll('#admin-body tr').forEach(tr => tr.classList.remove('modified', 'is-new'));
+      document.getElementById('entry-count').textContent = data.length + ' mo';
+      showToast('Sove! Vercel ap deploye chanjman yo (~30s).', 'success');
+    } else {
+      throw new Error(json.error || 'Erè enkoni');
+    }
+  } catch (err) {
+    showToast('Erè: ' + err.message, 'error');
+  }
+
+  btn.disabled = false;
+  btn.textContent = 'Sove chanjman';
+}
+
+// ── Toast ──
+function showToast(msg, type) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast ' + type;
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.classList.add('hidden'), 4000);
+}
+
+// ── Init ──
+window.addEventListener('load', () => {
+  const saved = sessionStorage.getItem('admin_pw');
+  if (saved) {
+    pw = saved;
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('admin-screen').style.display = 'block';
+    loadEntries();
+  }
+  document.getElementById('pw-input').focus();
+});
+
+window.addEventListener('beforeunload', e => {
+  if (dirty) { e.preventDefault(); e.returnValue = ''; }
+});
+</script>
+</body>
+</html>
