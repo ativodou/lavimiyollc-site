@@ -46,10 +46,26 @@
     "egz": "Timoun yo ale lekòl chak maten."
   },
   {
+    "mot": "an sante",
+    "kat": "adj",
+    "def": "ki gen bon sante",
+    "egz": "Tout fanmi an an sante.",
+    "sin": "byen",
+    "ant": "malad",
+    "tem": "kò"
+  },
+  {
     "mot": "anbrase",
     "kat": "v",
     "def": "Sere yon moun nan bra ou pou montre amou, byenveni, oswa kè kontan.",
     "egz": "Li anbrase manman li lè li tounen."
+  },
+  {
+    "mot": "andikape",
+    "kat": "adj",
+    "def": "ki gen yon pwoblèm fizik",
+    "egz": "Li andikape men li travay byen.",
+    "tem": "kò"
   },
   {
     "mot": "ankò",
@@ -111,6 +127,22 @@
     "egz": "Li atann otobis la pandan yon èdtan."
   },
   {
+    "mot": "atè",
+    "kat": "n",
+    "def": "tib ki pote san soti nan kè",
+    "egz": "Atè li bouche.",
+    "ant": "ven",
+    "tem": "kò"
+  },
+  {
+    "mot": "avèg",
+    "kat": "adj",
+    "def": "ki pa ka wè",
+    "egz": "Granpapa m avèg.",
+    "ant": "wè",
+    "tem": "kò"
+  },
+  {
     "mot": "avèk",
     "kat": "prep",
     "def": "Ansanm ak; akonpaye pa; ki gen.",
@@ -141,18 +173,6 @@
     "egz": "Li bay pitit li yon kado."
   },
   {
-    "mot": "bèl",
-    "kat": "adj",
-    "def": "Ki gen aparans ki fè plezi pou je; ki agreyab pou gade.",
-    "egz": "Jaden an bèl anpil."
-  },
-  {
-    "mot": "bèt",
-    "kat": "n",
-    "def": "Tout kreyati vivan ki pa moun; animal.",
-    "egz": "Gen anpil bèt nan bwa a."
-  },
-  {
     "mot": "bezwen",
     "kat": "n",
     "def": "Sa ki nesesè pou viv; manke yon bagay enpòtan; nesesite.",
@@ -171,16 +191,18 @@
     "egz": "Syèl la bèl ble jodi a."
   },
   {
+    "mot": "blese",
+    "kat": "v",
+    "def": "fè domaj sou kò yon moun",
+    "egz": "Li blese pye l.",
+    "ant": "geri",
+    "tem": "kò"
+  },
+  {
     "mot": "bliye",
     "kat": "v",
     "def": "Pa sonje ankò; pèdi memwa yon bagay.",
     "egz": "Li bliye non zanmi li."
-  },
-  {
-    "mot": "bò",
-    "kat": "prep",
-    "def": "Pre; ozalantou; bò kote.",
-    "egz": "Li rete bò lanmè a."
   },
   {
     "mot": "bon",
@@ -195,10 +217,34 @@
     "egz": "Panse avan ou ouvri bouch ou."
   },
   {
+    "mot": "bouch",
+    "kat": "n",
+    "def": "twou nan figi pou manje ak pale",
+    "egz": "Bouch mwen sèk.",
+    "tem": "kò"
+  },
+  {
+    "mot": "bouke",
+    "kat": "adj",
+    "def": "fatige anpil",
+    "egz": "Pitit la bouke.",
+    "sin": "fatige",
+    "ant": "frè",
+    "tem": "kò"
+  },
+  {
     "mot": "bra",
     "kat": "n",
     "def": "Pati kò ki konekte zepòl ak men.",
     "egz": "Li kase bra li lè li tonbe."
+  },
+  {
+    "mot": "bra",
+    "kat": "n",
+    "def": "manm anwo kò ak men",
+    "egz": "Bra m kase.",
+    "ant": "janm",
+    "tem": "kò"
   },
   {
     "mot": "bwat",
@@ -211,6 +257,88 @@
     "kat": "v",
     "def": "Avale yon likid; pran dlo oswa bwason nan bouch.",
     "egz": "Bwè dlo lè ou swaf."
+  },
+  {
+    "mot": "bwè",
+    "kat": "v",
+    "def": "pran likid nan bouch",
+    "egz": "Mwen bwè dlo.",
+    "tem": "kò"
+  },
+  {
+    "mot": "byennèt",
+    "kat": "n",
+    "def": "lè kò byen",
+    "egz": "Byennèt mwen enpòtan.",
+    "ant": "doulè",
+    "tem": "kò"
+  },
+  {
+    "mot": "bèbè",
+    "kat": "adj",
+    "def": "ki pa ka pale",
+    "egz": "Bèbè a kominike ak siy.",
+    "ant": "pale",
+    "tem": "kò"
+  },
+  {
+    "mot": "bèl",
+    "kat": "adj",
+    "def": "Ki gen aparans ki fè plezi pou je; ki agreyab pou gade.",
+    "egz": "Jaden an bèl anpil."
+  },
+  {
+    "mot": "bèl",
+    "kat": "adj",
+    "def": "ki agreyab pou je",
+    "egz": "Li bèl anpil.",
+    "sin": "jenti",
+    "ant": "lèd",
+    "tem": "kò"
+  },
+  {
+    "mot": "bèlsè",
+    "kat": "n",
+    "def": "sè mari oswa madanm",
+    "egz": "Bèlsè m ap pase aswè a.",
+    "ant": "bòfrè",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "bèlè",
+    "kat": "n",
+    "def": "manman mari oswa madanm",
+    "egz": "Bèlè mwen bon moun.",
+    "ant": "bòpè",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "bèt",
+    "kat": "n",
+    "def": "Tout kreyati vivan ki pa moun; animal.",
+    "egz": "Gen anpil bèt nan bwa a."
+  },
+  {
+    "mot": "bò",
+    "kat": "prep",
+    "def": "Pre; ozalantou; bò kote.",
+    "egz": "Li rete bò lanmè a."
+  },
+  {
+    "mot": "bòfrè",
+    "kat": "n",
+    "def": "frè mari oswa madanm",
+    "egz": "Bòfrè m ap travay nan biwo.",
+    "ant": "bèlsè",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "bòpè",
+    "kat": "n",
+    "def": "papa mari oswa madanm",
+    "egz": "Bòpè m fè manje.",
+    "ant": "bèlè",
+    "tem": "fanmi"
   },
   {
     "mot": "chak",
@@ -237,16 +365,39 @@
     "egz": "Chat la trape sourit la."
   },
   {
-    "mot": "chèche",
+    "mot": "cheve",
+    "kat": "n",
+    "def": "fil ki pouse sou tèt",
+    "egz": "Cheve l long.",
+    "sin": "grenn cheve",
+    "tem": "kò"
+  },
+  {
+    "mot": "cheviy",
+    "kat": "n",
+    "def": "jwen anba janm devan pye",
+    "egz": "Cheviy mwen tòde.",
+    "tem": "kò"
+  },
+  {
+    "mot": "chita",
     "kat": "v",
-    "def": "Fè efò pou jwenn oswa dekouvri yon moun oswa bagay.",
-    "egz": "Li chèche kle li toupatou."
+    "def": "mete dèyè sou yon bagay",
+    "egz": "Chita sou chèz la.",
+    "ant": "kanpe",
+    "tem": "kò"
   },
   {
     "mot": "cho",
     "kat": "adj",
     "def": "Ki gen tanperati wo; ki ka boule; opoze ak frèt.",
     "egz": "Soup la cho anpil."
+  },
+  {
+    "mot": "chèche",
+    "kat": "v",
+    "def": "Fè efò pou jwenn oswa dekouvri yon moun oswa bagay.",
+    "egz": "Li chèche kle li toupatou."
   },
   {
     "mot": "dako",
@@ -261,6 +412,13 @@
     "egz": "Bwòse dan ou chak maten."
   },
   {
+    "mot": "dan",
+    "kat": "n",
+    "def": "ti zo nan bouch pou kraze manje",
+    "egz": "Dan mwen blan.",
+    "tem": "kò"
+  },
+  {
     "mot": "danse",
     "kat": "v",
     "def": "Bougé kò yon fason ritmik ak mizik pou eksprime kè kontan.",
@@ -271,6 +429,14 @@
     "kat": "prep",
     "def": "Kòmanse nan yon moman patikilye rive jiskaprezan.",
     "egz": "Li travay depi diminan bonmaten."
+  },
+  {
+    "mot": "desandan",
+    "kat": "n",
+    "def": "moun ki soti nan menm fanmi ki ap vini",
+    "egz": "Yo se desandan Desalin.",
+    "ant": "zansèt",
+    "tem": "fanmi"
   },
   {
     "mot": "devan",
@@ -309,10 +475,12 @@
     "egz": "Nou bezwen dlo pou viv."
   },
   {
-    "mot": "dòmi",
-    "kat": "v",
-    "def": "Pran yon eta repo natirèl kote kò ak lespri anrepo; fèmen je.",
-    "egz": "Timoun yo dòmi bonè aswè."
+    "mot": "do",
+    "kat": "n",
+    "def": "pati dèyè kò",
+    "egz": "Do mwen ap fè mwen mal.",
+    "ant": "vant",
+    "tem": "kò"
   },
   {
     "mot": "don",
@@ -321,10 +489,50 @@
     "egz": "Li fè yon don pou lekòl la."
   },
   {
+    "mot": "doulè",
+    "kat": "n",
+    "def": "yon move santiman nan kò",
+    "egz": "Mwen gen doulè nan tèt.",
+    "sin": "fè mal",
+    "ant": "byennèt",
+    "tem": "kò"
+  },
+  {
     "mot": "dwèt",
     "kat": "n",
     "def": "Chak nan senk pati long ki soti nan men oswa pye moun.",
     "egz": "Li kase yon dwèt lè li tonbe."
+  },
+  {
+    "mot": "dwèt",
+    "kat": "n",
+    "def": "5 ti manm sou men",
+    "egz": "Dwèt mwen pike.",
+    "tem": "kò"
+  },
+  {
+    "mot": "dèyè",
+    "kat": "n",
+    "def": "pati arye kote nou chita",
+    "egz": "Dèyè bebe a wouj.",
+    "sin": "fès",
+    "ant": "devan",
+    "tem": "kò"
+  },
+  {
+    "mot": "dòmi",
+    "kat": "v",
+    "def": "Pran yon eta repo natirèl kote kò ak lespri anrepo; fèmen je.",
+    "egz": "Timoun yo dòmi bonè aswè."
+  },
+  {
+    "mot": "dòmi",
+    "kat": "v",
+    "def": "fèmen je pou repoze",
+    "egz": "Bebe a dòmi.",
+    "sin": "kouche",
+    "ant": "leve; reveye",
+    "tem": "kò"
   },
   {
     "mot": "edike",
@@ -351,10 +559,33 @@
     "egz": "Ti fi a entelijan anpil lekòl."
   },
   {
+    "mot": "entesten",
+    "kat": "n",
+    "def": "trip nan vant",
+    "egz": "Entesten l pa byen.",
+    "sin": "trip",
+    "tem": "kò"
+  },
+  {
+    "mot": "epòl",
+    "kat": "n",
+    "def": "pati anwo bra",
+    "egz": "Epòl mwen fache.",
+    "sin": "zepòl",
+    "tem": "kò"
+  },
+  {
     "mot": "espwa",
     "kat": "n",
     "def": "Santiman pozitif ke yon bagay bon pral rive; konfyans nan avni.",
     "egz": "Edikasyon bay pitit espwa."
+  },
+  {
+    "mot": "estomak",
+    "kat": "n",
+    "def": "ògàn ki dijere manje",
+    "egz": "Estomak mwen vid.",
+    "tem": "kò"
   },
   {
     "mot": "etranje",
@@ -363,10 +594,27 @@
     "egz": "Kèk etranje vizite Ayiti."
   },
   {
+    "mot": "etranje",
+    "kat": "n",
+    "def": "moun ki pa fanmi",
+    "egz": "Yon etranje frape pòt la.",
+    "ant": "fanmi; zanmi",
+    "tem": "fanmi"
+  },
+  {
     "mot": "fache",
     "kat": "adj",
     "def": "Ki gen kòlè; ki irité akòz yon bagay ki move.",
     "egz": "Li fache paske li pa jwenn plas li."
+  },
+  {
+    "mot": "fanm",
+    "kat": "n",
+    "def": "yon fi adilt",
+    "egz": "Fanm yo ap travay.",
+    "sin": "fi",
+    "ant": "gason",
+    "tem": "fanmi"
   },
   {
     "mot": "fanmi",
@@ -375,16 +623,38 @@
     "egz": "Fanmi li rete nan nò Ayiti."
   },
   {
-    "mot": "fè",
-    "kat": "v",
-    "def": "Reyalize yon aksyon; kreye; pwodui; ekzekite yon bagay.",
-    "egz": "Li fè travay li chak jou."
+    "mot": "fanmi",
+    "kat": "n",
+    "def": "tout moun ki gen menm san",
+    "egz": "Fanmi mwen rete Pòtoprens.",
+    "sin": "fanmiyak",
+    "ant": "etranje",
+    "tem": "fanmi"
   },
   {
-    "mot": "fèt",
+    "mot": "fanmi elwaye",
     "kat": "n",
-    "def": "Selebrasyon espesyal pou yon okasyon enpòtan; anivèsè.",
-    "egz": "Yo fè yon gwo fèt pou premye janvye."
+    "def": "fanmi nan distans (kouzen, tonton...)",
+    "egz": "Fanmi elwaye nou ap viv lòt bò.",
+    "ant": "fanmi pwòch",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "fanmi pwòch",
+    "kat": "n",
+    "def": "fanmi imedyat (manman, papa, frè, sè)",
+    "egz": "Fanmi pwòch mwen vin pou anivèsè a.",
+    "ant": "fanmi elwaye",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "fatige",
+    "kat": "adj",
+    "def": "ki san fòs paske l travay anpil",
+    "egz": "Mwen fatige aswè a.",
+    "sin": "bouke",
+    "ant": "frè",
+    "tem": "kò"
   },
   {
     "mot": "fi",
@@ -393,10 +663,35 @@
     "egz": "Li gen de fi ak yon gason."
   },
   {
+    "mot": "fi",
+    "kat": "n",
+    "def": "yon fanm",
+    "egz": "Fi sa a ap chante.",
+    "sin": "fanm",
+    "ant": "gason",
+    "tem": "fanmi"
+  },
+  {
     "mot": "figi",
     "kat": "n",
     "def": "Pati devan tèt moun kote je, nen, bouch, ak zòrèy ye.",
     "egz": "Li gen yon bèl figi."
+  },
+  {
+    "mot": "figi",
+    "kat": "n",
+    "def": "devan tèt ak je, nen, bouch",
+    "egz": "Figi l klere.",
+    "sin": "vizaj",
+    "tem": "kò"
+  },
+  {
+    "mot": "filyèl",
+    "kat": "n",
+    "def": "moun yon konpè oswa makomè ye pou pitit yo",
+    "egz": "Mwen se filyèl Mari.",
+    "ant": "konpè",
+    "tem": "fanmi"
   },
   {
     "mot": "fin",
@@ -411,16 +706,26 @@
     "egz": "Jaden an plen flè wouj."
   },
   {
-    "mot": "fòs",
-    "kat": "n",
-    "def": "Pouvwa fizik; enèji ak kapasite pou fè travay oswa goumen.",
-    "egz": "Travay di bay moun fòs."
-  },
-  {
     "mot": "frè",
     "kat": "n",
     "def": "Gason ki gen menm manman oswa papa ak ou.",
     "egz": "Li gen de frè ak yon sè."
+  },
+  {
+    "mot": "frè",
+    "kat": "n",
+    "def": "gason ki gen menm paran ak yon moun",
+    "egz": "Frè m ap etidye.",
+    "ant": "sè",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "frèch",
+    "kat": "adj",
+    "def": "ki pa fatige",
+    "egz": "Mwen frèch lematen.",
+    "ant": "fatige",
+    "tem": "kò"
   },
   {
     "mot": "frèt",
@@ -435,10 +740,67 @@
     "egz": "Sa fè dezyèm fwa li rate egzamen an."
   },
   {
+    "mot": "fwa",
+    "kat": "n",
+    "def": "ògàn ki netwaye san tou",
+    "egz": "Fwa mwen fache.",
+    "tem": "kò"
+  },
+  {
     "mot": "fwi",
     "kat": "n",
     "def": "Pati yon plant ki gen grenn ki ka manje; mango, bannann, sitron.",
     "egz": "Manje fwi bon pou sante ou."
+  },
+  {
+    "mot": "fyanse",
+    "kat": "n",
+    "def": "moun ou pwomèt pou marye",
+    "egz": "Fyanse m bèl anpil.",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "fè",
+    "kat": "v",
+    "def": "Reyalize yon aksyon; kreye; pwodui; ekzekite yon bagay.",
+    "egz": "Li fè travay li chak jou."
+  },
+  {
+    "mot": "fèb",
+    "kat": "adj",
+    "def": "ki pa gen fòs",
+    "egz": "Li fèb apre maladi a.",
+    "ant": "fò",
+    "tem": "kò"
+  },
+  {
+    "mot": "fès",
+    "kat": "n",
+    "def": "dèyè",
+    "egz": "Fès yo gwo.",
+    "sin": "dèyè",
+    "tem": "kò"
+  },
+  {
+    "mot": "fèt",
+    "kat": "n",
+    "def": "Selebrasyon espesyal pou yon okasyon enpòtan; anivèsè.",
+    "egz": "Yo fè yon gwo fèt pou premye janvye."
+  },
+  {
+    "mot": "fò",
+    "kat": "adj",
+    "def": "ki gen anpil fòs",
+    "egz": "Bra l fò.",
+    "sin": "djanm",
+    "ant": "fèb",
+    "tem": "kò"
+  },
+  {
+    "mot": "fòs",
+    "kat": "n",
+    "def": "Pouvwa fizik; enèji ak kapasite pou fè travay oswa goumen.",
+    "egz": "Travay di bay moun fòs."
   },
   {
     "mot": "gade",
@@ -453,6 +815,15 @@
     "egz": "Li gen twa gason ak de fi."
   },
   {
+    "mot": "gason",
+    "kat": "n",
+    "def": "yon mal",
+    "egz": "Gason an ap kouri.",
+    "sin": "nèg",
+    "ant": "fi",
+    "tem": "fanmi"
+  },
+  {
     "mot": "gato",
     "kat": "n",
     "def": "Manje dous ki fèt pou selebrasyon; espesyalman fèt anivèsè.",
@@ -465,10 +836,26 @@
     "egz": "Li gen yon bèl kay."
   },
   {
+    "mot": "geri",
+    "kat": "v",
+    "def": "soti malad pou byen ankò",
+    "egz": "Pitit la geri kounye a.",
+    "ant": "malad",
+    "tem": "kò"
+  },
+  {
     "mot": "glise",
     "kat": "v",
     "def": "Koule fasil sou yon sifas lis; tonbe akòz sifas mouye.",
     "egz": "Fè atansyon pou pa glise sou wout mouye a."
+  },
+  {
+    "mot": "gra",
+    "kat": "adj",
+    "def": "ki gen anpil vyann",
+    "egz": "Bèf la gra.",
+    "ant": "mèg",
+    "tem": "kò"
   },
   {
     "mot": "grandi",
@@ -477,10 +864,43 @@
     "egz": "Pitit la grandi vit."
   },
   {
+    "mot": "granfanmi",
+    "kat": "n",
+    "def": "tout fanmi an",
+    "egz": "Granfanmi nou rasanble pou Nwèl.",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "granfrè",
+    "kat": "n",
+    "def": "frè ki pi gran",
+    "egz": "Granfrè m ap pwoteje m.",
+    "ant": "tifrè",
+    "tem": "fanmi"
+  },
+  {
     "mot": "grangou",
     "kat": "n",
     "def": "Bezwen manje; sansasyon fizik lè ou pa manje pandan lontan.",
     "egz": "Timoun yo grangou lekòl."
+  },
+  {
+    "mot": "granmanman",
+    "kat": "n",
+    "def": "manman manman oswa papa",
+    "egz": "Granmanman m fè gato.",
+    "sin": "grann; mèmè",
+    "ant": "granpapa",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "granmoun",
+    "kat": "n",
+    "def": "yon moun ki gen anpil ane",
+    "egz": "Granmoun yo dwe respekte.",
+    "sin": "adilt",
+    "ant": "timoun",
+    "tem": "fanmi"
   },
   {
     "mot": "grann",
@@ -489,16 +909,48 @@
     "egz": "Grann li kont istwa chak swa."
   },
   {
+    "mot": "granpapa",
+    "kat": "n",
+    "def": "papa manman oswa papa",
+    "egz": "Granpapa m gen katreven ane.",
+    "sin": "granpè; pèpè",
+    "ant": "granmanman",
+    "tem": "fanmi"
+  },
+  {
     "mot": "granpè",
     "kat": "n",
     "def": "Papa papa ou oswa papa manman ou; granpè.",
     "egz": "Granpè li te yon pechè."
   },
   {
+    "mot": "gransè",
+    "kat": "n",
+    "def": "sè ki pi gran",
+    "egz": "Gransè m fè bon manje.",
+    "ant": "tisè",
+    "tem": "fanmi"
+  },
+  {
     "mot": "gwo",
     "kat": "adj",
     "def": "Ki gen gwosè, wotè, oswa kantite ki depase nòmal; opoze ak piti.",
     "egz": "Se yon gwo pwoblèm."
+  },
+  {
+    "mot": "gwo",
+    "kat": "adj",
+    "def": "ki gen anpil volim",
+    "egz": "Li gwo anpil.",
+    "ant": "piti",
+    "tem": "kò"
+  },
+  {
+    "mot": "gòj",
+    "kat": "n",
+    "def": "anndan kou kote nou vale",
+    "egz": "Gòj mwen wouj.",
+    "tem": "kò"
   },
   {
     "mot": "isi",
@@ -519,16 +971,57 @@
     "egz": "Li gen gwo janm ki fò."
   },
   {
+    "mot": "janm",
+    "kat": "n",
+    "def": "manm anba kò pou mache",
+    "egz": "Janm mwen ap fè mwen mal.",
+    "ant": "bra",
+    "tem": "kò"
+  },
+  {
     "mot": "je",
     "kat": "n",
     "def": "Ògàn vizyon; pati nan figi ki pèmèt ou wè.",
     "egz": "Li gen bèl je mawon."
   },
   {
-    "mot": "jèn",
+    "mot": "je",
+    "kat": "n",
+    "def": "ògàn pou wè",
+    "egz": "Je mwen ap fè mwen mal.",
+    "sin": "zye",
+    "tem": "kò"
+  },
+  {
+    "mot": "jenerasyon",
+    "kat": "n",
+    "def": "yon gwoup laj nan fanmi",
+    "egz": "Twa jenerasyon ansanm nan tab la.",
+    "sin": "epòk",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "jenn",
     "kat": "adj",
-    "def": "Ki pa gen anpil ane; ki nan premye peryòd lavi; opoze ak vye.",
-    "egz": "Li se yon pwofesè jèn."
+    "def": "ki nan jenès",
+    "egz": "Li jenn toujou.",
+    "ant": "vye",
+    "tem": "kò"
+  },
+  {
+    "mot": "jenou",
+    "kat": "n",
+    "def": "jwen nan mitan janm",
+    "egz": "Jenou mwen ap fè mwen mal.",
+    "tem": "kò"
+  },
+  {
+    "mot": "jimo",
+    "kat": "n",
+    "def": "menm bagay ak marasa",
+    "egz": "Yo se jimo idantik.",
+    "sin": "marasa",
+    "tem": "fanmi"
   },
   {
     "mot": "jis",
@@ -549,6 +1042,29 @@
     "egz": "Soup joumou se souvni endepandans."
   },
   {
+    "mot": "jèn",
+    "kat": "adj",
+    "def": "Ki pa gen anpil ane; ki nan premye peryòd lavi; opoze ak vye.",
+    "egz": "Li se yon pwofesè jèn."
+  },
+  {
+    "mot": "kanmarad",
+    "kat": "n",
+    "def": "yon zanmi pwòch",
+    "egz": "Kanmarad mwen ap travay avè m.",
+    "sin": "zanmi",
+    "ant": "lènmi",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "kanpe",
+    "kat": "v",
+    "def": "rete dwat sou pye",
+    "egz": "Kanpe la!",
+    "ant": "chita; tonbe",
+    "tem": "kò"
+  },
+  {
     "mot": "kapab",
     "kat": "adj",
     "def": "Ki gen kapasite, pouvwa, oswa chans pou fè yon bagay.",
@@ -559,18 +1075,6 @@
     "kat": "n",
     "def": "Bilding kote moun viv; abri, rezidans, lakay.",
     "egz": "Kay yo piti men yo pwòp."
-  },
-  {
-    "mot": "kè",
-    "kat": "n",
-    "def": "Ògàn nan kò ki ponpe san; tou vle di santiman ak emosyon.",
-    "egz": "Li gen bon kè."
-  },
-  {
-    "mot": "kè kontan",
-    "kat": "n",
-    "def": "Santiman plezi ak lajwa; emosyon pozitif ki sòti nan kè.",
-    "egz": "Kè kontan se sante."
   },
   {
     "mot": "kenbe",
@@ -603,10 +1107,12 @@
     "egz": "Dlo a klè tankou kristal."
   },
   {
-    "mot": "kò",
+    "mot": "kolòn",
     "kat": "n",
-    "def": "Fizik yon moun oswa yon bèt; tronk ak tout pati yo.",
-    "egz": "Fòk ou pran swen kò ou."
+    "def": "zo do a",
+    "egz": "Kolòn li dwat.",
+    "sin": "rachi",
+    "tem": "kò"
   },
   {
     "mot": "konn",
@@ -615,16 +1121,87 @@
     "egz": "Li konn pale twa lang."
   },
   {
+    "mot": "konpè",
+    "kat": "n",
+    "def": "papa filyèl yon moun",
+    "egz": "Konpè m ap pase wè nou.",
+    "sin": "parenn",
+    "ant": "filyèl",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "kou",
+    "kat": "n",
+    "def": "pati ant tèt ak kò",
+    "egz": "Kou m fè mwen mal.",
+    "tem": "kò"
+  },
+  {
+    "mot": "kouche",
+    "kat": "v",
+    "def": "mete kò sou yon sifas",
+    "egz": "Mwen kouche pou dòmi.",
+    "ant": "leve",
+    "tem": "kò"
+  },
+  {
+    "mot": "koud",
+    "kat": "n",
+    "def": "jwen nan mitan bra",
+    "egz": "Koud mwen ap fè mwen mal.",
+    "tem": "kò"
+  },
+  {
     "mot": "kouri",
     "kat": "v",
     "def": "Deplase rapidman pye; pi vit pase mache.",
     "egz": "Elèv yo kouri deyò lè lekòl fini."
   },
   {
+    "mot": "kouri",
+    "kat": "v",
+    "def": "deplase rapidman ak pye",
+    "egz": "Li kouri vit.",
+    "ant": "mache",
+    "tem": "kò"
+  },
+  {
+    "mot": "kout",
+    "kat": "adj",
+    "def": "ki pa wo",
+    "egz": "Li kout.",
+    "ant": "wo; long",
+    "tem": "kò"
+  },
+  {
     "mot": "kouzen",
     "kat": "n",
     "def": "Pitit tonton oswa matant; manb fanmi nan menm jenerasyon.",
     "egz": "Kouzen mwen rete Pòtoprens."
+  },
+  {
+    "mot": "kouzen",
+    "kat": "n",
+    "def": "pitit tonton oswa matant (gason)",
+    "egz": "Kouzen m vini wè nou.",
+    "ant": "kouzin",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "kouzin",
+    "kat": "n",
+    "def": "pitit tonton oswa matant (fi)",
+    "egz": "Kouzin mwen marye yè.",
+    "ant": "kouzen",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "krache",
+    "kat": "v",
+    "def": "voye dlo bouch deyò",
+    "egz": "Pa krache atè.",
+    "ant": "vale",
+    "tem": "kò"
   },
   {
     "mot": "kreyòl",
@@ -639,16 +1216,57 @@
     "egz": "Li kriye lè li tande nouvèl la."
   },
   {
-    "mot": "kwè",
+    "mot": "kriye",
     "kat": "v",
-    "def": "Aksepte yon bagay kòm vre; gen konfyans; fè konfyans.",
-    "egz": "Li kwè nan bondye."
+    "def": "lè larim koule",
+    "egz": "Bebe a kriye anpil.",
+    "sin": "rèle",
+    "ant": "ri",
+    "tem": "kò"
+  },
+  {
+    "mot": "kuis",
+    "kat": "n",
+    "def": "pati anwo janm",
+    "egz": "Kuis mwen fò.",
+    "tem": "kò"
   },
   {
     "mot": "kwit",
     "kat": "v",
     "def": "Prepare manje avèk chalè; bouyi, fri, oswa griyad.",
     "egz": "Manman li kwit bon manje."
+  },
+  {
+    "mot": "kwè",
+    "kat": "v",
+    "def": "Aksepte yon bagay kòm vre; gen konfyans; fè konfyans.",
+    "egz": "Li kwè nan bondye."
+  },
+  {
+    "mot": "kè",
+    "kat": "n",
+    "def": "Ògàn nan kò ki ponpe san; tou vle di santiman ak emosyon.",
+    "egz": "Li gen bon kè."
+  },
+  {
+    "mot": "kè",
+    "kat": "n",
+    "def": "ògàn ki bat ki bay lavi",
+    "egz": "Kè mwen ap bat fò.",
+    "tem": "kò"
+  },
+  {
+    "mot": "kè kontan",
+    "kat": "n",
+    "def": "Santiman plezi ak lajwa; emosyon pozitif ki sòti nan kè.",
+    "egz": "Kè kontan se sante."
+  },
+  {
+    "mot": "kò",
+    "kat": "n",
+    "def": "Fizik yon moun oswa yon bèt; tronk ak tout pati yo.",
+    "egz": "Fòk ou pran swen kò ou."
   },
   {
     "mot": "lajan",
@@ -663,16 +1281,17 @@
     "egz": "Lalin nan klere tout lannuit."
   },
   {
+    "mot": "lang",
+    "kat": "n",
+    "def": "muscle nan bouch ki ede pale",
+    "egz": "Lang li koupe.",
+    "tem": "kò"
+  },
+  {
     "mot": "lanmè",
     "kat": "n",
     "def": "Gwo mas dlo sale ki kouvri yon gwo pati sifas tè a.",
     "egz": "Ayiti gen yon bèl bò lanmè."
-  },
-  {
-    "mot": "lapèrèz",
-    "kat": "n",
-    "def": "Santiman kè sote; emosyon ki fèt akòz yon menas oswa danje.",
-    "egz": "Li gen lapèrèz lè li tande grondman loraj."
   },
   {
     "mot": "lapli",
@@ -681,22 +1300,24 @@
     "egz": "Lapli a tonbe fort aswè a."
   },
   {
+    "mot": "lapèrèz",
+    "kat": "n",
+    "def": "Santiman kè sote; emosyon ki fèt akòz yon menas oswa danje.",
+    "egz": "Li gen lapèrèz lè li tande grondman loraj."
+  },
+  {
+    "mot": "larim",
+    "kat": "n",
+    "def": "likid ki soti nan je lè kriye",
+    "egz": "Larim li ap koule.",
+    "sin": "dlo nan je",
+    "tem": "kò"
+  },
+  {
     "mot": "lavi",
     "kat": "n",
     "def": "Eta yon moun ki vivan; egzistans; ansanm eksperyans yon moun fè.",
     "egz": "Lavi se yon kado."
-  },
-  {
-    "mot": "lè",
-    "kat": "n",
-    "def": "Peryòd tan; moman patikilye nan jounen; èdtan.",
-    "egz": "Ki lè li ye koulye a?"
-  },
-  {
-    "mot": "lèd",
-    "kat": "adj",
-    "def": "Ki pa bèl; ki pa agreyab pou gade; opoze ak bèl.",
-    "egz": "Se pa bon pou di moun li lèd."
   },
   {
     "mot": "lekòl",
@@ -711,10 +1332,20 @@
     "egz": "Li gen yon bon lespri."
   },
   {
-    "mot": "lèt",
+    "mot": "lestomak",
     "kat": "n",
-    "def": "Tèks ekri yo voye bay yon moun; tou vle di chak senbòl nan alfabè.",
-    "egz": "Li resevwa yon lèt nan pòs."
+    "def": "pwatrin",
+    "egz": "Lestomak mwen plen.",
+    "sin": "estomak",
+    "tem": "kò"
+  },
+  {
+    "mot": "leve",
+    "kat": "v",
+    "def": "soti nan kouche pou kanpe",
+    "egz": "Leve, li lè!",
+    "ant": "kouche",
+    "tem": "kò"
   },
   {
     "mot": "li",
@@ -735,10 +1366,12 @@
     "egz": "Li li yon liv chak semèn."
   },
   {
-    "mot": "lòt",
+    "mot": "long",
     "kat": "adj",
-    "def": "Ki diferan; ki adisyonèl; yon moun oswa bagay ki pa sa te mansyone.",
-    "egz": "Pote yon lòt chèz souple."
+    "def": "ki gen anpil longè",
+    "egz": "Cheve l long.",
+    "ant": "kout",
+    "tem": "kò"
   },
   {
     "mot": "lwen",
@@ -747,10 +1380,65 @@
     "egz": "Lekòl la lwen anpil."
   },
   {
+    "mot": "lè",
+    "kat": "n",
+    "def": "Peryòd tan; moman patikilye nan jounen; èdtan.",
+    "egz": "Ki lè li ye koulye a?"
+  },
+  {
+    "mot": "lèd",
+    "kat": "adj",
+    "def": "Ki pa bèl; ki pa agreyab pou gade; opoze ak bèl.",
+    "egz": "Se pa bon pou di moun li lèd."
+  },
+  {
+    "mot": "lèd",
+    "kat": "adj",
+    "def": "ki pa bèl",
+    "egz": "Move bagay sa lèd.",
+    "ant": "bèl",
+    "tem": "kò"
+  },
+  {
+    "mot": "lènmi",
+    "kat": "n",
+    "def": "moun ki pa renmen ou",
+    "egz": "Pa fè lènmi.",
+    "ant": "zanmi",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "lèt",
+    "kat": "n",
+    "def": "Tèks ekri yo voye bay yon moun; tou vle di chak senbòl nan alfabè.",
+    "egz": "Li resevwa yon lèt nan pòs."
+  },
+  {
+    "mot": "lèv",
+    "kat": "n",
+    "def": "kontou bouch",
+    "egz": "Lèv li wouj.",
+    "tem": "kò"
+  },
+  {
+    "mot": "lòt",
+    "kat": "adj",
+    "def": "Ki diferan; ki adisyonèl; yon moun oswa bagay ki pa sa te mansyone.",
+    "egz": "Pote yon lòt chèz souple."
+  },
+  {
     "mot": "mache",
     "kat": "v",
     "def": "Deplase pye youn apre lòt nan yon vitès nòmal.",
     "egz": "Yo mache de kilomèt pou rive lekòl."
+  },
+  {
+    "mot": "mache",
+    "kat": "v",
+    "def": "deplase ak pye dousman",
+    "egz": "Li mache nan lari.",
+    "ant": "kouri",
+    "tem": "kò"
   },
   {
     "mot": "machin",
@@ -759,10 +1447,61 @@
     "egz": "Machin nan kraze sou wout la."
   },
   {
+    "mot": "madanm",
+    "kat": "n",
+    "def": "fanm marye",
+    "egz": "Madanm mwen yon enfimyè.",
+    "sin": "fi",
+    "ant": "mari",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "madanm ansent",
+    "kat": "n",
+    "def": "fanm ki gen yon bebe nan vant li",
+    "egz": "Madanm ansent lan dwe poze.",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "madmwazèl",
+    "kat": "n",
+    "def": "fanm ki poko marye",
+    "egz": "Madmwazèl la bèl.",
+    "sin": "fi",
+    "ant": "madanm",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "makomè",
+    "kat": "n",
+    "def": "manman filyèl yon moun",
+    "egz": "Makomè m fè manje pou pitit la.",
+    "sin": "marenn",
+    "ant": "filyèl",
+    "tem": "fanmi"
+  },
+  {
     "mot": "malad",
     "kat": "adj",
     "def": "Ki pa an sante; ki soufri fizikman oswa mantal.",
     "egz": "Li malad depi de jou."
+  },
+  {
+    "mot": "malad",
+    "kat": "adj",
+    "def": "ki pa gen bon sante",
+    "egz": "Pitit la malad.",
+    "sin": "endispoze",
+    "ant": "an sante",
+    "tem": "kò"
+  },
+  {
+    "mot": "maladi",
+    "kat": "n",
+    "def": "yon move kondisyon kò",
+    "egz": "Maladi a grav.",
+    "ant": "sante",
+    "tem": "kò"
   },
   {
     "mot": "malè",
@@ -777,16 +1516,83 @@
     "egz": "Nou manje ansanm midi."
   },
   {
+    "mot": "manje",
+    "kat": "v",
+    "def": "pran manje nan bouch",
+    "egz": "Mwen manje diri.",
+    "ant": "rete grangou",
+    "tem": "kò"
+  },
+  {
     "mot": "manman",
     "kat": "n",
     "def": "Fanm ki fè yon pitit oswa ki elve yon pitit; maman.",
     "egz": "Manman li renmen li anpil."
   },
   {
+    "mot": "manman",
+    "kat": "n",
+    "def": "fanm ki bay yon moun lavi",
+    "egz": "Manman m fè bon manje.",
+    "sin": "matant; mama",
+    "ant": "papa",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "manton",
+    "kat": "n",
+    "def": "pati anba bouch",
+    "egz": "Manton l pwentu.",
+    "tem": "kò"
+  },
+  {
+    "mot": "manyen",
+    "kat": "v",
+    "def": "touche ak men",
+    "egz": "Pa manyen sa.",
+    "sin": "touche",
+    "tem": "kò"
+  },
+  {
+    "mot": "marasa",
+    "kat": "n",
+    "def": "de pitit ki fèt menm jou",
+    "egz": "Marasa yo sanble nèt.",
+    "sin": "jimo",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "marenn",
+    "kat": "n",
+    "def": "makomè",
+    "egz": "Marenn m vini wè mwen.",
+    "sin": "makomè",
+    "ant": "filyèl",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "mari",
+    "kat": "n",
+    "def": "gason marye",
+    "egz": "Mari m yon mekanisyen.",
+    "sin": "mesye",
+    "ant": "madanm",
+    "tem": "fanmi"
+  },
+  {
     "mot": "matant",
     "kat": "n",
     "def": "Sè papa ou oswa manman ou; tante.",
     "egz": "Matant li viv Miyami."
+  },
+  {
+    "mot": "matant",
+    "kat": "n",
+    "def": "sè manman oswa papa",
+    "egz": "Matant mwen rete Pòtoprens.",
+    "sin": "tantin",
+    "ant": "tonton",
+    "tem": "fanmi"
   },
   {
     "mot": "matin",
@@ -807,10 +1613,21 @@
     "egz": "Li fè travay li avèk men li."
   },
   {
-    "mot": "mèsi",
-    "kat": "interj",
-    "def": "Mo yo di pou montre rekònesans pou yon kado oswa èd resevwa.",
-    "egz": "Mèsi anpil pou èd ou ba mwen."
+    "mot": "men",
+    "kat": "n",
+    "def": "pati nan bout bra ak dwèt",
+    "egz": "Men l pwòp.",
+    "ant": "pye",
+    "tem": "kò"
+  },
+  {
+    "mot": "mesye",
+    "kat": "n",
+    "def": "gason adilt",
+    "egz": "Mesye a respektab.",
+    "sin": "msye",
+    "ant": "madanm",
+    "tem": "fanmi"
   },
   {
     "mot": "mete",
@@ -819,10 +1636,29 @@
     "egz": "Mete liv la sou tab la."
   },
   {
-    "mot": "mòn",
+    "mot": "misk",
     "kat": "n",
-    "def": "Elevasyon tè ki wo; zòn ki monte wo nan tèren.",
-    "egz": "Mòn yo kouvert ak bwa vèt."
+    "def": "tisi ki fè kò bouje",
+    "egz": "Misk mwen fò.",
+    "tem": "kò"
+  },
+  {
+    "mot": "moun",
+    "kat": "n",
+    "def": "yon èt imen",
+    "egz": "Moun yo bezwen lapè.",
+    "sin": "endividi",
+    "ant": "bèt",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "mouri",
+    "kat": "v",
+    "def": "lè lavi yon moun fini",
+    "egz": "Granpapa m mouri ane pase.",
+    "sin": "dispari",
+    "ant": "vivan",
+    "tem": "kò"
   },
   {
     "mot": "mouye",
@@ -843,16 +1679,37 @@
     "egz": "Mwen rele Jean."
   },
   {
+    "mot": "mèg",
+    "kat": "adj",
+    "def": "ki pa gen anpil vyann",
+    "egz": "Li mèg apre maladi a.",
+    "ant": "gra",
+    "tem": "kò"
+  },
+  {
+    "mot": "mèsi",
+    "kat": "interj",
+    "def": "Mo yo di pou montre rekònesans pou yon kado oswa èd resevwa.",
+    "egz": "Mèsi anpil pou èd ou ba mwen."
+  },
+  {
+    "mot": "mòlè",
+    "kat": "n",
+    "def": "pati dèyè janm anba",
+    "egz": "Mòlè mwen rèd.",
+    "tem": "kò"
+  },
+  {
+    "mot": "mòn",
+    "kat": "n",
+    "def": "Elevasyon tè ki wo; zòn ki monte wo nan tèren.",
+    "egz": "Mòn yo kouvert ak bwa vèt."
+  },
+  {
     "mot": "natirèl",
     "kat": "adj",
     "def": "Ki pa fèt pa moun; ki sòti nan lanati; ki nòmal.",
     "egz": "Remèd natirèl konn pi bon."
-  },
-  {
-    "mot": "nèf",
-    "kat": "adj",
-    "def": "Ki fèk fèt oswa achte; ki pa itilize ankò; ki pa vye.",
-    "egz": "Li achte yon rad nèf."
   },
   {
     "mot": "nen",
@@ -861,10 +1718,32 @@
     "egz": "Li gen yon gwo nen."
   },
   {
+    "mot": "nen",
+    "kat": "n",
+    "def": "ògàn pou santi ak respire",
+    "egz": "Nen mwen bouche.",
+    "tem": "kò"
+  },
+  {
+    "mot": "neve",
+    "kat": "n",
+    "def": "pitit frè oswa sè (gason)",
+    "egz": "Neve m ap aprann li.",
+    "ant": "nyès",
+    "tem": "fanmi"
+  },
+  {
     "mot": "non",
     "kat": "n",
     "def": "Mo yo itilize pou idantifye yon moun, kote, oswa bagay.",
     "egz": "Ki non ou?"
+  },
+  {
+    "mot": "nonbril",
+    "kat": "n",
+    "def": "yon ti mak sou vant",
+    "egz": "Bebe a gen yon bèl nonbril.",
+    "tem": "kò"
   },
   {
     "mot": "nou",
@@ -877,6 +1756,36 @@
     "kat": "n",
     "def": "Pati jounen de kouche solèy rive leve solèy; lè li nwa.",
     "egz": "Li dòmi bonè chak nuit."
+  },
+  {
+    "mot": "nyès",
+    "kat": "n",
+    "def": "pitit frè oswa sè (fi)",
+    "egz": "Nyès mwen gen dis ane.",
+    "ant": "neve",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "nè",
+    "kat": "n",
+    "def": "fil ki transpòte siyal sansoryèl",
+    "egz": "Nè li tande.",
+    "tem": "kò"
+  },
+  {
+    "mot": "nèf",
+    "kat": "adj",
+    "def": "Ki fèk fèt oswa achte; ki pa itilize ankò; ki pa vye.",
+    "egz": "Li achte yon rad nèf."
+  },
+  {
+    "mot": "nèg",
+    "kat": "n",
+    "def": "yon gason (jeneral)",
+    "egz": "Nèg sa a sèvyab.",
+    "sin": "gason",
+    "ant": "fanm",
+    "tem": "fanmi"
   },
   {
     "mot": "obeyi",
@@ -903,6 +1812,14 @@
     "egz": "Li pale kreyòl ak angle."
   },
   {
+    "mot": "pale",
+    "kat": "v",
+    "def": "fè mo soti nan bouch",
+    "egz": "Li pale anpil.",
+    "ant": "fè silans",
+    "tem": "kò"
+  },
+  {
     "mot": "panye",
     "kat": "n",
     "def": "Konteynan ki fèt avèk wozo, plastik, oswa bwa pou pote bagay.",
@@ -913,6 +1830,40 @@
     "kat": "n",
     "def": "Gason ki fè yon pitit oswa ki elve yon pitit.",
     "egz": "Papa li travay nan jaden an."
+  },
+  {
+    "mot": "papa",
+    "kat": "n",
+    "def": "gason ki bay yon moun lavi",
+    "egz": "Papa m ap travay.",
+    "sin": "tonton; popa",
+    "ant": "manman",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "paran",
+    "kat": "n",
+    "def": "manman ak papa ansanm",
+    "egz": "Paran mwen renmen mwen.",
+    "ant": "pitit",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "paran adoptif",
+    "kat": "n",
+    "def": "moun ki pran yon pitit kòm pa l",
+    "egz": "Paran adoptif yo renmen pitit la anpil.",
+    "ant": "paran byolojik",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "parenn",
+    "kat": "n",
+    "def": "konpè",
+    "egz": "Parenn mwen achte yon liv pou mwen.",
+    "sin": "konpè",
+    "ant": "filyèl",
+    "tem": "fanmi"
   },
   {
     "mot": "pase",
@@ -945,10 +1896,44 @@
     "egz": "Kay la piti men li bèl."
   },
   {
+    "mot": "piti",
+    "kat": "adj",
+    "def": "ki gen ti volim",
+    "egz": "Pitit mwen piti.",
+    "sin": "ti",
+    "ant": "gwo",
+    "tem": "kò"
+  },
+  {
     "mot": "pitit",
     "kat": "n",
     "def": "Pitit fi oswa gason yon moun; zanfan.",
     "egz": "Li gen twa pitit."
+  },
+  {
+    "mot": "pitit",
+    "kat": "n",
+    "def": "yon moun parapò ak manman l ak papa l",
+    "egz": "Pitit mwen gen senk ane.",
+    "sin": "timoun",
+    "ant": "paran",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "pitit fi",
+    "kat": "n",
+    "def": "pitit ki se fi",
+    "egz": "Pitit fi m bèl anpil.",
+    "ant": "pitit gason",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "pitit gason",
+    "kat": "n",
+    "def": "pitit ki se gason",
+    "egz": "Pitit gason m nan lekòl.",
+    "ant": "pitit fi",
+    "tem": "fanmi"
   },
   {
     "mot": "plante",
@@ -969,10 +1954,11 @@
     "egz": "Li jwenn plezi nan li liv."
   },
   {
-    "mot": "pòt",
+    "mot": "po",
     "kat": "n",
-    "def": "Panel ki ka ouvri ak fèmen pou antre nan yon kote.",
-    "egz": "Fèmen pòt la."
+    "def": "kouvèti deyò kò",
+    "egz": "Po mwen sèch.",
+    "tem": "kò"
   },
   {
     "mot": "poul",
@@ -981,10 +1967,18 @@
     "egz": "Yo gen dis poul nan lakou a."
   },
   {
-    "mot": "pòv",
-    "kat": "adj",
-    "def": "Ki pa gen ase lajan oswa resous; ki nan nesesite; opoze ak rich.",
-    "egz": "Pòv moun bezwen plis èd."
+    "mot": "poumon",
+    "kat": "n",
+    "def": "ògàn pou respire",
+    "egz": "Poumon mwen bezwen lè pwòp.",
+    "tem": "kò"
+  },
+  {
+    "mot": "pous",
+    "kat": "n",
+    "def": "premye dwèt, pi gwo a",
+    "egz": "Mwen blese pous mwen.",
+    "tem": "kò"
   },
   {
     "mot": "pran",
@@ -1011,6 +2005,15 @@
     "egz": "Ayiti gen anpil pwason bò lanmè."
   },
   {
+    "mot": "pwatrin",
+    "kat": "n",
+    "def": "pati devan, kote kè a",
+    "egz": "Pwatrin mwen ap fè mwen mal.",
+    "sin": "lestomak",
+    "ant": "do",
+    "tem": "kò"
+  },
+  {
     "mot": "pwoblèm",
     "kat": "n",
     "def": "Sitiyasyon difisil ki bezwen solisyon; defi.",
@@ -1029,10 +2032,44 @@
     "egz": "Li fè mal pye li lè li tonbe."
   },
   {
+    "mot": "pye",
+    "kat": "n",
+    "def": "pati nan bout janm pou mache",
+    "egz": "Pye mwen pwòp.",
+    "ant": "men",
+    "tem": "kò"
+  },
+  {
+    "mot": "pòpyè",
+    "kat": "n",
+    "def": "po ki kouvri je",
+    "egz": "Pòpyè li lou.",
+    "tem": "kò"
+  },
+  {
+    "mot": "pòt",
+    "kat": "n",
+    "def": "Panel ki ka ouvri ak fèmen pou antre nan yon kote.",
+    "egz": "Fèmen pòt la."
+  },
+  {
+    "mot": "pòv",
+    "kat": "adj",
+    "def": "Ki pa gen ase lajan oswa resous; ki nan nesesite; opoze ak rich.",
+    "egz": "Pòv moun bezwen plis èd."
+  },
+  {
     "mot": "rad",
     "kat": "n",
     "def": "Afè ou mete sou kò ou pou kouvri ou; vètman.",
     "egz": "Li achte yon bèl rad nèf."
+  },
+  {
+    "mot": "ranch",
+    "kat": "n",
+    "def": "kote janm rankontre kò",
+    "egz": "Ranch mwen pa fò.",
+    "tem": "kò"
   },
   {
     "mot": "ranje",
@@ -1053,6 +2090,13 @@
     "egz": "Ki jan ou rele?"
   },
   {
+    "mot": "ren",
+    "kat": "n",
+    "def": "ògàn ki netwaye san",
+    "egz": "Ren mwen pa byen.",
+    "tem": "kò"
+  },
+  {
     "mot": "reponn",
     "kat": "v",
     "def": "Bay repons a yon kesyon; reaji face a yon sitiyasyon.",
@@ -1065,10 +2109,12 @@
     "egz": "Repoze yon ti moman anvan ou kontinye."
   },
   {
-    "mot": "respè",
+    "mot": "respirasyon",
     "kat": "n",
-    "def": "Konsiderasyon ak estime pou yon moun oswa bagay.",
-    "egz": "Pitit dwe gen respè pou granmoun."
+    "def": "aksyon pran lè",
+    "egz": "Respirasyon li fò.",
+    "sin": "souf",
+    "tem": "kò"
   },
   {
     "mot": "respire",
@@ -1077,10 +2123,40 @@
     "egz": "Respire pwofon lè ou strese."
   },
   {
+    "mot": "respire",
+    "kat": "v",
+    "def": "pran ak voye lè",
+    "egz": "Respire dousman.",
+    "ant": "soufoke",
+    "tem": "kò"
+  },
+  {
+    "mot": "respè",
+    "kat": "n",
+    "def": "Konsiderasyon ak estime pou yon moun oswa bagay.",
+    "egz": "Pitit dwe gen respè pou granmoun."
+  },
+  {
+    "mot": "reveye",
+    "kat": "v",
+    "def": "soti nan dòmi",
+    "egz": "Reveye anvan solèy leve.",
+    "ant": "dòmi",
+    "tem": "kò"
+  },
+  {
     "mot": "ri",
     "kat": "v",
     "def": "Pwodui son ki montre kè kontan, amizman, oswa lajwa.",
     "egz": "Li ri di lè li tande blag la."
+  },
+  {
+    "mot": "ri",
+    "kat": "v",
+    "def": "fè son ak bouch lè kè kontan",
+    "egz": "Li ri anpil.",
+    "ant": "kriye",
+    "tem": "kò"
   },
   {
     "mot": "rich",
@@ -1095,28 +2171,45 @@
     "egz": "Timoun yo benyen nan rivyè a."
   },
   {
+    "mot": "rèl",
+    "kat": "n",
+    "def": "kriye ki fò",
+    "egz": "Rèl li tande lwen.",
+    "tem": "kò"
+  },
+  {
+    "mot": "san",
+    "kat": "n",
+    "def": "likid wouj ki kouri nan kò",
+    "egz": "San li wo.",
+    "tem": "kò"
+  },
+  {
     "mot": "sante",
     "kat": "n",
     "def": "Eta kò ak lespri yon moun lè yo an bon kondisyon; byennèt fizik.",
     "egz": "Sante se richès."
   },
   {
-    "mot": "sè",
+    "mot": "sante",
     "kat": "n",
-    "def": "Fi ki gen menm manman oswa papa ak ou.",
-    "egz": "Sè li pi gran pase li."
+    "def": "kondisyon kò yon moun",
+    "egz": "Sante mwen bon.",
+    "ant": "maladi",
+    "tem": "kò"
+  },
+  {
+    "mot": "santi",
+    "kat": "v",
+    "def": "wè ak nen",
+    "egz": "Santi flè sa a.",
+    "tem": "kò"
   },
   {
     "mot": "sekou",
     "kat": "n",
     "def": "Èd pou moun ki nan danje; asistans nan ijans.",
     "egz": "Yo voye sekou pou viktim yo."
-  },
-  {
-    "mot": "sèl",
-    "kat": "adj",
-    "def": "Ki sèlman youn; ki pa gen lòt; izole.",
-    "egz": "Li sèl nan kay la."
   },
   {
     "mot": "semèn",
@@ -1149,6 +2242,22 @@
     "egz": "Li sonje chak mo pwofesè li di."
   },
   {
+    "mot": "soud",
+    "kat": "adj",
+    "def": "ki pa ka tande",
+    "egz": "Granmanman m soud.",
+    "ant": "tande",
+    "tem": "kò"
+  },
+  {
+    "mot": "souf",
+    "kat": "n",
+    "def": "lè ki antre soti nan poumon",
+    "egz": "Souf mwen kout.",
+    "sin": "respirasyon",
+    "tem": "kò"
+  },
+  {
     "mot": "soup joumou",
     "kat": "n",
     "def": "Soup tradisyonèl ayisyen ki fèt ak joumou, kèk vyann, ak legim; yo manje l premye janvye pou selebrasyon endepandans.",
@@ -1167,10 +2276,69 @@
     "egz": "Li toujou souri."
   },
   {
+    "mot": "souri",
+    "kat": "n",
+    "def": "lè bouch ouvri yon ti kras",
+    "egz": "Souri li bèl.",
+    "ant": "kriye",
+    "tem": "kò"
+  },
+  {
+    "mot": "sousi",
+    "kat": "n",
+    "def": "cheve sou je",
+    "egz": "Sousi li nwa.",
+    "tem": "kò"
+  },
+  {
     "mot": "swaf",
     "kat": "n",
     "def": "Bezwen bwè; sansasyon sèk nan gòj lè ou bezwen dlo.",
     "egz": "Bwè dlo lè ou swaf."
+  },
+  {
+    "mot": "swè",
+    "kat": "n",
+    "def": "likid ki soti sou po lè cho",
+    "egz": "Swè mwen ap koule.",
+    "sin": "transpirasyon",
+    "tem": "kò"
+  },
+  {
+    "mot": "sè",
+    "kat": "n",
+    "def": "Fi ki gen menm manman oswa papa ak ou.",
+    "egz": "Sè li pi gran pase li."
+  },
+  {
+    "mot": "sè",
+    "kat": "n",
+    "def": "fanm ki gen menm paran ak yon moun",
+    "egz": "Sè m bèl anpil.",
+    "ant": "frè",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "sèl",
+    "kat": "adj",
+    "def": "Ki sèlman youn; ki pa gen lòt; izole.",
+    "egz": "Li sèl nan kay la."
+  },
+  {
+    "mot": "sèvo",
+    "kat": "n",
+    "def": "ògàn nan tèt ki panse",
+    "egz": "Sèvo mwen ap travay.",
+    "sin": "sèvèl",
+    "tem": "kò"
+  },
+  {
+    "mot": "sèvèl",
+    "kat": "n",
+    "def": "sèvo",
+    "egz": "Sèvèl li klè.",
+    "sin": "sèvo",
+    "tem": "kò"
   },
   {
     "mot": "tab",
@@ -1185,10 +2353,25 @@
     "egz": "Li gen talan pou chante."
   },
   {
+    "mot": "talon",
+    "kat": "n",
+    "def": "pati dèyè pye",
+    "egz": "Talon mwen ap fè mwen mal.",
+    "tem": "kò"
+  },
+  {
     "mot": "tan",
     "kat": "n",
     "def": "Peryòd jou, ane; meteo; kondisyon atmosfè.",
     "egz": "Tan an move jodi a."
+  },
+  {
+    "mot": "tande",
+    "kat": "v",
+    "def": "pran son ak zòrèy",
+    "egz": "Mwen tande mizik la.",
+    "ant": "soud",
+    "tem": "kò"
   },
   {
     "mot": "tankou",
@@ -1197,28 +2380,74 @@
     "egz": "Li kouri tankou van."
   },
   {
-    "mot": "tè",
-    "kat": "n",
-    "def": "Sòl; sifas latè kote moun viv; fon ki pa dlo.",
-    "egz": "Yo plante nan tè a."
-  },
-  {
-    "mot": "tèt",
-    "kat": "n",
-    "def": "Pati siperyè kò moun kote sèvo, je, nen, bouch ak zòrèy ye.",
-    "egz": "Li pote yon chapo sou tèt li."
-  },
-  {
     "mot": "ti",
     "kat": "adj",
     "def": "Piti; jenn; diminutif pou eksprime ti gwosè.",
     "egz": "Ti chèl la domi."
   },
   {
+    "mot": "ti bebe",
+    "kat": "n",
+    "def": "timoun ki fenk fèt",
+    "egz": "Ti bebe a ap domi.",
+    "sin": "tibab",
+    "ant": "granmoun",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "ti pitit",
+    "kat": "n",
+    "def": "yon pitit ki piti",
+    "egz": "Ti pitit la ap pouse dan.",
+    "sin": "tibab",
+    "ant": "granmoun",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "ti pitit pitit",
+    "kat": "n",
+    "def": "pitit yon pitit",
+    "egz": "Granmè m gen senk ti pitit pitit.",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "tibab",
+    "kat": "n",
+    "def": "ti bebe",
+    "egz": "Tibab la ap kriye.",
+    "sin": "ti bebe",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "tifrè",
+    "kat": "n",
+    "def": "frè ki pi piti",
+    "egz": "Tifrè m ap aprann mache.",
+    "ant": "granfrè",
+    "tem": "fanmi"
+  },
+  {
     "mot": "timoun",
     "kat": "n",
     "def": "Moun ki jenn, tipikman ki poko gen 18 an; pitit.",
     "egz": "Timoun yo bezwen edikasyon."
+  },
+  {
+    "mot": "timoun",
+    "kat": "n",
+    "def": "yon moun ki poko granmoun",
+    "egz": "Timoun yo ap jwe nan lakou a.",
+    "sin": "pitit",
+    "ant": "granmoun",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "tisè",
+    "kat": "n",
+    "def": "sè ki pi piti",
+    "egz": "Tisè m ap jwe ak poupe.",
+    "ant": "gransè",
+    "tem": "fanmi"
   },
   {
     "mot": "tonbe",
@@ -1233,6 +2462,23 @@
     "egz": "Tonton li se yon bon moun."
   },
   {
+    "mot": "tonton",
+    "kat": "n",
+    "def": "frè manman oswa papa",
+    "egz": "Tonton m abite Mayami.",
+    "sin": "monnonk",
+    "ant": "matant",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "touche",
+    "kat": "v",
+    "def": "manyen",
+    "egz": "Tanpri pa touche sa.",
+    "sin": "manyen",
+    "tem": "kò"
+  },
+  {
     "mot": "tounen",
     "kat": "v",
     "def": "Retounen; vin tounen; vire; ale epi vini.",
@@ -1245,10 +2491,26 @@
     "egz": "Tout timoun bezwen edikasyon."
   },
   {
+    "mot": "transpirasyon",
+    "kat": "n",
+    "def": "swè",
+    "egz": "Transpirasyon li lan koule.",
+    "sin": "swè",
+    "tem": "kò"
+  },
+  {
     "mot": "travay",
     "kat": "n",
     "def": "Aktivite fizik oswa mantal yo fè pou yon objektif; labor.",
     "egz": "Travay di bay bon rezilta."
+  },
+  {
+    "mot": "trip",
+    "kat": "n",
+    "def": "ògàn nan vant ki dijere",
+    "egz": "Trip mwen ap fè mwen mal.",
+    "sin": "entesten",
+    "tem": "kò"
   },
   {
     "mot": "twa",
@@ -1261,6 +2523,35 @@
     "kat": "adv",
     "def": "Pi plis pase nesesè; nan egzès.",
     "egz": "Pa manje twò, sa pa bon pou sante."
+  },
+  {
+    "mot": "tè",
+    "kat": "n",
+    "def": "Sòl; sifas latè kote moun viv; fon ki pa dlo.",
+    "egz": "Yo plante nan tè a."
+  },
+  {
+    "mot": "tèt",
+    "kat": "n",
+    "def": "Pati siperyè kò moun kote sèvo, je, nen, bouch ak zòrèy ye.",
+    "egz": "Li pote yon chapo sou tèt li."
+  },
+  {
+    "mot": "tèt",
+    "kat": "n",
+    "def": "pati anwo kò ki gen sèvo",
+    "egz": "Tèt mwen ap fè mwen mal.",
+    "sin": "kabòch",
+    "ant": "pye",
+    "tem": "kò"
+  },
+  {
+    "mot": "vale",
+    "kat": "v",
+    "def": "pase manje nan gòj",
+    "egz": "Vale dousman.",
+    "ant": "krache",
+    "tem": "kò"
   },
   {
     "mot": "van",
@@ -1281,10 +2572,20 @@
     "egz": "Li gen vant ki fè li mal."
   },
   {
-    "mot": "vèt",
-    "kat": "adj",
-    "def": "Ki gen koulè fèy plant; koulè plant vivan.",
-    "egz": "Bwa yo vèt an plen ete."
+    "mot": "vant",
+    "kat": "n",
+    "def": "anba pwatrin, kote manje ye",
+    "egz": "Vant mwen ap fè mwen mal.",
+    "ant": "do",
+    "tem": "kò"
+  },
+  {
+    "mot": "ven",
+    "kat": "n",
+    "def": "tib ki transpòte san",
+    "egz": "Ven nan men l ap parèt.",
+    "ant": "atè",
+    "tem": "kò"
   },
   {
     "mot": "vini",
@@ -1299,10 +2600,50 @@
     "egz": "Li viv Pòtoprens."
   },
   {
+    "mot": "vivan",
+    "kat": "adj",
+    "def": "ki gen lavi",
+    "egz": "Tout fanmi an vivan.",
+    "sin": "an vi",
+    "ant": "mouri",
+    "tem": "kò"
+  },
+  {
+    "mot": "vizaj",
+    "kat": "n",
+    "def": "devan tèt",
+    "egz": "Vizaj li bèl.",
+    "sin": "figi",
+    "tem": "kò"
+  },
+  {
     "mot": "voye",
     "kat": "v",
     "def": "Fè yon bagay deplase nan direksyon yon moun oswa kote.",
     "egz": "Li voye yon lèt bay manman li."
+  },
+  {
+    "mot": "vwa",
+    "kat": "n",
+    "def": "son ki soti nan bouch",
+    "egz": "Vwa li dou.",
+    "tem": "kò"
+  },
+  {
+    "mot": "vwazen",
+    "kat": "n",
+    "def": "moun ki rete kote ou",
+    "egz": "Vwazen mwen sèvyab.",
+    "ant": "etranje",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "vwazinaj",
+    "kat": "n",
+    "def": "tout moun nan zòn nan",
+    "egz": "Vwazinaj la byen òganize.",
+    "sin": "katye",
+    "tem": "fanmi"
   },
   {
     "mot": "vyann",
@@ -1311,16 +2652,55 @@
     "egz": "Yo manje vyann ak diri."
   },
   {
+    "mot": "vyann",
+    "kat": "n",
+    "def": "tisi mou nan kò",
+    "egz": "Vyann li mou.",
+    "ant": "zo",
+    "tem": "kò"
+  },
+  {
     "mot": "vye",
     "kat": "adj",
     "def": "Ki gen anpil ane; ansyen; ki itilize lontan; opoze ak jèn oswa nèf.",
     "egz": "Se yon vye tradisyon ayisyen."
   },
   {
-    "mot": "wè",
-    "kat": "v",
-    "def": "Pèsevwa avèk je; obsève; konprann; rann kont de.",
-    "egz": "Ou wè sa mwen ap di?"
+    "mot": "vye",
+    "kat": "adj",
+    "def": "ki gen anpil ane",
+    "egz": "Granpapa m vye kounye a.",
+    "sin": "ansyen",
+    "ant": "jenn",
+    "tem": "kò"
+  },
+  {
+    "mot": "vèf",
+    "kat": "n",
+    "def": "gason ki madanm li mouri",
+    "egz": "Vèf la ap leve pitit yo poukont li.",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "vèt",
+    "kat": "adj",
+    "def": "Ki gen koulè fèy plant; koulè plant vivan.",
+    "egz": "Bwa yo vèt an plen ete."
+  },
+  {
+    "mot": "vèv",
+    "kat": "n",
+    "def": "fanm ki mari l mouri",
+    "egz": "Vèv la pran dèy.",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "wo",
+    "kat": "adj",
+    "def": "ki gen anpil wotè",
+    "egz": "Li wo anpil.",
+    "ant": "kout",
+    "tem": "kò"
   },
   {
     "mot": "wouj",
@@ -1333,6 +2713,20 @@
     "kat": "n",
     "def": "Chemen ki pèmèt moun ak machin pase; chemen, otowout.",
     "egz": "Wout la long men bèl."
+  },
+  {
+    "mot": "wè",
+    "kat": "v",
+    "def": "Pèsevwa avèk je; obsève; konprann; rann kont de.",
+    "egz": "Ou wè sa mwen ap di?"
+  },
+  {
+    "mot": "wè",
+    "kat": "v",
+    "def": "konnen ak je",
+    "egz": "Mwen wè ou.",
+    "ant": "avèg",
+    "tem": "kò"
   },
   {
     "mot": "yo",
@@ -1353,6 +2747,23 @@
     "egz": "Zanmi se yon richès."
   },
   {
+    "mot": "zanmi",
+    "kat": "n",
+    "def": "moun ki pwòch men ki pa fanmi",
+    "egz": "Zanmi m fidèl.",
+    "sin": "kanmarad",
+    "ant": "lènmi",
+    "tem": "fanmi"
+  },
+  {
+    "mot": "zansèt",
+    "kat": "n",
+    "def": "moun nan jenerasyon ki pase yo",
+    "egz": "Nou onè zansèt nou yo.",
+    "ant": "desandan",
+    "tem": "fanmi"
+  },
+  {
     "mot": "ze",
     "kat": "n",
     "def": "Pwodui oval bèt fèmèl pon; yo manje ze poul.",
@@ -1371,9 +2782,47 @@
     "egz": "Syèl la plen zetwal aswè a."
   },
   {
+    "mot": "zo",
+    "kat": "n",
+    "def": "estriktire di anndan kò",
+    "egz": "Li kase yon zo.",
+    "ant": "vyann",
+    "tem": "kò"
+  },
+  {
+    "mot": "zong",
+    "kat": "n",
+    "def": "pati di sou tèt dwèt",
+    "egz": "Zong li long.",
+    "tem": "kò"
+  },
+  {
+    "mot": "zye",
+    "kat": "n",
+    "def": "je",
+    "egz": "Zye li pwòp.",
+    "sin": "je",
+    "tem": "kò"
+  },
+  {
     "mot": "zòrèy",
     "kat": "n",
     "def": "Ògàn odi de kote tèt moun ki pèmèt tande.",
     "egz": "Li gen doulè nan zòrèy li."
+  },
+  {
+    "mot": "zòrèy",
+    "kat": "n",
+    "def": "ògàn pou tande",
+    "egz": "Zòrèy mwen ap fè mwen mal.",
+    "sin": "zorèy",
+    "tem": "kò"
+  },
+  {
+    "mot": "òfelen",
+    "kat": "n",
+    "def": "timoun ki paran l mouri",
+    "egz": "Òfelen yo bezwen èd.",
+    "tem": "fanmi"
   }
 ]
