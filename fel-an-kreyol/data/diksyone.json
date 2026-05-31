@@ -35,6 +35,14 @@
     "tem": "rad"
   },
   {
+    "mot": "abèy",
+    "kat": "n",
+    "def": "ensèk ki bay myèl",
+    "egz": "Abèy yo nan rouch.",
+    "sin": "myèl",
+    "tem": "animal"
+  },
+  {
     "mot": "achte",
     "kat": "v",
     "def": "Bay lajan an echanj pou jwenn yon bagay; fè yon tranzaksyon komèsyal.",
@@ -46,9 +54,24 @@
     "def": "Sou bò dwat; nan direksyon men dwat; opoze ak agòch. Ki abil"
   },
   {
+    "mot": "aguti",
+    "kat": "n",
+    "def": "yon ti bèt Karayib",
+    "egz": "Aguti yo rar kounye a.",
+    "tem": "animal"
+  },
+  {
     "mot": "agòch",
     "kat": "adv",
     "def": "Sou bò gòch; nan direksyon men gòch; opoze ak adwat."
+  },
+  {
+    "mot": "ail",
+    "kat": "n",
+    "def": "lay",
+    "egz": "Ail medsinal anpil.",
+    "sin": "lay",
+    "tem": "plant"
   },
   {
     "mot": "ajante",
@@ -58,10 +81,26 @@
     "tem": "koulè"
   },
   {
+    "mot": "ajil",
+    "kat": "n",
+    "def": "klò",
+    "egz": "Ajil pou poteri.",
+    "sin": "klò",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "ajoute",
     "kat": "v",
     "def": "Mete yon bagay ansanm ak yon lòt pou ogmante kantite a; ranfòse.",
     "egz": "Ajoute yon ti sèl nan soup la."
+  },
+  {
+    "mot": "akajou",
+    "kat": "n",
+    "def": "pyebwa di pou mèb",
+    "egz": "Akajou a vye.",
+    "sin": "kayè akajou",
+    "tem": "plant"
   },
   {
     "mot": "akra",
@@ -89,6 +128,22 @@
     "def": "ekspresyon kè kontan relijye",
     "egz": "Alelouya, mwen sove!",
     "tem": "salitasyon"
+  },
+  {
+    "mot": "alowès",
+    "kat": "n",
+    "def": "yon plant medsinal",
+    "egz": "Alowès pou boule po.",
+    "sin": "alès",
+    "tem": "plant"
+  },
+  {
+    "mot": "alès",
+    "kat": "n",
+    "def": "alowès",
+    "egz": "Alès pou cheve.",
+    "sin": "alowès",
+    "tem": "plant"
   },
   {
     "mot": "amwa",
@@ -157,6 +212,14 @@
     "tem": "kay"
   },
   {
+    "mot": "asyèt",
+    "kat": "n",
+    "def": "bouwik",
+    "egz": "Asyèt nan jaden.",
+    "sin": "bouwik",
+    "tem": "animal"
+  },
+  {
     "mot": "atann",
     "kat": "v",
     "def": "Rete nan yon kote jis yon bagay oswa yon moun rive; espere.",
@@ -194,6 +257,29 @@
     "tem": "jou ak mwa"
   },
   {
+    "mot": "aviyon",
+    "kat": "n",
+    "def": "machin ki vole nan lè",
+    "egz": "Aviyon nan syèl la.",
+    "tem": "peyizaj"
+  },
+  {
+    "mot": "avoka",
+    "kat": "n",
+    "def": "zaboka",
+    "egz": "Avoka miran.",
+    "sin": "zaboka",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "avokatye",
+    "kat": "n",
+    "def": "zaboka",
+    "egz": "Avokatye nan jaden.",
+    "sin": "zaboka",
+    "tem": "plant"
+  },
+  {
     "mot": "avril",
     "kat": "n",
     "def": "katriyèm mwa nan ane",
@@ -224,10 +310,33 @@
     "tem": "kò"
   },
   {
+    "mot": "ananas",
+    "kat": "n",
+    "def": "anans",
+    "egz": "Ananas nan plat.",
+    "sin": "anans",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "anans",
+    "kat": "n",
+    "def": "fwi twopikal ak pikan",
+    "egz": "Anans dous nan ji.",
+    "sin": "ananas",
+    "tem": "fwi-legim"
+  },
+  {
     "mot": "anbrase",
     "kat": "v",
     "def": "Sere yon moun nan bra ou pou montre amou, byenveni, oswa kè kontan.",
     "egz": "Li anbrase manman li lè li tounen."
+  },
+  {
+    "mot": "anchwa",
+    "kat": "n",
+    "def": "yon ti pwason",
+    "egz": "Anchwa nan sòs.",
+    "tem": "animal"
   },
   {
     "mot": "andikape",
@@ -243,6 +352,22 @@
     "egz": "Ane sa a long.",
     "sin": "lane",
     "tem": "jou ak mwa"
+  },
+  {
+    "mot": "anguy",
+    "kat": "n",
+    "def": "yon kalite pwason long ki sanble ak koulèv",
+    "egz": "Anguy nan dlo bwa.",
+    "sin": "anvèg",
+    "tem": "animal"
+  },
+  {
+    "mot": "animal",
+    "kat": "n",
+    "def": "bèt",
+    "egz": "Animal sa danjere.",
+    "sin": "bèt",
+    "tem": "animal"
   },
   {
     "mot": "ankò",
@@ -317,12 +442,26 @@
     "egz": "Ki bagay ou ap chèche?"
   },
   {
+    "mot": "balawou",
+    "kat": "n",
+    "def": "yon kalite pwason",
+    "egz": "Balawou frit.",
+    "tem": "animal"
+  },
+  {
     "mot": "balkon",
     "kat": "n",
     "def": "platfòm deyò ki akwoche yon etaj kay la",
     "egz": "Yo chita sou balkon an gade lari a.",
     "ant": "lakou",
     "tem": "kay"
+  },
+  {
+    "mot": "bambou",
+    "kat": "n",
+    "def": "wozo gwo ki itil",
+    "egz": "Bambou pou klotire.",
+    "tem": "plant"
   },
   {
     "mot": "bannann",
@@ -339,6 +478,39 @@
     "tem": "manje"
   },
   {
+    "mot": "bannann",
+    "kat": "n",
+    "def": "pyebwa ki bay bannann",
+    "egz": "Bannann fri ak griyo.",
+    "sin": "bannannye",
+    "tem": "plant",
+    "var": "pyebwa"
+  },
+  {
+    "mot": "bannann mi",
+    "kat": "n",
+    "def": "bannann fini ak jòn",
+    "egz": "Bannann mi dous.",
+    "ant": "bannann vèt",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "bannann vèt",
+    "kat": "n",
+    "def": "bannann ki pa mi",
+    "egz": "Bannann vèt pou fri.",
+    "ant": "bannann mi",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "bannannye",
+    "kat": "n",
+    "def": "bannann",
+    "egz": "Bannannye ap pouse.",
+    "sin": "bannann",
+    "tem": "plant"
+  },
+  {
     "mot": "baskèt",
     "kat": "n",
     "def": "soulye tenis ki fèt pou espò ak konfò",
@@ -347,10 +519,32 @@
     "tem": "rad"
   },
   {
+    "mot": "bawo",
+    "kat": "n",
+    "def": "ti pati ki nan dlo lanmè",
+    "egz": "Bawo lanmè sa danjere.",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "bay",
     "kat": "v",
     "def": "Transfere yon bagay bay yon moun; ofri; prezante.",
     "egz": "Li bay pitit li yon kado."
+  },
+  {
+    "mot": "baye",
+    "kat": "n",
+    "def": "wout pou bato antre",
+    "egz": "Baye Pòtoprens.",
+    "sin": "pò",
+    "tem": "peyizaj"
+  },
+  {
+    "mot": "bazilik",
+    "kat": "n",
+    "def": "fèy parfime pou kuit",
+    "egz": "Bazilik nan sòs.",
+    "tem": "plant"
   },
   {
     "mot": "benediksyon",
@@ -359,6 +553,13 @@
     "egz": "Pran benediksyon m.",
     "ant": "malediksyon",
     "tem": "salitasyon"
+  },
+  {
+    "mot": "benzolen",
+    "kat": "n",
+    "def": "yon pyebwa Ayisyen",
+    "egz": "Benzolen pou pou bay zonbrai.",
+    "tem": "plant"
   },
   {
     "mot": "bezwen",
@@ -505,6 +706,14 @@
     "tem": "kò"
   },
   {
+    "mot": "bouk",
+    "kat": "n",
+    "def": "kabrit gason",
+    "egz": "Bouk la ap kale.",
+    "ant": "fenmèl kabrit",
+    "tem": "animal"
+  },
+  {
     "mot": "bouke",
     "kat": "adj",
     "def": "fatige anpil",
@@ -512,6 +721,14 @@
     "sin": "fatige",
     "ant": "frè",
     "tem": "kò"
+  },
+  {
+    "mot": "bouwik",
+    "kat": "n",
+    "def": "bèt ki sanble ak milèt",
+    "egz": "Bouwik la trete chaj.",
+    "sin": "asyèt",
+    "tem": "animal"
   },
   {
     "mot": "bouyi",
@@ -534,6 +751,14 @@
     "egz": "Bra m kase.",
     "ant": "janm",
     "tem": "kò"
+  },
+  {
+    "mot": "branch",
+    "kat": "n",
+    "def": "pati ki soti nan tronk",
+    "egz": "Branch yo gen fèy.",
+    "ant": "rasin",
+    "tem": "plant"
   },
   {
     "mot": "braslè",
@@ -567,6 +792,13 @@
     "tem": "kay"
   },
   {
+    "mot": "brokoli",
+    "kat": "n",
+    "def": "legim vèt won",
+    "egz": "Brokoli ak fromaj.",
+    "tem": "fwi-legim"
+  },
+  {
     "mot": "bwa",
     "kat": "n",
     "def": "ansanm pyebwa",
@@ -574,6 +806,13 @@
     "sin": "fore",
     "ant": "savann",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "bwa",
+    "kat": "n",
+    "def": "matyè di nan pyebwa",
+    "egz": "Bwa pou bati kay.",
+    "tem": "plant"
   },
   {
     "mot": "bwat",
@@ -642,6 +881,13 @@
     "tem": "kò"
   },
   {
+    "mot": "bèf",
+    "kat": "n",
+    "def": "gwo bèt ki bay lèt ak vyann",
+    "egz": "Bèf yo nan jaden an.",
+    "tem": "animal"
+  },
+  {
     "mot": "bèj",
     "kat": "adj",
     "def": "koulè sab klè",
@@ -684,6 +930,31 @@
     "kat": "n",
     "def": "Tout kreyati vivan ki pa moun; animal.",
     "egz": "Gen anpil bèt nan bwa a."
+  },
+  {
+    "mot": "bèt",
+    "kat": "n",
+    "def": "tout èt vivan ki pa moun",
+    "egz": "Bèt yo nan jaden an.",
+    "sin": "animal",
+    "ant": "moun",
+    "tem": "animal"
+  },
+  {
+    "mot": "bèt domestik",
+    "kat": "n",
+    "def": "bèt ki rete ak moun",
+    "egz": "Chen se yon bèt domestik.",
+    "ant": "bèt sovaj",
+    "tem": "animal"
+  },
+  {
+    "mot": "bèt sovaj",
+    "kat": "n",
+    "def": "bèt ki nan bwa",
+    "egz": "Tig se yon bèt sovaj.",
+    "ant": "bèt domestik",
+    "tem": "animal"
   },
   {
     "mot": "bò",
@@ -862,6 +1133,14 @@
     "egz": "Timoun yo chante nan lekòl."
   },
   {
+    "mot": "chante",
+    "kat": "v",
+    "def": "fè bèl son",
+    "egz": "Zwazo a chante byen.",
+    "sin": "krye",
+    "tem": "animal"
+  },
+  {
     "mot": "chapo",
     "kat": "n",
     "def": "kouvri tèt ki pwoteje kont solèy ak lapli",
@@ -876,12 +1155,37 @@
     "egz": "Chat la trape sourit la."
   },
   {
+    "mot": "chat",
+    "kat": "n",
+    "def": "bèt ki di myaw",
+    "egz": "Chat la nan kabann nan.",
+    "sin": "ti chat",
+    "ant": "chen",
+    "tem": "animal"
+  },
+  {
     "mot": "chemiz",
     "kat": "n",
     "def": "rad pou leka ki gen manch ak bouton",
     "egz": "Mete chemiz blan ou an pou reyinyon an.",
     "ant": "chanday",
     "tem": "rad"
+  },
+  {
+    "mot": "chen",
+    "kat": "n",
+    "def": "bèt ki di wouf",
+    "egz": "Chen mwen veye kay la.",
+    "sin": "ti chen",
+    "ant": "chat",
+    "tem": "animal"
+  },
+  {
+    "mot": "chenil",
+    "kat": "n",
+    "def": "ti vè ki vin papiyon",
+    "egz": "Chenil nan fèy.",
+    "tem": "animal"
   },
   {
     "mot": "cheve",
@@ -937,6 +1241,57 @@
     "tem": "rad"
   },
   {
+    "mot": "chot dlo",
+    "kat": "n",
+    "def": "kaskad",
+    "egz": "Chot dlo nan mòn.",
+    "sin": "kaskad",
+    "tem": "peyizaj"
+  },
+  {
+    "mot": "chou",
+    "kat": "n",
+    "def": "legim won ak fèy",
+    "egz": "Chou nan piklis.",
+    "tem": "fwi-legim",
+    "var": "legim"
+  },
+  {
+    "mot": "chou ble",
+    "kat": "n",
+    "def": "chou wouj",
+    "egz": "Chou ble pou salad.",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "chou flè",
+    "kat": "n",
+    "def": "yon kalite chou blan",
+    "egz": "Chou flè ak sòs.",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "chou frize",
+    "kat": "n",
+    "def": "chou ak fèy bouklé",
+    "egz": "Chou frize bon pou sante.",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "chovsouri",
+    "kat": "n",
+    "def": "ti bèt ki vole nuit",
+    "egz": "Chovsouri nan twou yo.",
+    "tem": "animal"
+  },
+  {
+    "mot": "chwal",
+    "kat": "n",
+    "def": "gwo bèt pou monte",
+    "egz": "Chwal la kouri vit.",
+    "tem": "animal"
+  },
+  {
     "mot": "chèche",
     "kat": "v",
     "def": "Fè efò pou jwenn oswa dekouvri yon moun oswa bagay.",
@@ -955,6 +1310,22 @@
     "kat": "interj",
     "def": "Ekspresyon pou montre konsantman ak akò; opoze ak non.",
     "egz": "Dako, nou pral fè sa demèn."
+  },
+  {
+    "mot": "dali",
+    "kat": "n",
+    "def": "yon kalite flè bèl",
+    "egz": "Dali wouj nan vaz.",
+    "sin": "dalya",
+    "tem": "plant"
+  },
+  {
+    "mot": "dalya",
+    "kat": "n",
+    "def": "dali",
+    "egz": "Dalya nan jaden mwen.",
+    "sin": "dali",
+    "tem": "plant"
   },
   {
     "mot": "dan",
@@ -1037,6 +1408,13 @@
     "tem": "kay"
   },
   {
+    "mot": "delta",
+    "kat": "n",
+    "def": "kote rivyè rankontre lanmè",
+    "egz": "Delta Nil nan Ejip.",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "demen",
     "kat": "n",
     "def": "jou apre jodi",
@@ -1094,6 +1472,13 @@
     "egz": "Pitit yo ap jwe deyò."
   },
   {
+    "mot": "dezo",
+    "kat": "n",
+    "def": "yon plant pou tisan",
+    "egz": "Dezo bon pou kè a.",
+    "tem": "plant"
+  },
+  {
     "mot": "dezyèm",
     "kat": "adj",
     "def": "Ki vin apre premye; ki okipe pozisyon nimewo 2 nan yon seri.",
@@ -1112,6 +1497,14 @@
     "def": "rejyon sèk ak chalè",
     "egz": "Dezè Sahara gwo.",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "dezè",
+    "kat": "n",
+    "def": "rejyon sèk",
+    "egz": "Dezè Sahara gwo.",
+    "ant": "fore",
+    "tem": "peyizaj"
   },
   {
     "mot": "dezès",
@@ -1230,6 +1623,14 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "dlo",
+    "kat": "n",
+    "def": "likid ki nan rivyè ak lanmè",
+    "egz": "Dlo a fre.",
+    "tem": "peyizaj",
+    "var": "natirèl"
+  },
+  {
     "mot": "do",
     "kat": "n",
     "def": "pati dèyè kò",
@@ -1249,6 +1650,13 @@
     "def": "koulè lò",
     "egz": "Bag dore a klere.",
     "tem": "koulè"
+  },
+  {
+    "mot": "doreyo",
+    "kat": "n",
+    "def": "yon pwason espesyal",
+    "egz": "Doreyo lan koute chè.",
+    "tem": "animal"
   },
   {
     "mot": "dou",
@@ -1359,16 +1767,47 @@
     "egz": "Fèl an Kreyòl edike pitit Ayiti."
   },
   {
+    "mot": "egret",
+    "kat": "n",
+    "def": "krabye blan",
+    "egz": "Egret yo bèl nan dlo a.",
+    "sin": "krabye",
+    "tem": "animal"
+  },
+  {
     "mot": "ekri",
     "kat": "v",
     "def": "Fòme lèt, mo, oswa senbòl sou yon sifas avèk plim oswa kreyon.",
     "egz": "Elèv yo aprann ekri nan premye ane."
   },
   {
+    "mot": "elague",
+    "kat": "v",
+    "def": "sale",
+    "egz": "Yo elague flanboyan an.",
+    "sin": "sale",
+    "tem": "plant"
+  },
+  {
+    "mot": "eleffan",
+    "kat": "n",
+    "def": "pi gwo bèt sou tè",
+    "egz": "Eleffan gen yon long nen.",
+    "tem": "animal"
+  },
+  {
     "mot": "elèv",
     "kat": "n",
     "def": "Moun ki nan lekòl ap aprann; etidyan ki suiv kou.",
     "egz": "Gen 30 elèv nan klas la."
+  },
+  {
+    "mot": "epinad",
+    "kat": "n",
+    "def": "legim ak fèy vèt",
+    "egz": "Epinad ak vyann.",
+    "tem": "fwi-legim",
+    "var": "legim"
   },
   {
     "mot": "epis",
@@ -1387,6 +1826,13 @@
     "tem": "kò"
   },
   {
+    "mot": "eskago",
+    "kat": "n",
+    "def": "bèt ki gen kawap won",
+    "egz": "Eskago yo nan jaden.",
+    "tem": "animal"
+  },
+  {
     "mot": "eskalye",
     "kat": "n",
     "def": "seri mach ki konekte etaj yo nan yon kay",
@@ -1401,6 +1847,20 @@
     "egz": "Eskize m si m deranje.",
     "sin": "padon",
     "tem": "salitasyon"
+  },
+  {
+    "mot": "eskòpyon",
+    "kat": "n",
+    "def": "bèt ki pike ak ke",
+    "egz": "Eskòpyon nan dezè.",
+    "tem": "animal"
+  },
+  {
+    "mot": "espas",
+    "kat": "n",
+    "def": "vid ant kò syèl yo",
+    "egz": "Astronot vwayaje nan espas.",
+    "tem": "peyizaj"
   },
   {
     "mot": "espwa",
@@ -1432,6 +1892,13 @@
     "tem": "kay"
   },
   {
+    "mot": "etan",
+    "kat": "n",
+    "def": "yon ti lak",
+    "egz": "Etan nan jaden.",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "etranje",
     "kat": "n",
     "def": "Moun ki sòti nan yon lòt peyi; ki pa natif natal yon kote.",
@@ -1444,6 +1911,13 @@
     "egz": "Yon etranje frape pòt la.",
     "ant": "fanmi; zanmi",
     "tem": "fanmi"
+  },
+  {
+    "mot": "ensèk",
+    "kat": "n",
+    "def": "ti bèt ak sis pat",
+    "egz": "Ensèk yo nan jaden.",
+    "tem": "animal"
   },
   {
     "mot": "entelijan",
@@ -1597,10 +2071,47 @@
     "egz": "Li fin travay li."
   },
   {
+    "mot": "flaman",
+    "kat": "n",
+    "def": "zwazo woz ki long",
+    "egz": "Flaman nan dlo sale.",
+    "sin": "flamant",
+    "tem": "animal"
+  },
+  {
+    "mot": "flanboyan",
+    "kat": "n",
+    "def": "pyebwa ak flè wouj",
+    "egz": "Flanboyan nan janvye.",
+    "tem": "plant"
+  },
+  {
+    "mot": "flori",
+    "kat": "v",
+    "def": "bay flè",
+    "egz": "Pye flanboyan flori.",
+    "tem": "plant"
+  },
+  {
     "mot": "flè",
     "kat": "n",
     "def": "Pati yon plant ki klere avèk bèl koulè; ògan repwodiksyon plant.",
     "egz": "Jaden an plen flè wouj."
+  },
+  {
+    "mot": "flè",
+    "kat": "n",
+    "def": "pati bèl ak koulè nan plant",
+    "egz": "Flè yo bèl nan jaden.",
+    "tem": "plant"
+  },
+  {
+    "mot": "flèv",
+    "kat": "n",
+    "def": "gwo rivyè",
+    "egz": "Flèv Amazon nan Brezil.",
+    "sin": "rivyè",
+    "tem": "peyizaj"
   },
   {
     "mot": "fondasyon",
@@ -1627,6 +2138,14 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "fore",
+    "kat": "n",
+    "def": "gwo bwa twopikal",
+    "egz": "Fore Amazon enpòtan.",
+    "sin": "bwa",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "fotèy",
     "kat": "n",
     "def": "gwo chèz mou ki gen bra pou repoze",
@@ -1649,6 +2168,28 @@
     "egz": "Manje vyann nan ak fouchèt.",
     "ant": "kiyè",
     "tem": "kay"
+  },
+  {
+    "mot": "fougè",
+    "kat": "n",
+    "def": "yon plant ki gen anpil fèy fen",
+    "egz": "Fougè nan lonbray.",
+    "tem": "plant"
+  },
+  {
+    "mot": "foumi",
+    "kat": "n",
+    "def": "ti ensèk ki travay ansanm",
+    "egz": "Foumi nan kuizin.",
+    "tem": "animal"
+  },
+  {
+    "mot": "framboyan",
+    "kat": "n",
+    "def": "flanboyan",
+    "egz": "Framboyan bèl anpil.",
+    "sin": "flanboyan",
+    "tem": "plant"
   },
   {
     "mot": "fre",
@@ -1705,6 +2246,14 @@
     "tem": "fanmi"
   },
   {
+    "mot": "frè",
+    "kat": "adj",
+    "def": "ki gen lavi ak dlo",
+    "egz": "Plant frè nan lapli.",
+    "ant": "seche",
+    "tem": "plant"
+  },
+  {
     "mot": "frèch",
     "kat": "adj",
     "def": "ki pa fatige",
@@ -1747,6 +2296,28 @@
     "egz": "Manje fwi bon pou sante ou."
   },
   {
+    "mot": "fwi",
+    "kat": "n",
+    "def": "rezilta flè ki bay manje",
+    "egz": "Fwi yo mire.",
+    "tem": "plant"
+  },
+  {
+    "mot": "fwi",
+    "kat": "n",
+    "def": "manje dous ki soti nan pyebwa",
+    "egz": "Fwi yo bon pou sante.",
+    "ant": "legim",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "fwèz",
+    "kat": "n",
+    "def": "ti fwi wouj dous",
+    "egz": "Fwèz nan mache.",
+    "tem": "fwi-legim"
+  },
+  {
     "mot": "fyanse",
     "kat": "n",
     "def": "moun ou pwomèt pou marye",
@@ -1782,6 +2353,20 @@
     "egz": "Yo fè yon gwo fèt pou premye janvye."
   },
   {
+    "mot": "fèy",
+    "kat": "n",
+    "def": "pati vèt nan plant",
+    "egz": "Fèy yo bay lonbray.",
+    "tem": "plant"
+  },
+  {
+    "mot": "fèye",
+    "kat": "v",
+    "def": "pèdi fèy",
+    "egz": "Pye fèye nan ivè.",
+    "tem": "plant"
+  },
+  {
     "mot": "fò",
     "kat": "adj",
     "def": "ki gen anpil fòs",
@@ -1803,6 +2388,13 @@
     "egz": "Gade bèl solèy kouche a."
   },
   {
+    "mot": "galaksi",
+    "kat": "n",
+    "def": "ansanm zetwal ak planèt",
+    "egz": "Galaksi nou Lavwa lakte.",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "galri",
     "kat": "n",
     "def": "espas kouvri deyò yon kay kote moun ka chita",
@@ -1817,6 +2409,13 @@
     "egz": "Machin nan nan garaj la.",
     "ant": "lakou",
     "tem": "kay"
+  },
+  {
+    "mot": "gardenya",
+    "kat": "n",
+    "def": "yon flè blan parfime",
+    "egz": "Gardenya pou maryaj.",
+    "tem": "plant"
   },
   {
     "mot": "gason",
@@ -1838,6 +2437,14 @@
     "kat": "n",
     "def": "Manje dous ki fèt pou selebrasyon; espesyalman fèt anivèsè.",
     "egz": "Manman li fè yon gato pou fèt li."
+  },
+  {
+    "mot": "gazon",
+    "kat": "n",
+    "def": "zèb bèl ki pouse pou anbeli",
+    "egz": "Gazon devan kay la.",
+    "sin": "zèb",
+    "tem": "plant"
   },
   {
     "mot": "gen",
@@ -1887,6 +2494,14 @@
     "kat": "v",
     "def": "Vin pi gwo; devlope fizikman ak mantal soti pitit rive gran.",
     "egz": "Pitit la grandi vit."
+  },
+  {
+    "mot": "grandi",
+    "kat": "v",
+    "def": "vin pi gwo",
+    "egz": "Pyebwa a grandi vit.",
+    "sin": "pouse",
+    "tem": "plant"
   },
   {
     "mot": "granfanmi",
@@ -1965,6 +2580,14 @@
     "tem": "manje"
   },
   {
+    "mot": "grenn",
+    "kat": "n",
+    "def": "ti pati nan fwi pou plante",
+    "egz": "Plante grenn yo.",
+    "sin": "semans",
+    "tem": "plant"
+  },
+  {
     "mot": "gri",
     "kat": "adj",
     "def": "koulè ki ant blan ak nwa",
@@ -1995,6 +2618,31 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "gwayav",
+    "kat": "n",
+    "def": "pyebwa ki bay gwayav",
+    "egz": "Gwayav nan jaden.",
+    "sin": "gwayavye",
+    "tem": "plant",
+    "var": "pyebwa"
+  },
+  {
+    "mot": "gwayav",
+    "kat": "n",
+    "def": "ti fwi roz",
+    "egz": "Gwayav nan jaden m.",
+    "tem": "fwi-legim",
+    "var": "fwi"
+  },
+  {
+    "mot": "gwayavye",
+    "kat": "n",
+    "def": "gwayav",
+    "egz": "Gwayavye a malad.",
+    "sin": "gwayav",
+    "tem": "plant"
+  },
+  {
     "mot": "gwo",
     "kat": "adj",
     "def": "Ki gen gwosè, wotè, oswa kantite ki depase nòmal; opoze ak piti.",
@@ -2007,6 +2655,13 @@
     "egz": "Li gwo anpil.",
     "ant": "piti",
     "tem": "kò"
+  },
+  {
+    "mot": "gwèp",
+    "kat": "n",
+    "def": "ensèk ki pike fò",
+    "egz": "Gwèp la pike m.",
+    "tem": "animal"
   },
   {
     "mot": "gòj",
@@ -2022,6 +2677,28 @@
     "egz": "Hareng boukannen ak bannann bouyi.",
     "ant": "pwason fri",
     "tem": "manje"
+  },
+  {
+    "mot": "hareng",
+    "kat": "n",
+    "def": "yon ti pwason ki konsève",
+    "egz": "Hareng ak mayi moulen.",
+    "sin": "areng",
+    "tem": "animal"
+  },
+  {
+    "mot": "hortansya",
+    "kat": "n",
+    "def": "gwo flè boukou koulè",
+    "egz": "Hortansya nan jaden m.",
+    "tem": "plant"
+  },
+  {
+    "mot": "ibiskis",
+    "kat": "n",
+    "def": "flè twopikal grav",
+    "egz": "Ibiskis pou tisan.",
+    "tem": "plant"
   },
   {
     "mot": "imid",
@@ -2040,12 +2717,26 @@
     "tem": "rad"
   },
   {
+    "mot": "inivè",
+    "kat": "n",
+    "def": "tout sa ki egziste",
+    "egz": "Inivè a gwo san fen.",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "inondasyon",
     "kat": "n",
     "def": "lè dlo kouvri lakou",
     "egz": "Inondasyon ap fè domaj.",
     "sin": "delij",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "ipopotam",
+    "kat": "n",
+    "def": "bèt nan dlo Lafrik",
+    "egz": "Ipopotam viv nan rivyè.",
+    "tem": "animal"
   },
   {
     "mot": "isi",
@@ -2068,6 +2759,13 @@
     "tem": "kay"
   },
   {
+    "mot": "janjak",
+    "kat": "n",
+    "def": "yon plant ki gen kè vèt",
+    "egz": "Janjak nan plenn.",
+    "tem": "plant"
+  },
+  {
     "mot": "janm",
     "kat": "n",
     "def": "Pati nan kò ki konekte pye ak vant; kès.",
@@ -2082,11 +2780,33 @@
     "tem": "kò"
   },
   {
+    "mot": "janpalmis",
+    "kat": "n",
+    "def": "zwazo Ayisyen ki sanble palmis",
+    "egz": "Janpalmis se zwazo nasyonal.",
+    "tem": "animal"
+  },
+  {
     "mot": "janvye",
     "kat": "n",
     "def": "premye mwa nan ane",
     "egz": "Janvye fè frèt.",
     "tem": "jou ak mwa"
+  },
+  {
+    "mot": "japè",
+    "kat": "v",
+    "def": "chen ki bri",
+    "egz": "Chen an ap japè.",
+    "sin": "rele",
+    "tem": "animal"
+  },
+  {
+    "mot": "jasmin",
+    "kat": "n",
+    "def": "ti flè ki gen bon sant",
+    "egz": "Jasmin nan jaden.",
+    "tem": "plant"
   },
   {
     "mot": "je",
@@ -2125,6 +2845,14 @@
     "tem": "fanmi"
   },
   {
+    "mot": "jenjanm",
+    "kat": "n",
+    "def": "rasin medsinal piquant",
+    "egz": "Jenjanm pou maladi.",
+    "tem": "plant",
+    "var": "medsinal"
+  },
+  {
     "mot": "jenn",
     "kat": "adj",
     "def": "ki nan jenès",
@@ -2138,6 +2866,20 @@
     "def": "jwen nan mitan janm",
     "egz": "Jenou mwen ap fè mwen mal.",
     "tem": "kò"
+  },
+  {
+    "mot": "ji koudmen",
+    "kat": "n",
+    "def": "yon plant medsinal",
+    "egz": "Ji koudmen pou bèlè a.",
+    "tem": "plant"
+  },
+  {
+    "mot": "ji loranje",
+    "kat": "n",
+    "def": "fèy pou tisan",
+    "egz": "Ji loranje pou maladi vant.",
+    "tem": "plant"
   },
   {
     "mot": "jimo",
@@ -2162,6 +2904,13 @@
     "egz": "Li mete yon jip wouj pou fèt la.",
     "ant": "pantalon",
     "tem": "rad"
+  },
+  {
+    "mot": "jiraf",
+    "kat": "n",
+    "def": "bèt ki gen long kou",
+    "egz": "Jiraf manje fèy nan pye bwa.",
+    "tem": "animal"
   },
   {
     "mot": "jis",
@@ -2213,6 +2962,14 @@
     "tem": "manje"
   },
   {
+    "mot": "joumou",
+    "kat": "n",
+    "def": "kalbas oranj",
+    "egz": "Joumou pou soup nasyonal.",
+    "tem": "fwi-legim",
+    "var": "legim"
+  },
+  {
     "mot": "jounen",
     "kat": "n",
     "def": "tan ant solèy leve ak solèy kouche",
@@ -2260,6 +3017,13 @@
     "tem": "kay"
   },
   {
+    "mot": "kabraka",
+    "kat": "n",
+    "def": "yon pwason long",
+    "egz": "Kabraka nan resif la.",
+    "tem": "animal"
+  },
+  {
     "mot": "kabrit",
     "kat": "n",
     "def": "vyann oswa animal ki bay vyann kabrit",
@@ -2268,12 +3032,105 @@
     "tem": "manje"
   },
   {
+    "mot": "kabrit",
+    "kat": "n",
+    "def": "ti bèt ki sanble ak mouton",
+    "egz": "Kabrit yo nan mòn.",
+    "tem": "animal"
+  },
+  {
+    "mot": "kachiman",
+    "kat": "n",
+    "def": "pyebwa ki bay kachiman",
+    "egz": "Kachiman an pre miran.",
+    "tem": "plant",
+    "var": "pyebwa"
+  },
+  {
+    "mot": "kachiman",
+    "kat": "n",
+    "def": "fwi blan dou",
+    "egz": "Kachiman pou kawèm.",
+    "tem": "fwi-legim",
+    "var": "fwi"
+  },
+  {
+    "mot": "kaderik",
+    "kat": "n",
+    "def": "yon kalite zwazo",
+    "egz": "Kaderik chante bèl.",
+    "tem": "animal"
+  },
+  {
     "mot": "kafe",
     "kat": "n",
     "def": "bwason cho fèt ak grenn kafe moulen",
     "egz": "Li bwè kafe chak maten.",
     "ant": "te",
     "tem": "manje"
+  },
+  {
+    "mot": "kafe",
+    "kat": "n",
+    "def": "plant ki bay grenn kafe",
+    "egz": "Kafe nan mòn.",
+    "sin": "kafeye",
+    "tem": "plant",
+    "var": "pyebwa"
+  },
+  {
+    "mot": "kafeye",
+    "kat": "n",
+    "def": "plant kafe",
+    "egz": "Kafeye nan jaden.",
+    "sin": "kafe",
+    "tem": "plant"
+  },
+  {
+    "mot": "kakawo",
+    "kat": "n",
+    "def": "pyebwa ki bay kakawo (pou chokola)",
+    "egz": "Kakawo nan nò.",
+    "tem": "plant",
+    "var": "pyebwa"
+  },
+  {
+    "mot": "kako",
+    "kat": "n",
+    "def": "yon kalite pwason",
+    "egz": "Kako nan bouchon lanmè.",
+    "tem": "animal"
+  },
+  {
+    "mot": "kakraza",
+    "kat": "n",
+    "def": "ti ensèk ki rete kote moun",
+    "egz": "Kakraza nan kizin.",
+    "sin": "ravèt",
+    "tem": "animal"
+  },
+  {
+    "mot": "kakti",
+    "kat": "n",
+    "def": "plant ak pikan nan dezè",
+    "egz": "Kakti nan janj.",
+    "tem": "plant"
+  },
+  {
+    "mot": "kalalou",
+    "kat": "n",
+    "def": "legim glisan",
+    "egz": "Kalalou ak diri.",
+    "sin": "gombo",
+    "tem": "fwi-legim",
+    "var": "legim"
+  },
+  {
+    "mot": "kale",
+    "kat": "v",
+    "def": "fè pitit (bèt)",
+    "egz": "Vach la kale yon ti gato.",
+    "tem": "animal"
   },
   {
     "mot": "kale-bare",
@@ -2291,6 +3148,27 @@
     "tem": "rad"
   },
   {
+    "mot": "kameleyon",
+    "kat": "n",
+    "def": "leza ki chanje koulè",
+    "egz": "Kameleyon nan jaden.",
+    "tem": "animal"
+  },
+  {
+    "mot": "kanari",
+    "kat": "n",
+    "def": "yon ti zwazo jòn",
+    "egz": "Kanari nan kaj la chante.",
+    "tem": "animal"
+  },
+  {
+    "mot": "kangourou",
+    "kat": "n",
+    "def": "bèt ki sote ak yon pòch",
+    "egz": "Kangourou nan Ostrali.",
+    "tem": "animal"
+  },
+  {
     "mot": "kanmarad",
     "kat": "n",
     "def": "yon zanmi pwòch",
@@ -2300,12 +3178,33 @@
     "tem": "fanmi"
   },
   {
+    "mot": "kann",
+    "kat": "n",
+    "def": "plant ki bay sik",
+    "egz": "Kann nan plenn.",
+    "tem": "plant"
+  },
+  {
+    "mot": "kanna",
+    "kat": "n",
+    "def": "zwazo ki naje",
+    "egz": "Kanna yo nan dlo.",
+    "tem": "animal"
+  },
+  {
     "mot": "kanpe",
     "kat": "v",
     "def": "rete dwat sou pye",
     "egz": "Kanpe la!",
     "ant": "chita; tonbe",
     "tem": "kò"
+  },
+  {
+    "mot": "kanèl",
+    "kat": "n",
+    "def": "ekòs ki bay gou",
+    "egz": "Kanèl nan kafe.",
+    "tem": "plant"
   },
   {
     "mot": "kapab",
@@ -2327,6 +3226,14 @@
     "egz": "Yo manje kasav ak pè kabrit.",
     "ant": "pen",
     "tem": "manje"
+  },
+  {
+    "mot": "kaskad",
+    "kat": "n",
+    "def": "dlo ki tonbe sou wòch",
+    "egz": "Kaskad Bassin Bleu bèl.",
+    "sin": "chot dlo",
+    "tem": "peyizaj"
   },
   {
     "mot": "kasket",
@@ -2388,6 +3295,21 @@
     "tem": "nimewo"
   },
   {
+    "mot": "kavèn",
+    "kat": "n",
+    "def": "twou nan wòch",
+    "egz": "Kavèn nan Mòn-Ròj.",
+    "sin": "twou wòch",
+    "tem": "peyizaj"
+  },
+  {
+    "mot": "kawap",
+    "kat": "n",
+    "def": "kouvèti toti",
+    "egz": "Kawap toti a di.",
+    "tem": "animal"
+  },
+  {
     "mot": "kawo",
     "kat": "adj",
     "def": "ki gen kare diferan koulè",
@@ -2402,10 +3324,62 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "kawòt",
+    "kat": "n",
+    "def": "rasin oranj long",
+    "egz": "Kawòt nan soup.",
+    "tem": "fwi-legim",
+    "var": "legim"
+  },
+  {
+    "mot": "kawòt blan",
+    "kat": "n",
+    "def": "yon legim blan tankou kawòt",
+    "egz": "Kawòt blan nan soup.",
+    "sin": "panè",
+    "tem": "fwi-legim"
+  },
+  {
     "mot": "kay",
     "kat": "n",
     "def": "Bilding kote moun viv; abri, rezidans, lakay.",
     "egz": "Kay yo piti men yo pwòp."
+  },
+  {
+    "mot": "kayman",
+    "kat": "n",
+    "def": "krokodil",
+    "egz": "Kayman pa egziste an Ayiti.",
+    "sin": "krokodil",
+    "tem": "animal"
+  },
+  {
+    "mot": "kayou",
+    "kat": "n",
+    "def": "ti wòch",
+    "egz": "Kayou nan chemen.",
+    "tem": "peyizaj"
+  },
+  {
+    "mot": "kayè",
+    "kat": "n",
+    "def": "yon pyebwa Ayisyen",
+    "egz": "Kayè rar kounye a.",
+    "tem": "plant"
+  },
+  {
+    "mot": "kayè",
+    "kat": "n",
+    "def": "yon pyebwa pou mèb",
+    "egz": "Kayè nan jaden m.",
+    "tem": "plant"
+  },
+  {
+    "mot": "kayè",
+    "kat": "n",
+    "def": "yon fwi long ak grenn",
+    "egz": "Kayè bon ak diri.",
+    "tem": "fwi-legim"
   },
   {
     "mot": "kenbe",
@@ -2419,6 +3393,13 @@
     "def": "nimewo 15",
     "egz": "Kenz minit.",
     "tem": "nimewo"
+  },
+  {
+    "mot": "kenèp",
+    "kat": "n",
+    "def": "pyebwa ak ti fwi vèt",
+    "egz": "Kenèp lan plen.",
+    "tem": "plant"
   },
   {
     "mot": "ki",
@@ -2508,6 +3489,14 @@
     "tem": "manje"
   },
   {
+    "mot": "klò",
+    "kat": "n",
+    "def": "matyè jòn nan tè",
+    "egz": "Klò pou fè kanmasi.",
+    "sin": "ajil",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "kochon",
     "kat": "n",
     "def": "vyann ki soti nan kochon oswa animal li menm",
@@ -2516,12 +3505,56 @@
     "tem": "manje"
   },
   {
+    "mot": "kochon",
+    "kat": "n",
+    "def": "bèt nou manje vyann li",
+    "egz": "Kochon yo nan twou.",
+    "tem": "animal"
+  },
+  {
+    "mot": "kodenn",
+    "kat": "n",
+    "def": "zwazo pi gwo pase poul",
+    "egz": "Kodenn pou Nwèl.",
+    "tem": "animal"
+  },
+  {
+    "mot": "kojot",
+    "kat": "n",
+    "def": "savann",
+    "egz": "Kojot nan dezè.",
+    "sin": "savann",
+    "tem": "animal"
+  },
+  {
+    "mot": "koko",
+    "kat": "n",
+    "def": "fwi kokotye",
+    "egz": "Koko a plen ji.",
+    "tem": "plant"
+  },
+  {
+    "mot": "kokotye",
+    "kat": "n",
+    "def": "palmis ki bay koko",
+    "egz": "Kokotye nan rivaj.",
+    "tem": "plant"
+  },
+  {
     "mot": "kola",
     "kat": "n",
     "def": "bwason pétillant sik fè nan faktori",
     "egz": "Timoun yo renmen bwè kola.",
     "sin": "sodayou",
     "tem": "manje"
+  },
+  {
+    "mot": "kolibri",
+    "kat": "n",
+    "def": "ti zwazo ki bwè nèkta flè",
+    "egz": "Kolibri vit anpil.",
+    "sin": "wanga nègès",
+    "tem": "animal"
   },
   {
     "mot": "kolye",
@@ -2546,6 +3579,14 @@
     "egz": "Mwen prezante kondoleyans mwen.",
     "ant": "felisitasyon",
     "tem": "salitasyon"
+  },
+  {
+    "mot": "konkonm",
+    "kat": "n",
+    "def": "legim vèt long",
+    "egz": "Konkonm fre.",
+    "tem": "fwi-legim",
+    "var": "legim"
   },
   {
     "mot": "konn",
@@ -2577,6 +3618,13 @@
     "egz": "Lafrik se yon kontinan.",
     "ant": "zile",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "koray",
+    "kat": "n",
+    "def": "bèt nan lanmè ki fòme resif",
+    "egz": "Koray ble.",
+    "tem": "peyizaj"
   },
   {
     "mot": "kostim",
@@ -2622,6 +3670,14 @@
     "def": "sa ki diferansye yon bagay ak yon lòt nan vizyon",
     "egz": "Ki koulè ou pi renmen?",
     "tem": "koulè"
+  },
+  {
+    "mot": "koulèv",
+    "kat": "n",
+    "def": "bèt long san pye",
+    "egz": "Koulèv yo nan zèb.",
+    "sin": "sèpan",
+    "tem": "animal"
   },
   {
     "mot": "kouraj",
@@ -2698,12 +3754,49 @@
     "tem": "fanmi"
   },
   {
+    "mot": "kowosòl",
+    "kat": "n",
+    "def": "pyebwa ki bay kowosòl",
+    "egz": "Kowosòl bon pou tisan.",
+    "tem": "plant",
+    "var": "pyebwa"
+  },
+  {
+    "mot": "kowosòl",
+    "kat": "n",
+    "def": "gwo fwi vèt ak pikan",
+    "egz": "Kowosòl pou tisan.",
+    "tem": "fwi-legim",
+    "var": "fwi"
+  },
+  {
+    "mot": "kowosòl fèy",
+    "kat": "n",
+    "def": "fèy kowosòl pou tisan",
+    "egz": "Kowosòl fèy pou bay zonmèy.",
+    "tem": "plant"
+  },
+  {
     "mot": "krab",
     "kat": "n",
     "def": "bèt maren ak pinch yo manje kuit",
     "egz": "Krab boukannen bon anpil.",
     "ant": "lambi",
     "tem": "manje"
+  },
+  {
+    "mot": "krab",
+    "kat": "n",
+    "def": "bèt ki gen pat ki mache sou kote",
+    "egz": "Krab yo nan rivaj la.",
+    "tem": "animal"
+  },
+  {
+    "mot": "krabye",
+    "kat": "n",
+    "def": "zwazo blan nan dlo",
+    "egz": "Krabye sou rivaj la.",
+    "tem": "animal"
   },
   {
     "mot": "krache",
@@ -2714,10 +3807,41 @@
     "tem": "kò"
   },
   {
+    "mot": "krapo",
+    "kat": "n",
+    "def": "kwapo",
+    "egz": "Krapo ap chante nuit la.",
+    "sin": "kwapo",
+    "tem": "animal"
+  },
+  {
+    "mot": "krevèt",
+    "kat": "n",
+    "def": "kribich",
+    "egz": "Krevèt nan ji sitwon.",
+    "sin": "kribich",
+    "tem": "animal"
+  },
+  {
     "mot": "kreyòl",
     "kat": "n",
     "def": "Lang ki pale ann Ayiti; lang manman pèp ayisyen.",
     "egz": "Kreyòl se lang ki vin nan kè."
+  },
+  {
+    "mot": "kribich",
+    "kat": "n",
+    "def": "yon ti bèt ki sanble ak krab",
+    "egz": "Kribich rivyè a.",
+    "sin": "krevèt",
+    "tem": "animal"
+  },
+  {
+    "mot": "krikèt",
+    "kat": "n",
+    "def": "ti ensèk ki chante aswè",
+    "egz": "Krikèt yo chante.",
+    "tem": "animal"
   },
   {
     "mot": "kriye",
@@ -2735,12 +3859,28 @@
     "tem": "kò"
   },
   {
+    "mot": "krokodil",
+    "kat": "n",
+    "def": "kayman",
+    "egz": "Krokodil nan dlo sale.",
+    "sin": "kayman",
+    "tem": "animal"
+  },
+  {
     "mot": "kru",
     "kat": "adj",
     "def": "ki pa kuit ak chalè oswa pa prè",
     "egz": "Pa manje ze kru li ka fè ou malad.",
     "ant": "kuit",
     "tem": "manje"
+  },
+  {
+    "mot": "krye",
+    "kat": "v",
+    "def": "son zwazo",
+    "egz": "Zwazo a krye.",
+    "sin": "chante",
+    "tem": "animal"
   },
   {
     "mot": "krèm",
@@ -2772,6 +3912,21 @@
     "egz": "Soulye kuit dire lontan.",
     "ant": "twal",
     "tem": "rad"
+  },
+  {
+    "mot": "kwakou",
+    "kat": "n",
+    "def": "yon kalite pwason gwo",
+    "egz": "Kwakou nan lanmè.",
+    "tem": "animal"
+  },
+  {
+    "mot": "kwapo",
+    "kat": "n",
+    "def": "ti bèt ki sote ak vant gwo",
+    "egz": "Kwapo nan dlo a.",
+    "sin": "krapo",
+    "tem": "animal"
   },
   {
     "mot": "kwit",
@@ -2819,12 +3974,27 @@
     "egz": "Fòk ou pran swen kò ou."
   },
   {
+    "mot": "kòk",
+    "kat": "n",
+    "def": "poul gason",
+    "egz": "Kòk la chante maten an.",
+    "ant": "poul",
+    "tem": "animal"
+  },
+  {
     "mot": "kòman w ye",
     "kat": "expr",
     "def": "ki jan ou ye",
     "egz": "Kòman w ye?",
     "sin": "ki jan ou ye",
     "tem": "salitasyon"
+  },
+  {
+    "mot": "kòmèt",
+    "kat": "n",
+    "def": "gwo boul ak ke nan syèl",
+    "egz": "Kòmèt Halley fwa chak 76 ane.",
+    "tem": "peyizaj"
   },
   {
     "mot": "lajan",
@@ -2838,6 +4008,14 @@
     "def": "gwo etandi dlo dous",
     "egz": "Lak Azuei nan sid.",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "lak",
+    "kat": "n",
+    "def": "etandi dlo dous",
+    "egz": "Lak Azuei bèl.",
+    "ant": "lanmè",
+    "tem": "peyizaj"
   },
   {
     "mot": "lakou",
@@ -2870,6 +4048,14 @@
     "tem": "manje"
   },
   {
+    "mot": "lambi",
+    "kat": "n",
+    "def": "yon kalite koki nou manje",
+    "egz": "Lambi ak sòs ble.",
+    "tem": "animal",
+    "var": "lanmè"
+  },
+  {
     "mot": "lane",
     "kat": "n",
     "def": "ane",
@@ -2899,6 +4085,15 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "lanmè",
+    "kat": "n",
+    "def": "gwo dlo sale",
+    "egz": "Lanmè Karayib bèl.",
+    "ant": "lak",
+    "tem": "peyizaj",
+    "var": "natirèl"
+  },
+  {
     "mot": "lannuit",
     "kat": "n",
     "def": "nuit",
@@ -2906,6 +4101,13 @@
     "sin": "nuit",
     "ant": "lajounen",
     "tem": "jou ak mwa"
+  },
+  {
+    "mot": "lapen",
+    "kat": "n",
+    "def": "yon ti bèt ak gwo zòrèy",
+    "egz": "Lapen nan kaj la.",
+    "tem": "animal"
   },
   {
     "mot": "lapli",
@@ -2982,12 +4184,28 @@
     "tem": "manje"
   },
   {
+    "mot": "lay",
+    "kat": "n",
+    "def": "ail",
+    "egz": "Lay nan sòs.",
+    "sin": "ail",
+    "tem": "plant"
+  },
+  {
     "mot": "legim",
     "kat": "n",
     "def": "plat ayisyen fèt ak vèt ak vyann bouyi",
     "egz": "Legim ayisyen gen brenjen ak chou.",
     "ant": "soup",
     "tem": "manje"
+  },
+  {
+    "mot": "legim",
+    "kat": "n",
+    "def": "plant nou manje",
+    "egz": "Manje legim chak jou.",
+    "ant": "fwi",
+    "tem": "fwi-legim"
   },
   {
     "mot": "lekòl",
@@ -3025,6 +4243,14 @@
     "tem": "kò"
   },
   {
+    "mot": "leza",
+    "kat": "n",
+    "def": "zandolit",
+    "egz": "Leza yo manje moustik.",
+    "sin": "zandolit",
+    "tem": "animal"
+  },
+  {
     "mot": "li",
     "kat": "pron",
     "def": "Twazyèm pèsòn sengulye; moun nou ap pale sou li, gason oswa fi.",
@@ -3048,11 +4274,25 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "limase",
+    "kat": "n",
+    "def": "eskago san kawap",
+    "egz": "Limase nan fèy mouye.",
+    "tem": "animal"
+  },
+  {
     "mot": "limidite",
     "kat": "n",
     "def": "kondisyon imid",
     "egz": "Limidite a wo.",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "limon",
+    "kat": "n",
+    "def": "yon kalite sitwon vèt",
+    "egz": "Limon nan ji.",
+    "tem": "fwi-legim"
   },
   {
     "mot": "limyè",
@@ -3077,10 +4317,32 @@
     "tem": "rad"
   },
   {
+    "mot": "lis",
+    "kat": "n",
+    "def": "yon kalite flè blan",
+    "egz": "Lis pou maryaj.",
+    "tem": "plant"
+  },
+  {
     "mot": "liv",
     "kat": "n",
     "def": "Ansanm paj ki rele oswa kole ansanm ki gen tèks oswa foto.",
     "egz": "Li li yon liv chak semèn."
+  },
+  {
+    "mot": "lomar",
+    "kat": "n",
+    "def": "krab gwo",
+    "egz": "Lomar koute chè anpil.",
+    "tem": "animal"
+  },
+  {
+    "mot": "lonbri",
+    "kat": "n",
+    "def": "vè tè",
+    "egz": "Lonbri bon pou tè.",
+    "sin": "vè tè",
+    "tem": "animal"
   },
   {
     "mot": "long",
@@ -3107,10 +4369,31 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "lous",
+    "kat": "n",
+    "def": "gwo bèt nan fore polè",
+    "egz": "Lous nan glas.",
+    "tem": "animal"
+  },
+  {
     "mot": "lwen",
     "kat": "adj",
     "def": "Ki pa pre; ki separe pa distans; opoze ak pre.",
     "egz": "Lekòl la lwen anpil."
+  },
+  {
+    "mot": "lyepa",
+    "kat": "n",
+    "def": "yon ti bèt ki long ak vit",
+    "egz": "Lyepa nan jaden.",
+    "tem": "animal"
+  },
+  {
+    "mot": "lyon",
+    "kat": "n",
+    "def": "wa bwa Lafrik",
+    "egz": "Lyon se wa bèt yo.",
+    "tem": "animal"
   },
   {
     "mot": "lè",
@@ -3124,6 +4407,13 @@
     "def": "gaz nou respire",
     "egz": "Lè a pwòp.",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "lèche",
+    "kat": "v",
+    "def": "lave ak lang",
+    "egz": "Chat la lèche pat li.",
+    "tem": "animal"
   },
   {
     "mot": "lèd",
@@ -3154,6 +4444,14 @@
     "egz": "Li resevwa yon lèt nan pòs."
   },
   {
+    "mot": "lèti",
+    "kat": "n",
+    "def": "salad",
+    "egz": "Lèti nan sandwich.",
+    "sin": "salad",
+    "tem": "fwi-legim"
+  },
+  {
     "mot": "lèv",
     "kat": "n",
     "def": "kontou bouch",
@@ -3172,6 +4470,13 @@
     "def": "mwen kanpe nan difikilte",
     "egz": "M ap kenbe, mèsi.",
     "tem": "salitasyon"
+  },
+  {
+    "mot": "ma",
+    "kat": "n",
+    "def": "ti etan",
+    "egz": "Ma dlo lapli a.",
+    "tem": "peyizaj"
   },
   {
     "mot": "mache",
@@ -3226,6 +4531,14 @@
     "tem": "fanmi"
   },
   {
+    "mot": "makak",
+    "kat": "n",
+    "def": "singe",
+    "egz": "Makak yo malen.",
+    "sin": "singe",
+    "tem": "animal"
+  },
+  {
     "mot": "makomè",
     "kat": "n",
     "def": "manman filyèl yon moun",
@@ -3266,6 +4579,21 @@
     "tem": "manje"
   },
   {
+    "mot": "malanga",
+    "kat": "n",
+    "def": "rasin nou manje",
+    "egz": "Malanga bouyi ak vyann.",
+    "tem": "fwi-legim",
+    "var": "legim"
+  },
+  {
+    "mot": "malanga lanmè",
+    "kat": "n",
+    "def": "yon kalite bèt nan dlo sale",
+    "egz": "Malanga lanmè nan filè a.",
+    "tem": "animal"
+  },
+  {
     "mot": "malediksyon",
     "kat": "n",
     "def": "lapriyè pou move",
@@ -3274,10 +4602,33 @@
     "tem": "salitasyon"
   },
   {
+    "mot": "malfini",
+    "kat": "n",
+    "def": "zwazo chase ki gwo",
+    "egz": "Malfini ap pase nan syèl.",
+    "tem": "animal"
+  },
+  {
     "mot": "malè",
     "kat": "n",
     "def": "Yon bagay move ki rive; dezas; sitiyasyon ki ka fè mal.",
     "egz": "Tranbleman tè se yon gwo malè."
+  },
+  {
+    "mot": "malèb",
+    "kat": "n",
+    "def": "plant ki pa bezwen",
+    "egz": "Malèb nan jaden.",
+    "sin": "move zèb",
+    "tem": "plant"
+  },
+  {
+    "mot": "manati",
+    "kat": "n",
+    "def": "vach lanmè",
+    "egz": "Manati nan dlo Ayisyen.",
+    "sin": "vach lanmè",
+    "tem": "animal"
   },
   {
     "mot": "mango",
@@ -3286,6 +4637,51 @@
     "egz": "Mango Fransik se pi bon mango Ayiti.",
     "ant": "zoranj",
     "tem": "manje"
+  },
+  {
+    "mot": "mango",
+    "kat": "n",
+    "def": "pyebwa ki bay fwi mango",
+    "egz": "Mango francis a bèl.",
+    "sin": "mangye",
+    "tem": "plant",
+    "var": "pyebwa"
+  },
+  {
+    "mot": "mango fil",
+    "kat": "n",
+    "def": "mango ki gen anpil fil",
+    "egz": "Mango fil pou tisan.",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "mango francis",
+    "kat": "n",
+    "def": "yon kalite mango bon kalite",
+    "egz": "Mango francis koute chè.",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "mango miska",
+    "kat": "n",
+    "def": "yon kalite mango parfime",
+    "egz": "Mango miska bon nan ji.",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "manguste",
+    "kat": "n",
+    "def": "ti bèt ki manje koulèv",
+    "egz": "Manguste nan jaden.",
+    "tem": "animal"
+  },
+  {
+    "mot": "mangye",
+    "kat": "n",
+    "def": "mango",
+    "egz": "Mangye nan lakou m.",
+    "sin": "mango",
+    "tem": "plant"
   },
   {
     "mot": "manje",
@@ -3326,6 +4722,14 @@
     "tem": "fanmi"
   },
   {
+    "mot": "manmanflè",
+    "kat": "n",
+    "def": "moustik",
+    "egz": "Manmanflè manje m aswè a.",
+    "sin": "moustik",
+    "tem": "animal"
+  },
+  {
     "mot": "manto",
     "kat": "n",
     "def": "rad long ak cho ki mete sou lòt rad pou fredi",
@@ -3347,6 +4751,21 @@
     "egz": "Pa manyen sa.",
     "sin": "touche",
     "tem": "kò"
+  },
+  {
+    "mot": "manyòk",
+    "kat": "n",
+    "def": "rasin pou fè kasav",
+    "egz": "Manyòk pou tisan.",
+    "tem": "fwi-legim",
+    "var": "legim"
+  },
+  {
+    "mot": "manyòk fèy",
+    "kat": "n",
+    "def": "fèy manyòk pou tisan",
+    "egz": "Manyòk fèy pou maladi vant.",
+    "tem": "plant"
   },
   {
     "mot": "marasa",
@@ -3523,6 +4942,22 @@
     "tem": "nimewo"
   },
   {
+    "mot": "militon",
+    "kat": "n",
+    "def": "legim Karayib vèt",
+    "egz": "Militon ak vyann.",
+    "tem": "fwi-legim",
+    "var": "legim"
+  },
+  {
+    "mot": "milpat",
+    "kat": "n",
+    "def": "santipede",
+    "egz": "Milpat sou wòch.",
+    "sin": "santipede",
+    "tem": "animal"
+  },
+  {
     "mot": "milya",
     "kat": "n",
     "def": "nimewo 1,000,000,000",
@@ -3537,12 +4972,27 @@
     "tem": "nimewo"
   },
   {
+    "mot": "milèt",
+    "kat": "n",
+    "def": "bèt sanble ak chwal",
+    "egz": "Milèt la pote chaj la.",
+    "tem": "animal"
+  },
+  {
     "mot": "minui",
     "kat": "n",
     "def": "12è nan nuit",
     "egz": "Minui sone.",
     "ant": "midi",
     "tem": "jou ak mwa"
+  },
+  {
+    "mot": "mire",
+    "kat": "v",
+    "def": "vin bon pou manje",
+    "egz": "Mango yo mire.",
+    "ant": "vèt",
+    "tem": "plant"
   },
   {
     "mot": "misk",
@@ -3569,6 +5019,13 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "mouch",
+    "kat": "n",
+    "def": "ensèk ki ap vole",
+    "egz": "Mouch yo ap ennwiye.",
+    "tem": "animal"
+  },
+  {
     "mot": "moun",
     "kat": "n",
     "def": "yon èt imen",
@@ -3585,6 +5042,28 @@
     "sin": "dispari",
     "ant": "vivan",
     "tem": "kò"
+  },
+  {
+    "mot": "mous",
+    "kat": "n",
+    "def": "ti plant vèt ki pouse sou tè imid",
+    "egz": "Mous sou wòch.",
+    "tem": "plant"
+  },
+  {
+    "mot": "moustik",
+    "kat": "n",
+    "def": "ensèk ki pike",
+    "egz": "Moustik yo move.",
+    "sin": "manmanflè",
+    "tem": "animal"
+  },
+  {
+    "mot": "mouton",
+    "kat": "n",
+    "def": "bèt ki gen len",
+    "egz": "Mouton yo nan jaden an.",
+    "tem": "animal"
   },
   {
     "mot": "mouye",
@@ -3605,6 +5084,14 @@
     "kat": "adj",
     "def": "Ki pa bon; ki gen move kalite; ki ka fè mal.",
     "egz": "Move tan ap vini."
+  },
+  {
+    "mot": "move zèb",
+    "kat": "n",
+    "def": "malèb",
+    "egz": "Wete move zèb yo.",
+    "sin": "malèb",
+    "tem": "plant"
   },
   {
     "mot": "mwa",
@@ -3643,6 +5130,21 @@
     "tem": "salitasyon"
   },
   {
+    "mot": "myaw",
+    "kat": "v",
+    "def": "son chat",
+    "egz": "Chat la myaw.",
+    "tem": "animal"
+  },
+  {
+    "mot": "myèl",
+    "kat": "n",
+    "def": "abèy",
+    "egz": "Myèl yo nan flè.",
+    "sin": "abèy",
+    "tem": "animal"
+  },
+  {
     "mot": "mèg",
     "kat": "adj",
     "def": "ki pa gen anpil vyann",
@@ -3678,6 +5180,14 @@
     "tem": "salitasyon"
   },
   {
+    "mot": "mòde",
+    "kat": "v",
+    "def": "fèmen ak dan",
+    "egz": "Chen an mòde m.",
+    "sin": "kwoke",
+    "tem": "animal"
+  },
+  {
     "mot": "mòlè",
     "kat": "n",
     "def": "pati dèyè janm anba",
@@ -3700,6 +5210,23 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "mòn",
+    "kat": "n",
+    "def": "wotè natirèl",
+    "egz": "Pa gen plat — sèlman mòn.",
+    "sin": "montay",
+    "ant": "plenn",
+    "tem": "peyizaj",
+    "var": "natirèl"
+  },
+  {
+    "mot": "mòso",
+    "kat": "n",
+    "def": "yon zwazo bwa",
+    "egz": "Mòso ap chante.",
+    "tem": "animal"
+  },
+  {
     "mot": "mòtye",
     "kat": "n",
     "def": "veso epè ak pile pou kraze epis",
@@ -3714,6 +5241,13 @@
     "egz": "N a wè zanmi!",
     "sin": "a pita",
     "tem": "salitasyon"
+  },
+  {
+    "mot": "naje",
+    "kat": "v",
+    "def": "deplase nan dlo",
+    "egz": "Pwason naje vit.",
+    "tem": "animal"
   },
   {
     "mot": "natirèl",
@@ -3919,10 +5453,25 @@
     "tem": "salitasyon"
   },
   {
+    "mot": "orijin",
+    "kat": "n",
+    "def": "kote yon bagay soti",
+    "egz": "Orijin solèy systèm la.",
+    "ant": "fen",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "ozalantou",
     "kat": "adv",
     "def": "Bò; alantou; anviron; pres.",
     "egz": "Gen anpil moun ozalantou kay la."
+  },
+  {
+    "mot": "òbit",
+    "kat": "n",
+    "def": "wout yon planèt tounen",
+    "egz": "Tè a nan òbit otou solèy.",
+    "tem": "peyizaj"
   },
   {
     "mot": "òdinatè",
@@ -3938,6 +5487,13 @@
     "def": "timoun ki paran l mouri",
     "egz": "Òfelen yo bezwen èd.",
     "tem": "fanmi"
+  },
+  {
+    "mot": "òkide",
+    "kat": "n",
+    "def": "flè eleegan parfime",
+    "egz": "Òkide rezistan.",
+    "tem": "plant"
   },
   {
     "mot": "onz",
@@ -3998,6 +5554,13 @@
     "tem": "kò"
   },
   {
+    "mot": "palmis",
+    "kat": "n",
+    "def": "yon gwo pyebwa long",
+    "egz": "Palmis nan plaj.",
+    "tem": "plant"
+  },
+  {
     "mot": "pantalon",
     "kat": "n",
     "def": "rad pou ba ki kouvri de janm ou",
@@ -4033,6 +5596,29 @@
     "sin": "tonton; popa",
     "ant": "manman",
     "tem": "fanmi"
+  },
+  {
+    "mot": "papagal",
+    "kat": "n",
+    "def": "perekèt",
+    "egz": "Papagal vèt nan kaj la.",
+    "sin": "perekèt",
+    "tem": "animal"
+  },
+  {
+    "mot": "papay",
+    "kat": "n",
+    "def": "pawpaw",
+    "egz": "Papay miran.",
+    "sin": "pawpaw",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "papiyon",
+    "kat": "n",
+    "def": "ensèk bèl ki vole",
+    "egz": "Papiyon nan flè yo.",
+    "tem": "animal"
   },
   {
     "mot": "paran",
@@ -4082,6 +5668,14 @@
     "tem": "rad"
   },
   {
+    "mot": "paswen",
+    "kat": "n",
+    "def": "fèmèl kabrit",
+    "egz": "Paswen ap nouri ti yo.",
+    "ant": "bouk",
+    "tem": "animal"
+  },
+  {
     "mot": "patat",
     "kat": "n",
     "def": "tibe dous wouj yo kwit nan dife oswa fou",
@@ -4090,10 +5684,26 @@
     "tem": "manje"
   },
   {
+    "mot": "patat dous",
+    "kat": "n",
+    "def": "patat ki dous",
+    "egz": "Patat dous nan dezè.",
+    "tem": "fwi-legim",
+    "var": "legim"
+  },
+  {
     "mot": "pati",
     "kat": "n",
     "def": "Yon pòsyon yon bagay; fraksyon; seksyon.",
     "egz": "Yon pati nan travay la fini."
+  },
+  {
+    "mot": "pawpaw",
+    "kat": "n",
+    "def": "fwi oranj long",
+    "egz": "Pawpaw pou dejene.",
+    "sin": "papay",
+    "tem": "fwi-legim"
   },
   {
     "mot": "pen",
@@ -4104,10 +5714,25 @@
     "tem": "manje"
   },
   {
+    "mot": "perekèt",
+    "kat": "n",
+    "def": "zwazo ki kapab pale",
+    "egz": "Perekèt mwen di bonjou.",
+    "sin": "papagal",
+    "tem": "animal"
+  },
+  {
     "mot": "peyi",
     "kat": "n",
     "def": "Teritwa ki gen gouvènman ak moun pwòp li yo; nasyon; lakay.",
     "egz": "Ayiti se yon bèl peyi."
+  },
+  {
+    "mot": "peyizaj",
+    "kat": "n",
+    "def": "tout sa ou wè deyò",
+    "egz": "Peyizaj Ayiti bèl.",
+    "tem": "peyizaj"
   },
   {
     "mot": "pi",
@@ -4124,12 +5749,34 @@
     "tem": "rad"
   },
   {
+    "mot": "pijon",
+    "kat": "n",
+    "def": "ti zwazo gri",
+    "egz": "Pijon yo sou twati a.",
+    "tem": "animal"
+  },
+  {
     "mot": "pikan",
     "kat": "adj",
     "def": "ki gen epis ki brile lang",
     "egz": "Soup la pikan anpil mete piman.",
     "ant": "dou",
     "tem": "manje"
+  },
+  {
+    "mot": "pikan",
+    "kat": "n",
+    "def": "pwent sou plant",
+    "egz": "Pikan kakti pike.",
+    "sin": "pikèt",
+    "tem": "plant"
+  },
+  {
+    "mot": "pike",
+    "kat": "v",
+    "def": "fonse ak yon zegwi",
+    "egz": "Moustik la pike m.",
+    "tem": "animal"
   },
   {
     "mot": "pikliz",
@@ -4146,6 +5793,43 @@
     "egz": "Manje a cho anpil akoz piman.",
     "ant": "sèl",
     "tem": "manje"
+  },
+  {
+    "mot": "piman bouk",
+    "kat": "n",
+    "def": "piman trè pikan",
+    "egz": "Piman bouk byen pike.",
+    "ant": "piman dou",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "piman dou",
+    "kat": "n",
+    "def": "piman pa pike",
+    "egz": "Piman dou pou sòs.",
+    "ant": "piman bouk",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "pingwen",
+    "kat": "n",
+    "def": "zwazo polè ki naje",
+    "egz": "Pingwen pa vole.",
+    "tem": "animal"
+  },
+  {
+    "mot": "pintad",
+    "kat": "n",
+    "def": "zwazo sovaj nou manje",
+    "egz": "Pintad nan jaden.",
+    "tem": "animal"
+  },
+  {
+    "mot": "pis",
+    "kat": "n",
+    "def": "ti ensèk ki pike chen ak chat",
+    "egz": "Pis sou chen an.",
+    "tem": "animal"
   },
   {
     "mot": "piti",
@@ -4194,6 +5878,13 @@
     "tem": "fanmi"
   },
   {
+    "mot": "piye",
+    "kat": "n",
+    "def": "ti palmis",
+    "egz": "Piye yo bèl pou kay.",
+    "tem": "plant"
+  },
+  {
     "mot": "plaj",
     "kat": "n",
     "def": "kote tè rankontre lanmè",
@@ -4202,10 +5893,27 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "plant",
+    "kat": "n",
+    "def": "èt vivan ki pa bouje",
+    "egz": "Plant yo nan jaden.",
+    "sin": "vejetasyon",
+    "ant": "bèt",
+    "tem": "plant"
+  },
+  {
     "mot": "plante",
     "kat": "v",
     "def": "Mete grenn oswa plant nan tè pou li ka grandi.",
     "egz": "Li plante mayi ak pwa chak ane."
+  },
+  {
+    "mot": "plante",
+    "kat": "v",
+    "def": "mete grenn nan tè",
+    "egz": "M plante mayi.",
+    "ant": "rekòlte",
+    "tem": "plant"
   },
   {
     "mot": "planèt",
@@ -4289,10 +5997,33 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "ponn",
+    "kat": "v",
+    "def": "fè ze (poul, zwazo)",
+    "egz": "Poul la ponn de ze.",
+    "tem": "animal"
+  },
+  {
+    "mot": "pou",
+    "kat": "n",
+    "def": "ti ensèk nan cheve",
+    "egz": "Pou nan tèt timoun.",
+    "tem": "animal"
+  },
+  {
     "mot": "poul",
     "kat": "n",
     "def": "Zwazo domestik yo konn elve pou ze ak vyann li.",
     "egz": "Yo gen dis poul nan lakou a."
+  },
+  {
+    "mot": "poul",
+    "kat": "n",
+    "def": "zwazo domestik nou manje",
+    "egz": "Poul yo nan poulaye.",
+    "ant": "kòk",
+    "tem": "animal",
+    "var": "domestik"
   },
   {
     "mot": "poul fri",
@@ -4301,6 +6032,14 @@
     "egz": "Li fè poul fri pou fèt la.",
     "ant": "griyo",
     "tem": "manje"
+  },
+  {
+    "mot": "poulèt",
+    "kat": "n",
+    "def": "yon ti poul",
+    "egz": "Poulèt yo dèyè manman yo.",
+    "sin": "ti poul",
+    "tem": "animal"
   },
   {
     "mot": "poumon",
@@ -4315,6 +6054,14 @@
     "def": "premye dwèt, pi gwo a",
     "egz": "Mwen blese pous mwen.",
     "tem": "kò"
+  },
+  {
+    "mot": "pouse",
+    "kat": "v",
+    "def": "soti nan tè ak grandi",
+    "egz": "Plant yo pouse byen.",
+    "sin": "grandi",
+    "tem": "plant"
   },
   {
     "mot": "pran",
@@ -4381,6 +6128,13 @@
     "tem": "manje"
   },
   {
+    "mot": "pwason",
+    "kat": "n",
+    "def": "bèt ki nan dlo",
+    "egz": "Pwason yo nan rivyè a.",
+    "tem": "animal"
+  },
+  {
     "mot": "pwatrin",
     "kat": "n",
     "def": "pati devan, kote kè a",
@@ -4425,11 +6179,49 @@
     "tem": "kò"
   },
   {
+    "mot": "pyebwa",
+    "kat": "n",
+    "def": "plant wo ak tronk",
+    "egz": "Pyebwa a gwo anpil.",
+    "sin": "bwa",
+    "tem": "plant"
+  },
+  {
+    "mot": "pyè",
+    "kat": "n",
+    "def": "wòch",
+    "egz": "Pyè konstwiksyon.",
+    "sin": "wòch",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "pè",
     "kat": "n",
     "def": "de bagay ansanm",
     "egz": "Yon pè soulye.",
     "tem": "nimewo"
+  },
+  {
+    "mot": "pèsi",
+    "kat": "n",
+    "def": "yon ti plant kondiman",
+    "egz": "Pèsi sou manje a.",
+    "tem": "plant"
+  },
+  {
+    "mot": "pò",
+    "kat": "n",
+    "def": "baye",
+    "egz": "Pò Pòtoprens ap travay.",
+    "sin": "baye",
+    "tem": "peyizaj"
+  },
+  {
+    "mot": "pòm",
+    "kat": "n",
+    "def": "yon fwi won wouj oswa vèt",
+    "egz": "Pòm sou tab la.",
+    "tem": "fwi-legim"
   },
   {
     "mot": "pòmp",
@@ -4489,6 +6281,20 @@
     "tem": "rad"
   },
   {
+    "mot": "rampe",
+    "kat": "v",
+    "def": "deplase sou vant",
+    "egz": "Koulèv ap rampe.",
+    "tem": "animal"
+  },
+  {
+    "mot": "ramye",
+    "kat": "n",
+    "def": "yon ti pijon sovaj",
+    "egz": "Ramye nan pyebwa a.",
+    "tem": "animal"
+  },
+  {
     "mot": "ranch",
     "kat": "n",
     "def": "kote janm rankontre kò",
@@ -4517,6 +6323,37 @@
     "egz": "Ranmase fèy yo nan lakou a."
   },
   {
+    "mot": "rasin",
+    "kat": "n",
+    "def": "pati plant ki nan tè",
+    "egz": "Rasin pyebwa profon.",
+    "ant": "branch",
+    "tem": "plant"
+  },
+  {
+    "mot": "rat",
+    "kat": "n",
+    "def": "ti bèt ki gen long ke",
+    "egz": "Rat yo nan kanivo.",
+    "sin": "sourit",
+    "tem": "animal"
+  },
+  {
+    "mot": "ratchèt",
+    "kat": "n",
+    "def": "yon ti bèt",
+    "egz": "Ratchèt nan bwa.",
+    "tem": "animal"
+  },
+  {
+    "mot": "ravèt",
+    "kat": "n",
+    "def": "kakraza",
+    "egz": "Ravèt nan koridò a.",
+    "sin": "kakraza",
+    "tem": "animal"
+  },
+  {
     "mot": "rechod",
     "kat": "n",
     "def": "aparèy pou kwit manje ki gen youn oswa plizyè boujèt",
@@ -4525,10 +6362,33 @@
     "tem": "kay"
   },
   {
+    "mot": "reken",
+    "kat": "n",
+    "def": "yon gwo pwason danjere",
+    "egz": "Reken nan lanmè.",
+    "tem": "animal"
+  },
+  {
+    "mot": "rekòlte",
+    "kat": "v",
+    "def": "ranmase fwi mire",
+    "egz": "Yo rekòlte kafe.",
+    "ant": "plante",
+    "tem": "plant"
+  },
+  {
     "mot": "rele",
     "kat": "v",
     "def": "Kriye non yon moun; mande yon moun vini; gen kòm non.",
     "egz": "Ki jan ou rele?"
+  },
+  {
+    "mot": "rele",
+    "kat": "v",
+    "def": "fè son tankou bèt",
+    "egz": "Chen an rele.",
+    "sin": "wouf",
+    "tem": "animal"
   },
   {
     "mot": "ren",
@@ -4536,6 +6396,21 @@
     "def": "ògàn ki netwaye san",
     "egz": "Ren mwen pa byen.",
     "tem": "kò"
+  },
+  {
+    "mot": "renal",
+    "kat": "n",
+    "def": "yon ti bèt ki sanble ak chen",
+    "egz": "Renal yo malen.",
+    "tem": "animal"
+  },
+  {
+    "mot": "renèt",
+    "kat": "n",
+    "def": "ti krapo",
+    "egz": "Renèt nan etan.",
+    "sin": "ti krapo",
+    "tem": "animal"
   },
   {
     "mot": "reponn",
@@ -4548,6 +6423,13 @@
     "kat": "v",
     "def": "Pran repo; sispann travay pou refè fòs.",
     "egz": "Repoze yon ti moman anvan ou kontinye."
+  },
+  {
+    "mot": "resif",
+    "kat": "n",
+    "def": "wòch ki sou fon lanmè",
+    "egz": "Resif koray nan Karayib.",
+    "tem": "peyizaj"
   },
   {
     "mot": "respirasyon",
@@ -4586,6 +6468,13 @@
     "tem": "kò"
   },
   {
+    "mot": "rezen",
+    "kat": "n",
+    "def": "ti fwi nan grap",
+    "egz": "Rezen wouj.",
+    "tem": "fwi-legim"
+  },
+  {
     "mot": "rezèvwa",
     "kat": "n",
     "def": "gwo barik oswa tank pou akimile dlo",
@@ -4612,6 +6501,13 @@
     "kat": "adj",
     "def": "Ki gen anpil lajan, resous, oswa pwopriyete; opoze ak pòv.",
     "egz": "Rich oswa pòv, tout moun egal devan Bondye."
+  },
+  {
+    "mot": "rinosèyo",
+    "kat": "n",
+    "def": "bèt ak yon kòn",
+    "egz": "Rinosèyo gwo anpil.",
+    "tem": "animal"
   },
   {
     "mot": "rivaj",
@@ -4643,11 +6539,27 @@
     "tem": "rad"
   },
   {
+    "mot": "rouge",
+    "kat": "n",
+    "def": "yon pwason wouj",
+    "egz": "Rouge bon pou manje.",
+    "sin": "wouj",
+    "tem": "animal",
+    "var": "pwason"
+  },
+  {
     "mot": "rèl",
     "kat": "n",
     "def": "kriye ki fò",
     "egz": "Rèl li tande lwen.",
     "tem": "kò"
+  },
+  {
+    "mot": "sab",
+    "kat": "n",
+    "def": "ti grenn sou plaj",
+    "egz": "Sab plaj la blan.",
+    "tem": "peyizaj"
   },
   {
     "mot": "sak",
@@ -4665,6 +6577,14 @@
     "sin": "kras",
     "ant": "pwòp",
     "tem": "kay"
+  },
+  {
+    "mot": "salad",
+    "kat": "n",
+    "def": "fèy fre nou manje",
+    "egz": "Salad nan dejene.",
+    "sin": "lèti",
+    "tem": "fwi-legim"
   },
   {
     "mot": "salam",
@@ -4689,6 +6609,14 @@
     "egz": "Manje a twò sale pa ka manje.",
     "ant": "dou",
     "tem": "manje"
+  },
+  {
+    "mot": "sale",
+    "kat": "v",
+    "def": "wete fèy nesesè",
+    "egz": "Sale mango pou pi byen pwodui.",
+    "sin": "elague",
+    "tem": "plant"
   },
   {
     "mot": "salitasyon",
@@ -4764,12 +6692,59 @@
     "tem": "kò"
   },
   {
+    "mot": "santipede",
+    "kat": "n",
+    "def": "ensèk ak anpil pat",
+    "egz": "Santipede nan tè a.",
+    "sin": "milpat",
+    "tem": "animal"
+  },
+  {
     "mot": "sapat",
     "kat": "n",
     "def": "kouvri pye ouvè an kaoutchou pou mache lakay",
     "egz": "Retire sapat ou anvan ou antre.",
     "sin": "sandal",
     "tem": "rad"
+  },
+  {
+    "mot": "sapotiy",
+    "kat": "n",
+    "def": "pyebwa ki bay sapotiy",
+    "egz": "Sapotiy mireksi anpil.",
+    "tem": "plant",
+    "var": "pyebwa"
+  },
+  {
+    "mot": "sapotiy",
+    "kat": "n",
+    "def": "ti fwi mawon",
+    "egz": "Sapotiy dous nan ji.",
+    "tem": "fwi-legim",
+    "var": "fwi"
+  },
+  {
+    "mot": "satèlit",
+    "kat": "n",
+    "def": "machin ki tounen otou tè",
+    "egz": "Satèlit GPS yo nan òbit.",
+    "tem": "peyizaj"
+  },
+  {
+    "mot": "savann",
+    "kat": "n",
+    "def": "ti chen sovaj",
+    "egz": "Savann yo chase.",
+    "sin": "kojot",
+    "tem": "animal"
+  },
+  {
+    "mot": "savann",
+    "kat": "n",
+    "def": "tè plat ak ti zèb",
+    "egz": "Savann nan plenn yo.",
+    "ant": "fore",
+    "tem": "peyizaj"
   },
   {
     "mot": "se pa anyen",
@@ -4789,6 +6764,14 @@
     "tem": "kay"
   },
   {
+    "mot": "seche",
+    "kat": "v",
+    "def": "pèdi dlo (plant)",
+    "egz": "Pyebwa a seche.",
+    "ant": "frè",
+    "tem": "plant"
+  },
+  {
     "mot": "sechrès",
     "kat": "n",
     "def": "lè pa gen dlo pou anpil tan",
@@ -4797,10 +6780,32 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "sed",
+    "kat": "n",
+    "def": "yon pyebwa di",
+    "egz": "Sed la nan jaden m.",
+    "tem": "plant"
+  },
+  {
     "mot": "sekou",
     "kat": "n",
     "def": "Èd pou moun ki nan danje; asistans nan ijans.",
     "egz": "Yo voye sekou pou viktim yo."
+  },
+  {
+    "mot": "seleri",
+    "kat": "n",
+    "def": "yon ti legim ak fèy",
+    "egz": "Seleri pou soup.",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "semans",
+    "kat": "n",
+    "def": "grenn pou plante",
+    "egz": "Semans bon kalite.",
+    "sin": "grenn",
+    "tem": "plant"
   },
   {
     "mot": "semèn",
@@ -4849,6 +6854,13 @@
     "def": "nevyèm mwa nan ane",
     "egz": "Septanm lekòl kòmanse.",
     "tem": "jou ak mwa"
+  },
+  {
+    "mot": "seriz",
+    "kat": "n",
+    "def": "ti fwi wouj",
+    "egz": "Seriz mire nan jaden.",
+    "tem": "fwi-legim"
   },
   {
     "mot": "sezon",
@@ -4918,11 +6930,51 @@
     "tem": "kay"
   },
   {
+    "mot": "singe",
+    "kat": "n",
+    "def": "bèt ki sanble ak moun",
+    "egz": "Singe yo nan pyebwa.",
+    "sin": "makak",
+    "tem": "animal"
+  },
+  {
     "mot": "sis",
     "kat": "n",
     "def": "nimewo 6",
     "egz": "Sis ze.",
     "tem": "nimewo"
+  },
+  {
+    "mot": "sitwon",
+    "kat": "n",
+    "def": "pyebwa ki bay sitwon",
+    "egz": "Sitwon vèt mire.",
+    "sin": "sitwonyè",
+    "tem": "plant",
+    "var": "pyebwa"
+  },
+  {
+    "mot": "sitwon",
+    "kat": "n",
+    "def": "fwi jòn ki si",
+    "egz": "Sitwon pou ji.",
+    "tem": "fwi-legim",
+    "var": "fwi"
+  },
+  {
+    "mot": "sitwonyè",
+    "kat": "n",
+    "def": "sitwon",
+    "egz": "Sitwonyè a bay anpil.",
+    "sin": "sitwon",
+    "tem": "plant"
+  },
+  {
+    "mot": "siv",
+    "kat": "n",
+    "def": "plant kondiman",
+    "egz": "Siv pou epis.",
+    "tem": "plant"
   },
   {
     "mot": "siy plen",
@@ -4966,6 +7018,15 @@
     "egz": "Solèy la cho.",
     "ant": "lapli",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "solèy",
+    "kat": "n",
+    "def": "boul jòn ki bay limyè",
+    "egz": "Solèy la cho.",
+    "ant": "lalin",
+    "tem": "peyizaj",
+    "var": "natirèl"
   },
   {
     "mot": "solèy klere",
@@ -5021,6 +7082,13 @@
     "sin": "fonse",
     "ant": "klè",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "sote",
+    "kat": "v",
+    "def": "voye kò ou anlè",
+    "egz": "Kwapo a sote.",
+    "tem": "animal"
   },
   {
     "mot": "soud",
@@ -5081,11 +7149,26 @@
     "tem": "kò"
   },
   {
+    "mot": "sourit",
+    "kat": "n",
+    "def": "ti rat",
+    "egz": "Sourit yo nan plafon.",
+    "sin": "rat",
+    "tem": "animal"
+  },
+  {
     "mot": "sous",
     "kat": "n",
     "def": "kote rivyè kòmanse",
     "egz": "Sous la fre.",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "sous",
+    "kat": "n",
+    "def": "kote dlo soti",
+    "egz": "Sous la fre.",
+    "tem": "peyizaj"
   },
   {
     "mot": "sousi",
@@ -5140,6 +7223,14 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "syèl",
+    "kat": "n",
+    "def": "espas anwo tè",
+    "egz": "Syèl la ble.",
+    "ant": "tè",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "sè",
     "kat": "n",
     "def": "Fi ki gen menm manman oswa papa ak ou.",
@@ -5174,6 +7265,14 @@
     "egz": "Mete yon ti sèl nan soup la.",
     "ant": "sik",
     "tem": "manje"
+  },
+  {
+    "mot": "sèpan",
+    "kat": "n",
+    "def": "koulèv",
+    "egz": "Sèpan pwazon danjere.",
+    "sin": "koulèv",
+    "tem": "animal"
   },
   {
     "mot": "sèt",
@@ -5285,6 +7384,13 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "tcha tcha",
+    "kat": "n",
+    "def": "yon legim Ayisyen",
+    "egz": "Tcha tcha sou pyebwa.",
+    "tem": "fwi-legim"
+  },
+  {
     "mot": "te",
     "kat": "n",
     "def": "bwason cho fèt ak fèy oswa plante seche",
@@ -5323,6 +7429,13 @@
     "egz": "Ti chèl la domi."
   },
   {
+    "mot": "ti baret",
+    "kat": "n",
+    "def": "yon plant medsinal",
+    "egz": "Ti baret pou maladi.",
+    "tem": "plant"
+  },
+  {
     "mot": "ti bebe",
     "kat": "n",
     "def": "timoun ki fenk fèt",
@@ -5330,6 +7443,68 @@
     "sin": "tibab",
     "ant": "granmoun",
     "tem": "fanmi"
+  },
+  {
+    "mot": "ti bèf",
+    "kat": "n",
+    "def": "yon bèf ki piti",
+    "egz": "Ti bèf la fenk fèt.",
+    "sin": "ti gato",
+    "tem": "animal"
+  },
+  {
+    "mot": "ti chat",
+    "kat": "n",
+    "def": "yon chat ki piti",
+    "egz": "Ti chat la dous.",
+    "sin": "chat",
+    "tem": "animal"
+  },
+  {
+    "mot": "ti chen",
+    "kat": "n",
+    "def": "yon chen ki piti",
+    "egz": "Ti chen an bèl.",
+    "sin": "chen",
+    "tem": "animal"
+  },
+  {
+    "mot": "ti flè kanpay",
+    "kat": "n",
+    "def": "ti flè savann",
+    "egz": "Ti flè kanpay yo bèl.",
+    "tem": "plant"
+  },
+  {
+    "mot": "ti gato",
+    "kat": "n",
+    "def": "ti bèf",
+    "egz": "Ti gato a bèl.",
+    "sin": "ti bèf",
+    "tem": "animal"
+  },
+  {
+    "mot": "ti kochon",
+    "kat": "n",
+    "def": "yon kochon piti",
+    "egz": "Ti kochon yo bèl.",
+    "sin": "kochon",
+    "tem": "animal"
+  },
+  {
+    "mot": "ti krapo",
+    "kat": "n",
+    "def": "yon ti kwapo",
+    "egz": "Ti krapo nan basen lan.",
+    "sin": "renèt",
+    "tem": "animal"
+  },
+  {
+    "mot": "ti mouch",
+    "kat": "n",
+    "def": "ti ensèk ki vole",
+    "egz": "Ti mouch nan kuizin.",
+    "tem": "animal"
   },
   {
     "mot": "ti pitit",
@@ -5348,6 +7523,14 @@
     "tem": "fanmi"
   },
   {
+    "mot": "ti poul",
+    "kat": "n",
+    "def": "poulèt",
+    "egz": "Ti poul fenk fèt.",
+    "sin": "poulèt",
+    "tem": "animal"
+  },
+  {
     "mot": "tibab",
     "kat": "n",
     "def": "ti bebe",
@@ -5362,6 +7545,21 @@
     "egz": "Tifrè m ap aprann mache.",
     "ant": "granfrè",
     "tem": "fanmi"
+  },
+  {
+    "mot": "tig",
+    "kat": "n",
+    "def": "gwo bèt twazon",
+    "egz": "Tig danjere anpil.",
+    "tem": "animal"
+  },
+  {
+    "mot": "tij",
+    "kat": "n",
+    "def": "tronk plant",
+    "egz": "Tij flè a vèt.",
+    "sin": "tronk",
+    "tem": "plant"
   },
   {
     "mot": "timoun",
@@ -5411,6 +7609,14 @@
     "tem": "manje"
   },
   {
+    "mot": "tomat",
+    "kat": "n",
+    "def": "fwi wouj nou itilize kòm legim",
+    "egz": "Tomat nan sòs.",
+    "tem": "fwi-legim",
+    "var": "legim"
+  },
+  {
     "mot": "tonbe",
     "kat": "v",
     "def": "Deplase rapidman desann; pèdi balans; al atè.",
@@ -5440,6 +7646,20 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "toti",
+    "kat": "n",
+    "def": "bèt ki gen kawap",
+    "egz": "Toti lanmè bèl.",
+    "tem": "animal"
+  },
+  {
+    "mot": "toti tè",
+    "kat": "n",
+    "def": "toti ki sou tè",
+    "egz": "Toti tè a vye anpil.",
+    "tem": "animal"
+  },
+  {
     "mot": "touche",
     "kat": "v",
     "def": "manyen",
@@ -5448,10 +7668,24 @@
     "tem": "kò"
   },
   {
+    "mot": "toudvouwou",
+    "kat": "n",
+    "def": "yon kalite zwazo bwa",
+    "egz": "Toudvouwou nan fore.",
+    "tem": "animal"
+  },
+  {
     "mot": "tounen",
     "kat": "v",
     "def": "Retounen; vin tounen; vire; ale epi vini.",
     "egz": "Li tounen lakay li aswè."
+  },
+  {
+    "mot": "tournesol",
+    "kat": "n",
+    "def": "gwo flè jòn ki swiv solèy",
+    "egz": "Tournesol nan jaden.",
+    "tem": "plant"
   },
   {
     "mot": "tout",
@@ -5466,6 +7700,14 @@
     "egz": "Touye limyè a tris.",
     "ant": "klè",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "towo",
+    "kat": "n",
+    "def": "bèf gason",
+    "egz": "Towo a fò anpil.",
+    "ant": "vach",
+    "tem": "animal"
   },
   {
     "mot": "tranbledetè",
@@ -5513,12 +7755,27 @@
     "egz": "Travay di bay bon rezilta."
   },
   {
+    "mot": "trefyèl",
+    "kat": "n",
+    "def": "yon plant medsinal",
+    "egz": "Trefyèl pou doulè.",
+    "tem": "plant"
+  },
+  {
     "mot": "trip",
     "kat": "n",
     "def": "ògàn nan vant ki dijere",
     "egz": "Trip mwen ap fè mwen mal.",
     "sin": "entesten",
     "tem": "kò"
+  },
+  {
+    "mot": "tronk",
+    "kat": "n",
+    "def": "pati prensipal pyebwa",
+    "egz": "Tronk pyebwa a gwo.",
+    "sin": "tij",
+    "tem": "plant"
   },
   {
     "mot": "trèz",
@@ -5606,6 +7863,14 @@
     "egz": "Yo plante nan tè a."
   },
   {
+    "mot": "tè",
+    "kat": "n",
+    "def": "matyè anba pye nou",
+    "egz": "Tè a fètil.",
+    "ant": "syèl",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "tèn",
     "kat": "adj",
     "def": "ki pa klere",
@@ -5637,6 +7902,14 @@
     "tem": "nimewo"
   },
   {
+    "mot": "vach",
+    "kat": "n",
+    "def": "bèf femèl",
+    "egz": "Vach la bay anpil lèt.",
+    "ant": "towo",
+    "tem": "animal"
+  },
+  {
     "mot": "vag",
     "kat": "n",
     "def": "monte ak desann lanmè",
@@ -5657,6 +7930,14 @@
     "def": "tè plat ant mòn yo",
     "egz": "Vale Atibonit.",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "vale",
+    "kat": "n",
+    "def": "tè plat ant mòn",
+    "egz": "Vale Atibonit fètil.",
+    "tem": "peyizaj",
+    "var": "natirèl"
   },
   {
     "mot": "van",
@@ -5699,6 +7980,14 @@
     "tem": "kò"
   },
   {
+    "mot": "vejetasyon",
+    "kat": "n",
+    "def": "tout plant nan yon zòn",
+    "egz": "Vejetasyon Ayiti varye.",
+    "sin": "plant",
+    "tem": "plant"
+  },
+  {
     "mot": "ven",
     "kat": "n",
     "def": "tib ki transpòte san",
@@ -5714,6 +8003,13 @@
     "tem": "nimewo"
   },
   {
+    "mot": "vendangè",
+    "kat": "n",
+    "def": "yon pwason ti",
+    "egz": "Vendangè nan filè a.",
+    "tem": "animal"
+  },
+  {
     "mot": "vif",
     "kat": "adj",
     "def": "koulè ki fò",
@@ -5726,6 +8022,13 @@
     "kat": "v",
     "def": "Deplase vin jwenn; rive; deplase soti kote pou rive isi.",
     "egz": "Vini ban mwen yon ti men."
+  },
+  {
+    "mot": "violèt",
+    "kat": "n",
+    "def": "ti flè vyolèt",
+    "egz": "Violèt nan jaden.",
+    "tem": "plant"
   },
   {
     "mot": "viv",
@@ -5749,6 +8052,14 @@
     "egz": "Vizaj li bèl.",
     "sin": "figi",
     "tem": "kò"
+  },
+  {
+    "mot": "vole",
+    "kat": "v",
+    "def": "deplase nan lè",
+    "egz": "Zwazo a vole.",
+    "ant": "mache",
+    "tem": "animal"
   },
   {
     "mot": "voye",
@@ -5841,6 +8152,13 @@
     "tem": "kay"
   },
   {
+    "mot": "vè tè",
+    "kat": "n",
+    "def": "ti vè nan tè",
+    "egz": "Vè tè bon pou jaden.",
+    "tem": "animal"
+  },
+  {
     "mot": "vèf",
     "kat": "n",
     "def": "gason ki madanm li mouri",
@@ -5877,6 +8195,14 @@
     "tem": "koulè"
   },
   {
+    "mot": "vèt",
+    "kat": "adj",
+    "def": "ki poko mire",
+    "egz": "Mango sa vèt.",
+    "ant": "mire",
+    "tem": "plant"
+  },
+  {
     "mot": "vèt foncè",
     "kat": "adj",
     "def": "vèt fonse",
@@ -5903,6 +8229,21 @@
     "def": "mòn ki ka pete fwa cho",
     "egz": "Vòlkan Soufrière ak Karayib.",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "vòlkan",
+    "kat": "n",
+    "def": "mòn ki ka pete",
+    "egz": "Vòlkan Pelée nan Matinik.",
+    "tem": "peyizaj"
+  },
+  {
+    "mot": "wanga nègès",
+    "kat": "n",
+    "def": "kolibri",
+    "egz": "Wanga nègès se zwazo Ayiti.",
+    "sin": "kolibri",
+    "tem": "animal"
   },
   {
     "mot": "wete",
@@ -5963,6 +8304,13 @@
     "egz": "Wout la long men bèl."
   },
   {
+    "mot": "wouze",
+    "kat": "v",
+    "def": "bay plant dlo",
+    "egz": "Mwen wouze jaden chak swa.",
+    "tem": "plant"
+  },
+  {
     "mot": "woz",
     "kat": "adj",
     "def": "koulè klè ki melanj wouj ak blan",
@@ -5976,6 +8324,21 @@
     "def": "koulè dou wouj klè",
     "egz": "Flè woz nan jaden.",
     "tem": "koulè"
+  },
+  {
+    "mot": "woz",
+    "kat": "n",
+    "def": "yon kalite flè bèl",
+    "egz": "Woz wouj nan jaden.",
+    "tem": "plant",
+    "var": "flè"
+  },
+  {
+    "mot": "wozo",
+    "kat": "n",
+    "def": "plant fen long",
+    "egz": "Wozo nan dlo.",
+    "tem": "plant"
   },
   {
     "mot": "wè",
@@ -5992,12 +8355,28 @@
     "tem": "kò"
   },
   {
+    "mot": "wòch",
+    "kat": "n",
+    "def": "matyè di natirèl",
+    "egz": "Wòch nan mòn.",
+    "sin": "pyè",
+    "tem": "peyizaj"
+  },
+  {
     "mot": "yanm",
     "kat": "n",
     "def": "tibe gwo blan yo kwit bouyi oswa nan soup",
     "egz": "Yanm bouyi bon ak hareng.",
     "ant": "malanga",
     "tem": "manje"
+  },
+  {
+    "mot": "yanm",
+    "kat": "n",
+    "def": "gwo rasin nou manje",
+    "egz": "Yanm ak sòs.",
+    "tem": "fwi-legim",
+    "var": "legim"
   },
   {
     "mot": "yo",
@@ -6045,6 +8424,31 @@
     "tem": "manje"
   },
   {
+    "mot": "zaboka",
+    "kat": "n",
+    "def": "pyebwa ki bay zaboka",
+    "egz": "Zaboka mwen miran.",
+    "sin": "avokatye",
+    "tem": "plant",
+    "var": "pyebwa"
+  },
+  {
+    "mot": "zaboka",
+    "kat": "n",
+    "def": "fwi vèt cremo",
+    "egz": "Zaboka ak pen.",
+    "sin": "avoka",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "zandolit",
+    "kat": "n",
+    "def": "ti repti vèt",
+    "egz": "Zandolit sou mi an.",
+    "sin": "leza",
+    "tem": "animal"
+  },
+  {
     "mot": "zanmi",
     "kat": "n",
     "def": "Moun ou renmen anpil ak ki pran swen ou; bon relasyon avèk.",
@@ -6076,10 +8480,38 @@
     "tem": "fanmi"
   },
   {
+    "mot": "zarèyen",
+    "kat": "n",
+    "def": "ti bèt ak uit pat",
+    "egz": "Zarèyen nan twal li.",
+    "tem": "animal"
+  },
+  {
     "mot": "ze",
     "kat": "n",
     "def": "Pwodui oval bèt fèmèl pon; yo manje ze poul.",
     "egz": "Li fè de ze pou manje matin."
+  },
+  {
+    "mot": "zebra",
+    "kat": "n",
+    "def": "bèt zon nwa ak blan",
+    "egz": "Zebra nan Afrik.",
+    "tem": "animal"
+  },
+  {
+    "mot": "zegwi blan",
+    "kat": "n",
+    "def": "yon kalite koki",
+    "egz": "Zegwi blan nan plaj la.",
+    "tem": "animal"
+  },
+  {
+    "mot": "zegwi nwa",
+    "kat": "n",
+    "def": "yon kalite koki",
+    "egz": "Zegwi nwa nan sab.",
+    "tem": "animal"
   },
   {
     "mot": "zeklè",
@@ -6131,6 +8563,13 @@
     "tem": "kò"
   },
   {
+    "mot": "zonbi mè",
+    "kat": "n",
+    "def": "yon kalite koki Karayib",
+    "egz": "Zonbi mè san sou rivaj.",
+    "tem": "animal"
+  },
+  {
     "mot": "zong",
     "kat": "n",
     "def": "pati di sou tèt dwèt",
@@ -6146,12 +8585,35 @@
     "tem": "manje"
   },
   {
+    "mot": "zonyon",
+    "kat": "n",
+    "def": "plant kuit ak san wouj",
+    "egz": "Zonyon kraze men.",
+    "tem": "plant",
+    "var": "kondiman"
+  },
+  {
+    "mot": "zonyon vèt",
+    "kat": "n",
+    "def": "zonyon ki vèt",
+    "egz": "Zonyon vèt nan salad.",
+    "tem": "fwi-legim"
+  },
+  {
     "mot": "zonzon",
     "kat": "adj",
     "def": "rad ki gen plizyè koulè ki melanje",
     "egz": "Chemiz zonzon Karayib.",
     "ant": "yon koulè",
     "tem": "koulè"
+  },
+  {
+    "mot": "zorangye",
+    "kat": "n",
+    "def": "zoranj",
+    "egz": "Zorangye nan jaden m.",
+    "sin": "zoranj",
+    "tem": "plant"
   },
   {
     "mot": "zoranj",
@@ -6162,12 +8624,66 @@
     "tem": "manje"
   },
   {
+    "mot": "zoranj",
+    "kat": "n",
+    "def": "pyebwa ki bay zoranj",
+    "egz": "Zoranj sou pye a.",
+    "sin": "zorangye",
+    "tem": "plant",
+    "var": "pyebwa"
+  },
+  {
+    "mot": "zoranj",
+    "kat": "n",
+    "def": "fwi oranj si oswa dou",
+    "egz": "Zoranj fre nan jaden.",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "zoranj dou",
+    "kat": "n",
+    "def": "yon zoranj dous",
+    "egz": "Zoranj dou pou pitit.",
+    "ant": "zoranj si",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "zoranj si",
+    "kat": "n",
+    "def": "yon zoranj ki si",
+    "egz": "Zoranj si pou ji.",
+    "ant": "zoranj dou",
+    "tem": "fwi-legim"
+  },
+  {
+    "mot": "zwa",
+    "kat": "n",
+    "def": "zwazo ki sanble ak kanna",
+    "egz": "Zwa yo nan basen lan.",
+    "tem": "animal"
+  },
+  {
+    "mot": "zwazo",
+    "kat": "n",
+    "def": "bèt ki gen plim ak vole",
+    "egz": "Zwazo a vole nan syèl la.",
+    "tem": "animal"
+  },
+  {
     "mot": "zye",
     "kat": "n",
     "def": "je",
     "egz": "Zye li pwòp.",
     "sin": "je",
     "tem": "kò"
+  },
+  {
+    "mot": "zèb",
+    "kat": "n",
+    "def": "ti plant vèt nan tè",
+    "egz": "Zèb la pouse.",
+    "sin": "gazon",
+    "tem": "plant"
   },
   {
     "mot": "zòrèy",
