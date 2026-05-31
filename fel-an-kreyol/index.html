@@ -68,7 +68,7 @@ nav { display: flex; align-items: center; gap: 2rem; }
 .nav-link:hover { color: var(--sapphire); }
 .nav-cta { background: var(--rouge); color: white; padding: 0.55rem 1.4rem; border-radius: 3rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, transform 0.15s; }
 .nav-cta:hover { background: var(--rouge-light); transform: translateY(-1px); }
-.menu-btn { display: none; background: none; border: none; cursor: pointer; color: var(--text-body); font-size: 1.4rem; }
+.menu-btn { display: none; background: none; border: none; cursor: pointer; color: var(--text-body); font-size: 1.4rem; touch-action: manipulation; -webkit-tap-highlight-color: transparent; padding: 0.5rem; }
 
 /* ── HERO ────────────────────────────── */
 .hero {
@@ -560,7 +560,10 @@ how.footer-col ul li a { color: rgba(250,244,232,0.55); text-decoration: none; t
 @media (max-width: 900px) {
   .topbar { padding: 0 1.25rem; }
   header { padding: 0 1.25rem; }
-  nav .nav-link { display: none; }
+  nav#nav-links { display: none; position: fixed; top: 72px; left: 0; right: 0; background: var(--navy-dark, #0a1628); flex-direction: column; align-items: flex-start; padding: 1rem 0; z-index: 99; gap: 0; }
+  nav#nav-links.open { display: flex; }
+  nav#nav-links .nav-link { display: block; padding: 0.75rem 1.5rem; font-size: 0.95rem; color: rgba(255,255,255,0.9); }
+  nav#nav-links .nav-cta { display: block; padding: 0.75rem 1.5rem; font-size: 0.95rem; color: var(--gold, #c89008); }
   .menu-btn { display: block; }
   .hero-inner { grid-template-columns: 1fr; gap: 3rem; padding: 3rem 1.25rem; }
   .hero-right { order: -1; }
@@ -598,14 +601,14 @@ how.footer-col ul li a { color: rgba(250,244,232,0.55); text-decoration: none; t
   <a href="#" class="header-brand">
     <img src="images/felankreyol.png" alt="Fèl an Kreyòl" style="height:64px;width:auto;display:block;filter:drop-shadow(0 1px 6px rgba(0,0,0,0.6));">
   </a>
-  <nav>
+  <nav id="nav-links">
     <a href="#misyon" class="nav-link" data-ht="Misyon" data-en="Mission">Misyon</a>
     <a href="#kouman" class="nav-link" data-ht="Kouman" data-en="How It Works">Kouman</a>
     <a href="#galri" class="nav-link" data-ht="Liv yo" data-en="Books">Liv yo</a>
     <a href="/diksyone.html" class="nav-link" data-ht="Diksyonè" data-en="Dictionary">Diksyonè</a>
     <a href="#donate" class="nav-cta" data-ht="Fè yon Don" data-en="Donate">Fè yon Don</a>
   </nav>
-  <button class="menu-btn" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Menu">☰</button>
+  <button class="menu-btn" id="menu-btn" aria-label="Menu">☰</button>
 </header>
 
 <!-- ── HERO ── -->
