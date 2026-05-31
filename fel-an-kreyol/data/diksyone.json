@@ -46,6 +46,52 @@
     "egz": "Timoun yo ale lekòl chak maten."
   },
   {
+    "mot": "aprann",
+    "kat": "v",
+    "def": "Resevwa konesans oswa kapasite fè yon bagay pou premye fwa; etidye.",
+    "egz": "Elèv yo aprann li ak ekri lekòl."
+  },
+  {
+    "mot": "apre",
+    "kat": "prep",
+    "def": "Pi ta pase; ki vin apre nan lòd tan oswa plas.",
+    "egz": "Nou pral dòmi apre manje."
+  },
+  {
+    "mot": "aswè",
+    "kat": "n",
+    "def": "Pati jounen ki kòmanse lè solèy kouche rive debi lannuit.",
+    "egz": "Fanmi an manje ansanm chak aswè."
+  },
+  {
+    "mot": "atann",
+    "kat": "v",
+    "def": "Rete nan yon kote jis yon bagay oswa yon moun rive; espere.",
+    "egz": "Li atann otobis la pandan yon èdtan."
+  },
+  {
+    "mot": "atè",
+    "kat": "n",
+    "def": "tib ki pote san soti nan kè",
+    "egz": "Atè li bouche.",
+    "ant": "ven",
+    "tem": "kò"
+  },
+  {
+    "mot": "avèg",
+    "kat": "adj",
+    "def": "ki pa ka wè",
+    "egz": "Granpapa m avèg.",
+    "ant": "wè",
+    "tem": "kò"
+  },
+  {
+    "mot": "avèk",
+    "kat": "prep",
+    "def": "Ansanm ak; akonpaye pa; ki gen.",
+    "egz": "Li vin avèk zanmi li."
+  },
+  {
     "mot": "an sante",
     "kat": "adj",
     "def": "ki gen bon sante",
@@ -101,52 +147,6 @@
     "kat": "n",
     "def": "Dezir ki fò pou gen oswa fè yon bagay; souhait.",
     "egz": "Li gen anvi manje soup joumou."
-  },
-  {
-    "mot": "aprann",
-    "kat": "v",
-    "def": "Resevwa konesans oswa kapasite fè yon bagay pou premye fwa; etidye.",
-    "egz": "Elèv yo aprann li ak ekri lekòl."
-  },
-  {
-    "mot": "apre",
-    "kat": "prep",
-    "def": "Pi ta pase; ki vin apre nan lòd tan oswa plas.",
-    "egz": "Nou pral dòmi apre manje."
-  },
-  {
-    "mot": "aswè",
-    "kat": "n",
-    "def": "Pati jounen ki kòmanse lè solèy kouche rive debi lannuit.",
-    "egz": "Fanmi an manje ansanm chak aswè."
-  },
-  {
-    "mot": "atann",
-    "kat": "v",
-    "def": "Rete nan yon kote jis yon bagay oswa yon moun rive; espere.",
-    "egz": "Li atann otobis la pandan yon èdtan."
-  },
-  {
-    "mot": "atè",
-    "kat": "n",
-    "def": "tib ki pote san soti nan kè",
-    "egz": "Atè li bouche.",
-    "ant": "ven",
-    "tem": "kò"
-  },
-  {
-    "mot": "avèg",
-    "kat": "adj",
-    "def": "ki pa ka wè",
-    "egz": "Granpapa m avèg.",
-    "ant": "wè",
-    "tem": "kò"
-  },
-  {
-    "mot": "avèk",
-    "kat": "prep",
-    "def": "Ansanm ak; akonpaye pa; ki gen.",
-    "egz": "Li vin avèk zanmi li."
   },
   {
     "mot": "bab",
@@ -553,20 +553,6 @@
     "egz": "Gen 30 elèv nan klas la."
   },
   {
-    "mot": "entelijan",
-    "kat": "adj",
-    "def": "Ki gen kapasite pou konprann ak aprann rapidman; ki gen lespri file.",
-    "egz": "Ti fi a entelijan anpil lekòl."
-  },
-  {
-    "mot": "entesten",
-    "kat": "n",
-    "def": "trip nan vant",
-    "egz": "Entesten l pa byen.",
-    "sin": "trip",
-    "tem": "kò"
-  },
-  {
     "mot": "epòl",
     "kat": "n",
     "def": "pati anwo bra",
@@ -600,6 +586,20 @@
     "egz": "Yon etranje frape pòt la.",
     "ant": "fanmi; zanmi",
     "tem": "fanmi"
+  },
+  {
+    "mot": "entelijan",
+    "kat": "adj",
+    "def": "Ki gen kapasite pou konprann ak aprann rapidman; ki gen lespri file.",
+    "egz": "Ti fi a entelijan anpil lekòl."
+  },
+  {
+    "mot": "entesten",
+    "kat": "n",
+    "def": "trip nan vant",
+    "egz": "Entesten l pa byen.",
+    "sin": "trip",
+    "tem": "kò"
   },
   {
     "mot": "fache",
@@ -1800,6 +1800,13 @@
     "egz": "Gen anpil moun ozalantou kay la."
   },
   {
+    "mot": "òfelen",
+    "kat": "n",
+    "def": "timoun ki paran l mouri",
+    "egz": "Òfelen yo bezwen èd.",
+    "tem": "fanmi"
+  },
+  {
     "mot": "paj",
     "kat": "n",
     "def": "Yon sèl sifas yon fèy papye; yon seksyon yon liv.",
@@ -2817,12 +2824,5 @@
     "egz": "Zòrèy mwen ap fè mwen mal.",
     "sin": "zorèy",
     "tem": "kò"
-  },
-  {
-    "mot": "òfelen",
-    "kat": "n",
-    "def": "timoun ki paran l mouri",
-    "egz": "Òfelen yo bezwen èd.",
-    "tem": "fanmi"
   }
 ]

@@ -117,6 +117,12 @@ body { font-family: 'Source Serif 4', Georgia, serif; color: var(--text); backgr
 .entry-egz { font-size: 0.82rem; color: var(--gray); font-style: italic; line-height: 1.55; }
 .entry-egz::before { content: '« '; }
 .entry-egz::after { content: ' »'; }
+.entry-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+.entry-tag { font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 3px; font-weight: 600; letter-spacing: 0.04em; }
+.entry-sin { background: #EEF2FB; color: var(--navy); }
+.entry-ant { background: #FEF2F2; color: #991B1B; }
+.entry-tem { background: #F0FDF4; color: #166534; }
+.az-btn { min-width: 36px; width: auto; padding: 0 8px; }
 
 /* HIGHLIGHT */
 .hl { background: rgba(245,166,35,0.3); border-radius: 2px; padding: 0 1px; }
@@ -249,8 +255,8 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
     <span class="stat-label">Mo nan Diksyonè</span>
   </div>
   <div class="stat-box">
-    <span class="stat-num">26</span>
-    <span class="stat-label">Lèt Alfabè</span>
+    <span class="stat-num">32</span>
+    <span class="stat-label">Lèt Alfabè Kreyòl</span>
   </div>
   <div class="stat-box">
     <span class="stat-num">2025</span>
@@ -599,26 +605,57 @@ const _FALLBACK = [
   { mot: "zòrèy", kat: "n", def: "Ògàn odi de kote tèt moun ki pèmèt tande.", egz: "Li gen doulè nan zòrèy li." },
 ];
 
-// ── Normalize text for search (strip accents) ──
+// ── Kreyòl Alphabet — IPN 1980 standard ──
+const KR_ALPHA = [
+  'A','AN','B','CH','D','E','È','EN','F','G','H','I','J','K','L','M','N','NG','O','Ò','ON','OU','P','R','S','T','UI','V','W','Y','Z'
+];
+
+// Get the Kreyòl letter group for a word
+function krGroup(mot) {
+  const s = mot.toLowerCase().trim();
+  // Digraphs must be checked before their component single letters
+  if (s.startsWith('an')) return 'AN';
+  if (s.startsWith('ch')) return 'CH';
+  if (s.startsWith('en')) return 'EN';
+  if (s.startsWith('ng')) return 'NG';
+  if (s.startsWith('on')) return 'ON';
+  if (s.startsWith('ou')) return 'OU';
+  if (s.startsWith('ui')) return 'UI';
+  const map = {
+    'a':'A','b':'B','d':'D','e':'E','è':'È','f':'F','g':'G','h':'H',
+    'i':'I','j':'J','k':'K','l':'L','m':'M','n':'N','o':'O','ò':'Ò',
+    'p':'P','r':'R','s':'S','t':'T','v':'V','w':'W','y':'Y','z':'Z'
+  };
+  return map[s[0]] || s[0].toUpperCase();
+}
+
+// Kreyòl-aware sort comparator
+function krSort(a, b) {
+  const ga = KR_ALPHA.indexOf(krGroup(a.mot));
+  const gb = KR_ALPHA.indexOf(krGroup(b.mot));
+  if (ga !== gb) return ga - gb;
+  return a.mot.localeCompare(b.mot, 'fr', { sensitivity: 'base' });
+}
+
+// ── Normalize text for search only (strip accents for convenience) ──
 function norm(s) {
   return s.toLowerCase()
-    .replace(/[àáâãäå]/g, 'a').replace(/[èéêë]/g, 'e')
+    .replace(/[àáâãä]/g, 'a').replace(/[èéêë]/g, 'e')
     .replace(/[ìíîï]/g, 'i').replace(/[òóôõö]/g, 'o')
     .replace(/[ùúûü]/g, 'u').replace(/[ç]/g, 'c')
     .replace(/[ñ]/g, 'n').replace(/[œ]/g, 'oe');
 }
 
-// ── Build A-Z index ──
-const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+// ── Build Kreyòl index ──
 let byLetter = {};
 
 function buildIndex() {
   byLetter = {};
-  LETTERS.forEach(l => byLetter[l] = []);
-  DIKSYONE.sort((a, b) => norm(a.mot).localeCompare(norm(b.mot)));
+  KR_ALPHA.forEach(l => byLetter[l] = []);
+  DIKSYONE.sort(krSort);
   DIKSYONE.forEach(e => {
-    const first = norm(e.mot)[0].toUpperCase();
-    if (byLetter[first]) byLetter[first].push(e);
+    const g = krGroup(e.mot);
+    if (byLetter[g] !== undefined) byLetter[g].push(e);
   });
   document.getElementById('total-count').textContent = DIKSYONE.length;
 }
@@ -626,7 +663,7 @@ function buildIndex() {
 function buildAZNav() {
   const azNav = document.getElementById('az-nav');
   azNav.innerHTML = '';
-  LETTERS.forEach(l => {
+  KR_ALPHA.forEach(l => {
     const btn = document.createElement('button');
     btn.className = 'az-btn' + (byLetter[l].length === 0 ? ' empty' : '');
     btn.textContent = l;
@@ -706,15 +743,16 @@ function renderAll(query, filterLetter) {
   }
   noRes.style.display = 'none';
 
-  // Group by letter
+  // Group by Kreyòl letter
   const groups = {};
   data.forEach(e => {
-    const l = norm(e.mot)[0].toUpperCase();
-    if (!groups[l]) groups[l] = [];
-    groups[l].push(e);
+    const g = krGroup(e.mot);
+    if (!groups[g]) groups[g] = [];
+    groups[g].push(e);
   });
 
-  const lettersPresent = Object.keys(groups).sort();
+  // Preserve Kreyòl alphabet order
+  const lettersPresent = KR_ALPHA.filter(l => groups[l] && groups[l].length > 0);
   if (filterLetter && groups[filterLetter]) {
     output.innerHTML = renderGroup(filterLetter, groups[filterLetter], q);
     document.getElementById('letter-' + filterLetter)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -736,6 +774,11 @@ function renderGroup(letter, entries, q) {
           </div>
           <div class="entry-def">${highlight(e.def, q)}</div>
           ${e.egz ? `<div class="entry-egz">${highlight(e.egz, q)}</div>` : ''}
+          ${(e.sin || e.ant || e.tem) ? `<div class="entry-meta">
+            ${e.sin ? `<span class="entry-tag entry-sin">≈ ${esc(e.sin)}</span>` : ''}
+            ${e.ant ? `<span class="entry-tag entry-ant">↔ ${esc(e.ant)}</span>` : ''}
+            ${e.tem ? `<span class="entry-tag entry-tem">${esc(e.tem)}</span>` : ''}
+          </div>` : ''}
         </div>`).join('')}
     </div>
   </div>`;
