@@ -36,7 +36,7 @@ body { font-family: 'Source Serif 4', Georgia, serif; color: var(--text); backgr
 .nav-lang { display: flex; align-items: center; background: rgba(255,255,255,0.1); border-radius: 2rem; border: 1px solid rgba(255,255,255,0.2); overflow: hidden; margin-left: 1.25rem; }
 .lang-btn { padding: 0.28rem 0.65rem; cursor: pointer; border: none; background: none; color: rgba(255,255,255,0.55); font-size: 0.63rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.2s; font-family: 'Source Serif 4', Georgia, serif; }
 .lang-btn.active { background: var(--gold); color: var(--navy-dark); border-radius: 2rem; }
-.menu-btn { display: none; background: none; border: none; cursor: pointer; color: white; font-size: 1.4rem; margin-left: 1rem; flex-shrink: 0; }
+.menu-btn { display: none; background: none; border: none; cursor: pointer; color: white; font-size: 1.4rem; margin-left: 1rem; flex-shrink: 0; touch-action: manipulation; -webkit-tap-highlight-color: transparent; padding: 0.5rem; }
 
 /* HERO */
 .hero { min-height: 100vh; padding-top: 72px; background: var(--navy); position: relative; overflow: hidden; display: flex; align-items: center; }
@@ -131,7 +131,7 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
     <button class="lang-btn active" data-lang="ht" onclick="setLang('ht')">HT</button>
     <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
   </div>
-  <button class="menu-btn" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+  <button class="menu-btn" id="menu-btn" aria-label="Menu">☰</button>
 </nav>
 
 <section class="hero">
@@ -285,6 +285,25 @@ function setLang(lang) {
   document.documentElement.lang = lang === 'ht' ? 'ht' : 'en';
 }
 setLang(currentLang);
+</script>
+<script>
+(function(){
+  var btn = document.getElementById("menu-btn");
+  var nav = document.getElementById("nav-links");
+  if (!btn || !nav) return;
+  btn.addEventListener("click", function(e){
+    e.stopPropagation();
+    nav.classList.toggle("open");
+  });
+  document.addEventListener("click", function(e){
+    if (nav.classList.contains("open") && !nav.contains(e.target) && e.target !== btn) {
+      nav.classList.remove("open");
+    }
+  });
+  nav.addEventListener("click", function(e){
+    if (e.target.tagName === "A") nav.classList.remove("open");
+  });
+})();
 </script>
 </body>
 </html>

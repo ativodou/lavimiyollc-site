@@ -32,7 +32,7 @@ body { font-family: 'Source Serif 4', Georgia, serif; color: var(--text); backgr
 .nav-links li a:hover, .nav-links li a.active { color: var(--gold); }
 .nav-links li a.nav-donate { background: var(--gold); color: var(--navy-dark); padding: 0.45rem 1.1rem; border-radius: 2rem; font-weight: 600; margin-left: 0.5rem; transition: background 0.2s; }
 .nav-links li a.nav-donate:hover { background: var(--gold-light); color: var(--navy-dark); }
-.menu-btn { display: none; background: none; border: none; cursor: pointer; color: white; font-size: 1.4rem; margin-left: 1rem; flex-shrink: 0; }
+.menu-btn { display: none; background: none; border: none; cursor: pointer; color: white; font-size: 1.4rem; margin-left: 1rem; flex-shrink: 0; touch-action: manipulation; -webkit-tap-highlight-color: transparent; padding: 0.5rem; }
 
 /* HERO */
 .hero { padding-top: 72px; background: var(--navy); position: relative; overflow: hidden; }
@@ -232,7 +232,7 @@ footer > p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
     <li><a href="/partner.html">Kolòn Ki Bat</a></li>
     <li><a href="/don.html" class="nav-donate">Piti Piti Fè Pil ❤</a></li>
   </ul>
-  <button class="menu-btn" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+  <button class="menu-btn" id="menu-btn" aria-label="Menu">☰</button>
 </nav>
 
 <section class="hero">
@@ -846,6 +846,25 @@ async function submitPropose(e) {
     btn.textContent = 'Voye pwopoziyon →';
   }
 }
+</script>
+<script>
+(function(){
+  var btn = document.getElementById("menu-btn");
+  var nav = document.getElementById("nav-links");
+  if (!btn || !nav) return;
+  btn.addEventListener("click", function(e){
+    e.stopPropagation();
+    nav.classList.toggle("open");
+  });
+  document.addEventListener("click", function(e){
+    if (nav.classList.contains("open") && !nav.contains(e.target) && e.target !== btn) {
+      nav.classList.remove("open");
+    }
+  });
+  nav.addEventListener("click", function(e){
+    if (e.target.tagName === "A") nav.classList.remove("open");
+  });
+})();
 </script>
 </body>
 </html>
