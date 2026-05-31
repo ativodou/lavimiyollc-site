@@ -1,5 +1,20 @@
 [
   {
+    "mot": "a demen",
+    "kat": "interj",
+    "def": "n a wè demen",
+    "egz": "A demen lekòl.",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "a pita",
+    "kat": "interj",
+    "def": "n a wè pi ta",
+    "egz": "A pita, m ap soti.",
+    "sin": "n a wè",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "abitan",
     "kat": "n",
     "def": "mo pejoratif ki vle di gwo soulye",
@@ -36,6 +51,13 @@
     "def": "Sou bò gòch; nan direksyon men gòch; opoze ak adwat."
   },
   {
+    "mot": "ajante",
+    "kat": "adj",
+    "def": "koulè ajan",
+    "egz": "Mont ajante.",
+    "tem": "koulè"
+  },
+  {
     "mot": "ajoute",
     "kat": "v",
     "def": "Mete yon bagay ansanm ak yon lòt pou ogmante kantite a; ranfòse.",
@@ -62,12 +84,26 @@
     "egz": "Timoun yo ale lekòl chak maten."
   },
   {
+    "mot": "alelouya",
+    "kat": "interj",
+    "def": "ekspresyon kè kontan relijye",
+    "egz": "Alelouya, mwen sove!",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "amwa",
     "kat": "n",
     "def": "gwo mèb ki gen pòt pou gade rad ak bagay ladan l",
     "egz": "Mete rad yo nan amwa a.",
     "sin": "gad-wòb",
     "tem": "kay"
+  },
+  {
+    "mot": "amèn",
+    "kat": "interj",
+    "def": "fen lapriyè",
+    "egz": "Mèsi Bondye, amèn.",
+    "tem": "salitasyon"
   },
   {
     "mot": "aprann",
@@ -82,10 +118,35 @@
     "egz": "Nou pral dòmi apre manje."
   },
   {
+    "mot": "apre demen",
+    "kat": "n",
+    "def": "jou apre demen",
+    "egz": "Apre demen mwen pati.",
+    "ant": "avan yè",
+    "tem": "jou ak mwa"
+  },
+  {
+    "mot": "apremidi",
+    "kat": "n",
+    "def": "tan apre midi",
+    "egz": "Apremidi a cho.",
+    "ant": "maten",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "aswè",
     "kat": "n",
     "def": "Pati jounen ki kòmanse lè solèy kouche rive debi lannuit.",
     "egz": "Fanmi an manje ansanm chak aswè."
+  },
+  {
+    "mot": "aswè",
+    "kat": "n",
+    "def": "swa",
+    "egz": "Aswè a m ap dòmi bonè.",
+    "sin": "swa",
+    "ant": "maten",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "asyèt",
@@ -102,12 +163,42 @@
     "egz": "Li atann otobis la pandan yon èdtan."
   },
   {
+    "mot": "atmosfè",
+    "kat": "n",
+    "def": "lè anwo tè",
+    "egz": "Atmosfè a pollye.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "atè",
     "kat": "n",
     "def": "tib ki pote san soti nan kè",
     "egz": "Atè li bouche.",
     "ant": "ven",
     "tem": "kò"
+  },
+  {
+    "mot": "avalanch",
+    "kat": "n",
+    "def": "tè ki glise sou kote mòn",
+    "egz": "Avalanch nan mòn.",
+    "sin": "glisman tè",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "avan yè",
+    "kat": "n",
+    "def": "jou anvan yè",
+    "egz": "Avan yè mwen te malad.",
+    "ant": "apre demen",
+    "tem": "jou ak mwa"
+  },
+  {
+    "mot": "avril",
+    "kat": "n",
+    "def": "katriyèm mwa nan ane",
+    "egz": "Avril gen lapli.",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "avèg",
@@ -144,6 +235,14 @@
     "def": "ki gen yon pwoblèm fizik",
     "egz": "Li andikape men li travay byen.",
     "tem": "kò"
+  },
+  {
+    "mot": "ane",
+    "kat": "n",
+    "def": "peryòd 12 mwa",
+    "egz": "Ane sa a long.",
+    "sin": "lane",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "ankò",
@@ -193,6 +292,15 @@
     "kat": "n",
     "def": "Pwèl ki pouse sou machwè ak figi yon gason.",
     "egz": "Papa li gen yon gwo bab blan."
+  },
+  {
+    "mot": "babay",
+    "kat": "interj",
+    "def": "orevwa enfòmèl",
+    "egz": "Babay zanmi m.",
+    "sin": "orevwa",
+    "ant": "bonjou",
+    "tem": "salitasyon"
   },
   {
     "mot": "bag",
@@ -245,6 +353,14 @@
     "egz": "Li bay pitit li yon kado."
   },
   {
+    "mot": "benediksyon",
+    "kat": "n",
+    "def": "lapriyè pou byen yon moun",
+    "egz": "Pran benediksyon m.",
+    "ant": "malediksyon",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "bezwen",
     "kat": "n",
     "def": "Sa ki nesesè pou viv; manke yon bagay enpòtan; nesesite.",
@@ -273,6 +389,14 @@
     "tem": "rad"
   },
   {
+    "mot": "blan",
+    "kat": "adj",
+    "def": "koulè san anyen",
+    "egz": "Papye a blan.",
+    "ant": "nwa",
+    "tem": "koulè"
+  },
+  {
     "mot": "ble",
     "kat": "adj",
     "def": "Ki gen koulè syèl oswa lanmè.",
@@ -285,6 +409,27 @@
     "egz": "Li renmen rad ble pou l mete.",
     "ant": "wouj",
     "tem": "rad"
+  },
+  {
+    "mot": "ble",
+    "kat": "adj",
+    "def": "koulè syèl klè",
+    "egz": "Syèl la ble.",
+    "tem": "koulè"
+  },
+  {
+    "mot": "ble lanmè",
+    "kat": "adj",
+    "def": "ble fonse tankou lanmè",
+    "egz": "Pantalon ble lanmè.",
+    "tem": "koulè"
+  },
+  {
+    "mot": "ble syèl",
+    "kat": "adj",
+    "def": "ble klè tankou syèl",
+    "egz": "Rad ble syèl la.",
+    "tem": "koulè"
   },
   {
     "mot": "blese",
@@ -321,6 +466,30 @@
     "egz": "Manje a bon anpil mèsi.",
     "ant": "move",
     "tem": "manje"
+  },
+  {
+    "mot": "bonjou",
+    "kat": "interj",
+    "def": "salitasyon nan maten",
+    "egz": "Bonjou, kòman ou ye?",
+    "ant": "orevwa",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bonjou byen",
+    "kat": "expr",
+    "def": "salitasyon kout",
+    "egz": "Bonjou byen!",
+    "sin": "bonjou",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bonswa",
+    "kat": "interj",
+    "def": "salitasyon nan swa",
+    "egz": "Bonswa zanmi.",
+    "ant": "orevwa",
+    "tem": "salitasyon"
   },
   {
     "mot": "bouch",
@@ -375,12 +544,36 @@
     "tem": "rad"
   },
   {
+    "mot": "bravo",
+    "kat": "interj",
+    "def": "felisitasyon",
+    "egz": "Bravo! Ou byen travay!",
+    "sin": "felisitasyon",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bri",
+    "kat": "n",
+    "def": "vapè ki ap leve maten",
+    "egz": "Bri sou mòn lan.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "brik",
     "kat": "n",
     "def": "materyèl kuit ki fèt ak ajil itilize nan konstriksyon",
     "egz": "Mi an fèt ak brik wouj.",
     "ant": "blòk",
     "tem": "kay"
+  },
+  {
+    "mot": "bwa",
+    "kat": "n",
+    "def": "ansanm pyebwa",
+    "egz": "Bwa la pa la ankò.",
+    "sin": "fore",
+    "ant": "savann",
+    "tem": "tan-meteo"
   },
   {
     "mot": "bwat",
@@ -410,6 +603,21 @@
     "tem": "kò"
   },
   {
+    "mot": "byenveni",
+    "kat": "interj",
+    "def": "akeyi yon moun",
+    "egz": "Byenveni nan kay nou!",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "byenveni lakay",
+    "kat": "expr",
+    "def": "akeyi lakay",
+    "egz": "Byenveni lakay nou!",
+    "sin": "byenveni",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "byè",
     "kat": "n",
     "def": "bwason alkolik fèt ak sèyal fèmante",
@@ -418,12 +626,27 @@
     "tem": "manje"
   },
   {
+    "mot": "byè",
+    "kat": "adj",
+    "def": "ble fonse tankou nwit",
+    "egz": "Inifòm byè.",
+    "tem": "koulè",
+    "var": "ble nwit"
+  },
+  {
     "mot": "bèbè",
     "kat": "adj",
     "def": "ki pa ka pale",
     "egz": "Bèbè a kominike ak siy.",
     "ant": "pale",
     "tem": "kò"
+  },
+  {
+    "mot": "bèj",
+    "kat": "adj",
+    "def": "koulè sab klè",
+    "egz": "Pantalon bèj.",
+    "tem": "koulè"
   },
   {
     "mot": "bèl",
@@ -477,6 +700,101 @@
     "tem": "fanmi"
   },
   {
+    "mot": "bòn ane",
+    "kat": "interj",
+    "def": "salitasyon 1ye janvye",
+    "egz": "Bòn ane 2026!",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bòn anivèsè",
+    "kat": "interj",
+    "def": "salitasyon anivèsè",
+    "egz": "Bòn anivèsè zanmi m!",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bòn apeti",
+    "kat": "interj",
+    "def": "swete bon manje",
+    "egz": "Bòn apeti tout moun!",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bòn chans",
+    "kat": "interj",
+    "def": "swete chans",
+    "egz": "Bòn chans nan egzamen!",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bòn fèt",
+    "kat": "interj",
+    "def": "salitasyon pou fèt",
+    "egz": "Bòn fèt!",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bòn jounen",
+    "kat": "interj",
+    "def": "swete bon jou",
+    "egz": "Bòn jounen!",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bòn nuit",
+    "kat": "interj",
+    "def": "swete bon dòmi",
+    "egz": "Bòn nuit pitit!",
+    "sin": "bòn rèpo",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bòn rout",
+    "kat": "interj",
+    "def": "swete bon vwayaj",
+    "egz": "Bòn rout!",
+    "sin": "bòn vwayaj",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bòn rèpo",
+    "kat": "expr",
+    "def": "bòn nuit",
+    "egz": "Bòn rèpo, m a demen!",
+    "sin": "bòn nuit",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bòn sante",
+    "kat": "interj",
+    "def": "swete bon sante",
+    "egz": "Bòn sante ak fanmi!",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bòn semèn",
+    "kat": "interj",
+    "def": "swete bon semèn",
+    "egz": "Bòn semèn lekòl!",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bòn vakans",
+    "kat": "interj",
+    "def": "swete bon vakans",
+    "egz": "Bòn vakans pitit yo!",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "bòn vwayaj",
+    "kat": "expr",
+    "def": "bòn rout",
+    "egz": "Bòn vwayaj nan Ayiti!",
+    "sin": "bòn rout",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "bòpè",
     "kat": "n",
     "def": "papa mari oswa madanm",
@@ -497,6 +815,14 @@
     "kat": "det",
     "def": "Tout eleman yon gwoup konsdere youn pa youn; totalite.",
     "egz": "Chak timoun resevwa yon liv."
+  },
+  {
+    "mot": "chalè",
+    "kat": "n",
+    "def": "lè cho",
+    "egz": "Chalè a fò.",
+    "ant": "fredi",
+    "tem": "tan-meteo"
   },
   {
     "mot": "chanje",
@@ -573,6 +899,14 @@
     "tem": "kò"
   },
   {
+    "mot": "chif",
+    "kat": "n",
+    "def": "nimewo",
+    "egz": "Chif 5 ble.",
+    "sin": "nimewo",
+    "tem": "nimewo"
+  },
+  {
     "mot": "chita",
     "kat": "v",
     "def": "mete dèyè sou yon bagay",
@@ -585,6 +919,14 @@
     "kat": "adj",
     "def": "Ki gen tanperati wo; ki ka boule; opoze ak frèt.",
     "egz": "Soup la cho anpil."
+  },
+  {
+    "mot": "cho",
+    "kat": "adj",
+    "def": "ki gen anpil chalè",
+    "egz": "Tan an cho.",
+    "ant": "frèt",
+    "tem": "tan-meteo"
   },
   {
     "mot": "chosèt",
@@ -634,6 +976,42 @@
     "egz": "Yo danse tout nuit nan fèt la."
   },
   {
+    "mot": "dat",
+    "kat": "n",
+    "def": "jou espesifik nan kalandriye",
+    "egz": "Dat fèt mwen 12 janvye.",
+    "tem": "jou ak mwa"
+  },
+  {
+    "mot": "dawout",
+    "kat": "n",
+    "def": "out",
+    "egz": "Dawout nan vakans.",
+    "sin": "out",
+    "tem": "jou ak mwa"
+  },
+  {
+    "mot": "de",
+    "kat": "n",
+    "def": "nimewo 2",
+    "egz": "Mwen gen de pitit.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "de san",
+    "kat": "n",
+    "def": "nimewo 200",
+    "egz": "De san moun.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "degre",
+    "kat": "n",
+    "def": "inite tanperatu",
+    "egz": "30 degre Celsius.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "dejene",
     "kat": "n",
     "def": "premye repa jounen an ke moun manje maten",
@@ -643,12 +1021,36 @@
     "tem": "manje"
   },
   {
+    "mot": "delij",
+    "kat": "n",
+    "def": "inondasyon",
+    "egz": "Delij nan vil la.",
+    "sin": "inondasyon",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "delko",
     "kat": "n",
     "def": "jeneratè ki pwodui kouran lè kouran ofisyèl koupe",
     "egz": "Delko a pran lè kouran koupe.",
     "sin": "jeneratè",
     "tem": "kay"
+  },
+  {
+    "mot": "demen",
+    "kat": "n",
+    "def": "jou apre jodi",
+    "egz": "Demen n ap soti.",
+    "ant": "yè",
+    "tem": "jou ak mwa"
+  },
+  {
+    "mot": "demi",
+    "kat": "n",
+    "def": "mwatye",
+    "egz": "Yon èdtan ak demi.",
+    "sin": "mwatye",
+    "tem": "nimewo"
   },
   {
     "mot": "denim",
@@ -673,6 +1075,13 @@
     "tem": "fanmi"
   },
   {
+    "mot": "desanm",
+    "kat": "n",
+    "def": "douzyèm mwa nan ane",
+    "egz": "Desanm se mwa Nwèl.",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "devan",
     "kat": "prep",
     "def": "An fas de; anvan; nan pati ki pi pre ou.",
@@ -691,10 +1100,39 @@
     "egz": "Se dezyèm fwa li vin isit."
   },
   {
+    "mot": "dezyèm",
+    "kat": "adj",
+    "def": "nimewo òdinal 2yèm",
+    "egz": "Dezyèm paj.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "dezè",
+    "kat": "n",
+    "def": "rejyon sèk ak chalè",
+    "egz": "Dezè Sahara gwo.",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "dezès",
+    "kat": "n",
+    "def": "sa ki rive lè tan move",
+    "egz": "Dezès apre siklòn lan.",
+    "sin": "katastwòf",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "di",
     "kat": "v",
     "def": "Eksprime ak pawòl; kominike yon enfòmasyon oswa panse.",
     "egz": "Li di la verite toujou."
+  },
+  {
+    "mot": "dimanch",
+    "kat": "n",
+    "def": "setyèm jou semèn",
+    "egz": "Dimanch nou al legliz.",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "dine",
@@ -728,12 +1166,47 @@
     "tem": "manje"
   },
   {
+    "mot": "dis",
+    "kat": "n",
+    "def": "nimewo 10",
+    "egz": "Dis dwèt.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "disèt",
+    "kat": "n",
+    "def": "nimewo 17",
+    "egz": "Disèt liv.",
+    "tem": "nimewo"
+  },
+  {
     "mot": "diven",
     "kat": "n",
     "def": "bwason alkolik fèt ak rezen fèmante",
     "egz": "Li bwè yon vè diven rouj.",
     "ant": "byè",
     "tem": "manje"
+  },
+  {
+    "mot": "diznèf",
+    "kat": "n",
+    "def": "nimewo 19",
+    "egz": "Diznèf chwa.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "dizuit",
+    "kat": "n",
+    "def": "nimewo 18",
+    "egz": "Dizuit ane.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "dizyèm",
+    "kat": "adj",
+    "def": "nimewo òdinal 10yèm",
+    "egz": "Dizyèm ranng.",
+    "tem": "nimewo"
   },
   {
     "mot": "dlo",
@@ -750,6 +1223,13 @@
     "tem": "kay"
   },
   {
+    "mot": "dlo",
+    "kat": "n",
+    "def": "likid ki nan rivyè, sòs, lanmè",
+    "egz": "Dlo se lavi.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "do",
     "kat": "n",
     "def": "pati dèyè kò",
@@ -762,6 +1242,13 @@
     "kat": "n",
     "def": "Bagay ou bay gratis san atann anyen an retou; kado ki sòti nan kè.",
     "egz": "Li fè yon don pou lekòl la."
+  },
+  {
+    "mot": "dore",
+    "kat": "adj",
+    "def": "koulè lò",
+    "egz": "Bag dore a klere.",
+    "tem": "koulè"
   },
   {
     "mot": "dou",
@@ -781,6 +1268,20 @@
     "tem": "kò"
   },
   {
+    "mot": "douz",
+    "kat": "n",
+    "def": "nimewo 12",
+    "egz": "Douz mwa nan ane.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "douzèn",
+    "kat": "n",
+    "def": "douz inite",
+    "egz": "Yon douzèn ze.",
+    "tem": "nimewo"
+  },
+  {
     "mot": "dwèt",
     "kat": "n",
     "def": "Chak nan senk pati long ki soti nan men oswa pye moun.",
@@ -792,6 +1293,24 @@
     "def": "5 ti manm sou men",
     "egz": "Dwèt mwen pike.",
     "tem": "kò"
+  },
+  {
+    "mot": "dènye",
+    "kat": "adj",
+    "def": "ki fini, nan plas final",
+    "egz": "Dènye paj nan liv la.",
+    "sin": "fen",
+    "ant": "premye",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "dèy",
+    "kat": "n",
+    "def": "tristès pou yon moun ki mouri",
+    "egz": "Fanmi an nan dèy.",
+    "sin": "kondoleyans",
+    "ant": "fèt",
+    "tem": "salitasyon"
   },
   {
     "mot": "dèyè",
@@ -816,6 +1335,22 @@
     "sin": "kouche",
     "ant": "leve; reveye",
     "tem": "kò"
+  },
+  {
+    "mot": "dòmi byen",
+    "kat": "expr",
+    "def": "swete bon dòmi",
+    "egz": "Dòmi byen ti cheri.",
+    "sin": "bòn nuit",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "e ou menm",
+    "kat": "expr",
+    "def": "kesyon retounen",
+    "egz": "Mwen byen — e ou menm?",
+    "sin": "ak ou menm",
+    "tem": "salitasyon"
   },
   {
     "mot": "edike",
@@ -858,6 +1393,14 @@
     "egz": "Li monte eskalye a pou al nan chanm li.",
     "sin": "mach",
     "tem": "kay"
+  },
+  {
+    "mot": "eskize m",
+    "kat": "expr",
+    "def": "padon",
+    "egz": "Eskize m si m deranje.",
+    "sin": "padon",
+    "tem": "salitasyon"
   },
   {
     "mot": "espwa",
@@ -988,12 +1531,27 @@
     "tem": "kò"
   },
   {
+    "mot": "felisitasyon",
+    "kat": "interj",
+    "def": "konplimàn pou siksè",
+    "egz": "Felisitasyon pou diplòm ou!",
+    "sin": "bravo",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "fenèt",
     "kat": "n",
     "def": "ouvèti nan mi yon kay kote limyè ak lè antre",
     "egz": "Ouvri fenèt la pou lè frè antre.",
     "ant": "pòt",
     "tem": "kay"
+  },
+  {
+    "mot": "fevriye",
+    "kat": "n",
+    "def": "dezyèm mwa nan ane",
+    "egz": "Fevriye kout.",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "fi",
@@ -1053,6 +1611,22 @@
     "tem": "kay"
   },
   {
+    "mot": "fonse",
+    "kat": "adj",
+    "def": "ki gen mwens limyè",
+    "egz": "Ble fonse.",
+    "ant": "klè",
+    "tem": "koulè"
+  },
+  {
+    "mot": "fore",
+    "kat": "n",
+    "def": "yon gwo bwa twopikal",
+    "egz": "Fore Amazon enpòtan.",
+    "sin": "bwa",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "fotèy",
     "kat": "n",
     "def": "gwo chèz mou ki gen bra pou repoze",
@@ -1083,6 +1657,22 @@
     "egz": "Pen fre pi bon ak bè.",
     "ant": "vye",
     "tem": "manje"
+  },
+  {
+    "mot": "fre",
+    "kat": "adj",
+    "def": "yon ti frèt",
+    "egz": "Maten an fre.",
+    "ant": "cho",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "fredi",
+    "kat": "n",
+    "def": "lè frèt",
+    "egz": "Fredi a ap monte.",
+    "ant": "chalè",
+    "tem": "tan-meteo"
   },
   {
     "mot": "fri",
@@ -1127,6 +1717,15 @@
     "kat": "adj",
     "def": "Ki gen tanperati ba; ki bay sansasyon fredi; opoze ak cho.",
     "egz": "Dlo rivyè a frèt anpil."
+  },
+  {
+    "mot": "frèt",
+    "kat": "adj",
+    "def": "ki gen mwens chalè",
+    "egz": "Lannuit la frèt.",
+    "sin": "fre",
+    "ant": "cho",
+    "tem": "tan-meteo"
   },
   {
     "mot": "fwa",
@@ -1255,10 +1854,25 @@
     "tem": "kò"
   },
   {
+    "mot": "glas",
+    "kat": "n",
+    "def": "dlo jele",
+    "egz": "Glas la fonn.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "glise",
     "kat": "v",
     "def": "Koule fasil sou yon sifas lis; tonbe akòz sifas mouye.",
     "egz": "Fè atansyon pou pa glise sou wout mouye a."
+  },
+  {
+    "mot": "glisman tè",
+    "kat": "n",
+    "def": "avalanch",
+    "egz": "Glisman tè nan zòn Pòtoprens.",
+    "sin": "avalanch",
+    "tem": "tan-meteo"
   },
   {
     "mot": "gra",
@@ -1359,12 +1973,26 @@
     "tem": "rad"
   },
   {
+    "mot": "gri",
+    "kat": "adj",
+    "def": "koulè ant nwa ak blan",
+    "egz": "Tan an gri.",
+    "tem": "koulè"
+  },
+  {
     "mot": "griyo",
     "kat": "n",
     "def": "moso vyann kochon fri an pwofondè nan sèvo",
     "egz": "Griyo se plat nasyonal Ayiti.",
     "ant": "bouyon",
     "tem": "manje"
+  },
+  {
+    "mot": "grèsil",
+    "kat": "n",
+    "def": "ti glas ki tonbe",
+    "egz": "Grèsil sou twati a.",
+    "tem": "tan-meteo"
   },
   {
     "mot": "gwo",
@@ -1396,12 +2024,28 @@
     "tem": "manje"
   },
   {
+    "mot": "imid",
+    "kat": "adj",
+    "def": "ki gen anpil dlo nan lè",
+    "egz": "Tan an imid.",
+    "ant": "sèk",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "inifòm",
     "kat": "n",
     "def": "rad espesyal tout moun nan yon gwoup mete",
     "egz": "Elèv yo mete inifòm lekòl.",
     "ant": "rad fòmèl",
     "tem": "rad"
+  },
+  {
+    "mot": "inondasyon",
+    "kat": "n",
+    "def": "lè dlo kouvri lakou",
+    "egz": "Inondasyon ap fè domaj.",
+    "sin": "delij",
+    "tem": "tan-meteo"
   },
   {
     "mot": "isi",
@@ -1438,6 +2082,13 @@
     "tem": "kò"
   },
   {
+    "mot": "janvye",
+    "kat": "n",
+    "def": "premye mwa nan ane",
+    "egz": "Janvye fè frèt.",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "je",
     "kat": "n",
     "def": "Ògàn vizyon; pati nan figi ki pèmèt ou wè.",
@@ -1450,6 +2101,20 @@
     "egz": "Je mwen ap fè mwen mal.",
     "sin": "zye",
     "tem": "kò"
+  },
+  {
+    "mot": "jedi",
+    "kat": "n",
+    "def": "katriyèm jou semèn",
+    "egz": "Jedi se jou klas la.",
+    "tem": "jou ak mwa"
+  },
+  {
+    "mot": "jen",
+    "kat": "n",
+    "def": "sizyèm mwa nan ane",
+    "egz": "Jen lekòl fini.",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "jenerasyon",
@@ -1505,10 +2170,33 @@
     "egz": "Li jis rive."
   },
   {
+    "mot": "jiyè",
+    "kat": "n",
+    "def": "setyèm mwa nan ane",
+    "egz": "Jiyè vakans.",
+    "tem": "jou ak mwa"
+  },
+  {
+    "mot": "jodi a",
+    "kat": "n",
+    "def": "jou prezan",
+    "egz": "Jodi a se madi.",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "jou",
     "kat": "n",
     "def": "Peryòd tan ki dire 24 èdtan; pati nan semèn, mwa, ak ane.",
     "egz": "Jou a klè ak bèl solèy."
+  },
+  {
+    "mot": "jou",
+    "kat": "n",
+    "def": "yon peryòd 24 èdtan",
+    "egz": "Jou a long.",
+    "sin": "jounen",
+    "ant": "nuit",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "joumou",
@@ -1525,6 +2213,15 @@
     "tem": "manje"
   },
   {
+    "mot": "jounen",
+    "kat": "n",
+    "def": "tan ant solèy leve ak solèy kouche",
+    "egz": "Jounen an cho.",
+    "sin": "jou",
+    "ant": "nuit",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "jèn",
     "kat": "adj",
     "def": "Ki pa gen anpil ane; ki nan premye peryòd lavi; opoze ak vye.",
@@ -1537,6 +2234,21 @@
     "egz": "Li achte yon chemiz jòn pou ete.",
     "ant": "ble",
     "tem": "rad"
+  },
+  {
+    "mot": "jòn",
+    "kat": "adj",
+    "def": "koulè solèy",
+    "egz": "Bannann jòn.",
+    "tem": "koulè"
+  },
+  {
+    "mot": "ka",
+    "kat": "n",
+    "def": "yon pati nan kat",
+    "egz": "Yon ka tas dlo.",
+    "sin": "yon ka",
+    "tem": "nimewo"
   },
   {
     "mot": "kabann",
@@ -1562,6 +2274,13 @@
     "egz": "Li bwè kafe chak maten.",
     "ant": "te",
     "tem": "manje"
+  },
+  {
+    "mot": "kale-bare",
+    "kat": "adj",
+    "def": "blan ak nwa melanje",
+    "egz": "Inifòm kale-bare.",
+    "tem": "koulè"
   },
   {
     "mot": "kalson",
@@ -1595,6 +2314,13 @@
     "egz": "Ou kapab fè sa si ou vle."
   },
   {
+    "mot": "karant",
+    "kat": "n",
+    "def": "nimewo 40",
+    "egz": "Karant minit.",
+    "tem": "nimewo"
+  },
+  {
     "mot": "kasav",
     "kat": "n",
     "def": "pen fèt ak manyòk graje seche sou recho",
@@ -1619,6 +2345,63 @@
     "tem": "kay"
   },
   {
+    "mot": "kat",
+    "kat": "n",
+    "def": "nimewo 4",
+    "egz": "Kat chèz.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "katastwòf",
+    "kat": "n",
+    "def": "dezès",
+    "egz": "Tranbleman tè se yon katastwòf.",
+    "sin": "dezès",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "katreven",
+    "kat": "n",
+    "def": "nimewo 80 (4×20)",
+    "egz": "Katreven ane laj.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "katrevendis",
+    "kat": "n",
+    "def": "nimewo 90 (4×20+10)",
+    "egz": "Katrevendis dola.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "katriyèm",
+    "kat": "adj",
+    "def": "nimewo òdinal 4yèm",
+    "egz": "Katriyèm jou.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "katòz",
+    "kat": "n",
+    "def": "nimewo 14",
+    "egz": "Katòz pòm.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "kawo",
+    "kat": "adj",
+    "def": "ki gen kare diferan koulè",
+    "egz": "Chemiz kawo nwa ak wouj.",
+    "tem": "koulè"
+  },
+  {
+    "mot": "kawèm",
+    "kat": "n",
+    "def": "peryòd 40 jou anvan Pak",
+    "egz": "Kawèm se peryòd refleksyon.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "kay",
     "kat": "n",
     "def": "Bilding kote moun viv; abri, rezidans, lakay.",
@@ -1631,10 +2414,25 @@
     "egz": "Kenbe men pitit ou lè ou travèse wout."
   },
   {
+    "mot": "kenz",
+    "kat": "n",
+    "def": "nimewo 15",
+    "egz": "Kenz minit.",
+    "tem": "nimewo"
+  },
+  {
     "mot": "ki",
     "kat": "pron",
     "def": "Mo ki enplike yon moun oswa bagay; ki moun, ki bagay, kisa.",
     "egz": "Ki moun ki la?"
+  },
+  {
+    "mot": "ki jan ou ye",
+    "kat": "expr",
+    "def": "kesyon sou eta moun",
+    "egz": "Ki jan ou ye jodi a?",
+    "sin": "kòman w ye",
+    "tem": "salitasyon"
   },
   {
     "mot": "kijan",
@@ -1665,10 +2463,41 @@
     "tem": "kay"
   },
   {
+    "mot": "klere",
+    "kat": "adj",
+    "def": "ki briye",
+    "egz": "Solèy klere a.",
+    "ant": "tèn",
+    "tem": "koulè"
+  },
+  {
+    "mot": "klimaa",
+    "kat": "n",
+    "def": "tan jeneral nan yon rejyon",
+    "egz": "Klimaa Ayiti twopikal.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "klè",
     "kat": "adj",
     "def": "Ki transparan; ki pa twoub; ki fasil konprann; ki gen limyè.",
     "egz": "Dlo a klè tankou kristal."
+  },
+  {
+    "mot": "klè",
+    "kat": "adj",
+    "def": "ki gen anpil limyè",
+    "egz": "Chanm klè a.",
+    "ant": "fonse; sonm",
+    "tem": "koulè"
+  },
+  {
+    "mot": "klè",
+    "kat": "adj",
+    "def": "ki gen klète",
+    "egz": "Syèl klè.",
+    "ant": "sonm",
+    "tem": "tan-meteo"
   },
   {
     "mot": "klèen",
@@ -1711,10 +2540,26 @@
     "tem": "kò"
   },
   {
+    "mot": "kondoleyans",
+    "kat": "n",
+    "def": "salitasyon pou lanmò",
+    "egz": "Mwen prezante kondoleyans mwen.",
+    "ant": "felisitasyon",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "konn",
     "kat": "v",
     "def": "Gen konesans sou yon bagay; abitye fè; familye ak.",
     "egz": "Li konn pale twa lang."
+  },
+  {
+    "mot": "konplimàn",
+    "kat": "n",
+    "def": "felisitasyon",
+    "egz": "Konplimàn pou pitit ou yo!",
+    "sin": "felisitasyon",
+    "tem": "salitasyon"
   },
   {
     "mot": "konpè",
@@ -1724,6 +2569,14 @@
     "sin": "parenn",
     "ant": "filyèl",
     "tem": "fanmi"
+  },
+  {
+    "mot": "kontinan",
+    "kat": "n",
+    "def": "gwo masif tè",
+    "egz": "Lafrik se yon kontinan.",
+    "ant": "zile",
+    "tem": "tan-meteo"
   },
   {
     "mot": "kostim",
@@ -1764,12 +2617,33 @@
     "tem": "kò"
   },
   {
+    "mot": "koulè",
+    "kat": "n",
+    "def": "sa ki diferansye yon bagay ak yon lòt nan vizyon",
+    "egz": "Ki koulè ou pi renmen?",
+    "tem": "koulè"
+  },
+  {
+    "mot": "kouraj",
+    "kat": "interj",
+    "def": "ankouraje",
+    "egz": "Kouraj zanmi m!",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "kouran",
     "kat": "n",
     "def": "elektrisite ki koule nan fil yo nan yon kay",
     "egz": "Kouran an koupe depi yè swa.",
     "sin": "elektrisite",
     "tem": "kay"
+  },
+  {
+    "mot": "kouran lanmè",
+    "kat": "n",
+    "def": "dlo ki ap kouri nan lanmè",
+    "egz": "Kouran lanmè ka pote ou.",
+    "tem": "tan-meteo"
   },
   {
     "mot": "kouri",
@@ -1869,6 +2743,13 @@
     "tem": "manje"
   },
   {
+    "mot": "krèm",
+    "kat": "adj",
+    "def": "koulè blan ak yon ti jòn",
+    "egz": "Mi krèm yo bèl.",
+    "tem": "koulè"
+  },
+  {
     "mot": "kuis",
     "kat": "n",
     "def": "pati anwo janm",
@@ -1938,10 +2819,25 @@
     "egz": "Fòk ou pran swen kò ou."
   },
   {
+    "mot": "kòman w ye",
+    "kat": "expr",
+    "def": "ki jan ou ye",
+    "egz": "Kòman w ye?",
+    "sin": "ki jan ou ye",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "lajan",
     "kat": "n",
     "def": "Monnaie; bilye oswa pyès yo itilize pou achte bagay.",
     "egz": "Li travay pou li touche lajan."
+  },
+  {
+    "mot": "lak",
+    "kat": "n",
+    "def": "gwo etandi dlo dous",
+    "egz": "Lak Azuei nan sid.",
+    "tem": "tan-meteo"
   },
   {
     "mot": "lakou",
@@ -1958,12 +2854,28 @@
     "egz": "Lalin nan klere tout lannuit."
   },
   {
+    "mot": "lalin",
+    "kat": "n",
+    "def": "boul nan syèl la nan nuit",
+    "egz": "Lalin plen klere.",
+    "ant": "solèy",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "lambi",
     "kat": "n",
     "def": "molisk maren yo manje fri oswa nan soup",
     "egz": "Soup lambi se yon mets ayisyen.",
     "ant": "krab",
     "tem": "manje"
+  },
+  {
+    "mot": "lane",
+    "kat": "n",
+    "def": "ane",
+    "egz": "Lane prochèn n ap fete.",
+    "sin": "ane",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "lang",
@@ -1979,10 +2891,35 @@
     "egz": "Ayiti gen yon bèl bò lanmè."
   },
   {
+    "mot": "lanmè",
+    "kat": "n",
+    "def": "gwo dlo sale ki kouvri tè",
+    "egz": "Lanmè Karayib bèl.",
+    "ant": "tè",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "lannuit",
+    "kat": "n",
+    "def": "nuit",
+    "egz": "Lannuit cho a.",
+    "sin": "nuit",
+    "ant": "lajounen",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "lapli",
     "kat": "n",
     "def": "Dlo ki tonbe nan syèl anba fòm gout; presipitasyon.",
     "egz": "Lapli a tonbe fort aswè a."
+  },
+  {
+    "mot": "lapli",
+    "kat": "n",
+    "def": "dlo ki tonbe nan syèl la",
+    "egz": "Lapli ap tonbe.",
+    "ant": "solèy",
+    "tem": "tan-meteo"
   },
   {
     "mot": "lapèrèz",
@@ -2030,6 +2967,13 @@
     "tem": "kay"
   },
   {
+    "mot": "lawouze",
+    "kat": "n",
+    "def": "ti dlo ki sou fèy maten",
+    "egz": "Lawouze sou jaden an.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "lay",
     "kat": "n",
     "def": "plant bouton yo pile pou asezone manje",
@@ -2050,6 +2994,13 @@
     "kat": "n",
     "def": "Enstitisyon kote elèv ale pou aprann; bilding kote yo ansèye.",
     "egz": "Timoun yo bezwen ale lekòl."
+  },
+  {
+    "mot": "lendi",
+    "kat": "n",
+    "def": "premye jou semèn",
+    "egz": "Lendi mwen al travay.",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "lespri",
@@ -2078,6 +3029,30 @@
     "kat": "pron",
     "def": "Twazyèm pèsòn sengulye; moun nou ap pale sou li, gason oswa fi.",
     "egz": "Li ale lekòl chak jou."
+  },
+  {
+    "mot": "li ap fè cho",
+    "kat": "expr",
+    "def": "tan ap monte chalè",
+    "egz": "Li ap fè cho.",
+    "ant": "li ap fè frèt",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "li cho",
+    "kat": "expr",
+    "def": "tan an cho",
+    "egz": "Li cho anpil.",
+    "sin": "tan an cho",
+    "ant": "li frèt",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "limidite",
+    "kat": "n",
+    "def": "kondisyon imid",
+    "egz": "Limidite a wo.",
+    "tem": "tan-meteo"
   },
   {
     "mot": "limyè",
@@ -2116,6 +3091,22 @@
     "tem": "kò"
   },
   {
+    "mot": "loraj",
+    "kat": "n",
+    "def": "lapli ak son fò",
+    "egz": "Loraj la pè timoun yo.",
+    "sin": "tonè",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "loray",
+    "kat": "n",
+    "def": "tanpèt ak van ak loraj",
+    "egz": "Loray ap vini.",
+    "sin": "tanpèt",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "lwen",
     "kat": "adj",
     "def": "Ki pa pre; ki separe pa distans; opoze ak pre.",
@@ -2126,6 +3117,13 @@
     "kat": "n",
     "def": "Peryòd tan; moman patikilye nan jounen; èdtan.",
     "egz": "Ki lè li ye koulye a?"
+  },
+  {
+    "mot": "lè",
+    "kat": "n",
+    "def": "gaz nou respire",
+    "egz": "Lè a pwòp.",
+    "tem": "tan-meteo"
   },
   {
     "mot": "lèd",
@@ -2169,6 +3167,13 @@
     "egz": "Pote yon lòt chèz souple."
   },
   {
+    "mot": "m ap kenbe",
+    "kat": "expr",
+    "def": "mwen kanpe nan difikilte",
+    "egz": "M ap kenbe, mèsi.",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "mache",
     "kat": "v",
     "def": "Deplase pye youn apre lòt nan yon vitès nòmal.",
@@ -2203,6 +3208,13 @@
     "def": "fanm ki gen yon bebe nan vant li",
     "egz": "Madanm ansent lan dwe poze.",
     "tem": "fanmi"
+  },
+  {
+    "mot": "madi",
+    "kat": "n",
+    "def": "dezyèm jou semèn",
+    "egz": "Madi se jou mache.",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "madmwazèl",
@@ -2252,6 +3264,14 @@
     "egz": "Graje malanga a pou akra.",
     "ant": "yanm",
     "tem": "manje"
+  },
+  {
+    "mot": "malediksyon",
+    "kat": "n",
+    "def": "lapriyè pou move",
+    "egz": "Malediksyon pa bon.",
+    "ant": "benediksyon",
+    "tem": "salitasyon"
   },
   {
     "mot": "malè",
@@ -2355,6 +3375,13 @@
     "tem": "fanmi"
   },
   {
+    "mot": "mas",
+    "kat": "n",
+    "def": "twazyèm mwa nan ane",
+    "egz": "Mas se mwa flè yo.",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "matant",
     "kat": "n",
     "def": "Sè papa ou oswa manman ou; tante.",
@@ -2370,6 +3397,14 @@
     "tem": "fanmi"
   },
   {
+    "mot": "maten",
+    "kat": "n",
+    "def": "premye pati nan jounen an",
+    "egz": "Maten an klè.",
+    "ant": "swa",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "matin",
     "kat": "n",
     "def": "Pati jounen kòmanse lè solèy leve rive midi.",
@@ -2382,6 +3417,13 @@
     "egz": "Li mete yon pantalon mawon pou travay.",
     "ant": "nwa",
     "tem": "rad"
+  },
+  {
+    "mot": "mawon",
+    "kat": "adj",
+    "def": "koulè tè oswa bwa",
+    "egz": "Po l mawon.",
+    "tem": "koulè"
   },
   {
     "mot": "mayi",
@@ -2400,10 +3442,25 @@
     "tem": "manje"
   },
   {
+    "mot": "me",
+    "kat": "n",
+    "def": "senkyèm mwa nan ane",
+    "egz": "18 me jounen drapo.",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "mechann",
     "kat": "adj",
     "def": "Ki vle fè mal; ki gen move entansyon; ki pa gen pitye.",
     "egz": "Pa fè bagay mechann."
+  },
+  {
+    "mot": "melanje",
+    "kat": "adj",
+    "def": "plizyè koulè ansanm",
+    "egz": "Bouke flè melanje.",
+    "ant": "yon sèl koulè",
+    "tem": "koulè"
   },
   {
     "mot": "men",
@@ -2443,12 +3500,49 @@
     "tem": "rad"
   },
   {
+    "mot": "midi",
+    "kat": "n",
+    "def": "mwatye nan jounen",
+    "egz": "Mwen ap manje a midi.",
+    "ant": "minui",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "mikwo",
     "kat": "n",
     "def": "aparèy ki chofèl manje vit ak radyasyon",
     "egz": "Chofèl manje a nan mikwo a.",
     "sin": "mikwowèv",
     "tem": "kay"
+  },
+  {
+    "mot": "mil",
+    "kat": "n",
+    "def": "nimewo 1000",
+    "egz": "Mil moun nan fèt la.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "milya",
+    "kat": "n",
+    "def": "nimewo 1,000,000,000",
+    "egz": "Yon milya dola.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "milyon",
+    "kat": "n",
+    "def": "nimewo 1,000,000",
+    "egz": "Yon milyon goud.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "minui",
+    "kat": "n",
+    "def": "12è nan nuit",
+    "egz": "Minui sone.",
+    "ant": "midi",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "misk",
@@ -2464,6 +3558,15 @@
     "egz": "Gade mont ou pou konnen lè a.",
     "sin": "mòn",
     "tem": "rad"
+  },
+  {
+    "mot": "montay",
+    "kat": "n",
+    "def": "mòn",
+    "egz": "Montay Lopital nan Pòtoprens.",
+    "sin": "mòn",
+    "ant": "plenn",
+    "tem": "tan-meteo"
   },
   {
     "mot": "moun",
@@ -2490,16 +3593,54 @@
     "egz": "Rad li mouye anba lapli."
   },
   {
+    "mot": "mov",
+    "kat": "adj",
+    "def": "vyolèt klè",
+    "egz": "Flè mov.",
+    "sin": "vyolèt",
+    "tem": "koulè"
+  },
+  {
     "mot": "move",
     "kat": "adj",
     "def": "Ki pa bon; ki gen move kalite; ki ka fè mal.",
     "egz": "Move tan ap vini."
   },
   {
+    "mot": "mwa",
+    "kat": "n",
+    "def": "yon peryòd 28-31 jou",
+    "egz": "Mwa a long.",
+    "tem": "jou ak mwa"
+  },
+  {
+    "mot": "mwatye",
+    "kat": "n",
+    "def": "yon pati nan de",
+    "egz": "Mwatye nan klas la.",
+    "sin": "demi",
+    "tem": "nimewo"
+  },
+  {
     "mot": "mwen",
     "kat": "pron",
     "def": "Premye pèsòn sengulye; pèsòn ki ap pale.",
     "egz": "Mwen rele Jean."
+  },
+  {
+    "mot": "mwen byen",
+    "kat": "expr",
+    "def": "repons sou eta",
+    "egz": "Mwen byen, mèsi.",
+    "ant": "mwen pa byen",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "mwen la",
+    "kat": "expr",
+    "def": "repons sou eta",
+    "egz": "Mwen la, m ap kenbe.",
+    "tem": "salitasyon"
   },
   {
     "mot": "mèg",
@@ -2510,10 +3651,31 @@
     "tem": "kò"
   },
   {
+    "mot": "mèkredi",
+    "kat": "n",
+    "def": "twazyèm jou semèn",
+    "egz": "Mèkredi nou gen reyinyon.",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "mèsi",
     "kat": "interj",
     "def": "Mo yo di pou montre rekònesans pou yon kado oswa èd resevwa.",
     "egz": "Mèsi anpil pou èd ou ba mwen."
+  },
+  {
+    "mot": "mèsi",
+    "kat": "interj",
+    "def": "remèsiman",
+    "egz": "Mèsi anpil!",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "mèsi anpil",
+    "kat": "interj",
+    "def": "remèsiman fò",
+    "egz": "Mèsi anpil pou kado a.",
+    "tem": "salitasyon"
   },
   {
     "mot": "mòlè",
@@ -2529,12 +3691,29 @@
     "egz": "Mòn yo kouvert ak bwa vèt."
   },
   {
+    "mot": "mòn",
+    "kat": "n",
+    "def": "wotè natirèl nan tè",
+    "egz": "Pa gen plat nan Ayiti — sèlman mòn.",
+    "sin": "montay",
+    "ant": "plenn",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "mòtye",
     "kat": "n",
     "def": "veso epè ak pile pou kraze epis",
     "egz": "Pile epis yo nan mòtye a.",
     "sin": "pilon",
     "tem": "kay"
+  },
+  {
+    "mot": "n a wè",
+    "kat": "expr",
+    "def": "orevwa kout",
+    "egz": "N a wè zanmi!",
+    "sin": "a pita",
+    "tem": "salitasyon"
   },
   {
     "mot": "natirèl",
@@ -2573,6 +3752,14 @@
     "tem": "fanmi"
   },
   {
+    "mot": "nimewo",
+    "kat": "n",
+    "def": "siyifik ki reprezante kantite",
+    "egz": "Nimewo a long.",
+    "sin": "chif",
+    "tem": "nimewo"
+  },
+  {
     "mot": "non",
     "kat": "n",
     "def": "Mo yo itilize pou idantifye yon moun, kote, oswa bagay.",
@@ -2592,10 +3779,26 @@
     "egz": "Nou rele nan aswè."
   },
   {
+    "mot": "novanm",
+    "kat": "n",
+    "def": "onzyèm mwa nan ane",
+    "egz": "Novanm 18 batay Vètyè.",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "nuit",
     "kat": "n",
     "def": "Pati jounen de kouche solèy rive leve solèy; lè li nwa.",
     "egz": "Li dòmi bonè chak nuit."
+  },
+  {
+    "mot": "nuit",
+    "kat": "n",
+    "def": "tan ant solèy kouche ak solèy leve",
+    "egz": "Nuit la nwa.",
+    "sin": "lannuit",
+    "ant": "jounen",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "nwa",
@@ -2604,6 +3807,28 @@
     "egz": "Li mete soulye nwa pou travay.",
     "ant": "blan",
     "tem": "rad"
+  },
+  {
+    "mot": "nwa",
+    "kat": "adj",
+    "def": "koulè ki kontrè ak blan",
+    "egz": "Cheve l nwa.",
+    "ant": "blan",
+    "tem": "koulè"
+  },
+  {
+    "mot": "nwa kafe",
+    "kat": "adj",
+    "def": "nwa fonse tankou kafe",
+    "egz": "Cheve nwa kafe.",
+    "tem": "koulè"
+  },
+  {
+    "mot": "nyaj",
+    "kat": "n",
+    "def": "vapè dlo nan syèl la",
+    "egz": "Nyaj nwa nan syèl la.",
+    "tem": "tan-meteo"
   },
   {
     "mot": "nyès",
@@ -2627,6 +3852,13 @@
     "egz": "Li achte yon rad nèf."
   },
   {
+    "mot": "nèf",
+    "kat": "n",
+    "def": "nimewo 9",
+    "egz": "Nèf ane.",
+    "tem": "nimewo"
+  },
+  {
     "mot": "nèg",
     "kat": "n",
     "def": "yon gason (jeneral)",
@@ -2636,10 +3868,32 @@
     "tem": "fanmi"
   },
   {
+    "mot": "nèj",
+    "kat": "n",
+    "def": "dlo jele ki tonbe nan syèl la",
+    "egz": "Nèj pa tonbe Ayiti.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "obeyi",
     "kat": "v",
     "def": "Suiv lòd oswa règ yon moun ki gen otorite; fè sa yo mande ou.",
     "egz": "Timoun dwe obeyi paran yo."
+  },
+  {
+    "mot": "oktòb",
+    "kat": "n",
+    "def": "dizyèm mwa nan ane",
+    "egz": "Oktòb gen siklòn.",
+    "tem": "jou ak mwa"
+  },
+  {
+    "mot": "opak",
+    "kat": "adj",
+    "def": "ki pa kite limyè pase",
+    "egz": "Twal opak.",
+    "ant": "trans",
+    "tem": "koulè"
   },
   {
     "mot": "oranj",
@@ -2648,6 +3902,21 @@
     "egz": "Li abiye an oranj pou selebrasyon an.",
     "ant": "ble",
     "tem": "rad"
+  },
+  {
+    "mot": "oranj",
+    "kat": "adj",
+    "def": "koulè zoranj",
+    "egz": "Kawòt oranj.",
+    "tem": "koulè"
+  },
+  {
+    "mot": "orevwa",
+    "kat": "interj",
+    "def": "salitasyon lè ou kite",
+    "egz": "Orevwa, n a wè!",
+    "ant": "bonjou",
+    "tem": "salitasyon"
   },
   {
     "mot": "ozalantou",
@@ -2671,10 +3940,48 @@
     "tem": "fanmi"
   },
   {
+    "mot": "onz",
+    "kat": "n",
+    "def": "nimewo 11",
+    "egz": "Onz timoun nan klas.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "out",
+    "kat": "n",
+    "def": "uityèm mwa nan ane",
+    "egz": "Out cho anpil.",
+    "sin": "dawout",
+    "tem": "jou ak mwa"
+  },
+  {
+    "mot": "pa gen pwoblèm",
+    "kat": "expr",
+    "def": "repons a mèsi",
+    "egz": "Mèsi! — Pa gen pwoblèm.",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "padon",
+    "kat": "interj",
+    "def": "mande eskiz",
+    "egz": "Padon, mwen tap pase.",
+    "sin": "eskize m",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "paj",
     "kat": "n",
     "def": "Yon sèl sifas yon fèy papye; yon seksyon yon liv.",
     "egz": "Li li dis paj chak swa."
+  },
+  {
+    "mot": "pal",
+    "kat": "adj",
+    "def": "koulè ki klè ak fèb",
+    "egz": "Roz pal.",
+    "ant": "vif",
+    "tem": "koulè"
   },
   {
     "mot": "pale",
@@ -2887,16 +4194,46 @@
     "tem": "fanmi"
   },
   {
+    "mot": "plaj",
+    "kat": "n",
+    "def": "kote tè rankontre lanmè",
+    "egz": "Plaj Jacmel bèl.",
+    "sin": "rivaj",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "plante",
     "kat": "v",
     "def": "Mete grenn oswa plant nan tè pou li ka grandi.",
     "egz": "Li plante mayi ak pwa chak ane."
   },
   {
+    "mot": "planèt",
+    "kat": "n",
+    "def": "boul ki tounen otou solèy",
+    "egz": "Tè a se yon planèt.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "plen",
     "kat": "adj",
     "def": "Ki pa vide; ki gen kontni rive anlè; konplè.",
     "egz": "Sak la plen diri."
+  },
+  {
+    "mot": "plenn",
+    "kat": "adj",
+    "def": "lalin tout won (plenn lin)",
+    "egz": "Plenn lalin nan klere.",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "plenn",
+    "kat": "n",
+    "def": "tè plat",
+    "egz": "Plenn Cul-de-Sac.",
+    "ant": "mòn",
+    "tem": "tan-meteo"
   },
   {
     "mot": "plezi",
@@ -2912,12 +4249,44 @@
     "tem": "kò"
   },
   {
+    "mot": "po klè",
+    "kat": "adj",
+    "def": "po fanm/gason ki klè",
+    "egz": "Madanm po klè.",
+    "ant": "po nwa",
+    "tem": "koulè"
+  },
+  {
+    "mot": "po nwa",
+    "kat": "adj",
+    "def": "po fanm/gason ki nwa",
+    "egz": "Ayisyen gen po nwa.",
+    "ant": "po klè",
+    "tem": "koulè"
+  },
+  {
+    "mot": "polisyon",
+    "kat": "n",
+    "def": "lè sal",
+    "egz": "Polisyon nan Pòtoprens grav.",
+    "ant": "lè pwòp",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "polièstè",
     "kat": "n",
     "def": "fibè sentetik solid ki pa pase fasil",
     "egz": "Chemiz la fèt ak polièstè ki laj.",
     "ant": "koton",
     "tem": "rad"
+  },
+  {
+    "mot": "polè",
+    "kat": "adj",
+    "def": "klimaa frèt sevè",
+    "egz": "Lapòlè polè.",
+    "ant": "twopikal",
+    "tem": "tan-meteo"
   },
   {
     "mot": "poul",
@@ -2954,6 +4323,14 @@
     "egz": "Pran liv la."
   },
   {
+    "mot": "pran kouraj",
+    "kat": "expr",
+    "def": "kouraj",
+    "egz": "Pran kouraj, sa ap pase.",
+    "sin": "kouraj",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "pre",
     "kat": "adj",
     "def": "Pa lwen; a kout distans; bò kote; opoze ak lwen.",
@@ -2964,6 +4341,14 @@
     "kat": "adj",
     "def": "Ki an premye pozisyon nan yon lòd; ki vin avan tout lòt.",
     "egz": "Li toujou premye nan klas la."
+  },
+  {
+    "mot": "premye",
+    "kat": "adj",
+    "def": "nimewo òdinal 1ye",
+    "egz": "Premye chapit.",
+    "ant": "dènye",
+    "tem": "nimewo"
   },
   {
     "mot": "priz",
@@ -3038,6 +4423,13 @@
     "egz": "Pye mwen pwòp.",
     "ant": "men",
     "tem": "kò"
+  },
+  {
+    "mot": "pè",
+    "kat": "n",
+    "def": "de bagay ansanm",
+    "egz": "Yon pè soulye.",
+    "tem": "nimewo"
   },
   {
     "mot": "pòmp",
@@ -3222,10 +4614,25 @@
     "egz": "Rich oswa pòv, tout moun egal devan Bondye."
   },
   {
+    "mot": "rivaj",
+    "kat": "n",
+    "def": "plaj",
+    "egz": "Rivaj la sab fen.",
+    "sin": "plaj",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "rivyè",
     "kat": "n",
     "def": "Kouran dlo natirèl ki koule sou tè.",
     "egz": "Timoun yo benyen nan rivyè a."
+  },
+  {
+    "mot": "rivyè",
+    "kat": "n",
+    "def": "kouran dlo natirèl",
+    "egz": "Rivyè a koule lan.",
+    "tem": "tan-meteo"
   },
   {
     "mot": "rob",
@@ -3260,6 +4667,14 @@
     "tem": "kay"
   },
   {
+    "mot": "salam",
+    "kat": "interj",
+    "def": "salu",
+    "egz": "Salam pou tout fanmi!",
+    "sin": "salu",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "salamanje",
     "kat": "n",
     "def": "pyès yon kay kote moun manje ansanm",
@@ -3276,6 +4691,13 @@
     "tem": "manje"
   },
   {
+    "mot": "salitasyon",
+    "kat": "n",
+    "def": "fason di bonjou ak orevwa",
+    "egz": "Salitasyon enpòtan.",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "salon",
     "kat": "n",
     "def": "pyès prensipal yon kay kote moun chita jwenn",
@@ -3284,11 +4706,33 @@
     "tem": "kay"
   },
   {
+    "mot": "salu",
+    "kat": "interj",
+    "def": "salitasyon enfòmèl",
+    "egz": "Salu zanmi!",
+    "sin": "salam",
+    "tem": "salitasyon"
+  },
+  {
+    "mot": "samdi",
+    "kat": "n",
+    "def": "sizyèm jou semèn",
+    "egz": "Samdi nou nan mache.",
+    "tem": "jou ak mwa"
+  },
+  {
     "mot": "san",
     "kat": "n",
     "def": "likid wouj ki kouri nan kò",
     "egz": "San li wo.",
     "tem": "kò"
+  },
+  {
+    "mot": "san",
+    "kat": "n",
+    "def": "nimewo 100",
+    "egz": "San goud.",
+    "tem": "nimewo"
   },
   {
     "mot": "sandal",
@@ -3328,6 +4772,14 @@
     "tem": "rad"
   },
   {
+    "mot": "se pa anyen",
+    "kat": "expr",
+    "def": "pa gen pwoblèm",
+    "egz": "Mèsi! — Se pa anyen.",
+    "sin": "pa gen pwoblèm",
+    "tem": "salitasyon"
+  },
+  {
     "mot": "seche",
     "kat": "v",
     "def": "retire imidite yon bagay apre lave",
@@ -3335,6 +4787,14 @@
     "sin": "sèk",
     "ant": "mouye",
     "tem": "kay"
+  },
+  {
+    "mot": "sechrès",
+    "kat": "n",
+    "def": "lè pa gen dlo pou anpil tan",
+    "egz": "Sechrès la grav nan nò.",
+    "ant": "lapli",
+    "tem": "tan-meteo"
   },
   {
     "mot": "sekou",
@@ -3347,6 +4807,78 @@
     "kat": "n",
     "def": "Peryòd tan ki gen sèt jou; lendi rive dimanch.",
     "egz": "Gen sèt jou nan yon semèn."
+  },
+  {
+    "mot": "semèn",
+    "kat": "n",
+    "def": "7 jou ansanm",
+    "egz": "Semèn nan long.",
+    "tem": "jou ak mwa"
+  },
+  {
+    "mot": "senk",
+    "kat": "n",
+    "def": "nimewo 5",
+    "egz": "Senk goud.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "senk san",
+    "kat": "n",
+    "def": "nimewo 500",
+    "egz": "Senk san dola.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "senkant",
+    "kat": "n",
+    "def": "nimewo 50",
+    "egz": "Senkant dola.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "senkyèm",
+    "kat": "adj",
+    "def": "nimewo òdinal 5yèm",
+    "egz": "Senkyèm mwa.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "septanm",
+    "kat": "n",
+    "def": "nevyèm mwa nan ane",
+    "egz": "Septanm lekòl kòmanse.",
+    "tem": "jou ak mwa"
+  },
+  {
+    "mot": "sezon",
+    "kat": "n",
+    "def": "peryòd nan ane ak yon karakteristik",
+    "egz": "Sezon lapli kòmanse.",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "sezon lapli",
+    "kat": "n",
+    "def": "peryòd ak anpil lapli (avril-septanm)",
+    "egz": "Sezon lapli pou jaden yo.",
+    "ant": "sezon sèch",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "sezon siklòn",
+    "kat": "n",
+    "def": "peryòd siklòn yo (jen-novanm)",
+    "egz": "Sezon siklòn danjere.",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "sezon sèch",
+    "kat": "n",
+    "def": "peryòd san lapli (des-mas)",
+    "egz": "Sezon sèch pou poze.",
+    "ant": "sezon lapli",
+    "tem": "tan-meteo"
   },
   {
     "mot": "si",
@@ -3371,12 +4903,47 @@
     "tem": "manje"
   },
   {
+    "mot": "siklòn",
+    "kat": "n",
+    "def": "gwo tanpèt twopikal",
+    "egz": "Siklòn lan grav.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "siman",
     "kat": "n",
     "def": "poud blan ki melanje ak dlo pou kolmate oswa bati",
     "egz": "Yo melanje siman ak sab.",
     "ant": "blòk",
     "tem": "kay"
+  },
+  {
+    "mot": "sis",
+    "kat": "n",
+    "def": "nimewo 6",
+    "egz": "Sis ze.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "siy plen",
+    "kat": "n",
+    "def": "fenomèn lalin plen",
+    "egz": "Siy plen pou fèt vodou yo.",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "siyifik",
+    "kat": "n",
+    "def": "endikatè klima",
+    "egz": "Siyifik tan an pa bon.",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "sizyèm",
+    "kat": "adj",
+    "def": "nimewo òdinal 6yèm",
+    "egz": "Sizyèm semèn.",
+    "tem": "nimewo"
   },
   {
     "mot": "sofa",
@@ -3393,6 +4960,39 @@
     "egz": "Solèy la cho jodi a."
   },
   {
+    "mot": "solèy",
+    "kat": "n",
+    "def": "lè a klè ak cho",
+    "egz": "Solèy la cho.",
+    "ant": "lapli",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "solèy klere",
+    "kat": "expr",
+    "def": "lè solèy brye",
+    "egz": "Solèy klere jodi a.",
+    "ant": "syèl sonm",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "solèy kouche",
+    "kat": "n",
+    "def": "moman solèy ale aswè",
+    "egz": "Solèy kouche koulè.",
+    "sin": "kouche solèy",
+    "ant": "solèy leve",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "solèy leve",
+    "kat": "n",
+    "def": "moman solèy parèt maten",
+    "egz": "Solèy leve a bèl.",
+    "ant": "solèy kouche",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "son",
     "kat": "n",
     "def": "Vibrasyon ki pèmèt nou tande; bwi; son mizik.",
@@ -3403,6 +5003,24 @@
     "kat": "v",
     "def": "Pa bliye; kenbe nan memwa; gen memwa de yon bagay.",
     "egz": "Li sonje chak mo pwofesè li di."
+  },
+  {
+    "mot": "sonm",
+    "kat": "adj",
+    "def": "fonse",
+    "egz": "Pyès la sonm.",
+    "sin": "fonse",
+    "ant": "klè",
+    "tem": "koulè"
+  },
+  {
+    "mot": "sonm",
+    "kat": "adj",
+    "def": "ki san limyè",
+    "egz": "Syèl sonm anvan lapli.",
+    "sin": "fonse",
+    "ant": "klè",
+    "tem": "tan-meteo"
   },
   {
     "mot": "soud",
@@ -3463,11 +5081,27 @@
     "tem": "kò"
   },
   {
+    "mot": "sous",
+    "kat": "n",
+    "def": "kote rivyè kòmanse",
+    "egz": "Sous la fre.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "sousi",
     "kat": "n",
     "def": "cheve sou je",
     "egz": "Sousi li nwa.",
     "tem": "kò"
+  },
+  {
+    "mot": "swa",
+    "kat": "n",
+    "def": "tan ki kòmanse solèy ap kouche",
+    "egz": "Swa a fre.",
+    "sin": "aswè",
+    "ant": "maten",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "swaf",
@@ -3476,12 +5110,34 @@
     "egz": "Bwè dlo lè ou swaf."
   },
   {
+    "mot": "swasanndis",
+    "kat": "n",
+    "def": "nimewo 70",
+    "egz": "Swasanndis ane.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "swasant",
+    "kat": "n",
+    "def": "nimewo 60",
+    "egz": "Swasant minit nan inè.",
+    "tem": "nimewo"
+  },
+  {
     "mot": "swè",
     "kat": "n",
     "def": "likid ki soti sou po lè cho",
     "egz": "Swè mwen ap koule.",
     "sin": "transpirasyon",
     "tem": "kò"
+  },
+  {
+    "mot": "syèl",
+    "kat": "n",
+    "def": "espas anwo tè a",
+    "egz": "Syèl la ble.",
+    "ant": "tè",
+    "tem": "tan-meteo"
   },
   {
     "mot": "sè",
@@ -3498,6 +5154,14 @@
     "tem": "fanmi"
   },
   {
+    "mot": "sèk",
+    "kat": "adj",
+    "def": "san dlo nan lè",
+    "egz": "Tan sèk pa bon pou plant.",
+    "ant": "imid",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "sèl",
     "kat": "adj",
     "def": "Ki sèlman youn; ki pa gen lòt; izole.",
@@ -3510,6 +5174,13 @@
     "egz": "Mete yon ti sèl nan soup la.",
     "ant": "sik",
     "tem": "manje"
+  },
+  {
+    "mot": "sèt",
+    "kat": "n",
+    "def": "nimewo 7",
+    "egz": "Sèt jou nan semèn.",
+    "tem": "nimewo"
   },
   {
     "mot": "sèvo",
@@ -3526,6 +5197,13 @@
     "egz": "Sèvèl li klè.",
     "sin": "sèvo",
     "tem": "kò"
+  },
+  {
+    "mot": "sèz",
+    "kat": "n",
+    "def": "nimewo 16",
+    "egz": "Sèz moun.",
+    "tem": "nimewo"
   },
   {
     "mot": "tab",
@@ -3561,6 +5239,23 @@
     "egz": "Tan an move jodi a."
   },
   {
+    "mot": "tan",
+    "kat": "n",
+    "def": "kondisyon syèl ak lè",
+    "egz": "Tan an cho jodi a.",
+    "sin": "tan an",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "tan an cho",
+    "kat": "expr",
+    "def": "lè chalè wo",
+    "egz": "Tan an cho jodi a.",
+    "sin": "li cho",
+    "ant": "li fre",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "tande",
     "kat": "v",
     "def": "pran son ak zòrèy",
@@ -3573,6 +5268,21 @@
     "kat": "prep",
     "def": "Menm jan ak; nan fòm simili; konpare.",
     "egz": "Li kouri tankou van."
+  },
+  {
+    "mot": "tanperatu",
+    "kat": "n",
+    "def": "degre cho oswa frèt",
+    "egz": "Tanperatu a 30°C.",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "tanpèt",
+    "kat": "n",
+    "def": "tan move ak van ak lapli",
+    "egz": "Tanpèt la pase.",
+    "ant": "tan kal",
+    "tem": "tan-meteo"
   },
   {
     "mot": "te",
@@ -3722,6 +5432,14 @@
     "tem": "fanmi"
   },
   {
+    "mot": "tonè",
+    "kat": "n",
+    "def": "son fò nan loraj",
+    "egz": "Tonè a fè brij.",
+    "sin": "loraj",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "touche",
     "kat": "v",
     "def": "manyen",
@@ -3742,12 +5460,51 @@
     "egz": "Tout timoun bezwen edikasyon."
   },
   {
+    "mot": "touye limyè",
+    "kat": "n",
+    "def": "lè syèl la fenmen",
+    "egz": "Touye limyè a tris.",
+    "ant": "klè",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "tranbledetè",
+    "kat": "n",
+    "def": "tranbleman tè",
+    "egz": "Tranbledetè a fè domaj.",
+    "sin": "tranbleman tè",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "tranbleman tè",
+    "kat": "n",
+    "def": "lè tè a souke",
+    "egz": "Tranbleman tè 2010 te grav.",
+    "sin": "tranbledetè",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "trans",
+    "kat": "adj",
+    "def": "ki kite limyè pase",
+    "egz": "Vit trans.",
+    "ant": "opak",
+    "tem": "koulè"
+  },
+  {
     "mot": "transpirasyon",
     "kat": "n",
     "def": "swè",
     "egz": "Transpirasyon li lan koule.",
     "sin": "swè",
     "tem": "kò"
+  },
+  {
+    "mot": "trant",
+    "kat": "n",
+    "def": "nimewo 30",
+    "egz": "Trant ane.",
+    "tem": "nimewo"
   },
   {
     "mot": "travay",
@@ -3764,10 +5521,38 @@
     "tem": "kò"
   },
   {
+    "mot": "trèz",
+    "kat": "n",
+    "def": "nimewo 13",
+    "egz": "Trèz se mal chans pou kèk moun.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "tsunami",
+    "kat": "n",
+    "def": "gwo dlo lanmè ki monte",
+    "egz": "Tsunami apre tranbleman tè.",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "turkwaz",
+    "kat": "adj",
+    "def": "ble klè ak vèt",
+    "egz": "Lanmè turkwaz.",
+    "tem": "koulè"
+  },
+  {
     "mot": "twa",
     "kat": "n",
     "def": "Nimewo ki egal a de plis youn (3).",
     "egz": "Li gen twa pitit."
+  },
+  {
+    "mot": "twa",
+    "kat": "n",
+    "def": "nimewo 3",
+    "egz": "Twa moun nan kay la.",
+    "tem": "nimewo"
   },
   {
     "mot": "twal",
@@ -3794,6 +5579,21 @@
     "tem": "kay"
   },
   {
+    "mot": "twazyèm",
+    "kat": "adj",
+    "def": "nimewo òdinal 3yèm",
+    "egz": "Twazyèm elèv.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "twopikal",
+    "kat": "adj",
+    "def": "klimaa cho ak imid",
+    "egz": "Karayib twopikal.",
+    "ant": "polè",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "twò",
     "kat": "adv",
     "def": "Pi plis pase nesesè; nan egzès.",
@@ -3804,6 +5604,14 @@
     "kat": "n",
     "def": "Sòl; sifas latè kote moun viv; fon ki pa dlo.",
     "egz": "Yo plante nan tè a."
+  },
+  {
+    "mot": "tèn",
+    "kat": "adj",
+    "def": "ki pa klere",
+    "egz": "Koulè a tèn.",
+    "ant": "klere",
+    "tem": "koulè"
   },
   {
     "mot": "tèt",
@@ -3821,6 +5629,21 @@
     "tem": "kò"
   },
   {
+    "mot": "uit",
+    "kat": "n",
+    "def": "nimewo 8",
+    "egz": "Uit mwa.",
+    "sin": "wit",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "vag",
+    "kat": "n",
+    "def": "monte ak desann lanmè",
+    "egz": "Vag lanmè a fò.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "vale",
     "kat": "v",
     "def": "pase manje nan gòj",
@@ -3829,10 +5652,31 @@
     "tem": "kò"
   },
   {
+    "mot": "vale",
+    "kat": "n",
+    "def": "tè plat ant mòn yo",
+    "egz": "Vale Atibonit.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "van",
     "kat": "n",
     "def": "Mouvman lè; souf ki deplase rapidman.",
     "egz": "Van an fò jodi a."
+  },
+  {
+    "mot": "van",
+    "kat": "n",
+    "def": "lè ki ap soufle",
+    "egz": "Van an fò.",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "vandredi",
+    "kat": "n",
+    "def": "senkyèm jou semèn",
+    "egz": "Vandredi soti bonè.",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "vann",
@@ -3861,6 +5705,21 @@
     "egz": "Ven nan men l ap parèt.",
     "ant": "atè",
     "tem": "kò"
+  },
+  {
+    "mot": "ven",
+    "kat": "n",
+    "def": "nimewo 20",
+    "egz": "Ven goud.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "vif",
+    "kat": "adj",
+    "def": "koulè ki fò",
+    "egz": "Wouj vif.",
+    "ant": "tèn; pal",
+    "tem": "koulè"
   },
   {
     "mot": "vini",
@@ -3966,6 +5825,14 @@
     "tem": "rad"
   },
   {
+    "mot": "vyolèt",
+    "kat": "adj",
+    "def": "koulè ant ble ak wouj",
+    "egz": "Rad vyolèt la bèl.",
+    "sin": "mov",
+    "tem": "koulè"
+  },
+  {
     "mot": "vè",
     "kat": "n",
     "def": "resipyan an vè pou bwè likid",
@@ -4003,11 +5870,39 @@
     "tem": "rad"
   },
   {
+    "mot": "vèt",
+    "kat": "adj",
+    "def": "koulè plant ak fèy",
+    "egz": "Fèy yo vèt.",
+    "tem": "koulè"
+  },
+  {
+    "mot": "vèt foncè",
+    "kat": "adj",
+    "def": "vèt fonse",
+    "egz": "Pant vèt foncè.",
+    "tem": "koulè"
+  },
+  {
+    "mot": "vèt fèy",
+    "kat": "adj",
+    "def": "vèt klè",
+    "egz": "Chemiz vèt fèy.",
+    "tem": "koulè"
+  },
+  {
     "mot": "vèv",
     "kat": "n",
     "def": "fanm ki mari l mouri",
     "egz": "Vèv la pran dèy.",
     "tem": "fanmi"
+  },
+  {
+    "mot": "vòlkan",
+    "kat": "n",
+    "def": "mòn ki ka pete fwa cho",
+    "egz": "Vòlkan Soufrière ak Karayib.",
+    "tem": "tan-meteo"
   },
   {
     "mot": "wete",
@@ -4040,6 +5935,28 @@
     "tem": "rad"
   },
   {
+    "mot": "wouj",
+    "kat": "adj",
+    "def": "koulè san",
+    "egz": "Tomat la wouj.",
+    "tem": "koulè"
+  },
+  {
+    "mot": "wouj klè",
+    "kat": "adj",
+    "def": "wouj klè",
+    "egz": "Lèv wouj klè.",
+    "ant": "wouj fonse",
+    "tem": "koulè"
+  },
+  {
+    "mot": "wouj san",
+    "kat": "adj",
+    "def": "wouj fonse",
+    "egz": "Mouchwa wouj san.",
+    "tem": "koulè"
+  },
+  {
     "mot": "wout",
     "kat": "n",
     "def": "Chemen ki pèmèt moun ak machin pase; chemen, otowout.",
@@ -4052,6 +5969,13 @@
     "egz": "Tibebe a mete yon rad woz.",
     "ant": "nwa",
     "tem": "rad"
+  },
+  {
+    "mot": "woz",
+    "kat": "adj",
+    "def": "koulè dou wouj klè",
+    "egz": "Flè woz nan jaden.",
+    "tem": "koulè"
   },
   {
     "mot": "wè",
@@ -4082,10 +6006,35 @@
     "egz": "Yo ale lekòl ansanm."
   },
   {
+    "mot": "yon",
+    "kat": "det",
+    "def": "nimewo 1 anvan yon non",
+    "egz": "Yon kay.",
+    "sin": "youn",
+    "ant": "anpil",
+    "tem": "nimewo"
+  },
+  {
     "mot": "youn",
     "kat": "n",
     "def": "Nimewo ki pi piti a (1); yon sèl eleman.",
     "egz": "Ba mwen youn souple."
+  },
+  {
+    "mot": "youn",
+    "kat": "n",
+    "def": "nimewo 1 poukont li",
+    "egz": "Konbyen? — Youn.",
+    "sin": "yon",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "yè",
+    "kat": "n",
+    "def": "jou anvan jodi",
+    "egz": "Yè mwen pat la.",
+    "ant": "demen",
+    "tem": "jou ak mwa"
   },
   {
     "mot": "zaboka",
@@ -4133,6 +6082,13 @@
     "egz": "Li fè de ze pou manje matin."
   },
   {
+    "mot": "zeklè",
+    "kat": "n",
+    "def": "limyè ki klere nan syèl la",
+    "egz": "Zeklè klere syèl la.",
+    "tem": "tan-meteo"
+  },
+  {
     "mot": "zepòl",
     "kat": "n",
     "def": "Pati kò kote bra konekte ak tronk; zepòl.",
@@ -4143,6 +6099,28 @@
     "kat": "n",
     "def": "Kò selès ki klere nan syèl lannuit; estèl.",
     "egz": "Syèl la plen zetwal aswè a."
+  },
+  {
+    "mot": "zetwal",
+    "kat": "n",
+    "def": "ti pwen klere nan syèl nuit",
+    "egz": "Zetwal yo klere.",
+    "tem": "tan-meteo"
+  },
+  {
+    "mot": "zewo",
+    "kat": "n",
+    "def": "nimewo 0",
+    "egz": "Pa gen anyen - zewo.",
+    "tem": "nimewo"
+  },
+  {
+    "mot": "zile",
+    "kat": "n",
+    "def": "tè antoure pa dlo",
+    "egz": "Ayiti se yon zile.",
+    "ant": "kontinan",
+    "tem": "tan-meteo"
   },
   {
     "mot": "zo",
@@ -4166,6 +6144,14 @@
     "egz": "Fri zonyon ak lay anvan w mete pwason an.",
     "ant": "lay",
     "tem": "manje"
+  },
+  {
+    "mot": "zonzon",
+    "kat": "adj",
+    "def": "rad ki gen plizyè koulè ki melanje",
+    "egz": "Chemiz zonzon Karayib.",
+    "ant": "yon koulè",
+    "tem": "koulè"
   },
   {
     "mot": "zoranj",
