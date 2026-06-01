@@ -42,6 +42,14 @@
     "tem": "rad"
   },
   {
+    "mot": "ABS",
+    "kat": "n",
+    "def": "sistèm anti-blokaj",
+    "egz": "ABS pou sekirite.",
+    "sin": "anti-lock",
+    "tem": "mekanik"
+  },
+  {
     "mot": "abèy",
     "kat": "n",
     "def": "ensèk ki bay myèl",
@@ -98,6 +106,14 @@
     "egz": "Afrik orijin nou.",
     "sin": "Lafrik",
     "tem": "kilti"
+  },
+  {
+    "mot": "aftermarket",
+    "kat": "n",
+    "def": "pyès apre mache",
+    "egz": "Aftermarket varye.",
+    "sin": "pyès apre mache",
+    "tem": "mekanik"
   },
   {
     "mot": "agrikilti",
@@ -163,6 +179,22 @@
     "egz": "Akajou a vye.",
     "sin": "kayè akajou",
     "tem": "plant"
+  },
+  {
+    "mot": "akajou",
+    "kat": "n",
+    "def": "bwa fen di",
+    "egz": "Akajou pou mèb.",
+    "tem": "chapantri",
+    "var": "bwa"
+  },
+  {
+    "mot": "akimilatè",
+    "kat": "n",
+    "def": "batri",
+    "egz": "Akimilatè 12 vòlt.",
+    "sin": "batri",
+    "tem": "mekanik"
   },
   {
     "mot": "akra",
@@ -255,12 +287,33 @@
     "tem": "salitasyon"
   },
   {
+    "mot": "alimaj",
+    "kat": "n",
+    "def": "sistèm ki kòmanse motè",
+    "egz": "Alimaj la pa mache.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "aliyman",
+    "kat": "n",
+    "def": "ajisteman wou yo",
+    "egz": "Aliyman pou machin kondui dwat.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "alowès",
     "kat": "n",
     "def": "yon plant medsinal",
     "egz": "Alowès pou boule po.",
     "sin": "alès",
     "tem": "plant"
+  },
+  {
+    "mot": "altènatè",
+    "kat": "n",
+    "def": "siy ki bay kouran",
+    "egz": "Altènatè chaje batri.",
+    "tem": "mekanik"
   },
   {
     "mot": "alèji",
@@ -302,6 +355,21 @@
     "tem": "mizik"
   },
   {
+    "mot": "amortisè",
+    "kat": "n",
+    "def": "siy ki absòbe chòk",
+    "egz": "Amortisè bezwen chanjman.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "ampèmèt",
+    "kat": "n",
+    "def": "siy pou kouran",
+    "egz": "Ampèmèt nan dyagnose.",
+    "ant": "voltimèt",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "amwa",
     "kat": "n",
     "def": "gwo mèb ki gen pòt pou gade rad ak bagay ladan l",
@@ -315,6 +383,13 @@
     "def": "fen lapriyè",
     "egz": "Mèsi Bondye, amèn.",
     "tem": "salitasyon"
+  },
+  {
+    "mot": "aparèy elektrik",
+    "kat": "n",
+    "def": "machin ak kouran",
+    "egz": "Aparèy elektrik nan kuizin.",
+    "tem": "elektrisite"
   },
   {
     "mot": "aplodi",
@@ -363,6 +438,14 @@
     "tem": "jou ak mwa"
   },
   {
+    "mot": "apre konstriksyon",
+    "kat": "n",
+    "def": "netwayaj apre bati",
+    "egz": "Apre konstriksyon enpòtan.",
+    "sin": "fini travay",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "apremidi",
     "kat": "n",
     "def": "tan apre midi",
@@ -377,6 +460,15 @@
     "egz": "Mwen apresye Vodou Adjae.",
     "sin": "renmen",
     "tem": "mizik"
+  },
+  {
+    "mot": "asanble",
+    "kat": "v",
+    "def": "monte ansanm",
+    "egz": "Asanble tout pyès.",
+    "sin": "monte",
+    "ant": "demonte",
+    "tem": "mekanik"
   },
   {
     "mot": "asma",
@@ -433,6 +525,14 @@
     "tem": "animal"
   },
   {
+    "mot": "ata",
+    "kat": "n",
+    "def": "fil ki kenbe bawo ansanm",
+    "egz": "Ata pou bawo.",
+    "sin": "fil ata",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "atakan",
     "kat": "n",
     "def": "jwè ki tire gòl",
@@ -456,12 +556,28 @@
     "tem": "relijyon-vodou"
   },
   {
+    "mot": "atelye mekanik",
+    "kat": "n",
+    "def": "garaj",
+    "egz": "Atelye mekanik la gen tout zouti.",
+    "sin": "garaj",
+    "tem": "mekanik"
+  },
+  {
     "mot": "aterè",
     "kat": "v",
     "def": "lè avyon desann sou tè",
     "egz": "Avyon aterè nan Pòtoprens.",
     "ant": "dekole",
     "tem": "transpò"
+  },
+  {
+    "mot": "ATF",
+    "kat": "n",
+    "def": "luil transmisyon otomatik",
+    "egz": "ATF wouj.",
+    "sin": "luil transmisyon",
+    "tem": "mekanik"
   },
   {
     "mot": "Ati",
@@ -699,6 +815,14 @@
     "egz": "Li anbrase manman li lè li tounen."
   },
   {
+    "mot": "anbrayaj",
+    "kat": "n",
+    "def": "siy ki konekte motè ak transmisyon",
+    "egz": "Anbrayaj la glise.",
+    "sin": "klitch",
+    "tem": "mekanik"
+  },
+  {
     "mot": "anbreyaj",
     "kat": "n",
     "def": "siy pou chanje vitès",
@@ -823,6 +947,22 @@
     "sin": "travayè",
     "ant": "patwon",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "anpoul",
+    "kat": "n",
+    "def": "siy ki bay limyè",
+    "egz": "Anpoul brile.",
+    "sin": "boul limyè",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "anpèraj",
+    "kat": "n",
+    "def": "kantite kouran",
+    "egz": "Anpèraj 15.",
+    "sin": "kouran",
+    "tem": "elektrisite"
   },
   {
     "mot": "anrejistre",
@@ -979,6 +1119,13 @@
     "egz": "Balans kò bezwen byen manje.",
     "sin": "ekilib",
     "tem": "lasante"
+  },
+  {
+    "mot": "balansaj",
+    "kat": "n",
+    "def": "ekilib wou yo",
+    "egz": "Balansaj pou pa vibre.",
+    "tem": "mekanik"
   },
   {
     "mot": "balawou",
@@ -1164,6 +1311,22 @@
     "tem": "spò"
   },
   {
+    "mot": "batri",
+    "kat": "n",
+    "def": "rezè kouran",
+    "egz": "Batri a fini.",
+    "sin": "akimilatè",
+    "tem": "mekanik",
+    "var": "veyikil"
+  },
+  {
+    "mot": "batri solè",
+    "kat": "n",
+    "def": "batri pou panèl solè",
+    "egz": "Batri solè 200Ah.",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "batèm",
     "kat": "n",
     "def": "seremoni dlo pou kominote relijye",
@@ -1186,6 +1349,14 @@
     "tem": "peyizaj"
   },
   {
+    "mot": "bawo",
+    "kat": "n",
+    "def": "fè long pou ranmase",
+    "egz": "Bawo nan kolòn.",
+    "sin": "fè bawo",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "bay",
     "kat": "v",
     "def": "Transfere yon bagay bay yon moun; ofri; prezante.",
@@ -1198,6 +1369,13 @@
     "egz": "Baye Pòtoprens.",
     "sin": "pò",
     "tem": "peyizaj"
+  },
+  {
+    "mot": "baynyè",
+    "kat": "n",
+    "def": "veso gwo pou benyen",
+    "egz": "Baynyè ak dlo cho.",
+    "tem": "plonbri"
   },
   {
     "mot": "bazilik",
@@ -1240,6 +1418,36 @@
     "tem": "plant"
   },
   {
+    "mot": "betomik",
+    "kat": "n",
+    "def": "betoner",
+    "egz": "Betomik pou gwo travay.",
+    "sin": "betoner",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "beton",
+    "kat": "n",
+    "def": "siman ak gravye",
+    "egz": "Beton ame ak fè.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "beton ame",
+    "kat": "n",
+    "def": "beton ak fè ladan",
+    "egz": "Beton ame solid.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "betoner",
+    "kat": "n",
+    "def": "machin pou melanj siman",
+    "egz": "Betoner pou plak.",
+    "sin": "betomik",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "bezwen",
     "kat": "n",
     "def": "Sa ki nesesè pou viv; manke yon bagay enpòtan; nesesite.",
@@ -1254,12 +1462,27 @@
     "tem": "relijyon-vodou"
   },
   {
+    "mot": "bide",
+    "kat": "n",
+    "def": "veso pou lave dèyè",
+    "egz": "Bide nan kay rich.",
+    "tem": "plonbri"
+  },
+  {
     "mot": "bilten",
     "kat": "n",
     "def": "papye ak nòt yo",
     "egz": "Bilten trimès mwen bon.",
     "sin": "rapò",
     "tem": "edikasyon"
+  },
+  {
+    "mot": "birin",
+    "kat": "n",
+    "def": "zouti pou koupe",
+    "egz": "Birin a metal.",
+    "sin": "chisel",
+    "tem": "mekanik"
   },
   {
     "mot": "bis",
@@ -1276,6 +1499,14 @@
     "egz": "Bisiklèt mwen wouj.",
     "sin": "vye lèt",
     "tem": "transpò"
+  },
+  {
+    "mot": "bit",
+    "kat": "n",
+    "def": "mèche",
+    "egz": "Bit pou drilll.",
+    "sin": "mèche",
+    "tem": "chapantri"
   },
   {
     "mot": "biwo",
@@ -1324,6 +1555,20 @@
     "egz": "Biznis mwen ap monte.",
     "sin": "komès",
     "tem": "komès-lajan"
+  },
+  {
+    "mot": "bièl",
+    "kat": "n",
+    "def": "siy ki konekte pistòn ak vyebrekèl",
+    "egz": "Bièl yo trè enpòtan.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "blakawout",
+    "kat": "n",
+    "def": "kouran koupe nan tout zòn",
+    "egz": "Blakawout nan vil la.",
+    "tem": "elektrisite"
   },
   {
     "mot": "blan",
@@ -1428,6 +1673,29 @@
     "tem": "kay"
   },
   {
+    "mot": "blòk motè",
+    "kat": "n",
+    "def": "kò prensipal motè",
+    "egz": "Blòk motè a craké.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "bobin",
+    "kat": "n",
+    "def": "siy ki bay vòltaj wo pou bouji",
+    "egz": "Bobin alimaj la kase.",
+    "sin": "bobin alimaj",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "bobin alimaj",
+    "kat": "n",
+    "def": "bobin",
+    "egz": "Bobin alimaj brile.",
+    "sin": "bobin",
+    "tem": "mekanik"
+  },
+  {
     "mot": "bon",
     "kat": "adj",
     "def": "Ki gen kalite pozitif; ki satisfè; ki vrè nan moral; opoze ak move.",
@@ -1518,12 +1786,27 @@
     "tem": "pwofesyon"
   },
   {
+    "mot": "bouchin",
+    "kat": "n",
+    "def": "siy pou anfonse bouchin",
+    "egz": "Bouchin driver.",
+    "sin": "bushing driver",
+    "tem": "mekanik"
+  },
+  {
     "mot": "boue",
     "kat": "v",
     "def": "fè bri pou pa apresye",
     "egz": "Boue jwè a.",
     "ant": "aplodi",
     "tem": "spò"
+  },
+  {
+    "mot": "bouji",
+    "kat": "n",
+    "def": "siy ki bay etensèl",
+    "egz": "Bouji yo nan motè.",
+    "tem": "mekanik"
   },
   {
     "mot": "boujwazi",
@@ -1560,11 +1843,35 @@
     "tem": "spò"
   },
   {
+    "mot": "boul limyè",
+    "kat": "n",
+    "def": "anpoul",
+    "egz": "Boul limyè LED.",
+    "sin": "anpoul",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "boule",
     "kat": "n",
     "def": "blese ak dife",
     "egz": "Boule a fè mal.",
     "tem": "lasante"
+  },
+  {
+    "mot": "boule",
+    "kat": "v",
+    "def": "brile",
+    "egz": "Pyès elektrik boule.",
+    "sin": "brile",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "boulon",
+    "kat": "n",
+    "def": "gwo vis ak ekrou",
+    "egz": "Boulon nan jant.",
+    "sin": "vis",
+    "tem": "mekanik"
   },
   {
     "mot": "boutik",
@@ -1621,6 +1928,22 @@
     "tem": "kò"
   },
   {
+    "mot": "bra de sispansyon",
+    "kat": "n",
+    "def": "bra sispansyon",
+    "egz": "Bra de sispansyon nèf.",
+    "sin": "bra sispansyon",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "bra sispansyon",
+    "kat": "n",
+    "def": "siy ki kenbe wou",
+    "egz": "Bra sispansyon kase.",
+    "sin": "bra de sispansyon",
+    "tem": "mekanik"
+  },
+  {
     "mot": "branch",
     "kat": "n",
     "def": "pati ki soti nan tronk",
@@ -1645,6 +1968,14 @@
     "tem": "salitasyon"
   },
   {
+    "mot": "breakè",
+    "kat": "n",
+    "def": "siy ki koupe kouran nan dous",
+    "egz": "Breakè ranje.",
+    "sin": "disjontè",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "bri",
     "kat": "n",
     "def": "vapè ki ap leve maten",
@@ -1660,6 +1991,15 @@
     "tem": "kay"
   },
   {
+    "mot": "brize",
+    "kat": "v",
+    "def": "kase",
+    "egz": "Vit la brize.",
+    "sin": "kase",
+    "ant": "ranje",
+    "tem": "mekanik"
+  },
+  {
     "mot": "brokoli",
     "kat": "n",
     "def": "legim vèt won",
@@ -1667,11 +2007,34 @@
     "tem": "fwi-legim"
   },
   {
+    "mot": "brouèt",
+    "kat": "n",
+    "def": "ti kamyon pou pote",
+    "egz": "Brouèt pou siman.",
+    "sin": "brwèt",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "brwèt",
+    "kat": "n",
+    "def": "brouèt",
+    "egz": "Brwèt yon wou.",
+    "sin": "brouèt",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "budis",
     "kat": "n",
     "def": "moun ki swiv Buddha",
     "egz": "Budis nan Azya.",
     "tem": "relijyon-vodou"
+  },
+  {
+    "mot": "buldozè",
+    "kat": "n",
+    "def": "machin pou pouse tè",
+    "egz": "Buldozè pou wout.",
+    "tem": "konstriksyon"
   },
   {
     "mot": "bwa",
@@ -1688,6 +2051,22 @@
     "def": "matyè di nan pyebwa",
     "egz": "Bwa pou bati kay.",
     "tem": "plant"
+  },
+  {
+    "mot": "bwa di",
+    "kat": "n",
+    "def": "bwa solid",
+    "egz": "Bwa di akajou.",
+    "ant": "bwa mou",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "bwa mou",
+    "kat": "n",
+    "def": "bwa fasil koupe",
+    "egz": "Bwa mou pou pratik.",
+    "ant": "bwa di",
+    "tem": "chapantri"
   },
   {
     "mot": "bwat",
@@ -1867,6 +2246,14 @@
     "def": "moun ki fè pen",
     "egz": "Bòlanjè a fè pen fre.",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "bòljwen",
+    "kat": "n",
+    "def": "jwen sou bra sispansyon",
+    "egz": "Bòljwen a fini.",
+    "sin": "ball joint",
+    "tem": "mekanik"
   },
   {
     "mot": "bòn ane",
@@ -2113,6 +2500,14 @@
     "tem": "pwofesyon"
   },
   {
+    "mot": "chapantri",
+    "kat": "n",
+    "def": "metye bwa",
+    "egz": "Chapantri tradisyonèl.",
+    "sin": "menwizri",
+    "tem": "chapantri"
+  },
+  {
     "mot": "chapantye",
     "kat": "n",
     "def": "moun ki travay bwa",
@@ -2258,12 +2653,28 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "chofaj",
+    "kat": "n",
+    "def": "sistèm cho nan machin",
+    "egz": "Chofaj nan ivè.",
+    "ant": "klimatizasyon",
+    "tem": "mekanik"
+  },
+  {
     "mot": "chofè",
     "kat": "n",
     "def": "moun ki kondui machin",
     "egz": "Chofè a kondui byen.",
     "ant": "pasaje",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "chofè dlo",
+    "kat": "n",
+    "def": "siy ki chofe dlo",
+    "egz": "Chofè dlo elektrik.",
+    "sin": "water heater",
+    "tem": "plonbri"
   },
   {
     "mot": "chomaj",
@@ -2356,6 +2767,13 @@
     "tem": "relijyon-vodou"
   },
   {
+    "mot": "chwòk",
+    "kat": "n",
+    "def": "lè du pèd",
+    "egz": "Chwòk anvan.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "chè",
     "kat": "adj",
     "def": "ki koute anpil",
@@ -2378,6 +2796,14 @@
     "tem": "komès-lajan"
   },
   {
+    "mot": "chèni",
+    "kat": "n",
+    "def": "siy ki kenbe pòt sou kad",
+    "egz": "Chèni a kale.",
+    "sin": "panou",
+    "tem": "chapantri"
+  },
+  {
     "mot": "chèz",
     "kat": "n",
     "def": "mèb ou chita sou li ki gen yon do ak de bra",
@@ -2391,6 +2817,14 @@
     "def": "chèz nan machin",
     "egz": "Chèz machin yo nèf.",
     "tem": "transpò"
+  },
+  {
+    "mot": "chòk elektrik",
+    "kat": "n",
+    "def": "lè kouran touche moun",
+    "egz": "Chòk elektrik fò.",
+    "sin": "elektwokutè",
+    "tem": "elektrisite"
   },
   {
     "mot": "dako",
@@ -2516,6 +2950,15 @@
     "tem": "jou ak mwa"
   },
   {
+    "mot": "DC",
+    "kat": "n",
+    "def": "kouran kontinyèl",
+    "egz": "DC nan batri.",
+    "sin": "kouran kontinyèl",
+    "ant": "AC",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "de",
     "kat": "n",
     "def": "nimewo 2",
@@ -2528,6 +2971,14 @@
     "def": "nimewo 200",
     "egz": "De san moun.",
     "tem": "nimewo"
+  },
+  {
+    "mot": "debouche",
+    "kat": "v",
+    "def": "fè dlo pase ankò",
+    "egz": "Debouche twalèt la.",
+    "ant": "bouche",
+    "tem": "plonbri"
   },
   {
     "mot": "defansè",
@@ -2610,11 +3061,27 @@
     "tem": "kay"
   },
   {
+    "mot": "delko",
+    "kat": "n",
+    "def": "machin pou bay kouran",
+    "egz": "Delko a ap travay.",
+    "sin": "jeneratè",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "delta",
     "kat": "n",
     "def": "kote rivyè rankontre lanmè",
     "egz": "Delta Nil nan Ejip.",
     "tem": "peyizaj"
+  },
+  {
+    "mot": "demarè",
+    "kat": "n",
+    "def": "motè ki kòmanse motè",
+    "egz": "Demarè a fèb.",
+    "sin": "estatè",
+    "tem": "mekanik"
   },
   {
     "mot": "demen",
@@ -2649,6 +3116,23 @@
     "tem": "kilti"
   },
   {
+    "mot": "demoli",
+    "kat": "v",
+    "def": "kraze konstriksyon",
+    "egz": "Demoli vye kay.",
+    "sin": "kraze",
+    "ant": "bati",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "demolisyon",
+    "kat": "n",
+    "def": "kraze konstwi",
+    "egz": "Demolisyon avan bati nèf.",
+    "ant": "konstriksyon",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "demon",
     "kat": "n",
     "def": "movè zanj",
@@ -2656,6 +3140,14 @@
     "sin": "dyab",
     "ant": "zanj",
     "tem": "relijyon-vodou"
+  },
+  {
+    "mot": "demonte",
+    "kat": "v",
+    "def": "soti pyès yo",
+    "egz": "Demonte motè a.",
+    "ant": "monte",
+    "tem": "mekanik"
   },
   {
     "mot": "denim",
@@ -2749,6 +3241,14 @@
     "egz": "Li kanpe devan pòt la."
   },
   {
+    "mot": "devi",
+    "kat": "n",
+    "def": "estimasyon",
+    "egz": "Devi pou bati kay.",
+    "sin": "estimasyon",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "devwa",
     "kat": "n",
     "def": "travay pou fè lakay",
@@ -2783,6 +3283,13 @@
     "tem": "nimewo"
   },
   {
+    "mot": "dezyèm etaj",
+    "kat": "n",
+    "def": "etaj anwo premye",
+    "egz": "Dezyèm etaj rezidan.",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "dezè",
     "kat": "n",
     "def": "rejyon sèk ak chalè",
@@ -2810,6 +3317,13 @@
     "kat": "v",
     "def": "Eksprime ak pawòl; kominike yon enfòmasyon oswa panse.",
     "egz": "Li di la verite toujou."
+  },
+  {
+    "mot": "difransye",
+    "kat": "n",
+    "def": "siy ki separe pouvwa pou 2 wou",
+    "egz": "Difransye nan dèye.",
+    "tem": "mekanik"
   },
   {
     "mot": "dijesyon",
@@ -2849,6 +3363,20 @@
     "egz": "Diplom segondè mwen.",
     "sin": "sètifika",
     "tem": "edikasyon"
+  },
+  {
+    "mot": "direksyon",
+    "kat": "n",
+    "def": "sistèm pou kondui",
+    "egz": "Direksyon a difisil.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "direksyon asiste",
+    "kat": "n",
+    "def": "direksyon ak pòmp",
+    "egz": "Direksyon asiste pi fasil.",
+    "tem": "mekanik"
   },
   {
     "mot": "direktris",
@@ -2896,6 +3424,14 @@
     "tem": "nimewo"
   },
   {
+    "mot": "disjontè",
+    "kat": "n",
+    "def": "breakè",
+    "egz": "Disjontè nan panèl.",
+    "sin": "breakè",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "disk",
     "kat": "n",
     "def": "album",
@@ -2904,11 +3440,26 @@
     "tem": "mizik"
   },
   {
+    "mot": "disk fren",
+    "kat": "n",
+    "def": "siy won ki tounen ak wou",
+    "egz": "Disk fren wouye.",
+    "ant": "tambour",
+    "tem": "mekanik"
+  },
+  {
     "mot": "dispansè",
     "kat": "n",
     "def": "santro sante",
     "egz": "Dispansè a gratis.",
     "tem": "lasante"
+  },
+  {
+    "mot": "distribitè",
+    "kat": "n",
+    "def": "siy ki voye kouran nan bouji",
+    "egz": "Distribitè klasik.",
+    "tem": "mekanik"
   },
   {
     "mot": "disèt",
@@ -3013,6 +3564,56 @@
     "def": "dlo ki benit",
     "egz": "Dlo benit pou pwoteksyon.",
     "tem": "relijyon-vodou"
+  },
+  {
+    "mot": "dlo cho",
+    "kat": "n",
+    "def": "dlo ki cho",
+    "egz": "Dlo cho pou benyen.",
+    "ant": "dlo frèt",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "dlo egzou",
+    "kat": "n",
+    "def": "dlo apre itilizasyon",
+    "egz": "Dlo egzou nan kanivo.",
+    "sin": "dlo sal",
+    "ant": "dlo pwòp",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "dlo frèt",
+    "kat": "n",
+    "def": "dlo ki pa cho",
+    "egz": "Dlo frèt pou bwè.",
+    "ant": "dlo cho",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "dlo lapli",
+    "kat": "n",
+    "def": "dlo soti nan syèl",
+    "egz": "Dlo lapli pou siteren.",
+    "ant": "dlo potab",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "dlo potab",
+    "kat": "n",
+    "def": "dlo pwòp pou bwè",
+    "egz": "Dlo potab koute.",
+    "tem": "plonbri",
+    "var": "plonbri"
+  },
+  {
+    "mot": "dlo sal",
+    "kat": "n",
+    "def": "dlo egzou",
+    "egz": "Dlo sal pa bon.",
+    "sin": "dlo egzou",
+    "ant": "dlo pwòp",
+    "tem": "plonbri"
   },
   {
     "mot": "do",
@@ -3165,6 +3766,14 @@
     "tem": "spò"
   },
   {
+    "mot": "drilll",
+    "kat": "n",
+    "def": "perceuse",
+    "egz": "Drilll san fil.",
+    "sin": "perceuse",
+    "tem": "chapantri"
+  },
+  {
     "mot": "dwèt",
     "kat": "n",
     "def": "Chak nan senk pati long ki soti nan men oswa pye moun.",
@@ -3200,6 +3809,14 @@
     "def": "maladi sik nan san",
     "egz": "Dyabèt grav.",
     "tem": "lasante"
+  },
+  {
+    "mot": "dyagnose",
+    "kat": "v",
+    "def": "jwenn pwoblèm nan",
+    "egz": "Dyagnose pwoblèm motè.",
+    "sin": "tcheke",
+    "tem": "mekanik"
   },
   {
     "mot": "dyalèt",
@@ -3345,6 +3962,28 @@
     "tem": "pwofesyon"
   },
   {
+    "mot": "ebenis",
+    "kat": "n",
+    "def": "chapantye fen",
+    "egz": "Ebenis fè kabann nèf.",
+    "sin": "chapantye",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "echaffoudaj",
+    "kat": "n",
+    "def": "estriktire pou monte travay wo",
+    "egz": "Echaffoudaj pou pentir.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "echapman",
+    "kat": "n",
+    "def": "sistèm ki dechaje gaz",
+    "egz": "Echapman a fè bri.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "echèk",
     "kat": "n",
     "def": "pèdi",
@@ -3352,6 +3991,22 @@
     "sin": "defèt",
     "ant": "siksè",
     "tem": "spò"
+  },
+  {
+    "mot": "ECU",
+    "kat": "n",
+    "def": "òdinatè motè",
+    "egz": "ECU kontwole enjeksyon.",
+    "sin": "sèvo",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "EDH",
+    "kat": "n",
+    "def": "konpayi elektrisite Ayiti",
+    "egz": "EDH koupe kouran.",
+    "sin": "Électricité d'Haïti",
+    "tem": "elektrisite"
   },
   {
     "mot": "edikasyon",
@@ -3383,12 +4038,26 @@
     "tem": "edikasyon"
   },
   {
+    "mot": "eg-eg",
+    "kat": "n",
+    "def": "twou nan tè pou dlo",
+    "egz": "Eg-eg pa bon ankò.",
+    "tem": "plonbri"
+  },
+  {
     "mot": "egal",
     "kat": "adj",
     "def": "menm kantite",
     "egz": "Match la fini egal.",
     "sin": "match nul",
     "tem": "spò"
+  },
+  {
+    "mot": "egou",
+    "kat": "n",
+    "def": "sistèm pou dlo egzou",
+    "egz": "Egou kominal.",
+    "tem": "plonbri"
   },
   {
     "mot": "egoyism",
@@ -3549,6 +4218,22 @@
     "tem": "pwofesyon"
   },
   {
+    "mot": "ekrou",
+    "kat": "n",
+    "def": "siy ki vise sou boulon",
+    "egz": "Ekrou pèdi.",
+    "sin": "fwète",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "ekselatè",
+    "kat": "n",
+    "def": "machin pou monte chaj",
+    "egz": "Ekselatè pou bilding wo.",
+    "sin": "wins",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "eksplike",
     "kat": "v",
     "def": "fè konprann",
@@ -3570,6 +4255,14 @@
     "egz": "Ekspòtasyon mango.",
     "ant": "enpòtasyon",
     "tem": "komès-lajan"
+  },
+  {
+    "mot": "ekuyè",
+    "kat": "n",
+    "def": "zouti pou kontwòl 90 degre",
+    "egz": "Ekuyè pou pwojetin pòt.",
+    "sin": "square",
+    "tem": "chapantri"
   },
   {
     "mot": "ekzamenè",
@@ -3602,11 +4295,26 @@
     "tem": "kilti"
   },
   {
+    "mot": "elektrisite",
+    "kat": "n",
+    "def": "fòs ki pwodui limyè ak pouvwa",
+    "egz": "Elektrisite koupe.",
+    "sin": "kouran",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "elektrisyen",
     "kat": "n",
     "def": "moun ki travay ak elektrisite",
     "egz": "Elektrisyen an mete kouran.",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "elektwokitè",
+    "kat": "v",
+    "def": "lè kouran touye moun",
+    "egz": "Pa elektwokitè!",
+    "tem": "elektrisite"
   },
   {
     "mot": "elit",
@@ -3630,6 +4338,13 @@
     "egz": "Elèv yo ap ekri.",
     "ant": "pwofesè",
     "tem": "edikasyon"
+  },
+  {
+    "mot": "emisyon",
+    "kat": "n",
+    "def": "gaz ki soti",
+    "egz": "Emisyon polye lè.",
+    "tem": "mekanik"
   },
   {
     "mot": "epinad",
@@ -3702,11 +4417,26 @@
     "tem": "kay"
   },
   {
+    "mot": "eskanè",
+    "kat": "n",
+    "def": "siy pou li OBD",
+    "egz": "Eskanè OBD.",
+    "sin": "scanner",
+    "tem": "mekanik"
+  },
+  {
     "mot": "eskate",
     "kat": "v",
     "def": "jwe ak planche ak wou",
     "egz": "Eskate sou twotwa.",
     "tem": "spò"
+  },
+  {
+    "mot": "eskavatè",
+    "kat": "n",
+    "def": "gwo machin pou fouye",
+    "egz": "Eskavatè pou fondasyon.",
+    "tem": "konstriksyon"
   },
   {
     "mot": "eskilti",
@@ -3799,6 +4529,13 @@
     "tem": "transpò"
   },
   {
+    "mot": "estasyon sèvis",
+    "kat": "n",
+    "def": "kote gazolin ak swen ti pwen",
+    "egz": "Estasyon sèvis nan kafou.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "estasyone",
     "kat": "v",
     "def": "mete machin la",
@@ -3806,6 +4543,14 @@
     "sin": "park",
     "ant": "kondui",
     "tem": "transpò"
+  },
+  {
+    "mot": "estatè",
+    "kat": "n",
+    "def": "demarè",
+    "egz": "Estatè vire motè a.",
+    "sin": "demarè",
+    "tem": "mekanik"
   },
   {
     "mot": "estetisyen",
@@ -3838,6 +4583,14 @@
     "tem": "kilti"
   },
   {
+    "mot": "estimasyon",
+    "kat": "n",
+    "def": "kalkilè depans",
+    "egz": "Estimasyon konstriksyon.",
+    "sin": "devi",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "estomak",
     "kat": "n",
     "def": "ògàn ki dijere manje",
@@ -3860,12 +4613,27 @@
     "tem": "lasante"
   },
   {
+    "mot": "eswiglas",
+    "kat": "n",
+    "def": "siy ki swisi vit",
+    "egz": "Eswiglas pou lapli.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "etaj",
     "kat": "n",
     "def": "nivo siperyè yon kay ki bati sou yon lòt",
     "egz": "Kay la gen de etaj.",
     "ant": "fondasyon",
     "tem": "kay"
+  },
+  {
+    "mot": "etaj tè",
+    "kat": "n",
+    "def": "RDC",
+    "egz": "Etaj tè pou magazen.",
+    "sin": "RDC",
+    "tem": "konstriksyon"
   },
   {
     "mot": "etajè",
@@ -3876,11 +4644,41 @@
     "tem": "kay"
   },
   {
+    "mot": "etajè",
+    "kat": "n",
+    "def": "mèb ak nivo",
+    "egz": "Etajè pou liv.",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "etalon",
+    "kat": "n",
+    "def": "ètalon luil",
+    "egz": "Etalon montre nivo.",
+    "sin": "ètalon luil",
+    "tem": "mekanik"
+  },
+  {
     "mot": "etan",
     "kat": "n",
     "def": "yon ti lak",
     "egz": "Etan nan jaden.",
     "tem": "peyizaj"
+  },
+  {
+    "mot": "etanch",
+    "kat": "adj",
+    "def": "ki pa kite dlo pase",
+    "egz": "Etanch pou twati.",
+    "ant": "kite dlo pase",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "etensèl",
+    "kat": "n",
+    "def": "ti limyè kòschikut",
+    "egz": "Etensèl danjere.",
+    "tem": "elektrisite"
   },
   {
     "mot": "eternite",
@@ -3944,6 +4742,13 @@
     "tem": "relijyon-vodou"
   },
   {
+    "mot": "evaporatè",
+    "kat": "n",
+    "def": "siy AC nan kabin",
+    "egz": "Evaporatè dèyè tablo bòd.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "evro",
     "kat": "n",
     "def": "monnen Ewòp",
@@ -3967,11 +4772,26 @@
     "tem": "kilti"
   },
   {
+    "mot": "ezzèvwa dlo",
+    "kat": "n",
+    "def": "tank pou dlo refwadisman",
+    "egz": "Ezzèvwa dlo bezwen ranplise.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "èleve bèt",
     "kat": "n",
     "def": "moun ki gade bèt",
     "egz": "Èleve bèt yo nan mòn.",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "ètalon luil",
+    "kat": "n",
+    "def": "siy pou mezire luil",
+    "egz": "Ètalon luil sal.",
+    "sin": "etalon",
+    "tem": "mekanik"
   },
   {
     "mot": "endepandans",
@@ -4029,6 +4849,22 @@
     "tem": "pwofesyon"
   },
   {
+    "mot": "enjeksyon",
+    "kat": "n",
+    "def": "sistèm modèn pou alimante motè",
+    "egz": "Enjeksyon elektronik.",
+    "ant": "kabirasyon",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "enjektè",
+    "kat": "n",
+    "def": "siy ki voye gaz nan motè",
+    "egz": "Enjektè modèn pi presi.",
+    "ant": "kabiratè",
+    "tem": "mekanik"
+  },
+  {
     "mot": "enjenyè",
     "kat": "n",
     "def": "moun ki etidye syans aplike",
@@ -4051,6 +4887,13 @@
     "egz": "Enpòtasyon diri etranje.",
     "ant": "ekspòtasyon",
     "tem": "komès-lajan"
+  },
+  {
+    "mot": "enspeksyon",
+    "kat": "n",
+    "def": "verifikasyon konstriksyon",
+    "egz": "Enspeksyon avan kay louvri.",
+    "tem": "konstriksyon"
   },
   {
     "mot": "enstriman",
@@ -4103,6 +4946,14 @@
     "tem": "pwofesyon"
   },
   {
+    "mot": "entèriptè",
+    "kat": "n",
+    "def": "siy pou louvri/fèmen kouran",
+    "egz": "Entèriptè a pa mache.",
+    "sin": "switch",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "entèrè",
     "kat": "n",
     "def": "lajan anplis sou prè",
@@ -4147,6 +4998,21 @@
     "egz": "Envètè a kenbe kouran an lannuit.",
     "ant": "delko",
     "tem": "kay"
+  },
+  {
+    "mot": "envètè",
+    "kat": "n",
+    "def": "siy ki konvèti DC an AC",
+    "egz": "Envètè ak batri.",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "fa",
+    "kat": "n",
+    "def": "limyè avan",
+    "egz": "Fa wo.",
+    "sin": "limyè avan",
+    "tem": "mekanik"
   },
   {
     "mot": "fache",
@@ -4257,6 +5123,14 @@
     "tem": "salitasyon"
   },
   {
+    "mot": "fent",
+    "kat": "n",
+    "def": "kase",
+    "egz": "Fent nan plafon.",
+    "sin": "kase",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "fenè",
     "kat": "n",
     "def": "antèman",
@@ -4271,6 +5145,13 @@
     "egz": "Ouvri fenèt la pou lè frè antre.",
     "ant": "pòt",
     "tem": "kay"
+  },
+  {
+    "mot": "fenèt machin",
+    "kat": "n",
+    "def": "vit nan pòtyè",
+    "egz": "Fenèt machin elektrik.",
+    "tem": "mekanik"
   },
   {
     "mot": "ferry",
@@ -4302,6 +5183,15 @@
     "tem": "fanmi"
   },
   {
+    "mot": "fich",
+    "kat": "n",
+    "def": "siy ki antre nan priz",
+    "egz": "Fich machin lan.",
+    "sin": "plug",
+    "ant": "priz",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "figi",
     "kat": "n",
     "def": "Pati devan tèt moun kote je, nen, bouch, ak zòrèy ye.",
@@ -4314,6 +5204,52 @@
     "egz": "Figi l klere.",
     "sin": "vizaj",
     "tem": "kò"
+  },
+  {
+    "mot": "fil",
+    "kat": "n",
+    "def": "fil elektrik",
+    "egz": "Fil ble ak wouj.",
+    "sin": "fil elektrik",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "fil bawo",
+    "kat": "n",
+    "def": "fil pou bawo",
+    "egz": "Fil bawo pou kolòn.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "fil bouji",
+    "kat": "n",
+    "def": "kòd ki konekte bobin ak bouji",
+    "egz": "Fil bouji yo nèf.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "fil chaje",
+    "kat": "n",
+    "def": "liyè",
+    "egz": "Fil chaje sou breakè.",
+    "sin": "liyè",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "filaj",
+    "kat": "n",
+    "def": "tout fil nan kay",
+    "egz": "Filaj nèf nan kay sa.",
+    "sin": "wire",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "file",
+    "kat": "v",
+    "def": "siy ki koupe pwòp",
+    "egz": "File kouto a.",
+    "ant": "kase",
+    "tem": "mekanik"
   },
   {
     "mot": "filo",
@@ -4329,6 +5265,35 @@
     "def": "etid sou lavi ak panse",
     "egz": "Filozofi nan terminal.",
     "tem": "edikasyon"
+  },
+  {
+    "mot": "filtè gaz",
+    "kat": "n",
+    "def": "siy ki pwòp gazolin",
+    "egz": "Filtè gaz la sal.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "filtè luil",
+    "kat": "n",
+    "def": "siy ki pwòp luil motè",
+    "egz": "Filtè luil chak 3 mwa.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "filtè lè",
+    "kat": "n",
+    "def": "siy ki pwòp lè ki antre",
+    "egz": "Filtè lè bezwen chanjman.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "filyè",
+    "kat": "n",
+    "def": "espir sou vis",
+    "egz": "Filyè kase.",
+    "sin": "fwa",
+    "tem": "mekanik"
   },
   {
     "mot": "filyèl",
@@ -4361,6 +5326,22 @@
     "tem": "spò"
   },
   {
+    "mot": "fitting",
+    "kat": "n",
+    "def": "rasò",
+    "egz": "Fitting PVC.",
+    "sin": "rasò",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "fizib",
+    "kat": "n",
+    "def": "siy ki brile pou pwoteje",
+    "egz": "Fizib la brile.",
+    "sin": "fyouz",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "fizik",
     "kat": "n",
     "def": "syans fòs ak enèji",
@@ -4383,6 +5364,14 @@
     "tem": "plant"
   },
   {
+    "mot": "flat",
+    "kat": "n",
+    "def": "kawotchou plat",
+    "egz": "Mwen gen flat.",
+    "sin": "kawotchou plat",
+    "tem": "mekanik"
+  },
+  {
     "mot": "flit",
     "kat": "n",
     "def": "enstriman pou soufle",
@@ -4395,6 +5384,22 @@
     "def": "bay flè",
     "egz": "Pye flanboyan flori.",
     "tem": "plant"
+  },
+  {
+    "mot": "fluktiyasyon",
+    "kat": "n",
+    "def": "variyon",
+    "egz": "Fluktiyasyon danjere.",
+    "sin": "variyon",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "flush",
+    "kat": "n",
+    "def": "siy pou voye dlo nan twalèt",
+    "egz": "Flush kase.",
+    "sin": "chase d'eau",
+    "tem": "plonbri"
   },
   {
     "mot": "flè",
@@ -4457,6 +5462,13 @@
     "tem": "pwofesyon"
   },
   {
+    "mot": "fos septik",
+    "kat": "n",
+    "def": "twou anba pou bezwen",
+    "egz": "Fos septik plen.",
+    "tem": "plonbri"
+  },
+  {
     "mot": "fote",
     "kat": "n",
     "def": "peche",
@@ -4495,6 +5507,14 @@
     "sin": "malad nan tèt",
     "ant": "san pasyans",
     "tem": "lasante"
+  },
+  {
+    "mot": "fou mikwo",
+    "kat": "n",
+    "def": "mikwowonn",
+    "egz": "Fou mikwo kuit vit.",
+    "sin": "mikwo",
+    "tem": "elektrisite"
   },
   {
     "mot": "fouchèt",
@@ -4558,6 +5578,14 @@
     "tem": "plant"
   },
   {
+    "mot": "frame",
+    "kat": "n",
+    "def": "kad pòt",
+    "egz": "Frame pou pòt prensipal.",
+    "sin": "kad pòt",
+    "tem": "chapantri"
+  },
+  {
     "mot": "franse",
     "kat": "n",
     "def": "lang ofisyèl Ayiti",
@@ -4598,12 +5626,53 @@
     "tem": "transpò"
   },
   {
+    "mot": "freen",
+    "kat": "n",
+    "def": "fren",
+    "egz": "Freen disk.",
+    "sin": "fren",
+    "tem": "mekanik",
+    "var": "veyikil"
+  },
+  {
     "mot": "freene",
     "kat": "v",
     "def": "stop machin",
     "egz": "Freene anvan kafou a.",
     "ant": "akselere",
     "tem": "transpò"
+  },
+  {
+    "mot": "frekans",
+    "kat": "n",
+    "def": "kantite vibrasyon",
+    "egz": "Frekans 60 Hz Ayiti.",
+    "sin": "hertz",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "fren",
+    "kat": "n",
+    "def": "sistèm ki stop machin",
+    "egz": "Fren mwen pa mache.",
+    "sin": "freen",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "fren a men",
+    "kat": "n",
+    "def": "fren manyèl",
+    "egz": "Fren a men pou park.",
+    "sin": "fren stat",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "Freon",
+    "kat": "n",
+    "def": "gaz pou AC",
+    "egz": "Freon R134a.",
+    "sin": "refrijeran",
+    "tem": "mekanik"
   },
   {
     "mot": "fri",
@@ -4620,6 +5689,15 @@
     "egz": "Mete manje a nan frijidè a.",
     "sin": "refrijèratè",
     "tem": "kay"
+  },
+  {
+    "mot": "frijidè",
+    "kat": "n",
+    "def": "machin pou kenbe manje frè",
+    "egz": "Frijidè a kase.",
+    "sin": "frijè",
+    "tem": "elektrisite",
+    "var": "kay"
   },
   {
     "mot": "frè",
@@ -4680,6 +5758,14 @@
     "tem": "kò"
   },
   {
+    "mot": "fwa",
+    "kat": "n",
+    "def": "filyè",
+    "egz": "Fwa boulon an mal.",
+    "sin": "filyè",
+    "tem": "mekanik"
+  },
+  {
     "mot": "fwi",
     "kat": "n",
     "def": "Pati yon plant ki gen grenn ki ka manje; mango, bannann, sitron.",
@@ -4701,6 +5787,30 @@
     "tem": "fwi-legim"
   },
   {
+    "mot": "fwit",
+    "kat": "n",
+    "def": "lè likid soti",
+    "egz": "Fwit luil sou tè.",
+    "sin": "kraze",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "fwit luil",
+    "kat": "n",
+    "def": "luil ki soti",
+    "egz": "Fwit luil pa bon.",
+    "sin": "fwit",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "fwète",
+    "kat": "n",
+    "def": "ekrou",
+    "egz": "Fwète sere fò.",
+    "sin": "ekrou",
+    "tem": "mekanik"
+  },
+  {
     "mot": "fwèz",
     "kat": "n",
     "def": "ti fwi wouj dous",
@@ -4715,6 +5825,14 @@
     "tem": "fanmi"
   },
   {
+    "mot": "fyouz",
+    "kat": "n",
+    "def": "fizib",
+    "egz": "Fyouz nan machin lan.",
+    "sin": "fizib",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "fyèv",
     "kat": "n",
     "def": "lè kò cho twòp",
@@ -4727,6 +5845,22 @@
     "kat": "v",
     "def": "Reyalize yon aksyon; kreye; pwodui; ekzekite yon bagay.",
     "egz": "Li fè travay li chak jou."
+  },
+  {
+    "mot": "fè ame",
+    "kat": "n",
+    "def": "fè konstwiksyon",
+    "egz": "Fè ame nan kolòn.",
+    "sin": "fè konstwiksyon",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "fè konstwiksyon",
+    "kat": "n",
+    "def": "fè pou ranfòse beton",
+    "egz": "Fè konstwiksyon pou kolòn.",
+    "sin": "fè ame",
+    "tem": "konstriksyon"
   },
   {
     "mot": "fè mal",
@@ -4879,6 +6013,14 @@
     "tem": "kay"
   },
   {
+    "mot": "garaj",
+    "kat": "n",
+    "def": "kote yo repare machin",
+    "egz": "Garaj sa fyab.",
+    "sin": "atelye mekanik",
+    "tem": "mekanik"
+  },
+  {
     "mot": "gardenya",
     "kat": "n",
     "def": "yon flè blan parfime",
@@ -4900,6 +6042,14 @@
     "egz": "Garson an pote manje.",
     "sin": "sèvis",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "gaskit",
+    "kat": "n",
+    "def": "jwen ki kenbe etanch",
+    "egz": "Gaskit la nèf.",
+    "sin": "jwen",
+    "tem": "mekanik"
   },
   {
     "mot": "gason",
@@ -5140,6 +6290,20 @@
     "tem": "fanmi"
   },
   {
+    "mot": "granyit",
+    "kat": "n",
+    "def": "wòch fen pou kontwa",
+    "egz": "Granyit pou kuizin nèf.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "gravye",
+    "kat": "n",
+    "def": "ti wòch",
+    "egz": "Gravye pou siman.",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "greje",
     "kat": "v",
     "def": "kwit manje sou recho ak ti dife direkteman",
@@ -5200,6 +6364,13 @@
     "egz": "Group mizik Magnum Band.",
     "sin": "ekip mizik",
     "tem": "mizik"
+  },
+  {
+    "mot": "grès",
+    "kat": "n",
+    "def": "luil epès",
+    "egz": "Grès pou pyès.",
+    "tem": "mekanik"
   },
   {
     "mot": "grèsil",
@@ -5300,6 +6471,14 @@
     "tem": "animal"
   },
   {
+    "mot": "hertz",
+    "kat": "n",
+    "def": "inite frekans",
+    "egz": "60 hertz nòmal.",
+    "sin": "Hz",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "hip hop",
     "kat": "n",
     "def": "stil rap Ameriken",
@@ -5313,6 +6492,14 @@
     "def": "gwo flè boukou koulè",
     "egz": "Hortansya nan jaden m.",
     "tem": "plant"
+  },
+  {
+    "mot": "Hz",
+    "kat": "n",
+    "def": "hertz",
+    "egz": "50 Hz Ewòp.",
+    "sin": "hertz",
+    "tem": "elektrisite"
   },
   {
     "mot": "ibiskis",
@@ -5421,6 +6608,14 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "inonè",
+    "kat": "v",
+    "def": "lè dlo monte sou tè",
+    "egz": "Inonè nan vil la.",
+    "sin": "delij",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "ipopotam",
     "kat": "n",
     "def": "bèt nan dlo Lafrik",
@@ -5473,6 +6668,13 @@
     "var": "matyè"
   },
   {
+    "mot": "izolasyon",
+    "kat": "n",
+    "def": "siy ki kenbe chalè",
+    "egz": "Izolasyon pou kay.",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "jaden",
     "kat": "n",
     "def": "Tè kote yo plante legim, flè, oswa plant pou rekòlte.",
@@ -5493,6 +6695,14 @@
     "egz": "Jadinye a ranje jaden.",
     "sin": "kiltivatè",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "janit",
+    "kat": "n",
+    "def": "bag etanch",
+    "egz": "Janit nan robinè.",
+    "sin": "joint",
+    "tem": "plonbri"
   },
   {
     "mot": "janjak",
@@ -5586,6 +6796,14 @@
     "egz": "Twa jenerasyon ansanm nan tab la.",
     "sin": "epòk",
     "tem": "fanmi"
+  },
+  {
+    "mot": "jeneratè",
+    "kat": "n",
+    "def": "delko",
+    "egz": "Jeneratè 5000 wat.",
+    "sin": "delko",
+    "tem": "elektrisite"
   },
   {
     "mot": "jenjanm",
@@ -5723,6 +6941,14 @@
     "tem": "jou ak mwa"
   },
   {
+    "mot": "joint",
+    "kat": "n",
+    "def": "janit",
+    "egz": "Joint pou robinè.",
+    "sin": "janit",
+    "tem": "plonbri"
+  },
+  {
     "mot": "jou",
     "kat": "n",
     "def": "Peryòd tan ki dire 24 èdtan; pati nan semèn, mwa, ak ane.",
@@ -5808,6 +7034,21 @@
     "tem": "mizik"
   },
   {
+    "mot": "jwen",
+    "kat": "n",
+    "def": "gaskit",
+    "egz": "Jwen pou estanche.",
+    "sin": "gaskit",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "jwen kilas",
+    "kat": "n",
+    "def": "siy ant kilas ak blòk",
+    "egz": "Jwen kilas a brile.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "jwenn",
     "kat": "v",
     "def": "twouve lajan",
@@ -5871,6 +7112,13 @@
     "tem": "nimewo"
   },
   {
+    "mot": "kab batri",
+    "kat": "n",
+    "def": "kòd ki konekte batri",
+    "egz": "Kab batri kowode.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "kabann",
     "kat": "n",
     "def": "mèb pou dòmi ki gen matelat sou li",
@@ -5878,6 +7126,22 @@
     "sin": "kabann",
     "ant": "tab",
     "tem": "kay"
+  },
+  {
+    "mot": "kabinè",
+    "kat": "n",
+    "def": "twalèt",
+    "egz": "Kabinè pou ti pwen.",
+    "sin": "twalèt",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "kabiratè",
+    "kat": "n",
+    "def": "aparèy ki melanje gaz ak lè",
+    "egz": "Kabiratè a bezwen netwaye.",
+    "ant": "enjektè",
+    "tem": "mekanik"
   },
   {
     "mot": "kabraka",
@@ -5923,6 +7187,30 @@
     "def": "jwèt timoun (kache pou wè)",
     "egz": "Kachkach nan lakou.",
     "tem": "spò"
+  },
+  {
+    "mot": "kad pòt",
+    "kat": "n",
+    "def": "kado bwa otou pòt",
+    "egz": "Kad pòt bezwen pent.",
+    "sin": "frame",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "kadan",
+    "kat": "n",
+    "def": "siy ki konekte motè ak dèyè",
+    "egz": "Kadan transmisyon.",
+    "sin": "kadan transmisyon",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "kadan transmisyon",
+    "kat": "n",
+    "def": "kadan",
+    "egz": "Kadan transmisyon kase.",
+    "sin": "kadan",
+    "tem": "mekanik"
   },
   {
     "mot": "kaderik",
@@ -6011,11 +7299,34 @@
     "tem": "animal"
   },
   {
+    "mot": "kale",
+    "kat": "v",
+    "def": "toufe",
+    "egz": "Motè kale nan limyè.",
+    "sin": "toufe",
+    "tem": "mekanik"
+  },
+  {
     "mot": "kale-bare",
     "kat": "adj",
     "def": "blan ak nwa melanje",
     "egz": "Inifòm kale-bare.",
     "tem": "koulè"
+  },
+  {
+    "mot": "kalibre",
+    "kat": "v",
+    "def": "ajiste presizyon",
+    "egz": "Kalibre alimaj.",
+    "sin": "mete tan",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "kalipè",
+    "kat": "n",
+    "def": "siy ki kenbe plak fren",
+    "egz": "Kalipè a kole.",
+    "tem": "mekanik"
   },
   {
     "mot": "kalkile",
@@ -6024,6 +7335,14 @@
     "egz": "Kalkile total la.",
     "sin": "konte",
     "tem": "edikasyon"
+  },
+  {
+    "mot": "kalsiyòm",
+    "kat": "n",
+    "def": "siman pou plastre",
+    "egz": "Kalsiyòm pou mi.",
+    "sin": "plastre",
+    "tem": "konstriksyon"
   },
   {
     "mot": "kalson",
@@ -6047,6 +7366,13 @@
     "egz": "Kamyon transpò mèb.",
     "sin": "trak",
     "tem": "transpò"
+  },
+  {
+    "mot": "kamyon siman",
+    "kat": "n",
+    "def": "kamyon ki pote siman",
+    "egz": "Kamyon siman delivere.",
+    "tem": "konstriksyon"
   },
   {
     "mot": "kamyonèt",
@@ -6094,6 +7420,14 @@
     "tem": "animal"
   },
   {
+    "mot": "kanivo",
+    "kat": "n",
+    "def": "siy ki kontwole valv yo",
+    "egz": "Kanivo a mete tan motè.",
+    "sin": "kanvo",
+    "tem": "mekanik"
+  },
+  {
     "mot": "kanmarad",
     "kat": "n",
     "def": "yon zanmi pwòch",
@@ -6122,6 +7456,14 @@
     "def": "zwazo ki naje",
     "egz": "Kanna yo nan dlo.",
     "tem": "animal"
+  },
+  {
+    "mot": "kannèl",
+    "kat": "n",
+    "def": "wout pou dlo",
+    "egz": "Kannèl bò kay la.",
+    "sin": "kanivo",
+    "tem": "plonbri"
   },
   {
     "mot": "kannòt",
@@ -6172,6 +7514,13 @@
     "tem": "mizik"
   },
   {
+    "mot": "kantonye",
+    "kat": "n",
+    "def": "pyès bwa otou pòt",
+    "egz": "Kantonye pòt la.",
+    "tem": "chapantri"
+  },
+  {
     "mot": "kanè",
     "kat": "n",
     "def": "bilten",
@@ -6193,11 +7542,35 @@
     "egz": "Ou kapab fè sa si ou vle."
   },
   {
+    "mot": "kapasitè",
+    "kat": "n",
+    "def": "kondansatè",
+    "egz": "Kapasitè 35 mikrofarad.",
+    "sin": "kondansatè",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "kapitenn",
     "kat": "n",
     "def": "chèf yon bato",
     "egz": "Kapitenn la deside vwayaj la.",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "kapo",
+    "kat": "n",
+    "def": "kouvèti motè",
+    "egz": "Kapo a louvri.",
+    "sin": "kapot",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "kapot",
+    "kat": "n",
+    "def": "kapo",
+    "egz": "Kapot mouye.",
+    "sin": "kapo",
+    "tem": "mekanik"
   },
   {
     "mot": "Kapwa La Mò",
@@ -6206,6 +7579,14 @@
     "egz": "Kapwa La Mò nan nò.",
     "sin": "Kapwa",
     "tem": "kilti"
+  },
+  {
+    "mot": "kapyè",
+    "kat": "n",
+    "def": "sansè",
+    "egz": "Kapyè kabiratè.",
+    "sin": "sansè",
+    "tem": "mekanik"
   },
   {
     "mot": "karant",
@@ -6220,6 +7601,14 @@
     "def": "ladrès marshal Japon",
     "egz": "Karate gen sentire.",
     "tem": "spò"
+  },
+  {
+    "mot": "karosri",
+    "kat": "n",
+    "def": "kò ekstèn machin",
+    "egz": "Karosri a bezwen pent.",
+    "sin": "kò",
+    "tem": "mekanik"
   },
   {
     "mot": "kasav",
@@ -6290,6 +7679,13 @@
     "def": "kat pou peye san kòb",
     "egz": "Kat kredi pou enèjans.",
     "tem": "komès-lajan"
+  },
+  {
+    "mot": "katalizè",
+    "kat": "n",
+    "def": "siy ki pwòp gaz echapman",
+    "egz": "Katalizè redui emisyon.",
+    "tem": "mekanik"
   },
   {
     "mot": "katastwòf",
@@ -6372,6 +7768,14 @@
     "egz": "Kawotchou flat.",
     "sin": "wou",
     "tem": "transpò"
+  },
+  {
+    "mot": "kawotchou plat",
+    "kat": "n",
+    "def": "flat",
+    "egz": "Kawotchou plat nan wout.",
+    "sin": "flat",
+    "tem": "mekanik"
   },
   {
     "mot": "kawèm",
@@ -6463,6 +7867,14 @@
     "tem": "fwi-legim"
   },
   {
+    "mot": "kayè",
+    "kat": "n",
+    "def": "bwa solid Karayib",
+    "egz": "Kayè pou kabann.",
+    "tem": "chapantri",
+    "var": "bwa"
+  },
+  {
     "mot": "kenbe",
     "kat": "v",
     "def": "Pran yon bagay pou li pa tonbe; konfine; pa lage.",
@@ -6511,6 +7923,21 @@
     "egz": "Kijan ou rele?"
   },
   {
+    "mot": "kilas",
+    "kat": "n",
+    "def": "tèt motè",
+    "egz": "Kilas la cho.",
+    "sin": "tèt motè",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "kilowat",
+    "kat": "n",
+    "def": "1000 watch",
+    "egz": "Kilowat-èdtan.",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "kilti",
     "kat": "n",
     "def": "fason yon pèp viv",
@@ -6542,6 +7969,22 @@
     "tem": "transpò"
   },
   {
+    "mot": "kivèt",
+    "kat": "n",
+    "def": "veso anba motè pou luil",
+    "egz": "Kivèt luil bezwen drèn.",
+    "sin": "kivèt luil",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "kivèt luil",
+    "kat": "n",
+    "def": "kivèt",
+    "egz": "Kivèt luil la fwit.",
+    "sin": "kivèt",
+    "tem": "mekanik"
+  },
+  {
     "mot": "kiyè",
     "kat": "n",
     "def": "zouti manch long pou pran manje likid",
@@ -6564,6 +8007,13 @@
     "egz": "Kizinye fanmi rich.",
     "sin": "kèk",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "klakson",
+    "kat": "n",
+    "def": "siy ki fè bri",
+    "egz": "Klakson la fò.",
+    "tem": "mekanik"
   },
   {
     "mot": "klas",
@@ -6619,6 +8069,14 @@
     "tem": "mizik"
   },
   {
+    "mot": "klignotè",
+    "kat": "n",
+    "def": "limyè ki klige",
+    "egz": "Klignotè a pa mache.",
+    "sin": "siyalizè",
+    "tem": "mekanik"
+  },
+  {
     "mot": "klimaa",
     "kat": "n",
     "def": "tan jeneral nan yon rejyon",
@@ -6626,11 +8084,52 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "klimatizasyon",
+    "kat": "n",
+    "def": "sistèm frè nan machin",
+    "egz": "Klimatizasyon a pa frè.",
+    "sin": "AC",
+    "ant": "chofaj",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "klimatizasyon santral",
+    "kat": "n",
+    "def": "AC pou tout kay",
+    "egz": "Klimatizasyon santral chè.",
+    "sin": "AC santral",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "klimatize",
+    "kat": "n",
+    "def": "AC nan kay",
+    "egz": "Klimatize cho kounye a.",
+    "sin": "AC",
+    "ant": "chofaj",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "klin",
+    "kat": "n",
+    "def": "siy pou seri tib",
+    "egz": "Klin nan klè.",
+    "tem": "plonbri"
+  },
+  {
     "mot": "klinik",
     "kat": "n",
     "def": "ti lopital",
     "egz": "Klinik nan kominote a.",
     "tem": "lasante"
+  },
+  {
+    "mot": "klitch",
+    "kat": "n",
+    "def": "anbrayaj",
+    "egz": "Klitch la patine.",
+    "sin": "anbrayaj",
+    "tem": "mekanik"
   },
   {
     "mot": "kliyan",
@@ -6662,6 +8161,29 @@
     "egz": "Syèl klè.",
     "ant": "sonm",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "klè ajistab",
+    "kat": "n",
+    "def": "klè polysòl",
+    "egz": "Klè ajistab nan twous.",
+    "sin": "klè polysòl",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "klè kontak",
+    "kat": "n",
+    "def": "siy pou kòmanse machin",
+    "egz": "Klè kontak la kase.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "klè polysòl",
+    "kat": "n",
+    "def": "klè ki ajiste",
+    "egz": "Klè polysòl pou tout boulon.",
+    "sin": "klè ajistab",
+    "tem": "mekanik"
   },
   {
     "mot": "klèen",
@@ -6739,6 +8261,20 @@
     "egz": "Timoun yo renmen bwè kola.",
     "sin": "sodayou",
     "tem": "manje"
+  },
+  {
+    "mot": "kola bwa",
+    "kat": "n",
+    "def": "glu pou bwa",
+    "egz": "Kola bwa pou jwen.",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "kolektè echapman",
+    "kat": "n",
+    "def": "kote tib yo rasanble",
+    "egz": "Kolektè echapman gen fwit.",
+    "tem": "mekanik"
   },
   {
     "mot": "kolera",
@@ -6832,6 +8368,20 @@
     "tem": "komès-lajan"
   },
   {
+    "mot": "komòd",
+    "kat": "n",
+    "def": "mèb ak anpil tiwa",
+    "egz": "Komòd nan chanm.",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "kondansatè",
+    "kat": "n",
+    "def": "siy AC ki refwadi",
+    "egz": "Kondansatè avan radyatè.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "kondoleyans",
     "kat": "n",
     "def": "salitasyon pou lanmò",
@@ -6860,6 +8410,13 @@
     "def": "yon kalite tanbou",
     "egz": "Konga nan saalsa.",
     "tem": "mizik"
+  },
+  {
+    "mot": "kongèlatè",
+    "kat": "n",
+    "def": "frijidè pou jele",
+    "egz": "Kongèlatè nan basement.",
+    "tem": "elektrisite"
   },
   {
     "mot": "konkonm",
@@ -6916,6 +8473,13 @@
     "tem": "edikasyon"
   },
   {
+    "mot": "konprese",
+    "kat": "n",
+    "def": "siy ki pouse Freon",
+    "egz": "Konprese AC kase.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "konpè",
     "kat": "n",
     "def": "papa filyèl yon moun",
@@ -6931,6 +8495,15 @@
     "egz": "Konsiltasyon a 2 è.",
     "sin": "egzamen medikal",
     "tem": "lasante"
+  },
+  {
+    "mot": "konstriksyon",
+    "kat": "n",
+    "def": "aksyon bati",
+    "egz": "Konstriksyon kay nèf.",
+    "sin": "bati",
+    "ant": "demolisyon",
+    "tem": "konstriksyon"
   },
   {
     "mot": "konsè",
@@ -6987,6 +8560,13 @@
     "tem": "komès-lajan"
   },
   {
+    "mot": "kontra konstriksyon",
+    "kat": "n",
+    "def": "akò pou bati",
+    "egz": "Kontra konstriksyon ofisyèl.",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "kontra lokasyon",
     "kat": "n",
     "def": "akò pou lwaye",
@@ -6999,6 +8579,59 @@
     "def": "akò ak patwon",
     "egz": "Kontra travay yon ane.",
     "tem": "komès-lajan"
+  },
+  {
+    "mot": "kontraktè",
+    "kat": "n",
+    "def": "moun ki responsab travay la",
+    "egz": "Kontraktè a anboche mason.",
+    "sin": "antreprenè",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "kontreplake",
+    "kat": "n",
+    "def": "bwa plat lamine",
+    "egz": "Kontreplake pou pòt.",
+    "sin": "plywood",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "kontwa",
+    "kat": "n",
+    "def": "tab tilejèt pou kuizin",
+    "egz": "Kontwa granyit.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "kontwolè chaj",
+    "kat": "n",
+    "def": "siy ki kontwole chaj batri",
+    "egz": "Kontwolè chaj solè.",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "kontwolè MPPT",
+    "kat": "n",
+    "def": "yon kalite kontwolè",
+    "egz": "Kontwolè MPPT pi efikas.",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "kontè",
+    "kat": "n",
+    "def": "siy ki mezire kouran",
+    "egz": "Kontè EDH la nèf.",
+    "sin": "kontè elektrisite",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "kontè elektrisite",
+    "kat": "n",
+    "def": "kontè",
+    "egz": "Kontè elektrisite digital.",
+    "sin": "kontè",
+    "tem": "elektrisite"
   },
   {
     "mot": "konvèsyon",
@@ -7120,11 +8753,46 @@
     "tem": "kay"
   },
   {
+    "mot": "kouran altènatif",
+    "kat": "n",
+    "def": "kouran ki chanje direksyon",
+    "egz": "Kouran altènatif AC.",
+    "sin": "AC",
+    "ant": "DC",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "kouran kontinyèl",
+    "kat": "n",
+    "def": "kouran nan sèl direksyon",
+    "egz": "Kouran kontinyèl DC.",
+    "sin": "DC",
+    "ant": "AC",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "kouran koupe",
+    "kat": "expr",
+    "def": "lè EDH pa bay",
+    "egz": "Kouran koupe ankò.",
+    "sin": "fènwa",
+    "ant": "kouran la",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "kouran lanmè",
     "kat": "n",
     "def": "dlo ki ap kouri nan lanmè",
     "egz": "Kouran lanmè ka pote ou.",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "kourchikut",
+    "kat": "n",
+    "def": "lè 2 fil rankontre",
+    "egz": "Kourchikut nan kay.",
+    "sin": "kòschikut",
+    "tem": "elektrisite"
   },
   {
     "mot": "kouri",
@@ -7204,6 +8872,13 @@
     "tem": "fanmi"
   },
   {
+    "mot": "kowfaj",
+    "kat": "n",
+    "def": "estriktire bwa pou siman",
+    "egz": "Kowfaj pou plak.",
+    "tem": "chapantri"
+  },
+  {
     "mot": "kowosòl",
     "kat": "n",
     "def": "pyebwa ki bay kowosòl",
@@ -7232,6 +8907,14 @@
     "def": "liv sakre Mizilman",
     "egz": "Kowran nan Lalanmen.",
     "tem": "relijyon-vodou"
+  },
+  {
+    "mot": "kowòl",
+    "kat": "n",
+    "def": "kontwòl tanperatu",
+    "egz": "Kowòl la pa mache.",
+    "sin": "thermostat",
+    "tem": "mekanik"
   },
   {
     "mot": "krab",
@@ -7280,6 +8963,13 @@
     "tem": "edikasyon"
   },
   {
+    "mot": "kraze tiyo",
+    "kat": "n",
+    "def": "tiyo ki kase",
+    "egz": "Kraze tiyo nan miray.",
+    "tem": "plonbri"
+  },
+  {
     "mot": "kredi",
     "kat": "n",
     "def": "achte san peye",
@@ -7311,6 +9001,13 @@
     "egz": "Kreyon mwen kout.",
     "ant": "stilo",
     "tem": "edikasyon"
+  },
+  {
+    "mot": "kreyon chapantye",
+    "kat": "n",
+    "def": "kreyon plat",
+    "egz": "Kreyon chapantye pou ranje.",
+    "tem": "chapantri"
   },
   {
     "mot": "kreyòl",
@@ -7404,11 +9101,34 @@
     "tem": "lasante"
   },
   {
+    "mot": "krèmèr",
+    "kat": "n",
+    "def": "siy ki konekte volan ak wou",
+    "egz": "Krèmèr direksyon.",
+    "sin": "krèmèr direksyon",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "krèmèr direksyon",
+    "kat": "n",
+    "def": "krèmèr",
+    "egz": "Krèmèr direksyon kase.",
+    "sin": "krèmèr",
+    "tem": "mekanik"
+  },
+  {
     "mot": "kuis",
     "kat": "n",
     "def": "pati anwo janm",
     "egz": "Kuis mwen fò.",
     "tem": "kò"
+  },
+  {
+    "mot": "kuiserè elektrik",
+    "kat": "n",
+    "def": "rechod elektrik",
+    "egz": "Kuiserè elektrik pou bouyi.",
+    "tem": "elektrisite"
   },
   {
     "mot": "kuit",
@@ -7426,6 +9146,13 @@
     "egz": "Soulye kuit dire lontan.",
     "ant": "twal",
     "tem": "rad"
+  },
+  {
+    "mot": "kuiv",
+    "kat": "n",
+    "def": "metal pou tib",
+    "egz": "Tib kuiv pi solid.",
+    "tem": "plonbri"
   },
   {
     "mot": "kung fu",
@@ -7567,6 +9294,37 @@
     "tem": "spò"
   },
   {
+    "mot": "kòd bati",
+    "kat": "n",
+    "def": "regulasyon konstriksyon",
+    "egz": "Kòd bati pou sekirite.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "kòd dyagnostik",
+    "kat": "n",
+    "def": "kòd erè",
+    "egz": "Kòd dyagnostik nan OBD.",
+    "sin": "kòd erè",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "kòd elektrik",
+    "kat": "n",
+    "def": "fil pou aparèy",
+    "egz": "Kòd elektrik laje.",
+    "sin": "rallong",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "kòd erè",
+    "kat": "n",
+    "def": "kòd ki di pwoblèm",
+    "egz": "Kòd erè P0420.",
+    "sin": "kòd dyagnostik",
+    "tem": "mekanik"
+  },
+  {
     "mot": "kòd kotonn",
     "kat": "n",
     "def": "jwèt ak kòd pou sote",
@@ -7579,6 +9337,14 @@
     "def": "moun ki repare soulye",
     "egz": "Kòdonye a ranje sandal mwen.",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "kòf",
+    "kat": "n",
+    "def": "malle",
+    "egz": "Kòf machin lan plen.",
+    "sin": "malle",
+    "tem": "mekanik"
   },
   {
     "mot": "kòfè",
@@ -7641,6 +9407,14 @@
     "def": "boul soti sou kote",
     "egz": "Kòrnè danjere.",
     "tem": "spò"
+  },
+  {
+    "mot": "kòschikut",
+    "kat": "n",
+    "def": "kourchikut",
+    "egz": "Kòschikut grav.",
+    "sin": "kourchikut",
+    "tem": "elektrisite"
   },
   {
     "mot": "Lafrik",
@@ -7879,6 +9653,14 @@
     "tem": "kò"
   },
   {
+    "mot": "lat",
+    "kat": "n",
+    "def": "ti planch",
+    "egz": "Lat pou klotire.",
+    "sin": "planch",
+    "tem": "chapantri"
+  },
+  {
     "mot": "lave",
     "kat": "v",
     "def": "pase dlo ak savon pou retire salte",
@@ -7928,6 +9710,15 @@
     "tem": "kay"
   },
   {
+    "mot": "lavèz",
+    "kat": "n",
+    "def": "machin pou lave rad",
+    "egz": "Lavèz a pa mache.",
+    "sin": "machin lave",
+    "tem": "elektrisite",
+    "var": "kay"
+  },
+  {
     "mot": "lawouze",
     "kat": "n",
     "def": "ti dlo ki sou fèy maten",
@@ -7949,6 +9740,14 @@
     "egz": "Lay nan sòs.",
     "sin": "ail",
     "tem": "plant"
+  },
+  {
+    "mot": "LED",
+    "kat": "n",
+    "def": "anpoul ekonomik",
+    "egz": "LED pa boule vit.",
+    "sin": "anpoul LED",
+    "tem": "elektrisite"
   },
   {
     "mot": "legim",
@@ -8105,6 +9904,21 @@
     "tem": "spò"
   },
   {
+    "mot": "level",
+    "kat": "n",
+    "def": "nivo",
+    "egz": "Level nan biwo.",
+    "sin": "nivo",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "levye vitès",
+    "kat": "n",
+    "def": "siy pou chanje vitès",
+    "egz": "Levye vitès difisil.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "leza",
     "kat": "n",
     "def": "zandolit",
@@ -8154,6 +9968,13 @@
     "tem": "kilti"
   },
   {
+    "mot": "likid fren",
+    "kat": "n",
+    "def": "luil pou sistèm fren",
+    "egz": "Likid fren DOT 4.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "limase",
     "kat": "n",
     "def": "eskago san kawap",
@@ -8187,6 +10008,21 @@
     "egz": "Limen limyè a tankou fènwa.",
     "sin": "elektrisite",
     "tem": "kay"
+  },
+  {
+    "mot": "limyè avan",
+    "kat": "n",
+    "def": "limyè devan machin",
+    "egz": "Limyè avan ranplaze.",
+    "sin": "fa",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "limyè dèyè",
+    "kat": "n",
+    "def": "limyè wouj dèyè",
+    "egz": "Limyè dèyè brile.",
+    "tem": "mekanik"
   },
   {
     "mot": "limyè wout",
@@ -8248,6 +10084,21 @@
     "egz": "Liv klas matematik.",
     "sin": "manyèl",
     "tem": "edikasyon"
+  },
+  {
+    "mot": "livre",
+    "kat": "v",
+    "def": "rann konstriksyon fini",
+    "egz": "Livre kay nan dat.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "liyè",
+    "kat": "n",
+    "def": "fil prensipal kouran",
+    "egz": "Liyè wouj oswa nwa.",
+    "sin": "fil chaje",
+    "tem": "elektrisite"
   },
   {
     "mot": "loa",
@@ -8332,6 +10183,37 @@
     "def": "gwo bèt nan fore polè",
     "egz": "Lous nan glas.",
     "tem": "animal"
+  },
+  {
+    "mot": "luil",
+    "kat": "n",
+    "def": "matyè ki lubrifye motè",
+    "egz": "Luil motè bezwen chanjman.",
+    "sin": "luil motè",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "luil motè",
+    "kat": "n",
+    "def": "luil pou motè",
+    "egz": "Luil motè 5W30.",
+    "sin": "luil",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "luil pwen",
+    "kat": "n",
+    "def": "yon ti luil pou sere",
+    "egz": "Luil pwen pou ranmye.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "luil transmisyon",
+    "kat": "n",
+    "def": "luil pou transmisyon",
+    "egz": "Luil transmisyon ATF.",
+    "sin": "ATF",
+    "tem": "mekanik"
   },
   {
     "mot": "lwa",
@@ -8462,6 +10344,21 @@
     "tem": "peyizaj"
   },
   {
+    "mot": "mab",
+    "kat": "n",
+    "def": "wòch fen pou liks",
+    "egz": "Mab pou twalèt liks.",
+    "sin": "marb",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "mach eskalye",
+    "kat": "n",
+    "def": "yon pati nan eskalye",
+    "egz": "Mach eskalye yo bèl.",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "machann",
     "kat": "n",
     "def": "moun ki vann nan mache",
@@ -8521,6 +10418,13 @@
     "tem": "transpò"
   },
   {
+    "mot": "machwa fren",
+    "kat": "n",
+    "def": "siy nan tambour",
+    "egz": "Machwa fren dèye.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "madanm",
     "kat": "n",
     "def": "fanm marye",
@@ -8551,6 +10455,14 @@
     "sin": "fi",
     "ant": "madanm",
     "tem": "fanmi"
+  },
+  {
+    "mot": "MAF",
+    "kat": "n",
+    "def": "sansè ki mezire lè",
+    "egz": "MAF sale ka fè mis.",
+    "sin": "mass air flow",
+    "tem": "mekanik"
   },
   {
     "mot": "magazen",
@@ -8696,6 +10608,14 @@
     "tem": "animal"
   },
   {
+    "mot": "malle",
+    "kat": "n",
+    "def": "espas dèye pou bagaj",
+    "egz": "Malle a fenmen.",
+    "sin": "kòf",
+    "tem": "mekanik"
+  },
+  {
     "mot": "malten",
     "kat": "n",
     "def": "moun ki travay sou bato",
@@ -8739,6 +10659,13 @@
     "egz": "Manbo a gen anpil pouvwa.",
     "ant": "ougan",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "manch pòt",
+    "kat": "n",
+    "def": "siy pou ouvri pòt",
+    "egz": "Manch pòt la kase.",
+    "tem": "chapantri"
   },
   {
     "mot": "mango",
@@ -8921,6 +10848,14 @@
     "def": "kous 42 km",
     "egz": "Maraton Pòtoprens.",
     "tem": "spò"
+  },
+  {
+    "mot": "marb",
+    "kat": "n",
+    "def": "mab",
+    "egz": "Marb kolò ble.",
+    "sin": "mab",
+    "tem": "konstriksyon"
   },
   {
     "mot": "marenn",
@@ -9120,6 +11055,13 @@
     "tem": "manje"
   },
   {
+    "mot": "MDF",
+    "kat": "n",
+    "def": "yon kalite panèl bwa",
+    "egz": "MDF pou meb modèn.",
+    "tem": "chapantri"
+  },
+  {
     "mot": "me",
     "kat": "n",
     "def": "senkyèm mwa nan ane",
@@ -9172,6 +11114,13 @@
     "tem": "pwofesyon"
   },
   {
+    "mot": "mekanik",
+    "kat": "n",
+    "def": "syans repare machin",
+    "egz": "Mwen yon mekanisyen 40 ane.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "mekanisyen",
     "kat": "n",
     "def": "moun ki repare machin",
@@ -9218,6 +11167,21 @@
     "tem": "kò"
   },
   {
+    "mot": "mensyè",
+    "kat": "n",
+    "def": "syè pou koupe meb",
+    "egz": "Mensyè 90 degre.",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "menwizri",
+    "kat": "n",
+    "def": "chapantri",
+    "egz": "Menwizri pou fenèt.",
+    "sin": "chapantri",
+    "tem": "chapantri"
+  },
+  {
     "mot": "merengue",
     "kat": "n",
     "def": "stil Dominiken",
@@ -9232,6 +11196,13 @@
     "sin": "msye",
     "ant": "madanm",
     "tem": "fanmi"
+  },
+  {
+    "mot": "metal galvanise",
+    "kat": "n",
+    "def": "metal ak zenk pou pwoteksyon",
+    "egz": "Metal galvanise pou eks.",
+    "tem": "plonbri"
   },
   {
     "mot": "metal koupe",
@@ -9253,6 +11224,14 @@
     "egz": "Mete chemiz la avan w soti.",
     "ant": "wete",
     "tem": "rad"
+  },
+  {
+    "mot": "mete tan",
+    "kat": "v",
+    "def": "kalibre motè",
+    "egz": "Mete tan motè a.",
+    "sin": "kalibre",
+    "tem": "mekanik"
   },
   {
     "mot": "metodis",
@@ -9294,6 +11273,15 @@
     "tem": "kay"
   },
   {
+    "mot": "mikwo",
+    "kat": "n",
+    "def": "fou mikwo",
+    "egz": "Mikwo cho manje.",
+    "sin": "fou mikwo",
+    "tem": "elektrisite",
+    "var": "kuizin"
+  },
+  {
     "mot": "mil",
     "kat": "n",
     "def": "nimewo 1000",
@@ -9306,6 +11294,14 @@
     "def": "jwè nan mitan teren",
     "egz": "Milieu pase boul la.",
     "tem": "spò"
+  },
+  {
+    "mot": "milimèt",
+    "kat": "n",
+    "def": "siy pou mezire elektrisite",
+    "egz": "Milimèt pou tcheke.",
+    "sin": "voltimèt",
+    "tem": "elektrisite"
   },
   {
     "mot": "militon",
@@ -9377,11 +11373,35 @@
     "tem": "plant"
   },
   {
+    "mot": "mis",
+    "kat": "n",
+    "def": "lè motè ratur",
+    "egz": "Motè a gen mis.",
+    "sin": "misfire",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "misfire",
+    "kat": "n",
+    "def": "mis",
+    "egz": "Misfire nan silenn 2.",
+    "sin": "mis",
+    "tem": "mekanik"
+  },
+  {
     "mot": "misk",
     "kat": "n",
     "def": "tisi ki fè kò bouje",
     "egz": "Misk mwen fò.",
     "tem": "kò"
+  },
+  {
+    "mot": "miwa",
+    "kat": "n",
+    "def": "retwovizè",
+    "egz": "Miwa kase.",
+    "sin": "retwovizè",
+    "tem": "mekanik"
   },
   {
     "mot": "mizik",
@@ -9521,6 +11541,37 @@
     "tem": "transpò"
   },
   {
+    "mot": "motè a konbistyon entèn",
+    "kat": "n",
+    "def": "motè ki sèvi ak gazolin",
+    "egz": "Motè a konbistyon entèn klasik.",
+    "ant": "motè elektrik",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "motè dyezèl",
+    "kat": "n",
+    "def": "motè ki sèvi ak dyezèl",
+    "egz": "Motè dyezèl pou trak.",
+    "ant": "motè gazolin",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "motè elektrik",
+    "kat": "n",
+    "def": "motè ak elektrisite",
+    "egz": "Motè elektrik nan Tesla.",
+    "ant": "motè a gazolin",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "motè ibrid",
+    "kat": "n",
+    "def": "motè ki melanje",
+    "egz": "Motè ibrid ekonomik.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "mouch",
     "kat": "n",
     "def": "ensèk ki ap vole",
@@ -9655,6 +11706,14 @@
     "tem": "animal"
   },
   {
+    "mot": "mèche",
+    "kat": "n",
+    "def": "zouti pou drilll fè twou",
+    "egz": "Mèche 1/4 pous.",
+    "sin": "bit",
+    "tem": "chapantri"
+  },
+  {
     "mot": "mèg",
     "kat": "adj",
     "def": "ki pa gen anpil vyann",
@@ -9706,6 +11765,22 @@
     "sin": "pwopriyetè",
     "ant": "lokatè",
     "tem": "komès-lajan"
+  },
+  {
+    "mot": "mèt sèlinn",
+    "kat": "n",
+    "def": "siy ki pouse likid fren",
+    "egz": "Mèt sèlinn fwit.",
+    "sin": "master cylinder",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "mètre",
+    "kat": "n",
+    "def": "zouti pou mezire",
+    "egz": "Mètre pou planch.",
+    "sin": "ruleta",
+    "tem": "chapantri"
   },
   {
     "mot": "mètrès",
@@ -9772,12 +11847,27 @@
     "tem": "kay"
   },
   {
+    "mot": "mòtye",
+    "kat": "n",
+    "def": "siman ak sab melanje",
+    "egz": "Mòtye pou kole blòk.",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "n a wè",
     "kat": "expr",
     "def": "orevwa kout",
     "egz": "N a wè zanmi!",
     "sin": "a pita",
     "tem": "salitasyon"
+  },
+  {
+    "mot": "nail",
+    "kat": "n",
+    "def": "klou",
+    "egz": "Nail nan plywood.",
+    "sin": "klou",
+    "tem": "chapantri"
   },
   {
     "mot": "naje",
@@ -9886,6 +11976,13 @@
     "tem": "pwofesyon"
   },
   {
+    "mot": "neutre",
+    "kat": "n",
+    "def": "fil retounen kouran",
+    "egz": "Neutre blan.",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "neve",
     "kat": "n",
     "def": "pitit frè oswa sè (gason)",
@@ -9907,6 +12004,13 @@
     "egz": "Nimewo a long.",
     "sin": "chif",
     "tem": "nimewo"
+  },
+  {
+    "mot": "nivo luil",
+    "kat": "n",
+    "def": "kantite luil nan motè",
+    "egz": "Tcheke nivo luil.",
+    "tem": "mekanik"
   },
   {
     "mot": "non",
@@ -10055,10 +12159,33 @@
     "var": "mizik"
   },
   {
+    "mot": "OBD",
+    "kat": "n",
+    "def": "sistèm dyagnostik elektronik",
+    "egz": "OBD pou kòd erè.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "OBD2",
+    "kat": "n",
+    "def": "OBD modèn",
+    "egz": "OBD2 nan tout machin apre 1996.",
+    "sin": "OBD",
+    "tem": "mekanik"
+  },
+  {
     "mot": "obeyi",
     "kat": "v",
     "def": "Suiv lòd oswa règ yon moun ki gen otorite; fè sa yo mande ou.",
     "egz": "Timoun dwe obeyi paran yo."
+  },
+  {
+    "mot": "OEM",
+    "kat": "n",
+    "def": "pyès orijinal",
+    "egz": "OEM pi chè men dirab.",
+    "sin": "pyès orijinal",
+    "tem": "mekanik"
   },
   {
     "mot": "ofans",
@@ -10082,6 +12209,20 @@
     "def": "lwa gè",
     "egz": "Ogou Feray pou pwoteksyon.",
     "tem": "relijyon-vodou"
+  },
+  {
+    "mot": "ohmmèt",
+    "kat": "n",
+    "def": "siy pou rezistans",
+    "egz": "Ohmmèt teste sikui.",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "oksipe",
+    "kat": "v",
+    "def": "antre nan kay nèf",
+    "egz": "Oksipe kay la apre konstwi.",
+    "tem": "konstriksyon"
   },
   {
     "mot": "oktòb",
@@ -10144,6 +12285,13 @@
     "egz": "Orijin Karayib.",
     "sin": "rasin",
     "tem": "kilti"
+  },
+  {
+    "mot": "oscilloscope",
+    "kat": "n",
+    "def": "siy ki montre siyal",
+    "egz": "Oscilloscope pou syantis.",
+    "tem": "elektrisite"
   },
   {
     "mot": "ostèopat",
@@ -10226,6 +12374,14 @@
     "def": "gwo gwoup mizisyen",
     "egz": "Òkès filarmonik.",
     "tem": "mizik"
+  },
+  {
+    "mot": "onduleur",
+    "kat": "n",
+    "def": "UPS",
+    "egz": "Onduleur 1500 watt.",
+    "sin": "UPS",
+    "tem": "elektrisite"
   },
   {
     "mot": "onz",
@@ -10341,6 +12497,14 @@
     "var": "kilti"
   },
   {
+    "mot": "panou",
+    "kat": "n",
+    "def": "chèni",
+    "egz": "Panou pou pòt.",
+    "sin": "chèni",
+    "tem": "chapantri"
+  },
+  {
     "mot": "pansyon",
     "kat": "n",
     "def": "salè apre retrè",
@@ -10390,6 +12554,14 @@
     "egz": "Panyòl pou kominike.",
     "sin": "espayòl",
     "tem": "edikasyon"
+  },
+  {
+    "mot": "panèl elektrik",
+    "kat": "n",
+    "def": "tablo elektrik",
+    "egz": "Panèl elektrik 100 anp.",
+    "sin": "tablo elektrik",
+    "tem": "elektrisite"
   },
   {
     "mot": "panèl solè",
@@ -10502,6 +12674,14 @@
     "tem": "mizik"
   },
   {
+    "mot": "paret",
+    "kat": "n",
+    "def": "mi",
+    "egz": "Paret kay la fò.",
+    "sin": "mi",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "park",
     "kat": "v",
     "def": "estasyone",
@@ -10561,6 +12741,13 @@
     "egz": "Paswen ap nouri ti yo.",
     "ant": "bouk",
     "tem": "animal"
+  },
+  {
+    "mot": "paswen",
+    "kat": "n",
+    "def": "pwen ki pwoteje devan",
+    "egz": "Paswen ajouri.",
+    "tem": "mekanik"
   },
   {
     "mot": "patat",
@@ -10625,6 +12812,14 @@
     "tem": "fwi-legim"
   },
   {
+    "mot": "PCM",
+    "kat": "n",
+    "def": "sèvo",
+    "egz": "PCM bezwen pwogramin.",
+    "sin": "sèvo",
+    "tem": "mekanik"
+  },
+  {
     "mot": "peche",
     "kat": "n",
     "def": "move aksyon",
@@ -10656,6 +12851,13 @@
     "tem": "manje"
   },
   {
+    "mot": "pen",
+    "kat": "n",
+    "def": "bwa pratik",
+    "egz": "Pen pou kowfaj.",
+    "tem": "chapantri"
+  },
+  {
     "mot": "penal",
     "kat": "n",
     "def": "tire boul gòl rapid",
@@ -10679,12 +12881,50 @@
     "var": "atis"
   },
   {
+    "mot": "pent ekstèryè",
+    "kat": "n",
+    "def": "pent pou deyò",
+    "egz": "Pent ekstèryè pou solèy.",
+    "ant": "pent enteryè",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "pent enteryè",
+    "kat": "n",
+    "def": "pent pou andedan",
+    "egz": "Pent enteryè pou chanm.",
+    "ant": "pent ekstèryè",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "pent machin",
+    "kat": "n",
+    "def": "koulè machin",
+    "egz": "Pent machin la wouj.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "perceuse",
+    "kat": "n",
+    "def": "zouti pou twou",
+    "egz": "Perceuse elektrik.",
+    "sin": "drilll",
+    "tem": "chapantri"
+  },
+  {
     "mot": "perekèt",
     "kat": "n",
     "def": "zwazo ki kapab pale",
     "egz": "Perekèt mwen di bonjou.",
     "sin": "papagal",
     "tem": "animal"
+  },
+  {
+    "mot": "permis konstrwi",
+    "kat": "n",
+    "def": "dwa pou bati",
+    "egz": "Permis konstrwi nan komin.",
+    "tem": "konstriksyon"
   },
   {
     "mot": "Petyon",
@@ -10874,6 +13114,21 @@
     "tem": "mizik"
   },
   {
+    "mot": "pistòn",
+    "kat": "n",
+    "def": "siy ki monte ak desann nan silenn",
+    "egz": "Pistòn yo nan silenn.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "pitch",
+    "kat": "n",
+    "def": "siy bwa nèf",
+    "egz": "Pitch koule.",
+    "sin": "tarso",
+    "tem": "chapantri"
+  },
+  {
     "mot": "piti",
     "kat": "adj",
     "def": "Ki gen gwosè, kantite, oswa degre ki pi ba pase nòmal; opoze ak gwo.",
@@ -10943,11 +13198,48 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "plak fren",
+    "kat": "n",
+    "def": "siy ki frote disk",
+    "egz": "Plak fren bezwen chanjman.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "plak siman",
+    "kat": "n",
+    "def": "yon kouch beton plat",
+    "egz": "Plak siman pou twati.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "plan kay",
+    "kat": "n",
+    "def": "dèsen ki montre kay",
+    "egz": "Plan kay pa achitèk.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "planch",
+    "kat": "n",
+    "def": "bwa plat long",
+    "egz": "Planch pou twati.",
+    "sin": "lat",
+    "tem": "chapantri"
+  },
+  {
     "mot": "planche eskate",
     "kat": "n",
     "def": "siy pou eskate",
     "egz": "Planche eskate pwofesyonèl.",
     "tem": "spò"
+  },
+  {
+    "mot": "planer",
+    "kat": "n",
+    "def": "rabò",
+    "egz": "Planer pou planch yo.",
+    "sin": "rabò",
+    "tem": "chapantri"
   },
   {
     "mot": "plant",
@@ -10978,6 +13270,14 @@
     "def": "boul ki tounen otou solèy",
     "egz": "Tè a se yon planèt.",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "plaster",
+    "kat": "n",
+    "def": "matyè pou bouche twou nan miray",
+    "egz": "Plaster nan mi.",
+    "sin": "pòm bri",
+    "tem": "chapantri"
   },
   {
     "mot": "plen",
@@ -11015,11 +13315,41 @@
     "tem": "edikasyon"
   },
   {
+    "mot": "plonbri",
+    "kat": "n",
+    "def": "metye dlo ak tib",
+    "egz": "Plonbri konplèks.",
+    "tem": "plonbri"
+  },
+  {
     "mot": "plonbye",
     "kat": "n",
     "def": "moun ki ranje tiyo dlo",
     "egz": "Plonbye a ranje twalèt la.",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "plonbye",
+    "kat": "n",
+    "def": "moun ki travay plonbri",
+    "egz": "Plonbye ranje sa.",
+    "tem": "plonbri",
+    "var": "pwofesyon"
+  },
+  {
+    "mot": "plonjè",
+    "kat": "n",
+    "def": "zouti pou debouche",
+    "egz": "Plonjè pou twalèt.",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "plywood",
+    "kat": "n",
+    "def": "kontreplake",
+    "egz": "Plywood 1/2 pous.",
+    "sin": "kontreplake",
+    "tem": "chapantri"
   },
   {
     "mot": "plè",
@@ -11213,6 +13543,14 @@
     "tem": "pwofesyon"
   },
   {
+    "mot": "Pozidrayv",
+    "kat": "n",
+    "def": "tèt vis modifye",
+    "egz": "Pozidrayv pi solid.",
+    "sin": "Pozidriv",
+    "tem": "mekanik"
+  },
+  {
     "mot": "pran",
     "kat": "v",
     "def": "Kenbe; sezi; resevwa; mete nan men ou.",
@@ -11276,6 +13614,14 @@
     "tem": "komès-lajan"
   },
   {
+    "mot": "prijaj",
+    "kat": "n",
+    "def": "wete lè nan sistèm fren",
+    "egz": "Prijaj pou fren mache byen.",
+    "sin": "bleeding",
+    "tem": "mekanik"
+  },
+  {
     "mot": "primè",
     "kat": "n",
     "def": "lekòl primè",
@@ -11324,6 +13670,14 @@
     "tem": "komès-lajan"
   },
   {
+    "mot": "près",
+    "kat": "n",
+    "def": "zouti ki pèze fò",
+    "egz": "Près pou ranfòse bòljwen.",
+    "sin": "press tool",
+    "tem": "mekanik"
+  },
+  {
     "mot": "prèssipal",
     "kat": "n",
     "def": "direktè lekòl segondè",
@@ -11346,6 +13700,13 @@
     "egz": "Psyatris la pale ak pasyan.",
     "sin": "psikològ",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "PVC",
+    "kat": "n",
+    "def": "matyè plastik pou tib",
+    "egz": "PVC pou dlo frèt.",
+    "tem": "plonbri"
   },
   {
     "mot": "pwa",
@@ -11450,6 +13811,14 @@
     "tem": "komès-lajan"
   },
   {
+    "mot": "pwoteksyon kont chòk",
+    "kat": "n",
+    "def": "siy pou pwoteje",
+    "egz": "Pwoteksyon kont chòk enpòtan.",
+    "sin": "surge protector",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "pwoteksyon spirityèl",
     "kat": "n",
     "def": "pwoteksyon ak Bondye/lwa",
@@ -11514,6 +13883,13 @@
     "tem": "plant"
   },
   {
+    "mot": "pyese",
+    "kat": "n",
+    "def": "yon ti pyès bwa",
+    "egz": "Pyese pou ranfòse.",
+    "tem": "chapantri"
+  },
+  {
     "mot": "pyeton",
     "kat": "n",
     "def": "moun k ap mache",
@@ -11528,6 +13904,31 @@
     "egz": "Pyè konstwiksyon.",
     "sin": "wòch",
     "tem": "peyizaj"
+  },
+  {
+    "mot": "pyès",
+    "kat": "n",
+    "def": "yon eleman nan machin",
+    "egz": "Pyès orijinal pi chè.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "pyès apre mache",
+    "kat": "n",
+    "def": "pyès lòt konpayi",
+    "egz": "Pyès apre mache koute mwens.",
+    "sin": "aftermarket",
+    "ant": "OEM",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "pyès orijinal",
+    "kat": "n",
+    "def": "pyès konpayi fabrike",
+    "egz": "Pyès orijinal Toyota.",
+    "sin": "OEM",
+    "ant": "pyès apre mache",
+    "tem": "mekanik"
   },
   {
     "mot": "pè",
@@ -11609,6 +14010,41 @@
     "tem": "kay"
   },
   {
+    "mot": "pòmp direksyon",
+    "kat": "n",
+    "def": "pòmp pou direksyon asiste",
+    "egz": "Pòmp direksyon nèf.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "pòmp dlo",
+    "kat": "n",
+    "def": "siy ki sikile dlo",
+    "egz": "Pòmp dlo nèf.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "pòmp gaz",
+    "kat": "n",
+    "def": "siy ki pouse gaz nan motè",
+    "egz": "Pòmp gaz elektrik.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "pòmp luil",
+    "kat": "n",
+    "def": "siy ki pouse luil",
+    "egz": "Pòmp luil enpòtan.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "pòmp pressyon",
+    "kat": "n",
+    "def": "pòmp ak presyon",
+    "egz": "Pòmp pressyon pou kay.",
+    "tem": "plonbri"
+  },
+  {
     "mot": "pòmpye",
     "kat": "n",
     "def": "moun ki etènn dife",
@@ -11635,6 +14071,22 @@
     "egz": "Fèmen pòt la pou fredi pa antre.",
     "ant": "fenèt",
     "tem": "kay"
+  },
+  {
+    "mot": "pòt bwa",
+    "kat": "n",
+    "def": "pòt fèt ak bwa",
+    "egz": "Pòt bwa entèryè.",
+    "ant": "pòt metal",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "pòt metal",
+    "kat": "n",
+    "def": "pòt fèt ak metal",
+    "egz": "Pòt metal ekstèryè.",
+    "ant": "pòt bwa",
+    "tem": "chapantri"
   },
   {
     "mot": "pòtyè",
@@ -11675,6 +14127,14 @@
     "tem": "komès-lajan"
   },
   {
+    "mot": "rabò",
+    "kat": "n",
+    "def": "zouti pou plat bwa",
+    "egz": "Rabò ak elektrik.",
+    "sin": "planer",
+    "tem": "chapantri"
+  },
+  {
     "mot": "rabòday",
     "kat": "n",
     "def": "stil mizik tradisyonèl",
@@ -11712,6 +14172,13 @@
     "tem": "rad"
   },
   {
+    "mot": "radyatè",
+    "kat": "n",
+    "def": "siy ki refwadi dlo motè",
+    "egz": "Radyatè a fwit.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "rakèt",
     "kat": "n",
     "def": "zouti pou frape boul",
@@ -11727,6 +14194,14 @@
     "tem": "transpò"
   },
   {
+    "mot": "rallong",
+    "kat": "n",
+    "def": "kòd elektrik long",
+    "egz": "Rallong pou monte garaj.",
+    "sin": "kòd elektrik",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "rampe",
     "kat": "v",
     "def": "deplase sou vant",
@@ -11739,6 +14214,22 @@
     "def": "yon ti pijon sovaj",
     "egz": "Ramye nan pyebwa a.",
     "tem": "animal"
+  },
+  {
+    "mot": "ranba",
+    "kat": "n",
+    "def": "ranbat",
+    "egz": "Ranba bòl.",
+    "sin": "ranbat",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "ranbat",
+    "kat": "n",
+    "def": "siy ki kenbe sou eskalye",
+    "egz": "Ranbat eskalye an fè.",
+    "sin": "ranba",
+    "tem": "konstriksyon"
   },
   {
     "mot": "ranch",
@@ -11778,10 +14269,28 @@
     "tem": "komès-lajan"
   },
   {
+    "mot": "ranje",
+    "kat": "v",
+    "def": "repare",
+    "egz": "Ranje motè a.",
+    "sin": "repare",
+    "ant": "kase",
+    "tem": "mekanik"
+  },
+  {
     "mot": "ranmase",
     "kat": "v",
     "def": "Kolekte; pran nan atè; rasanble bagay ki separe.",
     "egz": "Ranmase fèy yo nan lakou a."
+  },
+  {
+    "mot": "ranplase",
+    "kat": "v",
+    "def": "mete nouvo nan plas vye",
+    "egz": "Ranplase pistòn yo.",
+    "sin": "chanje",
+    "ant": "kenbe",
+    "tem": "mekanik"
   },
   {
     "mot": "rap",
@@ -11846,6 +14355,30 @@
     "var": "kilti"
   },
   {
+    "mot": "rasò",
+    "kat": "n",
+    "def": "siy ki konekte tib",
+    "egz": "Rasò pou tib yo.",
+    "sin": "fitting",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "rasò angle",
+    "kat": "n",
+    "def": "kòd 90 degre",
+    "egz": "Rasò angle pou kafou.",
+    "sin": "kòd",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "rasò T",
+    "kat": "n",
+    "def": "Te",
+    "egz": "Rasò T 1/2 pous.",
+    "sin": "Te",
+    "tem": "plonbri"
+  },
+  {
     "mot": "rat",
     "kat": "n",
     "def": "ti bèt ki gen long ke",
@@ -11861,12 +14394,37 @@
     "tem": "animal"
   },
   {
+    "mot": "rate",
+    "kat": "v",
+    "def": "motè pa kòmanse byen",
+    "egz": "Motè a rate.",
+    "sin": "ratur",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "ratur",
+    "kat": "v",
+    "def": "rate",
+    "egz": "Motè ratur lè frè.",
+    "sin": "rate",
+    "ant": "mache byen",
+    "tem": "mekanik"
+  },
+  {
     "mot": "ravèt",
     "kat": "n",
     "def": "kakraza",
     "egz": "Ravèt nan koridò a.",
     "sin": "kakraza",
     "tem": "animal"
+  },
+  {
+    "mot": "rdc",
+    "kat": "n",
+    "def": "premye etaj sou tè",
+    "egz": "RDC pou biznis.",
+    "sin": "etaj tè",
+    "tem": "konstriksyon"
   },
   {
     "mot": "rechod",
@@ -11884,11 +14442,33 @@
     "tem": "pwofesyon"
   },
   {
+    "mot": "redui",
+    "kat": "n",
+    "def": "rasò pou tib pi piti",
+    "egz": "Redui 1 pous a 1/2 pous.",
+    "tem": "plonbri"
+  },
+  {
     "mot": "refijye",
     "kat": "n",
     "def": "moun ki fui pou sove lavi",
     "egz": "Refijye nan Karayib.",
     "tem": "kilti"
+  },
+  {
+    "mot": "refrijeran",
+    "kat": "n",
+    "def": "Freon",
+    "egz": "Refrijeran nan AC.",
+    "sin": "Freon",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "refwadisman",
+    "kat": "n",
+    "def": "sistèm ki refwadi motè",
+    "egz": "Refwadisman a klè.",
+    "tem": "mekanik"
   },
   {
     "mot": "rege",
@@ -11905,6 +14485,13 @@
     "egz": "Reggae popilè.",
     "sin": "rege",
     "tem": "mizik"
+  },
+  {
+    "mot": "regilatè",
+    "kat": "n",
+    "def": "siy ki kontwole vòltaj",
+    "egz": "Regilatè tansyon.",
+    "tem": "mekanik"
   },
   {
     "mot": "regle",
@@ -11980,6 +14567,13 @@
     "tem": "edikasyon"
   },
   {
+    "mot": "relè",
+    "kat": "n",
+    "def": "siy ki kontwole pi gwo siy",
+    "egz": "Relè ouvri sikui.",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "remèd",
     "kat": "n",
     "def": "medikaman",
@@ -12026,6 +14620,15 @@
     "tem": "relijyon-vodou"
   },
   {
+    "mot": "repare",
+    "kat": "v",
+    "def": "ranje sa ki kase",
+    "egz": "Repare machin nan.",
+    "sin": "ranje",
+    "ant": "kase",
+    "tem": "mekanik"
+  },
+  {
     "mot": "repete",
     "kat": "v",
     "def": "redi menm bagay la",
@@ -12067,6 +14670,13 @@
     "egz": "Repòtè yo nan terèn nan.",
     "sin": "jounalis",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "reservoir twalèt",
+    "kat": "n",
+    "def": "tank dlo dèyè twalèt",
+    "egz": "Reservoir twalèt fwit.",
+    "tem": "plonbri"
   },
   {
     "mot": "resi",
@@ -12128,6 +14738,29 @@
     "tem": "kilti"
   },
   {
+    "mot": "resò boudin",
+    "kat": "n",
+    "def": "resò sirkilè",
+    "egz": "Resò boudin pou avan.",
+    "ant": "resò lam",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "resò lam",
+    "kat": "n",
+    "def": "resò plat pou trak",
+    "egz": "Resò lam pou trak yo.",
+    "ant": "resò boudin",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "resò tòksyon",
+    "kat": "n",
+    "def": "yon kalite resò",
+    "egz": "Resò tòksyon nan kèk machin.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "rete malad",
     "kat": "v",
     "def": "vin malad",
@@ -12159,6 +14792,14 @@
     "egz": "Mwen pral retrè.",
     "ant": "anboche",
     "tem": "komès-lajan"
+  },
+  {
+    "mot": "retwovizè",
+    "kat": "n",
+    "def": "glas pou wè dèyè",
+    "egz": "Retwovizè ajiste.",
+    "sin": "miwa",
+    "tem": "mekanik"
   },
   {
     "mot": "reveye",
@@ -12205,12 +14846,42 @@
     "tem": "edikasyon"
   },
   {
+    "mot": "rezistans",
+    "kat": "n",
+    "def": "siy ki rezè kouran",
+    "egz": "Rezistans nan motè elektrik.",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "rezistans",
+    "kat": "n",
+    "def": "kapasite pou rete debou",
+    "egz": "Rezistans bilding pou tranbleman.",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "rezèvwa",
     "kat": "n",
     "def": "gwo barik oswa tank pou akimile dlo",
     "egz": "Rezèvwa a plen dlo.",
     "ant": "tiyo",
     "tem": "kay"
+  },
+  {
+    "mot": "rezèvwa dlo",
+    "kat": "n",
+    "def": "tank pou dlo",
+    "egz": "Rezèvwa dlo sou twati.",
+    "sin": "tank dlo",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "rezèvwa gaz",
+    "kat": "n",
+    "def": "tank gaz",
+    "egz": "Rezèvwa gaz 40 lit.",
+    "sin": "tank gaz",
+    "tem": "mekanik"
   },
   {
     "mot": "ri",
@@ -12326,6 +14997,30 @@
     "tem": "rad"
   },
   {
+    "mot": "robinè",
+    "kat": "n",
+    "def": "valv pou louvri dlo",
+    "egz": "Robinè a louvri.",
+    "sin": "valv",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "robinè dlo",
+    "kat": "n",
+    "def": "robinè",
+    "egz": "Robinè dlo nan kuizin.",
+    "sin": "robinè",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "Robètson",
+    "kat": "n",
+    "def": "tèt vis kare",
+    "egz": "Robètson nan Kanada.",
+    "sin": "Robertson",
+    "tem": "mekanik"
+  },
+  {
     "mot": "rond pwen",
     "kat": "n",
     "def": "won kote wout rankontre",
@@ -12350,6 +15045,14 @@
     "tem": "kilti"
   },
   {
+    "mot": "ruleta",
+    "kat": "n",
+    "def": "mètre rulant",
+    "egz": "Ruleta 25 pi.",
+    "sin": "mètre",
+    "tem": "chapantri"
+  },
+  {
     "mot": "rytm",
     "kat": "n",
     "def": "tan mizik la",
@@ -12370,6 +15073,14 @@
     "def": "ti grenn sou plaj",
     "egz": "Sab plaj la blan.",
     "tem": "peyizaj"
+  },
+  {
+    "mot": "sab",
+    "kat": "n",
+    "def": "matyè ki sou plaj",
+    "egz": "Sab pou mòtye.",
+    "tem": "konstriksyon",
+    "var": "natirèl"
   },
   {
     "mot": "sajfanm",
@@ -12574,6 +15285,29 @@
     "tem": "rad"
   },
   {
+    "mot": "sangad",
+    "kat": "n",
+    "def": "zouti pou kenbe bwa lè kole",
+    "egz": "Sangad pou kole.",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "sansè",
+    "kat": "n",
+    "def": "siy ki mezire bagay",
+    "egz": "Sansè oksijèn.",
+    "sin": "kapyè",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "sansè oksijèn",
+    "kat": "n",
+    "def": "siy ki mezire oksijèn nan echapman",
+    "egz": "Sansè oksijèn enpòtan.",
+    "sin": "O2 sensor",
+    "tem": "mekanik"
+  },
+  {
     "mot": "sant sante",
     "kat": "n",
     "def": "klinik kominotè",
@@ -12675,6 +15409,22 @@
     "tem": "peyizaj"
   },
   {
+    "mot": "savik",
+    "kat": "n",
+    "def": "yon kalite pwen",
+    "egz": "Savik 4x4.",
+    "sin": "pwen",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "saw",
+    "kat": "n",
+    "def": "syè",
+    "egz": "Saw elektrik.",
+    "sin": "syè",
+    "tem": "chapantri"
+  },
+  {
     "mot": "score",
     "kat": "n",
     "def": "kantite gòl",
@@ -12716,11 +15466,33 @@
     "tem": "tan-meteo"
   },
   {
+    "mot": "sechuese",
+    "kat": "n",
+    "def": "machin pou seche rad",
+    "egz": "Sechuese rapid.",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "sed",
     "kat": "n",
     "def": "yon pyebwa di",
     "egz": "Sed la nan jaden m.",
     "tem": "plant"
+  },
+  {
+    "mot": "sed",
+    "kat": "n",
+    "def": "bwa parfime",
+    "egz": "Sed nan amwa.",
+    "tem": "chapantri",
+    "var": "bwa"
+  },
+  {
+    "mot": "segman",
+    "kat": "n",
+    "def": "bag elastik sou pistòn",
+    "egz": "Segman pistòn nèf.",
+    "tem": "mekanik"
   },
   {
     "mot": "segondè",
@@ -12851,6 +15623,14 @@
     "tem": "jou ak mwa"
   },
   {
+    "mot": "sere tiyo",
+    "kat": "v",
+    "def": "fèmen tiyo fò",
+    "egz": "Sere tiyo a ak klè.",
+    "ant": "lache",
+    "tem": "plonbri"
+  },
+  {
     "mot": "seremoni vodou",
     "kat": "n",
     "def": "rasanbleman vodou",
@@ -12910,12 +15690,27 @@
     "tem": "manje"
   },
   {
+    "mot": "siameto",
+    "kat": "n",
+    "def": "zouti pou siye metal",
+    "egz": "Siameto pou metal.",
+    "sin": "hacksaw",
+    "tem": "mekanik"
+  },
+  {
     "mot": "sida",
     "kat": "n",
     "def": "maladi nan san",
     "egz": "Sida bezwen prevansyon.",
     "sin": "VIH",
     "tem": "lasante"
+  },
+  {
+    "mot": "siflè",
+    "kat": "v",
+    "def": "fè bri lè ou klè",
+    "egz": "Tonbour la siflè.",
+    "tem": "mekanik"
   },
   {
     "mot": "siflèt",
@@ -12965,12 +15760,60 @@
     "tem": "spò"
   },
   {
+    "mot": "sikui",
+    "kat": "n",
+    "def": "wout pou kouran",
+    "egz": "Sikui la kompète.",
+    "sin": "circuit",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "silansye",
+    "kat": "n",
+    "def": "siy ki redui bri",
+    "egz": "Silansye nèf.",
+    "sin": "katalizè",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "silenn",
+    "kat": "n",
+    "def": "twou kote pistòn travay",
+    "egz": "Silenn motè a sal.",
+    "sin": "silenndè",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "silenndè",
+    "kat": "n",
+    "def": "silenn",
+    "egz": "Silenndè 4 nan motè a.",
+    "sin": "silenn",
+    "tem": "mekanik"
+  },
+  {
     "mot": "siman",
     "kat": "n",
     "def": "poud blan ki melanje ak dlo pou kolmate oswa bati",
     "egz": "Yo melanje siman ak sab.",
     "ant": "blòk",
     "tem": "kay"
+  },
+  {
+    "mot": "siman blan",
+    "kat": "n",
+    "def": "siman koulè blan",
+    "egz": "Siman blan pou plastre.",
+    "ant": "siman gri",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "siman PVC",
+    "kat": "n",
+    "def": "glu pou PVC",
+    "egz": "Siman PVC pou tib.",
+    "sin": "kolla",
+    "tem": "plonbri"
   },
   {
     "mot": "sinagòg",
@@ -13017,6 +15860,34 @@
     "def": "nimewo 6",
     "egz": "Sis ze.",
     "tem": "nimewo"
+  },
+  {
+    "mot": "sispansyon",
+    "kat": "n",
+    "def": "sistèm ki pwoteje machin",
+    "egz": "Sispansyon a kase.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "sistèm dlo",
+    "kat": "n",
+    "def": "tout tib ak rezèvwa",
+    "egz": "Sistèm dlo kay la.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "sistèm elektrik",
+    "kat": "n",
+    "def": "tout fil ak priz",
+    "egz": "Sistèm elektrik nèf.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "siteren",
+    "kat": "n",
+    "def": "rezèvwa anba tè",
+    "egz": "Siteren pou dlo lapli.",
+    "tem": "plonbri"
   },
   {
     "mot": "sitwon",
@@ -13081,11 +15952,26 @@
     "tem": "transpò"
   },
   {
+    "mot": "siyalizè",
+    "kat": "n",
+    "def": "klignotè",
+    "egz": "Siyalizè dèye.",
+    "sin": "klignotè",
+    "tem": "mekanik"
+  },
+  {
     "mot": "siyifik",
     "kat": "n",
     "def": "endikatè klima",
     "egz": "Siyifik tan an pa bon.",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "siznè",
+    "kat": "n",
+    "def": "matò ki rache klou",
+    "egz": "Siznè pou rachi klou.",
+    "tem": "chapantri"
   },
   {
     "mot": "sizyèm",
@@ -13149,6 +16035,13 @@
     "sin": "antrè",
     "ant": "egoyism",
     "tem": "kilti"
+  },
+  {
+    "mot": "solè",
+    "kat": "adj",
+    "def": "ki soti nan solèy",
+    "egz": "Enèji solè renouvlab.",
+    "tem": "elektrisite"
   },
   {
     "mot": "solèy",
@@ -13267,6 +16160,13 @@
     "tem": "pwofesyon"
   },
   {
+    "mot": "soude",
+    "kat": "v",
+    "def": "kole metal",
+    "egz": "Soude tib kuiv.",
+    "tem": "plonbri"
+  },
+  {
     "mot": "soudè",
     "kat": "n",
     "def": "soude",
@@ -13311,6 +16211,14 @@
     "egz": "Soup joumou 1ye janvye.",
     "tem": "kilti",
     "var": "kilti"
+  },
+  {
+    "mot": "soupap",
+    "kat": "n",
+    "def": "valv",
+    "egz": "Soupap admison ak echapman.",
+    "sin": "valv",
+    "tem": "mekanik"
   },
   {
     "mot": "souple",
@@ -13378,6 +16286,14 @@
     "tem": "spò"
   },
   {
+    "mot": "stabilizè",
+    "kat": "n",
+    "def": "siy ki estabilize tansyon",
+    "egz": "Stabilizè pou òdinatè.",
+    "sin": "regilatè tansyon",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "stilo",
     "kat": "n",
     "def": "siy ak lank",
@@ -13424,6 +16340,14 @@
     "tem": "lasante"
   },
   {
+    "mot": "switch",
+    "kat": "n",
+    "def": "entèriptè",
+    "egz": "Switch limyè a.",
+    "sin": "entèriptè",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "swiv tretman",
     "kat": "v",
     "def": "obeyi medikaman",
@@ -13451,6 +16375,30 @@
     "def": "moun ki fè rechèch",
     "egz": "Syantis yo etidye kè a.",
     "tem": "pwofesyon"
+  },
+  {
+    "mot": "syè",
+    "kat": "n",
+    "def": "zouti pou koupe bwa",
+    "egz": "Syè pou planch yo.",
+    "sin": "saw",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "syè a men",
+    "kat": "n",
+    "def": "syè san motè",
+    "egz": "Syè a men pou ti travay.",
+    "ant": "syè elektrik",
+    "tem": "chapantri"
+  },
+  {
+    "mot": "syè elektrik",
+    "kat": "n",
+    "def": "syè ak motè",
+    "egz": "Syè elektrik pi rapid.",
+    "ant": "syè a men",
+    "tem": "chapantri"
   },
   {
     "mot": "syèl",
@@ -13622,12 +16570,27 @@
     "var": "atis"
   },
   {
+    "mot": "tablo elektrik",
+    "kat": "n",
+    "def": "kote tout breakè",
+    "egz": "Tablo elektrik nan koridò.",
+    "sin": "panèl",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "tach",
     "kat": "n",
     "def": "devwa",
     "egz": "Tach lekòl pa fini.",
     "sin": "devwa",
     "tem": "edikasyon"
+  },
+  {
+    "mot": "tachan",
+    "kat": "n",
+    "def": "yon ti bouchon kawotchou",
+    "egz": "Tachan robinè.",
+    "tem": "plonbri"
   },
   {
     "mot": "taikondò",
@@ -13663,6 +16626,23 @@
     "def": "pati dèyè pye",
     "egz": "Talon mwen ap fè mwen mal.",
     "tem": "kò"
+  },
+  {
+    "mot": "tambour",
+    "kat": "n",
+    "def": "fren ki sanble ak yon tanbou",
+    "egz": "Tambour fren dèye.",
+    "sin": "tambour fren",
+    "ant": "disk fren",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "tambour fren",
+    "kat": "n",
+    "def": "tambour",
+    "egz": "Tambour fren wouye.",
+    "sin": "tambour",
+    "tem": "mekanik"
   },
   {
     "mot": "tan",
@@ -13717,6 +16697,22 @@
     "egz": "Tande mizik chak swa.",
     "sin": "ekoute",
     "tem": "mizik"
+  },
+  {
+    "mot": "tank dlo",
+    "kat": "n",
+    "def": "rezèvwa dlo",
+    "egz": "Tank dlo 200 galon.",
+    "sin": "rezèvwa dlo",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "tank gaz",
+    "kat": "n",
+    "def": "rezèvwa pou gaz",
+    "egz": "Tank gaz la plen.",
+    "sin": "rezèvwa gaz",
+    "tem": "mekanik"
   },
   {
     "mot": "tankou",
@@ -13789,6 +16785,14 @@
     "tem": "kilti"
   },
   {
+    "mot": "tayrod",
+    "kat": "n",
+    "def": "siy ki konekte direksyon ak wou",
+    "egz": "Tayrod la kase.",
+    "sin": "barbar direksyon",
+    "tem": "mekanik"
+  },
+  {
     "mot": "tayè",
     "kat": "n",
     "def": "moun ki fè rad",
@@ -13810,6 +16814,22 @@
     "egz": "Li bwè te sitwon anvan dòmi.",
     "sin": "tisan",
     "tem": "manje"
+  },
+  {
+    "mot": "Te",
+    "kat": "n",
+    "def": "rasò 3 sòti",
+    "egz": "Te pou separe tib.",
+    "sin": "rasò T",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "teflon",
+    "kat": "n",
+    "def": "tep pou file vis",
+    "egz": "Teflon pou jwen.",
+    "sin": "tep teflon",
+    "tem": "plonbri"
   },
   {
     "mot": "teknisyen",
@@ -13850,6 +16870,14 @@
     "var": "spò"
   },
   {
+    "mot": "tep teflon",
+    "kat": "n",
+    "def": "teflon",
+    "egz": "Tep teflon blan.",
+    "sin": "teflon",
+    "tem": "plonbri"
+  },
+  {
     "mot": "teras",
     "kat": "n",
     "def": "platfòm pla deyò yon kay oswa sou twati a",
@@ -13871,6 +16899,14 @@
     "def": "teren pou foutbòl",
     "egz": "Teren foutbòl Kanpèch.",
     "tem": "spò"
+  },
+  {
+    "mot": "thermostat",
+    "kat": "n",
+    "def": "kowòl",
+    "egz": "Thermostat la pa louvri.",
+    "sin": "kowòl",
+    "tem": "mekanik"
   },
   {
     "mot": "ti",
@@ -14020,11 +17056,32 @@
     "tem": "animal"
   },
   {
+    "mot": "ti pyè",
+    "kat": "n",
+    "def": "fondasyon ti",
+    "egz": "Ti pyè anba mi.",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "ti tanbou",
     "kat": "n",
     "def": "ti tanbou aksantyèl",
     "egz": "Ti tanbou ak manman tanbou.",
     "tem": "mizik"
+  },
+  {
+    "mot": "tib direksyon",
+    "kat": "n",
+    "def": "tib pou likid direksyon",
+    "egz": "Tib direksyon fwit.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "tib echapman",
+    "kat": "n",
+    "def": "tib pou gaz",
+    "egz": "Tib echapman wouye.",
+    "tem": "mekanik"
   },
   {
     "mot": "tibab",
@@ -14112,12 +17169,28 @@
     "tem": "fanmi"
   },
   {
+    "mot": "tiwa",
+    "kat": "n",
+    "def": "kès ki glise nan mèb",
+    "egz": "Tiwa nan komòd.",
+    "sin": "drawer",
+    "tem": "chapantri"
+  },
+  {
     "mot": "tiyo",
     "kat": "n",
     "def": "tib pou pase dlo nan yon kay oswa tè",
     "egz": "Tiyo a kase dlo kap fè gaspiyaj.",
     "sin": "pip",
     "tem": "kay"
+  },
+  {
+    "mot": "tiyo",
+    "kat": "n",
+    "def": "tib pou dlo",
+    "egz": "Tiyo a kase.",
+    "sin": "tib",
+    "tem": "plonbri"
   },
   {
     "mot": "tomat",
@@ -14182,6 +17255,14 @@
     "tem": "fanmi"
   },
   {
+    "mot": "tonvi",
+    "kat": "n",
+    "def": "siy ki vire vis ak tèt etwal",
+    "egz": "Tonvi Phillips.",
+    "sin": "tournèvi",
+    "tem": "mekanik"
+  },
+  {
     "mot": "tonè",
     "kat": "n",
     "def": "son fò nan loraj",
@@ -14244,6 +17325,14 @@
     "tem": "animal"
   },
   {
+    "mot": "toufe",
+    "kat": "v",
+    "def": "lè motè stop pou kont li",
+    "egz": "Motè a toufe.",
+    "sin": "kale",
+    "tem": "mekanik"
+  },
+  {
     "mot": "tounen",
     "kat": "v",
     "def": "Retounen; vin tounen; vire; ale epi vini.",
@@ -14262,6 +17351,14 @@
     "def": "gwo flè jòn ki swiv solèy",
     "egz": "Tournesol nan jaden.",
     "tem": "plant"
+  },
+  {
+    "mot": "tournèvi",
+    "kat": "n",
+    "def": "tonvi",
+    "egz": "Tournèvi plat.",
+    "sin": "tonvi",
+    "tem": "mekanik"
   },
   {
     "mot": "tous",
@@ -14377,6 +17474,38 @@
     "def": "voye lajan",
     "egz": "Transfè Western Union.",
     "tem": "komès-lajan"
+  },
+  {
+    "mot": "transfòmatè",
+    "kat": "n",
+    "def": "siy ki chanje vòltaj",
+    "egz": "Transfòmatè sou poto.",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "transmisyon",
+    "kat": "n",
+    "def": "sistèm ki pase pouvwa",
+    "egz": "Transmisyon a bezwen swen.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "transmisyon manyèl",
+    "kat": "n",
+    "def": "kote chofè chanje vitès",
+    "egz": "Transmisyon manyèl ak klitch.",
+    "sin": "manyèl",
+    "ant": "otomatik",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "transmisyon otomatik",
+    "kat": "n",
+    "def": "transmisyon ki chanje pou kont li",
+    "egz": "Transmisyon otomatik fasil.",
+    "sin": "otomatik",
+    "ant": "manyèl",
+    "tem": "mekanik"
   },
   {
     "mot": "transpirasyon",
@@ -14508,6 +17637,22 @@
     "tem": "mizik"
   },
   {
+    "mot": "trouwèl",
+    "kat": "n",
+    "def": "zouti pou plastre",
+    "egz": "Trouwèl pou siman.",
+    "sin": "trowèl",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "trowèl",
+    "kat": "n",
+    "def": "trouwèl",
+    "egz": "Trowèl pou mason.",
+    "sin": "trouwèl",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "trumpèt",
     "kat": "n",
     "def": "enstriman ak vant",
@@ -14528,6 +17673,14 @@
     "def": "gwo dlo lanmè ki monte",
     "egz": "Tsunami apre tranbleman tè.",
     "tem": "tan-meteo"
+  },
+  {
+    "mot": "tuile",
+    "kat": "n",
+    "def": "siy fèt ak fini",
+    "egz": "Tuile pou twati.",
+    "sin": "twazile",
+    "tem": "konstriksyon"
   },
   {
     "mot": "turkwaz",
@@ -14581,11 +17734,35 @@
     "tem": "kay"
   },
   {
+    "mot": "twati bidonvil",
+    "kat": "n",
+    "def": "twati tòl",
+    "egz": "Twati bidonvil pou kanbiz.",
+    "sin": "tòl",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "twazile",
+    "kat": "n",
+    "def": "tuile",
+    "egz": "Twazile pou bèl twati.",
+    "sin": "tuile",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "twazyèm",
     "kat": "adj",
     "def": "nimewo òdinal 3yèm",
     "egz": "Twazyèm elèv.",
     "tem": "nimewo"
+  },
+  {
+    "mot": "twen",
+    "kat": "n",
+    "def": "tib ki transpòte dlo",
+    "egz": "Twen la chire.",
+    "sin": "tib",
+    "tem": "mekanik"
   },
   {
     "mot": "twofe",
@@ -14676,6 +17853,61 @@
     "tem": "kò"
   },
   {
+    "mot": "tèt douch",
+    "kat": "n",
+    "def": "siy ki bay dlo douch",
+    "egz": "Tèt douch nèf.",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "Tèt Etwal",
+    "kat": "n",
+    "def": "tèt vis Phillips",
+    "egz": "Tèt Etwal nan tonvi.",
+    "sin": "Phillips",
+    "ant": "Tèt Plat",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "tèt motè",
+    "kat": "n",
+    "def": "anwo motè",
+    "egz": "Tèt motè a kase.",
+    "sin": "kilas",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "Tèt Plat",
+    "kat": "n",
+    "def": "tèt vis plat",
+    "egz": "Tèt Plat tradisyonèl.",
+    "sin": "Phillips ranvès",
+    "ant": "Tèt Etwal",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "Tòks",
+    "kat": "n",
+    "def": "tèt vis ak 6 pwen",
+    "egz": "Tòks T20.",
+    "sin": "Torx",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "tòl",
+    "kat": "n",
+    "def": "matyè metal pou twati",
+    "egz": "Tòl galvanize.",
+    "tem": "konstriksyon"
+  },
+  {
+    "mot": "tòl galvanise",
+    "kat": "n",
+    "def": "tòl avèk zenk",
+    "egz": "Tòl galvanise pou dirè.",
+    "tem": "konstriksyon"
+  },
+  {
     "mot": "uit",
     "kat": "n",
     "def": "nimewo 8",
@@ -14752,6 +17984,14 @@
     "var": "natirèl"
   },
   {
+    "mot": "valv",
+    "kat": "n",
+    "def": "siy ki ouvri/fèmen pòt motè",
+    "egz": "Valv yo mete dèyè.",
+    "sin": "soupap",
+    "tem": "mekanik"
+  },
+  {
     "mot": "van",
     "kat": "n",
     "def": "Mouvman lè; souf ki deplase rapidman.",
@@ -14807,6 +18047,29 @@
     "egz": "Vant mwen ap fè mwen mal.",
     "ant": "do",
     "tem": "kò"
+  },
+  {
+    "mot": "vant tib",
+    "kat": "n",
+    "def": "twou pou lè",
+    "egz": "Vant tib nan tit.",
+    "sin": "ventilasyon",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "vantilatè",
+    "kat": "n",
+    "def": "siy ki vante motè",
+    "egz": "Vantilatè a kase.",
+    "tem": "mekanik"
+  },
+  {
+    "mot": "variyon",
+    "kat": "n",
+    "def": "tansyon ki monte/desann",
+    "egz": "Variyon brile aparèy.",
+    "sin": "fluktiyasyon",
+    "tem": "elektrisite"
   },
   {
     "mot": "vejetasyon",
@@ -14887,6 +18150,14 @@
     "tem": "kilti"
   },
   {
+    "mot": "vilbreken",
+    "kat": "n",
+    "def": "vyebrekèl",
+    "egz": "Vilbreken trè enpòtan.",
+    "sin": "vyebrekèl",
+    "tem": "mekanik"
+  },
+  {
     "mot": "vini",
     "kat": "v",
     "def": "Deplase vin jwenn; rive; deplase soti kote pou rive isi.",
@@ -14916,6 +18187,14 @@
     "tem": "plant"
   },
   {
+    "mot": "vis",
+    "kat": "n",
+    "def": "siy ak filyè",
+    "egz": "Vis lou.",
+    "sin": "boulon",
+    "tem": "mekanik"
+  },
+  {
     "mot": "vit",
     "kat": "n",
     "def": "panèl trans nan machin",
@@ -14937,6 +18216,21 @@
     "def": "nèsesite nan manje",
     "egz": "Vitamin enpòtan pou pitit.",
     "tem": "lasante"
+  },
+  {
+    "mot": "vitre",
+    "kat": "n",
+    "def": "vit pou fenèt",
+    "egz": "Vitre kase nan tanpèt.",
+    "tem": "chapantri",
+    "var": "fenèt"
+  },
+  {
+    "mot": "vitès",
+    "kat": "n",
+    "def": "rapò transmisyon",
+    "egz": "Vitès premye, dezyèm.",
+    "tem": "mekanik"
   },
   {
     "mot": "viv",
@@ -14992,6 +18286,14 @@
     "tem": "transpò"
   },
   {
+    "mot": "volan",
+    "kat": "n",
+    "def": "siy pou kondui",
+    "egz": "Volan an pwòp.",
+    "tem": "mekanik",
+    "var": "veyikil"
+  },
+  {
     "mot": "vole",
     "kat": "v",
     "def": "deplase nan lè",
@@ -15014,6 +18316,14 @@
     "egz": "Volièbòl plaj.",
     "sin": "vole",
     "tem": "spò"
+  },
+  {
+    "mot": "voltimèt",
+    "kat": "n",
+    "def": "milimèt pou vòltaj",
+    "egz": "Voltimèt mwen digital.",
+    "ant": "ampèmèt",
+    "tem": "elektrisite"
   },
   {
     "mot": "vomisman",
@@ -15138,6 +18448,14 @@
     "tem": "transpò"
   },
   {
+    "mot": "vyebrekèl",
+    "kat": "n",
+    "def": "siy ki tounen motè",
+    "egz": "Vyebrekèl la fò.",
+    "sin": "vilbreken",
+    "tem": "mekanik"
+  },
+  {
     "mot": "vyolon",
     "kat": "n",
     "def": "violon",
@@ -15182,6 +18500,14 @@
     "def": "gason ki madanm li mouri",
     "egz": "Vèf la ap leve pitit yo poukont li.",
     "tem": "fanmi"
+  },
+  {
+    "mot": "vèrnis",
+    "kat": "n",
+    "def": "lakray ki bay briyans",
+    "egz": "Vèrnis akajou.",
+    "sin": "vernis",
+    "tem": "chapantri"
   },
   {
     "mot": "vès",
@@ -15277,6 +18603,14 @@
     "tem": "peyizaj"
   },
   {
+    "mot": "vòltaj",
+    "kat": "n",
+    "def": "fòs elektrisite",
+    "egz": "Vòltaj 110 oswa 220.",
+    "sin": "tansyon",
+    "tem": "elektrisite"
+  },
+  {
     "mot": "vòt",
     "kat": "n",
     "def": "eleksyon",
@@ -15293,12 +18627,44 @@
     "tem": "animal"
   },
   {
+    "mot": "wat",
+    "kat": "n",
+    "def": "watch",
+    "egz": "Wat pou kalkile.",
+    "sin": "watch",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "watch",
+    "kat": "n",
+    "def": "inite pouvwa",
+    "egz": "Anpoul 60 watch.",
+    "sin": "wat",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "water heater",
+    "kat": "n",
+    "def": "chofè dlo",
+    "egz": "Water heater 40 galon.",
+    "sin": "chofè dlo",
+    "tem": "plonbri"
+  },
+  {
     "mot": "wete",
     "kat": "v",
     "def": "retire rad oswa bagay ki sou ou",
     "egz": "Wete soulye ou anvan ou antre nan kay.",
     "ant": "mete",
     "tem": "rad"
+  },
+  {
+    "mot": "wins",
+    "kat": "n",
+    "def": "ekselatè",
+    "egz": "Wins pou monte siman.",
+    "sin": "ekselatè",
+    "tem": "konstriksyon"
   },
   {
     "mot": "wo",
@@ -15402,6 +18768,14 @@
     "def": "plant fen long",
     "egz": "Wozo nan dlo.",
     "tem": "plant"
+  },
+  {
+    "mot": "wrench",
+    "kat": "n",
+    "def": "klè",
+    "egz": "Wrench enpèyak.",
+    "sin": "klè",
+    "tem": "mekanik"
   },
   {
     "mot": "wè",
@@ -15759,6 +19133,13 @@
     "tem": "mizik"
   },
   {
+    "mot": "zouti",
+    "kat": "n",
+    "def": "siy pou travay",
+    "egz": "Zouti mekanisyen.",
+    "tem": "mekanik"
+  },
+  {
     "mot": "zwa",
     "kat": "n",
     "def": "zwazo ki sanble ak kanna",
@@ -15809,5 +19190,28 @@
     "egz": "CD nan mache.",
     "sin": "kòmpak",
     "tem": "mizik"
+  },
+  {
+    "mot": "circuit",
+    "kat": "n",
+    "def": "sikui",
+    "egz": "Circuit ouvri.",
+    "sin": "sikui",
+    "tem": "elektrisite"
+  },
+  {
+    "mot": "CPVC",
+    "kat": "n",
+    "def": "PVC pou dlo cho",
+    "egz": "CPVC pou dlo cho.",
+    "tem": "plonbri"
+  },
+  {
+    "mot": "UPS",
+    "kat": "n",
+    "def": "siy ki kontinye bay kouran",
+    "egz": "UPS pou òdinatè.",
+    "sin": "onduleur",
+    "tem": "elektrisite"
   }
 ]
