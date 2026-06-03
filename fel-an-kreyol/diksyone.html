@@ -791,16 +791,51 @@ function renderGroup(letter, entries, q) {
 }
 
 // ── Audio ──
+
+// Convert Kreyòl spelling to phonetic form French TTS will render correctly
+function kreyolToPhonetic(text) {
+  let w = text;
+
+  // 1. Kreyòl digraphs & special combos first
+  w = w.replace(/tch/gi, 'tch');          // tch = /tʃ/ — ok in French
+  w = w.replace(/dj/gi, 'dj');            // dj = /dʒ/ — ok in French
+  w = w.replace(/an/gi, 'an');            // nasal — French handles fine
+  w = w.replace(/en/gi, 'en');            // nasal — fine
+  w = w.replace(/on/gi, 'on');            // nasal — fine
+  w = w.replace(/in/gi, 'in');            // nasal — fine
+
+  // 2. Kreyòl vowels
+  w = w.replace(/ò/g, 'o');              // open o — approximate with 'o'
+  w = w.replace(/è/g, 'è');              // open e — French has this
+  w = w.replace(/ou/gi, 'ou');           // /u/ — same in French
+
+  // 3. 'w' at word start or after space → 'ou' (French has no native /w/)
+  w = w.replace(/(^|\s)w/gi, '$1ou');
+
+  // 4. CRITICAL: French drops final consonants — Kreyòl pronounces them
+  // Add a faint 'e' after final consonants to force French TTS to say them
+  w = w.replace(/([bdgklmnprstvz])$/i, '$1e');
+  w = w.replace(/ch$/i, 'che');
+  w = w.replace(/f$/i, 'fe');
+
+  // 5. Handle 'ay' → 'aïe', 'oy' → 'oïe' for correct glide
+  w = w.replace(/ay/gi, 'aïe');
+  w = w.replace(/oy/gi, 'oïe');
+
+  return w;
+}
+
 function speakWord(mot, btn) {
   if (!window.speechSynthesis) return;
   window.speechSynthesis.cancel();
-  const utt = new SpeechSynthesisUtterance(mot);
-  // Try French voice as closest to Kreyòl
+  const phonetic = kreyolToPhonetic(mot);
+  const utt = new SpeechSynthesisUtterance(phonetic);
+  // Use French voice as base — closest phoneme set to Kreyòl
   const voices = window.speechSynthesis.getVoices();
   const fr = voices.find(v => v.lang.startsWith('fr')) || voices[0];
   if (fr) utt.voice = fr;
   utt.lang = 'fr-FR';
-  utt.rate = 0.85;
+  utt.rate = 0.82;
   utt.pitch = 1;
   btn.classList.add('speaking');
   utt.onend = () => btn.classList.remove('speaking');
