@@ -793,34 +793,45 @@ function renderGroup(letter, entries, q) {
 // ── Audio ──
 
 // Convert Kreyòl spelling to phonetic form French TTS will render correctly
+// Rule: NO silent letters in Kreyòl — every letter is pronounced
 function kreyolToPhonetic(text) {
   let w = text;
 
-  // 1. Kreyòl digraphs & special combos first
-  w = w.replace(/tch/gi, 'tch');          // tch = /tʃ/ — ok in French
-  w = w.replace(/dj/gi, 'dj');            // dj = /dʒ/ — ok in French
-  w = w.replace(/an/gi, 'an');            // nasal — French handles fine
-  w = w.replace(/en/gi, 'en');            // nasal — fine
-  w = w.replace(/on/gi, 'on');            // nasal — fine
-  w = w.replace(/in/gi, 'in');            // nasal — fine
+  // Step 1: protect nasal combos before touching individual vowels
+  w = w.replace(/an/gi,  'an');   // /ã/ — French nasal, fine
+  w = w.replace(/en/gi,  'an');   // Kreyòl 'en' = same nasal as 'an'
+  w = w.replace(/on/gi,  'on');   // /õ/ — French nasal, fine
+  w = w.replace(/in/gi,  'in');   // /ẽ/ — French nasal, fine
 
-  // 2. Kreyòl vowels
-  w = w.replace(/ò/g, 'o');              // open o — approximate with 'o'
-  w = w.replace(/è/g, 'è');              // open e — French has this
-  w = w.replace(/ou/gi, 'ou');           // /u/ — same in French
+  // Step 2: digraphs
+  w = w.replace(/ou/gi,  'ou');   // /u/ — same in French
+  w = w.replace(/tch/gi, 'tch'); // /tʃ/ — ok in French
+  w = w.replace(/dj/gi,  'dj');  // /dʒ/ — ok in French
 
-  // 3. 'w' at word start or after space → 'ou' (French has no native /w/)
-  w = w.replace(/(^|\s)w/gi, '$1ou');
+  // Step 3: accented vowels
+  // ò = open /ɔ/ — French 'o' in closed syllable approximates this
+  w = w.replace(/ò/g, 'ô');      // 'ô' forces French TTS to open /ɔ/
+  // è = open /ɛ/ — French 'è' is perfect
+  w = w.replace(/è/g, 'è');
 
-  // 4. CRITICAL: French drops final consonants — Kreyòl pronounces them
-  // Add a faint 'e' after final consonants to force French TTS to say them
-  w = w.replace(/([bdgklmnprstvz])$/i, '$1e');
-  w = w.replace(/ch$/i, 'che');
-  w = w.replace(/f$/i, 'fe');
+  // Step 4: 'e' — in Kreyòl ALWAYS pronounced /e/, NEVER silent
+  // French makes final 'e' silent → replace with 'é' everywhere
+  w = w.replace(/e/g, 'é');
 
-  // 5. Handle 'ay' → 'aïe', 'oy' → 'oïe' for correct glide
-  w = w.replace(/ay/gi, 'aïe');
-  w = w.replace(/oy/gi, 'oïe');
+  // Step 5: 'o' — in Kreyòl always pronounced /o/, never silent
+  // French 'o' mid-word is fine; final 'o' also fine in French
+
+  // Step 6: 'w' → 'ou' (French has no native /w/ phoneme)
+  w = w.replace(/\bw/gi, 'ou');
+
+  // Step 7: glides
+  w = w.replace(/ay/gi, 'aïe');  // /aj/
+  w = w.replace(/oy/gi, 'oïe');  // /oj/
+  w = w.replace(/iy/gi, 'iye');  // /ij/
+
+  // Step 8: final consonants — French drops them, Kreyòl pronounces all
+  // Force pronunciation by appending a very short 'é'
+  w = w.replace(/(ch|[bcdfgklmnprstvz])$/i, '$1é');
 
   return w;
 }
