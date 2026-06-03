@@ -105,6 +105,9 @@ body { font-family: 'Source Serif 4', Georgia, serif; color: var(--text); backgr
 .entry-card:hover { box-shadow: 0 4px 20px rgba(27,58,140,0.1); border-color: rgba(27,58,140,0.2); }
 .entry-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
 .entry-emoji { font-size: 1.4rem; line-height: 1; flex-shrink: 0; }
+.entry-audio { background: none; border: none; cursor: pointer; font-size: 1rem; padding: 0.1rem 0.3rem; border-radius: 4px; opacity: 0.4; transition: opacity 0.2s, transform 0.15s; margin-left: auto; }
+.entry-audio:hover { opacity: 1; }
+.entry-audio.speaking { opacity: 1; transform: scale(1.2); }
 .entry-mot {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.2rem; font-weight: 700; color: var(--navy-dark);
@@ -773,6 +776,7 @@ function renderGroup(letter, entries, q) {
             ${e.emoji ? `<span class="entry-emoji">${e.emoji}</span>` : ''}
             <span class="entry-mot">${highlight(e.mot, q)}</span>
             <span class="entry-kat">${e.kat}</span>
+            <button class="entry-audio" onclick="speakWord('${e.mot.replace(/'/g,"\\'")}', this)" title="Koute pwononsyasyon">🔊</button>
           </div>
           <div class="entry-def">${highlight(e.def, q)}</div>
           ${e.egz ? `<div class="entry-egz">${highlight(e.egz, q)}</div>` : ''}
@@ -784,6 +788,24 @@ function renderGroup(letter, entries, q) {
         </div>`).join('')}
     </div>
   </div>`;
+}
+
+// ── Audio ──
+function speakWord(mot, btn) {
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const utt = new SpeechSynthesisUtterance(mot);
+  // Try French voice as closest to Kreyòl
+  const voices = window.speechSynthesis.getVoices();
+  const fr = voices.find(v => v.lang.startsWith('fr')) || voices[0];
+  if (fr) utt.voice = fr;
+  utt.lang = 'fr-FR';
+  utt.rate = 0.85;
+  utt.pitch = 1;
+  btn.classList.add('speaking');
+  utt.onend = () => btn.classList.remove('speaking');
+  utt.onerror = () => btn.classList.remove('speaking');
+  window.speechSynthesis.speak(utt);
 }
 
 // ── Search ──
