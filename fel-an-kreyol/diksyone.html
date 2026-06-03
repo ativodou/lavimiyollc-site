@@ -103,7 +103,8 @@ body { font-family: 'Source Serif 4', Georgia, serif; color: var(--text); backgr
   border: 1px solid var(--border); transition: box-shadow 0.2s, border-color 0.2s;
 }
 .entry-card:hover { box-shadow: 0 4px 20px rgba(27,58,140,0.1); border-color: rgba(27,58,140,0.2); }
-.entry-head { display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+.entry-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; flex-wrap: wrap; }
+.entry-emoji { font-size: 1.4rem; line-height: 1; flex-shrink: 0; }
 .entry-mot {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.2rem; font-weight: 700; color: var(--navy-dark);
@@ -769,6 +770,7 @@ function renderGroup(letter, entries, q) {
       ${entries.map(e => `
         <div class="entry-card">
           <div class="entry-head">
+            ${e.emoji ? `<span class="entry-emoji">${e.emoji}</span>` : ''}
             <span class="entry-mot">${highlight(e.mot, q)}</span>
             <span class="entry-kat">${e.kat}</span>
           </div>
