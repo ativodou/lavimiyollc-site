@@ -829,10 +829,6 @@ function kreyolToPhonetic(text) {
   w = w.replace(/oy/gi, 'oïe');  // /oj/
   w = w.replace(/iy/gi, 'iye');  // /ij/
 
-  // Step 8: final consonants — French drops them, Kreyòl pronounces all
-  // Force pronunciation by appending a very short 'é'
-  w = w.replace(/(ch|[bcdfgklmnprstvz])$/i, '$1é');
-
   return w;
 }
 
