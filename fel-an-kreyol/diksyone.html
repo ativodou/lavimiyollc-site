@@ -797,7 +797,7 @@ function renderGroup(letter, entries, q) {
 function kreyolToPhonetic(text) {
   let w = text;
 
-  // Step 1: protect nasal combos before touching individual vowels
+  // Step 1: protect nasal combos first
   w = w.replace(/an/gi,  'an');   // /ã/ — French nasal, fine
   w = w.replace(/en/gi,  'an');   // Kreyòl 'en' = same nasal as 'an'
   w = w.replace(/on/gi,  'on');   // /õ/ — French nasal, fine
@@ -805,29 +805,30 @@ function kreyolToPhonetic(text) {
 
   // Step 2: digraphs
   w = w.replace(/ou/gi,  'ou');   // /u/ — same in French
-  w = w.replace(/tch/gi, 'tch'); // /tʃ/ — ok in French
-  w = w.replace(/dj/gi,  'dj');  // /dʒ/ — ok in French
+  w = w.replace(/tch/gi, 'tch');  // /tʃ/
+  w = w.replace(/dj/gi,  'dj');   // /dʒ/
 
-  // Step 3: accented vowels
-  // ò = open /ɔ/ — French 'o' in closed syllable approximates this
-  w = w.replace(/ò/g, 'ô');      // 'ô' forces French TTS to open /ɔ/
-  // è = open /ɛ/ — French 'è' is perfect
-  w = w.replace(/è/g, 'è');
+  // Step 3: s → ss so French ALWAYS reads it as /s/, never /z/ between vowels
+  w = w.replace(/s/g, 'ss');
 
-  // Step 4: 'e' — in Kreyòl ALWAYS pronounced /e/, NEVER silent
-  // French makes final 'e' silent → replace with 'é' everywhere
+  // Step 4: accented vowels
+  w = w.replace(/ò/g, 'ô');      // open /ɔ/ — 'ô' cues French TTS
+  w = w.replace(/è/g, 'è');      // open /ɛ/ — French handles perfectly
+
+  // Step 5: 'e' — in Kreyòl ALWAYS /e/, NEVER silent
   w = w.replace(/e/g, 'é');
 
-  // Step 5: 'o' — in Kreyòl always pronounced /o/, never silent
-  // French 'o' mid-word is fine; final 'o' also fine in French
-
-  // Step 6: 'w' → 'ou' (French has no native /w/ phoneme)
+  // Step 6: 'w' → 'ou'
   w = w.replace(/\bw/gi, 'ou');
 
   // Step 7: glides
-  w = w.replace(/ay/gi, 'aïe');  // /aj/
-  w = w.replace(/oy/gi, 'oïe');  // /oj/
-  w = w.replace(/iy/gi, 'iye');  // /ij/
+  w = w.replace(/ay/gi, 'aïe');
+  w = w.replace(/oy/gi, 'oïe');
+
+  // Step 8: final consonants French drops — add é to force pronunciation
+  // Only target consonants French silences: t, p, d, b, k, v, z
+  // (r, f, l are already pronounced by French; nasal n/m handled above)
+  w = w.replace(/([tpdbkvz])$/i, '$1é');
 
   return w;
 }
