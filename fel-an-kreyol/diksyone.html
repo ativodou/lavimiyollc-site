@@ -834,7 +834,6 @@ function ipaToFrench(ipa) {
 
   // Fricatives & nasals
   w = w.replace(/ʃ/g, 'ch');
-  w = w.replace(/ʒ/g, 'j');
   w = w.replace(/ɲ/g, 'gn');
 
   // Nasal vowels
@@ -847,7 +846,8 @@ function ipaToFrench(ipa) {
   w = w.replace(/ɔ/g, 'ô');     // open o → French ô
   w = w.replace(/u/g,  'ou');   // /u/ → French ou
   w = w.replace(/e/g,  'é');    // closed e → French é (never silent)
-  w = w.replace(/j/g,  'y');    // /j/ glide → French y
+  w = w.replace(/j/g,  'y');    // /j/ glide → French y (must come before ʒ→j)
+  w = w.replace(/ʒ/g,  'j');    // /ʒ/ → French j (after j→y to avoid double conversion)
   w = w.replace(/ʁ/g,  'r');    // uvular r
 
   // s: use ss so French never voices it to /z/
