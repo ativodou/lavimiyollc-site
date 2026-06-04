@@ -825,6 +825,10 @@ function kreyolToPhonetic(text) {
   w = w.replace(/ay/gi, 'aïe');
   w = w.replace(/oy/gi, 'oïe');
 
+  // Step 8: final consonants French drops — double them to force pronunciation
+  // Doubling cues French TTS to articulate the consonant without adding a vowel
+  w = w.replace(/([tpdbkvzg])$/i, '$1$1');
+
   return w;
 }
 
