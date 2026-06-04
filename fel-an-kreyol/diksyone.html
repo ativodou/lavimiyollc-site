@@ -792,44 +792,76 @@ function renderGroup(letter, entries, q) {
 
 // ── Audio ──
 
-// Convert Kreyòl spelling to phonetic form French TTS will render correctly
-// Rule: NO silent letters in Kreyòl — every letter is pronounced
-function kreyolToPhonetic(text) {
-  let w = text;
+// ── Kreyòl Phonetics ──
 
-  // Step 1: protect nasal combos first
-  w = w.replace(/an/gi,  'an');   // /ã/ — French nasal, fine
-  w = w.replace(/en/gi,  'an');   // Kreyòl 'en' = same nasal as 'an'
-  w = w.replace(/on/gi,  'on');   // /õ/ — French nasal, fine
-  w = w.replace(/in/gi,  'in');   // /ẽ/ — French nasal, fine
+// Step 1: Kreyòl orthography → IPA (ground truth)
+function kreyolToIPA(text) {
+  let w = text.toLowerCase().trim();
 
-  // Step 2: digraphs
-  w = w.replace(/ou/gi,  'ou');   // /u/ — same in French
-  w = w.replace(/tch/gi, 'tch');  // /tʃ/
-  w = w.replace(/dj/gi,  'dj');   // /dʒ/
+  // Multi-char patterns — longest first, order is critical
+  w = w.replace(/tch/g, 'ʧ');   // /tʃ/
+  w = w.replace(/dj/g,  'ʤ');   // /dʒ/
+  w = w.replace(/ny/g,  'ɲ');   // palatal nasal
+  w = w.replace(/ou/g,  'u');   // /u/
+  w = w.replace(/an/g,  'ɑ̃');   // nasal a
+  w = w.replace(/en/g,  'ɛ̃');   // nasal e (same as in)
+  w = w.replace(/on/g,  'ɔ̃');   // nasal o
+  w = w.replace(/in/g,  'ɛ̃');   // nasal i
+  w = w.replace(/ch/g,  'ʃ');   // /ʃ/
 
-  // Step 3: s → ss so French ALWAYS reads it as /s/, never /z/ between vowels
-  w = w.replace(/s/g, 'ss');
+  // Accented vowels
+  w = w.replace(/è/g, 'ɛ');     // open e
+  w = w.replace(/ò/g, 'ɔ');     // open o
 
-  // Step 4: accented vowels
-  w = w.replace(/ò/g, 'ô');      // open /ɔ/ — 'ô' cues French TTS
-  w = w.replace(/è/g, 'è');      // open /ɛ/ — French handles perfectly
-
-  // Step 5: 'e' — in Kreyòl ALWAYS /e/, NEVER silent
-  w = w.replace(/e/g, 'é');
-
-  // Step 6: 'w' → 'ou'
-  w = w.replace(/\bw/gi, 'ou');
-
-  // Step 7: glides
-  w = w.replace(/ay/gi, 'aïe');
-  w = w.replace(/oy/gi, 'oïe');
-
-  // Step 8: final consonants French drops — double them to force pronunciation
-  // Doubling cues French TTS to articulate the consonant without adding a vowel
-  w = w.replace(/([tpdbkvzg])$/i, '$1$1');
+  // Single consonants with IPA equivalents
+  w = w.replace(/j/g, 'ʒ');     // /ʒ/ (like French j)
+  w = w.replace(/y/g, 'j');     // /j/ glide
+  w = w.replace(/r/g, 'ʁ');     // uvular r
+  w = w.replace(/h/g, '');      // silent in Kreyòl
+  w = w.replace(/s/g, 's');     // always /s/ never /z/
+  // b,d,f,g,k,l,m,n,p,t,v,w,z stay the same
 
   return w;
+}
+
+// Step 2: IPA → phonetic string French TTS can render accurately
+function ipaToFrench(ipa) {
+  let w = ipa;
+
+  // Affricates
+  w = w.replace(/ʧ/g, 'tch');
+  w = w.replace(/ʤ/g, 'dj');
+
+  // Fricatives & nasals
+  w = w.replace(/ʃ/g, 'ch');
+  w = w.replace(/ʒ/g, 'j');
+  w = w.replace(/ɲ/g, 'gn');
+
+  // Nasal vowels
+  w = w.replace(/ɑ̃/g, 'an');
+  w = w.replace(/ɛ̃/g, 'in');
+  w = w.replace(/ɔ̃/g, 'on');
+
+  // Vowels
+  w = w.replace(/ɛ/g, 'è');     // open e → French è
+  w = w.replace(/ɔ/g, 'ô');     // open o → French ô
+  w = w.replace(/u/g,  'ou');   // /u/ → French ou
+  w = w.replace(/e/g,  'é');    // closed e → French é (never silent)
+  w = w.replace(/j/g,  'y');    // /j/ glide → French y
+  w = w.replace(/ʁ/g,  'r');    // uvular r
+
+  // s: use ss so French never voices it to /z/
+  w = w.replace(/s/g,  'ss');
+
+  // Final consonants French drops: double to force articulation
+  // (r, f, l already pronounced by French — skip those)
+  w = w.replace(/([tpdbkgvz])$/i, '$1$1');
+
+  return w;
+}
+
+function kreyolToPhonetic(text) {
+  return ipaToFrench(kreyolToIPA(text));
 }
 
 function speakWord(mot, btn) {
