@@ -825,11 +825,6 @@ function kreyolToPhonetic(text) {
   w = w.replace(/ay/gi, 'aïe');
   w = w.replace(/oy/gi, 'oïe');
 
-  // Step 8: final consonants French drops — add é to force pronunciation
-  // Only target consonants French silences: t, p, d, b, k, v, z
-  // (r, f, l are already pronounced by French; nasal n/m handled above)
-  w = w.replace(/([tpdbkvz])$/i, '$1é');
-
   return w;
 }
 
