@@ -1,838 +1,5 @@
 [
   {
-    "mot": "ABS",
-    "kat": "n",
-    "def": "sistèm fren anti-blokaj ki anpeche wou machin bloke lè ou frene fò",
-    "egz": "ABS pou sekirite.",
-    "sin": "anti-lock",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "ATF",
-    "kat": "n",
-    "def": "luil transmisyon otomatik",
-    "egz": "ATF wouj.",
-    "sin": "luil transmisyon",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "Afrik",
-    "kat": "n",
-    "def": "pi gwo kontinan sou tè a, kote sijès sivilizasyon imen yo kòmanse",
-    "egz": "Afrik orijin nou.",
-    "sin": "Lafrik",
-    "tem": "kilti",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Amerik Latin",
-    "kat": "n",
-    "def": "rejyon Amerik kote moun pale Panyòl ak Pòtigè",
-    "egz": "Ayiti pafwa gwoupe ak Amerik Latin.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Anglè",
-    "kat": "n",
-    "def": "lang ki pale nan Anglètè ak Etazini",
-    "egz": "Anglè sèvi pou kominikasyon entènasyonal.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Ati",
-    "kat": "n",
-    "def": "pi wo lidè relijye nan òganizasyon vodou ayisyen",
-    "egz": "Ati Nasyonal.",
-    "sin": "Ati Nasyonal",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Ati Nasyonal",
-    "kat": "n",
-    "def": "lidè prensipal ki dirije tout sosyete sèkrè vodou nan nivo nasyonal",
-    "egz": "Ati Nasyonal lidè spirityèl.",
-    "sin": "Ati",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Ayisyen",
-    "kat": "n",
-    "def": "moun ki fèt oswa ki soti nan peyi Ayiti",
-    "egz": "Ayisyen yo fyè de istwa yo.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Ayiti",
-    "kat": "n",
-    "def": "peyi endepandan nan Karayib la ki premye repiblik nwa nan istwa monn",
-    "egz": "Ayiti chè.",
-    "sin": "Repiblik Ayiti",
-    "tem": "kilti",
-    "emoji": "🇭🇹"
-  },
-  {
-    "mot": "Azi",
-    "kat": "n",
-    "def": "pi gwo kontinen sou latè",
-    "egz": "Azi gen anpil peyi k ap devlope.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Baron Samdi",
-    "kat": "n",
-    "def": "lwa vodou ki mèt simityè ak lanmò, reprezante ak kostim nwa ak sigarèt",
-    "egz": "Baron Samdi ak fanmi Gede.",
-    "sin": "Baron",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Batay Vètyè",
-    "kat": "n",
-    "def": "batay desizif 18 novanm 1803 kote Ayisyen genyen sou lame Franse pou endepandans",
-    "egz": "Batay Vètyè final endepandans.",
-    "tem": "kilti",
-    "emoji": "🎭"
-  },
-  {
-    "mot": "Bib",
-    "kat": "n",
-    "def": "liv sakre Kretyen ki gen Ansyen ak Nouvo Testaman",
-    "egz": "Bib la pawòl Bondye.",
-    "sin": "Lekriti Sen",
-    "tem": "relijyon-vodou",
-    "emoji": "📖"
-  },
-  {
-    "mot": "Bondye",
-    "kat": "n",
-    "def": "kreyatè tout inivè selon kwayans relijye; Granmèt la",
-    "egz": "Bondye toupwisan.",
-    "sin": "Dye; Granmèt",
-    "tem": "relijyon-vodou",
-    "emoji": "✝️"
-  },
-  {
-    "mot": "Brezil",
-    "kat": "n",
-    "def": "pi gran peyi nan Amerik di Sid",
-    "egz": "Brezil fè anpil foutbòl.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "CD",
-    "kat": "n",
-    "def": "disk konpak pou estoke mizik ak done",
-    "egz": "CD nan mache.",
-    "sin": "kòmpak",
-    "tem": "mizik",
-    "emoji": "🎵"
-  },
-  {
-    "mot": "CO2",
-    "kat": "n",
-    "def": "gaz kabonik ki kontribye nan rechofman planèt",
-    "egz": "CO2 nan atmosfè a monte anpil.",
-    "tem": "syans",
-    "emoji": "🔬"
-  },
-  {
-    "mot": "CPVC",
-    "kat": "n",
-    "def": "tiyo plastik ki reziste chalè, itilize pou dlo cho nan plonbri",
-    "egz": "CPVC pou dlo cho.",
-    "tem": "plonbri",
-    "emoji": "🔧"
-  },
-  {
-    "mot": "Christophe",
-    "kat": "n",
-    "def": "wa nò Ayiti apre endepandans, ki bati Sitadèl la",
-    "egz": "Christophe bati Sitadèl.",
-    "sin": "Henri Christophe",
-    "tem": "kilti",
-    "emoji": "🎭"
-  },
-  {
-    "mot": "DC",
-    "kat": "n",
-    "def": "kouran kontinyèl ki koule nan yon sèl direksyon nan sistèm elektrik",
-    "egz": "DC nan batri.",
-    "sin": "kouran kontinyèl",
-    "ant": "AC",
-    "tem": "elektrisite",
-    "emoji": "⚡"
-  },
-  {
-    "mot": "Damballa",
-    "kat": "n",
-    "def": "lwa vodou reprezante pa koulèv, senbòl sajès ak orijin lavi",
-    "egz": "Damballa Wedo zansèt yo.",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Desalin",
-    "kat": "n",
-    "def": "Jean-Jacques Dessalines, papa endepandans Ayiti ki pwoklamel nan 1804",
-    "egz": "Jean-Jacques Dessalines.",
-    "sin": "Jan Jak Desalin",
-    "tem": "kilti",
-    "emoji": "🎭"
-  },
-  {
-    "mot": "Dominikani",
-    "kat": "n",
-    "def": "peyi ki pataje menm zile ak Ayiti",
-    "egz": "Dominikani ak Ayiti gen anpil rapò komèsyal.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Dye",
-    "kat": "n",
-    "def": "mo pou Bondye, kreyatè ak pwotektè selon kwayans relijye",
-    "egz": "Mwen kwè nan Dye.",
-    "sin": "Bondye",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "ECU",
-    "kat": "n",
-    "def": "òdinatè elektwonik ki kontwole fonksyon motè machin",
-    "egz": "ECU kontwole enjeksyon.",
-    "sin": "sèvo",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "EDH",
-    "kat": "n",
-    "def": "konpayi elektrisite Ayiti",
-    "egz": "EDH koupe kouran.",
-    "sin": "Électricité d'Haïti",
-    "tem": "elektrisite",
-    "emoji": "⚡"
-  },
-  {
-    "mot": "EPS",
-    "kat": "n",
-    "def": "edikasyon fizik ak spò nan pwogram lekòl",
-    "egz": "EPS sou teren an.",
-    "sin": "edikasyon fizik",
-    "tem": "edikasyon",
-    "emoji": "📚"
-  },
-  {
-    "mot": "Endepandans Ayiti",
-    "kat": "n",
-    "def": "deklarasyon libète Ayiti fèt 1ye janvye 1804 apre revolisyon esklav yo",
-    "egz": "Endepandans Ayiti 1804.",
-    "tem": "kilti",
-    "emoji": "🎭"
-  },
-  {
-    "mot": "Erzulie",
-    "kat": "n",
-    "def": "lwa vodou lanmou, bote ak richès, reprezante ak kè ak bijou",
-    "egz": "Erzulie Freda lanmou.",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Etazini",
-    "kat": "n",
-    "def": "peyi nan Amerik di Nò ki se pi gran potans mondyal",
-    "egz": "Anpil Ayisyen viv Etazini.",
-    "tem": "peyi",
-    "emoji": "🇺🇸"
-  },
-  {
-    "mot": "Ewòp",
-    "kat": "n",
-    "def": "kontinen ki gen anpil peyi tankou Frans, Almay ak Angletè",
-    "egz": "Li te vwayaje Ewòp pou sis mwa.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Frans",
-    "kat": "n",
-    "def": "peyi nan Ewòp ki te kolon Ayiti",
-    "egz": "Lang Ayiti a soti nan Frans.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Freon",
-    "kat": "n",
-    "def": "gaz refrijeran yo itilize nan sistèm klimatizè ak frijidè",
-    "egz": "Freon R134a.",
-    "sin": "refrijeran",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "Fèt Gede",
-    "kat": "n",
-    "def": "seremoni vodou 1ye ak 2 novanm pou onore lwa lanmò yo",
-    "egz": "Fèt Gede 2 novanm.",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Gede",
-    "kat": "n",
-    "def": "fanmi lwa vodou ki reprezante lanmò ak renèt lavi",
-    "egz": "Fèt Gede 2 novanm.",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Gonayiv",
-    "kat": "n",
-    "def": "vil nan sant Ayiti, prè Plèn Artibonit",
-    "egz": "Gonayiv se kapital depatman Artibonit.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Granmèt",
-    "kat": "n",
-    "def": "non pou Bondye nan kwayans vodou; mèt tout bagay",
-    "egz": "Granmèt la nan syèl la.",
-    "sin": "Bondye",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Gwadeloup",
-    "kat": "n",
-    "def": "zile fransè nan Karayib la, depatman dote",
-    "egz": "Gwadeloup gen bèl plaj.",
-    "tem": "peyi",
-    "emoji": "🌴"
-  },
-  {
-    "mot": "Haiti",
-    "kat": "n",
-    "def": "peyi nan Karayib ki pataje Ispanyola ak Repiblik Dominikèn",
-    "egz": "Ayiti se premye repiblik nwa nan listwa.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Hz",
-    "kat": "n",
-    "def": "iniyt frekans son, hertz, ki mezire konbyen fwa yon siyal repete pa segond",
-    "egz": "50 Hz Ewòp.",
-    "sin": "hertz",
-    "tem": "elektrisite",
-    "emoji": "⚡"
-  },
-  {
-    "mot": "Islam",
-    "kat": "n",
-    "def": "relijyon ki baze sou ansèyman pwofèt Mawomet ak Koran",
-    "egz": "Islam yon gwo relijyon.",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Jakmel",
-    "kat": "n",
-    "def": "vil touristik nan sid Ayiti",
-    "egz": "Jakmel rekonèt pou papye mache ak fèt kanaval li.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Jamayik",
-    "kat": "n",
-    "def": "zile nan Karayib ki rekonèt pou mizik reggae",
-    "egz": "Jamayik se peyi Bob Marley.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Jezi",
-    "kat": "n",
-    "def": "pwofèt santral relijyon Kretyen, kwa yo kwè li se pitit Bondye",
-    "egz": "Jezi se Sovè.",
-    "sin": "Sovè; Mèsi",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Jounen Drapo",
-    "kat": "n",
-    "def": "fèt nasyonal Ayiti 18 me pou komemore drapo ayisyen",
-    "egz": "Jounen Drapo enpòtan.",
-    "sin": "Drapo Day",
-    "tem": "kilti",
-    "emoji": "🎭"
-  },
-  {
-    "mot": "Juif",
-    "kat": "n",
-    "def": "moun ki swiv Judaism",
-    "egz": "Juif pou Yahweh.",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Kanada",
-    "kat": "n",
-    "def": "peyi nan nò Amerik ki gen de lang ofisyèl",
-    "egz": "Li ale Kanada pou etidye.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Kanaval Jakmel",
-    "kat": "n",
-    "def": "gran kanaval ki fèt nan vil Jakmel",
-    "egz": "Kanaval Jakmel rekonèt pou papye mache.",
-    "tem": "kilti",
-    "emoji": "🎭"
-  },
-  {
-    "mot": "Kapayisyen",
-    "kat": "n",
-    "def": "dezyèm pi gwo vil Ayiti nan nò peyi a",
-    "egz": "Kapayisyen se yo rele Cap-Haïtien tou.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Kapwa La Mò",
-    "kat": "n",
-    "def": "kamarad oswa lwa ki konpay mò yo nan vodou",
-    "egz": "Kapwa La Mò nan nò.",
-    "sin": "Kapwa",
-    "tem": "kilti",
-    "emoji": "🎭"
-  },
-  {
-    "mot": "Karayib",
-    "kat": "n",
-    "def": "rejyon zile nan lanmè Karayib",
-    "egz": "Ayiti se nan Karayib li ye.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Kiba",
-    "kat": "n",
-    "def": "zile nan Karayib ki prè Ayiti",
-    "egz": "Kiba gen yon bèl mizik.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Kowran",
-    "kat": "n",
-    "def": "liv sakre Mizilman ki gen pawòl Bondye yo revele bay Mawomet",
-    "egz": "Kowran nan Lalanmen.",
-    "tem": "relijyon-vodou",
-    "emoji": "📖"
-  },
-  {
-    "mot": "Krismas",
-    "kat": "n",
-    "def": "gade kontèks itilizasyon Krismas",
-    "egz": "Krismas an fanmi.",
-    "sin": "Nwèl",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "LED",
-    "kat": "n",
-    "def": "anpoul elektrik ekonomik ki pwodui limyè ak dyòd",
-    "egz": "LED pa boule vit.",
-    "sin": "anpoul LED",
-    "tem": "elektrisite",
-    "emoji": "⚡"
-  },
-  {
-    "mot": "Lafrik",
-    "kat": "n",
-    "def": "kontinan ki pi gran sou latè, orijin sivilizasyon imen",
-    "egz": "Lafrik manman nou.",
-    "sin": "Afrik",
-    "tem": "kilti",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Lavi Kreyòl",
-    "kat": "n",
-    "def": "fason viv ak tradisyon Ayisyen",
-    "egz": "Lavi Kreyòl rich ak valè.",
-    "tem": "kilti",
-    "emoji": "🎭"
-  },
-  {
-    "mot": "Lekriti Sen",
-    "kat": "n",
-    "def": "gade kontèks itilizasyon Lekriti Sen",
-    "egz": "Lekriti Sen pou medita.",
-    "sin": "Bib",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "MAF",
-    "kat": "n",
-    "def": "sansè ki mezire kantite lè ki antre nan motè machin",
-    "egz": "MAF sale ka fè mis.",
-    "sin": "mass air flow",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "MDF",
-    "kat": "n",
-    "def": "yon kalite panèl bwa",
-    "egz": "MDF pou meb modèn.",
-    "tem": "chapantri",
-    "emoji": "🪵"
-  },
-  {
-    "mot": "Matyenik",
-    "kat": "n",
-    "def": "zile Karayib Franse ki prè Ayiti",
-    "egz": "Anpil Ayisyen viv Matyenik.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Meksik",
-    "kat": "n",
-    "def": "peyi nan sid Amerik di Nò",
-    "egz": "Meksik gen yon kilti rich.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Mizilman",
-    "kat": "n",
-    "def": "moun ki swiv relijyon Islam ak ansèyman Mawomet",
-    "egz": "Mizilman pou Allah.",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Nwèl",
-    "kat": "n",
-    "def": "fèt Kretyen 25 desanm pou selebrate nesans Jezi Kri",
-    "egz": "Nwèl 25 desanm.",
-    "sin": "Krismas",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "OBD",
-    "kat": "n",
-    "def": "sistèm dyagnostik elektronik",
-    "egz": "OBD pou kòd erè.",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "OBD2",
-    "kat": "n",
-    "def": "sistèm dyagnostik modèn pou idantifye erè nan machin",
-    "egz": "OBD2 nan tout machin apre 1996.",
-    "sin": "OBD",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "OEM",
-    "kat": "n",
-    "def": "pyès orijinal fabrikatè ki fèt espesyalman pou yon modèl machin",
-    "egz": "OEM pi chè men dirab.",
-    "sin": "pyès orijinal",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "Ogou",
-    "kat": "n",
-    "def": "lwa vodou lagè ak fè, reprezante ak kawoulèt wouj ak manchèt",
-    "egz": "Ogou Feray pou pwoteksyon.",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Oseyanik",
-    "kat": "n",
-    "def": "rejyon ki gen Ostrali ak zile Pasifik",
-    "egz": "Oseyanik se yon rejyon byenèt.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Ostralazi",
-    "kat": "n",
-    "def": "rejyon ki gen Ostrali ak Nouvo Zeland",
-    "egz": "Ostralazi trè lwen Ayiti.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "PCM",
-    "kat": "n",
-    "def": "gade kontèks itilizasyon PCM",
-    "egz": "PCM bezwen pwogramin.",
-    "sin": "sèvo",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "PVC",
-    "kat": "n",
-    "def": "matyè plastik pou tib",
-    "egz": "PVC pou dlo frèt.",
-    "tem": "plonbri",
-    "emoji": "🔧"
-  },
-  {
-    "mot": "Pak",
-    "kat": "n",
-    "def": "fèt rezireksyon Jezi",
-    "egz": "Pak nan avril.",
-    "sin": "Pak Soly",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Pantkòt",
-    "kat": "n",
-    "def": "fèt Kretyen ki selebrate desann Sentespri sou apòt yo",
-    "egz": "Pantkòt 50 jou apre Pak.",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Panyòl",
-    "kat": "n",
-    "def": "lang ki pale nan Espay ak Amerik Latin",
-    "egz": "Li aprann Panyòl pou travay nan Dominikani.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Papa Legba",
-    "kat": "n",
-    "def": "lwa vodou ki gadyen pòt ak kafou, premye envoke nan seremoni",
-    "egz": "Papa Legba ouvri pòt yo.",
-    "sin": "Legba",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Petyon",
-    "kat": "n",
-    "def": "Alexandre Pétion, prezidan repiblik sid Ayiti apre endepandans",
-    "egz": "Petyon prezidan.",
-    "sin": "Aleksand Petyon",
-    "tem": "kilti",
-    "emoji": "🎭"
-  },
-  {
-    "mot": "Pozidrayv",
-    "kat": "n",
-    "def": "kalite tèt vit kwa amelyore pou pi bon grip",
-    "egz": "Pozidrayv pi solid.",
-    "sin": "Pozidriv",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "Pòtigè",
-    "kat": "n",
-    "def": "lang ki pale nan Pòtigal ak Brezil",
-    "egz": "Pòtigè sòti Pòtigal.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Pòtoprens",
-    "kat": "n",
-    "def": "kapital Ayiti ki sitiye nan bò lanmè",
-    "egz": "Pòtoprens se pi gwo vil Ayiti.",
-    "tem": "peyi",
-    "emoji": "🏙️"
-  },
-  {
-    "mot": "Ripiblik Dominikèn",
-    "kat": "n",
-    "def": "peyi ki pataje zile Ispanyola ak Ayiti",
-    "egz": "Ripiblik Dominikèn vwazen nou.",
-    "tem": "peyi",
-    "emoji": "🇩🇴"
-  },
-  {
-    "mot": "Robètson",
-    "kat": "n",
-    "def": "vit tèt kwa yo itilize pou boulonnen ak deboulonnen",
-    "egz": "Robètson nan Kanada.",
-    "sin": "Robertson",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "Sendomeng",
-    "kat": "n",
-    "def": "non ansyen Ayiti anvan endepandans",
-    "egz": "Sendomeng te yon koloni Franse.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
-    "mot": "Sentespri",
-    "kat": "n",
-    "def": "twazyèm pèsòn Trinite Kretyen, reprezante pa yon pijon",
-    "egz": "Sentespri eklere.",
-    "sin": "Espri Sen",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Sovè",
-    "kat": "n",
-    "def": "gade kontèks itilizasyon Sovè",
-    "egz": "Sovè a vini sou tè.",
-    "sin": "Jezi",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Tayno",
-    "kat": "n",
-    "def": "pèp endijèn ki te abite Ayiti anvan kolonizasyon Ewòpen",
-    "egz": "Tayno yo te isit anvan.",
-    "sin": "endijenn",
-    "tem": "kilti",
-    "emoji": "🎭"
-  },
-  {
-    "mot": "Te",
-    "kat": "n",
-    "def": "bwason cho fèt ak fèy plant ki tranpe nan dlo bouyi",
-    "egz": "Te pou separe tib.",
-    "sin": "rasò T",
-    "tem": "plonbri",
-    "emoji": "🍵"
-  },
-  {
-    "mot": "Tousen",
-    "kat": "n",
-    "def": "Toussaint Louverture, lidè revolisyon ayisyen ki goumen pou libète esklav",
-    "egz": "Tousen 1ye novanm.",
-    "tem": "relijyon-vodou",
-    "emoji": "🙏"
-  },
-  {
-    "mot": "Toussaint",
-    "kat": "n",
-    "def": "Toussaint Louverture",
-    "egz": "Toussaint mouri 1803.",
-    "sin": "Toussaint Louverture",
-    "tem": "kilti",
-    "emoji": "🎭"
-  },
-  {
-    "mot": "Toussaint Louverture",
-    "kat": "n",
-    "def": "gran lidè revolisyon ayisyen, premye ki dirije batay pou libète",
-    "egz": "Toussaint nan Fort de Joux.",
-    "tem": "kilti",
-    "emoji": "🎭"
-  },
-  {
-    "mot": "Tèt Etwal",
-    "kat": "n",
-    "def": "tèt vit ki gen fòm etwal pou vis espesyal",
-    "egz": "Tèt Etwal nan tonvi.",
-    "sin": "Phillips",
-    "ant": "Tèt Plat",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "Tèt Plat",
-    "kat": "n",
-    "def": "tèt vit ki plat pou vire boulòn òdinè",
-    "egz": "Tèt Plat tradisyonèl.",
-    "sin": "Phillips ranvès",
-    "ant": "Tèt Etwal",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "Tòks",
-    "kat": "n",
-    "def": "zouti pou mezire fòs yo aplike sou yon boulòn",
-    "egz": "Tòks T20.",
-    "sin": "Torx",
-    "tem": "mekanik",
-    "emoji": "⚙️"
-  },
-  {
-    "mot": "UNESCO",
-    "kat": "n",
-    "def": "òganizasyon mondyal pou edikasyon ak kilti",
-    "egz": "UNESCO sipòte patrimwàn Ayiti.",
-    "tem": "edikasyon",
-    "emoji": "📚"
-  },
-  {
-    "mot": "UPS",
-    "kat": "n",
-    "def": "siy ki kontinye bay kouran",
-    "egz": "UPS pou òdinatè.",
-    "sin": "onduleur",
-    "tem": "elektrisite",
-    "emoji": "⚡"
-  },
-  {
-    "mot": "USB",
-    "kat": "n",
-    "def": "pò koneksyon pou aparèy elektwonik",
-    "egz": "Li chaje telefòn li ak fil USB.",
-    "tem": "elektrisite",
-    "emoji": "⚡"
-  },
-  {
-    "mot": "Venezela",
-    "kat": "n",
-    "def": "peyi Amerik Sid ki rich nan petròl, vwazen Karayib",
-    "egz": "Venezela vwazen Karayib.",
-    "tem": "peyi",
-    "emoji": "🇻🇪"
-  },
-  {
-    "mot": "Venezyela",
-    "kat": "n",
-    "def": "peyi nan nò Amerik di Sid",
-    "egz": "Venezyela gen anpil resous petwòl.",
-    "tem": "peyi",
-    "emoji": "🌍"
-  },
-  {
     "mot": "a demen",
     "kat": "interj",
     "def": "ekspresyon pou di orevwa jiskaske nou wè demen",
@@ -925,6 +92,15 @@
     "egz": "Abriko moulen bon anpil pou jis.",
     "tem": "fwi-legim",
     "emoji": "🍎"
+  },
+  {
+    "mot": "ABS",
+    "kat": "n",
+    "def": "sistèm fren anti-blokaj ki anpeche wou machin bloke lè ou frene fò",
+    "egz": "ABS pou sekirite.",
+    "sin": "anti-lock",
+    "tem": "mekanik",
+    "emoji": "⚙️"
   },
   {
     "mot": "abse",
@@ -1178,6 +354,15 @@
     "egz": "Yo afiché rezilta yo.",
     "tem": "kominikasyon",
     "emoji": "💬"
+  },
+  {
+    "mot": "Afrik",
+    "kat": "n",
+    "def": "pi gwo kontinan sou tè a, kote sijès sivilizasyon imen yo kòmanse",
+    "egz": "Afrik orijin nou.",
+    "sin": "Lafrik",
+    "tem": "kilti",
+    "emoji": "🌍"
   },
   {
     "mot": "aftermarket",
@@ -2127,6 +1312,14 @@
     "emoji": "💭"
   },
   {
+    "mot": "Amerik Latin",
+    "kat": "n",
+    "def": "rejyon Amerik kote moun pale Panyòl ak Pòtigè",
+    "egz": "Ayiti pafwa gwoupe ak Amerik Latin.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
     "mot": "amfib",
     "kat": "n",
     "def": "bèt ki viv nan dlo ak sou tè",
@@ -2730,6 +1923,14 @@
     "egz": "Anglichis anpil nan kreyòl modèn.",
     "tem": "kominikasyon",
     "emoji": "💬"
+  },
+  {
+    "mot": "Anglè",
+    "kat": "n",
+    "def": "lang ki pale nan Anglètè ak Etazini",
+    "egz": "Anglè sèvi pou kominikasyon entènasyonal.",
+    "tem": "peyi",
+    "emoji": "🌍"
   },
   {
     "mot": "anglè",
@@ -4171,6 +3372,33 @@
     "emoji": "🚗"
   },
   {
+    "mot": "ATF",
+    "kat": "n",
+    "def": "luil transmisyon otomatik",
+    "egz": "ATF wouj.",
+    "sin": "luil transmisyon",
+    "tem": "mekanik",
+    "emoji": "⚙️"
+  },
+  {
+    "mot": "Ati",
+    "kat": "n",
+    "def": "pi wo lidè relijye nan òganizasyon vodou ayisyen",
+    "egz": "Ati Nasyonal.",
+    "sin": "Ati Nasyonal",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
+  },
+  {
+    "mot": "Ati Nasyonal",
+    "kat": "n",
+    "def": "lidè prensipal ki dirije tout sosyete sèkrè vodou nan nivo nasyonal",
+    "egz": "Ati Nasyonal lidè spirityèl.",
+    "sin": "Ati",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
+  },
+  {
     "mot": "atik",
     "kat": "n",
     "def": "tèks ekri piblie nan jounal oswa sit wèb",
@@ -4510,6 +3738,14 @@
     "emoji": "🐾"
   },
   {
+    "mot": "Ayisyen",
+    "kat": "n",
+    "def": "moun ki fèt oswa ki soti nan peyi Ayiti",
+    "egz": "Ayisyen yo fyè de istwa yo.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
     "mot": "ayisyen",
     "kat": "adj",
     "def": "moun ki soti Ayiti; ki gen rapò ak kilti ak nasyon ayisyen",
@@ -4525,6 +3761,15 @@
     "egz": "Ayisyen kreyòl se lang ofisyèl.",
     "tem": "kominikasyon",
     "emoji": "💬"
+  },
+  {
+    "mot": "Ayiti",
+    "kat": "n",
+    "def": "peyi endepandan nan Karayib la ki premye repiblik nwa nan istwa monn",
+    "egz": "Ayiti chè.",
+    "sin": "Repiblik Ayiti",
+    "tem": "kilti",
+    "emoji": "🇭🇹"
   },
   {
     "mot": "ayizan",
@@ -4550,6 +3795,14 @@
     "tem": "abstrè",
     "kat": "n",
     "emoji": "💭"
+  },
+  {
+    "mot": "Azi",
+    "kat": "n",
+    "def": "pi gwo kontinen sou latè",
+    "egz": "Azi gen anpil peyi k ap devlope.",
+    "tem": "peyi",
+    "emoji": "🌍"
   },
   {
     "mot": "azil",
@@ -4977,6 +4230,15 @@
     "emoji": "🌳"
   },
   {
+    "mot": "Baron Samdi",
+    "kat": "n",
+    "def": "lwa vodou ki mèt simityè ak lanmò, reprezante ak kostim nwa ak sigarèt",
+    "egz": "Baron Samdi ak fanmi Gede.",
+    "sin": "Baron",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
+  },
+  {
     "mot": "baryad",
     "kat": "n",
     "def": "blokaj sou wout ki anpeche pase",
@@ -5082,6 +4344,14 @@
     "egz": "Batay lide a enteresan.",
     "tem": "kominikasyon",
     "emoji": "💬"
+  },
+  {
+    "mot": "Batay Vètyè",
+    "kat": "n",
+    "def": "batay desizif 18 novanm 1803 kote Ayisyen genyen sou lame Franse pou endepandans",
+    "egz": "Batay Vètyè final endepandans.",
+    "tem": "kilti",
+    "emoji": "🎭"
   },
   {
     "mot": "bati",
@@ -5462,6 +4732,15 @@
     "sin": "objektif",
     "tem": "abstrè",
     "emoji": "💭"
+  },
+  {
+    "mot": "Bib",
+    "kat": "n",
+    "def": "liv sakre Kretyen ki gen Ansyen ak Nouvo Testaman",
+    "egz": "Bib la pawòl Bondye.",
+    "sin": "Lekriti Sen",
+    "tem": "relijyon-vodou",
+    "emoji": "📖"
   },
   {
     "mot": "bibliyotèk",
@@ -5947,6 +5226,15 @@
     "emoji": "🍬"
   },
   {
+    "mot": "Bondye",
+    "kat": "n",
+    "def": "kreyatè tout inivè selon kwayans relijye; Granmèt la",
+    "egz": "Bondye toupwisan.",
+    "sin": "Dye; Granmèt",
+    "tem": "relijyon-vodou",
+    "emoji": "✝️"
+  },
+  {
     "mot": "bondye",
     "kat": "n",
     "def": "kreyatè inivè selon kwayans relijye",
@@ -6417,6 +5705,14 @@
     "sin": "disjontè",
     "tem": "elektrisite",
     "emoji": "⚡"
+  },
+  {
+    "mot": "Brezil",
+    "kat": "n",
+    "def": "pi gran peyi nan Amerik di Sid",
+    "egz": "Brezil fè anpil foutbòl.",
+    "tem": "peyi",
+    "emoji": "🌍"
   },
   {
     "mot": "bri",
@@ -7208,6 +6504,15 @@
     "egz": "Cann sitwon fè bon tè.",
     "tem": "plant",
     "emoji": "🌿"
+  },
+  {
+    "mot": "CD",
+    "kat": "n",
+    "def": "disk konpak pou estoke mizik ak done",
+    "egz": "CD nan mache.",
+    "sin": "kòmpak",
+    "tem": "mizik",
+    "emoji": "🎵"
   },
   {
     "mot": "chache",
@@ -8035,6 +7340,15 @@
     "emoji": "🦇"
   },
   {
+    "mot": "Christophe",
+    "kat": "n",
+    "def": "wa nò Ayiti apre endepandans, ki bati Sitadèl la",
+    "egz": "Christophe bati Sitadèl.",
+    "sin": "Henri Christophe",
+    "tem": "kilti",
+    "emoji": "🎭"
+  },
+  {
     "mot": "chwa",
     "kat": "n",
     "def": "desizyon ant plizyè opsyon posib",
@@ -8324,6 +7638,14 @@
     "emoji": "💻"
   },
   {
+    "mot": "CO2",
+    "kat": "n",
+    "def": "gaz kabonik ki kontribye nan rechofman planèt",
+    "egz": "CO2 nan atmosfè a monte anpil.",
+    "tem": "syans",
+    "emoji": "🔬"
+  },
+  {
     "mot": "coco",
     "kat": "n",
     "def": "gwo nwa wonn ki gen lèt ak pou ladan l",
@@ -8338,6 +7660,14 @@
     "egz": "Li pran yon couverture chod pou fèt la.",
     "tem": "mèb",
     "emoji": "🪑"
+  },
+  {
+    "mot": "CPVC",
+    "kat": "n",
+    "def": "tiyo plastik ki reziste chalè, itilize pou dlo cho nan plonbri",
+    "egz": "CPVC pou dlo cho.",
+    "tem": "plonbri",
+    "emoji": "🔧"
   },
   {
     "mot": "creche",
@@ -8396,6 +7726,14 @@
     "egz": "Granpè a jwe dama ak pitit pitit li yo.",
     "tem": "jwèt",
     "emoji": "🎮"
+  },
+  {
+    "mot": "Damballa",
+    "kat": "n",
+    "def": "lwa vodou reprezante pa koulèv, senbòl sajès ak orijin lavi",
+    "egz": "Damballa Wedo zansèt yo.",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "dan",
@@ -8506,6 +7844,16 @@
     "sin": "out",
     "tem": "jou-ak-mwa",
     "emoji": "📅"
+  },
+  {
+    "mot": "DC",
+    "kat": "n",
+    "def": "kouran kontinyèl ki koule nan yon sèl direksyon nan sistèm elektrik",
+    "egz": "DC nan batri.",
+    "sin": "kouran kontinyèl",
+    "ant": "AC",
+    "tem": "elektrisite",
+    "emoji": "⚡"
   },
   {
     "mot": "de",
@@ -9124,6 +8472,15 @@
     "egz": "Vini deretou, se ijan.",
     "tem": "abstrè",
     "emoji": "💭"
+  },
+  {
+    "mot": "Desalin",
+    "kat": "n",
+    "def": "Jean-Jacques Dessalines, papa endepandans Ayiti ki pwoklamel nan 1804",
+    "egz": "Jean-Jacques Dessalines.",
+    "sin": "Jan Jak Desalin",
+    "tem": "kilti",
+    "emoji": "🎭"
   },
   {
     "mot": "desandan",
@@ -10209,6 +9566,14 @@
     "emoji": "💭"
   },
   {
+    "mot": "Dominikani",
+    "kat": "n",
+    "def": "peyi ki pataje menm zile ak Ayiti",
+    "egz": "Dominikani ak Ayiti gen anpil rapò komèsyal.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
     "mot": "domino",
     "kat": "n",
     "def": "jwèt ak pati rektangilè ki gen pwen; moun mache ak yo",
@@ -10631,6 +9996,15 @@
     "emoji": "🎭"
   },
   {
+    "mot": "Dye",
+    "kat": "n",
+    "def": "mo pou Bondye, kreyatè ak pwotektè selon kwayans relijye",
+    "egz": "Mwen kwè nan Dye.",
+    "sin": "Bondye",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
+  },
+  {
     "mot": "dyetetis",
     "kat": "n",
     "def": "espèsyalis nan noutrisyon ak rejim manje",
@@ -10843,6 +10217,15 @@
     "emoji": "🏗️"
   },
   {
+    "mot": "ECU",
+    "kat": "n",
+    "def": "òdinatè elektwonik ki kontwole fonksyon motè machin",
+    "egz": "ECU kontwole enjeksyon.",
+    "sin": "sèvo",
+    "tem": "mekanik",
+    "emoji": "⚙️"
+  },
+  {
     "mot": "ede",
     "kat": "v",
     "def": "bay asistans ak sipò pou yon moun rive yon objetif",
@@ -10851,6 +10234,15 @@
     "ant": "anpeche",
     "tem": "abstrè",
     "emoji": "💭"
+  },
+  {
+    "mot": "EDH",
+    "kat": "n",
+    "def": "konpayi elektrisite Ayiti",
+    "egz": "EDH koupe kouran.",
+    "sin": "Électricité d'Haïti",
+    "tem": "elektrisite",
+    "emoji": "⚡"
   },
   {
     "mot": "edikasyon",
@@ -11730,6 +11122,14 @@
     "emoji": "🎭"
   },
   {
+    "mot": "Endepandans Ayiti",
+    "kat": "n",
+    "def": "deklarasyon libète Ayiti fèt 1ye janvye 1804 apre revolisyon esklav yo",
+    "egz": "Endepandans Ayiti 1804.",
+    "tem": "kilti",
+    "emoji": "🎭"
+  },
+  {
     "mot": "endesizyon",
     "kat": "n",
     "def": "enkapasite pou pran yon desizyon; bloke ant chwa",
@@ -12506,6 +11906,15 @@
     "emoji": "🍽️"
   },
   {
+    "mot": "EPS",
+    "kat": "n",
+    "def": "edikasyon fizik ak spò nan pwogram lekòl",
+    "egz": "EPS sou teren an.",
+    "sin": "edikasyon fizik",
+    "tem": "edikasyon",
+    "emoji": "📚"
+  },
+  {
     "mot": "epè",
     "kat": "adj",
     "def": "ki gen anpil epès; ki pa mens",
@@ -12556,6 +11965,14 @@
     "egz": "Erozyon ap detwi tè agrikòl yo.",
     "tem": "nati",
     "emoji": "🌍"
+  },
+  {
+    "mot": "Erzulie",
+    "kat": "n",
+    "def": "lwa vodou lanmou, bote ak richès, reprezante ak kè ak bijou",
+    "egz": "Erzulie Freda lanmou.",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "erè",
@@ -13142,6 +12559,14 @@
     "emoji": "💭"
   },
   {
+    "mot": "Etazini",
+    "kat": "n",
+    "def": "peyi nan Amerik di Nò ki se pi gran potans mondyal",
+    "egz": "Anpil Ayisyen viv Etazini.",
+    "tem": "peyi",
+    "emoji": "🇺🇸"
+  },
+  {
     "mot": "etensèl",
     "kat": "n",
     "def": "ti limyè kout ki parèt lè metal frape metal",
@@ -13401,6 +12826,14 @@
     "ant": "trèt",
     "tem": "kilti",
     "emoji": "🎭"
+  },
+  {
+    "mot": "Ewòp",
+    "kat": "n",
+    "def": "kontinen ki gen anpil peyi tankou Frans, Almay ak Angletè",
+    "egz": "Li te vwayaje Ewòp pou sis mwa.",
+    "tem": "peyi",
+    "emoji": "🌍"
   },
   {
     "mot": "exibisyon",
@@ -14589,6 +14022,14 @@
     "emoji": "🥤"
   },
   {
+    "mot": "Frans",
+    "kat": "n",
+    "def": "peyi nan Ewòp ki te kolon Ayiti",
+    "egz": "Lang Ayiti a soti nan Frans.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
     "mot": "franse",
     "kat": "n",
     "def": "lang yo pale nan Frans ak anpil peyi mondyal",
@@ -14743,6 +14184,15 @@
     "sin": "onèt",
     "tem": "abstrè",
     "emoji": "💭"
+  },
+  {
+    "mot": "Freon",
+    "kat": "n",
+    "def": "gaz refrijeran yo itilize nan sistèm klimatizè ak frijidè",
+    "egz": "Freon R134a.",
+    "sin": "refrijeran",
+    "tem": "mekanik",
+    "emoji": "⚙️"
   },
   {
     "mot": "fri",
@@ -15143,6 +14593,14 @@
     "sin": "selebrasyon",
     "ant": "dèy",
     "emoji": "🎉"
+  },
+  {
+    "mot": "Fèt Gede",
+    "kat": "n",
+    "def": "seremoni vodou 1ye ak 2 novanm pou onore lwa lanmò yo",
+    "egz": "Fèt Gede 2 novanm.",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "fèt nasyonal",
@@ -15591,6 +15049,14 @@
     "emoji": "⚙️"
   },
   {
+    "mot": "Gede",
+    "kat": "n",
+    "def": "fanmi lwa vodou ki reprezante lanmò ak renèt lavi",
+    "egz": "Fèt Gede 2 novanm.",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
+  },
+  {
     "mot": "gede",
     "kat": "n",
     "def": "fèt kiltirèl pou onore mò Ayiti",
@@ -15795,6 +15261,14 @@
     "emoji": "🏅"
   },
   {
+    "mot": "Gonayiv",
+    "kat": "n",
+    "def": "vil nan sant Ayiti, prè Plèn Artibonit",
+    "egz": "Gonayiv se kapital depatman Artibonit.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
     "mot": "gonfle",
     "kat": "v",
     "def": "anfle, vin pi gwo pase nòmal",
@@ -15961,6 +15435,15 @@
     "ant": "timoun",
     "tem": "fanmi",
     "emoji": "👴"
+  },
+  {
+    "mot": "Granmèt",
+    "kat": "n",
+    "def": "non pou Bondye nan kwayans vodou; mèt tout bagay",
+    "egz": "Granmèt la nan syèl la.",
+    "sin": "Bondye",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "grann",
@@ -16219,6 +15702,14 @@
     "emoji": "💼"
   },
   {
+    "mot": "Gwadeloup",
+    "kat": "n",
+    "def": "zile fransè nan Karayib la, depatman dote",
+    "egz": "Gwadeloup gen bèl plaj.",
+    "tem": "peyi",
+    "emoji": "🌴"
+  },
+  {
     "mot": "gwadloup",
     "kat": "n",
     "def": "zile Karayib ki se depatman Franse",
@@ -16384,6 +15875,14 @@
     "emoji": "🏅"
   },
   {
+    "mot": "Haiti",
+    "kat": "n",
+    "def": "peyi nan Karayib ki pataje Ispanyola ak Repiblik Dominikèn",
+    "egz": "Ayiti se premye repiblik nwa nan listwa.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
     "mot": "haltè",
     "kat": "n",
     "def": "pwa yo leve pou fòtifye misik",
@@ -16468,6 +15967,15 @@
     "egz": "Houngan a fè seremoni nan peristil la.",
     "tem": "relijyon-vodou",
     "emoji": "🙏"
+  },
+  {
+    "mot": "Hz",
+    "kat": "n",
+    "def": "iniyt frekans son, hertz, ki mezire konbyen fwa yon siyal repete pa segond",
+    "egz": "50 Hz Ewòp.",
+    "sin": "hertz",
+    "tem": "elektrisite",
+    "emoji": "⚡"
   },
   {
     "mot": "ibiskis",
@@ -17101,6 +16609,14 @@
     "emoji": "💭"
   },
   {
+    "mot": "Islam",
+    "kat": "n",
+    "def": "relijyon ki baze sou ansèyman pwofèt Mawomet ak Koran",
+    "egz": "Islam yon gwo relijyon.",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
+  },
+  {
     "mot": "istoryen",
     "kat": "n",
     "def": "moun ki etidye istwa",
@@ -17211,6 +16727,14 @@
     "emoji": "👷"
   },
   {
+    "mot": "Jakmel",
+    "kat": "n",
+    "def": "vil touristik nan sid Ayiti",
+    "egz": "Jakmel rekonèt pou papye mache ak fèt kanaval li.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
     "mot": "jalou",
     "kat": "adj",
     "def": "ki vle sa yon lòt moun gen oswa ki pè pèdi moun li renmen an",
@@ -17225,6 +16749,14 @@
     "egz": "Jalouzi ka detwi yon bon zanmitay.",
     "tem": "emosyon",
     "emoji": "💚"
+  },
+  {
+    "mot": "Jamayik",
+    "kat": "n",
+    "def": "zile nan Karayib ki rekonèt pou mizik reggae",
+    "egz": "Jamayik se peyi Bob Marley.",
+    "tem": "peyi",
+    "emoji": "🌍"
   },
   {
     "mot": "jan",
@@ -17479,6 +17011,15 @@
     "egz": "Jeyoloji ede konprann tranbleman tè.",
     "tem": "syans",
     "emoji": "🔬"
+  },
+  {
+    "mot": "Jezi",
+    "kat": "n",
+    "def": "pwofèt santral relijyon Kretyen, kwa yo kwè li se pitit Bondye",
+    "egz": "Jezi se Sovè.",
+    "sin": "Sovè; Mèsi",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "ji",
@@ -17804,6 +17345,15 @@
     "emoji": "📅"
   },
   {
+    "mot": "Jounen Drapo",
+    "kat": "n",
+    "def": "fèt nasyonal Ayiti 18 me pou komemore drapo ayisyen",
+    "egz": "Jounen Drapo enpòtan.",
+    "sin": "Drapo Day",
+    "tem": "kilti",
+    "emoji": "🎭"
+  },
+  {
     "mot": "jounen travay",
     "kat": "n",
     "def": "lè yon moun pase nan travay",
@@ -17818,6 +17368,14 @@
     "egz": "Judge a rann desizyon apre tou pati enspekte.",
     "tem": "pwofesyon",
     "emoji": "👷"
+  },
+  {
+    "mot": "Juif",
+    "kat": "n",
+    "def": "moun ki swiv Judaism",
+    "egz": "Juif pou Yahweh.",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "jwa",
@@ -18406,6 +17964,14 @@
     "emoji": "🚗"
   },
   {
+    "mot": "Kanada",
+    "kat": "n",
+    "def": "peyi nan nò Amerik ki gen de lang ofisyèl",
+    "egz": "Li ale Kanada pou etidye.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
     "mot": "kanal",
     "kat": "n",
     "def": "chemen dlo ki fèt pa moun oswa pa nati",
@@ -18435,6 +18001,14 @@
     "def": "fèt popilè ak mas, mizik ak dans nan lari",
     "egz": "Kanaval Jacmel fame.",
     "ant": "kawèm",
+    "tem": "kilti",
+    "emoji": "🎭"
+  },
+  {
+    "mot": "Kanaval Jakmel",
+    "kat": "n",
+    "def": "gran kanaval ki fèt nan vil Jakmel",
+    "egz": "Kanaval Jakmel rekonèt pou papye mache.",
     "tem": "kilti",
     "emoji": "🎭"
   },
@@ -18662,6 +18236,14 @@
     "emoji": "⚡"
   },
   {
+    "mot": "Kapayisyen",
+    "kat": "n",
+    "def": "dezyèm pi gwo vil Ayiti nan nò peyi a",
+    "egz": "Kapayisyen se yo rele Cap-Haïtien tou.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
     "mot": "kapital",
     "kat": "n",
     "def": "vil prensipal yon peyi kote gouvènman ye",
@@ -18702,6 +18284,15 @@
     "egz": "Istwa a kaptive tout moun nan sal la.",
     "tem": "abstrè",
     "emoji": "💭"
+  },
+  {
+    "mot": "Kapwa La Mò",
+    "kat": "n",
+    "def": "kamarad oswa lwa ki konpay mò yo nan vodou",
+    "egz": "Kapwa La Mò nan nò.",
+    "sin": "Kapwa",
+    "tem": "kilti",
+    "emoji": "🎭"
   },
   {
     "mot": "kapyè",
@@ -18759,6 +18350,14 @@
     "egz": "Mize a gen yon modèl karavèl.",
     "tem": "touris",
     "emoji": "✈️"
+  },
+  {
+    "mot": "Karayib",
+    "kat": "n",
+    "def": "rejyon zile nan lanmè Karayib",
+    "egz": "Ayiti se nan Karayib li ye.",
+    "tem": "peyi",
+    "emoji": "🌍"
   },
   {
     "mot": "karbiran",
@@ -19258,6 +18857,14 @@
     "egz": "Kib la gen sis fas.",
     "tem": "fòm",
     "emoji": "📐"
+  },
+  {
+    "mot": "Kiba",
+    "kat": "n",
+    "def": "zile nan Karayib ki prè Ayiti",
+    "egz": "Kiba gen yon bèl mizik.",
+    "tem": "peyi",
+    "emoji": "🌍"
   },
   {
     "mot": "kibò",
@@ -21105,18 +20712,18 @@
     "emoji": "🏗️"
   },
   {
-    "mot": "kontwolè MPPT",
-    "kat": "n",
-    "def": "aparèy ki optimize chaj batri solè",
-    "egz": "Kontwolè MPPT pi efikas.",
-    "tem": "elektrisite",
-    "emoji": "⚡"
-  },
-  {
     "mot": "kontwolè chaj",
     "kat": "n",
     "def": "siy ki kontwole chaj batri",
     "egz": "Kontwolè chaj solè.",
+    "tem": "elektrisite",
+    "emoji": "⚡"
+  },
+  {
+    "mot": "kontwolè MPPT",
+    "kat": "n",
+    "def": "aparèy ki optimize chaj batri solè",
+    "egz": "Kontwolè MPPT pi efikas.",
     "tem": "elektrisite",
     "emoji": "⚡"
   },
@@ -21794,6 +21401,14 @@
     "emoji": "🌿"
   },
   {
+    "mot": "Kowran",
+    "kat": "n",
+    "def": "liv sakre Mizilman ki gen pawòl Bondye yo revele bay Mawomet",
+    "egz": "Kowran nan Lalanmen.",
+    "tem": "relijyon-vodou",
+    "emoji": "📖"
+  },
+  {
     "mot": "kowòl",
     "kat": "n",
     "def": "lwa vodou ak responsablite espesifik",
@@ -22069,6 +21684,15 @@
     "egz": "Kriptagraf pwoteje done privé yo.",
     "tem": "teknoloji",
     "emoji": "💻"
+  },
+  {
+    "mot": "Krismas",
+    "kat": "n",
+    "def": "gade kontèks itilizasyon Krismas",
+    "egz": "Krismas an fanmi.",
+    "sin": "Nwèl",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "kritisite",
@@ -22800,6 +22424,15 @@
     "emoji": "💭"
   },
   {
+    "mot": "Lafrik",
+    "kat": "n",
+    "def": "kontinan ki pi gran sou latè, orijin sivilizasyon imen",
+    "egz": "Lafrik manman nou.",
+    "sin": "Afrik",
+    "tem": "kilti",
+    "emoji": "🌍"
+  },
+  {
     "mot": "lafwa",
     "kat": "n",
     "def": "kwayans pwofon nan Bondye oswa yon prensip",
@@ -23434,6 +23067,14 @@
     "emoji": "❤️‍🩹"
   },
   {
+    "mot": "Lavi Kreyòl",
+    "kat": "n",
+    "def": "fason viv ak tradisyon Ayisyen",
+    "egz": "Lavi Kreyòl rich ak valè.",
+    "tem": "kilti",
+    "emoji": "🎭"
+  },
+  {
     "mot": "lavi kwotidyen",
     "kat": "n",
     "def": "aktivite nòmal yon moun fè chak jou",
@@ -23537,6 +23178,15 @@
     "emoji": "❤️‍🩹"
   },
   {
+    "mot": "LED",
+    "kat": "n",
+    "def": "anpoul elektrik ekonomik ki pwodui limyè ak dyòd",
+    "egz": "LED pa boule vit.",
+    "sin": "anpoul LED",
+    "tem": "elektrisite",
+    "emoji": "⚡"
+  },
+  {
     "mot": "ledikasyon sivil",
     "kat": "n",
     "def": "edikasyon sou dwa ak responsablite sitwayen",
@@ -23621,6 +23271,15 @@
     "ant": "lou",
     "tem": "abstrè",
     "emoji": "💭"
+  },
+  {
+    "mot": "Lekriti Sen",
+    "kat": "n",
+    "def": "gade kontèks itilizasyon Lekriti Sen",
+    "egz": "Lekriti Sen pou medita.",
+    "sin": "Bib",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "lekti",
@@ -24911,6 +24570,15 @@
     "emoji": "👨‍👩‍👧‍👦"
   },
   {
+    "mot": "MAF",
+    "kat": "n",
+    "def": "sansè ki mezire kantite lè ki antre nan motè machin",
+    "egz": "MAF sale ka fè mis.",
+    "sin": "mass air flow",
+    "tem": "mekanik",
+    "emoji": "⚙️"
+  },
+  {
     "mot": "mafya",
     "kat": "n",
     "def": "gwoup kriminèl òganize",
@@ -25996,6 +25664,14 @@
     "emoji": "📚"
   },
   {
+    "mot": "Matyenik",
+    "kat": "n",
+    "def": "zile Karayib Franse ki prè Ayiti",
+    "egz": "Anpil Ayisyen viv Matyenik.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
     "mot": "matyè",
     "kat": "n",
     "def": "yon sijè elèv aprann",
@@ -26079,6 +25755,14 @@
     "egz": "Li mazone mi a.",
     "tem": "konstriksyon",
     "emoji": "🏗️"
+  },
+  {
+    "mot": "MDF",
+    "kat": "n",
+    "def": "yon kalite panèl bwa",
+    "egz": "MDF pou meb modèn.",
+    "tem": "chapantri",
+    "emoji": "🪵"
   },
   {
     "mot": "me",
@@ -26203,6 +25887,14 @@
     "egz": "Mekanisyen an chanje pyès.",
     "tem": "pwofesyon",
     "emoji": "👷"
+  },
+  {
+    "mot": "Meksik",
+    "kat": "n",
+    "def": "peyi nan sid Amerik di Nò",
+    "egz": "Meksik gen yon kilti rich.",
+    "tem": "peyi",
+    "emoji": "🌍"
   },
   {
     "mot": "melanje",
@@ -26872,6 +26564,14 @@
     "sin": "rasin",
     "tem": "mizik",
     "emoji": "🎵"
+  },
+  {
+    "mot": "Mizilman",
+    "kat": "n",
+    "def": "moun ki swiv relijyon Islam ak ansèyman Mawomet",
+    "egz": "Mizilman pou Allah.",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "mizisyen",
@@ -28249,6 +27949,15 @@
     "emoji": "🌙"
   },
   {
+    "mot": "Nwèl",
+    "kat": "n",
+    "def": "fèt Kretyen 25 desanm pou selebrate nesans Jezi Kri",
+    "egz": "Nwèl 25 desanm.",
+    "sin": "Krismas",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
+  },
+  {
     "mot": "nyaj",
     "kat": "n",
     "def": "vapè dlo nan syèl la",
@@ -28412,6 +28121,23 @@
     "emoji": "📚"
   },
   {
+    "mot": "OBD",
+    "kat": "n",
+    "def": "sistèm dyagnostik elektronik",
+    "egz": "OBD pou kòd erè.",
+    "tem": "mekanik",
+    "emoji": "⚙️"
+  },
+  {
+    "mot": "OBD2",
+    "kat": "n",
+    "def": "sistèm dyagnostik modèn pou idantifye erè nan machin",
+    "egz": "OBD2 nan tout machin apre 1996.",
+    "sin": "OBD",
+    "tem": "mekanik",
+    "emoji": "⚙️"
+  },
+  {
     "mot": "obeyi",
     "kat": "v",
     "def": "Suiv lòd oswa règ yon moun ki gen otorite; fè sa yo mande ou.",
@@ -28517,6 +28243,15 @@
     "emoji": "🧍"
   },
   {
+    "mot": "OEM",
+    "kat": "n",
+    "def": "pyès orijinal fabrikatè ki fèt espesyalman pou yon modèl machin",
+    "egz": "OEM pi chè men dirab.",
+    "sin": "pyès orijinal",
+    "tem": "mekanik",
+    "emoji": "⚙️"
+  },
+  {
     "mot": "ofans",
     "kat": "n",
     "def": "zak ki blese oswa deranje yon moun",
@@ -28575,6 +28310,14 @@
     "ant": "diminye",
     "tem": "abstrè",
     "emoji": "💭"
+  },
+  {
+    "mot": "Ogou",
+    "kat": "n",
+    "def": "lwa vodou lagè ak fè, reprezante ak kawoulèt wouj ak manchèt",
+    "egz": "Ogou Feray pou pwoteksyon.",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "ohmmèt",
@@ -28897,6 +28640,22 @@
     "emoji": "⚡"
   },
   {
+    "mot": "Oseyanik",
+    "kat": "n",
+    "def": "rejyon ki gen Ostrali ak zile Pasifik",
+    "egz": "Oseyanik se yon rejyon byenèt.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
+    "mot": "Ostralazi",
+    "kat": "n",
+    "def": "rejyon ki gen Ostrali ak Nouvo Zeland",
+    "egz": "Ostralazi trè lwen Ayiti.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
     "mot": "ostèopat",
     "kat": "n",
     "def": "moun ki fè masaj terapeutik",
@@ -29169,6 +28928,15 @@
     "emoji": "📚"
   },
   {
+    "mot": "Pak",
+    "kat": "n",
+    "def": "fèt rezireksyon Jezi",
+    "egz": "Pak nan avril.",
+    "sin": "Pak Soly",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
+  },
+  {
     "mot": "pak",
     "kat": "n",
     "def": "espas vèt piblik pou amizman",
@@ -29361,6 +29129,14 @@
     "emoji": "👗"
   },
   {
+    "mot": "Pantkòt",
+    "kat": "n",
+    "def": "fèt Kretyen ki selebrate desann Sentespri sou apòt yo",
+    "egz": "Pantkòt 50 jou apre Pak.",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
+  },
+  {
     "mot": "pantkòt",
     "kat": "n",
     "def": "yon kalite pwotestan",
@@ -29376,6 +29152,14 @@
     "tem": "spò",
     "sin": "filè basket",
     "emoji": "🏅"
+  },
+  {
+    "mot": "Panyòl",
+    "kat": "n",
+    "def": "lang ki pale nan Espay ak Amerik Latin",
+    "egz": "Li aprann Panyòl pou travay nan Dominikani.",
+    "tem": "peyi",
+    "emoji": "🌍"
   },
   {
     "mot": "panyòl",
@@ -29429,6 +29213,15 @@
     "sin": "tonton; popa",
     "ant": "manman",
     "emoji": "👨"
+  },
+  {
+    "mot": "Papa Legba",
+    "kat": "n",
+    "def": "lwa vodou ki gadyen pòt ak kafou, premye envoke nan seremoni",
+    "egz": "Papa Legba ouvri pòt yo.",
+    "sin": "Legba",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "papa nwèl",
@@ -29976,6 +29769,15 @@
     "emoji": "🍈"
   },
   {
+    "mot": "PCM",
+    "kat": "n",
+    "def": "gade kontèks itilizasyon PCM",
+    "egz": "PCM bezwen pwogramin.",
+    "sin": "sèvo",
+    "tem": "mekanik",
+    "emoji": "⚙️"
+  },
+  {
     "mot": "peaj",
     "kat": "n",
     "def": "kote yo peye pou itilize yon wout",
@@ -30129,6 +29931,15 @@
     "ant": "optimis",
     "tem": "abstrè",
     "emoji": "💭"
+  },
+  {
+    "mot": "Petyon",
+    "kat": "n",
+    "def": "Alexandre Pétion, prezidan repiblik sid Ayiti apre endepandans",
+    "egz": "Petyon prezidan.",
+    "sin": "Aleksand Petyon",
+    "tem": "kilti",
+    "emoji": "🎭"
   },
   {
     "mot": "petèt",
@@ -31483,6 +31294,15 @@
     "emoji": "👷"
   },
   {
+    "mot": "Pozidrayv",
+    "kat": "n",
+    "def": "kalite tèt vit kwa amelyore pou pi bon grip",
+    "egz": "Pozidrayv pi solid.",
+    "sin": "Pozidriv",
+    "tem": "mekanik",
+    "emoji": "⚙️"
+  },
+  {
     "mot": "pozisyon",
     "kat": "n",
     "def": "kote oswa estati yon moun oswa bagay",
@@ -31935,6 +31755,14 @@
     "sin": "psikològ",
     "tem": "pwofesyon",
     "emoji": "👷"
+  },
+  {
+    "mot": "PVC",
+    "kat": "n",
+    "def": "matyè plastik pou tib",
+    "egz": "PVC pou dlo frèt.",
+    "tem": "plonbri",
+    "emoji": "🔧"
   },
   {
     "mot": "pwa",
@@ -32934,6 +32762,22 @@
     "emoji": "🚪"
   },
   {
+    "mot": "Pòtigè",
+    "kat": "n",
+    "def": "lang ki pale nan Pòtigal ak Brezil",
+    "egz": "Pòtigè sòti Pòtigal.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
+    "mot": "Pòtoprens",
+    "kat": "n",
+    "def": "kapital Ayiti ki sitiye nan bò lanmè",
+    "egz": "Pòtoprens se pi gwo vil Ayiti.",
+    "tem": "peyi",
+    "emoji": "🏙️"
+  },
+  {
     "mot": "pòtrè",
     "kat": "n",
     "def": "foto oswa penti figi yon moun",
@@ -33524,20 +33368,20 @@
     "emoji": "🔧"
   },
   {
-    "mot": "rasò T",
-    "kat": "n",
-    "def": "gade kontèks itilizasyon rasò T",
-    "egz": "Rasò T 1/2 pous.",
-    "sin": "Te",
-    "tem": "plonbri",
-    "emoji": "🔧"
-  },
-  {
     "mot": "rasò angle",
     "kat": "n",
     "def": "zouti kwen pou mezire ang dwat",
     "egz": "Rasò angle pou kafou.",
     "sin": "kòd",
+    "tem": "plonbri",
+    "emoji": "🔧"
+  },
+  {
+    "mot": "rasò T",
+    "kat": "n",
+    "def": "gade kontèks itilizasyon rasò T",
+    "egz": "Rasò T 1/2 pous.",
+    "sin": "Te",
     "tem": "plonbri",
     "emoji": "🔧"
   },
@@ -34922,6 +34766,14 @@
     "emoji": "🦏"
   },
   {
+    "mot": "Ripiblik Dominikèn",
+    "kat": "n",
+    "def": "peyi ki pataje zile Ispanyola ak Ayiti",
+    "egz": "Ripiblik Dominikèn vwazen nou.",
+    "tem": "peyi",
+    "emoji": "🇩🇴"
+  },
+  {
     "mot": "risk",
     "kat": "n",
     "def": "posibilite mal oswa pèt",
@@ -35043,6 +34895,15 @@
     "sin": "robinè",
     "tem": "plonbri",
     "emoji": "🚰"
+  },
+  {
+    "mot": "Robètson",
+    "kat": "n",
+    "def": "vit tèt kwa yo itilize pou boulonnen ak deboulonnen",
+    "egz": "Robètson nan Kanada.",
+    "sin": "Robertson",
+    "tem": "mekanik",
+    "emoji": "⚙️"
   },
   {
     "mot": "roch",
@@ -36169,6 +36030,14 @@
     "emoji": "💼"
   },
   {
+    "mot": "Sendomeng",
+    "kat": "n",
+    "def": "non ansyen Ayiti anvan endepandans",
+    "egz": "Sendomeng te yon koloni Franse.",
+    "tem": "peyi",
+    "emoji": "🌍"
+  },
+  {
     "mot": "senk",
     "kat": "n",
     "def": "chif 5; nomb ant kat ak sis",
@@ -36217,6 +36086,15 @@
     "egz": "Sensasyon libète a bèl anpil.",
     "tem": "abstrè",
     "emoji": "💭"
+  },
+  {
+    "mot": "Sentespri",
+    "kat": "n",
+    "def": "twazyèm pèsòn Trinite Kretyen, reprezante pa yon pijon",
+    "egz": "Sentespri eklere.",
+    "sin": "Espri Sen",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "senti sekirite",
@@ -36702,15 +36580,6 @@
     "emoji": "🏠"
   },
   {
-    "mot": "siman PVC",
-    "kat": "n",
-    "def": "kol espesyal pou kole tiyo PVC",
-    "egz": "Siman PVC pou tib.",
-    "sin": "kolla",
-    "tem": "plonbri",
-    "emoji": "🔧"
-  },
-  {
     "mot": "siman blan",
     "kat": "n",
     "def": "siman estetik blan pou fini travay",
@@ -36718,6 +36587,15 @@
     "ant": "siman gri",
     "tem": "konstriksyon",
     "emoji": "🏗️"
+  },
+  {
+    "mot": "siman PVC",
+    "kat": "n",
+    "def": "kol espesyal pou kole tiyo PVC",
+    "egz": "Siman PVC pou tib.",
+    "sin": "kolla",
+    "tem": "plonbri",
+    "emoji": "🔧"
   },
   {
     "mot": "simen",
@@ -37730,6 +37608,15 @@
     "egz": "Li achte souvni pou tout fanmi l.",
     "tem": "touris",
     "emoji": "✈️"
+  },
+  {
+    "mot": "Sovè",
+    "kat": "n",
+    "def": "gade kontèks itilizasyon Sovè",
+    "egz": "Sovè a vini sou tè.",
+    "sin": "Jezi",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
   },
   {
     "mot": "sovè",
@@ -38995,6 +38882,15 @@
     "emoji": "🍽️"
   },
   {
+    "mot": "Tayno",
+    "kat": "n",
+    "def": "pèp endijèn ki te abite Ayiti anvan kolonizasyon Ewòpen",
+    "egz": "Tayno yo te isit anvan.",
+    "sin": "endijenn",
+    "tem": "kilti",
+    "emoji": "🎭"
+  },
+  {
     "mot": "tayrod",
     "kat": "n",
     "def": "siy ki konekte direksyon ak wou",
@@ -39027,6 +38923,15 @@
     "egz": "Elektrisyen a sèvi tchekè pou verifye.",
     "tem": "elektrisite",
     "emoji": "⚡"
+  },
+  {
+    "mot": "Te",
+    "kat": "n",
+    "def": "bwason cho fèt ak fèy plant ki tranpe nan dlo bouyi",
+    "egz": "Te pou separe tib.",
+    "sin": "rasò T",
+    "tem": "plonbri",
+    "emoji": "🍵"
   },
   {
     "mot": "te",
@@ -39941,6 +39846,14 @@
     "emoji": "😷"
   },
   {
+    "mot": "Tousen",
+    "kat": "n",
+    "def": "Toussaint Louverture, lidè revolisyon ayisyen ki goumen pou libète esklav",
+    "egz": "Tousen 1ye novanm.",
+    "tem": "relijyon-vodou",
+    "emoji": "🙏"
+  },
+  {
     "mot": "tousi",
     "kat": "n",
     "def": "gade kontèks itilizasyon tousi",
@@ -39948,6 +39861,23 @@
     "sin": "tous",
     "tem": "lasante",
     "emoji": "❤️‍🩹"
+  },
+  {
+    "mot": "Toussaint",
+    "kat": "n",
+    "def": "Toussaint Louverture",
+    "egz": "Toussaint mouri 1803.",
+    "sin": "Toussaint Louverture",
+    "tem": "kilti",
+    "emoji": "🎭"
+  },
+  {
+    "mot": "Toussaint Louverture",
+    "kat": "n",
+    "def": "gran lidè revolisyon ayisyen, premye ki dirije batay pou libète",
+    "egz": "Toussaint nan Fort de Joux.",
+    "tem": "kilti",
+    "emoji": "🎭"
   },
   {
     "mot": "tout",
@@ -41089,11 +41019,40 @@
     "emoji": "🔧"
   },
   {
+    "mot": "Tèt Etwal",
+    "kat": "n",
+    "def": "tèt vit ki gen fòm etwal pou vis espesyal",
+    "egz": "Tèt Etwal nan tonvi.",
+    "sin": "Phillips",
+    "ant": "Tèt Plat",
+    "tem": "mekanik",
+    "emoji": "⚙️"
+  },
+  {
     "mot": "tèt motè",
     "kat": "n",
     "def": "pati anlè blòk motè ki fèmen silend",
     "egz": "Tèt motè a kase.",
     "sin": "kilas",
+    "tem": "mekanik",
+    "emoji": "⚙️"
+  },
+  {
+    "mot": "Tèt Plat",
+    "kat": "n",
+    "def": "tèt vit ki plat pou vire boulòn òdinè",
+    "egz": "Tèt Plat tradisyonèl.",
+    "sin": "Phillips ranvès",
+    "ant": "Tèt Etwal",
+    "tem": "mekanik",
+    "emoji": "⚙️"
+  },
+  {
+    "mot": "Tòks",
+    "kat": "n",
+    "def": "zouti pou mezire fòs yo aplike sou yon boulòn",
+    "egz": "Tòks T20.",
+    "sin": "Torx",
     "tem": "mekanik",
     "emoji": "⚙️"
   },
@@ -41164,6 +41123,14 @@
     "emoji": "⚖️"
   },
   {
+    "mot": "UNESCO",
+    "kat": "n",
+    "def": "òganizasyon mondyal pou edikasyon ak kilti",
+    "egz": "UNESCO sipòte patrimwàn Ayiti.",
+    "tem": "edikasyon",
+    "emoji": "📚"
+  },
+  {
     "mot": "uniformiti",
     "kat": "n",
     "def": "rad lekòl obligatwa pou tout elèv",
@@ -41194,6 +41161,23 @@
     "egz": "Dwa universèl pou tout èt imen.",
     "tem": "dwa",
     "emoji": "⚖️"
+  },
+  {
+    "mot": "UPS",
+    "kat": "n",
+    "def": "siy ki kontinye bay kouran",
+    "egz": "UPS pou òdinatè.",
+    "sin": "onduleur",
+    "tem": "elektrisite",
+    "emoji": "⚡"
+  },
+  {
+    "mot": "USB",
+    "kat": "n",
+    "def": "pò koneksyon pou aparèy elektwonik",
+    "egz": "Li chaje telefòn li ak fil USB.",
+    "tem": "elektrisite",
+    "emoji": "⚡"
   },
   {
     "mot": "va",
@@ -41530,6 +41514,22 @@
     "egz": "Vendangè nan filè a.",
     "tem": "animal",
     "emoji": "🐾"
+  },
+  {
+    "mot": "Venezela",
+    "kat": "n",
+    "def": "peyi Amerik Sid ki rich nan petròl, vwazen Karayib",
+    "egz": "Venezela vwazen Karayib.",
+    "tem": "peyi",
+    "emoji": "🇻🇪"
+  },
+  {
+    "mot": "Venezyela",
+    "kat": "n",
+    "def": "peyi nan nò Amerik di Sid",
+    "egz": "Venezyela gen anpil resous petwòl.",
+    "tem": "peyi",
+    "emoji": "🌍"
   },
   {
     "mot": "verifye",
