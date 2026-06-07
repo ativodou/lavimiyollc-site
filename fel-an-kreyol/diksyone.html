@@ -843,7 +843,8 @@ function ipaToFrench(ipa) {
 
   // Vowels
   w = w.replace(/ɛ/g, 'è');     // open e → French è
-  w = w.replace(/ɔ/g, 'or');    // open /ɔ/ → French 'or' forces open o sound
+  w = w.replace(/o/g,  'ô');    // closed /o/ → ô (forces French closed o)
+  w = w.replace(/ɔ/g, 'o');     // open /ɔ/ → plain o (French opens it naturally)
   w = w.replace(/u/g,  'ou');   // /u/ → French ou
   w = w.replace(/e/g,  'é');    // closed e → French é (never silent)
   w = w.replace(/j/g,  'y');    // /j/ glide → French y (must come before ʒ→j)
