@@ -824,45 +824,46 @@ function kreyolToIPA(text) {
   return w;
 }
 
-// Step 2: IPA → phonetic string French TTS can render accurately
-function ipaToFrench(ipa) {
+// Step 2: IPA → phonetic string Brazilian Portuguese TTS can render accurately
+// Portuguese natively distinguishes ó /ɔ/ from ô /o/ — perfect for Kreyòl
+function ipaToPortuguese(ipa) {
   let w = ipa;
 
   // Affricates
-  w = w.replace(/ʧ/g, 'tch');
-  w = w.replace(/ʤ/g, 'dj');
+  w = w.replace(/ʧ/g, 'tch');   // /tʃ/ — works in Portuguese
+  w = w.replace(/ʤ/g, 'dj');    // /dʒ/ — works in Portuguese
 
-  // Fricatives & nasals
-  w = w.replace(/ʃ/g, 'ch');
-  w = w.replace(/ɲ/g, 'gn');
+  // Fricatives
+  w = w.replace(/ʃ/g, 'ch');    // /ʃ/ — Portuguese ch = /ʃ/ ✓
+  w = w.replace(/ɲ/g, 'nh');    // /ɲ/ — Portuguese nh = /ɲ/ ✓
 
-  // Nasal vowels
-  w = w.replace(/ɑ̃/g, 'an');
-  w = w.replace(/ɛ̃/g, 'in');
-  w = w.replace(/ɔ̃/g, 'on');
+  // Nasal vowels — Portuguese has these natively
+  w = w.replace(/ɑ̃/g, 'ã');    // nasal a → ã ✓
+  w = w.replace(/ɛ̃/g, 'ẽ');    // nasal e → ẽ ✓
+  w = w.replace(/ɔ̃/g, 'õ');    // nasal o → õ ✓
 
-  // Vowels
-  w = w.replace(/ɛ/g, 'è');     // open e → French è
-  w = w.replace(/o/g,  'ô');    // closed /o/ → ô (forces French closed o)
-  w = w.replace(/ɔ/g, 'o');     // open /ɔ/ → plain o (French opens it naturally)
-  w = w.replace(/u/g,  'ou');   // /u/ → French ou
-  w = w.replace(/e/g,  'é');    // closed e → French é (never silent)
-  w = w.replace(/j/g,  'y');    // /j/ glide → French y (must come before ʒ→j)
-  w = w.replace(/ʒ/g,  'j');    // /ʒ/ → French j (after j→y to avoid double conversion)
-  w = w.replace(/ʁ/g,  'r');    // uvular r
+  // Vowels — key advantage of Portuguese over French
+  w = w.replace(/ɛ/g, 'é');     // open e → Portuguese é /ɛ/ ✓
+  w = w.replace(/ɔ/g, 'ó');     // open o → Portuguese ó /ɔ/ ✓ (consistent!)
+  w = w.replace(/o/g, 'ô');     // closed o → Portuguese ô /o/ ✓ (consistent!)
+  w = w.replace(/u/g, 'u');     // /u/ → Portuguese u ✓
+  w = w.replace(/e/g, 'ê');     // closed e → Portuguese ê /e/ ✓
 
-  // s: use ss so French never voices it to /z/
-  w = w.replace(/s/g,  'ss');
+  // Consonants
+  w = w.replace(/j/g,  'i');    // /j/ glide → Portuguese i (must come before ʒ→j)
+  w = w.replace(/ʒ/g,  'j');    // /ʒ/ → Portuguese j ✓
+  w = w.replace(/ʁ/g,  'rr');   // uvular r → Portuguese rr ✓
+  w = w.replace(/s/g,  'ss');   // /s/ → ss so Portuguese never voices to /z/
+  w = w.replace(/w/g,  'u');    // /w/ → Portuguese u glide
 
-  // Final consonants French drops: double to force articulation
-  // (r, f, l already pronounced by French — skip those)
+  // Final consonants Portuguese may drop — double to force articulation
   w = w.replace(/([tpdbkgvz])$/i, '$1$1');
 
   return w;
 }
 
 function kreyolToPhonetic(text) {
-  return ipaToFrench(kreyolToIPA(text));
+  return ipaToPortuguese(kreyolToIPA(text));
 }
 
 function speakWord(mot, btn) {
@@ -872,9 +873,13 @@ function speakWord(mot, btn) {
   const utt = new SpeechSynthesisUtterance(phonetic);
   // Use French voice as base — closest phoneme set to Kreyòl
   const voices = window.speechSynthesis.getVoices();
-  const fr = voices.find(v => v.lang.startsWith('fr')) || voices[0];
-  if (fr) utt.voice = fr;
-  utt.lang = 'fr-FR';
+  // Brazilian Portuguese: natively distinguishes ó/ɔ/ from ô/o/ — perfect for Kreyòl
+  const pt = voices.find(v => v.lang === 'pt-BR')
+          || voices.find(v => v.lang.startsWith('pt'))
+          || voices.find(v => v.lang.startsWith('fr'))
+          || voices[0];
+  if (pt) utt.voice = pt;
+  utt.lang = 'pt-BR';
   utt.rate = 0.82;
   utt.pitch = 1;
   btn.classList.add('speaking');
