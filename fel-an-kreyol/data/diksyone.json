@@ -3975,6 +3975,12 @@
     "egz": "Bouchin driver."
   },
   {
+    "mot": "boudis",
+    "kat": "n",
+    "def": "moun ki swiv ansèyman Boudha sou lapè ak sajès",
+    "egz": "Budis nan Azya."
+  },
+  {
     "mot": "boue",
     "kat": "v",
     "def": "fè bri pou pa apresye",
@@ -4273,12 +4279,6 @@
     "kat": "n",
     "def": "charyo piti ak yon wou pou pote bagay lou",
     "egz": "Brwèt yon wou."
-  },
-  {
-    "mot": "budis",
-    "kat": "n",
-    "def": "moun ki swiv ansèyman Boudha sou lapè ak sajès",
-    "egz": "Budis nan Azya."
   },
   {
     "mot": "buldozè",
